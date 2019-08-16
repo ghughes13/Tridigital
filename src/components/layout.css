@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -241,17 +243,16 @@ h2 {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 0; 
   padding-left: 0;
   padding-right: 0;
-  padding-top: 0;
+  padding-top: 0; 
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Lato";
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
+  font-size: 60px;
   line-height: 1.1;
 }
 h3 {
@@ -385,6 +386,8 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  font-size: 20px;
+  font-family: "Lato"; 
 }
 figure {
   margin-left: 0;
@@ -736,10 +739,11 @@ main .content-container {
 
 /*Hero Styling*/
 
-.hero-section {
-  min-height: 75vh;
+.hero-section.container {
+  min-height: 75vh; 
   display: flex;
   align-items: center;
+  padding-top: 150px;
 }
 
 .hero-section .content-container {
@@ -750,7 +754,8 @@ main .content-container {
 
 .hero-section .content-container h1{
   margin-bottom: 40px;
-}
+  font-size: 70px;
+}  
 
 /*Video Background*/
 .video-background-container {
@@ -793,6 +798,10 @@ main .content-container {
 .orange-text {
   color:#ff6700;
 }
+ 
+main .flex-2 {
+  flex-grow: 2;
+}
 
 .orange-outline-btn {
   max-width: 350px;
@@ -800,7 +809,7 @@ main .content-container {
   line-height: 1.2em;
   font-weight: 400;
   text-transform: capitalize;
-  border: 2px solid #ff6700;
+  border: 2px solid #ff6700; 
   background: transparent;
   border-radius: 3px;
   -webkit-transition: background 0.5s ease-out;
@@ -812,14 +821,136 @@ main .content-container {
   display: block;
   margin: 0 auto;
   width: 100%;
+  text-align: center;
+  text-decoration: none; 
 }
 
 .orange-outline-btn:hover {
   background: #ff6700;
+  color: #fff;  
+  text-decoration: none;
 }
 
-.space-background {
-  background: url(https://www.gbtech.net/wp-content/uploads/2014/03/sky-background.jpg);
+main .compressed-content { 
+  max-width: 1060px; 
+  margin: 0 auto; 
+}
+
+main .react-parallax {
+  width: 100%;
+}
+
+/*Footer*/
+footer {
+  padding: 50px 0;
+}
+
+footer h2 {
+  font-size: 60px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+footer .partners-logo img {
+  max-width: 115px; 
+  margin: 1% 3%;
+  opacity: .2; 
+}
+
+footer .footer-office {
+  font-size: 20px;
+  font-weight: 600;  
+  color: #454545;
+  margin-top: 40px;
+}
+
+footer .footer-location-section {
+  padding-left: 18%;
+}
+
+footer .gravityform__label {
+  display: none
+}
+
+footer .gravityform__field input {
+  background: transparent;
+  border: 2px solid #fff;
+  max-width: 480px;
+  width: 100%;
+  padding: 7px;
+  margin: 16px 0 7px;
+  font-size: 20px;
+  transition: all .3s linear;
+}
+
+footer .gravityform__field input:focus {
+  border-color: #ff6700;
+  transition: all .3s linear;
+}
+
+footer .gravityform button { 
+  background: #3a6ea5;
+  color: #fff;
+  font-weight: 600; 
+  font-size: 26px;
+  border-radius: 3px;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  margin: 30px 0 0 auto;
+}
+
+footer ::placeholder {
+  color: #fff;
+  opacity: 1;
+  text-indent: 0px; 
+  transition: all .3s ease;
+}
+
+footer .gravityform__field input:focus::placeholder {
+  text-indent: -500px; 
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+footer .form-section {
+  background: #0d0d0d;
+  padding-top: 5%;
+}
+
+footer .container {
+  max-width: 100%;
+  width: 100%
+}
+
+footer .row {
+  margin: 0 auto;
+  max-width: 1310px;
+  padding: 0px 50px;
+}
+footer .footer-nav {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 300px;
+}
+
+footer .footer-nav a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ff6700;
+}
+.partners-logo {
+  align-items: center;
+  justify-content: space-evenly; 
+  max-width: 1060px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
 }
 
 /*Particle Effect */
@@ -828,11 +959,12 @@ main .content-container {
   -moz-animation: spin 50s infinite linear;
   -o-animation: spin 50s infinite linear;
   animation: spin 50s infinite linear;
-  position: fixed; 
+  position: fixed;  
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
   top: 0;
-  left:0;
+  left:0; 
+  z-index: -1;
 }
 
 @-moz-keyframes spin {
@@ -852,12 +984,27 @@ main .content-container {
 /*!--------HOME PAGE -----------*/
 
 .home-page .rocket-parallax-section {
-  max-height: 50vh; 
   overflow: hidden;
 }
 
-.home-page .rocket-image {
-  position: absolute;
-  top: 0;
-  right: 0;
+.home-page .rocket-img {
+  height:100%
+}
+
+.home-page .react-parallax-content {
+  padding: 5%;
+  display: flex;
+}
+
+.home-page .space-container {
+  padding: 35px;
+  border: 2px solid #ff6700;
+}
+
+.home-page .space-container .react-parallax-content{
+  padding: 0 5%;
+} 
+
+.home-page .space-container .react-parallax-content > .content-container.flex-2 {
+  padding: 10% 0;
 }

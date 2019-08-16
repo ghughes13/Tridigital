@@ -4,7 +4,7 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header
-    class="fixed"
+    className="fixed"
     style={{
       background: `rgba(0,0,0,.5)`,
       fontFamily: 'Lato',
@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous"
   />
-    <div class="subHeader"> 
+    <div className="subHeader"> 
       <ul>
         <li>DIR Information HUB</li>
         <li>Employee Login</li>
@@ -25,9 +25,9 @@ const Header = ({ siteTitle }) => (
         <li>281.957.7554</li>
       </ul>
     </div>
-    <div class="mainHeader">
+    <div className="mainHeader">
       <Link to="/">
-        <img class="logo" src="https://www.gbtech.net/wp-content/uploads/2017/08/logo.png"></img>
+        <img className="logo" src="https://www.gbtech.net/wp-content/uploads/2017/08/logo.png"></img>
       </Link>
       <ul>
         <li><Link to="/">About Us</Link></li>

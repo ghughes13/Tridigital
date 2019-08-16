@@ -5,58 +5,107 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import { Container, Row, Col } from 'react-bootstrap';
+import * as PropTypes from "prop-types";
+import { Parallax, Background } from 'react-parallax';
 
-const IndexPage = ({data}) => { 
-  return (
-    <div className = "home-page">
-      <Container className="hero-section transparent-hero container">
-        <div class="video-background-container">
-          <video autoPlay loop id="video-background" muted playsinline>
-            <source src="https://www.gbtech.net//wp-content/uploads/2017/08/GB-Tech-loop.mp4" type="video/mp4" />
-          </video>
-        </div>  
-        <Row>
-          <Col className="content-container column">
-            <h1 class="white-text centered-text">{data.acf}</h1>
-            <a class="orange-outline-btn white-text" href="#">Watch Our Video</a> 
-          </Col>
-        </Row>
-      </Container>
-      <Container> 
-        <Row>
-          <Col className="content-container centered-text compressed-content">
-              <h2 class="light-weight blue-text">IT Services Provide <span class="heavy-weight">a Launch Pad for Your Business</span></h2>
-              <p>Running a business requires courage, ambition and preparation. With IT services by GB Tech, you can feel confident that your business has the foundation it needs to take to the skies. Our services are wide-ranging, including everything from cloud services and help desk support to virtualization and mobile device management. We can equip you with the tools you need to complete any mission.</p>
-          </Col>
-        </Row>
-      </Container>
-      <Container className="rocket-parallax-section">
-        <Row className="space-background">
-          <Col className="content-container centered-text compressed-content">
-          <h2 class="light-weight white-text">Software Quality & Security – The Ultimate Pre-Flight Checklist</h2>
-          <p class="white-text">The risk of failure is unacceptable. Software testing, web application security, and ongoing network monitoring ensure that you’ll have a safe launch, no matter how ambitious or complex your goals might be.</p>
-          </Col>
-          <Col className="content-container centered-text compressed-content">
-          <img class="rocket-img" src="https://www.gbtech.net/wp-content/uploads/2014/03/rocket.png" />
-          </Col>
-        </Row>
-      </Container>
-      <Container>
-        <Row>
-          <Col className="content-container centered-text compressed-content">
-          <h2 class="light-weight orange-text">Logistics & Project Management – <span class="heavy-weight">With You Every Step of the Way</span></h2>
-          <p>Taking on a major project can be daunting, especially when you’re on a budget and a deadline. GB Tech’s project management skills are battle-tested in some of the world’s most demanding industries, and our logistical expertise is designed to keep everything running smoothly – or help you out of a bind. We’ll never leave you hanging.</p>
-          </Col>
-        </Row>
-      </Container>
-    </div>
-)}
+const propTypes = {
+  data: PropTypes.object.isRequired,
+}
+
+class IndexPage extends React.Component {
+  render() {
+    const heading = this.props.data.wordpressPage.acf
+
+    return (
+      <Layout>
+        <div className = "home-page"> 
+          <Container className="hero-section transparent-hero container">
+            <div className="video-background-container">
+              <video autoPlay loop id="video-background" muted playsInline>
+                <source src="https://www.gbtech.net//wp-content/uploads/2017/08/GB-Tech-loop.mp4" type="video/mp4" />
+              </video>
+            </div>  
+            <Row>
+              <Col className="content-container column"> 
+                <h1 className="white-text centered-text" dangerouslySetInnerHTML={{__html: heading.hero_heading}}></h1> 
+                <a className="orange-outline-btn white-text" href="#" dangerouslySetInnerHTML={{__html: heading.hero_video_button_text}}></a>   
+              </Col>
+            </Row>
+          </Container>
+          <Container> 
+            <Row>
+              <Col className="content-container centered-text compressed-content">
+                  <h2 className="light-weight blue-text" dangerouslySetInnerHTML={{__html: heading.section_2_heading}}></h2>
+                  <p dangerouslySetInnerHTML={{__html: heading.section_2_content}}></p>
+              </Col>
+            </Row>
+          </Container>
+          <Container className="rocket-parallax-section">
+            <Row className="space-container">
+              <Parallax className = "space-background"
+                bgImage={'https://www.gbtech.net/wp-content/uploads/2014/03/sky-background.jpg'}
+                strength={600}
+              > 
+                <Col className="content-container centered-text compressed-content flex-2">
+                  <h2 className="light-weight white-text" dangerouslySetInnerHTML={{__html: heading.section_3_heading}}></h2>
+                  <p className="white-text" dangerouslySetInnerHTML={{__html: heading.section_3_content}}></p>
+                </Col>
+                <Col className="content-container centered-text compressed-content">
+                  <Parallax 
+                    className = "rocket-img"
+                    bgImage={'https://www.gbtech.net/wp-content/uploads/2014/03/rocket.png'}
+                    strength={-600}
+                  >
+                  </Parallax>
+                </Col>
+              </Parallax>
+            </Row>
+          </Container>
+          <Container>
+            <Row>
+              <Col className="content-container centered-text compressed-content">
+              <h2 className="light-weight orange-text"dangerouslySetInnerHTML={{__html: heading.section_4_heading}}></h2>
+              <p dangerouslySetInnerHTML={{__html: heading.section_4_content}}></p>
+              </Col>
+            </Row>
+          </Container>
+          <Container> 
+            <Parallax
+                bgImage = {'https://www.gbtech.net/wp-content/uploads/2014/03/experience-background.jpg'}
+                strength={300}
+            >
+              <Row>
+
+                  <Col className="centered-text">
+                    <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/08/30-years.png" />
+                  </Col>
+                  <Col className="centered-text">
+                    <h2 className="heavy-weight white-text"dangerouslySetInnerHTML={{__html: heading.section_5_heading}}></h2>
+                    <p className="white-text" dangerouslySetInnerHTML={{__html: heading.section_5_content}}></p>
+                  </Col>
+              </Row>
+            </Parallax>
+          </Container>
+        </div>
+      </Layout>
+    )
+  }
+}
 
 export const query = graphql`
     query HomePageQuery{
       wordpressPage(wordpress_id: {eq: 2}) {
         acf {
           hero_heading
+          hero_video_button_text
+          section_2_heading
+          section_2_content
+          section_3_heading
+          section_3_content
+          section_4_heading
+          section_4_content
+          section_5_heading
+          section_5_content
         }
       }
     }

@@ -36,6 +36,18 @@ module.exports = {
           useACF: true,
           verboseOutput: true
       }
+    },
+    {
+      resolve: 'gatsby-source-gravityforms',
+      options: {
+          // Base URL needs to include protocol (http/https)
+          baseUrl: 'https://www.gbtech.net',
+          // Gravity Forms API
+          api: {
+              key: 'ck_64ea0717931cb6fbaf7310b9ba1d6e7817d41f79',
+              secret: 'cs_99c7ef44709b98f7de31db9844e85c6b089b72fe',
+          },
+      },
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
