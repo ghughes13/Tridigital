@@ -69,7 +69,8 @@ class IndexPage extends React.Component {
               </Col>
             </Row>
           </Container>
-          <Container> 
+          <Container
+          className="experience-section"> 
             <Parallax
                 bgImage = {'https://www.gbtech.net/wp-content/uploads/2014/03/experience-background.jpg'}
                 strength={300}

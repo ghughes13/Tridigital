@@ -54,11 +54,13 @@ const Footer = () => (
     style={{
       background: `#121212`,
     }}
-  >
-      <Container>
+  > 
+      <Container 
+      className="partners-container"
+      >
         <Row>
             <Col>
-                <h2>Our Partners</h2>
+                <h2 class="centered-text">Our Partners</h2>
             </Col>
         </Row>
         <Row>
@@ -110,6 +112,20 @@ const Footer = () => (
             <div className="footer-nav"><a href="#">Blog</a><a href="#">Sitemap</a><a href="#">Privacy</a></div>
             </Col>    
         </Row> 
+
+      </Container>
+
+      <Container >
+      <Row
+      className="socialMediaSection">
+          <ul
+          className = "social-media">
+              <li><a href="https://www.facebook.com/GbTechInc/" target="_blank">F</a></li>
+              <li><a href="https://www.linkedin.com/company/gb-tech/" target="_blank">L</a></li>
+              <li><a href="https://twitter.com/gbtechinc" target="_blank">T</a></li>
+          </ul>
+          <p>© 2019 GB Tech, Inc. All Rights Reserved</p>
+      </Row>
 
       </Container>
       
