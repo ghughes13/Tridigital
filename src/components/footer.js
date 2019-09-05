@@ -89,14 +89,14 @@ const Footer = () => (
                 <p className="white-text">Opt-in to our newsletter to stay updated with our latest news and happenings.</p>
                 <form name="contact" method="POST" data-netlify="true" action="/page-2/" netlify-honeypot="bot-field">
                     <p>
-                        <label>Your Name: <input type="text" name="name" /></label>   
+                        <label><input type="text" name="name" placeholder="name"/></label>   
                     </p>
                     <p>
-                        <label>Your Email: <input type="email" name="email" /></label>
+                        <label>Your Email: <input type="email" name="email" placeholder="email"/></label>
                         <input type="hidden" name="form-name" value="contact" />
                     </p>
                     <p>
-                        <button type="submit">Send</button>
+                        <button type="submit">Subscribe</button>
                     </p>
                 </form>
 
