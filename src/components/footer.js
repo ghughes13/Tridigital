@@ -92,7 +92,7 @@ const Footer = () => (
                         <label><input type="text" name="name" placeholder="name"/></label>   
                     </p>
                     <p>
-                        <label>Your Email: <input type="email" name="email" placeholder="email"/></label>
+                        <label><input type="email" name="email" placeholder="email"/></label>
                         <input type="hidden" name="form-name" value="contact" />
                     </p>
                     <p>
