@@ -93,6 +93,7 @@ const Footer = () => (
                     </p>
                     <p>
                         <label>Your Email: <input type="email" name="email" /></label>
+                        <input type="hidden" name="form-name" value="contact" />
                     </p>
                     <p>
                         <button type="submit">Send</button>
