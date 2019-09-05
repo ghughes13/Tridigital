@@ -87,7 +87,7 @@ const Footer = () => (
             <Col>
                 <h2 className="orange-text light-weight">Be the First!</h2>
                 <p className="white-text">Opt-in to our newsletter to stay updated with our latest news and happenings.</p>
-                <form name="contact" method="POST" data-netlify="true" action="/page-2/">
+                <form name="contact" method="POST" data-netlify="true" action="/page-2/" netlify-honeypot="bot-field">
                     <p>
                         <label>Your Name: <input type="text" name="name" /></label>   
                     </p>
