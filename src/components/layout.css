@@ -873,6 +873,10 @@ footer .footer-location-section {
   padding-left: 18%;
 }
 
+footer form label {
+  color: #fff;
+}
+
 footer .gravityform__label {
   display: none
 }
