@@ -1,0 +1,1 @@
+LAMBDA_ENDPOINT="https://brave-kare-982f37.netlify.com"

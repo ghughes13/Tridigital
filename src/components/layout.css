@@ -886,6 +886,7 @@ footer .gravityform__field input {
   margin: 16px 0 7px;
   font-size: 20px;
   transition: all .3s linear;
+  color: #fff;
 }
 
 footer .gravityform__field input:focus {
