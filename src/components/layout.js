@@ -34,7 +34,6 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}
-        <div class = "particles"><img src="https://www.gbtech.net/wp-content/uploads/2014/03/particles.png"></img></div>
         </main>
       </div>
       <Footer/>

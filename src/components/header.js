@@ -6,8 +6,8 @@ const Header = ({ siteTitle }) => (
   <header
     className="fixed"
     style={{
-      background: `rgba(0,0,0,.5)`,
-      fontFamily: 'Lato',
+      fontFamily: 'Poppins',
+      textTransform: 'uppercase'
     }}
   >
   <link
@@ -16,27 +16,27 @@ const Header = ({ siteTitle }) => (
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous"
   />
-    <div className="subHeader"> 
-      <ul>
-        <li>DIR Information HUB</li>
-        <li>Employee Login</li>
-        <li>Careers</li>
-        <li>Blog</li>
-        <li>281.957.7554</li>
-      </ul>
-    </div>
     <div className="mainHeader">
       <Link to="/">
-        <img className="logo" src="https://www.gbtech.net/wp-content/uploads/2017/08/logo.png"></img>
+        <img className="logo" src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/TD-logo-w.png"></img>
       </Link>
-      <ul>
-        <li><Link to="/">About Us</Link></li>
-        <li><Link to="/">Our Process</Link></li>
-        <li><Link to="/">Solutions</Link></li>
-        <li><Link to="/">Sucess Stories</Link></li>
-        <li><Link to="/">Resources</Link></li>
-        <li><Link to="/">Contact Us</Link></li>
-      </ul>
+      <div class="nav-bar">
+      <div class="navigation-container">
+        <ul>
+          <li><Link to="/">About</Link></li>
+          <li><Link to="/">Process</Link></li>
+          <li><Link to="/">Reviews</Link></li>
+          <li><Link to="/">Portfolio</Link></li>
+          <li><Link to="/">Capabilities</Link></li>
+        </ul>
+      </div>
+      <div className = "nav-button-container">        
+        <ul>
+          <li className="nav-button"><Link to="/">Marketing Warmup</Link></li>
+          <li className="nav-button ghost"><Link to="/">Contact Us</Link></li>
+        </ul>
+      </div>
+      </div>
     </div>
   </header>
 )
