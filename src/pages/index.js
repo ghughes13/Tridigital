@@ -20,7 +20,7 @@ class IndexPage extends React.Component {
       <Layout>
         <div className = "home-page"> 
           <Container className="hero-section transparent-hero container">
-            <Row className="2-columns">
+            <Row className="two-columns">
               <Col className="content-container column">
                 <h1 className="white-text">We Are the IT Industry’s Custom Marketing Agency</h1> 
                 <p className="white-text subtext" >We’ve generated over 100,000 MSP leads. . . and counting.</p>   
@@ -76,7 +76,7 @@ class IndexPage extends React.Component {
             <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/white-swoop.svg" alt="white-curve" className="white-swoop"></img>
           </Container>
           <Container className="powers-section"> 
-            <Row className="2-columns full-width-row content-left align-middle">
+            <Row className="two-columns full-width-row content-left align-middle">
               <Col className="content-container"> 
                   <h2 className="blue-text" >Unleash YOUR True Superpowers</h2>
                   <p >Your most competitive advantage is not what you do but how you do it.</p>
@@ -90,7 +90,7 @@ class IndexPage extends React.Component {
             </Row>
           </Container>
           <Container className="powers-section"> 
-            <Row className="2-columns full-width-row content-right align-middle">
+            <Row className="two-columns full-width-row content-right align-middle">
               <Col className="content-container center-image-container">
                 <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/honey-leads.png" alt="TRIdigital Collaterals"></img>
               </Col>
@@ -103,7 +103,7 @@ class IndexPage extends React.Component {
             </Row>
           </Container>
           <Container className="powers-section"> 
-            <Row className="2-columns full-width-row content-left align-middle">
+            <Row className="two-columns full-width-row content-left align-middle">
               <Col className="content-container"> 
                   <h2 className="blue-text" >Outsmart Your Competition</h2>
                   <p >Empower your sales team the way you empower your engineers. Leverage innovative technology and amazing marketing materials to help your sales team perfectly communicate your vision.</p>

@@ -824,6 +824,15 @@ main .align-middle {
   align-items: center;
 }
 
+main .two-columns {
+  display: flex;
+}
+
+main .two-columns .col{
+  max-width: 50vw;
+}
+
+
 /*Hero Styling*/
 
 .hero-section.container {
@@ -952,10 +961,6 @@ main .play-icon {
     margin-left: 10px;
 }
 
-main .blue-background {
-  background-color: #0040ED;
-}
-
 main .center-image-container {
   text-align: center;
 }
@@ -971,79 +976,73 @@ main .cta-card {
 main .cta-card .blue-button{
   margin: 5vh auto 0;
 }
-/*Footer*/
+
+.pink-btn {
+  background: #FF3975;
+  border-radius: 29px;
+  color: #fff;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+  padding: 13px 50px 12px;
+  border: 0;
+  margin-top: 10px;
+}
+
+.form-footer{
+  text-align: right;
+}
+
+.blue-gradient-background {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0000e6+2,7db9e8+100 */
+background: #0000e6; /* Old browsers */
+background: -moz-linear-gradient(left, #0000e6 2%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #0000e6 2%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #0000e6 2%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000e6', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */ 
+}
+
+.blue-background {
+  background-color: #2444ff;
+}
+
+/*Footer*/ 
 footer {
-  padding: 50px 0 0;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00a7ff+0,0000e6+100 */
+  background: #00a7ff; /* Old browsers */
+  background: -moz-linear-gradient(top, #00a7ff 0%, #0000e6 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #00a7ff 0%,#0000e6 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #00a7ff 0%,#0000e6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a7ff', endColorstr='#0000e6',GradientType=0 ); /* IE6-9 */
+  color: #fff;
+  line-height: 1em;
+  font-size: 16px; 
 }
 
 footer h2 {
-  font-size: 60px;
-  font-weight: 600;
-  margin-bottom: 30px;
-}
-
-footer .partners-logo img {
-  max-width: 115px; 
-  margin: 1% 3%;
-  opacity: .2; 
-}
-
-footer .footer-office {
-  font-size: 20px;
-  font-weight: 600;  
-  color: #454545;
-  margin-top: 40px;
-}
-
-footer .footer-location-section {
-  padding-left: 18%;
-}
-
-footer form label {
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom: 10px;
   color: #fff;
+  font-family: "Oswald"
 }
 
-footer .gravityform__label {
-  display: none
-}
-
-footer .gravityform__field input {
-  background: transparent;
-  border: 2px solid #fff;
-  max-width: 480px;
-  width: 100%;
-  padding: 7px;
-  margin: 16px 0 7px;
-  font-size: 20px;
-  transition: all .3s linear;
-  color: #fff;
-}
-
-footer .gravityform__field input:focus {
-  border-color: #ff6700;
-  transition: all .3s linear;
-}
-
-footer .gravityform button { 
-  background: #3a6ea5;
-  color: #fff;
-  font-weight: 600; 
-  font-size: 26px;
-  border-radius: 3px;
-  -webkit-transition: background 0.5s;
-  transition: background 0.5s;
-  text-decoration: none;
-  padding: 10px 15px;
-  display: block;
-  margin: 30px 0 0 auto;
-  border: 0;
+footer p {
+  font-size: 16px;
+  line-height: 1em;
 }
 
 footer ::placeholder {
-  color: #fff;
+  color: #707070;
   opacity: 1;
   text-indent: 0px; 
   transition: all .3s ease;
+  font-family: "Poppins"
+}
+
+footer input {
+  width: 100%;
+  padding: 12px 5px;
 }
 
 footer .gravityform__field input:focus::placeholder {
@@ -1065,81 +1064,26 @@ footer .container {
 footer .row {
   margin: 0 auto;
   max-width: 1310px;
-  padding: 0px 50px;
+  padding: 50px 50px;
 }
-footer .footer-nav {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: row;
+
+
+footer .socket {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fe7e01+2,ff017d+100 */
+  background: #fe7e01; /* Old browsers */
+  background: -moz-linear-gradient(left, #fe7e01 2%, #ff017d 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #fe7e01 2%,#ff017d 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #fe7e01 2%,#ff017d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe7e01', endColorstr='#ff017d',GradientType=1 ); /* IE6-9 */
+  max-width: 100%;
+  display: flex; 
   justify-content: space-between;
-  max-width: 300px;
+  padding: 10px 50px;
 }
 
-footer .footer-nav a {
-  font-size: 20px;
-  font-weight: 600;
-  color: #ff6700;
+footer .socket p {
+  margin-bottom: 0px;
 }
-
-footer .partners-container {
-  padding: 2% 0 7%; 
-}
-
-footer .social-media li {
-  display: inline-block;
-}
-
-footer .socialMediaSection {
-  padding-top: 3%; 
-  justify-content: center;
-  color: #fff;
-}
-
-footer .socialMediaSection p {
-  font-size: 16px;
-}
-
-footer .socialMediaSection .social-media {
-  margin-right: 30px;
-}
-
-.partners-logo {
-  align-items: center;
-  justify-content: space-evenly; 
-  max-width: 1060px;
-  flex-wrap: wrap;
-  flex-direction: row;
-  display: flex;
-}
-
-/*Particle Effect */
-.particles {
-  -webkit-animation: spin 50s infinite linear;
-  -moz-animation: spin 50s infinite linear;
-  -o-animation: spin 50s infinite linear;
-  animation: spin 50s infinite linear;
-  position: fixed;  
-  -webkit-transition: all 0.7s;
-  transition: all 0.7s;
-  top: 0;
-  left:0; 
-  z-index: -1;
-}
-
-@-moz-keyframes spin {
-  from { -moz-transform: rotate(0deg); }
-  to { -moz-transform: rotate(360deg); }
-}
-@-webkit-keyframes spin {
-  from { -webkit-transform: rotate(0deg); }
-  to { -webkit-transform: rotate(360deg); }
-}
-@keyframes spin {
-  from {transform:rotate(0deg);}
-  to {transform:rotate(360deg);}
-}
-
-
 /*!--------HOME PAGE -----------*/
 .home-page .hero-section {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00a7ff+1,0040ed+99 */
@@ -1193,6 +1137,29 @@ footer .socialMediaSection .social-media {
   position: relative;
 }
 
+/*About Us */
+.about-us-page .hero-section .row {
+  padding-right: 0;
+  width: 100%;
+}
+
+.about-us-page .video-column {
+  z-index: 0;
+}
+
+.about-us-page .video-column video {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.about-us-page .hero-section {
+  padding-bottom: 0;
+}
+
+.about-us-page .bio-content {
+  padding: 40px 0;
+}
 /*animations */
 @keyframes rotating {
   from{
