@@ -34,7 +34,7 @@ const Header = ({ siteTitle }) => (
     </div>
     <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item">
+      <a href="/about-us/" class="navbar-item">
         About
       </a>
       <a class="navbar-item">

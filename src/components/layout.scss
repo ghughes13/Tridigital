@@ -938,6 +938,14 @@ main .col {
   color: #FF3975;
 }
 
+.purple-text {
+  color: #9B52D1;
+}
+
+.light-blue-text {
+  color: #0092FB;
+}
+
 .centered-text {
   text-align: center;
 }
@@ -1065,6 +1073,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0043f5', end
 
 .blue-background {
   background-color: #0043f5;
+} 
+
+main video {
+  max-width: initial;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1433,11 +1445,69 @@ footer ul li img {
 
 .about-us-page .hero-section {
   padding-bottom: 0;
+  align-items: unset;
 }
 
 .about-us-page .bio-content {
   padding: 40px 0;
 }
+
+.about-us-page .blue-background {
+  background-color: #2444ff;
+}
+
+.about-us-page .hero-section h2 {
+  font-size: 40px; 
+  margin-bottom: 5px;
+} 
+
+.about-us-page .pink-banner {
+  position: relative;
+}
+
+.about-us-page .pink-banner::before {
+  background: #FF135A;
+  height: 110px;
+  content: "";
+  width: 40vw;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 9;
+}
+
+.about-us-page .likes {
+  margin-top: 50px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.about-us-page .likes::before {
+  content: url('http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/like-icon.png');
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.about-us-page .values-card {
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(10,9,41,0.15);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(10,9,41,0.15);
+  box-shadow: 0px 3px 6px 0px rgba(10,9,41,0.15);
+  max-width: 80%;
+  padding: 5%;
+  border-radius: 10px;
+}
+
+.about-us-page .values-card.left-align {
+  margin: 0 0 0 auto;
+}
+
+.about-us-page .values-card h3 {
+  font-size: 34px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
 /*animations */
 @keyframes rotating {
   from{
