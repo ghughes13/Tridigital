@@ -14,23 +14,24 @@ const Footer = () => (
       <p> Plano, TX 75074</p>
       <p>Phone: (214) 299-7399</p>
       <p>Email: info@tridigitalmarketing.com</p>
+      <img className="certGraphic" src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/google-partners.jpg"></img><img className="certGraphic" src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/honey-cert.jpg"></img>
     </Col>
     <Col>
       <h2>Connect</h2>
       <p>Contact Us</p>
       <ul>
-        <li>Twitter</li>
-        <li>Facebook</li>      
-        <li>Instagram</li> 
-        <li>Youtube</li>            
+        <li><img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/twitter.svg"></img>Twitter</li>
+        <li><img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/fb.svg"></img>Facebook</li>      
+        <li><img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/instagram.svg"></img>Instagram</li> 
+        <li><img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/youtube.svg"></img>Youtube</li>            
       </ul>
-    </Col>
+    </Col> 
     <Col> 
       <h2>Join Our Newsletter</h2>
       <form>
         <input type="text" placeholder="Email"></input>
         <div className = "form-footer">
-          <button className="pink-btn" type="submit">Send</button>
+          <button className="pink-button" type="submit">Send</button>
         </div>
       </form>
     </Col>
