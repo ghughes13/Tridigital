@@ -1093,6 +1093,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0043f5', end
     padding: 0 50px;
   }
 
+  main .hero-section .content-container h1,
   main h2 {
     font-size: 40px;
   }
@@ -1114,7 +1115,8 @@ footer {
 footer h2 {
   font-size: 35px;
   font-weight: 400;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
+  margin-top: 25px;
   color: #fff;
   font-family: "Oswald";
 }
