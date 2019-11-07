@@ -34,11 +34,10 @@ const AboutUs = () => (
               <h2 className="blue-text centered-text">Our Core Values</h2>
           </Col>
         </Row>
+        <img className = "blob-graphic" src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"></img>
         <Row className="two-columns full-width-row content-right align-middle">
-          <Col className="content-container video-container">
-          <video src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Heartv03.mp4" autoPlay muted loop>
-            <p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
-          </video>
+          <Col className="content-container centered-text">
+          <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/heart.png" />
           </Col>
           <Col className="content-container">
               <div class="values-card">
@@ -54,17 +53,14 @@ const AboutUs = () => (
                 <p>People come first. We support, train, protect, and empower people to unlock their superhuman potential.</p>
               </div> 
           </Col>
-          <Col className="content-container video-container">
-          <video src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Maskv03.mp4" autoPlay muted loop>
-            <p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
-          </video>
+          <Col className="content-container centered-text">
+          <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/mask.png" />
           </Col>
         </Row>
+        <img className = "blob-graphic" src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"></img>
         <Row className="two-columns full-width-row content-right align-middle">
-          <Col className="content-container video-container">
-          <video src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/EggR.mp4" autoPlay muted loop>
-            <p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
-          </video>
+          <Col className="content-container centered-text">
+          <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/Egg.png" />
           </Col>
           <Col className="content-container">
               <div class="values-card">
@@ -80,21 +76,17 @@ const AboutUs = () => (
                 <p>Come in every day and make a difference. When you work with passion, you create a legacy for all of those we touch.</p>
               </div> 
           </Col>
-          <Col className="content-container video-container">
-          <video src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/PencilR.mp4" autoPlay muted loop>
-            <p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
-          </video>
+          <Col className="content-container centered-text">
+          <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/draw.png" />
           </Col>
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <Col className="content-container video-container">
-          <video src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/PaintR.mp4" autoPlay muted loop>
-            <p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
-          </video>
+          <Col className="content-container centered-text">
+          <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/paint.png" />
           </Col>
           <Col className="content-container">
               <div class="values-card">
-                <h3 className="light-blue-text" >Mix Paint</h3>
+                <h3 className="teal-text" >Mix Paint</h3>
                 <p>Through collaboration we take people’s most unique qualities and mix them to create something new and beautiful.</p>
               </div> 
           </Col>
