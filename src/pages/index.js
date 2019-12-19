@@ -1,12 +1,12 @@
 import React from "react"
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import { Container, Row, Col } from 'react-bootstrap';
-import * as PropTypes from "prop-types";
-import { Parallax, Background } from 'react-parallax';
+import { Container, Row, Col } from "react-bootstrap"
+import * as PropTypes from "prop-types"
+import { Parallax, Background } from "react-parallax"
 
 const propTypes = {
   data: PropTypes.object.isRequired,
@@ -18,30 +18,64 @@ class IndexPage extends React.Component {
 
     return (
       <Layout>
-        <div className = "home-page"> 
+        <div className="home-page">
           <Container className="hero-section transparent-hero container flexed">
             <Row className="two-columns">
               <Col className="content-container column">
-                <h1 className="white-text">We Are the IT Industry’s Custom Marketing Agency</h1> 
-                <p className="white-text subtext" >We’ve generated over 100,000 MSP leads. . . and counting.</p>   
-                <a className="white-text blue-button" href="#">Watch Video <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/play-button.png" alt="play button"></img></a>   
+                <h1 className="white-text">
+                  We Are the IT Industry’s Custom Marketing Agency
+                </h1>
+                <p className="white-text subtext">
+                  We’ve generated over 100,000 MSP leads. . . and counting.
+                </p>
+                <a className="white-text blue-button" href="#">
+                  Watch Video{" "}
+                  <img
+                    src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/play-button.png"
+                    alt="play button"
+                  ></img>
+                </a>
                 <img src="https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/as-seen.svg"></img>
               </Col>
               <Col className="content-container column video-container">
-                <img class="play-icon" src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/video-team.png" alt="TRIdigital media team"></img>
+                <img
+                  className="play-icon"
+                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/video-team.png"
+                  alt="TRIdigital media team"
+                ></img>
               </Col>
             </Row>
-            <img class="scroll-indicator" src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/scroll-indicator.svg"></img>
-            <svg  className="rotating" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 288 288">
-              <linearGradient id="PSgrad_0" x1="70.711%" x2="0%" y1="70.711%" y2="0%">
-                <stop offset="0%" stop-color="rgb(255,22,136)" stop-opacity="1" />
-                <stop offset="100%" stop-color="rgb(254,122,6)" stop-opacity="1" />
+            <img
+              className="scroll-indicator"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/scroll-indicator.svg"
+            ></img>
+            <svg
+              className="rotating"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              viewBox="0 0 288 288"
+            >
+              <linearGradient
+                id="PSgrad_0"
+                x1="70.711%"
+                x2="0%"
+                y1="70.711%"
+                y2="0%"
+              >
+                <stop offset="0%" stopColor="rgb(255,22,136)" stopOpacity="1" />
+                <stop
+                  offset="100%"
+                  stopColor="rgb(254,122,6)"
+                  stopOpacity="1"
+                />
               </linearGradient>
               <path fill="url(#PSgrad_0)">
-
-                <animate  repeatCount="indefinite" attributeName="d" dur="15s"
-                
-                values="M37.5,186c-12.1-10.5-11.8-32.3-7.2-46.7c4.8-15,13.1-17.8,30.1-36.7C91,68.8,83.5,56.7,103.4,45
+                <animate
+                  repeatCount="indefinite"
+                  attributeName="d"
+                  dur="15s"
+                  values="M37.5,186c-12.1-10.5-11.8-32.3-7.2-46.7c4.8-15,13.1-17.8,30.1-36.7C91,68.8,83.5,56.7,103.4,45
                 c22.2-13.1,51.1-9.5,69.6-1.6c18.1,7.8,15.7,15.3,43.3,33.2c28.8,18.8,37.2,14.3,46.7,27.9c15.6,22.3,6.4,53.3,4.4,60.2
                 c-3.3,11.2-7.1,23.9-18.5,32c-16.3,11.5-29.5,0.7-48.6,11c-16.2,8.7-12.6,19.7-28.2,33.2c-22.7,19.7-63.8,25.7-79.9,9.7
                 c-15.2-15.1,0.3-41.7-16.6-54.9C63,186,49.7,196.7,37.5,186z;
@@ -55,108 +89,234 @@ class IndexPage extends React.Component {
                 M37.5,186c-12.1-10.5-11.8-32.3-7.2-46.7c4.8-15,13.1-17.8,30.1-36.7C91,68.8,83.5,56.7,103.4,45
                 c22.2-13.1,51.1-9.5,69.6-1.6c18.1,7.8,15.7,15.3,43.3,33.2c28.8,18.8,37.2,14.3,46.7,27.9c15.6,22.3,6.4,53.3,4.4,60.2
                 c-3.3,11.2-7.1,23.9-18.5,32c-16.3,11.5-29.5,0.7-48.6,11c-16.2,8.7-12.6,19.7-28.2,33.2c-22.7,19.7-63.8,25.7-79.9,9.7
-                c-15.2-15.1,0.3-41.7-16.6-54.9C63,186,49.7,196.7,37.5,186z	"/>
-
-                </path>
-
+                c-15.2-15.1,0.3-41.7-16.6-54.9C63,186,49.7,196.7,37.5,186z	"
+                />
+              </path>
             </svg>
-            <img class="accent-gradient-circle" src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/gradient-circle.svg"></img>
-
+            <img
+              className="accent-gradient-circle"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/gradient-circle.svg"
+            ></img>
           </Container>
-          <Container className="blue-background collateral-section"> 
+          <Container className="blue-background collateral-section">
             <Row>
               <Col className="content-container centered-text compressed-content">
-                  <h2 className="white-text" >Marketing As Unique As YOU Are</h2>
-                  <p class="white-text">The biggest mistake IT companies make when developing their marketing strategy is that they build it around marketing the services they offer.</p>
-                  <p class="white-text">But the services you offer don’t make you different, in-fact it is the one thing that makes you just like everyone else. Any company of any size can partner with any vendor and offer what you offer and offer cheaper if they are smaller.</p>
-                  <p class="white-text">Your business is more than the solutions you resell. What truly makes you different is your vision, your culture, your process, your people and your infrastructure. Marketing those unique differintiators is the key to marketing success.</p>
+                <h2 className="white-text">Marketing As Unique As YOU Are</h2>
+                <p className="white-text">
+                  The biggest mistake IT companies make when developing their
+                  marketing strategy is that they build it around marketing the
+                  services they offer.
+                </p>
+                <p className="white-text">
+                  But the services you offer don’t make you different, in-fact
+                  it is the one thing that makes you just like everyone else.
+                  Any company of any size can partner with any vendor and offer
+                  what you offer and offer cheaper if they are smaller.
+                </p>
+                <p className="white-text">
+                  Your business is more than the solutions you resell. What
+                  truly makes you different is your vision, your culture, your
+                  process, your people and your infrastructure. Marketing those
+                  unique differintiators is the key to marketing success.
+                </p>
               </Col>
             </Row>
-            <video src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Marketing-As-Unique-As-You-Are_R16.mp4" autoPlay muted >
-              <p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
+            <video
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Marketing-As-Unique-As-You-Are_R16.mp4"
+              autoPlay
+              muted
+            >
+              <p>
+                If you are reading this, it is because your browser does not
+                support the HTML5 video element.
+              </p>
             </video>
-            <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/white-swoop.svg" alt="white-curve" className="white-swoop"></img>
+            <img
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/white-swoop.svg"
+              alt="white-curve"
+              className="white-swoop"
+            ></img>
           </Container>
-          <Container className="powers-section flexed"> 
+          <Container className="powers-section flexed">
             <Row className="two-columns full-width-row content-left align-middle">
-              <Col className="content-container"> 
-                  <h2 className="blue-text" >Unleash YOUR True Superpowers</h2>
-                  <p >Your most competitive advantage is not what you do but how you do it.</p>
-                  <p >The process you created is a direct reflection of your philosophy around support and customer service. </p>
-                  <p class="pink-text heavy-weight">Leverage that and create marketing that’s unique.</p>
-                  <a className="white-text pink-button" href="#">Learn More </a> 
+              <Col className="content-container">
+                <h2 className="blue-text">Unleash YOUR True Superpowers</h2>
+                <p>
+                  Your most competitive advantage is not what you do but how you
+                  do it.
+                </p>
+                <p>
+                  The process you created is a direct reflection of your
+                  philosophy around support and customer service.{" "}
+                </p>
+                <p className="pink-text heavy-weight">
+                  Leverage that and create marketing that’s unique.
+                </p>
+                <a className="white-text pink-button" href="#">
+                  Learn More{" "}
+                </a>
               </Col>
               <Col className="content-container center-image-container video-collage">
-                <div class="video-1">
-                    <video src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Computex-4-Export_R.mp4" autoPlay muted loop>
-                      <p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
-                    </video>
-                  </div>
-                <div class="video-2">
-                    <video src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Royal-It-4-Export_R.mp4" autoPlay muted loop>
-                      <p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
-                    </video>
-                  </div>
-                <div class="video-3">
-                    <video src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/BEI-–-4-export_R.mp4" autoPlay muted loop>
-                      <p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
-                    </video>
-                  </div>
-                <div class="video-4">
-                    <video src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/GB-Tech-4-Export_R.mp4" autoPlay muted loop>
-                      <p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
-                    </video>
-                  </div>
-                <div class="video-5">
-                    <video src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Stronghold-Data-4-export_R.mp4" autoPlay muted loop>
-                      <p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
-                    </video>
-                  </div>
+                <div className="video-1">
+                  <video
+                    src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Computex-4-Export_R.mp4"
+                    autoPlay
+                    muted
+                    loop
+                  >
+                    <p>
+                      If you are reading this, it is because your browser does
+                      not support the HTML5 video element.
+                    </p>
+                  </video>
+                </div>
+                <div className="video-2">
+                  <video
+                    src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Royal-It-4-Export_R.mp4"
+                    autoPlay
+                    muted
+                    loop
+                  >
+                    <p>
+                      If you are reading this, it is because your browser does
+                      not support the HTML5 video element.
+                    </p>
+                  </video>
+                </div>
+                <div className="video-3">
+                  <video
+                    src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/BEI-–-4-export_R.mp4"
+                    autoPlay
+                    muted
+                    loop
+                  >
+                    <p>
+                      If you are reading this, it is because your browser does
+                      not support the HTML5 video element.
+                    </p>
+                  </video>
+                </div>
+                <div className="video-4">
+                  <video
+                    src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/GB-Tech-4-Export_R.mp4"
+                    autoPlay
+                    muted
+                    loop
+                  >
+                    <p>
+                      If you are reading this, it is because your browser does
+                      not support the HTML5 video element.
+                    </p>
+                  </video>
+                </div>
+                <div className="video-5">
+                  <video
+                    src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Stronghold-Data-4-export_R.mp4"
+                    autoPlay
+                    muted
+                    loop
+                  >
+                    <p>
+                      If you are reading this, it is because your browser does
+                      not support the HTML5 video element.
+                    </p>
+                  </video>
+                </div>
               </Col>
             </Row>
-            <img className = "blob-graphic" src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"></img>
+            <img
+              className="blob-graphic"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"
+            ></img>
           </Container>
-          <Container className="target-section"> 
+          <Container className="target-section">
             <Row className="two-columns full-width-row content-right align-middle">
               <Col className="content-container video-container">
-              <video src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Lead-Categorizing-Export_v2R.mp4" autoPlay muted loop>
-                <p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
-              </video>
+                <video
+                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Lead-Categorizing-Export_v2R.mp4"
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <p>
+                    If you are reading this, it is because your browser does not
+                    support the HTML5 video element.
+                  </p>
+                </video>
               </Col>
-              <Col className="content-container"> 
-                  <h2 className="blue-text" >TARGET the Customers You Want</h2>
-                  <p >You know the kind of customers you want. Your IT marketing strategy should focus on attracting the customers that are the best fit for your organization.</p>
-                  <p >Stop dealing with difficult customers who aren’t a good match and <span class="pink-text heavy-weight">start focusing on growing your business the right way.</span></p>
-                  <a className="white-text pink-button" href="#">Learn More </a> 
+              <Col className="content-container">
+                <h2 className="blue-text">TARGET the Customers You Want</h2>
+                <p>
+                  You know the kind of customers you want. Your IT marketing
+                  strategy should focus on attracting the customers that are the
+                  best fit for your organization.
+                </p>
+                <p>
+                  Stop dealing with difficult customers who aren’t a good match
+                  and{" "}
+                  <span className="pink-text heavy-weight">
+                    start focusing on growing your business the right way.
+                  </span>
+                </p>
+                <a className="white-text pink-button" href="#">
+                  Learn More{" "}
+                </a>
               </Col>
             </Row>
-            <img className = "blob-graphic" src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"></img>
+            <img
+              className="blob-graphic"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"
+            ></img>
           </Container>
-          <Container className="flexed"> 
+          <Container className="flexed">
             <Row className="two-columns full-width-row content-left align-middle ">
-              <Col className="content-container"> 
-                  <h2 className="blue-text" >Outsmart Your Competition</h2>
-                  <p >Empower your sales team the way you empower your engineers. Leverage innovative technology and amazing marketing materials to help your sales team perfectly communicate your vision.</p>
-                  <p >When this is done properly, <span class="heavy-weight pink-text">you’ll convert more MSP leads to customers than ever before.</span></p>
-                  <p class="pink-text heavy-weight">Leverage that and create marketing that’s unique.</p>
-                  <a className="white-text pink-button" href="#">Learn More </a> 
+              <Col className="content-container">
+                <h2 className="blue-text">Outsmart Your Competition</h2>
+                <p>
+                  Empower your sales team the way you empower your engineers.
+                  Leverage innovative technology and amazing marketing materials
+                  to help your sales team perfectly communicate your vision.
+                </p>
+                <p>
+                  When this is done properly,{" "}
+                  <span className="heavy-weight pink-text">
+                    you’ll convert more MSP leads to customers than ever before.
+                  </span>
+                </p>
+                <p className="pink-text heavy-weight">
+                  Leverage that and create marketing that’s unique.
+                </p>
+                <a className="white-text pink-button" href="#">
+                  Learn More{" "}
+                </a>
               </Col>
               <Col className="content-container video-container">
-              <video src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Send-Marketing-COllaterall_R_v2.mp4" autoPlay muted loop>
-                <p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
-              </video>
+                <video
+                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Send-Marketing-COllaterall_R_v2.mp4"
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <p>
+                    If you are reading this, it is because your browser does not
+                    support the HTML5 video element.
+                  </p>
+                </video>
               </Col>
             </Row>
-            
           </Container>
 
-          <Container className="cta-container"> 
+          <Container className="cta-container">
             <Row className="">
-              <Col className="cta-card box-shadow"> 
-                  <h2 className="white-text compressed-text" >See How We Empower YOUR Brand.</h2>
-                  <a className="white-text blue-button" href="#">Take the First Step </a> 
+              <Col className="cta-card box-shadow">
+                <h2 className="white-text compressed-text">
+                  See How We Empower YOUR Brand.
+                </h2>
+                <a className="white-text blue-button" href="#">
+                  Take the First Step{" "}
+                </a>
               </Col>
-            </Row> 
+            </Row>
           </Container>
         </div>
       </Layout>
@@ -165,22 +325,22 @@ class IndexPage extends React.Component {
 }
 
 export const query = graphql`
-    query HomePageQuery{
-      wordpressPage(wordpress_id: {eq: 2}) {
-        acf {
-          hero_heading
-          hero_video_button_text
-          section_2_heading
-          section_2_content
-          section_3_heading
-          section_3_content
-          section_4_heading
-          section_4_content
-          section_5_heading
-          section_5_content
-        }
+  query HomePageQuery {
+    wordpressPage(wordpress_id: { eq: 2 }) {
+      acf {
+        hero_heading
+        hero_video_button_text
+        section_2_heading
+        section_2_content
+        section_3_heading
+        section_3_content
+        section_4_heading
+        section_4_content
+        section_5_heading
+        section_5_content
       }
     }
-` 
+  }
+`
 
 export default IndexPage

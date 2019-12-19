@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
 
 html {
   font-family: sans-serif;
@@ -245,10 +245,10 @@ h2 {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
-  padding-bottom: 0; 
+  padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
-  padding-top: 0; 
+  padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
   font-family: "Lato";
@@ -389,7 +389,7 @@ p {
   padding-top: 0;
   margin-bottom: 1.45rem;
   font-size: 20px;
-  font-family: "Poppins"; 
+  font-family: "Poppins";
 }
 figure {
   margin-left: 0;
@@ -628,7 +628,6 @@ pre tt:after {
 
 /*Bootstrap Overwrite*/
 
-
 main .container {
   max-width: 100%;
 }
@@ -638,15 +637,14 @@ h1 {
   font-size: 70px;
   font-family: "Oswald";
   font-weight: 600;
-
 }
 
 main h2 {
   font-size: 5vw;
   font-weight: 600;
   font-family: "Oswald";
-  margin: 1em 0 .5em;
-} 
+  margin: 1em 0 0.5em;
+}
 
 .light-weight {
   font-weight: 300;
@@ -664,6 +662,32 @@ header .navbar {
 header {
   z-index: 900;
   position: relative;
+  transition-duration: 0.5s;
+  &.end-transparency {
+    background: white;
+    .mainHeader .navbar-start .navbar-item {
+      color: #466777;
+    }
+    .first-logo {
+      opacity: 0;
+    }
+    .second-logo {
+      opacity: 1;
+    }
+    .navbar-end .button {
+      background: #ff3975;
+      color: white;
+      border: solid #ff3975 2px;
+    }
+    .button.is-light {
+      border: #0040ed solid 2px;
+      color: #0040ed;
+      background: white;
+    }
+  }
+  .second-logo {
+    opacity: 0;
+  }
 }
 
 header.fixed {
@@ -680,16 +704,17 @@ header.fixed {
   text-align: center;
   border-radius: 25px;
   background: #fff;
-  color: #0092FB;
+  color: #0092fb;
   display: inline-block;
-  -webkit-box-shadow: 0px 3px 6px 0px rgba(10,9,41,0.15);
-  -moz-box-shadow: 0px 3px 6px 0px rgba(10,9,41,0.15);
-  box-shadow: 0px 3px 6px 0px rgba(10,9,41,0.15);
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(10, 9, 41, 0.15);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(10, 9, 41, 0.15);
+  box-shadow: 0px 3px 6px 0px rgba(10, 9, 41, 0.15);
+  transition-duration: 0.5s;
 }
 
 .mainHeader .button.is-light {
   border: 2px solid #fff;
-  width: 190px; 
+  width: 190px;
   text-align: center;
   border-radius: 25px;
   display: inline-block;
@@ -697,19 +722,20 @@ header.fixed {
   color: #fff;
 }
 
-.mainHeader .nav-bar{
+.mainHeader .nav-bar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-} 
+}
 
 .mainHeader .navbar-start .navbar-item {
   font-size: "Poppins";
   text-transform: uppercase;
   color: #fff;
-  font-size: 14px; 
+  font-size: 14px;
+  transition-duration: 0.5s;
 }
 
 .mainHeader .navbar-start .navbar-item:hover,
@@ -718,10 +744,10 @@ header.fixed {
 }
 
 .navbar-link:not(.is-arrowless)::after {
-  border-color: #fff 
+  border-color: #fff;
 }
 
-#gatsby-focus-wrapper header { 
+#gatsby-focus-wrapper header {
   padding: 0px 5vw;
 }
 
@@ -748,11 +774,11 @@ header.fixed {
 }
 
 .subHeader li:nth-child(n + 1) {
-  margin-left: 20px
+  margin-left: 20px;
 }
 
 /*MainHeader*/
-.mainHeader { 
+.mainHeader {
   margin: 0 auto;
   padding: 0 10vw;
   display: flex;
@@ -761,14 +787,19 @@ header.fixed {
 
 .mainHeader a {
   color: #fff;
-  text-decoration: none; 
+  text-decoration: none;
   font-size: 14px;
   font-weight: 400;
 }
 
 .mainHeader .logo {
-  max-height: 80px; 
+  max-height: 80px;
   margin: 0;
+  transition-duration: 0.5s;
+}
+
+.mainHeader .second-logo {
+  position: absolute;
 }
 
 .mainHeader ul {
@@ -786,7 +817,7 @@ header.fixed {
 }
 
 .mainHeader li:nth-child(n + 1) {
-  margin-left: 20px
+  margin-left: 20px;
 }
 
 .mainHeader .navigation-container li {
@@ -794,17 +825,17 @@ header.fixed {
 }
 
 @media only screen and (max-width: 1200px) {
-  .mainheader .navigation-container ul{
+  .mainheader .navigation-container ul {
     margin-bottom: 0px;
-  } 
+  }
 
   .mainheader .navigation-container ul {
-    padding-top: 10px
+    padding-top: 10px;
   }
 
   .mainHeader .nav-bar {
-      flex-direction: column-reverse;
-      width: 100%;
+    flex-direction: column-reverse;
+    width: 100%;
   }
 
   .mainHeader .nav-button-container ul,
@@ -812,7 +843,7 @@ header.fixed {
     margin-bottom: 0px;
   }
 
-  .mainHeader .nav-button-container ,
+  .mainHeader .nav-button-container,
   .mainHeader .nav-button-container {
     width: 100%;
     display: block;
@@ -823,7 +854,7 @@ header.fixed {
 main .container {
   padding: 50px 0;
 }
- 
+
 main .row {
   margin: 0 auto;
   padding: 0px 10vw;
@@ -835,7 +866,7 @@ main .row.full-width-row {
 
 main .row.full-width-row.content-left {
   padding-left: 10vw;
-} 
+}
 
 main .row.full-width-row.content-right {
   padding-right: 10vw;
@@ -850,10 +881,9 @@ main .two-columns {
   display: flex;
 }
 
-main .two-columns .col{
+main .two-columns .col {
   max-width: 50vw;
 }
-
 
 /*Hero Styling*/
 
@@ -871,19 +901,19 @@ main .two-columns .col{
   z-index: 10;
 }
 
-.hero-section .content-container h1{
+.hero-section .content-container h1 {
   margin-bottom: 40px;
   font-size: 4vw;
   font-weight: 900;
-}  
+}
 
 .hero-section .accent-gradient-circle {
   display: none;
-} 
+}
 
 .hero-section .subtext {
   font-size: 24px;
-  font-weight: 300; 
+  font-weight: 300;
 }
 
 .hero-section .scroll-indicator {
@@ -907,14 +937,13 @@ main .two-columns .col{
   max-height: 75vh;
 }
 
-.video-background-container video { 
+.video-background-container video {
   width: 100%;
   height: auto;
 }
 
-
 @media only screen and (max-width: 1150px) {
-  .video-background-container video { 
+  .video-background-container video {
     width: auto;
     height: 100%;
   }
@@ -931,31 +960,31 @@ main .col {
 }
 
 .blue-text {
-  color: #0040ED;
+  color: #0040ed;
 }
 
-.yellow-text { 
-  color: #FCAC18;
+.yellow-text {
+  color: #fcac18;
 }
 
 .teal-text {
-  color: #1CF0BF;
+  color: #1cf0bf;
 }
 
 .pink-text {
-  color: #FF3975;
+  color: #ff3975;
 }
 
 .purple-text {
-  color: #9B52D1;
+  color: #9b52d1;
 }
 
 .light-blue-text {
-  color: #0092FB;
+  color: #0092fb;
 }
 
 .gold-text {
-  color: #FCAC18;
+  color: #fcac18;
 }
 
 .centered-text {
@@ -963,7 +992,7 @@ main .col {
 }
 
 main .compressed-content,
-main .compressed-text  { 
+main .compressed-text {
   max-width: 45vw;
   margin: 0 auto;
   min-width: 600px;
@@ -978,31 +1007,31 @@ main .centered-text {
 }
 
 main .blue-button {
-    border: 2px solid #0040ED;
-    padding: 9px 10px;
-    width: 230px;
-    text-align: center;
-    border-radius: 25px;
-    display: block;
-    background: #0040ED;
-    color: #fff;
-    font-weight: 900;
-    font-size: 20px;
-    transition: all .3s ease-in-out;
+  border: 2px solid #0040ed;
+  padding: 9px 10px;
+  width: 230px;
+  text-align: center;
+  border-radius: 25px;
+  display: block;
+  background: #0040ed;
+  color: #fff;
+  font-weight: 900;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 main .blue-button:hover {
-  transform: scale(1.05); 
-  transition: all .3s ease-in-out;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
   color: #fff;
   text-decoration: none;
 }
 
 .pink-button {
-  border: 2px solid #FF3975;
+  border: 2px solid #ff3975;
   text-align: center;
   border-radius: 25px;
-  background: #FF3975;
+  background: #ff3975;
   color: #fff;
   font-weight: 900;
   font-size: 20px;
@@ -1013,16 +1042,16 @@ main .blue-button:hover {
 }
 
 .pink-button:hover {
-  transform: scale(1.05); 
-  transition: all .3s ease-in-out;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
   color: #fff;
   text-decoration: none;
 }
 
 main .play-icon {
-    margin: 0;
-    margin-top: -5px;
-    margin-left: 10px;
+  margin: 0;
+  margin-top: -5px;
+  margin-left: 10px;
 }
 
 main .center-image-container {
@@ -1030,7 +1059,7 @@ main .center-image-container {
 }
 
 main .cta-card {
-  background: url('http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/card-background.png');
+  background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/card-background.png");
   background-size: cover;
   text-align: center;
   padding: 6vh;
@@ -1039,17 +1068,17 @@ main .cta-card {
 }
 
 main .box-shadow {
-  -webkit-box-shadow: 0px 20px 36px -19px rgba(0,81,255,0.16);
-  -moz-box-shadow: 0px 20px 36px -19px rgba(0,81,255,0.16);
-  box-shadow: 0px 20px 36px -19px rgba(0,81,255,0.16);
+  -webkit-box-shadow: 0px 20px 36px -19px rgba(0, 81, 255, 0.16);
+  -moz-box-shadow: 0px 20px 36px -19px rgba(0, 81, 255, 0.16);
+  box-shadow: 0px 20px 36px -19px rgba(0, 81, 255, 0.16);
 }
 
-main .cta-card .blue-button{
+main .cta-card .blue-button {
   margin: 5vh auto 0;
 }
 
 .pink-btn {
-  background: #FF3975;
+  background: #ff3975;
   border-radius: 29px;
   color: #fff;
   font-family: "Poppins";
@@ -1062,30 +1091,41 @@ main .cta-card .blue-button{
 
 .pink-btn:hover {
   transform: scale(1.05);
-  
 }
 
 .form-footer {
   text-align: right;
   padding: 20px 0;
 }
- 
+
 .form-footer button {
   margin: 0 0 auto auto;
 }
 
 .blue-gradient-background {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0000e6+2,7db9e8+100 */
-background: #0043f5; /* Old browsers */
-background: -moz-linear-gradient(left, #0043f5 2%, #7db9e8 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #0043f5 2%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #0043f5 2%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0043f5', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */ 
+  background: #0043f5; /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    #0043f5 2%,
+    #7db9e8 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    #0043f5 2%,
+    #7db9e8 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0043f5 2%,
+    #7db9e8 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0043f5', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
 }
 
 .blue-background {
   background-color: #0043f5;
-} 
+}
 
 main video {
   max-width: initial;
@@ -1094,13 +1134,17 @@ main video {
 .show-mobile {
   display: none;
 }
- 
+
 main .col.static-position {
   position: static;
 }
 
+.click-through {
+  pointer-events: none;
+}
+
 @media only screen and (max-width: 767px) {
-  main .compressed-content.col, 
+  main .compressed-content.col,
   main .compressed-text {
     max-width: 100vw;
     margin: 0 auto;
@@ -1115,7 +1159,7 @@ main .col.static-position {
     max-width: 100vw;
   }
 
-  main .flexed .two-columns{ 
+  main .flexed .two-columns {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -1135,17 +1179,29 @@ main .col.static-position {
   }
 }
 
-/*Footer*/ 
+/*Footer*/
 footer {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00a7ff+0,0000e6+100 */
   background: #00a7ff; /* Old browsers */
-  background: -moz-linear-gradient(top, #00a7ff 0%, #0000e6 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #00a7ff 0%,#0000e6 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #00a7ff 0%,#0000e6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(
+    top,
+    #00a7ff 0%,
+    #0000e6 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #00a7ff 0%,
+    #0000e6 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #00a7ff 0%,
+    #0000e6 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a7ff', endColorstr='#0000e6',GradientType=0 ); /* IE6-9 */
   color: #fff;
   line-height: 1em;
-  font-size: 16px; 
+  font-size: 16px;
 }
 
 footer h2 {
@@ -1166,8 +1222,8 @@ footer p {
 footer ::placeholder {
   color: #707070;
   opacity: 1;
-  text-indent: 0px; 
-  transition: all .3s ease;
+  text-indent: 0px;
+  transition: all 0.3s ease;
   font-family: "Poppins";
   padding: 0 10px;
 }
@@ -1185,7 +1241,7 @@ footer .form-section {
 
 footer .container {
   max-width: 100%;
-  width: 100%
+  width: 100%;
 }
 
 footer .row {
@@ -1196,7 +1252,13 @@ footer .row {
 
 footer .socket {
   background: #fe7e01;
-  background: -webkit-gradient(linear, left top, right top, color-stop(2%, #fe7e01), to(#ff017d));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(2%, #fe7e01),
+    to(#ff017d)
+  );
   background: linear-gradient(to right, #fe7e01 2%, #ff017d 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe7e01', endColorstr='#ff017d',GradientType=1 );
   max-width: 100%;
@@ -1214,32 +1276,40 @@ footer .socket p:first-child {
 }
 
 footer .certGraphic {
-  margin-right: 20px; 
+  margin-right: 20px;
   margin-bottom: 20px;
 }
 
 footer ul li {
-  list-style: none; 
+  list-style: none;
   margin-bottom: 10px;
 }
 
 footer ul li img {
   margin-right: 15px;
-  top: -2px; 
+  top: -2px;
 }
 /*!--------HOME PAGE -----------*/
 .home-page .hero-section {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00a7ff+1,0040ed+99 */
-    background: #00a7ff; /* Old browsers */
-    background: -moz-linear-gradient(top, #00a7ff 1%, #0043f5 99%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #00a7ff 1%,#0043f5 99%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #00a7ff 1%,#0043f5 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a7ff', endColorstr='#0043f5',GradientType=0 ); /* IE6-9 */
-    z-index: 10;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00a7ff+1,0040ed+99 */
+  background: #00a7ff; /* Old browsers */
+  background: -moz-linear-gradient(top, #00a7ff 1%, #0043f5 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #00a7ff 1%,
+    #0043f5 99%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #00a7ff 1%,
+    #0043f5 99%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a7ff', endColorstr='#0043f5',GradientType=0 ); /* IE6-9 */
+  z-index: 10;
 }
 
 .home-page .hero-section .blue-button {
-  margin: 50px 0
+  margin: 50px 0;
 }
 
 .home-page .hero-section .accent-gradient-circle {
@@ -1256,7 +1326,7 @@ footer ul li img {
   max-width: 20vw;
 }
 
-.home-page .hero-section svg{
+.home-page .hero-section svg {
   margin: 0 auto;
   width: 95vw;
   height: auto;
@@ -1296,7 +1366,7 @@ footer ul li img {
 .home-page .target-section .video-container {
   perspective: 700px;
   perspective-origin: 50% 50%;
-  text-align: center
+  text-align: center;
 }
 
 .home-page .target-section .col video {
@@ -1306,7 +1376,6 @@ footer ul li img {
 
 .home-page .video-collage > div {
   position: absolute;
-
 }
 
 .home-page .video-collage .video-1 {
@@ -1383,7 +1452,7 @@ footer ul li img {
 .home-page .target-section .blob-graphic {
   position: absolute;
   top: -16%;
-  right: 50%; 
+  right: 50%;
   z-index: -1;
   transform: scaleX(-1);
 }
@@ -1411,11 +1480,11 @@ footer ul li img {
   }
 
   main .home-page .container .col video {
-      max-width: 70vw;
-      margin-bottom: 3vh;
+    max-width: 70vw;
+    margin-bottom: 3vh;
   }
 
-  .home-page .hero-section svg{
+  .home-page .hero-section svg {
     margin: 0 auto;
     width: 95vw;
     height: auto;
@@ -1428,13 +1497,13 @@ footer ul li img {
   }
 
   .home-page .powers-section {
-    margin-top: 0
+    margin-top: 0;
   }
 
   .home-page .hero-section::before {
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     content: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/video-team-blob.png");
   }
 
@@ -1447,8 +1516,8 @@ footer ul li img {
   }
 
   .home-page .cta-container .row {
-    padding: 0
-  } 
+    padding: 0;
+  }
 
   .home-page .cta-container .cta-card {
     border-radius: 0px;
@@ -1459,12 +1528,11 @@ footer ul li img {
     width: 110vw;
     margin-left: -5vw;
     max-width: none;
-    position: absolute; 
+    position: absolute;
     top: auto;
     left: 0;
     z-index: 0;
   }
-
 }
 
 /*About Us */
@@ -1478,9 +1546,10 @@ footer ul li img {
 }
 
 .about-us-page .video-column video {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 1250px;
 }
 
 .about-us-page .hero-section {
@@ -1497,16 +1566,16 @@ footer ul li img {
 }
 
 .about-us-page .hero-section h2 {
-  font-size: 40px; 
+  font-size: 40px;
   margin-bottom: 5px;
-} 
+}
 
 .about-us-page .pink-banner {
   position: relative;
 }
 
 .about-us-page .pink-banner::before {
-  background: #FF135A;
+  background: #ff135a;
   height: 110px;
   content: "";
   width: 40vw;
@@ -1523,16 +1592,53 @@ footer ul li img {
 }
 
 .about-us-page .likes::before {
-  content: url('http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/like-icon.png');
+  content: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/like-icon.png");
   position: absolute;
   top: 3px;
   left: 0;
 }
 
+.employee-thumbnail-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 1050px;
+  margin: auto;
+  margin-top: -75px;
+}
+
+.about-us-page .thumbnail-container {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.about-us-page .thumbnail-container {
+  position: relative;
+  width: 85px;
+  height: 70px;
+  background: #333e4f;
+  img {
+    width: 85px;
+  }
+}
+
+.about-us-page .name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: "Oswald";
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+
 .about-us-page .values-card {
-  -webkit-box-shadow: 0px 3px 6px 0px rgba(10,9,41,0.15);
-  -moz-box-shadow: 0px 3px 6px 0px rgba(10,9,41,0.15);
-  box-shadow: 0px 3px 6px 0px rgba(10,9,41,0.15);
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(10, 9, 41, 0.15);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(10, 9, 41, 0.15);
+  box-shadow: 0px 3px 6px 0px rgba(10, 9, 41, 0.15);
   max-width: 80%;
   padding: 5%;
   border-radius: 10px;
@@ -1556,11 +1662,11 @@ footer ul li img {
 
 /*animations */
 @keyframes rotating {
-  from{
-      transform: rotate(0deg);
+  from {
+    transform: rotate(0deg);
   }
-  to{
-      transform: rotate(360deg);
+  to {
+    transform: rotate(360deg);
   }
 }
 
@@ -1671,7 +1777,7 @@ footer ul li img {
 */
 
 .process-page .deliverables-section {
-  margin-bottom: 10%; 
+  margin-bottom: 10%;
 }
 
 .process-page .step-section .content-container p,
@@ -1693,7 +1799,7 @@ footer ul li img {
 .process-page .story-section::before {
   background-image: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/blue-blob.svg);
   position: absolute;
-  bottom: 0; 
+  bottom: 0;
   right: 60%;
   content: "";
   height: 100%;
@@ -1715,7 +1821,7 @@ footer ul li img {
 .process-page .marketing-plan-section::before {
   background-image: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/blue-blob-2.svg);
   position: absolute;
-  bottom: 0; 
+  bottom: 0;
   right: 60%;
   content: "";
   height: 100%;
@@ -1726,7 +1832,7 @@ footer ul li img {
 .process-page .deliverables-section::before {
   background-image: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/pink-blob-3.svg);
   position: absolute;
-  bottom: 0; 
+  bottom: 0;
   left: 57%;
   content: "";
   height: 100%;
@@ -1737,8 +1843,8 @@ footer ul li img {
 @media only screen and (min-width: 767px) {
   .process-page .static-position img {
     position: absolute;
-    top: 0; 
-    right: 0; 
+    top: 0;
+    right: 0;
   }
 
   .process-page .content-right .static-position img {
@@ -1746,7 +1852,6 @@ footer ul li img {
     top: 0;
     right: auto;
     left: 0;
-
   }
 
   .process-page .marketing-plan-section .content-right img {
@@ -1754,7 +1859,7 @@ footer ul li img {
     top: 5%;
     right: auto;
     left: -10%;
-  } 
+  }
 
   .process-page .deliverables-section .static-position img {
     position: absolute;
@@ -1763,9 +1868,9 @@ footer ul li img {
     right: -5%;
   }
 }
- 
+
 @media only screen and (max-width: 767px) {
-  .process-page .step-section .content-container p, 
+  .process-page .step-section .content-container p,
   .process-page .step-section .content-container h2 {
     max-width: 100%;
   }
@@ -1780,3 +1885,13 @@ footer ul li img {
     min-height: initial;
   }
 }
+
+/****CONTACT US************/
+
+.contact-us .pink-blob-background {
+  background: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Mask-Group-2.png)
+    no-repeat center center;
+  background-size: cover;
+}
+
+/****END CONTACT US********/
