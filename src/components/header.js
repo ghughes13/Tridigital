@@ -69,7 +69,7 @@ const Header = ({ siteTitle }) => (
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <a className="button ">Marketing Warmup</a>
+              <a className="button first">Marketing Warmup</a>
               <a href="/contact-us" className="button is-light">
                 Contact Us
               </a>

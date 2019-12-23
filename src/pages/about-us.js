@@ -17,14 +17,14 @@ const AboutUs = () => (
       <Container className="container">
         <Row className="">
           <Col className="content-container column ">
-            <h2 className="blue-text centered-text">Our Core Values</h2>
+            <h2 className="blue-text centered-text core-values">Our Core Values</h2>
           </Col>
         </Row>
         <img
           className="blob-graphic"
           src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"
         ></img>
-        <Row className="two-columns full-width-row content-right align-middle">
+        <Row className="two-columns full-width-row content-right align-middle content-first">
           <Col className="content-container centered-text">
             <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/heart.png" />
           </Col>
@@ -38,7 +38,7 @@ const AboutUs = () => (
             </div>
           </Col>
         </Row>
-        <Row className="two-columns full-width-row content-right align-middle">
+        <Row className="two-columns full-width-row content-right align-middle content-second">
           <Col className="content-container">
             <div className="values-card left-align">
               <h3 className="purple-text">Create Superheroes</h3>
@@ -56,7 +56,7 @@ const AboutUs = () => (
           className="blob-graphic"
           src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"
         ></img>
-        <Row className="two-columns full-width-row content-right align-middle">
+        <Row className="two-columns full-width-row content-right align-middle content-third">
           <Col className="content-container centered-text">
             <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/Egg.png" />
           </Col>
@@ -70,7 +70,7 @@ const AboutUs = () => (
             </div>
           </Col>
         </Row>
-        <Row className="two-columns full-width-row content-right align-middle">
+        <Row className="two-columns full-width-row content-right align-middle content-fourth">
           <Col className="content-container">
             <div className="values-card left-align">
               <h3 className="yellow-text">Make Your Mark</h3>
@@ -84,7 +84,7 @@ const AboutUs = () => (
             <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/draw.png" />
           </Col>
         </Row>
-        <Row className="two-columns full-width-row content-right align-middle">
+        <Row className="two-columns full-width-row content-right align-middle content-fifth">
           <Col className="content-container centered-text">
             <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/paint.png" />
           </Col>

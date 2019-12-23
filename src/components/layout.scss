@@ -663,6 +663,17 @@ header {
   z-index: 900;
   position: relative;
   transition-duration: 0.5s;
+  .navbar-end a.button {
+    color: #0092FB;
+    &:first-child:hover {
+      border-color: #ff3975;
+      color:#ff3975;
+    }
+    &.is-light:hover {
+      border-color: #0092FB;
+      color:#0092FB;
+    }
+  }
   &.end-transparency {
     background: white;
     .mainHeader .navbar-start .navbar-item {
@@ -678,6 +689,7 @@ header {
       background: #ff3975;
       color: white;
       border: solid #ff3975 2px;
+      font-weight: 500;
     }
     .button.is-light {
       border: #0040ed solid 2px;
@@ -720,6 +732,7 @@ header.fixed {
   display: inline-block;
   background: transparent;
   color: #fff;
+  text-decoration: none;
 }
 
 .mainHeader .nav-bar {
@@ -736,6 +749,8 @@ header.fixed {
   color: #fff;
   font-size: 14px;
   transition-duration: 0.5s;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .mainHeader .navbar-start .navbar-item:hover,
@@ -789,7 +804,7 @@ header.fixed {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .mainHeader .logo {
@@ -905,10 +920,6 @@ main .two-columns .col {
   margin-bottom: 40px;
   font-size: 4vw;
   font-weight: 900;
-}
-
-.hero-section .accent-gradient-circle {
-  display: none;
 }
 
 .hero-section .subtext {
@@ -1314,7 +1325,7 @@ footer ul li img {
 
 .home-page .hero-section .accent-gradient-circle {
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
   right: 0;
   z-index: 10;
   -webkit-animation: rotating 10s linear infinite;
@@ -1536,6 +1547,34 @@ footer ul li img {
 }
 
 /*About Us */
+main .row.full-width-row.content-left {
+  padding-left: initial;
+}
+
+main .row.full-width-row.content-right {
+  padding-right: initial;
+}
+
+.about-us-page .content-first.row {
+  padding-bottom: 150px
+}
+
+.about-us-page .content-second.row {
+  padding-bottom: 85px
+}
+
+.about-us-page .content-third.row {
+  padding-bottom: 175px;
+}
+
+.about-us-page .content-fourth.row {
+  padding-bottom: 140px
+}
+
+// .about-us-page .content-fifth.row {
+//   padding-bottom: 150px
+// }
+
 .about-us-page .hero-section .row {
   padding-right: 0;
   width: 100%;
@@ -1547,14 +1586,26 @@ footer ul li img {
 
 .about-us-page .video-column video {
   position: absolute;
-  bottom: 0;
+  bottom: -112px;
   right: 0;
-  max-width: 1250px;
+  max-width: 1444px;
 }
 
 .about-us-page .hero-section {
   padding-bottom: 0;
   align-items: unset;
+  padding-bottom:200px;
+  &:after {
+      content: '';
+      background: url(https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/about-hero.svg);
+      background-size: cover;
+      background-position: top center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0px;
+      height: 263px;
+  }
 }
 
 .about-us-page .bio-content {
@@ -1562,7 +1613,7 @@ footer ul li img {
 }
 
 .about-us-page .blue-background {
-  background-color: #2444ff;
+  background-color: #2344f4;
 }
 
 .about-us-page .hero-section h2 {
@@ -1572,6 +1623,7 @@ footer ul li img {
 
 .about-us-page .pink-banner {
   position: relative;
+  min-height: 550px;
 }
 
 .about-us-page .pink-banner::before {
@@ -1604,7 +1656,7 @@ footer ul li img {
   flex-wrap: wrap;
   max-width: 1050px;
   margin: auto;
-  margin-top: -75px;
+  margin-top: -200px;
 }
 
 .about-us-page .thumbnail-container {
@@ -1635,6 +1687,11 @@ footer ul li img {
   text-align: center;
 }
 
+.about-us-page .core-values {
+  margin-top: 30px;
+  margin-bottom: 93px;
+}
+
 .about-us-page .values-card {
   -webkit-box-shadow: 0px 3px 6px 0px rgba(10, 9, 41, 0.15);
   -moz-box-shadow: 0px 3px 6px 0px rgba(10, 9, 41, 0.15);
@@ -1642,6 +1699,7 @@ footer ul li img {
   max-width: 80%;
   padding: 5%;
   border-radius: 10px;
+  background: white;
 }
 
 .about-us-page .values-card.left-align {
@@ -1657,7 +1715,7 @@ footer ul li img {
 .about-us-page .blob-graphic {
   position: absolute;
   left: 50%;
-  z-index: -1;
+  z-index: 0;
 }
 
 /*animations */
