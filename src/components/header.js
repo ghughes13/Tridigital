@@ -24,7 +24,6 @@ const Header = ({ siteTitle }) => (
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
     ></script>
-
     <nav className="mainHeader navbar" role="navigation">
       <div className="navbar-brand">
         <a className="navbar-item" href="/">

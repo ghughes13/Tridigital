@@ -137,7 +137,7 @@ class IndexPage extends React.Component {
               className="white-swoop"
             ></img>
           </Container>
-          <Container className="powers-section flexed">
+          <Container className="powers-section flexed max-width-fix">
             <Row className="two-columns full-width-row content-left align-middle">
               <Col className="content-container">
                 <h2 className="blue-text">Unleash YOUR True Superpowers</h2>
@@ -229,7 +229,7 @@ class IndexPage extends React.Component {
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"
             ></img>
           </Container>
-          <Container className="target-section">
+          <Container className="target-section max-width-fix">
             <Row className="two-columns full-width-row content-right align-middle">
               <Col className="content-container video-container">
                 <video
@@ -268,7 +268,7 @@ class IndexPage extends React.Component {
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"
             ></img>
           </Container>
-          <Container className="flexed">
+          <Container className="flexed max-width-fix">
             <Row className="two-columns full-width-row content-left align-middle ">
               <Col className="content-container">
                 <h2 className="blue-text">Outsmart Your Competition</h2>

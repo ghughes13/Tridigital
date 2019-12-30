@@ -664,14 +664,14 @@ header {
   position: relative;
   transition-duration: 0.5s;
   .navbar-end a.button {
-    color: #0092FB;
+    color: #0092fb;
     &:first-child:hover {
       border-color: #ff3975;
-      color:#ff3975;
+      color: #ff3975;
     }
     &.is-light:hover {
-      border-color: #0092FB;
-      color:#0092FB;
+      border-color: #0092fb;
+      color: #0092fb;
     }
   }
   &.end-transparency {
@@ -862,6 +862,20 @@ header.fixed {
   .mainHeader .nav-button-container {
     width: 100%;
     display: block;
+  }
+
+  #gatsby-focus-wrapper header {
+    padding: 0px 2vw;
+  }
+}
+
+@media screen and (max-width: 1085px) {
+  nav .navbar-burger {
+    display: initial;
+  }
+
+  .navbar-menu {
+    display: none;
   }
 }
 
@@ -1152,6 +1166,11 @@ main .col.static-position {
 
 .click-through {
   pointer-events: none;
+}
+
+main .max-width-fix {
+  max-width: 90%;
+  margin: auto;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1556,24 +1575,24 @@ main .row.full-width-row.content-right {
 }
 
 .about-us-page .content-first.row {
-  padding-bottom: 150px
+  padding-bottom: 150px;
 }
 
 .about-us-page .content-second.row {
-  padding-bottom: 85px
+  padding-bottom: 185px;
 }
 
 .about-us-page .content-third.row {
-  padding-bottom: 175px;
+  padding-bottom: 100px;
 }
 
 .about-us-page .content-fourth.row {
-  padding-bottom: 140px
+  padding-bottom: 170px;
 }
 
-// .about-us-page .content-fifth.row {
-//   padding-bottom: 150px
-// }
+.about-us-page .content-fifth.row {
+  padding-bottom: 110px;
+}
 
 .about-us-page .hero-section .row {
   padding-right: 0;
@@ -1594,17 +1613,17 @@ main .row.full-width-row.content-right {
 .about-us-page .hero-section {
   padding-bottom: 0;
   align-items: unset;
-  padding-bottom:200px;
+  padding-bottom: 200px;
   &:after {
-      content: '';
-      background: url(https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/about-hero.svg);
-      background-size: cover;
-      background-position: top center;
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0px;
-      height: 263px;
+    content: "";
+    background: url(https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/about-hero.svg);
+    background-size: cover;
+    background-position: top center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    height: 263px;
   }
 }
 
@@ -1716,6 +1735,15 @@ main .row.full-width-row.content-right {
   position: absolute;
   left: 50%;
   z-index: 0;
+}
+
+.about-us-page .blob-graphic.right-blob {
+  top: 0;
+}
+
+.about-us-page .blob-graphic.left-blob {
+  right: 30%;
+  left: initial;
 }
 
 /*animations */

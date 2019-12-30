@@ -17,11 +17,13 @@ const AboutUs = () => (
       <Container className="container">
         <Row className="">
           <Col className="content-container column ">
-            <h2 className="blue-text centered-text core-values">Our Core Values</h2>
+            <h2 className="blue-text centered-text core-values">
+              Our Core Values
+            </h2>
           </Col>
         </Row>
         <img
-          className="blob-graphic"
+          className="blob-graphic right-blob"
           src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"
         ></img>
         <Row className="two-columns full-width-row content-right align-middle content-first">
@@ -53,8 +55,8 @@ const AboutUs = () => (
           </Col>
         </Row>
         <img
-          className="blob-graphic"
-          src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"
+          className="blob-graphic left-blob"
+          src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/about-us-left-svg.svg"
         ></img>
         <Row className="two-columns full-width-row content-right align-middle content-third">
           <Col className="content-container centered-text">
