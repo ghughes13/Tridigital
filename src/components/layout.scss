@@ -1055,7 +1055,7 @@ main .blue-button:hover {
 .pink-button {
   border: 2px solid #ff3975;
   text-align: center;
-  border-radius: 25px;
+  border-radius: 30px;
   background: #ff3975;
   color: #fff;
   font-weight: 900;
@@ -1064,11 +1064,12 @@ main .blue-button:hover {
   display: block;
   padding: 13px 50px 12px;
   margin-top: 40px;
+  font-family: "Poppins";
+  transition: all 0.3s ease-in-out;
 }
 
 .pink-button:hover {
   transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
   color: #fff;
   text-decoration: none;
 }
@@ -1125,6 +1126,10 @@ main .cta-card .blue-button {
 
 .form-footer button {
   margin: 0 0 auto auto;
+}
+
+body p {
+  margin-bottom: 1rem;
 }
 
 .blue-gradient-background {
@@ -1369,7 +1374,7 @@ footer ul li img {
 }
 
 .home-page .white-swoop {
-  bottom: -20vh;
+  bottom: -25vh;
   width: 110vw;
   margin-left: -5vw;
   max-width: none;
@@ -1387,6 +1392,7 @@ footer ul li img {
 .home-page .collateral-section video {
   width: 100%;
   height: auto;
+  margin-top: -50px;
 }
 
 .home-page .container .col video {
@@ -1465,6 +1471,7 @@ footer ul li img {
 
 .home-page .powers-section {
   margin-top: -30vh;
+  margin-left: 10%;
 }
 
 .home-page .powers-section,
@@ -1501,6 +1508,10 @@ footer ul li img {
   display: block;
   background: transparent;
   z-index: 1200;
+}
+
+.home-page .outsmart-container {
+  margin-left: 10%;
 }
 
 @media only screen and (max-width: 767px) {

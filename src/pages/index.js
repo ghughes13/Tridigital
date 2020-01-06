@@ -268,7 +268,7 @@ class IndexPage extends React.Component {
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"
             ></img>
           </Container>
-          <Container className="flexed max-width-fix">
+          <Container className="flexed max-width-fix outsmart-container">
             <Row className="two-columns full-width-row content-left align-middle ">
               <Col className="content-container">
                 <h2 className="blue-text">Outsmart Your Competition</h2>
@@ -282,9 +282,6 @@ class IndexPage extends React.Component {
                   <span className="heavy-weight pink-text">
                     you’ll convert more MSP leads to customers than ever before.
                   </span>
-                </p>
-                <p className="pink-text heavy-weight">
-                  Leverage that and create marketing that’s unique.
                 </p>
                 <a className="white-text pink-button" href="#">
                   Learn More{" "}

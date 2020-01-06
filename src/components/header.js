@@ -20,6 +20,14 @@ const Header = ({ siteTitle }) => (
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
+      rel="stylesheet"
+    />
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
@@ -35,17 +43,6 @@ const Header = ({ siteTitle }) => (
             className="logo second-logo"
             src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Group-11.png"
           />
-        </a>
-        <a
-          role="button"
-          className="navbar-burger burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
         </a>
       </div>
       <div id="navbarBasicExample" className="navbar-menu">
