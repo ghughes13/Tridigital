@@ -620,6 +620,11 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+#gatsby-focus-wrapper {
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
@@ -655,8 +660,17 @@ main h2 {
 }
 
 /*Header */
+header {
+  z-index: 2000 !important;
+}
+
 header .navbar {
   background: transparent;
+}
+
+header .bm-burger-button,
+header .bm-menu-wrap {
+  display: none;
 }
 
 header {
@@ -839,6 +853,10 @@ header.fixed {
   margin: 0 1vw;
 }
 
+.navbar-brand .search {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
   .mainheader .navigation-container ul {
     margin-bottom: 0px;
@@ -869,13 +887,76 @@ header.fixed {
   }
 }
 
-@media screen and (max-width: 1085px) {
-  nav .navbar-burger {
+@media screen and (max-width: 1050px) {
+  header .bm-burger-button,
+  header .bm-menu-wrap {
     display: initial;
   }
 
   .navbar-menu {
     display: none;
+  }
+
+  .bm-burger-button > span {
+    position: fixed;
+    right: 50px;
+    top: 40px;
+    height: 25px;
+    width: 35px;
+  }
+
+  .bm-burger-button button {
+    position: fixed !important;
+    right: 50px;
+    top: 40px !important;
+    height: 25px !important;
+    width: 35px !important;
+    left: initial !important;
+  }
+
+  .bm-burger-bars {
+    background: white;
+  }
+
+  .end-transparency .bm-burger-bars {
+    background: #707070;
+    height: 5px;
+  }
+
+  .bm-cross-button > span {
+    height: 0 !important;
+  }
+
+  .bm-overlay {
+    top: 0;
+    left: 0;
+  }
+
+  .bm-menu-wrap,
+  .navbar-burger:hover {
+    top: 0;
+    background: white !important;
+  }
+
+  #navbarBasicExample {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand .search {
+    display: initial;
+  }
+
+  .navbar-brand .search {
+    position: fixed;
+    right: 25px;
+    top: 25px;
+  }
+
+  header nav.mainHeader {
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }
 
@@ -1176,6 +1257,10 @@ main .col.static-position {
 main .max-width-fix {
   max-width: 90%;
   margin: auto;
+}
+
+.margin-left-25px {
+  margin-left: 25px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1481,15 +1566,15 @@ footer ul li img {
 
 .home-page .powers-section .blob-graphic {
   position: absolute;
-  top: -16%;
-  left: 50%;
+  top: -18%;
+  left: 32%;
   z-index: -1;
 }
 
 .home-page .target-section .blob-graphic {
   position: absolute;
-  top: -16%;
-  right: 50%;
+  top: 20%;
+  right: 44%;
   z-index: -1;
   transform: scaleX(-1);
 }
@@ -1514,9 +1599,84 @@ footer ul li img {
   margin-left: 10%;
 }
 
+.home-page .asSeen {
+  display: flex;
+  align-items: center;
+}
+
+.home-page .as-seen-text {
+  color: white;
+  margin-bottom: 0;
+  margin-right: 15px;
+}
+
+.home-page .top-layer {
+  z-index: 999;
+}
+
+@media screen and (max-width: 1500px) {
+  .home-page .powers-section .blob-graphic {
+    position: absolute;
+    top: -5%;
+    left: 41%;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .home-page .powers-section {
+    margin-top: -20vh;
+  }
+
+  .home-page .hero-section .accent-gradient-circle {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .home-page .asSeen {
+    display: inline;
+  }
+
+  .home-page .as-seen-text {
+    color: white;
+    margin-bottom: 0;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+
+  .home-page .powers-section .blob-graphic {
+    position: absolute;
+    top: 16%;
+    left: 41%;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home-page .powers-section {
+    margin-top: -10vh;
+  }
+
+  .home-page .white-swoop {
+    bottom: -20vh;
+  }
+
+  .home-page .hero-section .accent-gradient-circle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 846px) {
+  main .compressed-text {
+    min-width: initial;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .home-page .powers-section .video-collage {
-    max-width: 70vw;
+    max-width: 100%;
     margin: 12vh 0 7vw -10vw;
   }
 
@@ -1548,7 +1708,8 @@ footer ul li img {
     content: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/video-team-blob.png");
   }
 
-  .home-page .hero-section svg {
+  .home-page .hero-section svg,
+  .home-page .scroll-indicator {
     display: none;
   }
 
@@ -1573,6 +1734,152 @@ footer ul li img {
     top: auto;
     left: 0;
     z-index: 0;
+  }
+
+  .home-page .hero-section .accent-gradient-circle {
+    display: none;
+  }
+
+  .hero-section .blue-button {
+    border: 2px solid #ff3975;
+    background: #ff3975;
+    margin-left: 25%;
+  }
+
+  header {
+    background: white;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.24);
+  }
+
+  header .second-logo {
+    opacity: 1;
+  }
+  header .first-logo {
+    opacity: 0;
+  }
+
+  .bm-burger-bars {
+    background: #707070;
+  }
+
+  .mainHeader .logo {
+    max-height: 45px;
+  }
+
+  .navbar-brand,
+  .navbar-tabs {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .bm-burger-button > span {
+    height: 20px;
+    width: 30px;
+    left: 25px;
+    top: 25px;
+  }
+
+  .bm-burger-button button {
+    left: 25px !important;
+    top: 25px !important;
+  }
+
+  main .row.full-width-row.content-left,
+  main .row.full-width-row.content-right {
+    padding: 0 0px;
+  }
+
+  .home-page .powers-section,
+  .home-page .outsmart-container {
+    margin-left: 0%;
+    margin: auto;
+  }
+
+  body p {
+    font-size: 18px;
+  }
+
+  main .home-page .container.outsmart-container .col video {
+    max-width: 100%;
+    margin-bottom: -50px;
+    margin-top: -50px;
+  }
+
+  .home-page .hero-section.blue-button {
+    margin-left: 50px;
+  }
+
+  .home-page .hero-section .row:first-child {
+    padding: 0 5vw;
+  }
+
+  .home-page .blue-background {
+    padding-top: 0;
+  }
+
+  body p {
+    margin-bottom: 1rem;
+    line-height: 28px;
+  }
+
+  .home-page .powers-section .blob-graphic {
+    position: absolute;
+    top: 0;
+    left: 41%;
+    z-index: -1;
+    transform: scale(1.5);
+  }
+
+  .home-page .target-section .video-container::before {
+    content: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-page .white-swoop {
+    bottom: -13vh;
+  }
+
+  .home-page .collateral-section video {
+    width: 120%;
+    height: auto;
+    margin-top: 0;
+    margin-left: -50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home-page .hero-section::before {
+    position: absolute;
+    top: 0;
+    left: -20%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .home-page .white-swoop {
+    bottom: -1vh;
+  }
+
+  .home-page .collateral-section video {
+    width: 300%;
+    height: auto;
+    margin-top: 0;
+    margin-left: -160px;
+  }
+
+  .home-page .collateral-section {
+    padding-bottom: 50px;
+  }
+
+  .home-page .hero-section .blue-button {
+    margin-left: 15px;
+  }
+
+  .home-page .powers-section .row:first-child {
+    margin-top: -50px;
   }
 }
 
@@ -1830,6 +2137,10 @@ main .row.full-width-row.content-right {
   padding: 0;
 }
 
+.process-page .step {
+  font-size: 34px;
+}
+
 /*
 .process-page .moodboard-section::after {
   background-image: url('http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/moodboard.png');
@@ -1885,8 +2196,8 @@ main .row.full-width-row.content-right {
 .process-page .knowledge-section::before {
   background-image: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/pink-blob-1.svg);
   position: absolute;
-  bottom: -5%;
-  left: 60%;
+  left: 46%;
+  top: -15%;
   content: "";
   height: 100%;
   width: 100%;
@@ -1896,12 +2207,12 @@ main .row.full-width-row.content-right {
 .process-page .story-section::before {
   background-image: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/blue-blob.svg);
   position: absolute;
-  bottom: 0;
-  right: 60%;
+  top: -41%;
+  right: 22%;
   content: "";
-  height: 100%;
-  width: 100%;
   background-repeat: no-repeat;
+  width: 100%;
+  height: 150%;
 }
 
 .process-page .moodboard-section::before {
@@ -1910,7 +2221,7 @@ main .row.full-width-row.content-right {
   top: -20%;
   left: 57%;
   content: "";
-  height: 100%;
+  height: 150%;
   width: 100%;
   background-repeat: no-repeat;
 }
@@ -1918,23 +2229,28 @@ main .row.full-width-row.content-right {
 .process-page .marketing-plan-section::before {
   background-image: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/blue-blob-2.svg);
   position: absolute;
-  bottom: 0;
-  right: 60%;
+  bottom: 6%;
+  right: 32%;
   content: "";
-  height: 100%;
+  height: 145%;
   width: 100%;
   background-repeat: no-repeat;
+  overflow: visible;
 }
 
 .process-page .deliverables-section::before {
   background-image: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/pink-blob-3.svg);
   position: absolute;
-  bottom: 0;
-  left: 57%;
+  top: -15%;
+  left: 50%;
   content: "";
-  height: 100%;
+  height: 120%;
   width: 100%;
   background-repeat: no-repeat;
+}
+
+.process-page .margin-left {
+  margin-left: 10%;
 }
 
 @media only screen and (min-width: 767px) {

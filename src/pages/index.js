@@ -35,7 +35,14 @@ class IndexPage extends React.Component {
                     alt="play button"
                   ></img>
                 </a>
-                <img src="https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/as-seen.svg"></img>
+                <div className="asSeen">
+                  <p className="as-seen-text">As seen in:</p>
+                  <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/Forbes.svg" />
+                  <img
+                    className="margin-left-25px"
+                    src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/ChannelPro.svg"
+                  />
+                </div>
               </Col>
               <Col className="content-container column video-container">
                 <img
@@ -137,8 +144,8 @@ class IndexPage extends React.Component {
               className="white-swoop"
             ></img>
           </Container>
-          <Container className="powers-section flexed max-width-fix">
-            <Row className="two-columns full-width-row content-left align-middle">
+          <Container className="powers-section flexed max-width-fix top-layer">
+            <Row className="two-columns full-width-row content-left align-middle top-layer">
               <Col className="content-container">
                 <h2 className="blue-text">Unleash YOUR True Superpowers</h2>
                 <p>
@@ -229,8 +236,8 @@ class IndexPage extends React.Component {
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"
             ></img>
           </Container>
-          <Container className="target-section max-width-fix">
-            <Row className="two-columns full-width-row content-right align-middle">
+          <Container className="target-section max-width-fix top-layer">
+            <Row className="two-columns full-width-row content-right align-middle top-layer">
               <Col className="content-container video-container">
                 <video
                   src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Lead-Categorizing-Export_v2R.mp4"
@@ -245,7 +252,7 @@ class IndexPage extends React.Component {
                 </video>
               </Col>
               <Col className="content-container">
-                <h2 className="blue-text">TARGET the Customers You Want</h2>
+                <h2 className="blue-text">TARGET the Customers You Want.</h2>
                 <p>
                   You know the kind of customers you want. Your IT marketing
                   strategy should focus on attracting the customers that are the
@@ -268,8 +275,8 @@ class IndexPage extends React.Component {
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"
             ></img>
           </Container>
-          <Container className="flexed max-width-fix outsmart-container">
-            <Row className="two-columns full-width-row content-left align-middle ">
+          <Container className="flexed max-width-fix outsmart-container top-layer">
+            <Row className="two-columns full-width-row content-left align-middle top-layer">
               <Col className="content-container">
                 <h2 className="blue-text">Outsmart Your Competition</h2>
                 <p>

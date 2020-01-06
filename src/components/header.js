@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Burger from "./burger.js"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -44,6 +45,11 @@ const Header = ({ siteTitle }) => (
             src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Group-11.png"
           />
         </a>
+        <Burger />
+        <img
+          src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/Icon.svg"
+          className="search"
+        />
       </div>
       <div id="navbarBasicExample" className="navbar-menu">
         <div className="navbar-start">
