@@ -16,7 +16,8 @@ const Process = () => (
         <Row>
           <Col className="content-container column centered-text">
             <h1 className="white-text">
-              HOW WE CREATE MARKETING MAGIC FOR YOU
+              HOW WE CREATE MARKETING <br />
+              MAGIC FOR YOU
             </h1>
             <p className="white-text subtext">
               How we create unique and creative strategy for your company.
@@ -30,9 +31,9 @@ const Process = () => (
       </Container>
 
       <Container className="container step-section knowledge-section flexed">
-        <Row className="two-columns full-width-row content-left align-middle margin-left">
+        <Row className="two-columns full-width-row content-left align-middle margin-left one">
           <Col className="content-container">
-            <p class="gold-text heavy-weight step">Step 1:</p>
+            <p class="gold-text heavy-weight step one">Step 1:</p>
             <h2 className="white-text ">The Knowledge Transfer</h2>
             <p class="white-text">
               This is where we ask our clients to fill out a series of
@@ -48,7 +49,7 @@ const Process = () => (
       </Container>
 
       <Container className="container step-section story-section">
-        <Row className="two-columns full-width-row content-right align-middle">
+        <Row className="two-columns full-width-row content-right align-middle two">
           <Col>
             <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/story-arc.png" />
           </Col>
@@ -67,7 +68,7 @@ const Process = () => (
       </Container>
 
       <Container className="container step-section moodboard-section flexed margin-left">
-        <Row className="two-columns full-width-row content-left align-middle ">
+        <Row className="two-columns full-width-row content-left align-middle three">
           <Col className="content-container">
             <p class="gold-text heavy-weight step">Step 3:</p>
             <h2 className="white-text ">Create a Moodboard</h2>
@@ -89,7 +90,7 @@ const Process = () => (
       </Container>
 
       <Container className="container step-section marketing-plan-section">
-        <Row className="two-columns full-width-row content-right align-middle">
+        <Row className="two-columns full-width-row content-right align-middle four">
           <Col className="static-position">
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/marketing-plan.png"
@@ -109,7 +110,7 @@ const Process = () => (
       </Container>
 
       <Container className="container step-section deliverables-section flexed margin-left">
-        <Row className="two-columns full-width-row content-left align-middle">
+        <Row className="two-columns full-width-row content-left align-middle five">
           <Col className="content-container">
             <p class="gold-text heavy-weight step">Step 5:</p>
             <h2 className="white-text ">Create and Execute Deliverables</h2>

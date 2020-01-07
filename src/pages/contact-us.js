@@ -11,7 +11,7 @@ import { Parallax, Background } from "react-parallax"
 const ContactUs = () => (
   <Layout>
     <SEO title="Contact Us" />
-    <div className="contact-us">
+    <div className="contact-us blue-sway">
       <Container className="container">
         <Row className="pink-blob-background">
           <Col className="content-container column ">
@@ -47,16 +47,19 @@ const ContactUs = () => (
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
           <Col className="content-container">
-            <div className="values-card left-align">
-              <h3 className="purple-text">Create Superheroes</h3>
-              <p>
-                People come first. We support, train, protect, and empower
-                people to unlock their superhuman potential.
-              </p>
-            </div>
+            <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Image-95.png" />
           </Col>
           <Col className="content-container centered-text">
-            <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/mask.png" />
+            <h2 className="blue-text centered-text core-values">
+              Download Our Brochure
+            </h2>
+            <p>
+              For more information on all of our services and pricing, please
+              download our IT Marketing Proposal.
+            </p>
+            <a className="white-text pink-button" href="#">
+              View Online Version
+            </a>
           </Col>
         </Row>
       </Container>

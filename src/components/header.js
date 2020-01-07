@@ -59,7 +59,9 @@ const Header = ({ siteTitle }) => (
           <a href="/process" className="navbar-item">
             Process
           </a>
-          <a className="navbar-item">Reviews</a>
+          <a href="/reviews" className="navbar-item">
+            Reviews
+          </a>
           <a className="navbar-item">Portfolio</a>
           <div className="navbar-item has-dropdown is-hoverable">
             <a className="navbar-link">Capabilities</a>

@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
 import * as PropTypes from "prop-types"
 import { Parallax, Background } from "react-parallax"
-import EmployeeInfo from "./about-us-employees"
+import EmployeeInfo from "../components/about-us-employees"
 
 const AboutUs = () => (
   <Layout>

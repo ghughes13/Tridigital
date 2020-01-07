@@ -2111,6 +2111,21 @@ main .row.full-width-row.content-right {
 }
 
 /*Process Page */
+.process-page .hero-section {
+  min-height: 643px;
+}
+
+.process-page .container:nth-child(2) {
+  min-height: 787px;
+}
+
+.process-page .container:nth-child(3),
+.process-page .container:nth-child(4),
+.process-page .container:nth-child(5),
+.process-page .container:nth-child(6) {
+  min-height: 858px;
+}
+
 .process-page {
   background-color: #0040ed;
 }
@@ -2141,51 +2156,21 @@ main .row.full-width-row.content-right {
   font-size: 34px;
 }
 
-/*
-.process-page .moodboard-section::after {
-  background-image: url('http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/moodboard.png');
-  background-position: center right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left:0;
-  content: "";
+.process-page .step.one {
+  margin-top: 25%;
 }
 
-.process-page .marketing-plan-section::after {
-  background-image: url('http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/marketing-plan.png');
-  background-position: center left;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-size: 65%;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left:0;
-  content: "";
+.process-page .row.one,
+.process-page .row.two {
+  align-items: initial;
 }
 
-.process-page .deliverables-section::after {
-  background-image: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/deliverables.png);
-  background-repeat: no-repeat;
-  background-size: 70%;
-  min-height: 115vh;  
-  background-position: 130% bottom;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left:0;
-  content: "";
+.process-page .three div img {
+  top: -100px;
 }
-*/
 
 .process-page .deliverables-section {
-  margin-bottom: 10%;
+  margin-bottom: 50px;
 }
 
 .process-page .step-section .content-container p,
@@ -2207,21 +2192,21 @@ main .row.full-width-row.content-right {
 .process-page .story-section::before {
   background-image: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/blue-blob.svg);
   position: absolute;
-  top: -41%;
-  right: 22%;
+  top: -53%;
+  right: 440px;
   content: "";
   background-repeat: no-repeat;
   width: 100%;
-  height: 150%;
+  height: 500%;
 }
 
 .process-page .moodboard-section::before {
   background-image: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/pink-blob-2.svg);
   position: absolute;
-  top: -20%;
+  top: -41%;
   left: 57%;
   content: "";
-  height: 150%;
+  height: 500%;
   width: 100%;
   background-repeat: no-repeat;
 }
@@ -2229,10 +2214,10 @@ main .row.full-width-row.content-right {
 .process-page .marketing-plan-section::before {
   background-image: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/blue-blob-2.svg);
   position: absolute;
-  bottom: 6%;
-  right: 32%;
+  top: -50%;
+  left: -600px;
   content: "";
-  height: 145%;
+  height: 300%;
   width: 100%;
   background-repeat: no-repeat;
   overflow: visible;
@@ -2244,13 +2229,160 @@ main .row.full-width-row.content-right {
   top: -15%;
   left: 50%;
   content: "";
-  height: 120%;
+  height: 500%;
   width: 100%;
   background-repeat: no-repeat;
 }
 
 .process-page .margin-left {
   margin-left: 10%;
+}
+
+@media screen and (max-width: 1600px) {
+  .process-page .five div img,
+  .process-page .four div img {
+    max-width: 75%;
+  }
+
+  .process-page .marketing-plan-section div.content-right img {
+    top: 15%;
+  }
+
+  .process-page .deliverables-section div.static-position img {
+    bottom: 0%;
+  }
+
+  .process-page .moodboard-section::before {
+    background-image: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/pink-blob-2.svg);
+    position: absolute;
+    top: -51%;
+    left: 45%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .process-page .deliverables-section::before {
+    top: -15%;
+    left: 37%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .process-page .story-section::before {
+    top: -60%;
+    right: 530px;
+  }
+
+  .process-page .three div img {
+    top: 0;
+  }
+
+  .process-page .moodboard-section::before {
+    background-image: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/pink-blob-2.svg);
+    position: absolute;
+    top: -42%;
+    left: 35%;
+  }
+
+  .process-page .marketing-plan-section::before {
+    top: -60%;
+    left: -700px;
+    width: 200%;
+  }
+
+  .process-page .deliverables-section::before {
+    top: -21%;
+    left: 30%;
+  }
+
+  .process-page .deliverables-section div.static-position img {
+    bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 1224px) {
+  .process-page .story-section::before {
+    top: -72%;
+    left: -600px;
+    transform: scale(0.9);
+    width: 200%;
+  }
+
+  .process-page .marketing-plan-section::before {
+    width: 200%;
+  }
+
+  .process-page .marketing-plan-section div.content-right img {
+    top: 25%;
+  }
+
+  .process-page .knowledge-section::before {
+    top: -25%;
+  }
+
+  .process-page .three div img {
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .process-page .knowledge-section::before {
+    top: -30%;
+  }
+
+  .process-page .five div img {
+    max-width: 85%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .process-page .knowledge-section::before {
+    top: -35%;
+  }
+
+  .process-page .story-section::before {
+    top: -72%;
+    left: -650px;
+  }
+
+  .process-page .three div img {
+    max-width: 75%;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .process-page .knowledge-section::before {
+    top: -40%;
+  }
+
+  .process-page .story-section::before {
+    top: -79%;
+    left: -700px;
+  }
+
+  .process-page .deliverables-section div.static-position img {
+    bottom: 15%;
+  }
+
+  .process-page .deliverables-section::before {
+    top: -30%;
+  }
+
+  .process-page .marketing-plan-section div.content-right img {
+    top: 30%;
+  }
+
+  .process-page .marketing-plan-section::before {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .process-page .knowledge-section::before {
+    top: -45%;
+    left: 50%;
+  }
 }
 
 @media only screen and (min-width: 767px) {
@@ -2297,14 +2429,220 @@ main .row.full-width-row.content-right {
   .process-page .step-section {
     min-height: initial;
   }
+
+  .process-page .container:nth-child(3),
+  .process-page .container:nth-child(4),
+  .process-page .container:nth-child(5),
+  .process-page .container:nth-child(6) {
+    min-height: initial;
+  }
+
+  .process-page .knowledge-section::before {
+    top: -2%;
+    left: -10%;
+    width: 300%;
+  }
+
+  .scroll-indicator {
+    display: none !important;
+  }
+
+  .process-page .hero-section {
+    min-height: initial;
+  }
+
+  .process-page .margin-left {
+    margin-left: 0;
+  }
+
+  .process-page .container {
+    max-width: 85%;
+    margin: auto;
+  }
+
+  .process-page .step.one {
+    margin-top: 0%;
+  }
+
+  .process-page .story-section::before {
+    top: -20%;
+    left: -700px;
+    transform: scale(0.5);
+    transform-origin: top;
+  }
+
+  .process-page .moodboard-section::before {
+    left: 0%;
+    transform: scale(0.5);
+    transform-origin: top;
+    top: -30%;
+    width: 149%;
+    z-index: 0;
+  }
+
+  .process-page .marketing-plan-section::before {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.5);
+    transform-origin: top;
+    top: -42%;
+    width: 300%;
+    left: -825px;
+    z-index: 1;
+  }
 }
 
 /****CONTACT US************/
 
-.contact-us .pink-blob-background {
-  background: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Mask-Group-2.png)
-    no-repeat center center;
-  background-size: cover;
+.contact-us .pink-blob-background::before {
+  content: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/contact/hero.svg");
+  position: absoulte;
+  top: 0;
+}
+
+.contact-us.blue-sway::after {
+  content: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/contact/footer.svg");
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 /****END CONTACT US********/
+
+/****REVIEWS************/
+
+.reviews .blue-gradient-background {
+  background: linear-gradient(to bottom, #00a7ff, #0040ed);
+  flex-direction: column;
+}
+
+.reviews .review-container {
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 23px 36px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 23px 36px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 23px 36px 0px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 60px;
+  background: white;
+}
+
+.reviews .full-person {
+  display: flex;
+}
+
+.reviews .half .data-container {
+  padding: 0 40px 40px 40px;
+  text-align: left;
+}
+
+.reviews .full-person .data-container {
+  text-align: left;
+  padding: 44px 66px;
+}
+
+.reviews .row {
+  justify-content: center;
+}
+
+.reviews .reviews-container .svg {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.reviews .reviews-container .full-person .svg {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.margin-top-90 {
+  margin-top: 90px;
+}
+
+.reviews .hero-section {
+  padding-top: 0;
+  margin-top: -1px;
+  margin-top: -35px;
+}
+
+.reviews .pink-text {
+  color: #ff64a7;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 6px;
+}
+
+.reviews .quote {
+  font-size: 18px;
+}
+
+.reviews .company-name {
+  color: #0040ed;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.reviews .reviews-container .row {
+  max-width: 80%;
+}
+
+.reviews .blue-swish::before {
+  position: absolute;
+  content: "";
+  width: 149%;
+  height: 600px;
+  background: url(https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/reviews/Blue%20Sway.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: -711px 111%;
+}
+
+.reviews .blue-swish::before {
+  padding-top: 0;
+  margin-top: -50px;
+}
+
+/****END REVIEWS********/
+
+/****WISTIA STYLES************/
+
+.wistia_responsive_padding {
+  padding: 56.25% 0 0 0;
+  position: relative;
+}
+
+.wistia_responsive_wrapper {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.wistia_embed {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.wistia_swatch {
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transition: opacity 200ms;
+  width: 100%;
+}
+
+.wistia_swatch img {
+  filter: blur(5px);
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+/****END REVIEWS********/
