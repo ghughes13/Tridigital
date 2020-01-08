@@ -1717,11 +1717,11 @@ footer ul li img {
     display: none;
   }
 
-  .home-page .cta-container .row {
+  .cta-container .row {
     padding: 0;
   }
 
-  .home-page .cta-container .cta-card {
+  .cta-container .cta-card {
     border-radius: 0px;
   }
 
@@ -2238,6 +2238,10 @@ main .row.full-width-row.content-right {
   margin-left: 10%;
 }
 
+.process-page .mobile-img {
+  display: none;
+}
+
 @media screen and (max-width: 1600px) {
   .process-page .five div img,
   .process-page .four div img {
@@ -2426,21 +2430,20 @@ main .row.full-width-row.content-right {
     display: none;
   }
 
-  .process-page .step-section {
-    min-height: initial;
-  }
-
+  .process-page .step-section,
   .process-page .container:nth-child(3),
   .process-page .container:nth-child(4),
   .process-page .container:nth-child(5),
   .process-page .container:nth-child(6) {
-    min-height: initial;
+    min-height: initial !important;
   }
 
   .process-page .knowledge-section::before {
-    top: -2%;
-    left: -10%;
-    width: 300%;
+    display: none;
+  }
+
+  .process-page .deliverables-section::before {
+    display: none;
   }
 
   .scroll-indicator {
@@ -2465,29 +2468,49 @@ main .row.full-width-row.content-right {
   }
 
   .process-page .story-section::before {
-    top: -20%;
-    left: -700px;
-    transform: scale(0.5);
-    transform-origin: top;
+    display: none;
   }
 
   .process-page .moodboard-section::before {
-    left: 0%;
-    transform: scale(0.5);
-    transform-origin: top;
-    top: -30%;
-    width: 149%;
-    z-index: 0;
+    display: none;
   }
 
   .process-page .marketing-plan-section::before {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.5);
-    transform-origin: top;
-    top: -42%;
-    width: 300%;
-    left: -825px;
-    z-index: 1;
+    display: none;
+  }
+
+  .process-page .mobile-img {
+    display: initial;
+  }
+
+  .process-page .desktop-img {
+    display: none;
+  }
+
+  .process-page .hero-section > .row {
+    padding: 0;
+  }
+
+  .process-page .cta-container.container {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .process-page .knowledge-section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .process-page .knowledge-section .col:nth-child(2) {
+    min-height: 350px;
+    max-height: 430px;
+  }
+
+  .process-page .knowledge-section .col:nth-child(2) img {
+    right: -20%;
+    top: -30px;
+    transform: scale(1.2);
+    max-height: 430px;
   }
 }
 
@@ -2511,8 +2534,29 @@ main .row.full-width-row.content-right {
 /****REVIEWS************/
 
 .reviews .blue-gradient-background {
-  background: linear-gradient(to bottom, #00a7ff, #0040ed);
+  background: linear-gradient(to bottom, #00a7ff, #0040ed 20%);
   flex-direction: column;
+  padding-bottom: 0;
+}
+
+.reviews .blue-gradient-background .row:first-child {
+  padding-top: 180px;
+  padding-bottom: 100px;
+}
+
+.reviews .blue-gradient-background .subtext {
+  margin-top: 30px;
+}
+
+.reviews .hero-section::before {
+  content: url("https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/reviews/Hero%20Blob.svg");
+  position: absolute;
+  top: -16%;
+  right: -18%;
+}
+
+.reviews .blue-gradient-background .row:nth-child(2) {
+  max-width: 80%;
 }
 
 .reviews .review-container {
@@ -2521,10 +2565,20 @@ main .row.full-width-row.content-right {
   -webkit-box-shadow: 0px 23px 36px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 23px 36px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 23px 36px 0px rgba(0, 0, 0, 0.1);
-  max-width: 80%;
+  max-width: 100%;
   margin: auto;
   margin-bottom: 60px;
   background: white;
+  z-index: 999;
+}
+
+.phone-img-container {
+  text-align: center;
+}
+
+.phone-img-container img {
+  margin-top: 50px;
+  transform: scale(1.2);
 }
 
 .reviews .full-person {
@@ -2541,16 +2595,29 @@ main .row.full-width-row.content-right {
   padding: 44px 66px;
 }
 
+.reviews .full-person .svg {
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+}
+
+.reviews .full-person .quote {
+  white-space: pre-line;
+}
+
 .reviews .row {
   justify-content: center;
 }
 
-.reviews .reviews-container .svg {
+.reviews .review-container .svg {
   text-align: center;
   margin-top: 30px;
 }
 
-.reviews .reviews-container .full-person .svg {
+.reviews .review-container.full-person {
+  margin: 0 2vw 60px 2vw;
+}
+
+.reviews .review-container.full-person .svg {
   text-align: left;
   margin-bottom: 25px;
 }
@@ -2572,8 +2639,16 @@ main .row.full-width-row.content-right {
   letter-spacing: 6px;
 }
 
+.reviews .half .review-container .quote,
+.reviews .half-person .quote {
+  min-height: 64px;
+}
+
 .reviews .quote {
   font-size: 18px;
+  font-family: "Poppins";
+  margin-bottom: 30px;
+  line-height: 32px;
 }
 
 .reviews .company-name {
@@ -2599,9 +2674,174 @@ main .row.full-width-row.content-right {
   background-position: -711px 111%;
 }
 
-.reviews .blue-swish::before {
+.reviews .blue-swish {
   padding-top: 0;
-  margin-top: -50px;
+}
+
+.reviews .blue-swish .col {
+  z-index: 888;
+}
+
+.reviews .half-person img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.reviews .half-person .data-container {
+  text-align: left;
+  padding: 0 40px 40px 40px;
+}
+
+.blue-swish .row:nth-child(2),
+.blue-swish .row:nth-child(4),
+.blue-swish .row:nth-child(6),
+.blue-swish .row:nth-child(8),
+.blue-swish .row:nth-child(11),
+.blue-swish .row:nth-child(13) {
+  position: relative;
+}
+
+.blue-swish .row:nth-child(2)::before {
+  content: url("https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/reviews/Blob%201.svg");
+  position: absolute;
+  right: -50%;
+  z-index: 0;
+  top: 0;
+}
+
+.blue-swish .row:nth-child(4)::before {
+  content: url("https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/reviews/Blob%202.svg");
+  position: absolute;
+  top: 0;
+  left: -50%;
+}
+
+.blue-swish .row:nth-child(6)::before {
+  content: url("https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/reviews/Blob%203.svg");
+  position: absolute;
+  right: -50%;
+  z-index: 0;
+}
+
+.blue-swish .row:nth-child(8)::before {
+  content: url("https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/reviews/Blob%204.svg");
+  position: absolute;
+  top: 40%;
+  left: -50%;
+}
+
+.blue-swish .row:nth-child(11)::before {
+  content: url("https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/reviews/Blob%206.svg");
+  position: absolute;
+  right: -50%;
+  top: -40%;
+}
+
+@media screen and (max-width: 1500px) {
+  .reviews .blue-swish::before {
+    background-position: -500px 111%;
+  }
+
+  .blue-swish .row:nth-child(2)::before {
+    right: -70%;
+  }
+
+  .blue-swish .row:nth-child(4)::before {
+    left: -70%;
+  }
+
+  .blue-swish .row:nth-child(6)::before {
+    right: -70%;
+  }
+
+  .blue-swish .row:nth-child(8)::before {
+    left: -70%;
+  }
+
+  .blue-swish .row:nth-child(11)::before {
+    right: -70%;
+  }
+
+  .reviews .blue-gradient-background .row:nth-child(2),
+  .reviews .reviews-container .row {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 1224px) {
+  .review-container.full-person img {
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .reviews .blue-swish::before {
+    background-position: -300px -50px;
+  }
+
+  .reviews .full-person .data-container {
+    padding: 30px 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reviews .blue-gradient-background .row {
+    flex-direction: column;
+  }
+
+  .reviews .subtext {
+    margin-bottom: 50px;
+  }
+
+  .reviews .blue-swish::before {
+    background-position: 0 0%;
+  }
+
+  .reviews .half .review-container .quote,
+  .reviews .half-person .quote {
+    min-height: initial;
+  }
+
+  .reviews .full-person {
+    flex-direction: column;
+  }
+
+  .reviews .full-person img {
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .reviews .company-name {
+    font-size: 26px;
+  }
+
+  .reviews .pink-text {
+    font-size: 18px;
+  }
+
+  .reviews .svg svg {
+    max-width: 100%;
+  }
+
+  .reviews .half .data-container {
+    padding: 0 30px 30px 30px;
+  }
+
+  .reviews .full-person .data-container {
+    text-align: left;
+    padding: 20px 30px 30px 30px;
+  }
+
+  .reviews .half-person .data-container {
+    text-align: left;
+    padding: 0 30px 30px 30px;
+  }
+
+  .blue-swish .row:nth-child(6)::before,
+  .blue-swish .row:nth-child(8)::before,
+  .blue-swish .row:nth-child(11)::before {
+    z-index: -1;
+  }
 }
 
 /****END REVIEWS********/
@@ -2611,6 +2851,7 @@ main .row.full-width-row.content-right {
 .wistia_responsive_padding {
   padding: 56.25% 0 0 0;
   position: relative;
+  margin-right: -1px;
 }
 
 .wistia_responsive_wrapper {

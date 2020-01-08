@@ -18,7 +18,7 @@ const ContactUs = () => (
               us.
             </p>
           </Col>
-          <Col className="content-container column ">
+          <Col className="content-container column phone-img-container">
             <img src="https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/reviews/Phone%20Img.svg" />
           </Col>
         </Row>
