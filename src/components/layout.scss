@@ -2501,32 +2501,180 @@ main .row.full-width-row.content-right {
     padding-bottom: 0;
   }
 
+  .process-page .step-section {
+    padding-top: 0;
+  }
+
+  .process-page .marketing-plan-section {
+    padding-bottom: 0;
+  }
+
   .process-page .knowledge-section .col:nth-child(2) {
     min-height: 350px;
     max-height: 430px;
   }
 
   .process-page .knowledge-section .col:nth-child(2) img {
+    position: absolute;
     right: -20%;
     top: -30px;
     transform: scale(1.2);
+    max-height: 320px;
+  }
+
+  .process-page .story-section .col:first-child {
+    min-height: 350px;
     max-height: 430px;
+  }
+
+  .process-page .story-section .col:first-child img {
+    position: absolute;
+    left: -40%;
+    top: 0px;
+    transform: scale(1.2);
+    max-height: 336px;
+  }
+
+  .process-page .moodboard-section .col:nth-child(2) {
+    min-height: 350px;
+    max-height: 430px;
+  }
+
+  .process-page .moodboard-section .col:nth-child(2) img {
+    position: absolute;
+    right: -22%;
+    top: 70px;
+    transform: scale(3);
+    max-height: 220px;
+  }
+
+  .process-page .marketing-plan-section .col:first-child {
+    min-height: 350px;
+    max-height: 430px;
+  }
+
+  .process-page .marketing-plan-section .col:first-child img {
+    position: absolute;
+    left: -31%;
+    top: 30px;
+    transform: scale(2);
+    max-height: 240px;
+  }
+
+  .process-page .deliverables-section .col:nth-child(2) {
+    min-height: 350px;
+    max-height: 430px;
+  }
+
+  .process-page .deliverables-section .col:nth-child(2) img {
+    position: absolute;
+    right: -20%;
+    top: 70px;
+    transform: scale(2);
+    max-height: 230px;
+  }
+
+  .process-page .step-section .content-container h2 {
+    font-size: 40px;
+  }
+
+  .mobile-padding-top-50 {
+    padding-top: 50px !important;
+  }
+
+  .mobile-padding-top-100 {
+    padding-top: 100px !important;
   }
 }
 
 /****CONTACT US************/
 
 .contact-us .pink-blob-background::before {
-  content: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/contact/hero.svg");
-  position: absoulte;
+  content: "";
+  background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/contact/hero.svg");
+  position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 110vw;
+  background-position: -5vw -600px;
 }
 
-.contact-us.blue-sway::after {
+.contact-us > .container::before {
   content: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/contact/footer.svg");
   position: absolute;
   left: 0;
   right: 0;
+}
+
+.contact-us .hook {
+  width: 100vw;
+  height: 5px;
+}
+
+.contact-us .hook:before {
+  content: "";
+  background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/contact/circle.svg");
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 25%;
+  left: 0;
+}
+
+.contact-us .hook:after {
+  content: "";
+  background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/contact/top-right%20blob.svg");
+  position: absolute;
+}
+
+.contact-us .form-container {
+  background: white;
+  padding: 25px 25px 40px 25px;
+}
+
+.contact-us .form-title {
+  font-size: 34px;
+  font-family: "Poppins";
+  font-weight: 700;
+  color: #0040ed;
+  text-align: center;
+  max-width: 450px;
+  margin: auto;
+}
+
+.contact-us form label {
+  font-family: "Poppins";
+  font-size: 16px;
+  display: block;
+}
+
+.contact-us form input {
+  width: 100%;
+}
+
+div.contact-method {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.contact-method a {
+  margin-left: 15px;
+  font-size: 22px;
+  font-family: "Poppins";
+}
+
+.download-brochure {
+  max-width: 90%;
+}
+
+.download-col,
+.download-col h2 {
+  text-align: left;
 }
 
 /****END CONTACT US********/

@@ -85,17 +85,13 @@ const Header = ({ siteTitle }) => (
   </header>
 )
 
-try {
-  window.addEventListener("scroll", function() {
-    if (window.scrollY === 0) {
-      document.querySelector("header").classList.remove("end-transparency")
-    } else {
-      document.querySelector("header").classList.add("end-transparency")
-    }
-  })
-} catch (e) {
-  console.log(e)
-}
+window.addEventListener("scroll", function() {
+  if (window.scrollY === 0) {
+    document.querySelector("header").classList.remove("end-transparency")
+  } else {
+    document.querySelector("header").classList.add("end-transparency")
+  }
+})
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
