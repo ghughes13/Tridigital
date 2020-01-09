@@ -1,22 +1,13 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
-
-import Layout from "./layout"
-import Image from "./image"
-import SEO from "./seo"
 import { Container, Row, Col } from "react-bootstrap"
-import * as PropTypes from "prop-types"
-import { Parallax, Background } from "react-parallax"
 
 let employees = require("../../employee-data.json")
 console.log(employees)
-let clickedOn = ""
 
 export default function EmployeeInfo() {
   const [employeeToShow, setEmployeeToShow] = useState(0)
   let vidURL =
     "http://tdgatsbytest.wpengine.com" + employees[employeeToShow].videoURL
-  console.log(vidURL)
 
   return (
     <div>
