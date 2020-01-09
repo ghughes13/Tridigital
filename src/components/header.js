@@ -90,14 +90,6 @@ const Header = ({ siteTitle }) => (
   </header>
 )
 
-window.addEventListener("scroll", function() {
-  if (window.scrollY === 0) {
-    document.querySelector("header").classList.remove("end-transparency")
-  } else {
-    document.querySelector("header").classList.add("end-transparency")
-  }
-})
-
 Header.propTypes = {
   siteTitle: PropTypes.string,
 }
