@@ -8,7 +8,7 @@ export default class YourVideo extends React.Component {
     }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const script1 = document.createElement("script")
     const script2 = document.createElement("script")
 
