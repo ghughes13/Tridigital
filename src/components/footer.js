@@ -58,7 +58,7 @@ const Footer = () => (
 
     <Row className="socket">
       <p>
-        © 2019 - TriDigital | Terms if Service | Privacy Policy | Security Level
+        © 2020 - TriDigital | Terms if Service | Privacy Policy | Security Level
         Agreement{" "}
       </p>
       <p>Sitemap | Employee Training</p>

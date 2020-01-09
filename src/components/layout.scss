@@ -893,6 +893,15 @@ header.fixed {
     display: initial;
   }
 
+  .bm-item-list a {
+    color: black;
+  }
+
+  .mainHeader .navbar-burger .bm-cross {
+    top: calc(50% - 3px);
+    height: 20px !important;
+  }
+
   .navbar-menu {
     display: none;
   }
@@ -1095,6 +1104,10 @@ main .col {
 
 .centered-text {
   text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 main .compressed-content,
@@ -2589,6 +2602,11 @@ main .row.full-width-row.content-right {
 
 /****CONTACT US************/
 
+.contact-us h2 {
+  font-size: 4.5vw;
+  margin-top: 125px;
+}
+
 .contact-us .pink-blob-background::before {
   content: "";
   background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/contact/hero.svg");
@@ -2598,20 +2616,44 @@ main .row.full-width-row.content-right {
   right: 0;
   height: 100%;
   background-repeat: no-repeat;
-  background-size: 110vw;
-  background-position: -5vw -600px;
+  background-size: 2112px;
+  background-position: -76px -700px;
 }
 
-.contact-us > .container::before {
-  content: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/contact/footer.svg");
+main .contact-us .contact-row {
+  margin-top: -150px;
+}
+
+.contact-us .pink-blob-background .col:first-child {
+  padding: 0 1vw;
+}
+
+.contact-us {
+  position: relative;
+}
+
+.contact-us::before {
+  content: "";
   position: absolute;
-  left: 0;
+  left: -10vw;
   right: 0;
+  bottom: 0px;
+  background: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/contact/footer.svg);
+  height: 425px;
+  width: 110vw;
+  background-size: 135vw;
+  background-repeat: no-repeat;
+  background-position: -15vw -30px;
+}
+
+.contact-method-container {
+  z-index: 999;
 }
 
 .contact-us .hook {
   width: 100vw;
   height: 5px;
+  pointer-events: none;
 }
 
 .contact-us .hook:before {
@@ -2621,19 +2663,37 @@ main .row.full-width-row.content-right {
   width: 600px;
   position: absolute;
   background-repeat: no-repeat;
-  top: 25%;
+  top: 15%;
   left: 0;
+  z-index: 1;
 }
 
 .contact-us .hook:after {
   content: "";
   background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/contact/top-right%20blob.svg");
   position: absolute;
+  height: 600px;
+  width: 600px;
+  z-index: 1;
+  right: 0;
+  top: -21px;
+}
+
+.contact-us .pink-blob-background .col:first-child {
+  z-index: 9;
+}
+
+.contact-us .pink-blob-background .col:last-child {
+  z-index: 1;
 }
 
 .contact-us .form-container {
   background: white;
-  padding: 25px 25px 40px 25px;
+  // padding: 25px 25px 40px 25px;
+  padding: 1.5vw 2vw 2vw 2vw;
+  border-radius: 10px;
+  box-shadow: 0px 23px 36px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
 }
 
 .contact-us .form-title {
@@ -2644,6 +2704,7 @@ main .row.full-width-row.content-right {
   text-align: center;
   max-width: 450px;
   margin: auto;
+  margin-bottom: 25px;
 }
 
 .contact-us form label {
@@ -2652,29 +2713,273 @@ main .row.full-width-row.content-right {
   display: block;
 }
 
-.contact-us form input {
+.contact-us .form-container form input,
+.contact-us .form-container form textarea {
   width: 100%;
+  padding: 10px;
+  border: solid #c9cbd9 1px;
+}
+
+.contact-us .form-container form textarea {
+  height: 100px;
+}
+
+.contact-us .form-container button {
+  width: 325px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.contact-us .brochure-img img {
+  transform: scale(1.25);
+  margin-top: 100px;
+}
+
+.textarea-label {
+  margin-top: 25px;
+}
+
+.checkbox-part {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.checkbox-part label {
+  margin-bottom: 0;
+  margin-left: 40px;
+}
+
+.checkbox-part input {
+  width: 10px !important;
+}
+
+.checkbox::before {
+  content: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Rectangle-131.png");
+  position: absolute;
+  top: -8px;
 }
 
 div.contact-method {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
+  padding-right: 0;
 }
 
 .contact-method a {
-  margin-left: 15px;
+  margin-left: 20px;
   font-size: 22px;
   font-family: "Poppins";
-}
-
-.download-brochure {
-  max-width: 90%;
-}
-
-.download-col,
-.download-col h2 {
+  transition-duration: 0.2s;
   text-align: left;
+  color: #0092fb;
+}
+
+.contact-method a:hover {
+  color: #ff3975;
+  text-decoration: none;
+}
+
+main .download-brochure {
+  max-width: 90%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+main .download-col,
+main .download-col h2 {
+  text-align: left;
+}
+
+main .download-col h2 {
+  margin-bottom: 20px;
+}
+
+main .download-col p {
+  margin-bottom: 50px;
+}
+
+main .download-col .pink-button {
+  width: 325px;
+}
+
+.what-do-we-call-you {
+  display: flex;
+  justify-content: space-between;
+}
+
+.what-do-we-call-you div {
+  width: 47%;
+}
+
+@media screen and (max-width: 1510px) {
+  .contact-us form label {
+    font-family: "Poppins";
+    font-size: 14px;
+    display: block;
+  }
+
+  .contact-us .brochure-img img {
+    transform: scale(1);
+    margin-top: 100px;
+  }
+
+  main .download-brochure {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1323px) {
+  .what-do-we-call-you {
+    flex-wrap: wrap;
+  }
+
+  .what-do-we-call-you div {
+    width: 100%;
+  }
+
+  .second-label {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .contact-us .hook:after {
+    content: "";
+    background: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/contact/top-right%20blob.svg);
+    position: absolute;
+    height: 500px;
+    width: 500px;
+  }
+
+  .contact-us::before {
+    background-position: -15vw 100px;
+  }
+}
+
+@media screen and (max-width: 1224px) {
+  main .download-brochure {
+    margin-top: 0;
+  }
+
+  main .contact-us .contact-row {
+    margin-top: -222px;
+  }
+
+  .contact-method a {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  div.contact-method {
+    padding-left: 75px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .contact-us .hook:after {
+    content: "";
+    background: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/contact/top-right%20blob.svg);
+    position: absolute;
+    height: 500px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  div.contact-method {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  div.contact-method {
+    padding-left: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact-method a {
+    margin-left: 20px;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .contact-us h2 {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  main .contact-us .contact-row {
+    margin-top: 75px;
+  }
+
+  .contact-us .download-col h2 {
+    margin-top: 50px;
+  }
+
+  .contact-us::before {
+    background-position: -15vw 165px;
+    height: 350px;
+  }
+
+  .contact-us .form-container {
+    margin-top: 50px;
+  }
+
+  .contact-us h2 {
+    font-size: 40px;
+  }
+
+  .contact-us .form-container {
+    background: white;
+    padding: 25px 20px 25px 20px;
+  }
+
+  .contact-us .form-container button {
+    width: 100%;
+  }
+
+  main .download-col .pink-button {
+    width: 100%;
+  }
+
+  .contact-us .pink-blob-background .col:last-child {
+    padding: 0;
+  }
+
+  .contact-us .brochure-img img {
+    margin-top: 50px;
+  }
+
+  .contact-us .download-brochure .col {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .contact-us .hook:before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  main .contact-us .contact-row {
+    margin-top: 75px;
+  }
+
+  .contact-us .download-col h2 {
+    margin-top: 50px;
+  }
+
+  .contact-us::before {
+    background-position: -15vw 165px;
+    height: 300px;
+  }
 }
 
 /****END CONTACT US********/

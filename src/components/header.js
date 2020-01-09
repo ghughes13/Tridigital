@@ -62,18 +62,23 @@ const Header = ({ siteTitle }) => (
           <a href="/reviews" className="navbar-item">
             Reviews
           </a>
-          <a className="navbar-item">Portfolio</a>
+          {/* <a className="navbar-item">Portfolio</a>
           <div className="navbar-item has-dropdown is-hoverable">
             <a className="navbar-link">Capabilities</a>
             <div className="navbar-dropdown">
               <a className="navbar-item">About</a>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <a className="button first">Marketing Warmup</a>
+              <a
+                href="https://tridigitalmarketing.com/marketing-warmup/"
+                className="button first"
+              >
+                Marketing Warmup
+              </a>
               <a href="/contact-us" className="button is-light">
                 Contact Us
               </a>
@@ -84,6 +89,14 @@ const Header = ({ siteTitle }) => (
     </nav>
   </header>
 )
+
+window.addEventListener("scroll", function() {
+  if (window.scrollY === 0) {
+    document.querySelector("header").classList.remove("end-transparency")
+  } else {
+    document.querySelector("header").classList.add("end-transparency")
+  }
+})
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
