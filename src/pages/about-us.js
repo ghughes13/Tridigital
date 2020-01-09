@@ -1,12 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
-import * as PropTypes from "prop-types"
-import { Parallax, Background } from "react-parallax"
 import EmployeeInfo from "../components/about-us-employees"
 
 const AboutUs = () => (
@@ -40,7 +35,7 @@ const AboutUs = () => (
             </div>
           </Col>
         </Row>
-        <Row className="two-columns full-width-row content-right align-middle content-second">
+        <Row className="two-columns full-width-row content-right align-middle content-second flexed">
           <Col className="content-container">
             <div className="values-card left-align">
               <h3 className="purple-text">Create Superheroes</h3>
@@ -60,7 +55,10 @@ const AboutUs = () => (
         ></img>
         <Row className="two-columns full-width-row content-right align-middle content-third">
           <Col className="content-container centered-text">
-            <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/Egg.png" />
+            <img
+              className="eggs-img"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/Egg.png"
+            />
           </Col>
           <Col className="content-container">
             <div className="values-card">
@@ -72,7 +70,7 @@ const AboutUs = () => (
             </div>
           </Col>
         </Row>
-        <Row className="two-columns full-width-row content-right align-middle content-fourth">
+        <Row className="two-columns full-width-row content-right align-middle content-fourth flexed">
           <Col className="content-container">
             <div className="values-card left-align">
               <h3 className="yellow-text">Make Your Mark</h3>

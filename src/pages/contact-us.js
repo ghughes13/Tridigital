@@ -1,12 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
-import * as PropTypes from "prop-types"
-import { Parallax, Background } from "react-parallax"
 
 const ContactUs = () => (
   <Layout>

@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Burger from "./burger.js"
@@ -88,6 +89,14 @@ const Header = ({ siteTitle }) => (
     </nav>
   </header>
 )
+
+window.addEventListener("scroll", function() {
+  if (window.scrollY === 0) {
+    document.querySelector("header").classList.remove("end-transparency")
+  } else {
+    document.querySelector("header").classList.add("end-transparency")
+  }
+})
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
