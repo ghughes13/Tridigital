@@ -204,8 +204,6 @@ let employees = [
   },
 ]
 
-console.log(employees)
-
 export default function EmployeeInfo() {
   const [employeeToShow, setEmployeeToShow] = useState(0)
   let vidURL =

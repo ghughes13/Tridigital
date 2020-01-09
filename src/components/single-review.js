@@ -194,8 +194,6 @@ export default function SingleReivew(props) {
 
   let number = props.number
 
-  console.log(data)
-
   if (props.type === "half") {
     return (
       <Col className="content-container centered-text half">

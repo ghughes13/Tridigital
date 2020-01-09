@@ -6,12 +6,9 @@ export default class YourVideo extends React.Component {
     this.state = {
       hashStr: this.props.props.video,
     }
-
-    console.log(this.state.hashStr)
   }
 
   componentWillMount() {
-    console.log()
     const script1 = document.createElement("script")
     const script2 = document.createElement("script")
 
