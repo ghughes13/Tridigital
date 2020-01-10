@@ -63,7 +63,7 @@ const Footer = () => (
         © 2020 - TriDigital | <a href="/terms">Terms if Service</a> | <a href="/privacy">Privacy Policy</a> | <a href="/security">Security Level
         Agreement{" "}</a>
       </p>
-      <p><a href="/sitemap">Sitemap</a> | Employee Training</p>
+      <p><a href="/sitemap">Sitemap</a> | <a href="http://training.tridigitalmarketing.com/?password-protected=login&redirect_to=http%3A%2F%2Ftraining.tridigitalmarketing.com%2F" target="_blank">Employee Training </a></p>
     </Row>
   </footer>
 )
