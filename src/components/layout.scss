@@ -1360,6 +1360,16 @@ footer p {
   margin-bottom: 15px;
 }
 
+footer .row:first-child a {
+  color: white;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+
+footer .row:first-child a:hover {
+  color: #ff3975;
+}
+
 footer ::placeholder {
   color: #707070;
   opacity: 1;
@@ -1414,6 +1424,16 @@ footer .socket p {
 
 footer .socket p:first-child {
   margin-bottom: 20px;
+}
+
+footer .socket a {
+  color: white;
+  transition-duration: .25s;
+}
+
+footer .socket a:hover {
+  color: #0000e6;
+  text-decoration: none;
 }
 
 footer .certGraphic {

@@ -159,7 +159,7 @@ class IndexPage extends React.Component {
                 <p className="pink-text heavy-weight">
                   Leverage that and create marketing that’s unique.
                 </p>
-                <a className="white-text pink-button" href="#">
+                <a className="white-text pink-button" href="/process">
                   Learn More{" "}
                 </a>
               </Col>
@@ -265,7 +265,7 @@ class IndexPage extends React.Component {
                     start focusing on growing your business the right way.
                   </span>
                 </p>
-                <a className="white-text pink-button" href="#">
+                <a className="white-text pink-button" href="/process">
                   Learn More{" "}
                 </a>
               </Col>
@@ -290,7 +290,7 @@ class IndexPage extends React.Component {
                     you’ll convert more MSP leads to customers than ever before.
                   </span>
                 </p>
-                <a className="white-text pink-button" href="#">
+                <a className="white-text pink-button" href="/process">
                   Learn More{" "}
                 </a>
               </Col>
@@ -316,7 +316,7 @@ class IndexPage extends React.Component {
                 <h2 className="white-text compressed-text">
                   See How We Empower YOUR Brand.
                 </h2>
-                <a className="white-text blue-button" href="#">
+                <a className="white-text blue-button" href="/process">
                   Take the First Step{" "}
                 </a>
               </Col>

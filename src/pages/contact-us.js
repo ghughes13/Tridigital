@@ -63,7 +63,7 @@ const ContactUs = () => (
             </Row>
             <Row className="contact-method">
               <img src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Group%203452.svg" />
-              <a href="#">
+              <a href="https://goo.gl/maps/9KwWjzXNR7a4tNsK7" target="_blank">
                 101 E Park Blvd. STE. 101 <br /> Plano, TX 75074
               </a>
             </Row>
@@ -77,7 +77,7 @@ const ContactUs = () => (
         </Row>
         <Row className="two-columns full-width-row content-right align-middle download-brochure">
           <Col className="content-container brochure-img">
-            <a href="http://www.itepubs.com/tridigital_brochure_digital/page/1">
+            <a href="http://www.itepubs.com/tridigital_brochure_digital/page/1" target="_blank">
               <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Image-95.png" />
             </a>
           </Col>
@@ -92,6 +92,7 @@ const ContactUs = () => (
             <a
               className="white-text pink-button"
               href="http://www.itepubs.com/tridigital_brochure_digital/page/1"
+              target="_blank"
             >
               View Online Version
             </a>

@@ -105,7 +105,7 @@ const AboutUs = () => (
             <h2 className="white-text compressed-text">
               Don’t Be Shy. Contact Us Today!
             </h2>
-            <a className="white-text blue-button" href="#">
+            <a className="white-text blue-button" href="/contact-us">
               Contact Us
             </a>
           </Col>

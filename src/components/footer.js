@@ -6,10 +6,10 @@ const Footer = () => (
     <Row>
       <Col>
         <h2>Address</h2>
-        <p>101 E Park Blvd. Suite 101</p>
-        <p> Plano, TX 75074</p>
-        <p>Phone: (214) 299-7399</p>
-        <p>Email: info@tridigitalmarketing.com</p>
+        <a href="https://goo.gl/maps/9KwWjzXNR7a4tNsK7" target="_blank"><p>101 E Park Blvd. Suite 101</p>
+        <p>Plano, TX 75074</p></a>
+        <p><a href="tel:2142997399" target="_blank">Phone: (214) 299-7399</a></p>
+        <p><a href="mailto:info@tridigitalmarketing.com" target="_blank">Email: info@tridigitalmarketing.com</a></p>
         <img
           className="certGraphic"
           src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/google-partners.jpg"
@@ -24,20 +24,24 @@ const Footer = () => (
         <p>Contact Us</p>
         <ul>
           <li>
+            <a href="https://twitter.com/tridigitalmktg" target="_blank">
             <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/twitter.svg"></img>
-            Twitter
+            Twitter</a>
           </li>
           <li>
+            <a href="https://www.facebook.com/tridigitalmarketing/" target="_blank">
             <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/fb.svg"></img>
-            Facebook
+            Facebook</a>
           </li>
           <li>
+            <a href="https://www.instagram.com/tridigitalmarketing/?hl=en" target="_blank">
             <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/instagram.svg"></img>
-            Instagram
+            Instagram</a>
           </li>
           <li>
+            <a href="https://www.youtube.com/channel/UCwWkMboAAbFMYIAeC2EXneQ" target="_blank">
             <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/youtube.svg"></img>
-            Youtube
+            Youtube</a>
           </li>
         </ul>
       </Col>
@@ -56,10 +60,10 @@ const Footer = () => (
 
     <Row className="socket">
       <p>
-        © 2020 - TriDigital | Terms if Service | Privacy Policy | Security Level
-        Agreement{" "}
+        © 2020 - TriDigital | <a href="/terms">Terms if Service</a> | <a href="/privacy">Privacy Policy</a> | <a href="/security">Security Level
+        Agreement{" "}</a>
       </p>
-      <p>Sitemap | Employee Training</p>
+      <p><a href="/sitemap">Sitemap</a> | Employee Training</p>
     </Row>
   </footer>
 )
