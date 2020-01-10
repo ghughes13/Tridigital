@@ -1,9 +1,19 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useEffect } from "react";
 import Burger from "./burger.js"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle }) => {
+  useEffect(() => {
+    window.addEventListener("scroll", function() {
+      if (window.scrollY === 0) {
+        document.querySelector("header").classList.remove("end-transparency")
+      } else {
+        document.querySelector("header").classList.add("end-transparency")
+      }
+    })    
+  });
+
+  return (
   <header
     className="fixed"
     style={{
@@ -88,15 +98,8 @@ const Header = ({ siteTitle }) => (
       </div>
     </nav>
   </header>
-)
-
-window.addEventListener("scroll", function() {
-  if (window.scrollY === 0) {
-    document.querySelector("header").classList.remove("end-transparency")
-  } else {
-    document.querySelector("header").classList.add("end-transparency")
-  }
-})
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
