@@ -22,9 +22,27 @@ export default function EmployeeInfo() {
 
   useEffect(() => {
     if (window.innerWidth < 960) {
+      console.log('small');
       desktop = false;
     }
   })
+
+  const EmpPicVid = () => {
+    if(desktop && (employees[employeeToShow].videoURL !== '')) {
+      return (
+        <video src={vidURL} autoPlay muted>
+          <p>
+            If you are reading this, it is because your browser does not
+            support the HTML5 video element.
+          </p>
+        </video>
+      )
+    } else {
+      return(
+        <img src={"http://tdgatsbytest.wpengine.com" + employees[employeeToShow].photo} className="employee-headshot" />
+      )
+    }
+  } 
   
   if(desktop) {
     return (
@@ -47,12 +65,7 @@ export default function EmployeeInfo() {
               </p>
             </Col>
             <Col className="content-container column video-column">
-              <video src={vidURL} autoPlay muted>
-                <p>
-                  If you are reading this, it is because your browser does not
-                  support the HTML5 video element.
-                </p>
-              </video>
+              <EmpPicVid />
             </Col>
           </Row>
         </Container>
@@ -105,12 +118,7 @@ export default function EmployeeInfo() {
             </p>
           </Col>
           <Col className="content-container column video-column">
-            <video src={vidURL} autoPlay muted>
-              <p>
-                If you are reading this, it is because your browser does not
-                support the HTML5 video element.
-              </p>
-            </video>
+            <EmpPicVid />
           </Col>
         </Row>
       </Container>

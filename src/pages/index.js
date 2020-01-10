@@ -7,6 +7,8 @@ import SEO from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
 import * as PropTypes from "prop-types"
 import { Parallax, Background } from "react-parallax"
+import YourVideo from '../components/home-video-player.js'
+
 
 const propTypes = {
   data: PropTypes.object.isRequired,
@@ -28,13 +30,7 @@ class IndexPage extends React.Component {
                 <p className="white-text subtext">
                   We’ve generated over 100,000 MSP leads. . . and counting.
                 </p>
-                <a className="white-text blue-button" href="#">
-                  Watch Video{" "}
-                  <img
-                    src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/play-button.png"
-                    alt="play button"
-                  ></img>
-                </a>
+                  <YourVideo />
                 <div className="asSeen">
                   <p className="as-seen-text">As seen in:</p>
                   <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/Forbes.svg" />

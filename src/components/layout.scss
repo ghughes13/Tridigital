@@ -1996,8 +1996,15 @@ main .row.full-width-row.content-right {
   }
 }
 
+.about-us-page .employee-headshot {
+  max-width: 400px;
+  margin-left:100px;
+}
+
 .about-us-page .bio-content {
   padding: 40px 0;
+  min-height: 350px;
+  // padding-top: 0;
 }
 
 .about-us-page .blue-background {
@@ -2029,6 +2036,7 @@ main .row.full-width-row.content-right {
   margin-top: 50px;
   padding-left: 30px;
   position: relative;
+  min-height: 60px;
 }
 
 .about-us-page .likes::before {
@@ -2123,6 +2131,47 @@ main .row.full-width-row.content-right {
 .about-us-page .blob-graphic.left-blob {
   right: 30%;
   left: initial;
+}
+
+@media screen and (max-width: 1600px) {
+  .about-us-page .bio-content {
+    min-height: 380px;
+    padding-top: 0;
+    max-width: 600px;
+  }
+
+  .about-us-page .video-column video {
+    bottom: -85px;
+  }
+  
+  .about-us-page .pink-banner .click-through {
+    padding-left: 0;
+    padding-right: 4vw;
+    margin-left: -25px;
+    margin-right: 25px;
+  }
+
+  .about-us-page .video-column img {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  .about-us-page .blue-background {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .about-us-page .bio-content {
+    min-height: 380px;
+    padding-top: 0;
+    max-width: 500px;
+  }
+
+  .about-us-page .video-column video {
+    bottom: -57px;
+    max-width: 1300px;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -3440,6 +3489,11 @@ main .download-col .pink-button {
   height: 100%;
   object-fit: contain;
   width: 100%;
+}
+
+.home-page .wistia_embed {
+  display:inline;
+  position:relative
 }
 
 /****END REVIEWS********/
