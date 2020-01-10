@@ -20,7 +20,7 @@ export default function EmployeeInfo() {
         row2.push(employees[i])
       }
     }
-
+  
     return (
       <div>
         <Container className="hero-section container blue-background">
@@ -124,5 +124,5 @@ export default function EmployeeInfo() {
       </div>
     </div>
   )
-}
+  })
 }
