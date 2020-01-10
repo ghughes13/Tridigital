@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Container, Row, Col } from "react-bootstrap"
 
 let employees = require("../../employee-data.json")
@@ -11,7 +11,7 @@ export default function EmployeeInfo() {
   let row1 = []
   let row2 = []
 
-  useEffect() {
+  useEffect(() => {
   if (window.innerWidth > 960) {
     for (let i = 0; i < employees.length; i++) {
       if (i < employees.length / 2) {
