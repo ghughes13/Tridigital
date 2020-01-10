@@ -682,6 +682,7 @@ header {
     &:first-child:hover {
       border-color: #ff3975;
       color: #ff3975;
+      text-decoration: none;
     }
     &.is-light:hover {
       border-color: #0092fb;
@@ -710,10 +711,31 @@ header {
       color: #0040ed;
       background: white;
     }
+    .button.is-light:hover {
+      border: #0040ed solid 2px !important;
+      color: white !important;
+      background: #0040ed !important;
+    }
+    .navbar-end .buttons a:first-child:hover {
+      color: #ff3975 !important;
+      border: #ff3975 solid 2px !important;
+      background: white !important;
+    }
   }
   .second-logo {
     opacity: 0;
   }
+}
+
+.navbar-start a {
+  transition-duration: .1s !important;
+  transition-timing-function: linear !important;
+}
+
+.navbar-start a:hover {
+  margin-top: -5px;
+  transition-duration: .1s !important;
+  transition-timing-function: linear !important;
 }
 
 header.fixed {
