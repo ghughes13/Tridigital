@@ -11,6 +11,7 @@ export default function EmployeeInfo() {
   let row1 = []
   let row2 = []
 
+  useEffect() {
   if (window.innerWidth > 960) {
     for (let i = 0; i < employees.length; i++) {
       if (i < employees.length / 2) {
@@ -123,4 +124,5 @@ export default function EmployeeInfo() {
       </div>
     </div>
   )
+}
 }
