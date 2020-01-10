@@ -10,17 +10,23 @@ export default function EmployeeInfo() {
 
   let row1 = []
   let row2 = []
+  let desktop = true;
+
+  for (let i = 0; i < employees.length; i++) {
+    if (i < employees.length / 2) {
+      row1.push(employees[i])
+    } else {
+      row2.push(employees[i])
+    }
+  }
 
   useEffect(() => {
-  if (window.innerWidth > 960) {
-    for (let i = 0; i < employees.length; i++) {
-      if (i < employees.length / 2) {
-        row1.push(employees[i])
-      } else {
-        row2.push(employees[i])
-      }
+    if (window.innerWidth < 960) {
+      desktop = false;
     }
+  })
   
+  if(desktop) {
     return (
       <div>
         <Container className="hero-section container blue-background">
@@ -124,5 +130,4 @@ export default function EmployeeInfo() {
       </div>
     </div>
   )
-  })
 }
