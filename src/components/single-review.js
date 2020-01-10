@@ -6,8 +6,6 @@ export default function SingleReivew(props) {
   let data = require("../../reviews-data.json")
   let number = props.number
 
-  console.log(data)
-
   if (props.type === "half") {
     return (
       <Col className="content-container centered-text half">

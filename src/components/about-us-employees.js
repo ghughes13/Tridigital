@@ -73,8 +73,8 @@ export default function EmployeeInfo() {
             {row2.map((employee, index) => (
               <div
                 className="thumbnail-container"
-                key={index}
-                onClick={() => setEmployeeToShow(index)}
+                key={index + 9}
+                onClick={() => setEmployeeToShow(index + 9)}
               >
                 <img src={employee.thumbnail} />
                 <span className="name">{employee.First}</span>
