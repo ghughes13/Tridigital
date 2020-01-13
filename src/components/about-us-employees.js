@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Container, Row, Col } from "react-bootstrap"
 
 let employees = require("../../employee-data.json")
@@ -10,16 +10,41 @@ export default function EmployeeInfo() {
 
   let row1 = []
   let row2 = []
+  let desktop = true;
 
-  if (window.innerWidth > 960) {
-    for (let i = 0; i < employees.length; i++) {
-      if (i < employees.length / 2) {
-        row1.push(employees[i])
-      } else {
-        row2.push(employees[i])
-      }
+  for (let i = 0; i < employees.length; i++) {
+    if (i < employees.length / 2) {
+      row1.push(employees[i])
+    } else {
+      row2.push(employees[i])
     }
+  }
 
+  useEffect(() => {
+    if (window.innerWidth < 960) {
+      console.log('small');
+      desktop = false;
+    }
+  })
+
+  const EmpPicVid = () => {
+    if(desktop && (employees[employeeToShow].videoURL !== '')) {
+      return (
+        <video src={vidURL} autoPlay muted>
+          <p>
+            If you are reading this, it is because your browser does not
+            support the HTML5 video element.
+          </p>
+        </video>
+      )
+    } else {
+      return(
+        <img src={"http://tdgatsbytest.wpengine.com" + employees[employeeToShow].photo} className="employee-headshot" />
+      )
+    }
+  } 
+  
+  if(desktop) {
     return (
       <div>
         <Container className="hero-section container blue-background">
@@ -40,12 +65,7 @@ export default function EmployeeInfo() {
               </p>
             </Col>
             <Col className="content-container column video-column">
-              <video src={vidURL} autoPlay muted>
-                <p>
-                  If you are reading this, it is because your browser does not
-                  support the HTML5 video element.
-                </p>
-              </video>
+              <EmpPicVid />
             </Col>
           </Row>
         </Container>
@@ -66,8 +86,8 @@ export default function EmployeeInfo() {
             {row2.map((employee, index) => (
               <div
                 className="thumbnail-container"
-                key={index}
-                onClick={() => setEmployeeToShow(index)}
+                key={index + 9}
+                onClick={() => setEmployeeToShow(index + 9)}
               >
                 <img src={employee.thumbnail} />
                 <span className="name">{employee.First}</span>
@@ -98,12 +118,7 @@ export default function EmployeeInfo() {
             </p>
           </Col>
           <Col className="content-container column video-column">
-            <video src={vidURL} autoPlay muted>
-              <p>
-                If you are reading this, it is because your browser does not
-                support the HTML5 video element.
-              </p>
-            </video>
+            <EmpPicVid />
           </Col>
         </Row>
       </Container>

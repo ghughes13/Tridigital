@@ -160,7 +160,7 @@ const Process = () => (
             <h2 className="white-text compressed-text">
               Here’s What the Results Look Like.
             </h2>
-            <a className="white-text blue-button" href="#">
+            <a className="white-text blue-button" href="/reviews">
               See the Results
             </a>
           </Col>

@@ -76,6 +76,18 @@ const ContactUs = () => (
           <SingleReivew number="23" type="full" />
         </Row>
       </Container>
+      <Container className="cta-container">
+            <Row className="">
+              <Col className="cta-card box-shadow">
+                <h2 className="white-text compressed-text">
+                  It's Time to Meet the Team.
+                </h2>
+                <a className="white-text blue-button" href="/about-us">
+                  Meet the Team{" "}
+                </a>
+              </Col>
+            </Row>
+      </Container>
     </div>
   </Layout>
 )

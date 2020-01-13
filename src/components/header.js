@@ -1,9 +1,27 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useEffect } from "react";
 import Burger from "./burger.js"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle }) => {
+  useEffect(() => {
+    window.addEventListener("scroll", function() {
+      if (window.scrollY === 0) {
+        document.querySelector("header").classList.remove("end-transparency")
+      } else {
+        document.querySelector("header").classList.add("end-transparency")
+      }
+    })    
+
+    const script1 = document.createElement("script")
+
+    script1.src = "./honey-form-integration.js"
+    script1.async = true
+
+    document.body.appendChild(script1)
+  });
+
+
+  return (
   <header
     className="fixed"
     style={{
@@ -74,7 +92,7 @@ const Header = ({ siteTitle }) => (
           <div className="navbar-item">
             <div className="buttons">
               <a
-                href="https://tridigitalmarketing.com/marketing-warmup/"
+                href="http://marketwarmup.wpengine.com/marketing-warmup/"
                 className="button first"
               >
                 Marketing Warmup
@@ -88,15 +106,8 @@ const Header = ({ siteTitle }) => (
       </div>
     </nav>
   </header>
-)
-
-window.addEventListener("scroll", function() {
-  if (window.scrollY === 0) {
-    document.querySelector("header").classList.remove("end-transparency")
-  } else {
-    document.querySelector("header").classList.add("end-transparency")
-  }
-})
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
