@@ -11,7 +11,15 @@ const Header = ({ siteTitle }) => {
         document.querySelector("header").classList.add("end-transparency")
       }
     })    
+
+    const script1 = document.createElement("script")
+
+    script1.src = "./honey-form-integration.js"
+    script1.async = true
+
+    document.body.appendChild(script1)
   });
+
 
   return (
   <header
