@@ -729,13 +729,13 @@ header {
 }
 
 .navbar-start a {
-  transition-duration: .1s !important;
+  transition-duration: 0.1s !important;
   transition-timing-function: linear !important;
 }
 
 .navbar-start a:hover {
   margin-top: -5px;
-  transition-duration: .1s !important;
+  transition-duration: 0.1s !important;
   transition-timing-function: linear !important;
 }
 
@@ -1140,6 +1140,10 @@ main .col {
   text-transform: uppercase;
 }
 
+.hide-me {
+  display: none;
+}
+
 main .compressed-content,
 main .compressed-text {
   max-width: 45vw;
@@ -1386,7 +1390,7 @@ footer p {
 footer .row:first-child a {
   color: white;
   text-decoration: none;
-  transition-duration: .25s;
+  transition-duration: 0.25s;
 }
 
 footer .row:first-child a:hover {
@@ -1451,7 +1455,7 @@ footer .socket p:first-child {
 
 footer .socket a {
   color: white;
-  transition-duration: .25s;
+  transition-duration: 0.25s;
 }
 
 footer .socket a:hover {
@@ -2021,7 +2025,7 @@ main .row.full-width-row.content-right {
 
 .about-us-page .employee-headshot {
   max-width: 400px;
-  margin-left:100px;
+  margin-left: 100px;
 }
 
 .about-us-page .bio-content {
@@ -2166,7 +2170,7 @@ main .row.full-width-row.content-right {
   .about-us-page .video-column video {
     bottom: -85px;
   }
-  
+
   .about-us-page .pink-banner .click-through {
     padding-left: 0;
     padding-right: 4vw;
@@ -3515,8 +3519,8 @@ main .download-col .pink-button {
 }
 
 .home-page .wistia_embed {
-  display:inline;
-  position:relative
+  display: inline;
+  position: relative;
 }
 
 /****END REVIEWS********/

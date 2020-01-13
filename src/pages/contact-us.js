@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
+import jQuery from "jQuery"
 
 const ContactUs = () => (
   <Layout>
@@ -17,34 +18,43 @@ const ContactUs = () => (
           </Col>
           <Col className="content-container column ">
             <div className="form-container">
-              <form>
+              <form id="contact-form">
                 <h3 className="blue-text form-title">
                   Speak with an MSP Marketer to learn more
                 </h3>
-                <div class="what-do-we-call-you">
-                  <div>
+                <div className="what-do-we-call-you">
+                  <div className="field name-field">
                     <label>What’s your name?</label>
-                    <input type="text"></input>
+                    <input type="text" className="theInput"></input>
                   </div>
-                  <div>
+                  <div className="field">
                     <label className="second-label">
                       What company are you with?
                     </label>
-                    <input type="text"></input>
+                    <input type="text" className="theInput"></input>
                   </div>
                 </div>
                 <br />
-                <label>What’s your email address?</label>
-                <input type="text"></input>
-                <br />
-                <label className="textarea-label">
-                  What question can we answer for you?
-                </label>
-                <textarea type="text"></textarea>
-                <br />
+                <div className="field email-field">
+                  <label>What’s your email address?</label>
+                  <input type="text" className="theInput"></input>
+                </div>
+                <div className="field comment-field">
+                  <label className="textarea-label">
+                    What question can we answer for you?
+                  </label>
+                  <textarea type="text" className="theInput"></textarea>
+                </div>
+
                 <div className="checkbox-part">
                   <input type="checkbox" className="checkbox" />
                   <label>Keep Me Updated with Emails and Newsletters</label>
+                </div>
+                <div className="hide-me field">
+                  <input
+                    defaultValue="Consultation"
+                    className="theInput"
+                  ></input>
                 </div>
                 <div className="submit-btn">
                   <button type="submit" className="pink-button">
@@ -58,17 +68,26 @@ const ContactUs = () => (
         <Row className="two-columns full-width-row content-right align-middle contact-row">
           <Col className="content-container centered-text contact-method-container">
             <Row className="contact-method">
-              <img src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Group%203453.svg" />
+              <img
+                src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Group%203453.svg"
+                alt="phone blob"
+              />
               <a href="tel:212997399">214-299-7399</a>
             </Row>
             <Row className="contact-method">
-              <img src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Group%203452.svg" />
+              <img
+                src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Group%203452.svg"
+                alt="navpoint"
+              />
               <a href="https://goo.gl/maps/9KwWjzXNR7a4tNsK7" target="_blank">
                 101 E Park Blvd. STE. 101 <br /> Plano, TX 75074
               </a>
             </Row>
             <Row className="contact-method">
-              <img src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Group%203451.svg" />
+              <img
+                src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Group%203451.svg"
+                alt="mail blob"
+              />
               <a href="mailto:info@tridigitalmarketing.com">
                 info@tridigitalmarketing.com
               </a>
@@ -77,8 +96,14 @@ const ContactUs = () => (
         </Row>
         <Row className="two-columns full-width-row content-right align-middle download-brochure">
           <Col className="content-container brochure-img">
-            <a href="http://www.itepubs.com/tridigital_brochure_digital/page/1" target="_blank">
-              <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Image-95.png" />
+            <a
+              href="http://www.itepubs.com/tridigital_brochure_digital/page/1"
+              target="_blank"
+            >
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Image-95.png"
+                alt="brochure img"
+              />
             </a>
           </Col>
           <Col className="content-container centered-text download-col">

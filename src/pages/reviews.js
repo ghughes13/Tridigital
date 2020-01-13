@@ -19,7 +19,10 @@ const ContactUs = () => (
             </p>
           </Col>
           <Col className="content-container column phone-img-container">
-            <img src="https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/reviews/Phone%20Img.svg" />
+            <img
+              src="https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/reviews/Phone%20Img.svg"
+              alt="iphone reviews"
+            />
           </Col>
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
@@ -77,16 +80,16 @@ const ContactUs = () => (
         </Row>
       </Container>
       <Container className="cta-container">
-            <Row className="">
-              <Col className="cta-card box-shadow">
-                <h2 className="white-text compressed-text">
-                  It's Time to Meet the Team.
-                </h2>
-                <a className="white-text blue-button" href="/about-us">
-                  Meet the Team{" "}
-                </a>
-              </Col>
-            </Row>
+        <Row className="">
+          <Col className="cta-card box-shadow">
+            <h2 className="white-text compressed-text">
+              It's Time to Meet the Team.
+            </h2>
+            <a className="white-text blue-button" href="/about-us">
+              Meet the Team{" "}
+            </a>
+          </Col>
+        </Row>
       </Container>
     </div>
   </Layout>

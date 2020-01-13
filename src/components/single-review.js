@@ -75,7 +75,7 @@ export default function SingleReivew(props) {
     return (
       <Col className="content-container centered-text half-person">
         <div className="review-container">
-          <img src={data[number - 1].video} />
+          <img src={data[number - 1].video} alt="video" />
           <div class="data-container">
             <p className="company-name">{data[number - 1].name}</p>
             <p className="pink-text">{data[number - 1].leadName}</p>
@@ -137,7 +137,7 @@ export default function SingleReivew(props) {
   } else {
     return (
       <div className="review-container content-container centered-text full-person">
-        <img src={data[number - 1].video} />
+        <img src={data[number - 1].video} alt="video" />
         <div class="data-container">
           <p className="company-name">{data[number - 1].name}</p>
           <p className="pink-text">{data[number - 1].leadName}</p>

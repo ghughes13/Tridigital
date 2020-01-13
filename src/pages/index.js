@@ -1,25 +1,22 @@
 import React from "react"
 import { graphql } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Layout from "../components/layout"
 import { Container, Row, Col } from "react-bootstrap"
-import * as PropTypes from "prop-types"
-import { Parallax, Background } from "react-parallax"
-import YourVideo from '../components/home-video-player.js'
+// import * as PropTypes from "prop-types"
+import YourVideo from "../components/home-video-player.js"
 
-
-const propTypes = {
-  data: PropTypes.object.isRequired,
-}
+// const propTypes = {
+//   data: PropTypes.object.isRequired,
+// }
 
 class IndexPage extends React.Component {
   render() {
-    const heading = this.props.data.wordpressPage.acf
+    // const heading = this.props.data.wordpressPage.acf
 
     return (
       <Layout>
+        <SEO title="Home" />
         <div className="home-page">
           <Container className="hero-section transparent-hero container flexed">
             <Row className="two-columns">
@@ -30,13 +27,17 @@ class IndexPage extends React.Component {
                 <p className="white-text subtext">
                   We’ve generated over 100,000 MSP leads. . . and counting.
                 </p>
-                  <YourVideo />
+                <YourVideo />
                 <div className="asSeen">
                   <p className="as-seen-text">As seen in:</p>
-                  <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/Forbes.svg" />
+                  <img
+                    src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/Forbes.svg"
+                    alt="forbes"
+                  />
                   <img
                     className="margin-left-25px"
-                    src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/ChannelPro.svg"
+                    src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/ChannelPro.svg "
+                    alt="chanelpro"
                   />
                 </div>
               </Col>
@@ -51,6 +52,7 @@ class IndexPage extends React.Component {
             <img
               className="scroll-indicator"
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/scroll-indicator.svg"
+              alt="scroll-indicator"
             ></img>
             <svg
               className="rotating"
@@ -99,6 +101,7 @@ class IndexPage extends React.Component {
             <img
               className="accent-gradient-circle"
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/gradient-circle.svg"
+              alt=""
             ></img>
           </Container>
           <Container className="blue-background collateral-section">
@@ -230,6 +233,7 @@ class IndexPage extends React.Component {
             <img
               className="blob-graphic"
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"
+              alt=""
             ></img>
           </Container>
           <Container className="target-section max-width-fix top-layer">
@@ -269,6 +273,7 @@ class IndexPage extends React.Component {
             <img
               className="blob-graphic"
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"
+              alt=""
             ></img>
           </Container>
           <Container className="flexed max-width-fix outsmart-container top-layer">

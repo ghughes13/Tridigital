@@ -20,10 +20,14 @@ const AboutUs = () => (
         <img
           className="blob-graphic right-blob"
           src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"
+          alt=""
         ></img>
         <Row className="two-columns full-width-row content-right align-middle content-first">
           <Col className="content-container centered-text">
-            <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/heart.png" />
+            <img
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/heart.png"
+              alt="heart"
+            />
           </Col>
           <Col className="content-container">
             <div className="values-card">
@@ -46,18 +50,23 @@ const AboutUs = () => (
             </div>
           </Col>
           <Col className="content-container centered-text">
-            <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/mask.png" />
+            <img
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/mask.png"
+              alt="mask"
+            />
           </Col>
         </Row>
         <img
           className="blob-graphic left-blob"
           src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/about-us-left-svg.svg"
+          alt=""
         ></img>
         <Row className="two-columns full-width-row content-right align-middle content-third">
           <Col className="content-container centered-text">
             <img
               className="eggs-img"
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/Egg.png"
+              alt="eggs"
             />
           </Col>
           <Col className="content-container">
@@ -81,12 +90,18 @@ const AboutUs = () => (
             </div>
           </Col>
           <Col className="content-container centered-text">
-            <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/draw.png" />
+            <img
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/draw.png"
+              alt="drawing"
+            />
           </Col>
         </Row>
         <Row className="two-columns full-width-row content-right align-middle content-fifth">
           <Col className="content-container centered-text">
-            <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/paint.png" />
+            <img
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/paint.png"
+              alt="paint"
+            />
           </Col>
           <Col className="content-container">
             <div className="values-card">

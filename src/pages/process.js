@@ -1,13 +1,11 @@
 import React from "react"
-
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
 
 const Process = () => (
   <Layout>
-    <SEO title="About Us" />
+    <SEO title="Our Process" />
     <div className="process-page">
       <Container className="hero-section container ">
         <Row>
@@ -22,8 +20,9 @@ const Process = () => (
           </Col>
         </Row>
         <img
-          class="scroll-indicator"
+          className="scroll-indicator"
           src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/scroll-indicator.svg"
+          alt="scroll indicator"
         ></img>
       </Container>
 
@@ -43,11 +42,12 @@ const Process = () => (
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/knowledge.png"
               className="desktop-img"
+              alt="websites and questionaires"
             />
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-3451-1.png"
-              className="mobile-img
-            "
+              className="mobile-img"
+              alt="websites and questionaires"
             />
           </Col>
         </Row>
@@ -59,11 +59,12 @@ const Process = () => (
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/story-arc.png"
               className="desktop-img"
+              alt="slide"
             />
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-3452-1.png"
-              className="mobile-img
-            "
+              className="mobile-img"
+              alt="slide"
             />
           </Col>
           <Col className="content-container">
@@ -97,10 +98,12 @@ const Process = () => (
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/moodboard.png"
               className="desktop-img"
+              alt="moodboard"
             />
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-849.png"
               className="mobile-img"
+              alt="moodboard"
             />
           </Col>
         </Row>
@@ -112,10 +115,12 @@ const Process = () => (
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/marketing-plan.png"
               className="desktop-img"
+              alt="plan"
             />
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-3455-1.png"
               className="mobile-img"
+              alt="plan"
             />
           </Col>
           <Col className="content-container">
@@ -144,11 +149,13 @@ const Process = () => (
           <Col className="static-position">
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/deliverables.png"
-              class="desktop-img"
+              className="desktop-img"
+              alt="deliverables"
             />
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-853.png"
               className="mobile-img"
+              alt="deliverables"
             />
           </Col>
         </Row>
