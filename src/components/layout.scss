@@ -679,6 +679,7 @@ header {
   transition-duration: 0.5s;
   .navbar-end a.button {
     color: #0092fb;
+    text-decoration: none;
     &:first-child:hover {
       border-color: #ff3975;
       color: #ff3975;
