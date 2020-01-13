@@ -2199,12 +2199,69 @@ main .row.full-width-row.content-right {
     bottom: -57px;
     max-width: 1300px;
   }
+
+  .about-us-page .pink-banner .click-through {
+    margin-left: -90px;
+    margin-right: 95px;
+  }
+
+  .about-us-page .video-column img {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1224px) {
+  .vid-pic-container video {
+    display: none;
+  }
+
+  .about-us-page .pink-banner .click-through {
+    padding-right: 25px;
+    margin-left: -25px;
+    margin-right: 25px;
+  }
+
+  .about-us-page .pink-banner::before {
+    min-width: 525px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-us-page .pink-banner::before {
+    min-width: 425px;
+    height: 140px;
+  }
+
+  .about-us-page .hero-section .click-throught p:nth-child(2) {
+    max-width: 300px;
+  }
 }
 
 @media screen and (max-width: 960px) {
   .row-1 {
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .about-us-page .vid-pic-container img {
+    max-width: 100%;
+  }
+
+  .row-2 {
+    margin-left: 0px;
+  }
+
+  .about-us-page .thumbnail-container {
+    width: 75px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-us-page .pink-banner::before {
+    min-width: 400px;
+    height: 140px;
   }
 }
 

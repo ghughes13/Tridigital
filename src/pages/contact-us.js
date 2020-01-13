@@ -52,8 +52,8 @@ const ContactUs = () => (
                 </div>
                 <div className="hide-me field">
                   <input
-                    defaultValue="Consultation"
-                    className="theInput"
+                    data-form-type="Consultation"
+                    className="formcat"
                   ></input>
                 </div>
                 <div className="submit-btn">

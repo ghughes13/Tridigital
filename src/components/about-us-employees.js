@@ -30,22 +30,39 @@ export default function EmployeeInfo() {
   const EmpPicVid = () => {
     if (desktop && employees[employeeToShow].videoURL !== "") {
       return (
-        <video src={vidURL} autoPlay muted>
-          <p>
-            If you are reading this, it is because your browser does not support
-            the HTML5 video element.
-          </p>
-        </video>
+        <div className="vid-pic-container">
+          <video src={vidURL} autoPlay muted>
+            <p>
+              If you are reading this, it is because your browser does not
+              support the HTML5 video element.
+            </p>
+          </video>
+          <img
+            src={
+              "http://tdgatsbytest.wpengine.com" +
+              employees[employeeToShow].photo
+            }
+            className="employee-headshot"
+            alt={
+              employees[employeeToShow].First + employees[employeeToShow].Last
+            }
+          />
+        </div>
       )
     } else {
       return (
-        <img
-          src={
-            "http://tdgatsbytest.wpengine.com" + employees[employeeToShow].photo
-          }
-          className="employee-headshot"
-          alt={employees[employeeToShow].First + employees[employeeToShow].Last}
-        />
+        <div className="vid-pic-container">
+          <img
+            src={
+              "http://tdgatsbytest.wpengine.com" +
+              employees[employeeToShow].photo
+            }
+            className="employee-headshot"
+            alt={
+              employees[employeeToShow].First + employees[employeeToShow].Last
+            }
+          />
+        </div>
       )
     }
   }

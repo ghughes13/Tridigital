@@ -93,7 +93,10 @@ const Footer = () => (
             ></input>
           </div>
           <div className="hide-me field">
-            <input defaultValue="Newsletter" className="theInput"></input>
+            <input
+              defaultValue="Newsletter"
+              className="theInput formcat"
+            ></input>
           </div>
           <div className="form-footer">
             <button className="pink-button" type="submit">
