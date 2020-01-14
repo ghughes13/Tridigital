@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
+import { Waypoint } from "react-waypoint"
 
 const Process = () => (
   <Layout>
@@ -172,6 +173,11 @@ const Process = () => (
             </a>
           </Col>
         </Row>
+        <Waypoint
+          onEnter={() =>
+            document.querySelector(".cta-card").classList.add("slide-up")
+          }
+        />
       </Container>
     </div>
   </Layout>

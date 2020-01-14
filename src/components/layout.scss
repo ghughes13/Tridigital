@@ -2059,6 +2059,15 @@ main .row.full-width-row.content-right {
   }
 }
 
+.scale-img {
+  transform: scale(0);
+  transition-duration: 0.5s;
+}
+
+.scale-img.scale-up {
+  transform: scale(1);
+}
+
 .about-us-page .employee-headshot {
   max-width: 400px;
   margin-left: 100px;

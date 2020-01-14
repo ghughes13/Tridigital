@@ -33,6 +33,14 @@ const AboutUs = () => (
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/heart.png"
               alt="heart"
+              className="scale-img first"
+            />
+            <Waypoint
+              onEnter={() =>
+                document
+                  .querySelector(".scale-img.first")
+                  .classList.add("scale-up")
+              }
             />
           </Col>
           <Col className="content-container">
@@ -73,6 +81,14 @@ const AboutUs = () => (
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/mask.png"
               alt="mask"
+              className="scale-img second"
+            />
+            <Waypoint
+              onEnter={() =>
+                document
+                  .querySelector(".scale-img.second")
+                  .classList.add("scale-up")
+              }
             />
           </Col>
         </Row>
@@ -84,13 +100,20 @@ const AboutUs = () => (
         <Row className="two-columns full-width-row content-right align-middle content-third">
           <Col className="content-container centered-text">
             <img
-              className="eggs-img"
+              className="eggs-img scale-img third"
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/Egg.png"
               alt="eggs"
             />
+            <Waypoint
+              onEnter={() =>
+                document
+                  .querySelector(".scale-img.third")
+                  .classList.add("scale-up")
+              }
+            />
           </Col>
           <Col className="content-container">
-            <div className="values-card right three">
+            <div className="values-card right fourth">
               <h3 className="light-blue-text">Break Eggs</h3>
               <p>
                 Creating something meaningful and innovative doesn’t come
@@ -100,7 +123,7 @@ const AboutUs = () => (
             <Waypoint
               onEnter={() =>
                 document
-                  .querySelector(".values-card.three")
+                  .querySelector(".values-card.fourth")
                   .classList.add("slide-left")
               }
             />
@@ -127,6 +150,14 @@ const AboutUs = () => (
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/draw.png"
               alt="drawing"
+              className="scale-img fifth"
+            />
+            <Waypoint
+              onEnter={() =>
+                document
+                  .querySelector(".scale-img.fifth")
+                  .classList.add("scale-up")
+              }
             />
           </Col>
         </Row>
@@ -135,6 +166,14 @@ const AboutUs = () => (
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/paint.png"
               alt="paint"
+              className="scale-img sixth"
+            />
+            <Waypoint
+              onEnter={() =>
+                document
+                  .querySelector(".scale-img.sixth")
+                  .classList.add("scale-up")
+              }
             />
           </Col>
           <Col className="content-container">

@@ -174,7 +174,6 @@ const ContactUs = () => (
           />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="21" type="full" />
           <Waypoint
             onEnter={() => {
               document
@@ -182,6 +181,7 @@ const ContactUs = () => (
                 .classList.add("slide-up")
             }}
           />
+          <SingleReivew number="21" type="full" />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
           <Waypoint
