@@ -1,7 +1,6 @@
 import PropTypes from "prop-types"
 import React, { useEffect } from "react"
 import Burger from "./burger.js"
-import $ from "jquery"
 
 const Header = ({ siteTitle }) => {
   useEffect(() => {

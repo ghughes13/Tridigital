@@ -101,6 +101,7 @@ const Footer = () => (
                 type="email"
                 placeholder="Email"
                 className="theInput"
+                required
               ></input>
             </div>
             <div className="hide-me field">

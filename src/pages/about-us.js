@@ -3,9 +3,15 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
 import EmployeeInfo from "../components/about-us-employees"
+import { Waypoint } from "react-waypoint"
 
 const AboutUs = () => (
   <Layout>
+    <Waypoint
+      onEnter={() =>
+        document.querySelector("header").classList.add("about-us-header")
+      }
+    />
     <SEO title="About Us" />
     <div className="about-us-page">
       <EmployeeInfo />
@@ -30,24 +36,38 @@ const AboutUs = () => (
             />
           </Col>
           <Col className="content-container">
-            <div className="values-card">
+            <div className="values-card right one">
               <h3 className="pink-text">Love Your Work</h3>
               <p>
                 Cherish and protect your creations. Do not compromise its
                 quality.
               </p>
             </div>
+            <Waypoint
+              onEnter={() =>
+                document
+                  .querySelector(".values-card.one")
+                  .classList.add("slide-left")
+              }
+            />
           </Col>
         </Row>
         <Row className="two-columns full-width-row content-right align-middle content-second flexed">
           <Col className="content-container">
-            <div className="values-card left-align">
+            <div className="values-card two left left-align">
               <h3 className="purple-text">Create Superheroes</h3>
               <p>
                 People come first. We support, train, protect, and empower
                 people to unlock their superhuman potential.
               </p>
             </div>
+            <Waypoint
+              onEnter={() =>
+                document
+                  .querySelector(".values-card.two")
+                  .classList.add("slide-right")
+              }
+            />
           </Col>
           <Col className="content-container centered-text">
             <img
@@ -70,24 +90,38 @@ const AboutUs = () => (
             />
           </Col>
           <Col className="content-container">
-            <div className="values-card">
+            <div className="values-card right three">
               <h3 className="light-blue-text">Break Eggs</h3>
               <p>
                 Creating something meaningful and innovative doesn’t come
                 without frequent failure.
               </p>
             </div>
+            <Waypoint
+              onEnter={() =>
+                document
+                  .querySelector(".values-card.three")
+                  .classList.add("slide-left")
+              }
+            />
           </Col>
         </Row>
         <Row className="two-columns full-width-row content-right align-middle content-fourth flexed">
           <Col className="content-container">
-            <div className="values-card left-align">
+            <div className="values-card four left left-align">
               <h3 className="yellow-text">Make Your Mark</h3>
               <p>
                 Come in every day and make a difference. When you work with
                 passion, you create a legacy for all of those we touch.
               </p>
             </div>
+            <Waypoint
+              onEnter={() =>
+                document
+                  .querySelector(".values-card.four")
+                  .classList.add("slide-right")
+              }
+            />
           </Col>
           <Col className="content-container centered-text">
             <img
@@ -104,13 +138,20 @@ const AboutUs = () => (
             />
           </Col>
           <Col className="content-container">
-            <div className="values-card">
+            <div className="values-card right five">
               <h3 className="teal-text">Mix Paint</h3>
               <p>
                 Through collaboration we take people’s most unique qualities and
                 mix them to create something new and beautiful.
               </p>
             </div>
+            <Waypoint
+              onEnter={() =>
+                document
+                  .querySelector(".values-card.five")
+                  .classList.add("slide-left")
+              }
+            />
           </Col>
         </Row>
       </Container>
@@ -124,6 +165,11 @@ const AboutUs = () => (
               Contact Us
             </a>
           </Col>
+          <Waypoint
+            onEnter={() =>
+              document.querySelector(".cta-card").classList.add("slide-up")
+            }
+          />
         </Row>
       </Container>
     </div>

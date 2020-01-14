@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import { Container, Row, Col } from "react-bootstrap"
-// import * as PropTypes from "prop-types"
+import { Waypoint } from "react-waypoint"
 import YourVideo from "../components/home-video-player.js"
 
 // const propTypes = {
@@ -321,6 +321,11 @@ class IndexPage extends React.Component {
                   Take the First Step{" "}
                 </a>
               </Col>
+              <Waypoint
+                onEnter={() =>
+                  document.querySelector(".cta-card").classList.add("slide-up")
+                }
+              />
             </Row>
           </Container>
         </div>

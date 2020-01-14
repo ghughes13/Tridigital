@@ -44,7 +44,7 @@ export default class YourVideo extends React.Component {
                   }
                   alt=""
                   aria-hidden="true"
-                  onload="this.parentNode.style.opacity=1;"
+                  onoad="this.parentNode.style.opacity=1;"
                 />
               </div>
             </div>

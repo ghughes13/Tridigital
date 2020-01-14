@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
-import jQuery from "jQuery"
 
 const ContactUs = () => (
   <Layout>

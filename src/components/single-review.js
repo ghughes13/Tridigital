@@ -9,7 +9,11 @@ export default function SingleReivew(props) {
   if (props.type === "half") {
     return (
       <Col className="content-container centered-text half">
-        <div className="review-container">
+        <div
+          className={
+            "review-container number-" + data.indexOf(data[number - 1])
+          }
+        >
           <YourVideo props={data[number - 1]} />
           <div class="data-container">
             <p className="company-name">{data[number - 1].name}</p>
@@ -74,7 +78,11 @@ export default function SingleReivew(props) {
   } else if (props.type === "personal-half") {
     return (
       <Col className="content-container centered-text half-person">
-        <div className="review-container">
+        <div
+          className={
+            "review-container number-" + data.indexOf(data[number - 1])
+          }
+        >
           <img src={data[number - 1].video} alt="video" />
           <div class="data-container">
             <p className="company-name">{data[number - 1].name}</p>
@@ -136,7 +144,12 @@ export default function SingleReivew(props) {
     )
   } else {
     return (
-      <div className="review-container content-container centered-text full-person">
+      <div
+        className={
+          "review-container content-container centered-text full-person number-" +
+          data.indexOf(data[number - 1])
+        }
+      >
         <img src={data[number - 1].video} alt="video" />
         <div class="data-container">
           <p className="company-name">{data[number - 1].name}</p>
