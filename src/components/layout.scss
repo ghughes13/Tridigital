@@ -2570,6 +2570,111 @@ header.about-us-header.end-transparency {
   display: none;
 }
 
+.process-page .slide {
+  position: relative;
+  left: -100vw;
+  transition-duration: 0.5s;
+}
+
+.process-page .slide-left {
+  left: 0;
+}
+
+.process-page .transfer,
+.process-page .moodboard {
+  position: relative;
+  right: -100vw;
+  transition-duration: 0.5s;
+}
+
+.process-page .slide-right {
+  right: 0;
+}
+
+.process-page .marketing-plan-section .page.first-img {
+  top: 0%;
+  right: auto;
+  left: -4%;
+}
+
+.process-page .marketing-plan-section .page.second-img {
+  top: 30%;
+  right: auto;
+  left: -12%;
+}
+
+.process-page .marketing-plan-section .page.third-img {
+  top: 15%;
+  right: auto;
+  left: 0%;
+}
+
+.process-page .page {
+  transform: translatex(-100vw) translatey(-100vw);
+  transition-duration: 0.5s;
+}
+
+.process-page .page.second-img {
+  transition-duration: 0.75s;
+}
+
+.process-page .page.third-img {
+  transition-duration: 0.25s;
+}
+
+.process-page .page.slide-in {
+  transform: translatex(0px) translatey(0px);
+}
+
+.process-page .deliverables {
+  transform: translatex(100vw) translatey(-100vw);
+  transition-duration: 0.5s;
+}
+
+.process-page .deliverables.second {
+  transition-duration: 0.25s;
+}
+
+.process-page .deliverables.third {
+  transition-duration: 0.75s;
+}
+
+.process-page .deliverables.fourth {
+  transition-duration: 0.3s;
+}
+
+.process-page .deliverables.fifth {
+  transition-duration: 0.6s;
+}
+
+.process-page .deliverables.slide-in {
+  transform: translatex(0px) translatey(0px);
+}
+
+.process-page .deliverables-section .deliverables.first {
+  top: 375px;
+  right: 425px;
+}
+
+.process-page .deliverables-section .deliverables.second {
+  top: 500px;
+  right: 50px;
+}
+
+.process-page .deliverables-section .deliverables.third {
+  top: 625px;
+  right: 175px;
+}
+
+.process-page .deliverables-section .deliverables.fourth {
+  top: 200px;
+  right: 100px;
+}
+
+.process-page .deliverables-section .deliverables.fifth {
+  top: 400px;
+}
+
 @media screen and (max-width: 1600px) {
   .process-page .five div img,
   .process-page .four div img {
@@ -2721,7 +2826,6 @@ header.about-us-header.end-transparency {
   .process-page .static-position img {
     position: absolute;
     top: 0;
-    right: 0;
   }
 
   .process-page .content-right .static-position img {

@@ -42,13 +42,18 @@ const Process = () => (
           <Col>
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/knowledge.png"
-              className="desktop-img"
+              className="desktop-img transfer"
               alt="websites and questionaires"
             />
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-3451-1.png"
-              className="mobile-img"
+              className="mobile-img transfer"
               alt="websites and questionaires"
+            />
+            <Waypoint
+              onEnter={() =>
+                document.querySelector(".transfer").classList.add("slide-right")
+              }
             />
           </Col>
         </Row>
@@ -59,18 +64,23 @@ const Process = () => (
           <Col>
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/story-arc.png"
-              className="desktop-img"
+              className="desktop-img slide"
               alt="slide"
             />
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-3452-1.png"
-              className="mobile-img"
+              className="mobile-img slide"
               alt="slide"
+            />
+            <Waypoint
+              onEnter={() =>
+                document.querySelector(".slide").classList.add("slide-left")
+              }
             />
           </Col>
           <Col className="content-container">
             <p className="gold-text heavy-weight step">Step 2:</p>
-            <h2 className="white-text ">Execute a Story Arc</h2>
+            <h2 className="white-text">Execute a Story Arc</h2>
             <p className="white-text">
               This exercise is designed to dig deeper into the true motivations
               of why your company exists and why you serve your target audience.
@@ -98,30 +108,60 @@ const Process = () => (
           <Col className="static-position">
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/moodboard.png"
-              className="desktop-img"
+              className="desktop-img moodboard"
               alt="moodboard"
             />
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-849.png"
-              className="mobile-img"
+              className="mobile-img moodboard"
               alt="moodboard"
+            />
+            <Waypoint
+              onEnter={() =>
+                document
+                  .querySelector(".moodboard")
+                  .classList.add("slide-right")
+              }
             />
           </Col>
         </Row>
       </Container>
-
       <Container className="container step-section marketing-plan-section">
         <Row className="two-columns full-width-row content-right align-middle four">
           <Col className="static-position">
-            <img
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/marketing-plan.png"
-              className="desktop-img"
-              alt="plan"
-            />
+            <div className="desktop-img">
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Plan-C.png"
+                className="first-img page"
+                alt="plan"
+              />
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Plan-B.png"
+                className="second-img page"
+                alt="plan"
+              />
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Plan-A.png"
+                className="third-img page"
+                alt="plan"
+              />
+              {/* <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/marketing-plan.png"
+                className="desktop-img"
+                alt="plan"
+              /> */}
+            </div>
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-3455-1.png"
               className="mobile-img"
               alt="plan"
+            />
+            <Waypoint
+              onEnter={() =>
+                document.querySelectorAll(".page").forEach(page => {
+                  page.classList.add("slide-in")
+                })
+              }
             />
           </Col>
           <Col className="content-container">
@@ -148,11 +188,33 @@ const Process = () => (
             </p>
           </Col>
           <Col className="static-position">
-            <img
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/deliverables.png"
-              className="desktop-img"
-              alt="deliverables"
-            />
+            <div className="desktop-img">
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Image-42.png"
+                className="deliverables first"
+                alt="deliverables"
+              />
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Image-41.png"
+                className="deliverables second"
+                alt="deliverables"
+              />
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Image-40.png"
+                className="deliverables third"
+                alt="deliverables"
+              />
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Image-38.png"
+                className="deliverables fourth"
+                alt="deliverables"
+              />
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Image-37.png"
+                className="deliverables fifth"
+                alt="deliverables"
+              />
+            </div>
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-853.png"
               className="mobile-img"
@@ -160,6 +222,13 @@ const Process = () => (
             />
           </Col>
         </Row>
+        <Waypoint
+          onEnter={() =>
+            document.querySelectorAll(".deliverables").forEach(page => {
+              page.classList.add("slide-in")
+            })
+          }
+        />
       </Container>
 
       <Container className="cta-container">

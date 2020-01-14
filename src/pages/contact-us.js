@@ -34,7 +34,7 @@ const ContactUs = () => (
                 <div className="what-do-we-call-you">
                   <div className="field name-field">
                     <label>What’s your name?</label>
-                    <input type="text" className="theInput"></input>
+                    <input type="text" className="theInput" required></input>
                   </div>
                   <div className="field">
                     <label className="second-label">
@@ -46,7 +46,7 @@ const ContactUs = () => (
                 <br />
                 <div className="field email-field">
                   <label>What’s your email address?</label>
-                  <input type="text" className="theInput"></input>
+                  <input type="email" className="theInput" required></input>
                 </div>
                 <div className="field comment-field">
                   <label className="textarea-label">
