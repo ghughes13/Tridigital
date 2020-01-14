@@ -11,7 +11,7 @@ const AboutUs = () => (
       <EmployeeInfo />
       <Container className="container">
         <Row className="">
-          <Col className="content-container column ">
+          <Col className="content-container column">
             <h2 className="blue-text centered-text core-values">
               Our Core Values
             </h2>

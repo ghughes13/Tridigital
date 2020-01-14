@@ -6,20 +6,22 @@ import { Container, Row, Col } from "react-bootstrap"
 const WarmUp = () => (
   <Layout>
     <SEO title="Warm Up" />
-    <div className="about-us-page">
-      <Container className="container">
+    <div className="warmup-page">
+      <Container className="container blue-background">
         <Row className="">
           <Col className="content-container column ">
-            <h2 className="blue-text centered-text core-values">
-              Our Core Values
-            </h2>
+            <h2 className="white-text core-values">The MSP Marketing Warmup</h2>
+            <p class="white-text subtext">
+              How we create unique and creative strategy for your company.
+            </p>
+          </Col>
+          <Col className="content-container column ">
+            <img
+              class="collaterals"
+              src="/wp-content/uploads/2019/07/collateral.png"
+            />
           </Col>
         </Row>
-        <img
-          className="blob-graphic right-blob"
-          src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"
-          alt=""
-        ></img>
       </Container>
     </div>
   </Layout>

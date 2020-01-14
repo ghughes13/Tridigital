@@ -84,26 +84,42 @@ const Footer = () => (
       </Col>
       <Col>
         <h2>Join Our Newsletter</h2>
-        <form id="newsletter-form">
-          <div className="field email-field">
-            <input
-              type="email"
-              placeholder="Email"
-              className="theInput"
-            ></input>
+        <div class="form-container">
+          <form
+            id="newsletter-form"
+            className="Newsletter"
+            onSubmit={e => {
+              e.preventDefault()
+              document.querySelector("#newsletter-form").style.display = "none"
+              document.querySelector(".footer-thank-you").style.display =
+                "block"
+              return false
+            }}
+          >
+            <div className="field email-field">
+              <input
+                type="email"
+                placeholder="Email"
+                className="theInput"
+              ></input>
+            </div>
+            <div className="hide-me field">
+              <input
+                defaultValue="Newsletter"
+                data-value="Newsletter"
+                className="theInput formcat"
+              ></input>
+            </div>
+            <div className="form-footer">
+              <button className="pink-button" type="submit">
+                Send
+              </button>
+            </div>
+          </form>
+          <div class="footer-thank-you">
+            <h5>Thank you for contacting us. We'll be in touch shortly!</h5>
           </div>
-          <div className="hide-me field">
-            <input
-              defaultValue="Newsletter"
-              className="theInput formcat"
-            ></input>
-          </div>
-          <div className="form-footer">
-            <button className="pink-button" type="submit">
-              Send
-            </button>
-          </div>
-        </form>
+        </div>
       </Col>
     </Row>
 

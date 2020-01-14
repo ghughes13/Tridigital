@@ -18,7 +18,17 @@ const ContactUs = () => (
           </Col>
           <Col className="content-container column ">
             <div className="form-container">
-              <form id="contact-form">
+              <form
+                id="contact-form"
+                className="Consultation"
+                onSubmit={e => {
+                  e.preventDefault()
+                  document.querySelector("#contact-form").style.display = "none"
+                  document.querySelector(".contact-thank-you").style.display =
+                    "block"
+                  return false
+                }}
+              >
                 <h3 className="blue-text form-title">
                   Speak with an MSP Marketer to learn more
                 </h3>
@@ -62,6 +72,9 @@ const ContactUs = () => (
                   </button>
                 </div>
               </form>
+              <div class="contact-thank-you">
+                <h5>Thank you for contacting us. We'll be in touch shortly!</h5>
+              </div>
             </div>
           </Col>
         </Row>
