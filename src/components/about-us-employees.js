@@ -28,18 +28,30 @@ export default function EmployeeInfo() {
     small = false
   }
 
-  // useEffect(() => {
-  //   if (window.innerWidth < 960) {
-  //     desktop = false
-  //   } else if (window.innerWidth < 767) {
-  //     small = false
-  //   }
-  // })
+  useEffect(() => {
+    // if (window.innerWidth < 960) {
+    //   desktop = false
+    // } else
+    if (window.innerWidth < 767) {
+      console.log(
+        document.querySelectorAll(".GIOVANNI-SANGUILY").forEach(el => {
+          el.classList.add("open")
+        })
+      )
+    }
+  })
 
   const EmpPicVid = () => {
     if (desktop && employees[employeeToShow].videoURL !== "") {
       return (
-        <div className="vid-pic-container">
+        <div
+          className={
+            "vid-pic-container" +
+            employees[employeeToShow].First +
+            "-" +
+            employees[employeeToShow].Last
+          }
+        >
           <video src={vidURL} autoPlay muted>
             <p>
               If you are reading this, it is because your browser does not
@@ -60,7 +72,14 @@ export default function EmployeeInfo() {
       )
     } else {
       return (
-        <div className="vid-pic-container">
+        <div
+          className={
+            "vid-pic-container " +
+            employees[employeeToShow].First +
+            "-" +
+            employees[employeeToShow].Last
+          }
+        >
           <img
             src={
               "http://tdgatsbytest.wpengine.com" +
@@ -76,21 +95,175 @@ export default function EmployeeInfo() {
     }
   }
 
-  if (desktop) {
-    console.log("desktop")
-    //HTML FOR DESKTOP
+  const SizeToRender = () => {
+    if (desktop) {
+      //HTML FOR DESKTOP
+      return (
+        <div>
+          <Container className="hero-section container blue-background">
+            <Row className="two-columns pink-banner">
+              <Col className="content-container column click-through">
+                <h2 className="white-text">
+                  {employees[employeeToShow].First}{" "}
+                  {employees[employeeToShow].Last}
+                </h2>
+                <p className="white-text subtext">
+                  {employees[employeeToShow].Position}
+                </p>
+                <p className="likes heavy-weight white-text">
+                  {employees[employeeToShow].Hobbies}
+                </p>
+                <p className="white-text bio-content">
+                  {employees[employeeToShow].Desc}
+                </p>
+              </Col>
+              <Col className="content-container column video-column">
+                <EmpPicVid />
+              </Col>
+            </Row>
+          </Container>
+          <div className="employee-thumbnail-container">
+            <div className="row-1">
+              {row1.map((employee, index) => (
+                <div
+                  className="thumbnail-container"
+                  key={index}
+                  onClick={() => setEmployeeToShow(index)}
+                >
+                  <img
+                    src={employee.thumbnail}
+                    alt={
+                      employees[employeeToShow].First +
+                      employees[employeeToShow].Last
+                    }
+                  />
+                  <span className="name">{employee.First}</span>
+                </div>
+              ))}
+            </div>
+            <div className="row-2">
+              {row2.map((employee, index) => (
+                <div
+                  className="thumbnail-container"
+                  key={index + 9}
+                  onClick={() => setEmployeeToShow(index + 9)}
+                >
+                  <img
+                    src={employee.thumbnail}
+                    alt={
+                      employees[employeeToShow].First +
+                      employees[employeeToShow].Last
+                    }
+                  />
+                  <span className="name">{employee.First}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )
+    } else if (small) {
+      //HTML FOR SMALL(TABLET)
+      return (
+        <div>
+          <Container className="hero-section container blue-background">
+            <Row className="two-columns pink-banner">
+              <Col className="content-container column click-through">
+                <h2 className="white-text">
+                  {employees[employeeToShow].First}{" "}
+                  {employees[employeeToShow].Last}
+                </h2>
+                <p className="white-text subtext">
+                  {employees[employeeToShow].Position}
+                </p>
+                <p className="likes heavy-weight white-text">
+                  {employees[employeeToShow].Hobbies}
+                </p>
+                <p className="white-text bio-content">
+                  {employees[employeeToShow].Desc}
+                </p>
+              </Col>
+              <Col className="content-container column video-column">
+                <EmpPicVid />
+              </Col>
+            </Row>
+          </Container>
+          <div className="employee-thumbnail-container">
+            <div className="row-1">
+              {employees.map((employee, index) => (
+                <div
+                  className="thumbnail-container"
+                  key={index}
+                  onClick={() => setEmployeeToShow(index)}
+                >
+                  <img
+                    src={employee.thumbnail}
+                    alt={
+                      employees[employeeToShow].First +
+                      employees[employeeToShow].Last
+                    }
+                  />
+                  <span className="name">{employee.First}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )
+    }
+
+    let open = false
+
+    const animatePerson = (person, index) => {
+      window.scroll({ top: 0, behavior: "smooth" })
+      let showThisPerson = "." + person
+      setTimeout(function() {
+        document.querySelectorAll(".open").forEach(el => {
+          el.classList.remove("open")
+        })
+      }, 500)
+      setTimeout(function() {
+        setEmployeeToShow(index)
+      }, 750)
+      setTimeout(function() {
+        document.querySelectorAll(showThisPerson).forEach(el => {
+          el.classList.add("open")
+        })
+      }, 1000)
+    }
+
+    //HTML FOR MOBILE
     return (
       <div>
         <Container className="hero-section container blue-background">
           <Row className="two-columns pink-banner">
-            <Col className="content-container column click-through">
-              <h2 className="white-text">
-                {employees[employeeToShow].First}{" "}
-                {employees[employeeToShow].Last}
-              </h2>
-              <p className="white-text subtext">
-                {employees[employeeToShow].Position}
-              </p>
+            <Col className="content-container column video-column">
+              <div
+                className={
+                  "name-and-title " +
+                  employees[employeeToShow].First +
+                  "-" +
+                  employees[employeeToShow].Last
+                }
+              >
+                <h2 className="white-text">
+                  {employees[employeeToShow].First}{" "}
+                  {employees[employeeToShow].Last}
+                </h2>
+                <p className="white-text subtext">
+                  {employees[employeeToShow].Position}
+                </p>
+              </div>
+              <EmpPicVid />
+            </Col>
+            <Col
+              className={
+                "content-container column click-through bio-text " +
+                employees[employeeToShow].First +
+                "-" +
+                employees[employeeToShow].Last
+              }
+            >
               <p className="likes heavy-weight white-text">
                 {employees[employeeToShow].Hobbies}
               </p>
@@ -98,149 +271,39 @@ export default function EmployeeInfo() {
                 {employees[employeeToShow].Desc}
               </p>
             </Col>
-            <Col className="content-container column video-column">
-              <EmpPicVid />
-            </Col>
+          </Row>
+          <Row className="two-columns padding-left-fix-mobile">
+            <div className="employee-thumbnail-container">
+              <div className="row-1">
+                {employees.map((employee, index) => (
+                  <div
+                    className="thumbnail-container "
+                    id={employees[index].First + "-" + employees[index].Last}
+                    key={index}
+                    onClick={() => {
+                      animatePerson(
+                        employees[index].First + "-" + employees[index].Last,
+                        index
+                      )
+                    }}
+                  >
+                    <img
+                      src={employee.thumbnail}
+                      alt={
+                        employees[employeeToShow].First +
+                        employees[employeeToShow].Last
+                      }
+                    />
+                    <span className="name">{employee.First}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </Row>
         </Container>
-        <div className="employee-thumbnail-container">
-          <div className="row-1">
-            {row1.map((employee, index) => (
-              <div
-                className="thumbnail-container"
-                key={index}
-                onClick={() => setEmployeeToShow(index)}
-              >
-                <img
-                  src={employee.thumbnail}
-                  alt={
-                    employees[employeeToShow].First +
-                    employees[employeeToShow].Last
-                  }
-                />
-                <span className="name">{employee.First}</span>
-              </div>
-            ))}
-          </div>
-          <div className="row-2">
-            {row2.map((employee, index) => (
-              <div
-                className="thumbnail-container"
-                key={index + 9}
-                onClick={() => setEmployeeToShow(index + 9)}
-              >
-                <img
-                  src={employee.thumbnail}
-                  alt={
-                    employees[employeeToShow].First +
-                    employees[employeeToShow].Last
-                  }
-                />
-                <span className="name">{employee.First}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    )
-  } else if (small) {
-    console.log("small")
-    //HTML FOR SMALL(TABLET)
-    return (
-      <div>
-        <Container className="hero-section container blue-background">
-          <Row className="two-columns pink-banner">
-            <Col className="content-container column click-through">
-              <h2 className="white-text">
-                {employees[employeeToShow].First}{" "}
-                {employees[employeeToShow].Last}
-              </h2>
-              <p className="white-text subtext">
-                {employees[employeeToShow].Position}
-              </p>
-              <p className="likes heavy-weight white-text">
-                {employees[employeeToShow].Hobbies}
-              </p>
-              <p className="white-text bio-content">
-                {employees[employeeToShow].Desc}
-              </p>
-            </Col>
-            <Col className="content-container column video-column">
-              <EmpPicVid />
-            </Col>
-          </Row>
-        </Container>
-        <div className="employee-thumbnail-container">
-          <div className="row-1">
-            {employees.map((employee, index) => (
-              <div
-                className="thumbnail-container"
-                key={index}
-                onClick={() => setEmployeeToShow(index)}
-              >
-                <img
-                  src={employee.thumbnail}
-                  alt={
-                    employees[employeeToShow].First +
-                    employees[employeeToShow].Last
-                  }
-                />
-                <span className="name">{employee.First}</span>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     )
   }
-  console.log("mobile")
-  //HTML FOR MOBILE
-  return (
-    <div>
-      <Container className="hero-section container blue-background">
-        <Row className="two-columns pink-banner">
-          <Col className="content-container column video-column">
-            <div className="name-and-title">
-              <h2 className="white-text">
-                {employees[employeeToShow].First}{" "}
-                {employees[employeeToShow].Last}
-              </h2>
-              <p className="white-text subtext">
-                {employees[employeeToShow].Position}
-              </p>
-            </div>
-            <EmpPicVid />
-          </Col>
-          <Col className="content-container column click-through">
-            <p className="likes heavy-weight white-text">
-              {employees[employeeToShow].Hobbies}
-            </p>
-            <p className="white-text bio-content">
-              {employees[employeeToShow].Desc}
-            </p>
-          </Col>
-        </Row>
-      </Container>
-      <div className="employee-thumbnail-container">
-        <div className="row-1">
-          {employees.map((employee, index) => (
-            <div
-              className="thumbnail-container"
-              key={index}
-              onClick={() => setEmployeeToShow(index)}
-            >
-              <img
-                src={employee.thumbnail}
-                alt={
-                  employees[employeeToShow].First +
-                  employees[employeeToShow].Last
-                }
-              />
-              <span className="name">{employee.First}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  )
+
+  return <SizeToRender />
 }
