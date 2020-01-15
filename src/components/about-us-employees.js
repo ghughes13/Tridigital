@@ -5,6 +5,7 @@ let employees = require("../../employee-data.json")
 
 export default function EmployeeInfo() {
   const [employeeToShow, setEmployeeToShow] = useState(0)
+  const [sizeOfWindow, setSizeOfWindow] = useState("desktop")
   let vidURL =
     "http://tdgatsbytest.wpengine.com" + employees[employeeToShow].videoURL
 
@@ -22,6 +23,12 @@ export default function EmployeeInfo() {
   }
 
   useEffect(() => {
+    if (window.innerWidth < 960) {
+      setSizeOfWindow = "small"
+    }
+    if (window.innerWidth < 767) {
+      setSizeOfWindow = "mobile"
+    }
     if (window.innerWidth < 767) {
       console.log(
         document.querySelectorAll(".GIOVANNI-SANGUILY").forEach(el => {
@@ -86,14 +93,7 @@ export default function EmployeeInfo() {
   }
 
   const SizeToRender = () => {
-    if (window.innerWidth < 960) {
-      desktop = false
-    }
-    if (window.innerWidth < 767) {
-      small = false
-    }
-
-    if (desktop) {
+    if (desktop === "desktop") {
       //HTML FOR DESKTOP
       return (
         <div>
@@ -159,7 +159,7 @@ export default function EmployeeInfo() {
           </div>
         </div>
       )
-    } else if (small) {
+    } else if (small === "small") {
       //HTML FOR SMALL(TABLET)
       return (
         <div>
