@@ -93,7 +93,7 @@ export default function EmployeeInfo() {
   }
 
   const SizeToRender = () => {
-    if (desktop === "desktop") {
+    if (sizeOfWindow === "desktop") {
       //HTML FOR DESKTOP
       return (
         <div>
@@ -159,7 +159,7 @@ export default function EmployeeInfo() {
           </div>
         </div>
       )
-    } else if (small === "small") {
+    } else if (sizeOfWindow === "small") {
       //HTML FOR SMALL(TABLET)
       return (
         <div>
