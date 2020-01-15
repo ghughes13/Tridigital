@@ -145,8 +145,10 @@ class IndexPage extends React.Component {
           </Container>
           <Container className="powers-section flexed max-width-fix top-layer">
             <Row className="two-columns full-width-row content-left align-middle top-layer">
-              <Col className="content-container">
-                <h2 className="blue-text">Unleash YOUR True Superpowers</h2>
+              <Col className="content-container max-width-children">
+                <h2 className="blue-text smaller">
+                  Unleash YOUR True Superpowers
+                </h2>
                 <p>
                   Your most competitive advantage is not what you do but how you
                   do it.
@@ -236,7 +238,7 @@ class IndexPage extends React.Component {
               alt=""
             ></img>
           </Container>
-          <Container className="target-section max-width-fix top-layer">
+          <Container className="target-section max-width-fix top-layer padding-top-one-fifty">
             <Row className="two-columns full-width-row content-right align-middle top-layer">
               <Col className="content-container video-container">
                 <video
@@ -252,7 +254,9 @@ class IndexPage extends React.Component {
                 </video>
               </Col>
               <Col className="content-container">
-                <h2 className="blue-text">TARGET the Customers You Want.</h2>
+                <h2 className="blue-text smaller">
+                  TARGET the Customers You Want
+                </h2>
                 <p>
                   You know the kind of customers you want. Your IT marketing
                   strategy should focus on attracting the customers that are the
@@ -276,10 +280,10 @@ class IndexPage extends React.Component {
               alt=""
             ></img>
           </Container>
-          <Container className="flexed max-width-fix outsmart-container top-layer">
+          <Container className="flexed max-width-fix outsmart-container top-layer padding-top-one-fifty">
             <Row className="two-columns full-width-row content-left align-middle top-layer">
               <Col className="content-container">
-                <h2 className="blue-text">Outsmart Your Competition</h2>
+                <h2 className="blue-text smaller">Outsmart Your Competition</h2>
                 <p>
                   Empower your sales team the way you empower your engineers.
                   Leverage innovative technology and amazing marketing materials

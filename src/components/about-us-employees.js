@@ -11,8 +11,6 @@ export default function EmployeeInfo() {
 
   let row1 = []
   let row2 = []
-  let desktop = true
-  let small = true
 
   for (let i = 0; i < employees.length; i++) {
     if (i < employees.length / 2) {
@@ -28,8 +26,6 @@ export default function EmployeeInfo() {
     }
     if (window.innerWidth < 767) {
       setSizeOfWindow("mobile")
-    }
-    if (window.innerWidth < 767) {
       console.log(
         document.querySelectorAll(".GIOVANNI-SANGUILY").forEach(el => {
           el.classList.add("open")
