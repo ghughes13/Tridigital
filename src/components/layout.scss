@@ -1746,16 +1746,6 @@ footer .footer-thank-you h5 {
   padding-top: 150px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .home-page .hero-section {
-    background: linear-gradient(to bottom, #00a7ff 1%, #0d47e7 99%);
-  }
-
-  .home-page .collateral-section.blue-background {
-    background-color: #0d47e7;
-  }
-}
-
 /* 1.5 dpr */
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .home-page .hero-section {
@@ -1764,6 +1754,16 @@ footer .footer-thank-you h5 {
 
   .home-page .collateral-section.blue-background {
     background-color: #0043f5;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .home-page .hero-section {
+    background: linear-gradient(to bottom, #00a7ff 1%, #0d47e7 99%);
+  }
+
+  .home-page .collateral-section.blue-background {
+    background-color: #0d47e7;
   }
 }
 
