@@ -1746,6 +1746,11 @@ footer .footer-thank-you h5 {
   padding-top: 150px;
 }
 
+.home-page .video-container.first-one {
+  max-width: 726px !important;
+  overflow: hidden;
+}
+
 canvas {
   background: #cdcdcd;
 }

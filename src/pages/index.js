@@ -62,12 +62,15 @@ const IndexPage = () => {
                 />
               </div>
             </Col>
-            <Col className="content-container column video-container">
-              <img
+            <Col className="content-container column video-container first-one">
+              <video
                 className="play-icon"
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/video-team.png"
+                src="http://warmup.tridigitalmarketing.com/wp-content/uploads/2018/09/Homepage.mp4"
                 alt="TRIdigital media team"
-              ></img>
+                autoPlay
+                loop
+                muted
+              ></video>
             </Col>
           </Row>
           <img
