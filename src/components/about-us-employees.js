@@ -24,10 +24,10 @@ export default function EmployeeInfo() {
 
   useEffect(() => {
     if (window.innerWidth < 960) {
-      setSizeOfWindow = "small"
+      setSizeOfWindow("small")
     }
     if (window.innerWidth < 767) {
-      setSizeOfWindow = "mobile"
+      setSizeOfWindow("mobile")
     }
     if (window.innerWidth < 767) {
       console.log(
