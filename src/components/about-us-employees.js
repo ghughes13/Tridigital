@@ -11,6 +11,7 @@ export default function EmployeeInfo() {
   let row1 = []
   let row2 = []
   let desktop = true
+  let small = true
 
   for (let i = 0; i < employees.length; i++) {
     if (i < employees.length / 2) {
@@ -20,12 +21,20 @@ export default function EmployeeInfo() {
     }
   }
 
-  useEffect(() => {
-    if (window.innerWidth < 960) {
-      console.log("small")
-      desktop = false
-    }
-  })
+  if (window.innerWidth < 960) {
+    desktop = false
+  }
+  if (window.innerWidth < 767) {
+    small = false
+  }
+
+  // useEffect(() => {
+  //   if (window.innerWidth < 960) {
+  //     desktop = false
+  //   } else if (window.innerWidth < 767) {
+  //     small = false
+  //   }
+  // })
 
   const EmpPicVid = () => {
     if (desktop && employees[employeeToShow].videoURL !== "") {
@@ -68,6 +77,8 @@ export default function EmployeeInfo() {
   }
 
   if (desktop) {
+    console.log("desktop")
+    //HTML FOR DESKTOP
     return (
       <div>
         <Container className="hero-section container blue-background">
@@ -132,28 +143,81 @@ export default function EmployeeInfo() {
         </div>
       </div>
     )
+  } else if (small) {
+    console.log("small")
+    //HTML FOR SMALL(TABLET)
+    return (
+      <div>
+        <Container className="hero-section container blue-background">
+          <Row className="two-columns pink-banner">
+            <Col className="content-container column click-through">
+              <h2 className="white-text">
+                {employees[employeeToShow].First}{" "}
+                {employees[employeeToShow].Last}
+              </h2>
+              <p className="white-text subtext">
+                {employees[employeeToShow].Position}
+              </p>
+              <p className="likes heavy-weight white-text">
+                {employees[employeeToShow].Hobbies}
+              </p>
+              <p className="white-text bio-content">
+                {employees[employeeToShow].Desc}
+              </p>
+            </Col>
+            <Col className="content-container column video-column">
+              <EmpPicVid />
+            </Col>
+          </Row>
+        </Container>
+        <div className="employee-thumbnail-container">
+          <div className="row-1">
+            {employees.map((employee, index) => (
+              <div
+                className="thumbnail-container"
+                key={index}
+                onClick={() => setEmployeeToShow(index)}
+              >
+                <img
+                  src={employee.thumbnail}
+                  alt={
+                    employees[employeeToShow].First +
+                    employees[employeeToShow].Last
+                  }
+                />
+                <span className="name">{employee.First}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    )
   }
-
+  console.log("mobile")
+  //HTML FOR MOBILE
   return (
     <div>
       <Container className="hero-section container blue-background">
         <Row className="two-columns pink-banner">
+          <Col className="content-container column video-column">
+            <div className="name-and-title">
+              <h2 className="white-text">
+                {employees[employeeToShow].First}{" "}
+                {employees[employeeToShow].Last}
+              </h2>
+              <p className="white-text subtext">
+                {employees[employeeToShow].Position}
+              </p>
+            </div>
+            <EmpPicVid />
+          </Col>
           <Col className="content-container column click-through">
-            <h2 className="white-text">
-              {employees[employeeToShow].First} {employees[employeeToShow].Last}
-            </h2>
-            <p className="white-text subtext">
-              {employees[employeeToShow].Position}
-            </p>
             <p className="likes heavy-weight white-text">
               {employees[employeeToShow].Hobbies}
             </p>
             <p className="white-text bio-content">
               {employees[employeeToShow].Desc}
             </p>
-          </Col>
-          <Col className="content-container column video-column">
-            <EmpPicVid />
           </Col>
         </Row>
       </Container>

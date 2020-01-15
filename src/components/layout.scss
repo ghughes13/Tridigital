@@ -1392,6 +1392,7 @@ footer {
   color: #fff;
   line-height: 1em;
   font-size: 16px;
+  z-index: 999;
 }
 
 footer h2 {
@@ -1694,11 +1695,24 @@ footer .footer-thank-you h5 {
 }
 
 .home-page .target-section .video-container::before {
+  // top: 0;
+  // left: 17%;
+  // width: 100%;
+  // height: 100%;
+  // box-shadow: inset 0px 0px 0px 8px #fff;
+  // content: "";
+  // width: 30vw;
+  // -webkit-transform: rotateY(30deg);
+  // transform: rotateY(30deg);
+  // position: absolute;
+  // display: block;
+  // background: transparent;
+  // z-index: 1200;
   top: 0;
   left: 17%;
   width: 100%;
   height: 100%;
-  box-shadow: inset 0px 0px 0px 8px #fff;
+  box-shadow: inset 0 0 0 15px #fff;
   content: "";
   width: 30vw;
   -webkit-transform: rotateY(30deg);
@@ -1789,6 +1803,11 @@ footer .footer-thank-you h5 {
 }
 
 @media only screen and (max-width: 767px) {
+  .home-page .hero-section .blue-button {
+    border: none;
+    background: transparent;
+  }
+
   .home-page .powers-section .video-collage {
     max-width: 100%;
     margin: 12vh 0 7vw -10vw;
@@ -2232,7 +2251,7 @@ main .row.full-width-row.content-right {
 }
 
 header.about-us-header {
-  background: #2444ff;
+  background: rgb(36, 68, 255);
 }
 
 header.about-us-header.end-transparency {
@@ -2365,13 +2384,39 @@ header.about-us-header.end-transparency {
     padding-top: 0;
   }
 
-  // .about-us-page .eggs-img {
-  //   margin-left: 100px;
-  // }
+  header.about-us-header {
+    background: #fff;
+  }
 
   .about-us-page .right-blob {
     margin-top: 70%;
     transform: scale(2);
+  }
+
+  .about-us-page .pink-banner::before {
+    background: linear-gradient(to bottom, #00a7ff, #0000e6);
+    top: -30px;
+    z-index: 0;
+  }
+
+  .about-us-page .hero-section h2 {
+    font-size: 34px;
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+
+  .about-us-page .name-and-title {
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .about-us-page .pink-banner.row {
+    padding-left: 0;
+  }
+
+  .about-us-page .pink-banner .click-through {
+    margin: auto;
+    padding: 0 30px;
   }
 }
 

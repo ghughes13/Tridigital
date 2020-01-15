@@ -221,16 +221,15 @@ const Process = () => (
               alt="deliverables"
             />
           </Col>
+          <Waypoint
+            onEnter={() =>
+              document.querySelectorAll(".deliverables").forEach(page => {
+                page.classList.add("slide-in")
+              })
+            }
+          />
         </Row>
-        <Waypoint
-          onEnter={() =>
-            document.querySelectorAll(".deliverables").forEach(page => {
-              page.classList.add("slide-in")
-            })
-          }
-        />
       </Container>
-
       <Container className="cta-container">
         <Row className="">
           <Col className="cta-card box-shadow">

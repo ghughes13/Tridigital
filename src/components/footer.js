@@ -84,7 +84,7 @@ const Footer = () => (
       </Col>
       <Col>
         <h2>Join Our Newsletter</h2>
-        <div class="form-container">
+        <div className="form-container">
           <form
             id="newsletter-form"
             className="Newsletter"
@@ -117,7 +117,7 @@ const Footer = () => (
               </button>
             </div>
           </form>
-          <div class="footer-thank-you">
+          <div className="footer-thank-you">
             <h5>Thank you for contacting us. We'll be in touch shortly!</h5>
           </div>
         </div>
