@@ -1746,16 +1746,8 @@ footer .footer-thank-you h5 {
   padding-top: 150px;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.3),
-  only screen and (-o-min-device-pixel-ratio: 13/10),
-  only screen and (min-resolution: 120dpi) {
-  .home-page .hero-section {
-    background: linear-gradient(to bottom, #00a7ff 1%, #0d47e7 99%);
-  }
-
-  .home-page .collateral-section.blue-background {
-    background-color: #0d47e7;
-  }
+canvas {
+  background: #cdcdcd;
 }
 
 @media screen and (max-width: 1500px) {
