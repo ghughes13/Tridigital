@@ -21,17 +21,7 @@ export default function EmployeeInfo() {
     }
   }
 
-  if (window.innerWidth < 960) {
-    desktop = false
-  }
-  if (window.innerWidth < 767) {
-    small = false
-  }
-
   useEffect(() => {
-    // if (window.innerWidth < 960) {
-    //   desktop = false
-    // } else
     if (window.innerWidth < 767) {
       console.log(
         document.querySelectorAll(".GIOVANNI-SANGUILY").forEach(el => {
@@ -96,6 +86,13 @@ export default function EmployeeInfo() {
   }
 
   const SizeToRender = () => {
+    if (window.innerWidth < 960) {
+      desktop = false
+    }
+    if (window.innerWidth < 767) {
+      small = false
+    }
+
     if (desktop) {
       //HTML FOR DESKTOP
       return (
