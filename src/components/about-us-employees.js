@@ -39,7 +39,10 @@ export default function EmployeeInfo() {
   })
 
   const EmpPicVid = () => {
-    if (desktop && employees[employeeToShow].videoURL !== "") {
+    if (
+      sizeOfWindow === "desktop" &&
+      employees[employeeToShow].videoURL !== ""
+    ) {
       return (
         <div
           className={
