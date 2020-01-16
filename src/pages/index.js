@@ -227,7 +227,7 @@ const IndexPage = () => {
             <Col className="content-container center-image-container video-collage">
               <div className="video-1">
                 <video
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Computex-4-Export_R.mp4"
+                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/home-videos/Computex-4-Export_R%20%281%29.mp4"
                   autoPlay
                   muted
                   loop
@@ -240,7 +240,7 @@ const IndexPage = () => {
               </div>
               <div className="video-2">
                 <video
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Royal-It-4-Export_R.mp4"
+                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/home-videos/Royal-It-4-Export_R%20%281%29.mp4"
                   autoPlay
                   muted
                   loop
@@ -253,7 +253,7 @@ const IndexPage = () => {
               </div>
               <div className="video-3">
                 <video
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/BEI-–-4-export_R.mp4"
+                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/home-videos/BEI-%E2%80%93-4-export_R%20%281%29.mp4"
                   autoPlay
                   muted
                   loop
@@ -266,7 +266,7 @@ const IndexPage = () => {
               </div>
               <div className="video-4">
                 <video
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/GB-Tech-4-Export_R.mp4"
+                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/home-videos/GB-Tech-4-Export_R%20%281%29.mp4"
                   autoPlay
                   muted
                   loop
@@ -279,7 +279,7 @@ const IndexPage = () => {
               </div>
               <div className="video-5">
                 <video
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Stronghold-Data-4-export_R.mp4"
+                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/home-videos/Stronghold-Data-4-export_R%20%281%29.mp4"
                   autoPlay
                   muted
                   loop
@@ -361,7 +361,7 @@ const IndexPage = () => {
             </Col>
             <Col className="content-container video-container">
               <video
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Send-Marketing-COllaterall_R_v2.mp4"
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/home-videos/Send-Marketing-COllaterall_R_v2%20%281%29.mp4"
                 autoPlay
                 muted
                 loop
