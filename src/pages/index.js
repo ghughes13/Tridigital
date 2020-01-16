@@ -24,15 +24,36 @@ const IndexPage = () => {
         var ctx = canvas.getContext("2d")
         ctx.drawImage(nvid, 0, 0, 8, 8)
         ctx.fillStyle = "rgba(0,0,0,1)"
-        var p = ctx.getImageData(0, 0, 8, 8).data
+        var p = ctx.getImageData(0, 0, 1, 1).data
         console.log(p)
         console.log("rgb(" + p[0] + "," + p[1] + "," + p[2] + ")")
         vidBg.style.backgroundColor =
           "rgb(" + p[0] + "," + p[1] + "," + p[2] + ")"
+
+        var rtrnVal = ""
+        var prefixes = ["-o-", "-ms-", "-moz-", "-webkit-"]
+
+        var heroSec = document.querySelector(".home-page .hero-section")
+
+        for (var i = 0; i < prefixes.length; i++) {
+          heroSec.style.background =
+            prefixes[i] +
+            "linear-gradient(#00a7ff, rgb(" +
+            p[0] +
+            "," +
+            p[1] +
+            "," +
+            p[2] +
+            "))"
+
+          if (heroSec.style.background) {
+            rtrnVal = prefixes[i]
+          }
+        }
+
+        return rtrnVal
       }, 1000)
     }
-
-    setVideoBgColor()
   })
 
   return (
@@ -149,11 +170,46 @@ const IndexPage = () => {
           </Row>
           <video
             src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Marketing-As-Unique-As-You-Are_R16.mp4"
-            // onPlay={() => {
-            //   setVideoBgColor(this, [8, 31, 60])
-            //   console.log("function ran")
-            // }}
-            // onCanPlay={setVideoBgColor(this, [8, 31, 60])}
+            onLoadedData={function setVideoBgColor(vid, nativeColor) {
+              let nvid = document.getElementById("important-vid")
+              var vidBg = nvid.parentElement
+
+              var canvas = document.createElement("canvas")
+              canvas.width = 1
+              canvas.height = 1
+
+              var ctx = canvas.getContext("2d")
+              ctx.drawImage(nvid, 0, 0, 8, 8)
+              ctx.fillStyle = "rgba(0,0,0,1)"
+              var p = ctx.getImageData(0, 0, 1, 1).data
+              console.log(p)
+              console.log("rgb(" + p[0] + "," + p[1] + "," + p[2] + ")")
+              vidBg.style.backgroundColor =
+                "rgb(" + p[0] + "," + p[1] + "," + p[2] + ")"
+
+              var rtrnVal = ""
+              var prefixes = ["-o-", "-ms-", "-moz-", "-webkit-"]
+
+              var heroSec = document.querySelector(".home-page .hero-section")
+
+              for (var i = 0; i < prefixes.length; i++) {
+                heroSec.style.background =
+                  prefixes[i] +
+                  "linear-gradient(#00a7ff, rgb(" +
+                  p[0] +
+                  "," +
+                  p[1] +
+                  "," +
+                  p[2] +
+                  "))"
+
+                if (heroSec.style.background) {
+                  rtrnVal = prefixes[i]
+                }
+              }
+
+              return rtrnVal
+            }}
             crossOrigin="anonymous"
             id="important-vid"
             autoPlay
