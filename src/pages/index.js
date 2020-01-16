@@ -105,7 +105,9 @@ const IndexPage = () => {
         <Container className="blue-background collateral-section pos-rel">
           <Row>
             <Col className="content-container centered-text compressed-content">
-              <h2 className="white-text">Marketing As Unique As YOU Are</h2>
+              <h2 className="white-text" id="next">
+                Marketing As Unique As YOU Are
+              </h2>
               <p className="white-text">
                 The biggest mistake IT companies make when developing their
                 marketing strategy is that they build it around marketing the
