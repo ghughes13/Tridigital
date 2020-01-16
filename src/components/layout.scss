@@ -2685,7 +2685,7 @@ header.about-us-header.end-transparency {
 .process-page .knowledge-section::before {
   background-image: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/pink-blob-1.svg);
   position: absolute;
-  left: 46%;
+  left: 61%;
   top: -15%;
   content: "";
   height: 100%;
@@ -2810,7 +2810,7 @@ header.about-us-header.end-transparency {
 }
 
 .process-page .deliverables {
-  transform: translatex(100vw) translatey(-100vw);
+  transform: translatex(150vw) translatey(-150vw);
   transition-duration: 0.5s;
 }
 
@@ -2878,12 +2878,40 @@ header.about-us-header.end-transparency {
     top: -51%;
     left: 45%;
   }
+
+  .process-page .desktop-img .page.slide-in {
+    transform: scale(0.9) translatex(0px) translatey(0px);
+  }
 }
 
 @media screen and (max-width: 1500px) {
   .process-page .deliverables-section::before {
     top: -15%;
     left: 37%;
+  }
+
+  .process-page .knowledge-section::before {
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .process-page .marketing-plan-section .page.first-img {
+    top: 0%;
+    right: auto;
+    left: -9%;
+  }
+
+  .process-page .marketing-plan-section .page.second-img {
+    top: 30%;
+    right: auto;
+    left: -24%;
+  }
+
+  .process-page .marketing-plan-section .page.third-img {
+    top: 15%;
+    right: auto;
+    left: -10%;
   }
 }
 
@@ -2943,6 +2971,28 @@ header.about-us-header.end-transparency {
   .process-page .three div img {
     top: 10%;
   }
+
+  .process-page .marketing-plan-section .page.first-img {
+    top: 5%;
+    right: auto;
+    left: -14%;
+  }
+
+  .process-page .marketing-plan-section .page.second-img {
+    top: 27%;
+    right: auto;
+    left: -32%;
+  }
+
+  .process-page .marketing-plan-section .page.third-img {
+    top: 15%;
+    right: auto;
+    left: -20%;
+  }
+
+  .process-page .deliverables-section .five .col:first-child {
+    margin-top: -75px;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -2968,6 +3018,32 @@ header.about-us-header.end-transparency {
   .process-page .three div img {
     max-width: 75%;
     margin-right: 50px;
+  }
+
+  .process-page .marketing-plan-section::before {
+    left: -850px;
+  }
+
+  .process-page .marketing-plan-section .page.second-img {
+    top: 27%;
+    right: auto;
+    left: -45%;
+  }
+
+  .process-page .marketing-plan-section .page.first-img {
+    top: 5%;
+    right: auto;
+    left: -22%;
+  }
+
+  .process-page .marketing-plan-section .page.third-img {
+    top: 15%;
+    right: auto;
+    left: -20%;
+  }
+
+  .process-page .deliverables-section .five .col:first-child {
+    margin-top: -150px;
   }
 }
 
@@ -3199,6 +3275,10 @@ header.about-us-header.end-transparency {
 
   .mobile-padding-top-100 {
     padding-top: 100px !important;
+  }
+
+  .process-page .deliverables-section .five .col:first-child {
+    margin-top: -0px;
   }
 }
 
