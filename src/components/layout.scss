@@ -3364,18 +3364,19 @@ main .contact-us .contact-row {
 
 .checkbox-part label {
   margin-bottom: 0;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .checkbox-part input {
-  width: 10px !important;
+  width: 30px !important;
+  height: 30px;
 }
 
-.checkbox::before {
-  content: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Rectangle-131.png");
-  position: absolute;
-  top: -8px;
-}
+// .checkbox::before {
+//   content: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Rectangle-131.png");
+//   position: absolute;
+//   top: -8px;
+// }
 
 div.contact-method {
   display: flex;
