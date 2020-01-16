@@ -126,18 +126,24 @@ const IndexPage = () => {
             </Col>
           </Row>
           <div className="play-vid-div">
-            {" "}
             <Waypoint
               onEnter={() => {
-                console.log("ran")
-                setTimeout(function() {
-                  document.getElementById("important-vid").play()
-                }, 500)
+                let val = "test"
+                if (
+                  document.getElementById("important-vid").dataset.play === val
+                ) {
+                  setTimeout(function() {
+                    document.getElementById("important-vid").play()
+                    document.getElementById("important-vid").dataset.play =
+                      "noon"
+                  }, 500)
+                }
               }}
             />
           </div>
           <video
             src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Marketing-As-Unique-As-You-Are_R16.mp4"
+            data-play="test"
             onLoadedData={function setVideoBgColor(vid, nativeColor) {
               let nvid = document.getElementById("important-vid")
               nvid.play()
