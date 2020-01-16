@@ -880,6 +880,10 @@ header.fixed {
   display: none;
 }
 
+a.navbar-item:focus-within {
+  background: transparent;
+}
+
 @media only screen and (max-width: 1200px) {
   .mainheader .navigation-container ul {
     margin-bottom: 0px;
@@ -1332,6 +1336,59 @@ main .max-width-fix {
   margin-left: 25px;
 }
 
+// Example 1
+@keyframes scroll_1 {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-0.6em);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(0.6em);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.scroll-icon__wheel-outer {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0.6em;
+  height: 1em;
+  width: 0.4em;
+  margin-left: -0.2em;
+  border-radius: 0.4em;
+  overflow: hidden;
+}
+
+.scroll-icon__wheel-inner {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background: #fff;
+  animation: scroll_1 2.75s ease-in-out infinite;
+}
+
+.scroll-icon {
+  display: block;
+  height: 3em;
+  border: 0.25em solid #fff;
+  border-radius: 1em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -50px;
+  width: 30px;
+  margin: auto;
+}
+
 @media only screen and (max-width: 767px) {
   main .compressed-content.col,
   main .compressed-text {
@@ -1554,7 +1611,7 @@ footer .footer-thank-you h5 {
 .home-page .hero-section .accent-gradient-circle {
   position: absolute;
   bottom: -100px;
-  right: 0;
+  right: 0px;
   z-index: 10;
   -webkit-animation: rotating 10s linear infinite;
   animation: rotating 10s linear infinite;
@@ -1753,7 +1810,7 @@ footer .footer-thank-you h5 {
   box-shadow: 0px 16px 25px 0px rgba(0, 0, 0, 0.6);
   padding-left: 0;
   height: 100%;
-  margin-right: 100px;
+  margin-left: 100px;
 }
 
 .home-page .play-icon {
@@ -1770,6 +1827,14 @@ footer .footer-thank-you h5 {
 
 .home-page .pos-rel {
   position: relative;
+}
+
+.home-page .max-width-550 {
+  max-width: 550px;
+}
+
+.home-page .max-width-600 {
+  max-width: 600px;
 }
 
 canvas {
@@ -1793,6 +1858,13 @@ canvas {
   .home-page .hero-section .accent-gradient-circle {
     position: absolute;
     bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1224px) {
+  .home-page .hero-section .accent-gradient-circle {
+    bottom: initial;
+    top: 400px;
   }
 }
 
@@ -2005,6 +2077,18 @@ canvas {
 
   .home-page .max-width-children > * {
     max-width: 100vw;
+  }
+
+  .home-page .max-width-550 {
+    max-width: initial;
+  }
+
+  .home-page .max-width-600 {
+    max-width: initial;
+  }
+
+  .scroll-icon {
+    display: none;
   }
 }
 
@@ -3450,6 +3534,7 @@ main .contact-us .contact-row {
 .checkbox-part input {
   width: 30px !important;
   height: 30px;
+  margin-left: 5px;
 }
 
 // .checkbox::before {

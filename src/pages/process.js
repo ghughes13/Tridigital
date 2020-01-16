@@ -20,11 +20,11 @@ const Process = () => (
             </p>
           </Col>
         </Row>
-        <img
-          className="scroll-indicator"
-          src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/scroll-indicator.svg"
-          alt="scroll indicator"
-        ></img>
+        <span class="scroll-icon">
+          <span class="scroll-icon__wheel-outer">
+            <span class="scroll-icon__wheel-inner"></span>
+          </span>
+        </span>
       </Container>
 
       <Container className="container step-section knowledge-section flexed">

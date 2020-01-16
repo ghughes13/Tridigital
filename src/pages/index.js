@@ -20,10 +20,10 @@ const IndexPage = () => {
         <Container className="hero-section transparent-hero container flexed">
           <Row className="two-columns">
             <Col className="content-container column">
-              <h1 className="white-text">
+              <h1 className="white-text max-width-600">
                 We Are the IT Industry’s Custom Marketing Agency
               </h1>
-              <p className="white-text subtext">
+              <p className="white-text subtext max-width-550">
                 We’ve generated over 100,000 MSP leads. . . and counting.
               </p>
               <YourVideo />
@@ -51,11 +51,11 @@ const IndexPage = () => {
               ></video>
             </Col>
           </Row>
-          <img
-            className="scroll-indicator"
-            src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/scroll-indicator.svg"
-            alt="scroll-indicator"
-          ></img>
+          <span class="scroll-icon">
+            <span class="scroll-icon__wheel-outer">
+              <span class="scroll-icon__wheel-inner"></span>
+            </span>
+          </span>
           <svg
             className="rotating"
             xmlns="http://www.w3.org/2000/svg"
