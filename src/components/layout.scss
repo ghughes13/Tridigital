@@ -1747,14 +1747,13 @@ footer .footer-thank-you h5 {
 }
 
 .home-page .video-container.first-one {
-  max-width: 726px !important;
+  max-width: 600px !important;
   overflow: hidden;
   border-radius: 25px;
-  -webkit-box-shadow: 0px 16px 25px 0px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 0px 16px 25px 0px rgba(0, 0, 0, 0.6);
   box-shadow: 0px 16px 25px 0px rgba(0, 0, 0, 0.6);
   padding-left: 0;
   height: 100%;
+  margin-right: 100px;
 }
 
 .home-page .play-icon {
@@ -1762,6 +1761,15 @@ footer .footer-thank-you h5 {
   border-radius: 25px;
   margin-top: 0;
   margin-bottom: -6px;
+}
+
+.home-page .play-vid-div {
+  position: absolute;
+  top: 60%;
+}
+
+.home-page .pos-rel {
+  position: relative;
 }
 
 canvas {
@@ -2285,7 +2293,12 @@ header.about-us-header {
 }
 
 header.about-us-header.end-transparency {
-  background: white;
+  background: white !important;
+}
+
+.about-us-page .important-vid::after {
+  position: absolute;
+  content: "";
 }
 
 @media screen and (max-width: 1600px) {
@@ -2594,11 +2607,11 @@ header.about-us-header.end-transparency {
   }
 }
 .rotating {
-  -webkit-animation: rotating 100s linear infinite;
-  -moz-animation: rotating 100s linear infinite;
-  -ms-animation: rotating 100s linear infinite;
-  -o-animation: rotating 100s linear infinite;
-  animation: rotating 100s linear infinite;
+  -webkit-animation: rotating 200s linear infinite;
+  -moz-animation: rotating 200s linear infinite;
+  -ms-animation: rotating 200s linear infinite;
+  -o-animation: rotating 200s linear infinite;
+  animation: rotating 200s linear infinite;
 }
 
 /*Process Page */
@@ -2735,8 +2748,15 @@ header.about-us-header.end-transparency {
 
 .process-page .slide {
   position: relative;
-  left: -100vw;
   transition-duration: 0.5s;
+  left: 0;
+  bottom: -1000px;
+  transform: scale(0);
+}
+
+.process-page .animate-the-slide {
+  bottom: 0;
+  transform: scale(1);
 }
 
 .process-page .slide-left {

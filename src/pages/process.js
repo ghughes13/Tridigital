@@ -74,7 +74,9 @@ const Process = () => (
             />
             <Waypoint
               onEnter={() =>
-                document.querySelector(".slide").classList.add("slide-left")
+                document
+                  .querySelector(".slide")
+                  .classList.add("animate-the-slide")
               }
             />
           </Col>

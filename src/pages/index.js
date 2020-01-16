@@ -11,50 +11,7 @@ import YourVideo from "../components/home-video-player.js"
 // }
 
 const IndexPage = () => {
-  useEffect(() => {
-    function setVideoBgColor(vid, nativeColor) {
-      setTimeout(function() {
-        let nvid = document.getElementById("important-vid")
-        var vidBg = nvid.parentElement
-
-        var canvas = document.createElement("canvas")
-        canvas.width = 1
-        canvas.height = 1
-
-        var ctx = canvas.getContext("2d")
-        ctx.drawImage(nvid, 0, 0, 8, 8)
-        ctx.fillStyle = "rgba(0,0,0,1)"
-        var p = ctx.getImageData(0, 0, 1, 1).data
-        console.log(p)
-        console.log("rgb(" + p[0] + "," + p[1] + "," + p[2] + ")")
-        vidBg.style.backgroundColor =
-          "rgb(" + p[0] + "," + p[1] + "," + p[2] + ")"
-
-        var rtrnVal = ""
-        var prefixes = ["-o-", "-ms-", "-moz-", "-webkit-"]
-
-        var heroSec = document.querySelector(".home-page .hero-section")
-
-        for (var i = 0; i < prefixes.length; i++) {
-          heroSec.style.background =
-            prefixes[i] +
-            "linear-gradient(#00a7ff, rgb(" +
-            p[0] +
-            "," +
-            p[1] +
-            "," +
-            p[2] +
-            "))"
-
-          if (heroSec.style.background) {
-            rtrnVal = prefixes[i]
-          }
-        }
-
-        return rtrnVal
-      }, 1000)
-    }
-  })
+  useEffect(() => {})
 
   return (
     <Layout>
@@ -120,7 +77,7 @@ const IndexPage = () => {
               <animate
                 repeatCount="indefinite"
                 attributeName="d"
-                dur="15s"
+                dur="1200s"
                 values="M37.5,186c-12.1-10.5-11.8-32.3-7.2-46.7c4.8-15,13.1-17.8,30.1-36.7C91,68.8,83.5,56.7,103.4,45
                 c22.2-13.1,51.1-9.5,69.6-1.6c18.1,7.8,15.7,15.3,43.3,33.2c28.8,18.8,37.2,14.3,46.7,27.9c15.6,22.3,6.4,53.3,4.4,60.2
                 c-3.3,11.2-7.1,23.9-18.5,32c-16.3,11.5-29.5,0.7-48.6,11c-16.2,8.7-12.6,19.7-28.2,33.2c-22.7,19.7-63.8,25.7-79.9,9.7
@@ -145,7 +102,7 @@ const IndexPage = () => {
             alt=""
           ></img>
         </Container>
-        <Container className="blue-background collateral-section">
+        <Container className="blue-background collateral-section pos-rel">
           <Row>
             <Col className="content-container centered-text compressed-content">
               <h2 className="white-text">Marketing As Unique As YOU Are</h2>
@@ -168,10 +125,22 @@ const IndexPage = () => {
               </p>
             </Col>
           </Row>
+          <div className="play-vid-div">
+            {" "}
+            <Waypoint
+              onEnter={() => {
+                console.log("ran")
+                setTimeout(function() {
+                  document.getElementById("important-vid").play()
+                }, 500)
+              }}
+            />
+          </div>
           <video
             src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Marketing-As-Unique-As-You-Are_R16.mp4"
             onLoadedData={function setVideoBgColor(vid, nativeColor) {
               let nvid = document.getElementById("important-vid")
+              nvid.play()
               var vidBg = nvid.parentElement
 
               var canvas = document.createElement("canvas")
@@ -207,7 +176,7 @@ const IndexPage = () => {
                   rtrnVal = prefixes[i]
                 }
               }
-
+              nvid.pause()
               return rtrnVal
             }}
             crossOrigin="anonymous"
