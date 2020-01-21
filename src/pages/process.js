@@ -20,9 +20,9 @@ const Process = () => (
             </p>
           </Col>
         </Row>
-        <span class="scroll-icon">
-          <span class="scroll-icon__wheel-outer">
-            <span class="scroll-icon__wheel-inner"></span>
+        <span className="scroll-icon">
+          <span className="scroll-icon__wheel-outer">
+            <span className="scroll-icon__wheel-inner"></span>
           </span>
         </span>
       </Container>
@@ -38,22 +38,34 @@ const Process = () => (
               about your company, your unique qualities, your differentiators,
               and Target Audience.
             </p>
+            <Waypoint
+              onEnter={() =>
+                document.querySelector(".transfer").classList.add("animate")
+              }
+            />
           </Col>
           <Col>
-            <img
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/knowledge.png"
-              className="desktop-img transfer"
-              alt="websites and questionaires"
-            />
+            <div className="warmup-img-container desktop-img transfer">
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Untitled-1.png"
+                className="questionaire-page third"
+                alt="websites and questionaires"
+              />
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/2.png"
+                className="questionaire-page second"
+                alt="websites and questionaires"
+              />
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-3452-2.png"
+                className="questionaire-page first"
+                alt="websites and questionaires"
+              />
+            </div>
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-3451-1.png"
               className="mobile-img transfer"
               alt="websites and questionaires"
-            />
-            <Waypoint
-              onEnter={() =>
-                document.querySelector(".transfer").classList.add("slide-right")
-              }
             />
           </Col>
         </Row>
@@ -94,8 +106,8 @@ const Process = () => (
         </Row>
       </Container>
 
-      <Container className="container step-section moodboard-section flexed margin-left">
-        <Row className="two-columns full-width-row content-left align-middle three">
+      <Container className="container step-section moodboard-section flexed margin-left ">
+        <Row className="two-columns full-width-row content-left align-middle three margin-top-minus">
           <Col className="content-container">
             <p className="gold-text heavy-weight step">Step 3:</p>
             <h2 className="white-text ">Create a Moodboard</h2>
@@ -106,24 +118,64 @@ const Process = () => (
               tool to hone in the final design elements that will be used in
               your new look and feel.
             </p>
-          </Col>
-          <Col className="static-position">
-            <img
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/moodboard.png"
-              className="desktop-img moodboard"
-              alt="moodboard"
+            <Waypoint
+              onEnter={() =>
+                document.querySelector(".moodboard").classList.add("animate")
+              }
             />
+          </Col>
+          <Col className="">
+            <div className="desktop-img moodboard">
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/computer.png"
+                className="moodboard-img first"
+                alt="moodboard"
+              />
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/mobile-left.png"
+                className="moodboard-img second"
+                alt="moodboard"
+              />
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/color-palette.png"
+                className="moodboard-img third"
+                alt="moodboard"
+              />
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/color-bar-single.png"
+                className="moodboard-img fourth"
+                alt="moodboard"
+              />
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Single-btn.png"
+                className="moodboard-img fifth"
+                alt="moodboard"
+              />
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/settings-bar.png"
+                className="moodboard-img sixth"
+                alt="moodboard"
+              />
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/web-content-2.png"
+                className="moodboard-img seventh"
+                alt="moodboard"
+              />
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/iphone.png"
+                className="moodboard-img eighth"
+                alt="moodboard"
+              />
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/mouse.png"
+                className="moodboard-img ninth"
+                alt="moodboard"
+              />
+            </div>
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-849.png"
               className="mobile-img moodboard"
               alt="moodboard"
-            />
-            <Waypoint
-              onEnter={() =>
-                document
-                  .querySelector(".moodboard")
-                  .classList.add("slide-right")
-              }
             />
           </Col>
         </Row>
