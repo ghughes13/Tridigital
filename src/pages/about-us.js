@@ -10,6 +10,7 @@ const AboutUs = () => {
     document.querySelector("header").classList.add("about-us-header")
     if (navigator.appVersion.indexOf("Mac") != -1) {
       document.querySelector("header").classList.add("mac")
+      document.querySelector(".about-us-page").classList.add("mac")
     } else {
       console.log("not a mac")
     }
