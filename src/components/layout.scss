@@ -1685,47 +1685,58 @@ footer .footer-thank-you h5 {
 .home-page .video-collage .video-1 {
   position: relative;
   z-index: 10;
-  transform: rotateY(-20deg);
+  transform: rotateY(-10deg);
+}
+
+.home-page .video-collage .video-1 video {
+  max-width: 80%;
+}
+
+.home-page .video-collage .video-6 {
+  top: -85%;
+  max-width: 60%;
+  right: 0;
+  transform: rotateY(-10deg);
 }
 
 .home-page .video-collage .video-2 {
-  bottom: 90%;
+  bottom: 95%;
   max-width: 40%;
-  left: -2%;
-  -webkit-transform: rotateY(-20deg);
-  transform: rotateY(-20deg);
+  left: -5%;
+  -webkit-transform: rotateY(-10deg);
+  transform: rotateY(-10deg);
 }
 
 .home-page .video-collage .video-3 {
   max-width: 40%;
-  bottom: 55%;
-  right: -15%;
+  bottom: 65%;
+  right: -10%;
   z-index: 15;
-  transform: rotateY(-20deg);
+  transform: rotateY(-10deg);
 }
 
 .home-page .video-collage .video-4 {
   max-width: 30%;
-  top: 35%;
-  right: -10%;
+  top: 25%;
+  right: -5%;
   z-index: 15;
-  -webkit-transform: rotateY(-20deg);
-  transform: rotateY(-20deg);
+  -webkit-transform: rotateY(-10deg);
+  transform: rotateY(-10deg);
 }
 
 .home-page .video-collage .video-5 {
   max-width: 35%;
-  bottom: -10%;
+  bottom: -5%;
   left: 0%;
   z-index: 15;
-  -webkit-transform: rotateY(-20deg);
-  transform: rotateY(-20deg);
+  -webkit-transform: rotateY(-10deg);
+  transform: rotateY(-10deg);
 }
 
 .home-page .video-collage video {
   max-width: initial;
   width: 100%;
-  transform: rotateY(-20deg);
+  transform: rotateY(0deg);
 }
 
 .home-page .powers-section .video-collage {
@@ -1736,6 +1747,7 @@ footer .footer-thank-you h5 {
   max-width: 30vw;
   background: transparent;
   margin-top: 150px;
+  transform: rotateZ(5deg);
 }
 
 .home-page .powers-section {
@@ -1927,7 +1939,7 @@ canvas {
 
   .home-page .powers-section .video-collage {
     max-width: 100%;
-    margin: 12vh 0 7vw -10vw;
+    margin: 20vh 0 7vw -10vw;
   }
 
   main .home-page .container .col video {
@@ -2100,6 +2112,10 @@ canvas {
 
   .scroll-icon {
     display: none;
+  }
+
+  .home-page .video-collage .video-6 {
+    top: -75%;
   }
 }
 

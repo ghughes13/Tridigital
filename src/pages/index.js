@@ -233,7 +233,7 @@ const IndexPage = () => {
             <Col className="content-container center-image-container video-collage">
               <div className="video-1">
                 <video
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/home-videos/Computex-4-Export_R%20%281%29.mp4"
+                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/home-videos/Computex%204%20Export_R.mp4"
                   autoPlay
                   muted
                   loop
@@ -286,6 +286,19 @@ const IndexPage = () => {
               <div className="video-5">
                 <video
                   src="http://tdgatsbytest.wpengine.com/wp-content/uploads/home-videos/Stronghold-Data-4-export_R%20%281%29.mp4"
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <p>
+                    If you are reading this, it is because your browser does not
+                    support the HTML5 video element.
+                  </p>
+                </video>
+              </div>
+              <div className="video-6">
+                <video
+                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/home-videos/TrendMicro_R.mp4"
                   autoPlay
                   muted
                   loop
