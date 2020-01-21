@@ -2234,10 +2234,6 @@ main .row.full-width-row.content-right {
   background-color: #2444ff;
 }
 
-header.mac.about-us-header .blue-background {
-  background-color: #284dff;
-}
-
 .about-us-page .hero-section h2 {
   font-size: 40px;
   margin-bottom: 5px;
@@ -2392,6 +2388,10 @@ header.about-us-header {
 
 header.about-us-header.mac {
   background: #284dff;
+}
+
+header.mac .about-us-page .blue-background {
+  background-color: #284dff;
 }
 
 header.about-us-header.end-transparency {
