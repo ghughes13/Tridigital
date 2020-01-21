@@ -11,7 +11,13 @@ import YourVideo from "../components/home-video-player.js"
 // }
 
 const IndexPage = () => {
-  useEffect(() => {})
+  useEffect(() => {
+    if (navigator.appVersion.indexOf("Mac") != -1) {
+      document.querySelector(".home-page").classList.add("mac")
+    } else {
+      console.log("not a mac")
+    }
+  })
 
   return (
     <Layout>
@@ -146,47 +152,47 @@ const IndexPage = () => {
           <video
             src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Marketing-As-Unique-As-You-Are_R16.mp4"
             data-play="test"
-            onLoadedData={function setVideoBgColor(vid, nativeColor) {
-              let nvid = document.getElementById("important-vid")
-              nvid.play()
-              var vidBg = nvid.parentElement
+            // onLoadedData={function setVideoBgColor(vid, nativeColor) {
+            //   let nvid = document.getElementById("important-vid")
+            //   nvid.play()
+            //   var vidBg = nvid.parentElement
 
-              var canvas = document.createElement("canvas")
-              canvas.width = 1
-              canvas.height = 1
+            //   var canvas = document.createElement("canvas")
+            //   canvas.width = 1
+            //   canvas.height = 1
 
-              var ctx = canvas.getContext("2d")
-              ctx.drawImage(nvid, 0, 0, 8, 8)
-              ctx.fillStyle = "rgba(0,0,0,1)"
-              var p = ctx.getImageData(0, 0, 1, 1).data
-              console.log(p)
-              console.log("rgb(" + p[0] + "," + p[1] + "," + p[2] + ")")
-              vidBg.style.backgroundColor =
-                "rgb(" + p[0] + "," + p[1] + "," + p[2] + ")"
+            //   var ctx = canvas.getContext("2d")
+            //   ctx.drawImage(nvid, 0, 0, 8, 8)
+            //   ctx.fillStyle = "rgba(0,0,0,1)"
+            //   var p = ctx.getImageData(0, 0, 1, 1).data
+            //   console.log(p)
+            //   console.log("rgb(" + p[0] + "," + p[1] + "," + p[2] + ")")
+            //   vidBg.style.backgroundColor =
+            //     "rgb(" + p[0] + "," + p[1] + "," + p[2] + ")"
 
-              var rtrnVal = ""
-              var prefixes = ["-o-", "-ms-", "-moz-", "-webkit-"]
+            //   var rtrnVal = ""
+            //   var prefixes = ["-o-", "-ms-", "-moz-", "-webkit-"]
 
-              var heroSec = document.querySelector(".home-page .hero-section")
+            //   var heroSec = document.querySelector(".home-page .hero-section")
 
-              for (var i = 0; i < prefixes.length; i++) {
-                heroSec.style.background =
-                  prefixes[i] +
-                  "linear-gradient(#00a7ff, rgb(" +
-                  p[0] +
-                  "," +
-                  p[1] +
-                  "," +
-                  p[2] +
-                  "))"
+            //   for (var i = 0; i < prefixes.length; i++) {
+            //     heroSec.style.background =
+            //       prefixes[i] +
+            //       "linear-gradient(#00a7ff, rgb(" +
+            //       p[0] +
+            //       "," +
+            //       p[1] +
+            //       "," +
+            //       p[2] +
+            //       "))"
 
-                if (heroSec.style.background) {
-                  rtrnVal = prefixes[i]
-                }
-              }
-              nvid.pause()
-              return rtrnVal
-            }}
+            //     if (heroSec.style.background) {
+            //       rtrnVal = prefixes[i]
+            //     }
+            //   }
+            //   nvid.pause()
+            //   return rtrnVal
+            // }}
             crossOrigin="anonymous"
             id="important-vid"
             autoPlay

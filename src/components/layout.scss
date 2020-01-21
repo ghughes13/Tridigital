@@ -1600,6 +1600,13 @@ footer .footer-thank-you h5 {
   z-index: 10;
 }
 
+.home-page.mac .hero-section {
+  background: #00a7ff;
+  background: -moz-linear-gradient(top, #00a7ff 1%, #004cf6 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #00a7ff 1%, #004cf6 99%);
+  background: linear-gradient(to bottom, #00a7ff 1%, #004cf6 99%);
+}
+
 .home-page h2.smaller {
   font-size: 4vw;
 }
@@ -2058,6 +2065,10 @@ canvas {
     padding-top: 0;
   }
 
+  .home-page.mac .blue-background {
+    background-color: #004cf6;
+  }
+
   body p {
     margin-bottom: 1rem;
     line-height: 28px;
@@ -2224,6 +2235,10 @@ main .row.full-width-row.content-right {
   background-color: #2444ff;
 }
 
+.about-us-page.mac .blue-background {
+  background-color: #284dff;
+}
+
 .about-us-page .hero-section h2 {
   font-size: 40px;
   margin-bottom: 5px;
@@ -2374,6 +2389,10 @@ main .row.full-width-row.content-right {
 
 header.about-us-header {
   background: rgb(36, 68, 255);
+}
+
+header.about-us-header.mac {
+  background: #284dff;
 }
 
 header.about-us-header.end-transparency {
