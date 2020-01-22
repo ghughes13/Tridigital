@@ -131,7 +131,7 @@ const Footer = () => (
         <a href="/sla">Security Level Agreement </a>
       </p>
       <p>
-        <a href="/sitemap">Sitemap</a> |{" "}
+        <a href="/site-map">Sitemap</a> |{" "}
         <a
           href="http://training.tridigitalmarketing.com/?password-protected=login&redirect_to=http%3A%2F%2Ftraining.tridigitalmarketing.com%2F"
           target="_blank"
