@@ -27,7 +27,7 @@ const AboutUs = () => {
       <div className="about-us-page">
         <EmployeeInfo />
         <Container className="container">
-          <Row className="">
+          <Row className="no-class-name">
             <Col className="content-container column">
               <h2 className="blue-text centered-text core-values">
                 Our Core Values
