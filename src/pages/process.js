@@ -109,6 +109,11 @@ const Process = () => (
       <Container className="container step-section moodboard-section flexed margin-left ">
         <Row className="two-columns full-width-row content-left align-middle three margin-top-minus">
           <Col className="content-container">
+            <Waypoint
+              onEnter={() =>
+                document.querySelector(".moodboard").classList.add("animate")
+              }
+            />
             <p className="gold-text heavy-weight step">Step 3:</p>
             <h2 className="white-text ">Create a Moodboard</h2>
             <p className="white-text">
@@ -118,11 +123,6 @@ const Process = () => (
               tool to hone in the final design elements that will be used in
               your new look and feel.
             </p>
-            <Waypoint
-              onEnter={() =>
-                document.querySelector(".moodboard").classList.add("animate")
-              }
-            />
           </Col>
           <Col className="">
             <div className="desktop-img moodboard">
@@ -210,13 +210,6 @@ const Process = () => (
               className="mobile-img"
               alt="plan"
             />
-            <Waypoint
-              onEnter={() =>
-                document.querySelectorAll(".page").forEach(page => {
-                  page.classList.add("slide-in")
-                })
-              }
-            />
           </Col>
           <Col className="content-container">
             <p className="gold-text heavy-weight step">Step 4:</p>
@@ -226,10 +219,16 @@ const Process = () => (
               theme and the new look and feel through various marketing vehicles
               to help achieve the most optimal marketing results.
             </p>
+            <Waypoint
+              onEnter={() =>
+                document.querySelectorAll(".page").forEach(page => {
+                  page.classList.add("slide-in")
+                })
+              }
+            />
           </Col>
         </Row>
       </Container>
-
       <Container className="container step-section deliverables-section flexed margin-left">
         <Row className="two-columns full-width-row content-left align-middle five">
           <Col className="content-container">
@@ -240,6 +239,13 @@ const Process = () => (
               deliverables in accordance to the new identity, theme and go to
               market approach.
             </p>
+            <Waypoint
+              onEnter={() =>
+                document.querySelectorAll(".deliverables").forEach(page => {
+                  page.classList.add("slide-in")
+                })
+              }
+            />
           </Col>
           <Col className="static-position">
             <div className="desktop-img">
@@ -275,13 +281,6 @@ const Process = () => (
               alt="deliverables"
             />
           </Col>
-          <Waypoint
-            onEnter={() =>
-              document.querySelectorAll(".deliverables").forEach(page => {
-                page.classList.add("slide-in")
-              })
-            }
-          />
         </Row>
       </Container>
       <Container className="cta-container">

@@ -2406,6 +2406,14 @@ header.about-us-header.mac {
   background: #284dff;
 }
 
+header.about-us-header.primary-mac {
+  background: #2b45f2;
+}
+
+.about-us-page.primary-mac .blue-background {
+  background-color: #2b45f2;
+}
+
 .about-us-page.mac .blue-background {
   background-color: #284dff;
 }
@@ -4374,4 +4382,39 @@ main .download-col .pink-button {
   position: relative;
 }
 
-/****END REVIEWS********/
+/****END WISTIA STYLES********/
+
+/****TOS STYLES************/
+.TOS-Page {
+  background: #0043f5;
+}
+
+.TOS-Page .container {
+  max-width: 75%;
+}
+
+.TOS-Page h2 {
+  text-align: center;
+  color: white;
+}
+
+.TOS-Page h5 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Poppins";
+  margin-top: 25px;
+  color: white;
+}
+
+.TOS-Page p {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: white;
+}
+
+.TOS-Page li {
+  margin-left: 15px;
+  margin-top: 10px;
+  color: white;
+}
