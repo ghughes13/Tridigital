@@ -127,8 +127,8 @@ const Footer = () => (
     <Row className="socket">
       <p>
         © 2020 - TriDigital | <a href="/termsOfService">Terms if Service</a> |{" "}
-        <a href="/privacy">Privacy Policy</a> |{" "}
-        <a href="/security">Security Level Agreement </a>
+        <a href="/privacy-policy">Privacy Policy</a> |{" "}
+        <a href="/sla">Security Level Agreement </a>
       </p>
       <p>
         <a href="/sitemap">Sitemap</a> |{" "}

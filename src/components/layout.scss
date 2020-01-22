@@ -1607,6 +1607,9 @@ footer .footer-thank-you h5 {
   background: linear-gradient(to bottom, #00a7ff 1%, #004cf6 99%);
 }
 
+.home-page.primary-mac .hero-section {
+}
+
 .home-page h2.smaller {
   font-size: 4vw;
 }
@@ -1862,6 +1865,9 @@ canvas {
 
 .home-page.mac .blue-background {
   background-color: #004cf6;
+}
+
+.home-page.mac .blue-background {
 }
 
 @media screen and (max-width: 1500px) {
@@ -4385,11 +4391,13 @@ main .download-col .pink-button {
 /****END WISTIA STYLES********/
 
 /****TOS STYLES************/
-.TOS-Page {
+.TOS-Page,
+.sla-page {
   background: #0043f5;
 }
 
-.TOS-Page .container {
+.TOS-Page .container,
+.sla-page .container {
   max-width: 75%;
 }
 
@@ -4406,7 +4414,8 @@ main .download-col .pink-button {
   color: white;
 }
 
-.TOS-Page p {
+.TOS-Page p,
+.sla-page p {
   margin-top: 15px;
   margin-bottom: 20px;
   font-size: 18px;
@@ -4417,4 +4426,39 @@ main .download-col .pink-button {
   margin-left: 15px;
   margin-top: 10px;
   color: white;
+}
+
+.TOS-Page h4 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Poppins";
+  color: white;
+}
+
+.sla-page h1 {
+  font-size: 5vw;
+  text-align: center;
+  margin: 1em 0 0.5em;
+  color: white;
+}
+
+.sla-page h2 {
+  font-size: 3vw;
+  color: white;
+}
+
+.sla-page h3 {
+  font-size: 1.5vw;
+  margin-top: 25px;
+  font-weight: 700;
+  font-family: "Poppins";
+  color: white;
+}
+
+.sla-page h4 {
+  font-size: 1vw;
+  color: white;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: -10px;
 }
