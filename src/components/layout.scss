@@ -2211,9 +2211,9 @@ main .row.full-width-row.content-right {
 
 .about-us-page .video-column video {
   position: absolute;
-  bottom: -112px;
+  bottom: -200px;
   right: 0;
-  max-width: 1444px;
+  max-width: 1728px;
 }
 
 .about-us-page .hero-section {
@@ -2230,6 +2230,7 @@ main .row.full-width-row.content-right {
     right: 0;
     bottom: 0px;
     height: 263px;
+    z-index: 1;
   }
 }
 
@@ -2291,6 +2292,18 @@ main .row.full-width-row.content-right {
   left: 0;
 }
 
+.about-us-page .hero-section:before {
+  content: "";
+  background: url(https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/Hero_Gradient.svg);
+  position: absolute;
+  left: 0;
+  height: 103vh;
+  width: 100vw;
+  z-index: 1;
+  background-repeat: no-repeat;
+  top: 0;
+}
+
 .employee-thumbnail-container {
   display: flex;
   justify-content: space-evenly;
@@ -2298,6 +2311,8 @@ main .row.full-width-row.content-right {
   max-width: 1050px;
   margin: auto;
   margin-top: -200px;
+  position: relative;
+  z-index: 9;
 }
 
 .row-1,
@@ -2404,25 +2419,25 @@ main .row.full-width-row.content-right {
   left: 0;
 }
 
-header.about-us-header {
-  background: rgb(36, 68, 255);
-}
+// header.about-us-header {
+//   background: rgb(36, 68, 255);
+// }
 
-header.about-us-header.mac {
-  background: #284dff;
-}
+// header.about-us-header.mac {
+//   background: #284dff;
+// }
 
-header.about-us-header.primary-mac {
-  background: #2b45f2;
-}
+// header.about-us-header.primary-mac {
+//   background: #2b45f2;
+// }
 
-.about-us-page.primary-mac .blue-background {
-  background-color: #2b45f2;
-}
+// .about-us-page.primary-mac .blue-background {
+//   background-color: #2b45f2;
+// }
 
-.about-us-page.mac .blue-background {
-  background-color: #284dff;
-}
+// .about-us-page.mac .blue-background {
+//   background-color: #284dff;
+// }
 
 header.about-us-header.end-transparency {
   background: white !important;

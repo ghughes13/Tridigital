@@ -54,6 +54,7 @@ export default function EmployeeInfo() {
             employees[employeeToShow].Last
           }
         >
+          <div className="pseudo-blue"></div>
           <video
             id="important-vid"
             crossOrigin="anonymous"
@@ -144,7 +145,7 @@ export default function EmployeeInfo() {
       //HTML FOR DESKTOP
       return (
         <div>
-          <Container className="hero-section container blue-background">
+          <Container className="hero-section container">
             <Row className="two-columns pink-banner">
               <Col className="content-container column click-through">
                 <h2 className="white-text">
