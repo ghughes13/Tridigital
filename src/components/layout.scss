@@ -2220,6 +2220,7 @@ main .row.full-width-row.content-right {
   padding-bottom: 0;
   align-items: unset;
   padding-bottom: 200px;
+  overflow: hidden;
   &:after {
     content: "";
     background: url(https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/about-hero.svg);
