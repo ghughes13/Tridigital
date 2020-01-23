@@ -138,63 +138,108 @@ const IndexPage = () => {
           <div className="play-vid-div">
             <Waypoint
               onEnter={() => {
-                let val = "test"
-                if (
-                  document.getElementById("important-vid").dataset.play === val
-                ) {
-                  setTimeout(function() {
-                    document.getElementById("important-vid").play()
-                    document.getElementById("important-vid").dataset.play =
-                      "noon"
-                  }, 500)
-                }
+                document.querySelectorAll(".site-img").forEach(element => {
+                  element.classList.add("animate")
+                })
               }}
             />
           </div>
-          <video
+          <div className="home-animation-section">
+            <img
+              className="site-img one"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Dash2.png"
+              alt=""
+            ></img>
+            <img
+              className="site-img two"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Compass.png"
+              alt=""
+            ></img>
+            <img
+              className="site-img three"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Brochure.png"
+              alt=""
+            ></img>
+            <img
+              className="site-img four"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Imagis.png"
+              alt=""
+            ></img>
+            <img
+              className="site-img five"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-3022.png"
+              alt=""
+            ></img>
+            <img
+              className="site-img six"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Business_Card.png"
+              alt=""
+            ></img>
+            <img
+              className="site-img seven"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-3020.png"
+              alt=""
+            ></img>
+            <img
+              className="site-img eight"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/BECA.png"
+              alt=""
+            ></img>
+            <img
+              className="site-img nine"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Easetech.png"
+              alt=""
+            ></img>
+            <img
+              className="site-img ten"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Secure_Net.png"
+              alt=""
+            ></img>
+          </div>
+          {/* <video
             src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Marketing-As-Unique-As-You-Are_R16.mp4"
             data-play="test"
-            // onLoadedData={function setVideoBgColor(vid, nativeColor) {
-            //   let nvid = document.getElementById("important-vid")
-            //   nvid.play()
-            //   var vidBg = nvid.parentElement
+            onLoadedData={function setVideoBgColor(vid, nativeColor) {
+              let nvid = document.getElementById("important-vid")
+              nvid.play()
+              var vidBg = nvid.parentElement
 
-            //   var canvas = document.createElement("canvas")
-            //   canvas.width = 1
-            //   canvas.height = 1
+              var canvas = document.createElement("canvas")
+              canvas.width = 1
+              canvas.height = 1
 
-            //   var ctx = canvas.getContext("2d")
-            //   ctx.drawImage(nvid, 0, 0, 8, 8)
-            //   ctx.fillStyle = "rgba(0,0,0,1)"
-            //   var p = ctx.getImageData(0, 0, 1, 1).data
-            //   console.log(p)
-            //   console.log("rgb(" + p[0] + "," + p[1] + "," + p[2] + ")")
-            //   vidBg.style.backgroundColor =
-            //     "rgb(" + p[0] + "," + p[1] + "," + p[2] + ")"
+              var ctx = canvas.getContext("2d")
+              ctx.drawImage(nvid, 0, 0, 8, 8)
+              ctx.fillStyle = "rgba(0,0,0,1)"
+              var p = ctx.getImageData(0, 0, 1, 1).data
+              console.log(p)
+              console.log("rgb(" + p[0] + "," + p[1] + "," + p[2] + ")")
+              vidBg.style.backgroundColor =
+                "rgb(" + p[0] + "," + p[1] + "," + p[2] + ")"
 
-            //   var rtrnVal = ""
-            //   var prefixes = ["-o-", "-ms-", "-moz-", "-webkit-"]
+              var rtrnVal = ""
+              var prefixes = ["-o-", "-ms-", "-moz-", "-webkit-"]
 
-            //   var heroSec = document.querySelector(".home-page .hero-section")
+              var heroSec = document.querySelector(".home-page .hero-section")
 
-            //   for (var i = 0; i < prefixes.length; i++) {
-            //     heroSec.style.background =
-            //       prefixes[i] +
-            //       "linear-gradient(#00a7ff, rgb(" +
-            //       p[0] +
-            //       "," +
-            //       p[1] +
-            //       "," +
-            //       p[2] +
-            //       "))"
+              for (var i = 0; i < prefixes.length; i++) {
+                heroSec.style.background =
+                  prefixes[i] +
+                  "linear-gradient(#00a7ff, rgb(" +
+                  p[0] +
+                  "," +
+                  p[1] +
+                  "," +
+                  p[2] +
+                  "))"
 
-            //     if (heroSec.style.background) {
-            //       rtrnVal = prefixes[i]
-            //     }
-            //   }
-            //   nvid.pause()
-            //   return rtrnVal
-            // }}
+                if (heroSec.style.background) {
+                  rtrnVal = prefixes[i]
+                }
+              }
+              nvid.pause()
+              return rtrnVal
+            }}
             crossOrigin="anonymous"
             id="important-vid"
             autoPlay
@@ -204,7 +249,7 @@ const IndexPage = () => {
               If you are reading this, it is because your browser does not
               support the HTML5 video element.
             </p>
-          </video>
+          </video> */}
           <img
             src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/white-swoop.svg"
             alt="white-curve"
