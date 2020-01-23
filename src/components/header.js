@@ -83,13 +83,6 @@ const Header = ({ siteTitle }) => {
             <a href="/reviews" className="navbar-item">
               Reviews
             </a>
-            {/* <a className="navbar-item">Portfolio</a>
-          <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link">Capabilities</a>
-            <div className="navbar-dropdown">
-              <a className="navbar-item">About</a>
-            </div>
-          </div> */}
           </div>
           <div className="navbar-end">
             <div className="navbar-item">

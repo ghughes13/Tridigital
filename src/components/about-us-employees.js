@@ -61,57 +61,13 @@ export default function EmployeeInfo() {
             src={vidURL}
             autoPlay
             muted
-            // onLoadedData={function setVideoBgColor(vid, nativeColor) {
-            //   console.log("should be fixed")
-            //   let nvid = document.getElementById("important-vid")
-            //   var vidBg = document.querySelector(
-            //     ".about-us-page .blue-background"
-            //   )
-
-            //   var canvas = document.createElement("canvas")
-            //   canvas.width = 1
-            //   canvas.height = 1
-
-            //   var ctx = canvas.getContext("2d")
-            //   ctx.drawImage(nvid, 0, 0, 8, 8)
-            //   ctx.fillStyle = "rgba(0,0,0,1)"
-            //   var p = ctx.getImageData(0, 0, 1, 1).data
-            //   console.log(p)
-            //   console.log("rgb(" + p[0] + "," + p[1] + "," + p[2] + ")")
-            //   vidBg.style.backgroundColor =
-            //     "rgb(" + p[0] + "," + p[1] + "," + p[2] + ")"
-
-            //   var rtrnVal = ""
-            //   var prefixes = ["-o-", "-ms-", "-moz-", "-webkit-"]
-
-            //   var heroSec = document.querySelector("header.about-us-header")
-
-            //   for (var i = 0; i < prefixes.length; i++) {
-            //     heroSec.style.backgroundColor =
-            //       "rgb(" + p[0] + "," + p[1] + "," + p[2] + ")"
-
-            //     if (heroSec.style.background) {
-            //       rtrnVal = prefixes[i]
-            //     }
-            //   }
-
-            //   return rtrnVal
-            // }}
           >
             <p>
               If you are reading this, it is because your browser does not
               support the HTML5 video element.
             </p>
           </video>
-          {/* <img
-            src={
-              "http://tdgatsbytest.wpengine.com" +
-              employees[employeeToShow].photo
-            }
-            className="employee-headshot"
-            alt={
-              employees[employeeToShow].First + employees[employeeToShow].Last
-            }
+          {/*
           /> */}
         </div>
       )
