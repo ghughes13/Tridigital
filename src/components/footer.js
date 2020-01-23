@@ -6,17 +6,25 @@ const Footer = () => (
     <Row>
       <Col>
         <h2>Address</h2>
-        <a href="https://goo.gl/maps/9KwWjzXNR7a4tNsK7" target="_blank">
+        <a
+          href="https://goo.gl/maps/9KwWjzXNR7a4tNsK7"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <p>101 E Park Blvd. Suite 101</p>
           <p>Plano, TX 75074</p>
         </a>
         <p>
-          <a href="tel:2142997399" target="_blank">
+          <a href="tel:2142997399" target="_blank" rel="noopener noreferrer">
             Phone: (214) 299-7399
           </a>
         </p>
         <p>
-          <a href="mailto:info@tridigitalmarketing.com" target="_blank">
+          <a
+            href="mailto:info@tridigitalmarketing.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Email: info@tridigitalmarketing.com
           </a>
         </p>
@@ -36,7 +44,11 @@ const Footer = () => (
         <p>Contact Us</p>
         <ul>
           <li>
-            <a href="https://twitter.com/tridigitalmktg" target="_blank">
+            <a
+              href="https://twitter.com/tridigitalmktg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/twitter.svg"
                 alt="twitter"
@@ -48,6 +60,7 @@ const Footer = () => (
             <a
               href="https://www.facebook.com/tridigitalmarketing/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/fb.svg"
@@ -60,6 +73,7 @@ const Footer = () => (
             <a
               href="https://www.instagram.com/tridigitalmarketing/?hl=en"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/instagram.svg"
@@ -72,6 +86,7 @@ const Footer = () => (
             <a
               href="https://www.youtube.com/channel/UCwWkMboAAbFMYIAeC2EXneQ"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/youtube.svg"
@@ -135,6 +150,7 @@ const Footer = () => (
         <a
           href="http://training.tridigitalmarketing.com/?password-protected=login&redirect_to=http%3A%2F%2Ftraining.tridigitalmarketing.com%2F"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Employee Training{" "}
         </a>

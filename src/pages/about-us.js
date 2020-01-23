@@ -7,18 +7,18 @@ import { Waypoint } from "react-waypoint"
 
 const AboutUs = () => {
   useEffect(() => {
-    document.querySelector("header").classList.add("about-us-header")
-    if (navigator.appVersion.indexOf("10_15") != -1) {
-      console.log("ricky-mac")
-      document.querySelector("header").classList.add("primary-mac")
-      document.querySelector(".about-us-page").classList.add("primary-mac")
-    } else if (navigator.appVersion.indexOf("Mac") != -1) {
-      console.log("regular-mac")
-      document.querySelector("header").classList.add("mac")
-      document.querySelector(".about-us-page").classList.add("mac")
-    } else {
-      console.log("not a mac")
-    }
+    // document.querySelector("header").classList.add("about-us-header")
+    // if (navigator.appVersion.indexOf("10_15") != -1) {
+    //   console.log("ricky-mac")
+    //   document.querySelector("header").classList.add("primary-mac")
+    //   document.querySelector(".about-us-page").classList.add("primary-mac")
+    // } else if (navigator.appVersion.indexOf("Mac") != -1) {
+    //   console.log("regular-mac")
+    //   document.querySelector("header").classList.add("mac")
+    //   document.querySelector(".about-us-page").classList.add("mac")
+    // } else {
+    //   console.log("not a mac")
+    // }
   })
 
   return (

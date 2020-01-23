@@ -32,7 +32,7 @@ export default function EmployeeInfo() {
         })
       )
     }
-  })
+  }, [])
 
   const EmpPicVid = () => {
     if (
@@ -146,7 +146,7 @@ export default function EmployeeInfo() {
       return (
         <div>
           <Container className="hero-section container">
-            <Row className="two-columns pink-banner">
+            <Row className="two-columns pink-banner move-left">
               <Col className="content-container column click-through">
                 <h2 className="white-text">
                   {employees[employeeToShow].First}{" "}

@@ -19,6 +19,7 @@ const WarmUp = () => (
             <img
               class="collaterals"
               src="/wp-content/uploads/2019/07/collateral.png"
+              alt="collaterals"
             />
           </Col>
         </Row>

@@ -1,9 +1,7 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Container, Row, Col } from "react-bootstrap"
-import EmployeeInfo from "../components/about-us-employees"
-import { Waypoint } from "react-waypoint"
+import { Container } from "react-bootstrap"
 
 const AboutUs = () => {
   return (
