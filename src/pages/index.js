@@ -11,15 +11,7 @@ import YourVideo from "../components/home-video-player.js"
 // }
 
 const IndexPage = () => {
-  useEffect(() => {
-    // if (navigator.appVersion.indexOf("10_15") != -1) {
-    //   document.querySelector(".home-page").classList.add("primary-mac")
-    // } else if (navigator.appVersion.indexOf("Mac") != -1) {
-    //   document.querySelector(".home-page").classList.add("mac")
-    // } else {
-    //   console.log("not a mac")
-    // }
-  })
+  useEffect(() => {})
 
   return (
     <Layout>

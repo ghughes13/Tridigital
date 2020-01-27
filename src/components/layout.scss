@@ -2725,6 +2725,7 @@ main .row.full-width-row.content-right {
   align-items: unset;
   padding-bottom: 200px;
   overflow: hidden;
+  background: rgb(36, 68, 255);
   &:after {
     content: "";
     background: url(https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/about-hero.svg);
@@ -2797,17 +2798,17 @@ main .row.full-width-row.content-right {
   left: 0;
 }
 
-.about-us-page .hero-section:before {
-  content: "";
-  background: url(https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/Hero_Gradient.svg);
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100vw;
-  z-index: 1;
-  background-repeat: no-repeat;
-  top: 0;
-}
+// .about-us-page .hero-section:before {
+//   content: "";
+//   background: url(https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/Hero_Gradient.svg);
+//   position: absolute;
+//   left: 0;
+//   height: 100%;
+//   width: 100vw;
+//   z-index: 1;
+//   background-repeat: no-repeat;
+//   top: 0;
+// }
 
 .employee-thumbnail-container {
   display: flex;
