@@ -2729,7 +2729,7 @@ main .row.full-width-row.content-right {
   align-items: unset;
   padding-bottom: 200px;
   overflow: hidden;
-  background: rgb(36, 68, 255);
+  // background: rgb(36, 68, 255);
   &:after {
     content: "";
     background: url(https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/about-hero.svg);
@@ -2800,6 +2800,16 @@ main .row.full-width-row.content-right {
   position: absolute;
   top: 3px;
   left: 0;
+}
+
+.about-us-page canvas {
+  position: absolute;
+  z-index: -1;
+  left: -100vw;
+  right: 0;
+  bottom: 0;
+  width: 200vw;
+  top: -50vw;
 }
 
 // .about-us-page .hero-section:before {

@@ -59,39 +59,40 @@ export default function EmployeeInfo() {
             id="important-vid"
             crossOrigin="anonymous"
             src={vidURL}
-            onLoadedData={function setVideoBgColor(vid, nativeColor) {
-              let nvid = document.getElementById("important-vid")
-              var vidBg = nvid.parentElement
+            data-replace-video-with-canvas
+            // onLoadedData={function setVideoBgColor(vid, nativeColor) {
+            //   let nvid = document.getElementById("important-vid")
+            //   var vidBg = nvid.parentElement
 
-              var canvas = document.createElement("canvas")
-              canvas.width = 1
-              canvas.height = 1
+            //   var canvas = document.createElement("canvas")
+            //   canvas.width = 1
+            //   canvas.height = 1
 
-              var ctx = canvas.getContext("2d")
-              ctx.drawImage(nvid, 0, 0, 8, 8)
-              var p = ctx.getImageData(0, 0, 1, 1).data
-              console.log(p)
-              console.log("rgb(" + p[0] + "," + p[1] + "," + p[2] + ")")
-              vidBg.style.backgroundColor =
-                "rgb(" + p[0] + "," + p[1] + "," + p[2] + ")"
+            //   var ctx = canvas.getContext("2d")
+            //   ctx.drawImage(nvid, 0, 0, 8, 8)
+            //   var p = ctx.getImageData(0, 0, 1, 1).data
+            //   console.log(p)
+            //   console.log("rgb(" + p[0] + "," + p[1] + "," + p[2] + ")")
+            //   vidBg.style.backgroundColor =
+            //     "rgb(" + p[0] + "," + p[1] + "," + p[2] + ")"
 
-              var rtrnVal = ""
-              var prefixes = ["-o-", "-ms-", "-moz-", "-webkit-"]
+            //   var rtrnVal = ""
+            //   var prefixes = ["-o-", "-ms-", "-moz-", "-webkit-"]
 
-              var heroSec = document.querySelector(
-                ".about-us-page .hero-section"
-              )
+            //   var heroSec = document.querySelector(
+            //     ".about-us-page .hero-section"
+            //   )
 
-              for (var i = 0; i < prefixes.length; i++) {
-                heroSec.style.background =
-                  "rgb(" + p[0] + "," + p[1] + "," + p[2] + ")"
+            //   for (var i = 0; i < prefixes.length; i++) {
+            //     heroSec.style.background =
+            //       "rgb(" + p[0] + "," + p[1] + "," + p[2] + ")"
 
-                if (heroSec.style.background) {
-                  rtrnVal = prefixes[i]
-                }
-              }
-              return rtrnVal
-            }}
+            //     if (heroSec.style.background) {
+            //       rtrnVal = prefixes[i]
+            //     }
+            //   }
+            //   return rtrnVal
+            // }}
             autoPlay
             muted
           >
