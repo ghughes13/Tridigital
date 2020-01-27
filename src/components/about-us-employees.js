@@ -69,7 +69,6 @@ export default function EmployeeInfo() {
 
               var ctx = canvas.getContext("2d")
               ctx.drawImage(nvid, 0, 0, 8, 8)
-              // ctx.fillStyle = "rgba(0,0,0,1)"
               var p = ctx.getImageData(0, 0, 1, 1).data
               console.log(p)
               console.log("rgb(" + p[0] + "," + p[1] + "," + p[2] + ")")

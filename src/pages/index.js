@@ -20,7 +20,7 @@ const IndexPage = () => {
         <Container className="hero-section transparent-hero container flexed">
           <Row className="two-columns">
             <Col className="content-container column">
-              <h1 className="white-text max-width-600">
+              <h1 className="white-text max-width-600 uppercase">
                 We Are the IT Industry’s Custom Marketing Agency
               </h1>
               <p className="white-text subtext max-width-550">
