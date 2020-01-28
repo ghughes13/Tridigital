@@ -19,35 +19,31 @@ const AboutUs = () => {
     // } else {
     //   console.log("not a mac")
     // }
-
-    var drawFrame = function(v, c) {
-      if (v.paused || v.ended) return false
-      var w = v.videoWidth
-      var h = v.videoHeight
-      c.canvas.width = w
-      c.canvas.height = h
-      c.drawImage(v, 0, 0, w, h)
-      v.timeout = setTimeout(drawFrame, 30, v, c)
-      console.log("drew")
-    }
-
-    // creates a canvas element, inserts it, and begins drawing video frames
-    console.log("outside")
-    document
-      .querySelectorAll("[data-replace-video-with-canvas]")
-      .forEach(function(v) {
-        console.log("ran")
-        var canvas = document.createElement("canvas")
-        var ctx = canvas.getContext("2d")
-        v.parentNode.appendChild(canvas)
-
-        drawFrame(v, ctx)
-
-        v.addEventListener("playing", function() {
-          if (typeof v.timeout === "number") clearTimeout(v.timeout)
-          drawFrame(this, ctx)
-        })
-      })
+    // var drawFrame = function(v, c) {
+    //   if (v.paused || v.ended) return false
+    //   var w = v.videoWidth
+    //   var h = v.videoHeight
+    //   c.canvas.width = w
+    //   c.canvas.height = h
+    //   c.drawImage(v, 0, 0, w, h)
+    //   v.timeout = setTimeout(drawFrame, 30, v, c)
+    //   console.log("drew")
+    // }
+    // // creates a canvas element, inserts it, and begins drawing video frames
+    // console.log("outside")
+    // document
+    //   .querySelectorAll("[data-replace-video-with-canvas]")
+    //   .forEach(function(v) {
+    //     console.log("ran")
+    //     var canvas = document.createElement("canvas")
+    //     var ctx = canvas.getContext("2d")
+    //     v.parentNode.appendChild(canvas)
+    //     drawFrame(v, ctx)
+    //     v.addEventListener("playing", function() {
+    //       if (typeof v.timeout === "number") clearTimeout(v.timeout)
+    //       drawFrame(this, ctx)
+    //     })
+    //   })
   })
 
   return (

@@ -2729,7 +2729,7 @@ main .row.full-width-row.content-right {
   align-items: unset;
   padding-bottom: 200px;
   overflow: hidden;
-  // background: rgb(36, 68, 255);
+  background: rgb(36, 68, 255);
   &:after {
     content: "";
     background: url(https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/about-hero.svg);
@@ -3019,13 +3019,17 @@ header.about-us-header.end-transparency {
   }
 
   .about-us-page .pink-banner .click-through {
-    margin-left: -90px;
+    padding: 0 2vw;
     margin-right: 95px;
   }
 
   .about-us-page .video-column img {
     margin-top: 50px;
     margin-left: 0;
+  }
+
+  .hero-section.container {
+    padding-top: 100px;
   }
 }
 
