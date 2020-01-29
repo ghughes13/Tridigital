@@ -1,50 +1,58 @@
-import React, { useState, useEffect } from "react"
-import { Container, Row, Col } from "react-bootstrap"
+import React, { useState, useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
-let employees = require("../../employee-data.json")
+let employees = require("../../employee-data.json");
 
 export default function EmployeeInfo() {
-  const [employeeToShow, setEmployeeToShow] = useState(0)
-  const [sizeOfWindow, setSizeOfWindow] = useState("desktop")
+  const [employeeToShow, setEmployeeToShow] = useState(0);
+  const [sizeOfWindow, setSizeOfWindow] = useState("desktop");
+  const [dimensions, setDimensions] = useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  });
   let vidURL =
-    "http://tdgatsbytest.wpengine.com" + employees[employeeToShow].videoURL
+    "http://tdgatsbytest.wpengine.com" + employees[employeeToShow].videoURL;
 
-  let row1 = []
-  let row2 = []
+  let row1 = [];
+  let row2 = [];
 
   for (let i = 0; i < employees.length; i++) {
     if (i < employees.length / 2) {
-      row1.push(employees[i])
+      row1.push(employees[i]);
     } else {
-      row2.push(employees[i])
+      row2.push(employees[i]);
     }
   }
 
-  useEffect(() => {
-    if (window.innerWidth < 960) {
-      setSizeOfWindow("small")
-    }
-    if (window.innerWidth < 767) {
-      setSizeOfWindow("mobile")
-      console.log(
-        document.querySelectorAll(".GIOVANNI-SANGUILY").forEach(el => {
-          el.classList.add("open")
-        })
-      )
-    }
-  }, [])
+  // if (window.innerWidth > 1350) {
+  //   setSizeOfWindow("desktop");
+  // } else if (window.innerWidth > 767) {
+  //   setSizeOfWindow("small");
+  // } else {
+  //   setSizeOfWindow("mobile");
+  // }
 
-  const EmpPicVid = () => {
-    if (
-      sizeOfWindow === "desktop" &&
-      employees[employeeToShow].videoURL !== ""
-    ) {
-      console.log(
-        employees[employeeToShow].First +
-          "-" +
-          employees[employeeToShow].Last +
-          "is true"
-      )
+  function handleResize() {
+    if (window.innerWidth > 1350) {
+      setSizeOfWindow("desktop");
+    } else if (window.innerWidth > 767) {
+      setSizeOfWindow("small");
+    } else {
+      setSizeOfWindow("mobile");
+    }
+    setDimensions({
+      height: window.innerHeight,
+      width: window.innerWidth,
+    });
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    handleResize();
+  }, [setDimensions, setSizeOfWindow]);
+
+  const EmpPicVid = props => {
+    if (props.props === "desktop") {
       return (
         <div
           className={
@@ -61,37 +69,37 @@ export default function EmployeeInfo() {
             src={vidURL}
             data-replace-video-with-canvas
             onLoadedData={function setVideoBgColor(vid, nativeColor) {
-              let nvid = document.getElementById("important-vid")
-              var vidBg = nvid.parentElement
+              let nvid = document.getElementById("important-vid");
+              var vidBg = nvid.parentElement;
 
-              var canvas = document.createElement("canvas")
-              canvas.width = 1
-              canvas.height = 1
+              var canvas = document.createElement("canvas");
+              canvas.width = 1;
+              canvas.height = 1;
 
-              var ctx = canvas.getContext("2d")
-              ctx.drawImage(nvid, 0, 0, 8, 8)
-              var p = ctx.getImageData(0, 0, 1, 1).data
-              console.log(p)
-              console.log("rgb(" + p[0] + "," + p[1] + "," + p[2] + ")")
+              var ctx = canvas.getContext("2d");
+              ctx.drawImage(nvid, 0, 0, 8, 8);
+              var p = ctx.getImageData(0, 0, 1, 1).data;
+              console.log(p);
+              console.log("rgb(" + p[0] + "," + p[1] + "," + p[2] + ")");
               vidBg.style.backgroundColor =
-                "rgb(" + p[0] + "," + p[1] + "," + p[2] + ")"
+                "rgb(" + p[0] + "," + p[1] + "," + p[2] + ")";
 
-              var rtrnVal = ""
-              var prefixes = ["-o-", "-ms-", "-moz-", "-webkit-"]
+              var rtrnVal = "";
+              var prefixes = ["-o-", "-ms-", "-moz-", "-webkit-"];
 
               var heroSec = document.querySelector(
                 ".about-us-page .hero-section"
-              )
+              );
 
               for (var i = 0; i < prefixes.length; i++) {
                 heroSec.style.background =
-                  "rgb(" + p[0] + "," + p[1] + "," + p[2] + ")"
+                  "rgb(" + p[0] + "," + p[1] + "," + p[2] + ")";
 
                 if (heroSec.style.background) {
-                  rtrnVal = prefixes[i]
+                  rtrnVal = prefixes[i];
                 }
               }
-              return rtrnVal
+              return rtrnVal;
             }}
             autoPlay
             muted
@@ -102,8 +110,9 @@ export default function EmployeeInfo() {
             </p>
           </video>
         </div>
-      )
+      );
     } else {
+      console.log("showing medium");
       return (
         <div
           className={
@@ -124,9 +133,9 @@ export default function EmployeeInfo() {
             }
           />
         </div>
-      )
+      );
     }
-  }
+  };
 
   const SizeToRender = () => {
     if (sizeOfWindow === "desktop") {
@@ -151,7 +160,7 @@ export default function EmployeeInfo() {
                 </p>
               </Col>
               <Col className="content-container column video-column">
-                <EmpPicVid />
+                <EmpPicVid props="desktop" />
               </Col>
             </Row>
           </Container>
@@ -194,7 +203,7 @@ export default function EmployeeInfo() {
             </div>
           </div>
         </div>
-      )
+      );
     } else if (sizeOfWindow === "small") {
       //HTML FOR SMALL(TABLET)
       return (
@@ -217,53 +226,75 @@ export default function EmployeeInfo() {
                 </p>
               </Col>
               <Col className="content-container column video-column">
-                <EmpPicVid />
+                <EmpPicVid props="small" />
               </Col>
             </Row>
           </Container>
           <div className="employee-thumbnail-container">
             <div className="row-1">
-              {employees.map((employee, index) => (
-                <div
-                  className="thumbnail-container"
-                  key={index}
-                  onClick={() => setEmployeeToShow(index)}
-                >
-                  <img
-                    src={employee.thumbnail}
-                    alt={
-                      employees[employeeToShow].First +
-                      employees[employeeToShow].Last
-                    }
-                  />
-                  <span className="name">{employee.First}</span>
+              <div className="employee-thumbnail-container">
+                <div className="row-1">
+                  {row1.map((employee, index) => (
+                    <div
+                      className="thumbnail-container"
+                      key={index}
+                      onClick={() => setEmployeeToShow(index)}
+                    >
+                      <img
+                        src={employee.thumbnail}
+                        alt={
+                          employees[employeeToShow].First +
+                          employees[employeeToShow].Last
+                        }
+                      />
+                      <span className="name">{employee.First}</span>
+                    </div>
+                  ))}
                 </div>
-              ))}
+                <div className="row-2">
+                  {row2.map((employee, index) => (
+                    <div
+                      className="thumbnail-container"
+                      key={index + 9}
+                      onClick={() => setEmployeeToShow(index + 9)}
+                    >
+                      <img
+                        src={employee.thumbnail}
+                        alt={
+                          employees[employeeToShow].First +
+                          employees[employeeToShow].Last
+                        }
+                      />
+                      <span className="name">{employee.First}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      )
+      );
     }
 
-    let open = false
+    let open = false;
 
     const animatePerson = (person, index) => {
-      window.scroll({ top: 0, behavior: "smooth" })
-      let showThisPerson = "." + person
+      window.scroll({ top: 0, behavior: "smooth" });
+      let showThisPerson = "." + person;
       setTimeout(function() {
         document.querySelectorAll(".open").forEach(el => {
-          el.classList.remove("open")
-        })
-      }, 500)
+          el.classList.remove("open");
+        });
+      }, 500);
       setTimeout(function() {
-        setEmployeeToShow(index)
-      }, 750)
+        setEmployeeToShow(index);
+      }, 750);
       setTimeout(function() {
         document.querySelectorAll(showThisPerson).forEach(el => {
-          el.classList.add("open")
-        })
-      }, 1000)
-    }
+          el.classList.add("open");
+        });
+      }, 1000);
+    };
 
     //HTML FOR MOBILE
     return (
@@ -287,7 +318,7 @@ export default function EmployeeInfo() {
                   {employees[employeeToShow].Position}
                 </p>
               </div>
-              <EmpPicVid />
+              <EmpPicVid props="mobile" />
             </Col>
             <Col
               className={
@@ -317,7 +348,7 @@ export default function EmployeeInfo() {
                       animatePerson(
                         employees[index].First + "-" + employees[index].Last,
                         index
-                      )
+                      );
                     }}
                   >
                     <img
@@ -335,8 +366,8 @@ export default function EmployeeInfo() {
           </Row>
         </Container>
       </div>
-    )
-  }
+    );
+  };
 
-  return <SizeToRender />
+  return <SizeToRender />;
 }
