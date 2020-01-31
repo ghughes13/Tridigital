@@ -24,12 +24,11 @@ export default class YourVideo extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="video-btn">
         <span className="wistia_embed wistia_async_scialrmh2w popover=true popoverAnimateThumbnail=true popoverContent=link">
-        <a className="white-text blue-button" href="#">
-                  Watch Video{" "}
+        <a href="#">
                   <img
-                    src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/play-button.png"
+                    src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-3451-2.png"
                     alt="play button"
                   ></img>
                 </a>

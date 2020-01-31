@@ -1830,13 +1830,14 @@ footer .footer-thank-you h5 {
 }
 
 .home-page .video-container.first-one {
-  max-width: 600px !important;
-  overflow: hidden;
   border-radius: 25px;
-  box-shadow: 0px 16px 25px 0px rgba(0, 0, 0, 0.6);
   padding-left: 0;
   height: 100%;
   margin-left: 100px;
+}
+
+.home-page .video-container.first-one img {
+  margin-top: -25px
 }
 
 .home-page .play-icon {
@@ -1844,6 +1845,30 @@ footer .footer-thank-you h5 {
   border-radius: 25px;
   margin-top: 0;
   margin-bottom: -6px;
+}
+
+.home-page .video-btn {
+  position: absolute;
+  top: 12vw;
+  left: 0;
+  right: 30px;
+  margin: auto;
+  width: 130px;
+}
+
+.home-page .video-btn img {
+  transition-duration: .5s;
+  &:hover {
+    transform:scale(1.25);
+  }
+}
+
+.home-page .wistia_click_to_play {
+  width: 130px !important;
+}
+
+.home-page .hero-section.container {
+  padding-top: 175px;
 }
 
 .home-page .play-vid-div {

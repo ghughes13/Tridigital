@@ -26,7 +26,6 @@ const IndexPage = () => {
               <p className="white-text subtext max-width-550">
                 We’ve generated over 100,000 MSP leads. . . and counting.
               </p>
-              <YourVideo />
               <div className="asSeen">
                 <p className="as-seen-text">As seen in:</p>
                 <img
@@ -41,14 +40,8 @@ const IndexPage = () => {
               </div>
             </Col>
             <Col className="content-container column video-container first-one">
-              <video
-                className="play-icon"
-                src="http://warmup.tridigitalmarketing.com/wp-content/uploads/2018/09/Homepage.mp4"
-                alt="TRIdigital media team"
-                autoPlay
-                loop
-                muted
-              ></video>
+              <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/video-team.png" alt="group-picture"/>
+              <YourVideo />
             </Col>
           </Row>
           <span class="scroll-icon">
@@ -109,21 +102,15 @@ const IndexPage = () => {
                 Marketing As Unique As YOU Are
               </h2>
               <p className="white-text">
-                The biggest mistake IT companies make when developing their
-                marketing strategy is that they build it around marketing the
-                services they offer.
+                The biggest mistake IT companies make when developing their marketing
+                strategy is that they build it around marketing the services they offer.
+                But the services you offer don’t make you different, in-fact it is the one thing that makes
+                you just like everyone else. 
               </p>
               <p className="white-text">
-                But the services you offer don’t make you different, in-fact it
-                is the one thing that makes you just like everyone else. Any
-                company of any size can partner with any vendor and offer what
-                you offer and offer cheaper if they are smaller.
-              </p>
-              <p className="white-text">
-                Your business is more than the solutions you resell. What truly
-                makes you different is your vision, your culture, your process,
-                your people and your infrastructure. Marketing those unique
-                differintiators is the key to marketing success.
+                What truly makes you different is your vision, your culture, your process, your
+                people and your infrastructure. Marketing those unique differintiators is the key to
+                marketing success.
               </p>
             </Col>
           </Row>
