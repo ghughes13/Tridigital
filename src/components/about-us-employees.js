@@ -7,8 +7,8 @@ export default function EmployeeInfo() {
   const [employeeToShow, setEmployeeToShow] = useState(0);
   const [sizeOfWindow, setSizeOfWindow] = useState("desktop");
   const [dimensions, setDimensions] = useState({
-    height: window.innerHeight,
-    width: window.innerWidth,
+    height: '',
+    width: '',
   });
   let vidURL =
     "http://tdgatsbytest.wpengine.com" + employees[employeeToShow].videoURL;
