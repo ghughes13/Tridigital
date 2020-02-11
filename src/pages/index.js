@@ -1,17 +1,17 @@
-import React, { useEffect } from "react"
-import { graphql } from "gatsby"
-import SEO from "../components/seo"
-import Layout from "../components/layout"
-import { Container, Row, Col } from "react-bootstrap"
-import { Waypoint } from "react-waypoint"
-import YourVideo from "../components/home-video-player.js"
+import React, { useEffect } from "react";
+import { graphql } from "gatsby";
+import SEO from "../components/seo";
+import Layout from "../components/layout";
+import { Container, Row, Col } from "react-bootstrap";
+import { Waypoint } from "react-waypoint";
+import YourVideo from "../components/home-video-player.js";
 
 // const propTypes = {
 //   data: PropTypes.object.isRequired,
 // }
 
 const IndexPage = () => {
-  useEffect(() => {})
+  useEffect(() => {});
 
   return (
     <Layout>
@@ -111,19 +111,14 @@ const IndexPage = () => {
               <p className="white-text">
                 The biggest mistake IT companies make when developing their
                 marketing strategy is that they build it around marketing the
-                services they offer.
+                services they offer. But the services you offer don’t make you
+                different, in-fact it is the one thing that makes you just like
+                everyone else.
               </p>
               <p className="white-text">
-                But the services you offer don’t make you different, in-fact it
-                is the one thing that makes you just like everyone else. Any
-                company of any size can partner with any vendor and offer what
-                you offer and offer cheaper if they are smaller.
-              </p>
-              <p className="white-text">
-                Your business is more than the solutions you resell. What truly
-                makes you different is your vision, your culture, your process,
-                your people and your infrastructure. Marketing those unique
-                differintiators is the key to marketing success.
+                What truly makes you different is your vision, your culture,
+                your process, your people and your infrastructure. Marketing
+                those unique differintiators is the key to marketing success.
               </p>
             </Col>
           </Row>
@@ -131,8 +126,8 @@ const IndexPage = () => {
             <Waypoint
               onEnter={() => {
                 document.querySelectorAll(".site-img").forEach(element => {
-                  element.classList.add("animate")
-                })
+                  element.classList.add("animate");
+                });
               }}
             />
           </div>
@@ -398,8 +393,8 @@ const IndexPage = () => {
         </Container>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query HomePageQuery {
@@ -418,6 +413,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default IndexPage
+export default IndexPage;
