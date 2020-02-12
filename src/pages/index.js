@@ -26,18 +26,27 @@ const IndexPage = () => {
               <p className="white-text subtext max-width-550">
                 We’ve generated over 100,000 MSP leads. . . and counting.
               </p>
-              <YourVideo />
               <div className="asSeen">
                 <p className="as-seen-text">As seen in:</p>
-                <img
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/Forbes.svg"
-                  alt="forbes"
-                />
-                <img
-                  className="margin-left-25px"
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/ChannelPro.svg "
-                  alt="chanelpro"
-                />
+                <a
+                  href="https://www.forbes.com/sites/forbesagencycouncil/2018/07/26/12-public-speaking-tips-to-make-your-speech-more-impactful/#33ad1ae3f16f"
+                  target="_blank"
+                >
+                  <img
+                    src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/Forbes.svg"
+                    alt="forbes"
+                  />
+                </a>
+                <a
+                  href="https://www.channelpronetwork.com/article/solid-gold-marketing-campaigns?page=0%2C0"
+                  target="_blank"
+                >
+                  <img
+                    className="margin-left-25px"
+                    src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/ChannelPro.svg "
+                    alt="chanelpro"
+                  />
+                </a>
               </div>
             </Col>
             <Col className="content-container column video-container first-one">
@@ -49,6 +58,7 @@ const IndexPage = () => {
                 loop
                 muted
               ></video>
+              <YourVideo />
             </Col>
           </Row>
           <span class="scroll-icon">
@@ -339,7 +349,7 @@ const IndexPage = () => {
             alt=""
           ></img>
         </Container>
-        <Container className="flexed max-width-fix outsmart-container top-layer padding-top-one-fifty">
+        <Container className="flexed max-width-fix outsmart-container top-layer padding-top-zero">
           <Row className="two-columns full-width-row content-left align-middle top-layer">
             <Col className="content-container">
               <h2 className="blue-text smaller">Outsmart Your Competition</h2>

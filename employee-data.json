@@ -1,12 +1,22 @@
 [
   {
+    "First": "TRIdigital",
+    "Last": "Marketing",
+    "Position": "Company",
+    "Hobbies": "Creativity, Marketing, Supe, Comics",
+    "Desc": "TRIdigital provides innovative creative and marketing services for IT Service Providers globally. Our team’s expertise is marketing and selling Managed Services, Cloud Services, BDR, Network Security, Infrastructure Services, and Telecom Services. Over the past three years, we have executed thousands of marketing campaigns and have closed more than $850,000,000 in managed services contracts. We leverage all of that experience to help you achieve the best possible marketing results for your company.",
+    "videoURL": "/wp-content/uploads/about-us-videos/TRILogo%20Animation_R15.mp4",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/TRIdigital_Profile%20copy.png",
+    "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/about-us-selectors/TRIdigital.png"
+  },
+  {
     "First": "GIOVANNI",
     "Last": "SANGUILY",
     "Position": "Chief Executive Officer",
     "Hobbies": "Family, Drawing Comics, Disney, Boxing",
     "Desc": "My name is Giovanni, but if you like, you can call me Gio for short. I’ll pretty much respond to any name that starts with a “G.” I’ve found I’m good at two things, IT Marketing and Sales. Over the past 10 years, I have closed more than $20 million in managed services revenue. I’ve also helped MSPs across 15 countries close over $50 million in managed services revenue. I think that my creative talent combined with my ability to tell stories has helped me be successful.",
-    "videoURL": "/wp-content/uploads/testVideo/Gio.mp4",
-    "photo": "/wp-content/uploads/2020/01/Gio.png",
+    "videoURL": "/wp-content/uploads/about-us-videos/Gio.mp4",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Gio.png",
     "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Gio.png"
   },
   {
@@ -14,30 +24,20 @@
     "Last": "PETTIS",
     "Position": "Co-Founder & Chief Design Officer",
     "Hobbies": "Movies, Fitness, Cooking, Art",
-    "Desc": "Hello Everyone, I’m Richard, one of the multimedia designers at TRIdigital. For over 6 years, I have been designing for the channel and I’ve enjoyed every minute of it. My passion for art and design started at the young age of 5 years old, and my artistic talent has been improving ever since. With an amazing team by my side, the creation of something from nothing is a reality.",
+    "Desc": "Hello Everyone, I’m Richard, one of the Art Directors at TRIdigital. For over 6 years, I have been designing for the channel and I’ve enjoyed every minute of it. My passion for art and design started at the young age of 5 years old, and my artistic talent has been improving ever since. With an amazing team by my side, the creation of something from nothing is a reality.",
     "videoURL": "/wp-content/uploads/about-us-videos/Richard.mp4",
-    "photo": "/wp-content/uploads/2020/01/Richard-p.png",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Richard.png",
     "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Richard.png"
   },
   {
     "First": "JOSEPH",
     "Last": "MENDOZA",
-    "Position": "Chief Financial Strategy Officer",
+    "Position": "Chief Strategy Officer",
     "Hobbies": "Building, Scotch, Meat, Batman",
-    "Desc": "I’m TRIdigital’s Batman/Ron Swanson… but since they won’t let me call myself that – we’ve agreed upon Chief Financial Strategy Officer. My tech experience began in the 3rd grade when I started building computers and learned how to connect to the internet for free using our super fast dial-up connection. My transition into business began shortly after when I started selling cheat codes to video games. At TRIdigital I handle finance, HR, and help with overall strategy. I love building and problem solving so you can usually catch me in my garage with a variety of tools and wood.",
+    "Desc": "I’m TRIdigital’s Batman/Ron Swanson… but since they won’t let me call myself that – we’ve agreed upon Chief Strategy Officer. My tech experience began in the 3rd grade when I started building computers and learned how to connect to the internet for free using our super fast dial-up connection. My transition into business began shortly after when I started selling cheat codes to video games. At TRIdigital I handle finance, HR, and help with overall strategy. I love building and problem solving so you can usually catch me in my garage with a variety of tools and wood.",
     "videoURL": "/wp-content/uploads/about-us-videos/Joseph.mp4",
-    "photo": "/wp-content/uploads/2020/01/joseph.png",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Joseph.png",
     "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Joseph.png"
-  },
-  {
-    "First": "JASMINE",
-    "Last": "CUE",
-    "Position": "Operations",
-    "Hobbies": "Family Time, Sweet Coffee & Tea, Reading, Lettering",
-    "Desc": "Hi! I’m Jasmine Cue. I began my journey in the IT industry in 2008 with MSPU. I have worked my way up the chain while soaking up knowledge in IT, marketing, project management, and everything in between. I can always be found knee-deep in timelines, planning, and making sure our operations run like a well oiled machine. Apart from that, I am a mother to two beautiful children. I also like to believe that I am a travel-sized Wonder Woman. Being 5’1 doesn’t actually qualify me for Amazonian status.",
-    "videoURL": "",
-    "photo": "/wp-content/uploads/2020/01/jasmine.png",
-    "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Jasmine.png"
   },
   {
     "First": "ADRIAN",
@@ -46,8 +46,18 @@
     "Hobbies": "Family, Playing Sports, Learning And Growing, Comics",
     "Desc": "Hi! I’m Adrian, the CXO here at TRIdigital. I have spent the last 10 years in the channel growing my sales and marketing knowledge. I started with the amazing and rewarding experience of directly selling and marketing IT services. Today, I am happy to say that I have been able to apply my success and skills to consult businesses across the country to help them change the way they view their sales and marketing efforts in order to grow. Here at TRIdigital, my goal is to provide you with an amazing experience and aid you in your journey to success.",
     "videoURL": "/wp-content/uploads/about-us-videos/Adrian.mp4",
-    "photo": "/wp-content/uploads/2020/01/adrian.png",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Adrian.png",
     "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Adrian.png"
+  },
+  {
+    "First": "JASMINE",
+    "Last": "CUE",
+    "Position": "Project Manager",
+    "Hobbies": "Family, Disney, Reading, Lettering",
+    "Desc": "Hi! I’m Jasmine. I began my journey in the IT industry in 2008 with MSPU. I have worked my way up the chain while soaking up knowledge in IT, marketing, project management, and everything in between. I can always be found calculating timelines, planning, and making sure our service delivery operations run like a well oiled machine. Apart from that, I am a mother to two beautiful children. I also like to believe that I am a travel-sized Wonder Woman. Being 5’1 doesn’t actually qualify me for Amazonian status.",
+    "videoURL": "/wp-content/uploads/about-us-videos/Jasmine-reduce.mp4",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Jasmin.png",
+    "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Jasmine.png"
   },
   {
     "First": "BILL",
@@ -56,48 +66,28 @@
     "Hobbies": "Food, Learning, Anime, Board Games",
     "Desc": "Hey, I’m Bill! I’m the CTO of TRIdigital Marketing. I’m an eager sponge when it comes to knowledge. I started my journey by getting a Masters in Applied Mathematics, and afterward, quickly transitioned to Development. I spent five years honing my craft until I came on board as a member of the TRIdigital team as the CTO. Now I ensure that everything technology-related is up and running smoothly!",
     "videoURL": "/wp-content/uploads/about-us-videos/Bill.mp4",
-    "photo": "/wp-content/uploads/2020/01/bill.png",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Bill.png",
     "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Bill.png"
   },
   {
     "First": "JULIAN",
     "Last": "PEREZ",
-    "Position": "Sr. Graphic Designer",
-    "Hobbies": "Coffee, Anime, ThunderCats, Netflix & Hulu",
-    "Desc": "¡Quiubo parce! I’m Julian Perez, a Sr. Graphic Designer at TRIdigital. I’ve been a Graphic Designer for 10 years and I love what I do so much. Besides IT, I have also created designs for the music industry. I do have a strong Colombian-English accent that some say is sexy, some say is cute, but I say is amazing because I’m bilingual. I’m a coffeeholic! I spend time watching my favorite shows like Attack on Titan, Sailor Moon, and ThunderCats on Netflix and Hulu. I am happily married and look forward to the time I spend with my beautiful wife.",
-    "videoURL": "/wp-content/uploads/about-us-videos/Julian.mp4",
-    "photo": "/wp-content/uploads/2020/01/julian.png",
+    "Position": "Art Director",
+    "Hobbies": "Coffee, Singing, Anime, ThunderCats",
+    "Desc": "Hello there, I’m Julian Perez, one of the amazing Art Directors at TRIdigital. I’ve been a Graphic Designer for over 14 years now and I love it!!! I also have a background in working in the music industry as a graphic designer and as a singer... That's right! Check me out on Spotify. I was born and raised in Colombia but I am Americanized now. Since I'm Colombian, I love coffee in all its splendor. I am happily married with the most beautiful woman in all this galaxy! Am I so damn lucky? Yes, I am! Well, that's me. What about you?",
+    "videoURL": "/wp-content/uploads/about-us-videos/Julian%20v%202-reduce.mp4",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Julian%20v%202.00_00_00_15.Still004.png",
     "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Julian.png"
-  },
-  {
-    "First": "JUSTIN",
-    "Last": "HAYS",
-    "Position": "Software & Web Developer",
-    "Hobbies": "Fast & Loud Cars, Metal M/, Self Improvement & Helping Others Around Me, My Wife Gracie",
-    "Desc": "Ahoy! I’m the website guy! I’m here to build bad ass sites designed by bad ass designers. I’ve been in the website business for two years and have loved every second of it. I have my degrees in mathematics and education which translate nicely into my field. Using logic to solve problems and helping others fight through challenges is what I’m here for. We at the dev department look forward to your next site build =).",
-    "videoURL": "",
-    "photo": "/wp-content/uploads/2020/01/Justin.png",
-    "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Justin.png"
   },
   {
     "First": "ADRIANA",
     "Last": "SANGUILY",
-    "Position": "Accounting Manager",
+    "Position": "Chief Executive Officer",
     "Hobbies": "Family, Travel, Natural Healing/Medicine, Photography",
-    "Desc": "Hey, I’m Adriana, TRIdigital’s accounting manager. I graduated from Cal State Fullerton in 2008 with a bachelor’s degree in Business Administration with a concentration in Accounting. At TRIdigital, I run a tight money ship. Benjamin Franklin once said “beware of little expenses, a small leak will sink a great ship,” so it’s my job to make sure there aren’t any money leaks. I’m a proud mama bear to two handsome boys, so when I’m not at TRIdigital, I’m keeping up with my two little guys trying to plant the right seeds in their little minds.",
-    "videoURL": "",
-    "photo": "/wp-content/uploads/2020/01/Adriana.png",
+    "Desc": "Hey, I’m Adriana, TRIdigital’s Chief Executive Officer. I graduated from Cal State Fullerton in 2008 with a bachelor’s degree in Business Administration with a concentration in Accounting. At TRIdigital, I run a tight money ship. Benjamin Franklin once said “beware of little expenses, a small leak will sink a great ship,” so it’s my job to make sure there aren’t any money leaks. I’m a proud mama bear to two handsome boys, so when I’m not at TRIdigital, I’m keeping up with my two little guys trying to plant the right seeds in their little minds.",
+    "videoURL": "/wp-content/uploads/about-us-videos/Adriana-reduce.mp4",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Adriana.png",
     "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Adriana.png"
-  },
-  {
-    "First": "GEOFF",
-    "Last": "POMELLA",
-    "Position": "Client Experience Coordinator",
-    "Hobbies": "Food, Comics, Movies, Exploring",
-    "Desc": "Heya! I’m Geoff Pomella, a Client Experience Coordinator here at TRIdigital. I’m a graduate from the University of North Texas in Creative Writing and have over five years of experience in both project and product management. Anytime I’m not at work you can find me diving into a good book or comic, and also spending a fair amount of my time with camping and doing photography.",
-    "videoURL": "",
-    "photo": "/wp-content/uploads/2020/01/geoff.png",
-    "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Geoff.png"
   },
   {
     "First": "RICARDO",
@@ -106,38 +96,28 @@
     "Hobbies": "Pizza, Art, Showa Tokusatsu Heroes, 80’S Cartoons/Movies",
     "Desc": "Yo! My name is Ricardo and I’m a Creative Director here at TRIdigital. I have over 7 years of experience in the industry. I have worked on a vast array of projects ranging from traditional design such as branding, web design and print, as well as nontraditional design such as video games and toy design, to name a few. I discovered my passion for art at a young age when my older brother inspired me to draw alongside him. Ever since then I’ve made it my goal in life to improve myself as an artist.",
     "videoURL": "/wp-content/uploads/about-us-videos/Ricky%20A.mp4",
-    "photo": "/wp-content/uploads/2020/01/Ricky.png",
+    "photo": "\\/wp-content/uploads/about-us-mobile-pics/Ricky.png",
     "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Ricky.png"
   },
   {
     "First": "EMANUEL",
     "Last": "MÁRQUEZ",
-    "Position": "Multimedia Engineer",
-    "Hobbies": "Video Games, Drawing, Adventure, Coffee",
-    "Desc": "Hey there! I’m Emanuel, one of the guys that makes pretty things for our clients. Growing up in the 90s, I was exposed to a lot of cartoons, movies and video games that sparked my interest in animation and illustration. I graduated from the “School of Fine Arts” in Puerto Rico where I majored in graphic design. Art has been a passion of mine, as well as playing games, so making video games in game jams has been a fun way to incorporate both.",
+    "Position": "UI/UX Motion Designer",
+    "Hobbies": "Video Games, Drawing, Coffee, Go Nagai",
+    "Desc": "I’m Emanuel, but you can call me Ema. I'm one of the guys that makes pretty things for our clients. Remember that fear is the mind killer, trust the process and all your dreams will come true.",
     "videoURL": "/wp-content/uploads/about-us-videos/Ema.mp4",
-    "photo": "/wp-content/uploads/2020/01/Ema.png",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Ema.png",
     "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Ema.png"
   },
   {
     "First": "MARVIN",
     "Last": "CHAU",
     "Position": "Web Development Manager",
-    "Hobbies": "<3 Eating, Cooking, Traveling, Gaming",
-    "Desc": "Xin chào! My name is Marvin, and I’m one of the developers here. My fascination of creating things with my own hands started when I was a young child obsessed with cooking. I’m only 2 years into my development career, and loving every moment of it. Just like finding new recipes and techniques online, I love to research new languages and ideas and applying them to a site. I hope to get started on your site soon!",
+    "Hobbies": "Cooking, Traveling, Gaming",
+    "Desc": "Xin chào! My name is Marvin, and I’m one of the developers here. If I'm not coding, I'm looking up new recipes and cooking. If I can't impress you with my code, I'll definitely impress you with my food!",
     "videoURL": "/wp-content/uploads/about-us-videos/Marvin.mp4",
-    "photo": "/wp-content/uploads/2020/01/Marvin.png",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Marvin.png",
     "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Marvin.png"
-  },
-  {
-    "First": "DANIEL",
-    "Last": "CAPOTE",
-    "Position": "Multimedia Engineer",
-    "Hobbies": "Traveling, Going To The Movies, Video Games, Art",
-    "Desc": "Hola, I’m Daniel Capote, and I’m a Multimedia Engineer. I got the magic hands to make all your visual dreams come true. I’ve been doing this for 10 years and I don’t have any plans to stop anytime soon. I’m great at doing 2D /3D animations. My dream is to travel all over the world and meet different people (and experience different cultures).",
-    "videoURL": "",
-    "photo": "/wp-content/uploads/2020/01/Capote.png",
-    "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/Jasmine.jpg"
   },
   {
     "First": "EIRA",
@@ -146,17 +126,17 @@
     "Hobbies": "Food, Drawing, Reading, Traveling",
     "Desc": "I’m Eira and I joined the TRIdigital team after 6 years of teaching art. I received my BFA from the School of Fine Arts and Design of Puerto Rico in 2011 with a concentration in Art Education. I enjoy anything that involves being creative and making something with your hands. Although I like traditional art, I’ve always been inspired by the possibilities of digital media. I got my first drawing tablet for my 16th birthday after struggling to draw in Photoshop with a mouse, and I knew I wanted to create art for the rest of my life.",
     "videoURL": "/wp-content/uploads/about-us-videos/Eira.mp4",
-    "photo": "/wp-content/uploads/2020/01/eira.png",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Eira.png",
     "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Eira.png"
   },
   {
     "First": "SCOTT",
     "Last": "MITCHELL",
-    "Position": "Photographer/Videographer",
-    "Hobbies": "Sleeping In With My Dogs, Watching Tons Of Films, Drinking Way Too Much Coffee",
-    "Desc": "Heyo! I’m Scott, one of the multimedia dudes at TRidigital. I’ve been working professionally with cameras for five years now and have done everything from food to wedding photography. I’m also one of the guys who gets to travel to all of our clients to shove a camera in their face. (I know, I’m pretty fortunate). So if you’re signing on, I look forward to meeting you!",
+    "Position": "Digital Marketing Strategist",
+    "Hobbies": "Pretending I know how to raise my son, watching Lord of the Rings too much",
+    "Desc": "Heyo! I’m Scott, one of the Digital Marketing Strategists at TRIdigital. I've been with TD for over four years and done a lot a growing — I've been a writer, a photographer, a videographer, a motion graphics artists, and now a strategist. And I promise, I'm passably good at most of those skillsets.",
     "videoURL": "/wp-content/uploads/about-us-videos/Scott.mp4",
-    "photo": "/wp-content/uploads/2020/01/Scott.png",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Scott%20v%202.png",
     "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Scott.png"
   },
   {
@@ -166,7 +146,7 @@
     "Hobbies": "Travel, Family Time, Running, Decorating, Learning",
     "Desc": "Hey there, I’m Erika. I was born and raised in Cali. I have a BS in Applied Mathematics with an emphasis in Science and Engineering. My background as a Tutor and Reimbursement Analyst has definitely helped me strengthen several different areas of expertise. Now, I am one of the Product Coaches for Honey CRM. I am really happy to be part of this team and to have the ability to help anyone that asks me a question. When I’m not working, I love spending quality time with my loving husband and handsome son.",
     "videoURL": "/wp-content/uploads/about-us-videos/Erika.mp4",
-    "photo": "/wp-content/uploads/2020/01/Erika.png",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Erika.png",
     "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Erika.png"
   },
   {
@@ -174,9 +154,109 @@
     "Last": "HUGHES",
     "Position": "Web Developer",
     "Hobbies": "Music, Gaming, Working Out",
-    "Desc": "Hey, I’m Garrett. I worked in the finance industry for about a year, didn’t particularly like it, and used every minute of my free time to learn web development. Now I work here as a web developer and love every minute of it!! Look forward to building your site.",
+    "Desc": "Hey, I’m Garrett, one of the web developers at Tridigital. I like working out, learning more about tech, and working on videos for my Youtube channel. Can't wait to build yout site.",
     "videoURL": "/wp-content/uploads/about-us-videos/Garrett.mp4",
-    "photo": "/wp-content/uploads/2020/01/Garrett.png",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Garrett.png",
     "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Garrett.png"
+  },
+  {
+    "First": "Rebekah",
+    "Last": "Hilton",
+    "Position": "Copy Admin",
+    "Hobbies": "Reggaeton, Running, Tequila, Hiking",
+    "Desc": "Hola! My name is Rebekah, but my friends call me Becky G. I’m a Copy Admin here at TRIdigital. I love hearing people’s stories and learning about what makes them who they are. My life is my own personal scavenger hunt, and I’m constantly in search of new lessons and experiences. You can usually find me training for my next race, spicing up my life with some cayenne pepper (definitely works), giving my needy Corgi undivided attention or making new friends.",
+    "videoURL": "/wp-content/uploads/about-us-videos/Rebecca.mp4",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Rebekah.png",
+    "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/about-us-selectors/Rebekah.jpg"
+  },
+  {
+    "First": "Mo",
+    "Last": "Guerrero",
+    "Position": "Client Experience Manager",
+    "Hobbies": "Family, Sales,",
+    "Desc": "",
+    "videoURL": "/wp-content/uploads/about-us-videos/Mo.mp4",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Mo.png",
+    "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/about-us-selectors/Mo.png"
+  },
+  {
+    "First": "Andrew",
+    "Last": "Crespo-Roman",
+    "Position": "Client Experience Manager",
+    "Hobbies": "Music, Art, Business, Dogs, Family",
+    "Desc": "Hi y’all! My name is Andrew and I’m a Client Experience Manager here at TRIdigital. I love my job because I get to help people and businesses grow while they realize their vision of success. Outside of working for TRIdigital you can find me creating art and music, spending time with my dogs and those closest to me. I am constantly trying to fill my brain with new knowledge and fresh perspectives. I see the world as a canvas ready to be shaped by our creative input. Let’s get creative!",
+    "videoURL": "/wp-content/uploads/about-us-videos/Andrew.mp4",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Andrew.png",
+    "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/about-us-selectors/Andrew.png"
+  },
+  {
+    "First": "Bobby",
+    "Last": "Yates",
+    "Position": "Chief Operations Officer",
+    "Hobbies": "Scuba Diving, Triathlons, Traveling",
+    "Desc": "Hello, my name is Bobby and I am the COO of TRIdigital. Having owned and run an MSP for 16 years I understand the channel we serve. When I am not working you can often find me training for a race or planning our family’s next adventure to go dive and explore the other 70% of the world covered by water.",
+    "videoURL": "/wp-content/uploads/about-us-videos/Bobby-reduce.mp4",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Bobby.png",
+    "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/about-us-selectors/Bobby.jpg"
+  },
+  {
+    "First": "Jasmin",
+    "Last": "Gonzalez",
+    "Position": "Graphic Designer",
+    "Hobbies": "Art, Music, Food, Anything Pink!",
+    "Desc": "Hello, My name is Jasmin, and I'm a Graphic Designer here at TRIdigital. I’ve always had a passion for arts and crafts, however, painting is my favorite. One of my many talents is transforming someone’s image and self-esteem, not only digitally but physically as well. For the past 8 years, I’ve been a barber stylist and I love what I do! I have a huge collection of pop art toys and always stay up to date with my favorite artists. Digital Art has won my heart <3",
+    "videoURL": "/wp-content/uploads/about-us-videos/Jasmin-reduce.mp4",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Jasmine.png",
+    "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/about-us-selectors/Jasmine.jpg"
+  },
+  {
+    "First": "Molly",
+    "Last": "Davenport",
+    "Position": "Digital Marketing Strategist",
+    "Hobbies": "Goldendoodles, Tacos, The beach, Solitaire",
+    "Desc": "Hey there! My name is Molly and I’m a Digital Marketing Strategist here at TRIdigital. I graduated with a Bachelor’s degree in Journalism from Bowling Green State University. I enjoy listening to others and using their words to write a compelling story. I love learning and exploring the “why” behind things. When I’m not working, you can find me exploring new brunch spots, working out, or searching for my next DIY project on Pinterest.",
+    "videoURL": "/wp-content/uploads/about-us-videos/Molly-reduce.mp4",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Molly%20v2.png",
+    "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/about-us-selectors/Molly.jpg"
+  },
+  {
+    "First": "Agustina",
+    "Last": "Bozas",
+    "Position": "Copy Admin",
+    "Hobbies": "Music, Fashion, Traveling, Card Games",
+    "Desc": "Hello, my name is Agustina and I’m a Copy Admin at TRIdigital. I have a Doberman and a Siamese cat that I treat as if they were my children and they definitely treat each other as siblings. My life revolves around them, music, traveling, and fashion. I enjoy all things thought-provoking, that being said, debating controversial topics is my hobby. I do my best to keep an open mind and really love all new experiences.",
+    "videoURL": "/wp-content/uploads/about-us-videos/Agustina-reduce.mp4",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Agustina.png",
+    "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/about-us-selectors/Agustina.jpg"
+  },
+  {
+    "First": "Erik",
+    "Last": "Gardea",
+    "Position": "Web Developer",
+    "Hobbies": "Texas, Software, Family",
+    "Desc": "Hello, my name is Erik and I work as a developer at TRIdigital. Outside of work, I like to use my time to improve my skills in software, make videos about my personal projects, and I am constantly on the lookout for the next real estate deal to invest in.",
+    "videoURL": "/wp-content/uploads/about-us-videos/Eric-reduce.mp4",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Eric.png",
+    "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/about-us-selectors/Erik.jpg"
+  },
+  {
+    "First": "Kymberli",
+    "Last": "Duffy",
+    "Position": "Frontend Developer",
+    "Hobbies": "Coding, Corgis, Coffee, College",
+    "Desc": "Hello! My name is Kymberli, and I am a Frontend Developer for HoneyCRM. I started building small webpages in elementary school, during the years leading up to the Myspace developer generation. I have a BFA in Photography, and I am currently working toward a BS in Computer Science & Engineering. Most days you can find me buried in code, advocating for diversity in tech, unapologetically making terrible puns, traveling with my boyfriend, and spoiling our three dogs.",
+    "videoURL": "/wp-content/uploads/about-us-videos/Kymberli-reduce.mp4",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Kymberli.png",
+    "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/about-us-selectors/Kymberli.png"
+  },
+  {
+    "First": "Zaul",
+    "Last": "Rodriguez",
+    "Position": "Graphic Designer",
+    "Hobbies": "Food, Longboarding, Hiking with my doggo, Games",
+    "Desc": "Hey there, my name is Zaul! I’m one of the super cool guys in the graphic design team here at TRIdigital. I have my Bachelor’s in Game Arts and Design with a focus on 3D modeling at the Art Institute of Tampa. I love the challenge of problem-solving and I’m always eager to learn new skills to put in my arsenal so I can make cool things for the world to see. I guess you can say that aspect of me comes from my passion for games and art. This passion has been present for as long as I can remember, and it doesn’t seem to be stopping any time soon.",
+    "videoURL": "/wp-content/uploads/about-us-videos/Zaul-reduce.mp4",
+    "photo": "/wp-content/uploads/about-us-mobile-pics/Zaul.png",
+    "thumbnail": "http://tdgatsbytest.wpengine.com/wp-content/uploads/about-us-selectors/Zaul.jpg"
   }
 ]

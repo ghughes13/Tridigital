@@ -7,14 +7,18 @@ export default function EmployeeInfo() {
   const [employeeToShow, setEmployeeToShow] = useState(0);
   const [sizeOfWindow, setSizeOfWindow] = useState("desktop");
   const [dimensions, setDimensions] = useState({
-    height: window.innerHeight,
-    width: window.innerWidth,
+    height: "",
+    width: "",
   });
+  const firstRowEmployees = 13;
+  const multiRow = 9;
+
   let vidURL =
     "http://tdgatsbytest.wpengine.com" + employees[employeeToShow].videoURL;
 
   let row1 = [];
   let row2 = [];
+  let row3 = [];
 
   for (let i = 0; i < employees.length; i++) {
     if (i < employees.length / 2) {
@@ -24,19 +28,28 @@ export default function EmployeeInfo() {
     }
   }
 
-  // if (window.innerWidth > 1350) {
-  //   setSizeOfWindow("desktop");
-  // } else if (window.innerWidth > 767) {
-  //   setSizeOfWindow("small");
-  // } else {
-  //   setSizeOfWindow("mobile");
-  // }
+  console.log(row1);
+  console.log(row2);
 
   function handleResize() {
     if (window.innerWidth > 1350) {
       setSizeOfWindow("desktop");
+      for (let i = 0; i < employees.length; i++) {
+        if (i < employees.length / 2) {
+          row1.push(employees[i]);
+        } else {
+          row2.push(employees[i]);
+        }
+      }
     } else if (window.innerWidth > 767) {
       setSizeOfWindow("small");
+      for (let i = 0; i < employees.length; i++) {
+        if (i < employees.length / 2) {
+          row1.push(employees[i]);
+        } else {
+          row2.push(employees[i]);
+        }
+      }
     } else {
       setSizeOfWindow("mobile");
     }
@@ -79,8 +92,6 @@ export default function EmployeeInfo() {
               var ctx = canvas.getContext("2d");
               ctx.drawImage(nvid, 0, 0, 8, 8);
               var p = ctx.getImageData(0, 0, 1, 1).data;
-              console.log(p);
-              console.log("rgb(" + p[0] + "," + p[1] + "," + p[2] + ")");
               vidBg.style.backgroundColor =
                 "rgb(" + p[0] + "," + p[1] + "," + p[2] + ")";
 
@@ -188,7 +199,7 @@ export default function EmployeeInfo() {
                 <div
                   className="thumbnail-container"
                   key={index + 9}
-                  onClick={() => setEmployeeToShow(index + 9)}
+                  onClick={() => setEmployeeToShow(index + firstRowEmployees)}
                 >
                   <img
                     src={employee.thumbnail}
@@ -206,6 +217,7 @@ export default function EmployeeInfo() {
       );
     } else if (sizeOfWindow === "small") {
       //HTML FOR SMALL(TABLET)
+      console.log("small rendering");
       return (
         <div>
           <Container className="hero-section container blue-background">
@@ -256,7 +268,29 @@ export default function EmployeeInfo() {
                     <div
                       className="thumbnail-container"
                       key={index + 9}
-                      onClick={() => setEmployeeToShow(index + 9)}
+                      onClick={() =>
+                        setEmployeeToShow(index + firstRowEmployees)
+                      }
+                    >
+                      <img
+                        src={employee.thumbnail}
+                        alt={
+                          employees[employeeToShow].First +
+                          employees[employeeToShow].Last
+                        }
+                      />
+                      <span className="name">{employee.First}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="row-3">
+                  {row3.map((employee, index) => (
+                    <div
+                      className="thumbnail-container"
+                      key={index + 9}
+                      onClick={() =>
+                        setEmployeeToShow(index + firstRowEmployees)
+                      }
                     >
                       <img
                         src={employee.thumbnail}
