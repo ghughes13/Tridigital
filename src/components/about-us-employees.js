@@ -32,6 +32,8 @@ export default function EmployeeInfo() {
   console.log(row2);
 
   function handleResize() {
+    let count;
+
     if (window.innerWidth > 1350) {
       setSizeOfWindow("desktop");
       for (let i = 0; i < employees.length; i++) {
@@ -44,10 +46,12 @@ export default function EmployeeInfo() {
     } else if (window.innerWidth > 767) {
       setSizeOfWindow("small");
       for (let i = 0; i < employees.length; i++) {
-        if (i < employees.length / 2) {
+        if (count < 8) {
           row1.push(employees[i]);
-        } else {
+        } else if (count < 17) {
           row2.push(employees[i]);
+        } else {
+          row3.push(employees[i]);
         }
       }
     } else {
@@ -123,7 +127,6 @@ export default function EmployeeInfo() {
         </div>
       );
     } else {
-      console.log("showing medium");
       return (
         <div
           className={
