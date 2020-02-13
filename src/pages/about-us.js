@@ -1,55 +1,17 @@
-import React, { useEffect } from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { Container, Row, Col } from "react-bootstrap"
-import EmployeeInfo from "../components/about-us-employees"
-import { Waypoint } from "react-waypoint"
+import React, { useEffect } from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { Container, Row, Col } from "react-bootstrap";
+import EmployeeInfo from "../components/about-us-comps/about-us-employees";
+import { Waypoint } from "react-waypoint";
 
 const AboutUs = () => {
-  useEffect(() => {
-    // document.querySelector("header").classList.add("about-us-header")
-    // if (navigator.appVersion.indexOf("10_15") != -1) {
-    //   console.log("ricky-mac")
-    //   document.querySelector("header").classList.add("primary-mac")
-    //   document.querySelector(".about-us-page").classList.add("primary-mac")
-    // } else if (navigator.appVersion.indexOf("Mac") != -1) {
-    //   console.log("regular-mac")
-    //   document.querySelector("header").classList.add("mac")
-    //   document.querySelector(".about-us-page").classList.add("mac")
-    // } else {
-    //   console.log("not a mac")
-    // }
-    // var drawFrame = function(v, c) {
-    //   if (v.paused || v.ended) return false
-    //   var w = v.videoWidth
-    //   var h = v.videoHeight
-    //   c.canvas.width = w
-    //   c.canvas.height = h
-    //   c.drawImage(v, 0, 0, w, h)
-    //   v.timeout = setTimeout(drawFrame, 30, v, c)
-    //   console.log("drew")
-    // }
-    // // creates a canvas element, inserts it, and begins drawing video frames
-    // console.log("outside")
-    // document
-    //   .querySelectorAll("[data-replace-video-with-canvas]")
-    //   .forEach(function(v) {
-    //     console.log("ran")
-    //     var canvas = document.createElement("canvas")
-    //     var ctx = canvas.getContext("2d")
-    //     v.parentNode.appendChild(canvas)
-    //     drawFrame(v, ctx)
-    //     v.addEventListener("playing", function() {
-    //       if (typeof v.timeout === "number") clearTimeout(v.timeout)
-    //       drawFrame(this, ctx)
-    //     })
-    //   })
-  })
+  useEffect(() => {});
 
   return (
     <Layout>
       <SEO title="About Us" />
-      <div className="about-us-page">
+      <div className="about-us-page showFirst">
         <EmployeeInfo />
         <Container className="container">
           <Row className="no-class-name">
@@ -249,7 +211,7 @@ const AboutUs = () => {
         </Container>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default AboutUs
+export default AboutUs;

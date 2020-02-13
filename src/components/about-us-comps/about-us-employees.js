@@ -1,72 +1,97 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-let employees = require("../../employee-data.json");
+let employees = require("../../../employee-data.json");
 
 export default function EmployeeInfo() {
   const [employeeToShow, setEmployeeToShow] = useState(0);
   const [sizeOfWindow, setSizeOfWindow] = useState("desktop");
-  const [dimensions, setDimensions] = useState({
-    height: "",
-    width: "",
-  });
+  const [dimensions, setDimensions] = useState();
+
+  const [row1, setRow1] = useState([]);
+  const [row2, setRow2] = useState([]);
+  const [row3, setRow3] = useState([]);
+
   const firstRowEmployees = 13;
   const multiRow = 9;
 
   let vidURL =
     "http://tdgatsbytest.wpengine.com" + employees[employeeToShow].videoURL;
 
-  let row1 = [];
-  let row2 = [];
-  let row3 = [];
-
-  for (let i = 0; i < employees.length; i++) {
-    if (i < employees.length / 2) {
-      row1.push(employees[i]);
-    } else {
-      row2.push(employees[i]);
-    }
-  }
-
-  console.log(row1);
-  console.log(row2);
-
-  function handleResize() {
-    let count;
-
-    if (window.innerWidth > 1350) {
-      setSizeOfWindow("desktop");
-      for (let i = 0; i < employees.length; i++) {
-        if (i < employees.length / 2) {
-          row1.push(employees[i]);
-        } else {
-          row2.push(employees[i]);
-        }
-      }
-    } else if (window.innerWidth > 767) {
-      setSizeOfWindow("small");
-      for (let i = 0; i < employees.length; i++) {
-        if (count < 8) {
-          row1.push(employees[i]);
-        } else if (count < 17) {
-          row2.push(employees[i]);
-        } else {
-          row3.push(employees[i]);
-        }
-      }
-    } else {
-      setSizeOfWindow("mobile");
-    }
+  useEffect(() => {
     setDimensions({
       height: window.innerHeight,
       width: window.innerWidth,
     });
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+  }, [setDimensions, setSizeOfWindow]);
+
+  function handleResize() {
+    let count = 0;
+
+    if (window.innerWidth > 1350) {
+      let rowUno = [];
+      let rowDos = [];
+      console.log(employees);
+      for (let i = 0; i < employees.length; i++) {
+        if (i < employees.length / 2) {
+          rowUno.push(employees[i]);
+        } else {
+          rowDos.push(employees[i]);
+        }
+      }
+      setRow1([...rowUno]);
+      setRow2([...rowDos]);
+      setSizeOfWindow("desktop");
+    } else if (window.innerWidth > 767) {
+      let rowUno = [];
+      let rowDos = [];
+      let rowTres = [];
+
+      for (let i = 0; i < employees.length; i++) {
+        if (count < 9) {
+          rowUno.push(employees[i]);
+        } else if (count < 18) {
+          rowDos.push(employees[i]);
+        } else {
+          rowTres.push(employees[i]);
+        }
+        count++;
+      }
+      count = 0;
+      setRow1([...rowUno]);
+      setRow2([...rowDos]);
+      setRow3([...rowTres]);
+      setSizeOfWindow("small");
+    } else {
+      console.log("mobile");
+      setSizeOfWindow("mobile");
+    }
   }
 
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    handleResize();
-  }, [setDimensions, setSizeOfWindow]);
+  const animatePerson = (person, index) => {
+    if (document.querySelector(".showFirst")) {
+      document.querySelector(".showFirst").classList.remove("showFirst");
+    }
+
+    window.scroll({ top: 0, behavior: "smooth" });
+    let showThisPerson = "." + person;
+    setTimeout(function() {
+      document.querySelectorAll(".open").forEach(el => {
+        el.classList.remove("open");
+      });
+    }, 500);
+    setTimeout(function() {
+      setEmployeeToShow(index);
+    }, 750);
+    setTimeout(function() {
+      document.querySelectorAll(showThisPerson).forEach(el => {
+        el.classList.add("open");
+      });
+    }, 1000);
+  };
 
   const EmpPicVid = props => {
     if (props.props === "desktop") {
@@ -153,6 +178,7 @@ export default function EmployeeInfo() {
 
   const SizeToRender = () => {
     if (sizeOfWindow === "desktop") {
+      console.log("building desktop");
       //HTML FOR DESKTOP
       return (
         <div>
@@ -220,7 +246,7 @@ export default function EmployeeInfo() {
       );
     } else if (sizeOfWindow === "small") {
       //HTML FOR SMALL(TABLET)
-      console.log("small rendering");
+      console.log("building small");
       return (
         <div>
           <Container className="hero-section container blue-background">
@@ -271,9 +297,7 @@ export default function EmployeeInfo() {
                     <div
                       className="thumbnail-container"
                       key={index + 9}
-                      onClick={() =>
-                        setEmployeeToShow(index + firstRowEmployees)
-                      }
+                      onClick={() => setEmployeeToShow(index + multiRow)}
                     >
                       <img
                         src={employee.thumbnail}
@@ -291,9 +315,7 @@ export default function EmployeeInfo() {
                     <div
                       className="thumbnail-container"
                       key={index + 9}
-                      onClick={() =>
-                        setEmployeeToShow(index + firstRowEmployees)
-                      }
+                      onClick={() => setEmployeeToShow(index + multiRow)}
                     >
                       <img
                         src={employee.thumbnail}
@@ -311,99 +333,80 @@ export default function EmployeeInfo() {
           </div>
         </div>
       );
-    }
-
-    let open = false;
-
-    const animatePerson = (person, index) => {
-      window.scroll({ top: 0, behavior: "smooth" });
-      let showThisPerson = "." + person;
-      setTimeout(function() {
-        document.querySelectorAll(".open").forEach(el => {
-          el.classList.remove("open");
-        });
-      }, 500);
-      setTimeout(function() {
-        setEmployeeToShow(index);
-      }, 750);
-      setTimeout(function() {
-        document.querySelectorAll(showThisPerson).forEach(el => {
-          el.classList.add("open");
-        });
-      }, 1000);
-    };
-
-    //HTML FOR MOBILE
-    return (
-      <div>
-        <Container className="hero-section container blue-background">
-          <Row className="two-columns pink-banner">
-            <Col className="content-container column video-column">
-              <div
+    } else {
+      console.log("building mobile");
+      //HTML FOR MOBILE
+      return (
+        <div>
+          <Container className="hero-section container blue-background">
+            <Row className="two-columns pink-banner">
+              <Col className="content-container column video-column">
+                <div
+                  className={
+                    "name-and-title " +
+                    employees[employeeToShow].First +
+                    "-" +
+                    employees[employeeToShow].Last
+                  }
+                >
+                  <h2 className="white-text">
+                    {employees[employeeToShow].First}{" "}
+                    {employees[employeeToShow].Last}
+                  </h2>
+                  <p className="white-text subtext">
+                    {employees[employeeToShow].Position}
+                  </p>
+                </div>
+                <EmpPicVid props="mobile" />
+              </Col>
+              <Col
                 className={
-                  "name-and-title " +
+                  "content-container column click-through bio-text " +
                   employees[employeeToShow].First +
                   "-" +
                   employees[employeeToShow].Last
                 }
               >
-                <h2 className="white-text">
-                  {employees[employeeToShow].First}{" "}
-                  {employees[employeeToShow].Last}
-                </h2>
-                <p className="white-text subtext">
-                  {employees[employeeToShow].Position}
+                <p className="likes heavy-weight white-text">
+                  {employees[employeeToShow].Hobbies}
                 </p>
+                <p className="white-text bio-content">
+                  {employees[employeeToShow].Desc}
+                </p>
+              </Col>
+            </Row>
+            <Row className="two-columns padding-left-fix-mobile">
+              <div className="employee-thumbnail-container">
+                <div className="row-1">
+                  {employees.map((employee, index) => (
+                    <div
+                      className="thumbnail-container "
+                      id={employees[index].First + "-" + employees[index].Last}
+                      key={index}
+                      onClick={() => {
+                        animatePerson(
+                          employees[index].First + "-" + employees[index].Last,
+                          index
+                        );
+                      }}
+                    >
+                      <img
+                        src={employee.thumbnail}
+                        alt={
+                          employees[employeeToShow].First +
+                          employees[employeeToShow].Last
+                        }
+                      />
+                      <span className="name">{employee.First}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <EmpPicVid props="mobile" />
-            </Col>
-            <Col
-              className={
-                "content-container column click-through bio-text " +
-                employees[employeeToShow].First +
-                "-" +
-                employees[employeeToShow].Last
-              }
-            >
-              <p className="likes heavy-weight white-text">
-                {employees[employeeToShow].Hobbies}
-              </p>
-              <p className="white-text bio-content">
-                {employees[employeeToShow].Desc}
-              </p>
-            </Col>
-          </Row>
-          <Row className="two-columns padding-left-fix-mobile">
-            <div className="employee-thumbnail-container">
-              <div className="row-1">
-                {employees.map((employee, index) => (
-                  <div
-                    className="thumbnail-container "
-                    id={employees[index].First + "-" + employees[index].Last}
-                    key={index}
-                    onClick={() => {
-                      animatePerson(
-                        employees[index].First + "-" + employees[index].Last,
-                        index
-                      );
-                    }}
-                  >
-                    <img
-                      src={employee.thumbnail}
-                      alt={
-                        employees[employeeToShow].First +
-                        employees[employeeToShow].Last
-                      }
-                    />
-                    <span className="name">{employee.First}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </Row>
-        </Container>
-      </div>
-    );
+            </Row>
+          </Container>
+        </div>
+      );
+    }
   };
 
   return <SizeToRender />;

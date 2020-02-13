@@ -2859,7 +2859,8 @@ main .row.full-width-row.content-right {
 }
 
 .row-1,
-.row-2 {
+.row-2,
+.row-3 {
   display: flex;
   flex-direction: row;
 }
@@ -3207,7 +3208,8 @@ header.about-us-header.end-transparency {
   }
 
   .about-us-page .vid-pic-container.open {
-    max-height: 1000px;
+    max-height: 500px;
+    margin-top: -5px;
   }
 
   .about-us-page .bio-text {
@@ -3236,11 +3238,73 @@ header.about-us-header.end-transparency {
   }
 
   .about-us-page .vid-pic-container img {
-    max-width: 90%;
+    max-height: 450px;
+    width: auto;
+    margin-top: 25px !important;
+    margin-bottom: 25px;
   }
 
   .about-us-page .hero-section {
     padding-bottom: 54px;
+  }
+
+  .about-us-page .vid-pic-container:before {
+    position: absolute;
+    content: "";
+    background: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/about-us/Rectangle%202796.svg);
+    height: 100%;
+    width: 100vw;
+    left: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .about-us-page .bio-content {
+    min-height: auto;
+    margin-bottom: 50px;
+  }
+  // .about-us-page .vid-pic-container:after {
+  //   position: absolute;
+  //   content: "";
+  //   background: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/about-us/Subtraction%204.svg);
+  //   height: 100%;
+  //   width: 100vw;
+  //   left: 0;
+  //   z-index: 2;
+  //   background-repeat: no-repeat;
+  //   background-size: auto;
+  //   background-position: left -225px;
+  //   top: 0px;
+  // }
+
+  .about-us-page .vid-pic-container {
+    position: relative;
+  }
+
+  .about-us-page .video-column {
+    padding: 0;
+  }
+
+  .about-us-page .video-column img {
+    margin-top: 0px;
+  }
+
+  .about-us-page .name {
+    background: #333e4f;
+  }
+
+  .about-us-page.showFirst .vid-pic-container.TRIdigital-Marketing {
+    max-height: 500px;
+    margin-top: -5px;
+  }
+
+  .about-us-page.showFirst .bio-text.TRIdigital-Marketing {
+    max-height: 1000px;
+  }
+
+  .about-us-page.showFirst .name-and-title.TRIdigital-Marketing {
+    left: 0;
   }
 }
 
@@ -3258,6 +3322,28 @@ header.about-us-header.end-transparency {
   .about-us-page .content-fourth img {
     min-width: 110%;
     margin-right: -100px;
+  }
+
+  .about-us-page .vid-pic-container img {
+    min-width: 100%;
+  }
+
+  .about-us-page .video-column img {
+    border: none;
+  }
+
+  .about-us-page .vid-pic-container:after {
+    position: absolute;
+    content: "";
+    background: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/about-us/Subtraction%204.svg);
+    height: 100%;
+    width: 100vw;
+    left: 0;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left -225px;
+    top: 0px;
   }
 }
 
