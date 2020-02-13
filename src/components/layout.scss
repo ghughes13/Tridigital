@@ -3345,6 +3345,13 @@ header.about-us-header.end-transparency {
     background-position: left -225px;
     top: 0px;
   }
+
+  .about-us-page .vid-pic-container img {
+    max-height: initial;
+    width: auto;
+    margin-top: 0 !important;
+    margin-bottom: 0;
+  }
 }
 
 /*animations */
