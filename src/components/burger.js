@@ -1,9 +1,9 @@
-import React from "react"
-import { slide as Menu } from "react-burger-menu"
+import React from "react";
+import { slide as Menu } from "react-burger-menu";
 
 class Burger extends React.Component {
   showSettings(event) {
-    event.preventDefault()
+    event.preventDefault();
   }
 
   render() {
@@ -18,7 +18,11 @@ class Burger extends React.Component {
         <a id="contact" className="menu-item" href="/reviews">
           Reviews
         </a>
-        <a id="contact" className="menu-item" href="/contact-us">
+        <a
+          id="contact"
+          className="menu-item"
+          href="http://marketwarmup.wpengine.com/marketing-warmup/"
+        >
           Marketing Warmup
         </a>
         <a id="contact" className="menu-item" href="/contact-us">
@@ -28,8 +32,8 @@ class Burger extends React.Component {
           Marketing Warmup
         </a> */}
       </Menu>
-    )
+    );
   }
 }
 
-export default Burger
+export default Burger;
