@@ -2982,7 +2982,13 @@ header.about-us-header.end-transparency {
   padding-left: 50px;
 }
 
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 2000px),
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
   .about-us-page .hero-section:after {
     content: "";
     background: url(https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/about-hero.svg);
