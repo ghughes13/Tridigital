@@ -2,6 +2,9 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
+import YourVideo from "../components/warmup-video-player.js"
+import SingleReivew from "../components/single-review.js"
+import { Waypoint } from "react-waypoint"
 
 const WarmUp = () => (
   <Layout>
@@ -12,16 +15,331 @@ const WarmUp = () => (
           <Col className="content-container column ">
             <h2 className="white-text core-values">The MSP Marketing Warmup</h2>
             <p class="white-text subtext">
-              How we create unique and creative strategy for your company.
+            A quickstart marketing program guaranteed to generate qualified leads every month
             </p>
+            <YourVideo />
           </Col>
           <Col className="content-container column ">
             <img
               class="collaterals"
-              src="/wp-content/uploads/2019/07/collateral.png"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/collateral.png"
               alt="collaterals"
             />
           </Col>
+        </Row>
+      </Container>
+      <Container className="container">
+        <Row className="">
+          <Col className="content-container column ">
+            <h2 className="blue-text core-values">What it is</h2>
+            <p>Over the past 5 years, TRIdigital has executed thousands of campaigns that have generated over 100,000 qualified leads for our clients.</p>.
+
+            <p>We’ve collected all of our best performing campaigns and marketing materials and have put them together in this amazingly affordable package to generate up to 10 leads a month guaranteed.</p>
+          </Col>
+          <Col className="content-container column ">
+          <div className="form-container">
+              <form
+                id="contact-form"
+                className="Consultation"
+                onSubmit={e => {
+                  e.preventDefault()
+                  document.querySelector("#contact-form").style.display = "none"
+                  document.querySelector(".contact-thank-you").style.display =
+                    "block"
+                  return false
+                }}
+              >
+                <h3 className="blue-text form-title">
+                  Speak with an MSP Marketer to learn more
+                </h3>
+                <div className="what-do-we-call-you">
+                  <div className="field name-field">
+                    <label>What’s your name?</label>
+                    <input type="text" className="theInput" required></input>
+                  </div>
+                  <div className="field">
+                    <label className="second-label">
+                      What company are you with?
+                    </label>
+                    <input type="text" className="theInput"></input>
+                  </div>
+                </div>
+                <br />
+                <div className="field email-field">
+                  <label>What’s your email address?</label>
+                  <input type="email" className="theInput" required></input>
+                </div>
+                <div className="field comment-field">
+                  <label className="textarea-label">
+                    What question can we answer for you?
+                  </label>
+                  <textarea type="text" className="theInput"></textarea>
+                </div>
+
+                <div className="checkbox-part">
+                  <input type="checkbox" className="checkbox" />
+                  <label>Keep Me Updated with Emails and Newsletters</label>
+                </div>
+                <div className="hide-me field">
+                  <input
+                    data-form-type="Consultation"
+                    className="formcat"
+                  ></input>
+                </div>
+                <div className="submit-btn">
+                  <button type="submit" className="pink-button">
+                    Take the First Step
+                  </button>
+                </div>
+              </form>
+              <div class="contact-thank-you">
+                <h5>Thank you for contacting us. We'll be in touch shortly!</h5>
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+      <Container className="container pink-gradient-background">
+        <Row className="">
+          <Col className="content-container column ">
+            <h2 className="white-text core-values">What you get</h2>      
+          </Col>
+        </Row>
+        <Row className="">
+          <Col className="content-container column ">
+            <img
+              class="collaterals"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/landing-pages.png"
+              alt="collaterals"
+            />
+            <p>Landing Pages</p>
+          </Col>
+          <Col className="content-container column ">
+            <img
+              class="collaterals"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/whitepapers.png"
+              alt="collaterals"
+            />
+            <p>White Papers</p>
+          </Col>
+          <Col className="content-container column ">
+            <img
+              class="collaterals"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/ebooks.png"
+              alt="collaterals"
+            />
+            <p>eBooks</p>
+          </Col>
+          <Col className="content-container column ">
+            <img
+              class="collaterals"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/videos.png"
+              alt="collaterals"
+            />
+            <p>Videos</p>
+          </Col>
+        </Row>
+        <Row className="">
+          <Col className="content-container column ">
+            <img
+              class="collaterals"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/email-campaigns.png"
+              alt="collaterals"
+            />
+            <p>Email Campaigns</p>
+          </Col>
+          <Col className="content-container column ">
+            <img
+              class="collaterals"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/coordinator.png"
+              alt="collaterals"
+            />
+            <p>Marketing Coordinator</p>
+          </Col>
+          <Col className="content-container column ">
+            <img
+              class="collaterals"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/honey-crm.png"
+              alt="collaterals"
+            />
+            <p>Honey CRM</p>
+          </Col>
+          <Col className="content-container column ">
+            <img
+              class="collaterals"
+              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/videos.png"
+              alt="collaterals"
+            />
+            <p>10 Qualified Leads /mo</p>
+          </Col>
+        </Row>
+      </Container>
+      <Container className="container blue-background">
+        <Row className="">
+          <Col className="content-container column ">
+            <h2 className="white-text core-values">What it costs</h2>
+          </Col>
+        </Row>
+        <Row className="">
+          <Col className="content-container column ">
+            <span className="bold">3 Months</span>
+            <span className="price">$1,500</span>
+            <span className="per-month">Per month</span>
+            <ul>
+              <li>3 Landing Pages</li>
+              <li>3 White Papers</li>
+              <li>1 eBooks</li>
+              <li>6 Email Campaigns</li>
+              <li>6 Follow-up Campaigns</li>
+              <li>3 Solution Videos</li>
+              <li>Marketing Coordinator</li>
+              <li>Quarterly Consultation</li>
+              <li>Fully set-up Honey CRM</li>
+              <li>30 Qualified Leads</li>
+            </ul>
+            <a className="pink-btn btn">Sign Up</a>
+          </Col>
+          <Col className="content-container column ">
+            <span className="bold">6 Months</span>
+            <span className="price">$1,400</span>
+            <span className="per-month">Per month</span>
+            <ul>
+              <li>6 Landing Pages</li>
+              <li>6 White Papers</li>
+              <li>2 eBooks</li>
+              <li>12 Email Campaigns</li>
+              <li>12 Follow-up Campaigns</li>
+              <li>6 Solution Videos</li>
+              <li>Marketing Coordinator</li>
+              <li>Quarterly Consultation</li>
+              <li>Fully set-up Honey CRM</li>
+              <li>60 Qualified Leads</li>
+            </ul>
+            <a className="pink-btn btn">Sign Up</a>
+          </Col>
+          <Col className="content-container column ">
+            <span className="bold">12 Months</span>
+            <span className="price">$1,300</span>
+            <span className="per-month">Per month</span>
+            <ul>
+              <li>12 Landing Pages</li>
+              <li>12 White Papers</li>
+              <li>4 eBooks</li>
+              <li>24 Email Campaigns</li>
+              <li>24 Follow-up Campaigns</li>
+              <li>10 Solution Videos</li>
+              <li>Marketing Coordinator</li>
+              <li>Quarterly Consultation</li>
+              <li>Fully set-up Honey CRM</li>
+              <li>120 Qualified Leads</li>
+            </ul>
+            <a className="pink-btn btn">Sign Up</a>
+          </Col>
+        </Row>
+      </Container>
+      <Container className="container reviews-container blue-swish">
+      <Row className="">
+          <Col className="content-container column ">
+            <h2 className="white-text core-values">What the results are</h2>
+          </Col>
+        </Row>
+        <Row className="two-columns full-width-row content-right align-middle">
+          <SingleReivew className="margin-top-90" number="1" type="half" />
+          <SingleReivew className="margin-top-90" number="2" type="half" />
+          <Waypoint
+            onEnter={() => {
+              document
+                .querySelector(".review-container.number-0")
+                .classList.add("slide-up")
+              document
+                .querySelector(".review-container.number-1")
+                .classList.add("slide-up", "odd")
+            }}
+          />
+        </Row>
+        <Row className="two-columns full-width-row content-right align-middle">
+          <SingleReivew number="3" type="half" />
+          <SingleReivew number="4" type="half" />
+          <Waypoint
+            onEnter={() => {
+              document
+                .querySelector(".review-container.number-2")
+                .classList.add("slide-up", "odd")
+              document
+                .querySelector(".review-container.number-3")
+                .classList.add("slide-up")
+            }}
+          />
+        </Row>
+        <Row className="two-columns full-width-row content-right align-middle">
+          <SingleReivew number="5" type="half" />
+          <SingleReivew number="6" type="half" />
+          <Waypoint
+            onEnter={() => {
+              document
+                .querySelector(".review-container.number-4")
+                .classList.add("slide-up")
+              document
+                .querySelector(".review-container.number-5")
+                .classList.add("slide-up", "odd")
+            }}
+          />
+        </Row>
+        <Row className="two-columns full-width-row content-right align-middle">
+          <SingleReivew number="7" type="half" />
+          <SingleReivew number="8" type="half" />
+          <Waypoint
+            onEnter={() => {
+              document
+                .querySelector(".review-container.number-6")
+                .classList.add("slide-up", "odd")
+              document
+                .querySelector(".review-container.number-7")
+                .classList.add("slide-up")
+            }}
+          />
+        </Row>
+        <Row className="two-columns full-width-row content-right align-middle">
+          <SingleReivew number="9" type="half" />
+          <SingleReivew number="10" type="half" />
+          <Waypoint
+            onEnter={() => {
+              document
+                .querySelector(".review-container.number-8")
+                .classList.add("slide-up")
+              document
+                .querySelector(".review-container.number-9")
+                .classList.add("slide-up", "odd")
+            }}
+          />
+        </Row>
+        <Row className="two-columns full-width-row content-right align-middle">
+          <SingleReivew number="11" type="half" />
+          <SingleReivew number="12" type="half" />
+          <Waypoint
+            onEnter={() => {
+              document
+                .querySelector(".review-container.number-10")
+                .classList.add("slide-up", "odd")
+              document
+                .querySelector(".review-container.number-11")
+                .classList.add("slide-up")
+            }}
+          />
+        </Row>
+        <Row className="two-columns full-width-row content-right align-middle">
+          <SingleReivew number="13" type="half" />
+          <SingleReivew number="14" type="half" />
+          <Waypoint
+            onEnter={() => {
+              document
+                .querySelector(".review-container.number-12")
+                .classList.add("slide-up")
+              document
+                .querySelector(".review-container.number-13")
+                .classList.add("slide-up", "odd")
+            }}
+          />
         </Row>
       </Container>
     </div>
