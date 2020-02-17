@@ -92,7 +92,7 @@ const WarmUp = () => (
 
                 <div className="checkbox-part">
                   <input type="checkbox" className="checkbox" />
-                  <label>Keep Me Updated with Emails and Newsletters</label>
+                  <label>Keep me updated with emails and newsletters</label>
                 </div>
                 <div className="hide-me field">
                   <input
@@ -225,7 +225,7 @@ const WarmUp = () => (
               Sign Up
             </AnchorLink>
           </Col>
-          <Col className="content-container column price-option second">
+          <Col className="content-container column price-option second six-months">
             <span className="bold light-blue-text top-months">6 Months</span>
             <span className="price light-blue-text">
               <span class="dollar-sigh">$</span>1,400
@@ -251,7 +251,7 @@ const WarmUp = () => (
               Sign Up
             </AnchorLink>
           </Col>
-          <Col className="content-container column price-option third">
+          <Col className="content-container column price-option third twelve-months">
             <span className="bold gold-text top-months">12 Months</span>
             <span className="price gold-text">
               <span class="dollar-sigh">$</span>1,300

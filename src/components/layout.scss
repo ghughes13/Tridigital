@@ -5512,22 +5512,35 @@ body .warmup-page span.dollar-sigh {
   padding: 45px;
 }
 
+.warmup-page .six-months:after,
+.warmup-page .twelve-months:after {
+  content: "Leads Guaranteed";
+  position: absolute;
+  background: #0092fb;
+  height: 35px;
+  width: 179px;
+  top: 10px;
+  right: -11px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 5px 0 0 5px;
+}
+
+.warmup-page .twelve-months:after {
+  background: #fcac18;
+}
+
 @media screen and (max-width: 1520px) {
   .warmup-page .row {
     padding: 0px 5vw;
   }
-}
-
-@media screen and (max-width: 1431px) {
-  // .warmup-page .price-option.third {
-  //   margin-left: auto;
-  //   margin-right: auto;
-  //   margin-top: 50px;
-  // }
-
-  // .warmup-page .price-option.second {
-  //   margin-left: 50px;
-  // }
 }
 
 @media screen and (max-width: 767px) {
