@@ -1,36 +1,34 @@
-import React from "react"
+import React from "react";
 
-export default class YourVideo extends React.Component {
+export default class WarmupVideo extends React.Component {
   constructor(props) {
-    super(props)
-    this.state = {
-    }
+    super(props);
+    this.state = {};
   }
 
   componentDidMount() {
-    const script1 = document.createElement("script")
-    const script2 = document.createElement("script")
+    const script5 = document.createElement("script");
+    const script2 = document.createElement("script");
 
-    script1.src =
-      "https://fast.wistia.com/embed/medias/qsoja1q4o2.jsonp"
-    script1.async = true
+    script5.src = "https://fast.wistia.com/embed/medias/qsoja1q4o2.jsonp";
+    script5.async = true;
 
-    script2.src = "https://fast.wistia.com/assets/external/E-v1.js"
-    script2.async = true
+    script2.src = "https://fast.wistia.com/assets/external/E-v1.js";
+    script2.async = true;
 
-    document.body.appendChild(script1)
-    document.body.appendChild(script2)
+    document.body.appendChild(script5);
+    document.body.appendChild(script2);
   }
 
   render() {
     return (
-      <div className="video-btn">
-        <span className="wistia_embed wistia_async_scialrmh2w popover=true popoverAnimateThumbnail=true popoverContent=link">
-          <a href="#">
-            <span className="btn pink-btn">WATCH VIDEO</span>          
+      <div className="video-btn margin-top-50 correct-video">
+        <span className="wistia_embed wistia_async_qsoja1q4o2 popover=true popoverAnimateThumbnail=true popoverContent=link">
+          <a href="#" className="btn pink-btn">
+            Watch Video
           </a>
         </span>
       </div>
-    )
+    );
   }
 }

@@ -1,25 +1,29 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { Container, Row, Col } from "react-bootstrap"
-import YourVideo from "../components/warmup-video-player.js"
-import SingleReivew from "../components/single-review.js"
-import { Waypoint } from "react-waypoint"
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { Container, Row, Col } from "react-bootstrap";
+import WarmupVideo from "../components/warmup-video-player.js";
+import SingleReivew from "../components/single-review.js";
+import { Waypoint } from "react-waypoint";
 
 const WarmUp = () => (
   <Layout>
     <SEO title="Warm Up" />
     <div className="warmup-page">
-      <Container className="container blue-background">
+      <Container className="container blue-background first-swish hero">
         <Row className="">
-          <Col className="content-container column ">
-            <h2 className="white-text core-values">The MSP Marketing Warmup</h2>
+          <Col className="content-container column z-index-999">
+            <h2 className="white-text core-values margin-top-100">
+              The MSP <br />
+              Marketing Warmup
+            </h2>
             <p class="white-text subtext">
-            A quickstart marketing program guaranteed to generate qualified leads every month
+              A quickstart marketing program guaranteed to generate qualified
+              leads every month
             </p>
-            <YourVideo />
+            <WarmupVideo />
           </Col>
-          <Col className="content-container column ">
+          <Col className="content-container column second-col">
             <img
               class="collaterals"
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/collateral.png"
@@ -29,40 +33,49 @@ const WarmUp = () => (
         </Row>
       </Container>
       <Container className="container">
-        <Row className="">
-          <Col className="content-container column ">
+        <Row className="margin-top-minus-400">
+          <Col className="content-container column center-vert-col-fix">
             <h2 className="blue-text core-values">What it is</h2>
-            <p>Over the past 5 years, TRIdigital has executed thousands of campaigns that have generated over 100,000 qualified leads for our clients.</p>.
-
-            <p>We’ve collected all of our best performing campaigns and marketing materials and have put them together in this amazingly affordable package to generate up to 10 leads a month guaranteed.</p>
+            <p className="grey-text">
+              Over the past 5 years, TRIdigital has executed thousands of
+              campaigns that have generated over 100,000 qualified leads for our
+              clients.
+            </p>
+            <p className="grey-text">
+              We’ve collected all of our best performing campaigns and marketing
+              materials and have put them together in this amazingly affordable
+              package to generate{" "}
+              <span class="pink-text bold">
+                up to 10 leads a month guaranteed.
+              </span>
+            </p>
           </Col>
           <Col className="content-container column ">
-          <div className="form-container">
+            <div className="form-container">
               <form
                 id="contact-form"
                 className="Consultation"
                 onSubmit={e => {
-                  e.preventDefault()
-                  document.querySelector("#contact-form").style.display = "none"
+                  e.preventDefault();
+                  document.querySelector("#contact-form").style.display =
+                    "none";
                   document.querySelector(".contact-thank-you").style.display =
-                    "block"
-                  return false
+                    "block";
+                  return false;
                 }}
               >
                 <h3 className="blue-text form-title">
                   Speak with an MSP Marketer to learn more
                 </h3>
-                <div className="what-do-we-call-you">
-                  <div className="field name-field">
-                    <label>What’s your name?</label>
-                    <input type="text" className="theInput" required></input>
-                  </div>
-                  <div className="field">
-                    <label className="second-label">
-                      What company are you with?
-                    </label>
-                    <input type="text" className="theInput"></input>
-                  </div>
+                <div className="field name-field">
+                  <label>What’s your name?</label>
+                  <input type="text" className="theInput" required></input>
+                </div>
+                <div className="field">
+                  <label className="second-label">
+                    What company are you with?
+                  </label>
+                  <input type="text" className="theInput"></input>
                 </div>
                 <br />
                 <div className="field email-field">
@@ -99,14 +112,16 @@ const WarmUp = () => (
           </Col>
         </Row>
       </Container>
-      <Container className="container pink-gradient-background">
+      <Container className="container pink-marketing-gradient second-swish third-swish what-you-get">
         <Row className="">
           <Col className="content-container column ">
-            <h2 className="white-text core-values">What you get</h2>      
+            <h2 className="white-text core-values centered-text">
+              What you get
+            </h2>
           </Col>
         </Row>
         <Row className="">
-          <Col className="content-container column ">
+          <Col className="content-container column">
             <img
               class="collaterals"
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/landing-pages.png"
@@ -174,18 +189,22 @@ const WarmUp = () => (
           </Col>
         </Row>
       </Container>
-      <Container className="container blue-background">
+      <Container className="container">
         <Row className="">
           <Col className="content-container column ">
-            <h2 className="white-text core-values">What it costs</h2>
+            <h2 className="white-text core-values centered-text margin-bottom-75">
+              What it costs
+            </h2>
           </Col>
         </Row>
         <Row className="">
-          <Col className="content-container column ">
-            <span className="bold">3 Months</span>
-            <span className="price">$1,500</span>
-            <span className="per-month">Per month</span>
-            <ul>
+          <Col className="content-container column price-option">
+            <span className="bold pink-text top-months">3 Months</span>
+            <span className="price pink-text">
+              <span class="dollar-sigh">$</span>1,500
+            </span>
+            <p className="per-month">Per month</p>
+            <ul className="checkmark-li">
               <li>3 Landing Pages</li>
               <li>3 White Papers</li>
               <li>1 eBooks</li>
@@ -197,13 +216,17 @@ const WarmUp = () => (
               <li>Fully set-up Honey CRM</li>
               <li>30 Qualified Leads</li>
             </ul>
-            <a className="pink-btn btn">Sign Up</a>
+            <a className="pink-btn btn" href="#contact-form">
+              Sign Up
+            </a>
           </Col>
-          <Col className="content-container column ">
-            <span className="bold">6 Months</span>
-            <span className="price">$1,400</span>
-            <span className="per-month">Per month</span>
-            <ul>
+          <Col className="content-container column price-option">
+            <span className="bold light-blue-text top-months">6 Months</span>
+            <span className="price light-blue-text">
+              <span class="dollar-sigh">$</span>1,400
+            </span>
+            <p className="per-month">Per month</p>
+            <ul className="checkmark-li">
               <li>6 Landing Pages</li>
               <li>6 White Papers</li>
               <li>2 eBooks</li>
@@ -215,13 +238,17 @@ const WarmUp = () => (
               <li>Fully set-up Honey CRM</li>
               <li>60 Qualified Leads</li>
             </ul>
-            <a className="pink-btn btn">Sign Up</a>
+            <a className="pink-btn btn" href="#contact-form">
+              Sign Up
+            </a>
           </Col>
-          <Col className="content-container column ">
-            <span className="bold">12 Months</span>
-            <span className="price">$1,300</span>
-            <span className="per-month">Per month</span>
-            <ul>
+          <Col className="content-container column price-option">
+            <span className="bold gold-text top-months">12 Months</span>
+            <span className="price gold-text">
+              <span class="dollar-sigh">$</span>1,300
+            </span>
+            <p className="per-month">Per month</p>
+            <ul className="checkmark-li">
               <li>12 Landing Pages</li>
               <li>12 White Papers</li>
               <li>4 eBooks</li>
@@ -233,14 +260,18 @@ const WarmUp = () => (
               <li>Fully set-up Honey CRM</li>
               <li>120 Qualified Leads</li>
             </ul>
-            <a className="pink-btn btn">Sign Up</a>
+            <a className="pink-btn btn" href="#contact-form">
+              Sign Up
+            </a>
           </Col>
         </Row>
       </Container>
-      <Container className="container reviews-container blue-swish">
-      <Row className="">
+      <Container className="container reviews-container mrkt-wrmup blue-swish">
+        <Row className="">
           <Col className="content-container column ">
-            <h2 className="white-text core-values">What the results are</h2>
+            <h2 className="white-text blue-text centered-text margin-bottom-75">
+              What the results are
+            </h2>
           </Col>
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
@@ -250,10 +281,10 @@ const WarmUp = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-0")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
               document
                 .querySelector(".review-container.number-1")
-                .classList.add("slide-up", "odd")
+                .classList.add("slide-up", "odd");
             }}
           />
         </Row>
@@ -264,10 +295,10 @@ const WarmUp = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-2")
-                .classList.add("slide-up", "odd")
+                .classList.add("slide-up", "odd");
               document
                 .querySelector(".review-container.number-3")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
             }}
           />
         </Row>
@@ -278,13 +309,24 @@ const WarmUp = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-4")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
               document
                 .querySelector(".review-container.number-5")
-                .classList.add("slide-up", "odd")
+                .classList.add("slide-up", "odd");
             }}
           />
         </Row>
+        <a
+          className="btn pink-btn this-btn"
+          onClick={() => {
+            document.querySelector(".more-reviews").style.display = "initial";
+            document.querySelector(".this-btn").style.display = "none";
+          }}
+        >
+          Load More
+        </a>
+      </Container>
+      <Container className="more-reviews container reviews-container mrkt-wrmup blue-swish">
         <Row className="two-columns full-width-row content-right align-middle">
           <SingleReivew number="7" type="half" />
           <SingleReivew number="8" type="half" />
@@ -292,10 +334,10 @@ const WarmUp = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-6")
-                .classList.add("slide-up", "odd")
+                .classList.add("slide-up", "odd");
               document
                 .querySelector(".review-container.number-7")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
             }}
           />
         </Row>
@@ -306,10 +348,10 @@ const WarmUp = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-8")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
               document
                 .querySelector(".review-container.number-9")
-                .classList.add("slide-up", "odd")
+                .classList.add("slide-up", "odd");
             }}
           />
         </Row>
@@ -320,10 +362,10 @@ const WarmUp = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-10")
-                .classList.add("slide-up", "odd")
+                .classList.add("slide-up", "odd");
               document
                 .querySelector(".review-container.number-11")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
             }}
           />
         </Row>
@@ -334,16 +376,16 @@ const WarmUp = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-12")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
               document
                 .querySelector(".review-container.number-13")
-                .classList.add("slide-up", "odd")
+                .classList.add("slide-up", "odd");
             }}
           />
         </Row>
       </Container>
     </div>
   </Layout>
-)
+);
 
-export default WarmUp
+export default WarmUp;

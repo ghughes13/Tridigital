@@ -655,6 +655,10 @@ main h2 {
   font-weight: 300;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .heavy-weight {
   font-weight: 600;
 }
@@ -1140,6 +1144,10 @@ main .col {
   color: #fcac18;
 }
 
+.grey-text {
+  color: #466777;
+}
+
 .centered-text {
   text-align: center;
 }
@@ -1391,6 +1399,26 @@ main .max-width-fix {
   bottom: -50px;
   width: 30px;
   margin: auto;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+.margin-top-100 {
+  margin-top: 100px;
+}
+
+div.margin-top-minus-400 {
+  margin-top: -400px;
+}
+
+.margin-bottom-75 {
+  margin-bottom: 75px;
+}
+
+.z-index-999 {
+  z-index: 999;
 }
 
 @media only screen and (max-width: 767px) {
@@ -4363,7 +4391,8 @@ main .contact-us .contact-row {
   z-index: 1;
 }
 
-.contact-us .form-container {
+.contact-us .form-container,
+.warmup-page .form-container {
   background: white;
   // padding: 25px 25px 40px 25px;
   padding: 1.5vw 2vw 2vw 2vw;
@@ -4372,7 +4401,8 @@ main .contact-us .contact-row {
   margin-top: 100px;
 }
 
-.contact-us .form-title {
+.contact-us .form-title,
+.warmup-page .form-title {
   font-size: 34px;
   font-family: "Poppins";
   font-weight: 700;
@@ -4383,24 +4413,28 @@ main .contact-us .contact-row {
   margin-bottom: 25px;
 }
 
-.contact-us form label {
+form label {
   font-family: "Poppins";
   font-size: 16px;
   display: block;
 }
 
 .contact-us .form-container form input,
-.contact-us .form-container form textarea {
+.contact-us .form-container form textarea,
+.warmup-page .form-container form input,
+.warmup-page .form-container form textarea {
   width: 100%;
   padding: 10px;
   border: solid #c9cbd9 1px;
 }
 
-.contact-us .form-container form textarea {
+.contact-us .form-container form textarea,
+.warmup-page .form-container form textarea {
   height: 100px;
 }
 
-.contact-us .form-container button {
+.contact-us .form-container button,
+.warmup-page .form-container button {
   width: 325px;
   margin: auto;
   margin-top: 50px;
@@ -4690,7 +4724,7 @@ main .download-col .pink-button {
   max-width: 80%;
 }
 
-.reviews .review-container {
+.review-container {
   border-radius: 10px;
   overflow: hidden;
   -webkit-box-shadow: 0px 23px 36px 0px rgba(0, 0, 0, 0.1);
@@ -4716,7 +4750,7 @@ main .download-col .pink-button {
   display: flex;
 }
 
-.reviews .half .data-container {
+.half .data-container {
   padding: 0 40px 40px 40px;
   text-align: left;
 }
@@ -5169,3 +5203,287 @@ h3.sitemap {
   text-transform: uppercase;
   font-size: 2vw;
 }
+
+/*****MARKETING WARMUP*********/
+
+.pink-marketing-gradient {
+  background: rgb(135, 0, 186);
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(135, 0, 186, 1) 1%,
+    rgba(226, 0, 101, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(135, 0, 186, 1) 1%,
+    rgba(226, 0, 101, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(135, 0, 186, 1) 1%,
+    rgba(226, 0, 101, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8700ba', endColorstr='#e20065',GradientType=1 );
+  padding-top: 15vh;
+  z-index: 10;
+  padding-bottom: 90vh;
+}
+
+.warmup-page .reviews-container .two-columns {
+  max-width: 1224px;
+}
+
+.warmup-page .company-name {
+  color: rgb(0, 64, 237);
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.warmup-page .reviews-container.mrkt-wrmup .pink-text {
+  color: #ff64a7;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 6px;
+}
+
+.warmup-page .quote p {
+  font-size: 18px;
+}
+
+.warmup-page .review-container {
+  min-height: 618px;
+  position: relative;
+}
+
+.warmup-page .review-container .svg {
+  position: absolute;
+  bottom: 40px;
+}
+
+.container.first-swish {
+  padding-bottom: 400px;
+}
+
+.first-swish::before {
+  background: url(https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/wamup/curve.svg);
+  position: absolute;
+  bottom: -50vh;
+  left: -10vw;
+  width: 120vw;
+  height: 100vh;
+  z-index: 20;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 100%;
+}
+
+body .warmup-page a.pink-btn {
+  background: #ff3975;
+  color: #fff;
+  padding: 9px 40px;
+  display: block;
+  text-align: center;
+  max-width: 255px;
+  border-radius: 29px;
+  font-weight: 600;
+  margin: 0 auto;
+  border: 2px solid #ff3975;
+  width: 255px;
+  text-transform: inherit;
+}
+
+.warmup-page .hero .second-col {
+  position: static;
+}
+
+.warmup-page .form-container label {
+  display: block;
+  color: #466777;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.warmup-page .hero .subtext {
+  font-size: 24px;
+  line-height: 2em;
+}
+
+.warmup-page .hero .second-col img {
+  position: absolute;
+}
+
+.warmup-page .hero {
+  display: block;
+}
+
+.warmup-page .container:nth-child(2) {
+  z-index: 21;
+}
+
+.warmup-page .second-swish:before {
+  position: absolute;
+  top: -57vh;
+  left: -16vw;
+  width: 132vw;
+  height: 100vh;
+  background: url(https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/wamup/curve-2.svg);
+  z-index: 20;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.warmup-page .third-swish:after {
+  position: absolute;
+  bottom: -37vh;
+  left: -16vw;
+  width: 132vw;
+  height: 100vh;
+  background: url(https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/wamup/curve-3.svg);
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 35%;
+}
+
+.row .center-vert-col-fix {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.what-you-get p {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+div.what-you-get {
+  padding-top: 150px;
+  padding-bottom: 700px;
+}
+
+.warmup-page .container:nth-child(4) {
+  margin-top: -750px;
+  z-index: 999;
+}
+
+.warmup-page .price-option {
+  background: #fff;
+  border-radius: 10px !important;
+  -webkit-box-shadow: 0px 0px 36px 0px rgba(0, 81, 255, 0.1);
+  -moz-box-shadow: 0px 0px 36px 0px rgba(0, 81, 255, 0.1);
+  box-shadow: 0px 0px 36px 0px rgba(0, 81, 255, 0.1);
+  padding: 55px;
+  max-width: 390px;
+  margin: auto;
+}
+
+.warmup-page .top-months {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 5px;
+  font-size: 22px;
+  font-family: "Poppins";
+  text-transform: lowercase;
+}
+
+.warmup-page .price {
+  font-weight: 700;
+  font-size: 86px;
+  font-weight: 700;
+  font-family: "Poppins";
+  display: block;
+  text-align: center;
+}
+
+.checkmark-li {
+  padding: 10px;
+}
+
+.checkmark-li li {
+  position: relative;
+  font-size: 16px;
+  font-family: "Poppins";
+  list-style: none;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.warmup-page .per-month {
+  font-size: 22px;
+  font-weight: 600;
+  color: #c9cbd9;
+  letter-spacing: 3px;
+  font-family: "Poppins";
+  line-height: 2em;
+  text-align: center;
+  margin-top: -25px;
+}
+
+.checkmark-li li:before {
+  content: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/green-check.png);
+  position: absolute;
+  top: 5px;
+  left: 0px;
+}
+
+.warmup-page .blue-swish .row:nth-child(8)::before,
+.blue-swish .row:nth-child(4)::before {
+  content: none;
+}
+
+.warmup-page .contact-thank-you {
+  display: none;
+  background: #0040ed;
+  padding: 300px 50px;
+  border-radius: 25px;
+}
+
+.warmup-page .contact-thank-you h5 {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  font-family: "poppins";
+}
+
+.warmup-page .hero:after {
+  position: absolute;
+  top: 0px;
+  left: -350px;
+  content: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/wamup/blue-blob.svg);
+}
+
+.warmup-page .pink-marketing-gradient .row:nth-child(2)::before {
+  content: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/Ellipse-333.png);
+  position: absolute;
+  top: 15vw;
+  right: 5vw;
+}
+
+.warmup-page .pink-marketing-gradient .row:nth-child(3)::before {
+  content: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/Path-378.png);
+  position: absolute;
+  top: 20vw;
+  z-index: -1;
+  right: 80vw;
+}
+
+body .warmup-page span.dollar-sigh {
+  font-size: 49px !important;
+  font-weight: 700;
+}
+
+.more-reviews {
+  display: none;
+}
+/****END MARKETING WARMUP********/
