@@ -5314,6 +5314,7 @@ body .warmup-page a.pink-btn {
 
 .warmup-page .hero .second-col img {
   position: absolute;
+  bottom: 0vh;
 }
 
 .warmup-page .hero {
@@ -5383,6 +5384,11 @@ div.what-you-get {
   padding: 55px;
   max-width: 390px;
   margin: auto;
+}
+
+.warmup-page .price-option.second,
+.warmup-page .price-option.third {
+  margin-left: 25px;
 }
 
 .warmup-page .top-months {
@@ -5468,6 +5474,7 @@ div.what-you-get {
   position: absolute;
   top: 15vw;
   right: 5vw;
+  z-index: -1;
 }
 
 .warmup-page .pink-marketing-gradient .row:nth-child(3)::before {
@@ -5485,5 +5492,138 @@ body .warmup-page span.dollar-sigh {
 
 .more-reviews {
   display: none;
+}
+
+.warmup-page .review-container {
+  position: relative;
+  bottom: -100vh;
+  transition-duration: 0.5s;
+}
+
+.warmup-page .review-container.odd {
+  transition-duration: 0.75s;
+}
+
+.warmup-page .review-container.slide-up {
+  bottom: 0;
+}
+
+.warmup-page .form-container {
+  padding: 45px;
+}
+
+@media screen and (max-width: 1520px) {
+  .warmup-page .row {
+    padding: 0px 5vw;
+  }
+}
+
+@media screen and (max-width: 1431px) {
+  // .warmup-page .price-option.third {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   margin-top: 50px;
+  // }
+
+  // .warmup-page .price-option.second {
+  //   margin-left: 50px;
+  // }
+}
+
+@media screen and (max-width: 767px) {
+  .warmup-page h2 {
+    font-size: 40px;
+  }
+
+  .warmup-page .hero .row:first-child {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  div.margin-top-minus-400 {
+    margin-top: -50px;
+  }
+
+  .first-swish::before {
+    bottom: -57vh;
+    left: 0vw;
+  }
+
+  .warmup-page .hero .second-col img {
+    position: absolute;
+    border: 100px;
+    transform: scale(1.5);
+    z-index: 9;
+  }
+
+  .warmup-page .hero .pink-btn {
+    text-align: center;
+    width: 260px;
+    margin: auto;
+    margin-top: 25px;
+  }
+
+  .warmup-page .what-you-get .content-container {
+    min-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .warmup-page .price-option.second,
+  .warmup-page .price-option.third {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+  .warmup-page .review-container {
+    position: relative;
+    bottom: 0;
+  }
+
+  .warmup-page .review-container {
+    min-height: auto;
+  }
+
+  .warmup-page .review-container .svg {
+    position: static;
+    margin-top: 50px;
+  }
+
+  .warmup-page .form-container {
+    padding: 25px;
+  }
+
+  .blue-swish .row:nth-child(2)::before {
+    content: none;
+    position: absolute;
+    right: -50%;
+    z-index: 0;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .warmup-page .hero .second-col img {
+    bottom: 10vw;
+  }
+
+  .warmup-page .price {
+    font-weight: 700;
+    font-size: 55px;
+  }
+
+  body .warmup-page a.pink-btn {
+    max-width: 200px;
+  }
+
+  .contact-us .form-container button,
+  .warmup-page .form-container button {
+    max-width: 200px;
+  }
+
+  .warmup-page .review-container .svg svg {
+    max-width: 100%;
+  }
 }
 /****END MARKETING WARMUP********/

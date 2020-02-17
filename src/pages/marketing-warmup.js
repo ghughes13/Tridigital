@@ -5,6 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import WarmupVideo from "../components/warmup-video-player.js";
 import SingleReivew from "../components/single-review.js";
 import { Waypoint } from "react-waypoint";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const WarmUp = () => (
   <Layout>
@@ -216,11 +217,15 @@ const WarmUp = () => (
               <li>Fully set-up Honey CRM</li>
               <li>30 Qualified Leads</li>
             </ul>
-            <a className="pink-btn btn" href="#contact-form">
+            <AnchorLink
+              offset="150"
+              className="pink-btn btn"
+              href="#contact-form"
+            >
               Sign Up
-            </a>
+            </AnchorLink>
           </Col>
-          <Col className="content-container column price-option">
+          <Col className="content-container column price-option second">
             <span className="bold light-blue-text top-months">6 Months</span>
             <span className="price light-blue-text">
               <span class="dollar-sigh">$</span>1,400
@@ -238,11 +243,15 @@ const WarmUp = () => (
               <li>Fully set-up Honey CRM</li>
               <li>60 Qualified Leads</li>
             </ul>
-            <a className="pink-btn btn" href="#contact-form">
+            <AnchorLink
+              offset="150"
+              className="pink-btn btn"
+              href="#contact-form"
+            >
               Sign Up
-            </a>
+            </AnchorLink>
           </Col>
-          <Col className="content-container column price-option">
+          <Col className="content-container column price-option third">
             <span className="bold gold-text top-months">12 Months</span>
             <span className="price gold-text">
               <span class="dollar-sigh">$</span>1,300
@@ -260,13 +269,17 @@ const WarmUp = () => (
               <li>Fully set-up Honey CRM</li>
               <li>120 Qualified Leads</li>
             </ul>
-            <a className="pink-btn btn" href="#contact-form">
+            <AnchorLink
+              offset="150"
+              className="pink-btn btn"
+              href="#contact-form"
+            >
               Sign Up
-            </a>
+            </AnchorLink>
           </Col>
         </Row>
       </Container>
-      <Container className="container reviews-container mrkt-wrmup blue-swish">
+      <Container className="container reviews-container mrkt-wrmup first blue-swish">
         <Row className="">
           <Col className="content-container column ">
             <h2 className="white-text blue-text centered-text margin-bottom-75">
@@ -321,6 +334,7 @@ const WarmUp = () => (
           onClick={() => {
             document.querySelector(".more-reviews").style.display = "initial";
             document.querySelector(".this-btn").style.display = "none";
+            document.querySelector(".mrkt-wrmup.first").style.paddingBottom = 0;
           }}
         >
           Load More
