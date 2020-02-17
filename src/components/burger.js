@@ -18,11 +18,7 @@ class Burger extends React.Component {
         <a id="contact" className="menu-item" href="/reviews">
           Reviews
         </a>
-        <a
-          id="contact"
-          className="menu-item"
-          href="http://marketwarmup.wpengine.com/marketing-warmup/"
-        >
+        <a id="contact" className="menu-item" href="/marketing-warmup/">
           Marketing Warmup
         </a>
         <a id="contact" className="menu-item" href="/contact-us">

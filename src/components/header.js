@@ -1,25 +1,25 @@
-import PropTypes from "prop-types"
-import React, { useEffect } from "react"
-import Burger from "./burger.js"
+import PropTypes from "prop-types";
+import React, { useEffect } from "react";
+import Burger from "./burger.js";
 
 const Header = ({ siteTitle }) => {
   useEffect(() => {
     window.addEventListener("scroll", function() {
       if (window.scrollY === 0) {
-        document.querySelector("header").classList.remove("end-transparency")
+        document.querySelector("header").classList.remove("end-transparency");
       } else {
-        document.querySelector("header").classList.add("end-transparency")
+        document.querySelector("header").classList.add("end-transparency");
       }
-    })
+    });
 
-    const script = document.createElement("script")
+    const script = document.createElement("script");
 
-    script.src = "/static/honey-form-integration.js"
+    script.src = "/static/honey-form-integration.js";
 
-    script.async = true
+    script.async = true;
 
-    document.body.appendChild(script)
-  })
+    document.body.appendChild(script);
+  });
 
   return (
     <header
@@ -88,7 +88,8 @@ const Header = ({ siteTitle }) => {
             <div className="navbar-item">
               <div className="buttons">
                 <a
-                  href="http://marketwarmup.wpengine.com/marketing-warmup/"
+                  // href="http://marketwarmup.wpengine.com/marketing-warmup/"
+                  href="/marketing-warmup"
                   className="button first"
                 >
                   Marketing Warmup
@@ -102,15 +103,15 @@ const Header = ({ siteTitle }) => {
         </div>
       </nav>
     </header>
-  )
-}
+  );
+};
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;
