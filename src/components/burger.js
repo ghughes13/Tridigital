@@ -24,9 +24,6 @@ class Burger extends React.Component {
         <a id="contact" className="menu-item" href="/contact-us">
           Contact Us
         </a>
-        {/* <a onClick={this.showSettings} className="menu-item--small" href="">
-          Marketing Warmup
-        </a> */}
       </Menu>
     );
   }
