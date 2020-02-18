@@ -1323,6 +1323,25 @@ body p {
   background-color: #0043f5;
 }
 
+.pink-gradient-background {
+  background: rgb(129, 0, 190);
+  background: -moz-linear-gradient(
+    top,
+    rgba(129, 0, 190, 1) 1%,
+    rgba(251, 0, 90, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(129, 0, 190, 1) 1%,
+    rgba(251, 0, 90, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(129, 0, 190, 1) 1%,
+    rgba(251, 0, 90, 1) 100%
+  );
+}
+
 main video {
   max-width: initial;
 }
@@ -4392,7 +4411,8 @@ main .contact-us .contact-row {
 }
 
 .contact-us .form-container,
-.warmup-page .form-container {
+.warmup-page .form-container,
+.warmup-signup .form-container {
   background: white;
   // padding: 25px 25px 40px 25px;
   padding: 1.5vw 2vw 2vw 2vw;
@@ -4402,7 +4422,8 @@ main .contact-us .contact-row {
 }
 
 .contact-us .form-title,
-.warmup-page .form-title {
+.warmup-page .form-title,
+.warmup-signup .form-title {
   font-size: 34px;
   font-family: "Poppins";
   font-weight: 700;
@@ -4422,19 +4443,23 @@ form label {
 .contact-us .form-container form input,
 .contact-us .form-container form textarea,
 .warmup-page .form-container form input,
-.warmup-page .form-container form textarea {
+.warmup-page .form-container form textarea,
+.warmup-signup .form-container form input,
+.warmup-signup .form-container form textarea {
   width: 100%;
   padding: 10px;
   border: solid #c9cbd9 1px;
 }
 
 .contact-us .form-container form textarea,
-.warmup-page .form-container form textarea {
+.warmup-page .form-container form textarea,
+.warmup-signup .form-container form textarea {
   height: 100px;
 }
 
 .contact-us .form-container button,
-.warmup-page .form-container button {
+.warmup-page .form-container button,
+.warmup-signup .form-container button {
   width: 325px;
   margin: auto;
   margin-top: 50px;
@@ -5063,6 +5088,41 @@ main .download-col .pink-button {
 }
 
 /****WARM UP END********/
+
+/****WARM UP SIGNUP********/
+
+.warmup-signup .swish:after {
+  position: absolute;
+  bottom: -44vh;
+  left: -10vw;
+  width: 120vw;
+  height: 100vh;
+  background: url(https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/wamup/curve-3.svg);
+  z-index: 20;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 100%;
+}
+
+.warmup-signup .hero {
+  min-height: 100vh;
+  z-index: 0;
+}
+
+.warmup-signup .white-section {
+  min-height: 50vh;
+}
+
+.warmup-signup .form-container {
+  margin: auto;
+  padding: 6% 8%;
+  margin-top: -75vh;
+  width: 100%;
+  max-width: 926px;
+}
+
+/****END WARM UP SIGNUP********/
 
 /****WISTIA STYLES************/
 
