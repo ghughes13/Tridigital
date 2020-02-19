@@ -4440,26 +4440,18 @@ form label {
   display: block;
 }
 
-.contact-us .form-container form input,
-.contact-us .form-container form textarea,
-.warmup-page .form-container form input,
-.warmup-page .form-container form textarea,
-.warmup-signup .form-container form input,
-.warmup-signup .form-container form textarea {
+.form-container form input,
+.form-container form textarea {
   width: 100%;
   padding: 10px;
   border: solid #c9cbd9 1px;
 }
 
-.contact-us .form-container form textarea,
-.warmup-page .form-container form textarea,
-.warmup-signup .form-container form textarea {
+.form-container form textarea {
   height: 100px;
 }
 
-.contact-us .form-container button,
-.warmup-page .form-container button,
-.warmup-signup .form-container button {
+.form-container button {
   width: 325px;
   margin: auto;
   margin-top: 50px;
@@ -5091,7 +5083,8 @@ main .download-col .pink-button {
 
 /****WARM UP SIGNUP********/
 
-.warmup-signup .swish:after {
+.warmup-signup .swish:after,
+.warmup-questionaire .swish:after {
   position: absolute;
   bottom: -44vh;
   left: -10vw;
@@ -5105,16 +5098,19 @@ main .download-col .pink-button {
   background-position-x: 100%;
 }
 
-.warmup-signup .hero {
+.warmup-signup .hero,
+.warmup-questionaire .hero {
   min-height: 100vh;
   z-index: 0;
 }
 
-.warmup-signup .white-section {
+.warmup-signup .white-section,
+.warmup-questionaire .white-section {
   min-height: 50vh;
 }
 
-.warmup-signup .form-container {
+.warmup-signup .form-container,
+.warmup-questionaire .form-container {
   margin: auto;
   padding: 6% 8%;
   margin-top: -75vh;
@@ -5123,6 +5119,30 @@ main .download-col .pink-button {
 }
 
 /****END WARM UP SIGNUP********/
+
+/****WARM UP QUESTIONAIRE*************/
+
+.warmup-questionaire .first.background {
+  background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/Group-3451.png");
+}
+
+.warmup-questionaire .second.background {
+  background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/Group-3452.png");
+}
+
+.warmup-questionaire .third.background {
+  background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/Group-3453.png");
+}
+
+.warmup-questionaire .fourth.background {
+  background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/Group-3454.png");
+}
+
+.warmup-questionaire .form-container {
+  background: white;
+}
+
+/****END WARM UP QUESTIONAIRE********/
 
 /****WISTIA STYLES************/
 

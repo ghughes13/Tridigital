@@ -6,9 +6,13 @@ import { Container, Row } from "react-bootstrap";
 const WarmUpQuestionaire = () => {
   return (
     <Layout>
-      <SEO title="Warm Up" />
-      <div className="warmup-signup">
+      <SEO title="Warm Up Questionaire" />
+      <div className="warmup-questionaire">
         <Container className="container blue-gradient-background hero swish">
+          <div className="first background-row"></div>
+          <div className="second background-row"></div>
+          <div className="third background-row"></div>
+          <div className="fourth background-row"></div>
           <Row className="">
             <h1 className="hide-me">Section 1 Out Of 3: The Basics</h1>
           </Row>
