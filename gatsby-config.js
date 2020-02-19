@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `GB Tech`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `We Are Your IT Marketing Department`,
+    description: `Your IT Marketing professionals are serious about their focus on YOU. We create 100% custom strategies, websites, content, videos and designs, all with one goal—to tell YOUR STORY.`,
+    author: `@ghughes139`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -30,16 +30,16 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-          baseUrl: "tdgatsbytest.wpengine.com",
-          protocol: "http", 
-          hostingWPCOM: false,
-          useACF: true,
-          verboseOutput: true
-      }
+        baseUrl: "tdgatsbytest.wpengine.com",
+        protocol: "http",
+        hostingWPCOM: false,
+        useACF: true,
+        verboseOutput: true,
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
   ],
-}
+};
