@@ -42,9 +42,6 @@ const CheckoutForm = () => {
         <label>What’s your email address?</label>
         <input type="email" className="theInput" required name="email" />
       </div>
-      <input type="text" name="name" placeholder="Name" />
-      <input type="email" name="email" placeholder="Email" />
-      <input type="hidden" name="form-name" value="contact" />
       <button type="submit">Subscribe</button>
       {/* 
       
