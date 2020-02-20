@@ -12,8 +12,10 @@ const CheckoutForm = () => {
         Complete The Sign Up Form to Get Your Marketing Started
       </h3>
       <div className="name-container">
-        <label>First Name</label>
-        <input type="text" name="first" />
+        <div className="firstName">
+          <label>First Name</label>
+          <input type="text" name="first" />
+        </div>
       </div>
       <div className="lastName">
         <label>Last Name</label>
@@ -23,15 +25,6 @@ const CheckoutForm = () => {
       <input type="hidden" name="form-name" value="contact" />
       <button type="submit">Subscribe</button>
     </form>
-
-    //   <div className="name-container">
-    //     <div className="firstName">
-
-    //     </div>
-    //
-    //   </div>
-    //   <button type="submit">Subscribe</button>
-    // </form>
   );
 };
 
