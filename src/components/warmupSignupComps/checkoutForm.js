@@ -15,26 +15,21 @@ const CheckoutForm = () => {
         <label>First Name</label>
         <input type="text" name="first" />
       </div>
+      <div className="lastName">
+        <label>Last Name</label>
+        <input type="text" name="Last" />
+      </div>
       <input type="text" name="name" placeholder="Name" />
       <input type="email" name="email" placeholder="Email" />
       <input type="hidden" name="form-name" value="contact" />
       <button type="submit">Subscribe</button>
     </form>
 
-    // <form
-    //   name="warmup"
-    //   data-netlify="true"
-    //   method="POST"
-    //   netlify-honeypot="bot-field"
-    // >
     //   <div className="name-container">
     //     <div className="firstName">
 
     //     </div>
-    //     <div className="lastName">
-    //       <label>Last Name</label>
-    //       <input type="text" name="Last" />
-    //     </div>
+    //
     //   </div>
     //   <button type="submit">Subscribe</button>
     // </form>
