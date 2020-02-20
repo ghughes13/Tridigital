@@ -49,17 +49,14 @@ const CheckoutForm = () => {
           name="honey-data-type"
         />
       </div>
-      <input type="text" name="name" placeholder="Name" />
-      <input type="email" name="email" placeholder="Email" />
-      <input type="hidden" name="form-name" value="contact" />
-      <button type="submit">Subscribe</button>
-      {/* 
-      
       <div className="submit-btn">
+        <button type="submit">Subscribe</button>
+      </div>
+      {/* 
         <button type="submit" className="pink-button">
           Take the First Step
         </button>
-      </div> */}
+        */}
     </form>
   );
 };
