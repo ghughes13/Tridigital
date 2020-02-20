@@ -20,21 +20,31 @@ const CheckoutForm = () => {
       <div className="what-do-we-call-you">
         <div className="field name-field">
           <label>First Name</label>
-          <input type="text" className="theInput" required></input>
+          <input
+            type="text"
+            className="theInput"
+            name="first-name"
+            required
+          ></input>
         </div>
         <div className="field">
           <label className="second-label">Last Name</label>
-          <input type="text" className="theInput"></input>
+          <input type="text" className="theInput" name="last-name"></input>
         </div>
       </div>
       <br />
       <div className="field email-field">
         <label>Company Name</label>
-        <input type="text" className="theInput" required></input>
+        <input
+          type="text"
+          className="theInput"
+          required
+          name="company-name"
+        ></input>
       </div>
       <div className="field email-field">
         <label>What’s your email address?</label>
-        <input type="email" className="theInput" required></input>
+        <input type="email" className="theInput" required name="email"></input>
       </div>
       {/* <div className="field email-field">
         <label>Select Price Tier</label>
@@ -63,7 +73,11 @@ const CheckoutForm = () => {
         <label>Keep Me Updated with Emails and Newsletters</label>
       </div> */}
       <div className="hide-me field">
-        <input data-form-type="Consultation" className="formcat"></input>
+        <input
+          data-form-type="Consultation"
+          className="formcat"
+          name="honey-data-type"
+        ></input>
       </div>
       <div className="submit-btn">
         <button type="submit" className="pink-button">
