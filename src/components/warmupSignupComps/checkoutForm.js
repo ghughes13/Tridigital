@@ -42,20 +42,7 @@ const CheckoutForm = () => {
         <label>What’s your email address?</label>
         <input type="email" className="theInput" required name="email" />
       </div>
-      <div className="hide-me field">
-        <input
-          data-form-type="Consultation"
-          className="formcat"
-          name="honey-data-type"
-        />
-      </div>
       <button type="submit">Subscribe</button>
-      {/* 
-      <div className="submit-btn">
-        <button type="submit" className="pink-button">
-          Take the First Step
-        </button>
-      </div> */}
     </form>
   );
 };
