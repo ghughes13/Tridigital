@@ -8,12 +8,18 @@ const headers = {
 };
 
 function hasValidBody(body) {
-    return false;
+  return body.firstName
+    && body.lastName
+    && body.companyName
+    && body.email
+    && body.ccNumber
+    && body.ccExpirationMonth
+    && body.ccExpirationYear
+    && body.cvv
+    && body.priceTierId;
 }
 
 exports.handler = function(event, context, callback) {
-    console.log(event);
-
     var body = JSON.parse(event.body);
     
     if (!hasValidBody(body)) {
@@ -23,31 +29,12 @@ exports.handler = function(event, context, callback) {
         callback(null, {
           statusCode: 400,
           headers,
-          body: JSON.stringify({
-            status: "Failed",
-            message
-          })
+          body: JSON.stringify({ message })
         });
     }
 
     // add form submission contents
-
     // add stripe call
-    // {
-    //     firstName,
-    //     lastName,
-    //     companyName,
-    //     email,
-    //     ccNumber,
-    //     ccExpirationMonth,
-    //     ccExpirationYear,
-    //     cvv,
-    //     priceTierId
-    // }
-
-
-
-    console.log('How did I make it here?');
 
     callback(null, {
         statusCode: 200
