@@ -7,10 +7,10 @@ const CheckoutForm = () => {
       className="Consultation"
       name="warmup-signup"
       onSubmit={e => {
-        e.preventDefault();
-        document.querySelector("#contact-form").style.display = "none";
-        document.querySelector(".contact-thank-you").style.display = "block";
-        return false;
+        // e.preventDefault();
+        // document.querySelector("#contact-form").style.display = "none";
+        // document.querySelector(".contact-thank-you").style.display = "block";
+        // return false;
       }}
       data-netlify="true"
       method="post"
