@@ -13,6 +13,8 @@ const CheckoutForm = () => {
         return false;
       }}
       data-netlify="true"
+      method="post"
+      enctype="application/x-www-form-urlencoded"
     >
       <h3 className="blue-text form-title">
         Complete The Sign Up Form to Get Your Marketing Started
