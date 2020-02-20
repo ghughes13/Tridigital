@@ -12,7 +12,7 @@ function hasValidBody(body) {
 }
 
 exports.handler = function(event, context, callback) {
-    console.log(context.body);
+    console.log(context);
 
     var body = JSON.parse(context.body);
     
