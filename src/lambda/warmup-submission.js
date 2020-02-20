@@ -12,9 +12,9 @@ function hasValidBody(body) {
 }
 
 exports.handler = function(event, context, callback) {
-    console.log(context);
+    console.log(event);
 
-    var body = JSON.parse(context.body);
+    var body = JSON.parse(event.body);
     
     if (!hasValidBody(body)) {
         const message = "Please fill out all required information.";
