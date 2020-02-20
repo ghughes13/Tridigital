@@ -2,18 +2,6 @@ import React from "react";
 
 const CheckoutForm = () => {
   return (
-    // <form
-    //   name="contact"
-    //   method="POST"
-    //   data-netlify="true"
-    //   netlify-honeypot="bot-field"
-    // >
-    //   <input type="text" name="name" placeholder="Name" />
-    //   <input type="email" name="email" placeholder="Email" />
-    //   <input type="hidden" name="form-name" value="contact" />
-    //   <button type="submit">Subscribe</button>
-    // </form>
-
     <form
       name="warmup"
       data-netlify="true"
@@ -49,9 +37,7 @@ const CheckoutForm = () => {
           name="honey-data-type"
         />
       </div>
-      <div className="sbmt-btn-container">
-        <button type="submit">Subscribe</button>
-      </div>
+      <button type="submit">Subscribe</button>
       {/* 
         <button type="submit" className="pink-button">
           Take the First Step
