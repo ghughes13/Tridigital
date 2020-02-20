@@ -49,7 +49,7 @@ const CheckoutForm = () => {
           name="honey-data-type"
         />
       </div>
-      <div className="submit-btn">
+      <div className="sbmt-btn-container">
         <button type="submit">Subscribe</button>
       </div>
       {/* 
