@@ -5,6 +5,7 @@ const CheckoutForm = () => {
     <form
       id="contact-form"
       className="Consultation"
+      name="warmup-signup"
       onSubmit={e => {
         e.preventDefault();
         document.querySelector("#contact-form").style.display = "none";
