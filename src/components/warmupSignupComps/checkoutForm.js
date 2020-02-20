@@ -35,7 +35,7 @@ const CheckoutForm = () => {
         <label>What’s your email address?</label>
         <input type="email" className="theInput" required></input>
       </div>
-      <div className="field email-field">
+      {/* <div className="field email-field">
         <label>Select Price Tier</label>
         <select
           id="warmup-level"
@@ -60,7 +60,7 @@ const CheckoutForm = () => {
       <div className="checkbox-part">
         <input type="checkbox" className="checkbox" />
         <label>Keep Me Updated with Emails and Newsletters</label>
-      </div>
+      </div> */}
       <div className="hide-me field">
         <input data-form-type="Consultation" className="formcat"></input>
       </div>
