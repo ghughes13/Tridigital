@@ -11,6 +11,7 @@ const CheckoutForm = () => {
         document.querySelector(".contact-thank-you").style.display = "block";
         return false;
       }}
+      data-netlify="true"
     >
       <h3 className="blue-text form-title">
         Complete The Sign Up Form to Get Your Marketing Started
@@ -54,10 +55,6 @@ const CheckoutForm = () => {
           <p className="price-hook"></p>
         </div>
         <div className="billing-info"></div>
-        <div className="field email-field">
-          <label>Card Number</label>
-          <input type="email" className="theInput" required></input>
-        </div>
       </div>
 
       <div className="checkbox-part">

@@ -5081,65 +5081,6 @@ main .download-col .pink-button {
 
 /****WARM UP END********/
 
-/****WARM UP SIGNUP********/
-
-.warmup-signup .swish:after,
-.warmup-questionaire .swish:after {
-  position: absolute;
-  bottom: -44vh;
-  left: -10vw;
-  width: 120vw;
-  height: 100vh;
-  background: url(https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/wamup/curve-3.svg);
-  z-index: 20;
-  content: "";
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: 100%;
-}
-
-.warmup-signup .hero,
-.warmup-questionaire .hero {
-  min-height: 100vh;
-  z-index: 0;
-}
-
-.warmup-signup .white-section,
-.warmup-questionaire .white-section {
-  min-height: 50vh;
-}
-
-.warmup-signup .form-container,
-.warmup-questionaire .form-container {
-  margin: auto;
-  padding: 6% 8%;
-  margin-top: -75vh;
-  width: 100%;
-  max-width: 926px;
-}
-
-/****END WARM UP SIGNUP********/
-
-/****WARM UP QUESTIONAIRE*************/
-
-.warmup-questionaire .first.background {
-  background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/Group-3451.png");
-}
-
-.warmup-questionaire .second.background {
-  background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/Group-3452.png");
-}
-
-.warmup-questionaire .third.background {
-  background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/Group-3453.png");
-}
-
-.warmup-questionaire .fourth.background {
-  background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/Group-3454.png");
-}
-
-/****END WARM UP QUESTIONAIRE********/
-
 /****WISTIA STYLES************/
 
 .wistia_responsive_padding {
@@ -5716,3 +5657,69 @@ body .warmup-page span.dollar-sigh {
   }
 }
 /****END MARKETING WARMUP********/
+
+/****WARM UP SIGNUP********/
+
+.warmup-signup .swish:after,
+.warmup-questionaire .swish:after {
+  position: absolute;
+  bottom: -44vh;
+  left: -10vw;
+  width: 120vw;
+  height: 100vh;
+  background: url(https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/wamup/curve-3.svg);
+  z-index: 20;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 100%;
+}
+
+.warmup-signup .hero,
+.warmup-questionaire .hero {
+  min-height: 100vh;
+  z-index: 0;
+}
+
+.warmup-signup .white-section,
+.warmup-questionaire .white-section {
+  min-height: 50vh;
+}
+
+.warmup-signup .form-container,
+.warmup-questionaire .form-container {
+  margin: auto;
+  padding: 6% 8%;
+  margin-top: -75vh;
+  width: 100%;
+  max-width: 926px;
+}
+
+.warmup-signup .hero::after {
+  position: absolute;
+  top: 0px;
+  left: -350px;
+  content: url(https://tdgatsbytest.wpengine.com/wp-content/themes/tridigital/svg/blob-2.svg);
+}
+
+/****END WARM UP SIGNUP********/
+
+/****WARM UP QUESTIONAIRE*************/
+
+.warmup-questionaire .first.background {
+  background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/Group-3451.png");
+}
+
+.warmup-questionaire .second.background {
+  background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/Group-3452.png");
+}
+
+.warmup-questionaire .third.background {
+  background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/Group-3453.png");
+}
+
+.warmup-questionaire .fourth.background {
+  background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/Group-3454.png");
+}
+
+/****END WARM UP QUESTIONAIRE********/
