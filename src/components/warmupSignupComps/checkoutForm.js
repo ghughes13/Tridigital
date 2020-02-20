@@ -20,7 +20,11 @@ const CheckoutForm = () => {
       method="POST"
       netlify-honeypot="bot-field"
     >
-      <h3 className="blue-text form-title">
+      <input type="text" name="name" placeholder="Name" />
+      <input type="email" name="email" placeholder="Email" />
+      <input type="hidden" name="form-name" value="contact" />
+      <button type="submit">Subscribe</button>
+      {/* <h3 className="blue-text form-title">
         Complete The Sign Up Form to Get Your Marketing Started
       </h3>
       <div className="what-do-we-call-you">
@@ -42,18 +46,18 @@ const CheckoutForm = () => {
         <label>What’s your email address?</label>
         <input type="email" className="theInput" required name="email" />
       </div>
-      {/* <div className="hide-me field">
+      <div className="hide-me field">
         <input
           data-form-type="Consultation"
           className="formcat"
           name="honey-data-type"
         />
-      </div> */}
+      </div>
       <div className="submit-btn">
         <button type="submit" className="pink-button">
           Take the First Step
         </button>
-      </div>
+      </div> */}
     </form>
   );
 };
