@@ -19,9 +19,6 @@ const WarmUpPayment = () => {
                 Complete The Sign Up Form to Get Your Marketing Started
               </h1>
               <CheckoutForm />
-              <div className="contact-thank-you">
-                <h5>Thank you for contacting us. We'll be in touch shortly!</h5>
-              </div>
             </div>
           </Row>
         </Container>

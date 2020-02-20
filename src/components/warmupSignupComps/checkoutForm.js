@@ -23,26 +23,17 @@ const CheckoutForm = () => {
       <h3 className="blue-text form-title">
         Complete The Sign Up Form to Get Your Marketing Started
       </h3>
-      <div className="what-do-we-call-you">
-        <div className="field name-field">
+      <div className="name-container">
+        <div className="firstName">
           <label>First Name</label>
-          <input type="text" className="theInput" name="first-name" required />
+          <input type="text" name="firstName" />
         </div>
-        <div className="field">
-          <label className="second-label">Last Name</label>
-          <input type="text" className="theInput" name="last-name"></input>
+        <div className="lastName">
+          <label>Last Name</label>
+          <input type="text" name="LastName" />
         </div>
       </div>
-      <br />
-      <div className="field email-field">
-        <label>Company Name</label>
-        <input type="text" className="theInput" required name="company-name" />
-      </div>
-      <div className="field email-field">
-        <label>What’s your email address?</label>
-        <input type="email" className="theInput" required name="email" />
-      </div>
-      <button type="submit">Subscribe</button>
+      <button type="submit">Send</button>
     </form>
   );
 };
