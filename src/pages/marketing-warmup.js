@@ -5,7 +5,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import WarmupVideo from "../components/warmup-video-player.js";
 import SingleReivew from "../components/single-review.js";
 import { Waypoint } from "react-waypoint";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const WarmUp = () => (
   <Layout>
@@ -217,13 +216,12 @@ const WarmUp = () => (
               <li>Fully set-up Honey CRM</li>
               <li>30 Qualified Leads</li>
             </ul>
-            <AnchorLink
-              offset="150"
+            <a
               className="pink-btn btn"
               href="http://warmup.tridigitalmarketing.com/marketing-warmup-signup/"
             >
               Sign Up
-            </AnchorLink>
+            </a>
           </Col>
           <Col className="content-container column price-option second six-months">
             <span className="bold light-blue-text top-months">6 Months</span>
@@ -243,13 +241,12 @@ const WarmUp = () => (
               <li>Fully set-up Honey CRM</li>
               <li>60 Qualified Leads</li>
             </ul>
-            <AnchorLink
-              offset="150"
+            <a
               className="pink-btn btn"
               href="http://warmup.tridigitalmarketing.com/marketing-warmup-signup/"
             >
               Sign Up
-            </AnchorLink>
+            </a>
           </Col>
           <Col className="content-container column price-option third twelve-months">
             <span className="bold gold-text top-months">12 Months</span>
@@ -269,13 +266,12 @@ const WarmUp = () => (
               <li>Fully set-up Honey CRM</li>
               <li>120 Qualified Leads</li>
             </ul>
-            <AnchorLink
-              offset="150"
+            <a
               className="pink-btn btn"
               href="http://warmup.tridigitalmarketing.com/marketing-warmup-signup/"
             >
               Sign Up
-            </AnchorLink>
+            </a>
           </Col>
         </Row>
       </Container>
