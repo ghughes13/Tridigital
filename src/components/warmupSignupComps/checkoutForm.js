@@ -19,7 +19,6 @@ const CheckoutForm = () => {
         <label>Last Name</label>
         <input type="text" name="Last" />
       </div>
-      <input type="text" name="name" placeholder="Name" />
       <input type="email" name="email" placeholder="Email" />
       <input type="hidden" name="form-name" value="contact" />
       <button type="submit">Subscribe</button>
