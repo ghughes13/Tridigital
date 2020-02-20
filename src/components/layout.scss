@@ -5702,6 +5702,22 @@ body .warmup-page span.dollar-sigh {
   content: url(https://tdgatsbytest.wpengine.com/wp-content/uploads/svg/warmup-signup/blob-2.svg);
 }
 
+.warmup-signup .white-section {
+  z-index: 99;
+}
+
+.warmup-signup .white-section .form-container {
+  position: relative;
+}
+
+.warmup-signup .white-section .form-container::after {
+  content: url(http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/Ellipse-333.png);
+  position: absolute;
+  top: 3vw;
+  right: -15vw;
+  z-index: -1;
+}
+
 /****END WARM UP SIGNUP********/
 
 /****WARM UP QUESTIONAIRE*************/
