@@ -1,4 +1,5 @@
 //require("dotenv").config();
+const axios = require('axios');
 
 //const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
@@ -19,24 +20,33 @@ function hasValidBody(body) {
     && body.priceTierId;
 }
 
+function sendErrorMessage(statusCode, message, callback) {
+  console.error(message);
+    
+  callback(null, {
+    statusCode,
+    headers,
+    body: JSON.stringify({ message })
+  });
+}
+
 exports.handler = function(event, context, callback) {
-    var body = JSON.parse(event.body);
-    
-    if (!hasValidBody(body)) {
-        const message = "Please fill out all required information.";
-        console.error(message);
-    
-        callback(null, {
-          statusCode: 400,
-          headers,
-          body: JSON.stringify({ message })
-        });
-    }
+  // try {
+  //   var body = JSON.parse(event.body);
+  // }
+  // catch {
+  //   sendErrorMessage(400, "Body not formatted in JSON.", callback);
+  // }
+  
+  // if (!hasValidBody(body)) {
+  //   sendErrorMessage(400, "Please fill out all required information.", callback);
+  // }
 
-    // add form submission contents
-    // add stripe call
+  axios.post('https://eloquent-hawking-0b4899.netlify.com/', 'first=test&Last=bill&email=bwett01%40gmail.com&form-name=contact');
+  // add form submission contents
+  // add stripe call
 
-    callback(null, {
-        statusCode: 200
-    });
+  callback(null, {
+    statusCode: 200
+  });
 }
