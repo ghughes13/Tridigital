@@ -16,9 +16,9 @@ function hasValidBody(body) {
     && body.ccNumber
     && body.ccExpirationMonth
     && body.ccExpirationYear
+    && body.ccCardholderName
     && body.cvv
-    && body.priceTierId
-    && body.cardholderName;
+    && body.priceTierId;
 }
 
 function sendErrorMessage(statusCode, message, callback) {
@@ -55,6 +55,7 @@ exports.handler = function(event, context, callback) {
   }
 
   console.log('about to post form');
+  
   postFormSubmission(body)
     .then(() => { 
       console.log('posted form');
