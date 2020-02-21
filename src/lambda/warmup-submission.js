@@ -55,7 +55,7 @@ exports.handler = function(event, context, callback) {
   }
 
   console.log('about to post form');
-  this.postFormSubmission(body)
+  postFormSubmission(body)
     .then(() => { 
       console.log('posted form');
       return createStripeSubscription(body);
