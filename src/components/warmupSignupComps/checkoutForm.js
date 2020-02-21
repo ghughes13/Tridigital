@@ -2,36 +2,36 @@ import React from "react";
 import axios from "axios";
 
 const CheckoutForm = () => {
-  let submitForm = () => {
-    axios
-      .post(
-        "https://eloquent-hawking-0b4899.netlify.com/.netlify/functions/warmup-submission",
-        {
-          firstName: document.getElementById("firstName").value,
-          lastName: document.getElementById("lastName").value,
-          companyName: document.getElementById("companyName").value,
-          email: document.getElementById("email").value,
-          ccNumber: document.getElementById("ccNumber").value,
-          ccExpirationMonth: document.getElementById("ccExpirationMonth").value,
-          ccExpirationYear: document.getElementById("ccExpirationYear").value,
-          cvv: document.getElementById("cvv").value,
-          priceTierId: document.getElementById("priceTierId").value,
-          ccCardHolderName: document.getElementById("ccCardHolderName").value,
-        }
-      )
-      .then(response => {
-        if (response.status === 200) {
-          console.log("good");
-        }
-      })
-      .catch(error => {
-        console.error("bad");
-      });
-  };
+  // let submitForm = () => {
+  //   axios
+  //     .post(
+  //       "https://eloquent-hawking-0b4899.netlify.com/.netlify/functions/warmup-submission",
+  //       {
+  //         firstName: document.getElementById("firstName").value,
+  //         lastName: document.getElementById("lastName").value,
+  //         companyName: document.getElementById("companyName").value,
+  //         email: document.getElementById("email").value,
+  //         ccNumber: document.getElementById("ccNumber").value,
+  //         ccExpirationMonth: document.getElementById("ccExpirationMonth").value,
+  //         ccExpirationYear: document.getElementById("ccExpirationYear").value,
+  //         cvv: document.getElementById("cvv").value,
+  //         priceTierId: document.getElementById("priceTierId").value,
+  //         ccCardHolderName: document.getElementById("ccCardHolderName").value,
+  //       }
+  //     )
+  //     .then(response => {
+  //       if (response.status === 200) {
+  //         console.log("good");
+  //       }
+  //     })
+  //     .catch(error => {
+  //       console.error("bad");
+  //     });
+  // };
 
   return (
     <form
-      name="warmupV1"
+      name="newformTest"
       method="POST"
       // onSubmit={e => {
       //   submitForm();
