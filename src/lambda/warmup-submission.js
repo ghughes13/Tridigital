@@ -8,6 +8,33 @@ const headers = {
   "Access-Control-Allow-Headers": "Content-Type"
 };
 
+function handleRequest(event, context, callback) {
+  try {
+    var body = JSON.parse(event.body);
+  }
+  catch {
+    sendErrorMessage(400, "Body not formatted in JSON.", callback);
+  }
+  
+  if (!hasValidBody(body)) {
+    sendErrorMessage(400, "Please fill out all required information.", callback);
+  }
+
+  // postFormSubmission(body)
+  //   .then(() => { 
+  //     return createStripeSubscription(body);
+  //   })
+  createStripeSubscription(body)
+    .then(() => {
+      callback(null, {
+        statusCode: 200
+      });
+    })
+    .catch(error => {
+      sendErrorMessage(400, error.toString(), callback);
+    });
+}
+
 function hasValidBody(body) {
   return body.firstName
     && body.lastName
@@ -32,7 +59,7 @@ function sendErrorMessage(statusCode, message, callback) {
 }
 
 function postFormSubmission(body) {
-  var request = `form-name=warmup&firstName=${body.firstName}&email=${body.email}&companyName=${body.companyName}&priceTierId=${body.priceTierId}&lastName=${body.lastName}`;
+  var request = `form-name=warmup&firstName=${body.firstName}&lastName=${body.lastName}&email=${body.email}&companyName=${body.companyName}&priceTierId=${body.priceTierId}`;
   return axios.post('https://eloquent-hawking-0b4899.netlify.com/', request);
 }
 
@@ -42,32 +69,4 @@ function createStripeSubscription(body) {
   });
 }
 
-exports.handler = function(event, context, callback) {
-  try {
-    var body = JSON.parse(event.body);
-  }
-  catch {
-    sendErrorMessage(400, "Body not formatted in JSON.", callback);
-  }
-  
-  if (!hasValidBody(body)) {
-    sendErrorMessage(400, "Please fill out all required information.", callback);
-  }
-
-  console.log('about to post form');
-
-  postFormSubmission(body)
-    .then(() => { 
-      console.log('posted form');
-      return createStripeSubscription(body);
-    })
-    .then(() => {
-      console.log('finished stripe');
-      callback(null, {
-        statusCode: 200
-      });
-    })
-    .catch(error => {
-      sendErrorMessage(400, error.toString(), callback);
-    });
-}
+exports.handler = handleRequest;
