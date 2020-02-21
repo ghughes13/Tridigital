@@ -1,5 +1,5 @@
 [build]
-  Functions = "src/lambda" 
+  Functions = "lambda-build" 
   Command = "npm run build:lambda && gatsby build"
 
 [build.environment]
