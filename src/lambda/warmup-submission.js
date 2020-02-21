@@ -32,7 +32,7 @@ function sendErrorMessage(statusCode, message, callback) {
 }
 
 function postFormSubmission(body) {
-  var request = `form-name=warmup&firstName=${body.firstName}&lastName=${body.lastName}&email=${body.email}&companyName=${body.companyName}&priceTierId=${body.priceTierId}`;
+  var request = `form-name=warmup&firstName=${body.firstName}&email=${body.email}&companyName=${body.companyName}&priceTierId=${body.priceTierId}&lastName=${body.lastName}`;
   return axios.post('https://eloquent-hawking-0b4899.netlify.com/', request);
 }
 
@@ -55,7 +55,7 @@ exports.handler = function(event, context, callback) {
   }
 
   console.log('about to post form');
-  
+
   postFormSubmission(body)
     .then(() => { 
       console.log('posted form');
