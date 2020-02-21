@@ -5690,7 +5690,7 @@ body .warmup-page span.dollar-sigh {
 .warmup-questionaire .form-container {
   margin: auto;
   padding: 6% 8%;
-  margin-top: -75vh;
+  margin-top: -85vh;
   width: 100%;
   max-width: 926px;
 }
@@ -5708,6 +5708,7 @@ body .warmup-page span.dollar-sigh {
 
 .warmup-signup .white-section .form-container {
   position: relative;
+  max-width: 830px;
 }
 
 .warmup-signup .white-section .form-container::after {
@@ -5716,6 +5717,111 @@ body .warmup-page span.dollar-sigh {
   top: 3vw;
   right: -15vw;
   z-index: -1;
+}
+
+.warmup-signup label {
+  font-family: "Poppins";
+  font-size: 14px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.warmup-signup .form-title {
+  max-width: 520px;
+}
+
+.warmup-signup select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: solid #c9cbd9 1px;
+}
+
+.warmup-signup .exp-date-and-cvv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.warmup-signup .exp-date-and-cvv > div {
+  width: 30%;
+}
+
+.warmup-signup #cvv:before {
+  content: url("/wp-content/uploads/2020/02/Group-3451-1.png");
+}
+
+.warmup-signup .checkbox-part {
+  display: flex;
+  align-items: center;
+}
+
+.warmup-signup .checkbox-part label {
+  margin-top: 0;
+}
+
+.warmup-signup .sbmt-btn {
+  text-align: center;
+}
+
+.warmup-signup .total-p {
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.warmup-signup .dollar-sign {
+  font-size: 21px;
+  font-weight: 700;
+  font-family: "Poppins";
+}
+
+.warmup-signup .price-hook {
+  font-size: 31px;
+  font-weight: 700;
+  font-family: "Poppins";
+}
+
+.warmup-signup .form-content {
+  max-width: 500px;
+  margin: auto;
+}
+
+.warmup-signup .tier-1 {
+  color: #ff64a7;
+  font-weight: 700;
+}
+
+.warmup-signup .tier-2 {
+  color: #0092fb;
+  font-weight: 700;
+}
+
+.warmup-signup .tier-3 {
+  color: #fcac18;
+  font-weight: 700;
+}
+
+div.warmup-signup .sbmt-btn .btn.pink-button {
+  text-align: center;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 20px;
+  width: 230px;
+  display: block;
+  padding: 13px 50px 12px;
+  margin-top: 40px;
+  font-family: "Poppins";
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  background: transparent;
+}
+
+div.warmup-signup .sbmt-btn .btn.pink-button:hover {
+  color: #ff3975;
 }
 
 /****END WARM UP SIGNUP********/
