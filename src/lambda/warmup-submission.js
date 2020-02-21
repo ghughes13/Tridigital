@@ -30,23 +30,42 @@ function sendErrorMessage(statusCode, message, callback) {
   });
 }
 
-exports.handler = function(event, context, callback) {
-  // try {
-  //   var body = JSON.parse(event.body);
-  // }
-  // catch {
-  //   sendErrorMessage(400, "Body not formatted in JSON.", callback);
-  // }
-  
-  // if (!hasValidBody(body)) {
-  //   sendErrorMessage(400, "Please fill out all required information.", callback);
-  // }
+function postFormSubmission(body) {
+  var request = `form-name=warmup&firstName=${body.firstName}&lastName=${body.lastName}&email=${body.email}&companyName=${body.companyName}&priceTierId=${body.priceTierId}`;
+  return axios.post('https://eloquent-hawking-0b4899.netlify.com/', request);
+}
 
-  axios.post('https://eloquent-hawking-0b4899.netlify.com/', 'first=test&Last=bill&email=bwett01%40gmail.com&form-name=contact');
-  // add form submission contents
-  // add stripe call
-
-  callback(null, {
-    statusCode: 200
+function createStripeSubscription(body) {
+  return new Promise((resolve, reject) => {
+    resolve();
   });
+}
+
+exports.handler = function(event, context, callback) {
+  try {
+    var body = JSON.parse(event.body);
+  }
+  catch {
+    sendErrorMessage(400, "Body not formatted in JSON.", callback);
+  }
+  
+  if (!hasValidBody(body)) {
+    sendErrorMessage(400, "Please fill out all required information.", callback);
+  }
+
+  console.log('about to post form');
+  this.postFormSubmission(body)
+    .then(() => { 
+      console.log('posted form');
+      return createStripeSubscription(body);
+    })
+    .then(() => {
+      console.log('finished stripe');
+      callback(null, {
+        statusCode: 200
+      });
+    })
+    .catch(error => {
+      sendErrorMessage(400, error.toString(), callback);
+    });
 }
