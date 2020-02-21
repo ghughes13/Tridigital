@@ -1,8 +1,6 @@
-//require("dotenv").config();
-const stripe = require('stripe')('sk_test_oOYYCcjKogqXbtVTiUqaehnj');
+require("dotenv").config();
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY_TEST);
 const axios = require('axios');
-
-//const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 const headers = {
   "Access-Control-Allow-Origin": "*",
@@ -12,6 +10,12 @@ const headers = {
 var body;
 var stripeCustomerId;
 var stripePaymentMethodId;
+
+var plans = [
+  'tridigitalmarketingwarmup-lovinit_27_1month_130000', 
+  'tridigitalmarketingwarmup-feelinit_26_1month_140000',
+  'tridigitalmarketingwarmup-testinit_25_1month_150000'
+];
 
 function handleRequest(event, context, callback) {
   try {
@@ -41,6 +45,10 @@ function handleRequest(event, context, callback) {
 }
 
 function hasValidBody() {
+  var isValidPriceTierId = body.priceTierId === 0
+    || body.priceTierId === 1
+    || body.priceTierId === 2;
+
   return body.firstName
     && body.lastName
     && body.companyName
@@ -50,7 +58,7 @@ function hasValidBody() {
     && body.ccExpirationYear
     && body.ccCardholderName
     && body.cvv
-    && body.priceTierId;
+    && isValidPriceTierId;
 }
 
 function sendErrorMessage(statusCode, message, callback) {
@@ -75,15 +83,18 @@ function createStripeCustomer() {
       description: body.companyName
     };
 
-    stripe.customers.create(customer, (error, customer) => { 
-      if (customer) {
-        stripeCustomerId = customer;
-        resolve()
+    stripe.customers.create(
+      customer, 
+      (error, customer) => { 
+        if (customer) {
+          stripeCustomerId = customer.id;
+          resolve();
+        }
+        else {
+          reject(error); 
+        }
       }
-      else {
-        reject(error); 
-      }
-    });
+    );
   });
 }
 
@@ -99,28 +110,35 @@ function createStripePaymentMethod() {
       }
     };
 
-    stripe.paymentMethods.create(card, (error, paymentMethod) => {
-      if (paymentMethod) {
-        stripePaymentMethodId = paymentMethod.id;
-        resolve();
+    stripe.paymentMethods.create(
+      card, 
+      (error, paymentMethod) => {
+        if (paymentMethod) {
+          stripePaymentMethodId = paymentMethod.id;
+          resolve();
+        }
+        else {
+          reject(error);
+        }
       }
-      else {
-        reject(error);
-      }
-    });
+    );
   });
 }
 
 function assignPaymentMethodToCustomer() {
   return new Promise((resolve, reject) => {
-    stripe.paymentMethods.attach(stripePaymentMethodId, { customer: stripeCustomerId }, (error, paymentMethod) => {
-      if (paymentMethod) {
-        resolve();
+    stripe.paymentMethods.attach(
+      stripePaymentMethodId, 
+      { customer: stripeCustomerId }, 
+      (error, paymentMethod) => {
+        if (paymentMethod) {
+          resolve();
+        }
+        else {
+          reject(error);
+        }
       }
-      else {
-        reject(error);
-      }
-    });
+    );
   });
 }
 
@@ -128,20 +146,20 @@ function createStripeSubscription() {
   return new Promise((resolve, reject) => {
     resolve();
 
-    //  stripe.subscriptions.create(
-    //   {
-    //     customer: stripeCustomerId,
-    //     items: [{ plan: 'plan_EeE4ns3bvb34ZP' }],
-    //   },
-    //   (error, subscription) => {
-    //     if (subscription) {
-    //       resolve();
-    //     }
-    //     else {
-    //       reject(error);
-    //     }
-    //   }
-    // );
+     stripe.subscriptions.create(
+      {
+        customer: stripeCustomerId,
+        items: [{ plan: plans[body.priceTierId] }],
+      },
+      (error, subscription) => {
+        if (subscription) {
+          resolve();
+        }
+        else {
+          reject(error);
+        }
+      }
+    );
   });
 }
 
