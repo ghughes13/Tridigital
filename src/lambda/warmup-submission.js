@@ -71,8 +71,8 @@ function postFormSubmission() {
 function createStripeCustomer() {
   return new Promise((resolve, reject) => {
     var customer = {
-      email = body.email,
-      description = body.companyName
+      email: body.email,
+      description: body.companyName
     };
 
     stripe.customers.create(customer, (error, customer) => { 
