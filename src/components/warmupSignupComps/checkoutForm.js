@@ -33,10 +33,10 @@ const CheckoutForm = () => {
     <form
       name="warmup"
       method="POST"
-      onSubmit={e => {
-        submitForm();
-        // e.preventDefault();
-      }}
+      // onSubmit={e => {
+      //   submitForm();
+      //   // e.preventDefault();
+      // }}
       data-netlify="true"
     >
       <h3 className="blue-text form-title">
