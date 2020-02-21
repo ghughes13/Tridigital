@@ -29,10 +29,9 @@ function handleRequest(event, context, callback) {
     sendErrorMessage(400, "Please fill out all required information.", callback);
   }
 
-  // postFormSubmission()
-  createStripeCustomer()
+  postFormSubmission()
     .then(createStripePaymentMethod)
-    .then(assignPaymentMethodToCustomer)
+    .then(createStripeCustomer)
     .then(createStripeSubscription)
     .then(() => {
       callback(null, {
@@ -80,7 +79,11 @@ function createStripeCustomer() {
   return new Promise((resolve, reject) => {
     var customer = {
       email: body.email,
-      description: body.companyName
+      description: body.companyName,
+      payment_method: stripePaymentMethodId,
+      invoice_settings: {
+        default_payment_method: stripePaymentMethodId
+      }
     };
 
     stripe.customers.create(
@@ -125,23 +128,6 @@ function createStripePaymentMethod() {
   });
 }
 
-function assignPaymentMethodToCustomer() {
-  return new Promise((resolve, reject) => {
-    stripe.paymentMethods.attach(
-      stripePaymentMethodId, 
-      { customer: stripeCustomerId }, 
-      (error, paymentMethod) => {
-        if (paymentMethod) {
-          resolve();
-        }
-        else {
-          reject(error);
-        }
-      }
-    );
-  });
-}
-
 function createStripeSubscription() {
   return new Promise((resolve, reject) => {
     resolve();
@@ -149,7 +135,7 @@ function createStripeSubscription() {
      stripe.subscriptions.create(
       {
         customer: stripeCustomerId,
-        items: [{ plan: plans[body.priceTierId] }],
+        items: [{ plan: plans[body.priceTierId] }] // 'tridigitalmarketingwarmup-testinit_25_1month_150000'
       },
       (error, subscription) => {
         if (subscription) {
