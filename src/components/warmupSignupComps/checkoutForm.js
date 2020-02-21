@@ -2,41 +2,42 @@ import React from "react";
 import axios from "axios";
 
 const CheckoutForm = () => {
-  let submitForm = () => {
-    axios
-      .post(
-        "https://eloquent-hawking-0b4899.netlify.com/.netlify/functions/warmup-submission",
-        {
-          firstName: document.getElementById("firstName").value,
-          lastName: document.getElementById("lastName").value,
-          companyName: document.getElementById("companyName").value,
-          email: document.getElementById("email").value,
-          ccNumber: document.getElementById("ccNumber").value,
-          ccExpirationMonth: document.getElementById("ccExpirationMonth").value,
-          ccExpirationYear: document.getElementById("ccExpirationYear").value,
-          cvv: document.getElementById("cvv").value,
-          priceTierId: document.getElementById("priceTierId").value,
-          ccCardHolderName: document.getElementById("cardholderName").value,
-        }
-      )
-      .then(response => {
-        if (response.status === 200) {
-          console.log("good");
-        }
-      })
-      .catch(error => {
-        console.error("bad");
-      });
-  };
+  // let submitForm = () => {
+  //   axios
+  //     .post(
+  //       "https://eloquent-hawking-0b4899.netlify.com/.netlify/functions/warmup-submission",
+  //       {
+  //         firstName: document.getElementById("firstName").value,
+  //         lastName: document.getElementById("lastName").value,
+  //         companyName: document.getElementById("companyName").value,
+  //         email: document.getElementById("email").value,
+  //         ccNumber: document.getElementById("ccNumber").value,
+  //         ccExpirationMonth: document.getElementById("ccExpirationMonth").value,
+  //         ccExpirationYear: document.getElementById("ccExpirationYear").value,
+  //         cvv: document.getElementById("cvv").value,
+  //         priceTierId: document.getElementById("priceTierId").value,
+  //         ccCardHolderName: document.getElementById("ccCardHolderName").value,
+  //       }
+  //     )
+  //     .then(response => {
+  //       if (response.status === 200) {
+  //         console.log("good");
+  //       }
+  //     })
+  //     .catch(error => {
+  //       console.error("bad");
+  //     });
+  // };
 
   return (
     <form
-      name="contact"
+      name="newformTest"
       method="POST"
-      onSubmit={e => {
-        submitForm();
-        e.preventDefault();
-      }}
+      // onSubmit={e => {
+      //   submitForm();
+      //   // e.preventDefault();
+      // }}
+      data-netlify="true"
     >
       <h3 className="blue-text form-title">
         Complete The Sign Up Form to Get Your Marketing Started
@@ -45,24 +46,24 @@ const CheckoutForm = () => {
         <div className="what-do-we-call-you">
           <div className="firstName">
             <label>First Name</label>
-            <input type="text" name="first" id="firstName" />
+            <input type="text" name="firstName" id="firstName" />
           </div>
           <div className="lastName">
             <label>Last Name</label>
-            <input type="text" name="Last" id="lastName" />
+            <input type="text" name="lastName" id="lastName" />
           </div>
         </div>
         <div className="company">
           <label>Company Name</label>
-          <input type="text" name="company" id="companyName" />
+          <input type="text" name="companyName" id="companyName" />
         </div>
         <div className="email">
           <label>What's Your Email Address?</label>
-          <input type="text" name="company" id="email" />
+          <input type="text" name="email" id="email" />
         </div>
         <div className="field email-field">
           <label>Select Price Tier</label>
-          <select id="priceTierId" name="warmup-level" required>
+          <select id="priceTierId" name="priceTierId" required>
             <option default value="1" className="tier-1">
               TESTIN' IT: 3-Months Investment | $1,500.00/mo
             </option>
@@ -85,12 +86,12 @@ const CheckoutForm = () => {
             />
           </div>
           <label>Card Number</label>
-          <input type="text" name="company" id="ccNumber" />
+          <input type="text" name="ccNumber" id="ccNumber" />
           <div className="billing-info"></div>
           <div className="exp-date-and-cvv">
             <div>
               <label>Expiration Month</label>
-              <select id="ccExpirationMonth" name="expiration-month" required>
+              <select id="ccExpirationMonth" name="ccExpirationMonth" required>
                 <option default value="1">
                   01
                 </option>
@@ -109,7 +110,7 @@ const CheckoutForm = () => {
             </div>
             <div>
               <label>Expiration Year</label>
-              <select id="ccExpirationYear" name="expiration-year" required>
+              <select id="ccExpirationYear" name="ccExpirationYear" required>
                 <option default value="2020">
                   2020
                 </option>
@@ -135,23 +136,38 @@ const CheckoutForm = () => {
             </div>
             <div>
               <label>Security Code</label>
-              <input type="text" name="company" id="cvv" />
+              <input type="text" name="cvv" id="cvv" />
             </div>
           </div>
           <label>Cardholder Name</label>
-          <input type="text" name="company" id="cardholderName" />
+          <input type="text" name="ccCardHolderName" id="ccCardHolderName" />
         </div>
 
         <div className="checkbox-part">
-          <input type="checkbox" className="checkbox" required />
+          <input
+            type="checkbox"
+            className="checkbox"
+            required
+            name="newsletter"
+          />
           <label>Keep Me Updated with Emails and Newsletters</label>
         </div>
         <div className="checkbox-part">
-          <input type="checkbox" className="checkbox" required />
+          <input
+            type="checkbox"
+            className="checkbox"
+            required
+            name="paymentmthd"
+          />
           <label for="pmt-method">Make this my preferred payment method</label>
         </div>
         <div className="checkbox-part">
-          <input type="checkbox" className="checkbox" required />
+          <input
+            type="checkbox"
+            className="checkbox"
+            required
+            name="privacyTOS"
+          />
           <label>
             I have read and agree to the terms of service, and the privacy
             policy
