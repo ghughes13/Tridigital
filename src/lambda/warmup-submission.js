@@ -17,7 +17,8 @@ function hasValidBody(body) {
     && body.ccExpirationMonth
     && body.ccExpirationYear
     && body.cvv
-    && body.priceTierId;
+    && body.priceTierId
+    && body.cardholderName;
 }
 
 function sendErrorMessage(statusCode, message, callback) {
