@@ -23,7 +23,7 @@ function handleRequest(event, context, callback) {
     console.log(body);
   } catch {
     sendErrorMessage(400, "Body not formatted in JSON.", callback);
-    console.log("error");
+    console.log(body);
   }
 
   if (!hasValidBody()) {
@@ -52,6 +52,19 @@ function hasValidBody() {
   var isValidPriceTierId =
     body.priceTierId === 0 || body.priceTierId === 1 || body.priceTierId === 2;
 
+  console.log(
+    body.firstName &&
+      body.lastName &&
+      body.companyName &&
+      body.email &&
+      body.ccNumber &&
+      body.ccExpirationMonth &&
+      body.ccExpirationYear &&
+      body.ccCardHolderName &&
+      body.cvv &&
+      isValidPriceTierId
+  );
+
   return (
     body.firstName &&
     body.lastName &&
@@ -60,7 +73,7 @@ function hasValidBody() {
     body.ccNumber &&
     body.ccExpirationMonth &&
     body.ccExpirationYear &&
-    body.ccCardholderName &&
+    body.ccCardHolderName &&
     body.cvv &&
     isValidPriceTierId
   );
