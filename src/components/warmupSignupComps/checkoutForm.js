@@ -2,41 +2,67 @@ import React from "react";
 import axios from "axios";
 
 const CheckoutForm = () => {
-  // let submitForm = () => {
-  //   axios
-  //     .post(
-  //       "https://eloquent-hawking-0b4899.netlify.com/.netlify/functions/warmup-submission",
-  //       {
-  //         firstName: document.getElementById("firstName").value,
-  //         lastName: document.getElementById("lastName").value,
-  //         companyName: document.getElementById("companyName").value,
-  //         email: document.getElementById("email").value,
-  //         ccNumber: document.getElementById("ccNumber").value,
-  //         ccExpirationMonth: document.getElementById("ccExpirationMonth").value,
-  //         ccExpirationYear: document.getElementById("ccExpirationYear").value,
-  //         cvv: document.getElementById("cvv").value,
-  //         priceTierId: document.getElementById("priceTierId").value,
-  //         ccCardHolderName: document.getElementById("ccCardHolderName").value,
-  //       }
-  //     )
-  //     .then(response => {
-  //       if (response.status === 200) {
-  //         console.log("good");
-  //       }
-  //     })
-  //     .catch(error => {
-  //       console.error("bad");
-  //     });
-  // };
+  let changeColor = () => {
+    console.log(document.getElementById("priceTierId").value);
+
+    let elements = document.querySelectorAll(".edit-color");
+
+    elements.forEach(element => {
+      element.classList.remove("pink");
+      element.classList.remove("blue");
+      element.classList.remove("yellow");
+    });
+
+    if (document.getElementById("priceTierId").value == 0) {
+      document.getElementById("priceTierId").classList.add("pink");
+      document.getElementById("price-container").classList.add("pink");
+      document.getElementById("price-hook").innerText = "1500";
+    } else if (document.getElementById("priceTierId").value == 1) {
+      document.getElementById("priceTierId").classList.add("blue");
+      document.getElementById("price-container").classList.add("blue");
+      document.getElementById("price-hook").innerText = "1400";
+    } else {
+      document.getElementById("priceTierId").classList.add("yellow");
+      document.getElementById("price-container").classList.add("yellow");
+      document.getElementById("price-hook").innerText = "1300";
+    }
+  };
+
+  let submitForm = () => {
+    axios
+      .post(
+        "https://eloquent-hawking-0b4899.netlify.com/.netlify/functions/warmup-submission",
+        {
+          firstName: document.getElementById("firstName").value,
+          lastName: document.getElementById("lastName").value,
+          companyName: document.getElementById("companyName").value,
+          email: document.getElementById("email").value,
+          ccNumber: document.getElementById("ccNumber").value,
+          ccExpirationMonth: document.getElementById("ccExpirationMonth").value,
+          ccExpirationYear: document.getElementById("ccExpirationYear").value,
+          cvv: document.getElementById("cvv").value,
+          priceTierId: document.getElementById("priceTierId").value,
+          ccCardHolderName: document.getElementById("ccCardHolderName").value,
+        }
+      )
+      .then(response => {
+        if (response.status === 200) {
+          console.log("good");
+        }
+      })
+      .catch(error => {
+        console.error("bad");
+      });
+  };
 
   return (
     <form
-      name="newformTest"
+      name="warmup"
       method="POST"
-      // onSubmit={e => {
-      //   submitForm();
-      //   // e.preventDefault();
-      // }}
+      onSubmit={e => {
+        submitForm();
+        // e.preventDefault();
+      }}
       data-netlify="true"
     >
       <h3 className="blue-text form-title">
@@ -63,22 +89,30 @@ const CheckoutForm = () => {
         </div>
         <div className="field email-field">
           <label>Select Price Tier</label>
-          <select id="priceTierId" name="priceTierId" required>
-            <option default value="1" className="tier-1">
+          <select
+            id="priceTierId"
+            name="priceTierId"
+            onClick={changeColor}
+            required
+            className="edit-color pink"
+          >
+            <option default value="0" className="tier-1 pink">
               TESTIN' IT: 3-Months Investment | $1,500.00/mo
             </option>
-            <option value="2" className="tier-2">
+            <option value="1" className="tier-2 blue">
               FEELIN' IT: 6-Months Investment | $1,400.00/mo
             </option>
-            <option value="3" className="tier-3">
+            <option value="2" className="tier-3 yellow">
               LOVIN' IT: 12-Months Investment | $1,300.00/mo
             </option>
           </select>
           <div className="total">
             <p className="total-p">TOTAL</p>
-            <p className="price-container">
+            <p id="price-container" className="price-container pink edit-color">
               <span className="dollar-sign">$</span>
-              <span className="price-hook">1,500</span>
+              <span id="price-hook" className="price-hook">
+                1,500
+              </span>
             </p>
             <img
               src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/Group-3452-1.png"
@@ -159,7 +193,9 @@ const CheckoutForm = () => {
             required
             name="paymentmthd"
           />
-          <label for="pmt-method">Make this my preferred payment method</label>
+          <label htmlFor="pmt-method">
+            Make this my preferred payment method
+          </label>
         </div>
         <div className="checkbox-part">
           <input

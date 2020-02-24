@@ -5788,19 +5788,36 @@ body .warmup-page span.dollar-sigh {
   margin: auto;
 }
 
-.warmup-signup .tier-1 {
+.warmup-signup #priceTierId,
+.warmup-signup #priceTierId option {
+  font-weight: 700;
+}
+
+.warmup-signup #priceTierId.pink,
+.warmup-signup .price-container.pink {
   color: #ff64a7;
-  font-weight: 700;
 }
 
-.warmup-signup .tier-2 {
+.warmup-signup .tier-1.pink {
+  color: #ff64a7 !important;
+}
+
+.warmup-signup #priceTierId.blue,
+.warmup-signup .price-container.blue {
   color: #0092fb;
-  font-weight: 700;
 }
 
-.warmup-signup .tier-3 {
+.warmup-signup .tier-2.blue {
+  color: #0092fb !important;
+}
+
+.warmup-signup #priceTierId.yellow,
+.warmup-signup .price-container.yellow {
   color: #fcac18;
-  font-weight: 700;
+}
+
+.warmup-signup .tier-3.yellow {
+  color: #fcac18 !important;
 }
 
 div.warmup-signup .sbmt-btn .btn.pink-button {
