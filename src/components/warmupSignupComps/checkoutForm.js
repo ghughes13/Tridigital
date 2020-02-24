@@ -47,11 +47,13 @@ const CheckoutForm = () => {
       )
       .then(response => {
         if (response.status === 200) {
-          console.log("good");
+          console.log("good submission");
+          window.location.href = "https://tridigitalmarketing.com/thank-you/";
         }
       })
       .catch(error => {
-        console.error("bad");
+        console.error("bad submission");
+        console.log(error);
       });
   };
 
@@ -206,11 +208,11 @@ const CheckoutForm = () => {
           />
           <label>
             I have read and agree to the{" "}
-            <a class="read-me" href=" " target="_blank">
+            <a className="read-me" href=" " target="_blank">
               terms of service
             </a>
             , and the{" "}
-            <a class="read-me" href="" target="_blank">
+            <a className="read-me" href="" target="_blank">
               privacy policy
             </a>
           </label>
