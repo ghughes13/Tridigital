@@ -46,6 +46,7 @@ const CheckoutForm = () => {
         }
       )
       .then(response => {
+        console.log(response);
         if (response.status === 200) {
           console.log("good submission");
           window.location.href = "https://tridigitalmarketing.com/thank-you/";
