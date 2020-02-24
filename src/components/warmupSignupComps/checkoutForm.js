@@ -129,7 +129,7 @@ const CheckoutForm = () => {
             <div>
               <label>Expiration Month</label>
               <select id="ccExpirationMonth" name="ccExpirationMonth" required>
-                <option default value="1">
+                <option default value="01">
                   01
                 </option>
                 <option value="02">02</option>
