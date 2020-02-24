@@ -61,7 +61,7 @@ const CheckoutForm = () => {
       method="POST"
       onSubmit={e => {
         submitForm();
-        // e.preventDefault();
+        e.preventDefault();
       }}
       data-netlify="true"
     >
@@ -205,8 +205,14 @@ const CheckoutForm = () => {
             name="privacyTOS"
           />
           <label>
-            I have read and agree to the terms of service, and the privacy
-            policy
+            I have read and agree to the{" "}
+            <a class="read-me" href=" " target="_blank">
+              terms of service
+            </a>
+            , and the{" "}
+            <a class="read-me" href="" target="_blank">
+              privacy policy
+            </a>
           </label>
         </div>
         <input type="hidden" name="form-name" value="contact" />
