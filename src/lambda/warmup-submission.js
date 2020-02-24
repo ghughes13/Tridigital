@@ -20,8 +20,10 @@ var plans = [
 function handleRequest(event, context, callback) {
   try {
     body = JSON.parse(event.body);
+    console.log(body);
   } catch {
     sendErrorMessage(400, "Body not formatted in JSON.", callback);
+    console.log("error");
   }
 
   if (!hasValidBody()) {
