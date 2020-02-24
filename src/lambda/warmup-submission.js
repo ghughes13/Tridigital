@@ -53,16 +53,16 @@ function hasValidBody() {
     body.priceTierId === 0 || body.priceTierId === 1 || body.priceTierId === 2;
 
   console.log(
-    body.firstName &&
-      body.lastName &&
-      body.companyName &&
-      body.email &&
-      body.ccNumber &&
-      body.ccExpirationMonth &&
-      body.ccExpirationYear &&
-      body.ccCardHolderName &&
-      body.cvv &&
-      isValidPriceTierId
+    "firstname" + body.firstName,
+    "lastname" + body.lastName,
+    "coName" + body.companyName,
+    "email" + body.email,
+    "ccNum" + body.ccNumber,
+    "ccExp" + body.ccExpirationMonth,
+    "ccExpYear" + body.ccExpirationYear,
+    "ccName" + body.ccCardHolderName,
+    "cvv" + body.cvv,
+    "priceTier" + body.priceTierId
   );
 
   return (
