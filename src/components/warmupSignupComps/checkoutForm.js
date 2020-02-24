@@ -62,10 +62,10 @@ const CheckoutForm = () => {
     <form
       name="warmup"
       method="POST"
-      onSubmit={e => {
-        submitForm();
-        e.preventDefault();
-      }}
+      // onSubmit={e => {
+      //   submitForm();
+      //   // e.preventDefault();
+      // }}
       data-netlify="true"
     >
       <h3 className="blue-text form-title">
@@ -220,7 +220,11 @@ const CheckoutForm = () => {
         </div>
         <input type="hidden" name="form-name" value="contact" />
         <div className="sbmt-btn">
-          <button type="submit" className="btn pink-button">
+          <button
+            type="button"
+            className="btn pink-button"
+            onClick={submitForm}
+          >
             Subscribe
           </button>
         </div>
