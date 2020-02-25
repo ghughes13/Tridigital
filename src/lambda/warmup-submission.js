@@ -50,7 +50,9 @@ function handleRequest(event, context, callback) {
 
 function hasValidBody() {
   var isValidPriceTierId =
-    body.priceTierId === 0 || body.priceTierId === 1 || body.priceTierId === 2;
+    body.priceTierId === "0" ||
+    body.priceTierId === "1" ||
+    body.priceTierId === "2";
 
   console.log(
     "firstname: " + body.firstName,
