@@ -69,7 +69,7 @@ function hasValidBody() {
 }
 
 function sendErrorMessage(statusCode, message, callback) {
-  console.error(JSON.stringify({ message }));
+  console.log(JSON.stringify({ message }));
   callback(null, {
     statusCode,
     headers,
