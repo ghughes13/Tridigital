@@ -53,8 +53,8 @@ const CheckoutForm = () => {
         }
       })
       .catch(error => {
-        console.error("bad submission");
-        console.log(error);
+        console.log("bad submission");
+        console.log(JSON.stringify(error));
         document.getElementById("sbmt-form-btn").disabled = false;
       });
   };

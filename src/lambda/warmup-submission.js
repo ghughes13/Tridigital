@@ -73,7 +73,7 @@ function sendErrorMessage(statusCode, message, callback) {
   callback(null, {
     statusCode,
     headers,
-    body: JSON.stringify({ message }),
+    body: message,
   });
 }
 
