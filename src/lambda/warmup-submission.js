@@ -20,7 +20,6 @@ var plans = [
 function handleRequest(event, context, callback) {
   try {
     body = JSON.parse(event.body);
-    console.log(body);
   } catch {
     sendErrorMessage(400, "Body not formatted in JSON.", callback);
     console.log(body);
@@ -53,38 +52,6 @@ function hasValidBody() {
     body.priceTierId === "0" ||
     body.priceTierId === "1" ||
     body.priceTierId === "2";
-
-  console.log(
-    "firstname: " + body.firstName,
-    "lastname: " + body.lastName,
-    "coName: " + body.companyName,
-    "email: " + body.email,
-    "ccNum: " + body.ccNumber,
-    "ccExp: " + body.ccExpirationMonth,
-    "ccExpYear: " + body.ccExpirationYear,
-    "ccName: " + body.ccCardHolderName,
-    "cvv: " + body.cvv,
-    "priceTier: " + body.priceTierId
-  );
-
-  console.log(
-    body.firstName &&
-      body.lastName &&
-      body.companyName &&
-      body.email &&
-      body.ccNumber &&
-      body.ccExpirationMonth &&
-      body.ccExpirationYear &&
-      body.ccCardHolderName &&
-      body.cvv &&
-      isValidPriceTierId
-  );
-
-  for (const prop in body) {
-    if (body[prop]) {
-      console.log(body[prop] + " is truthy \n");
-    }
-  }
 
   return (
     body.firstName &&

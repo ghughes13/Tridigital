@@ -3,8 +3,6 @@ import axios from "axios";
 
 const CheckoutForm = () => {
   let changeColor = () => {
-    console.log(document.getElementById("priceTierId").value);
-
     let elements = document.querySelectorAll(".edit-color");
 
     elements.forEach(element => {
@@ -29,6 +27,8 @@ const CheckoutForm = () => {
   };
 
   let submitForm = () => {
+    document.getElementById("sbmt-form-btn").disabled = true;
+
     axios
       .post(
         "https://eloquent-hawking-0b4899.netlify.com/.netlify/functions/warmup-submission",
@@ -55,38 +55,18 @@ const CheckoutForm = () => {
       .catch(error => {
         console.error("bad submission");
         console.log(error);
+        document.getElementById("sbmt-form-btn").disabled = false;
       });
-
-    const payload = {
-      firstName: document.getElementById("firstName").value,
-      lastName: document.getElementById("lastName").value,
-      companyName: document.getElementById("companyName").value,
-      email: document.getElementById("email").value,
-      ccNumber: document.getElementById("ccNumber").value,
-      ccExpirationMonth: document.getElementById("ccExpirationMonth").value,
-      ccExpirationYear: document.getElementById("ccExpirationYear").value,
-      cvv: document.getElementById("cvv").value,
-      priceTierId: document.getElementById("priceTierId").value,
-      ccCardHolderName: document.getElementById("ccCardHolderName").value,
-    };
-
-    console.log(payload);
-
-    for (const prop in payload) {
-      if (payload[prop]) {
-        console.log(payload[prop] + " is truthy");
-      }
-    }
   };
 
   return (
     <form
       name="warmup"
       method="POST"
-      // onSubmit={e => {
-      //   submitForm();
-      //   // e.preventDefault();
-      // }}
+      onSubmit={e => {
+        submitForm();
+        e.preventDefault();
+      }}
       data-netlify="true"
     >
       <h3 className="blue-text form-title">
@@ -96,20 +76,20 @@ const CheckoutForm = () => {
         <div className="what-do-we-call-you">
           <div className="firstName">
             <label>First Name</label>
-            <input type="text" name="firstName" id="firstName" />
+            <input type="text" name="firstName" id="firstName" required />
           </div>
           <div className="lastName">
             <label>Last Name</label>
-            <input type="text" name="lastName" id="lastName" />
+            <input type="text" name="lastName" id="lastName" required />
           </div>
         </div>
         <div className="company">
           <label>Company Name</label>
-          <input type="text" name="companyName" id="companyName" />
+          <input type="text" name="companyName" id="companyName" required />
         </div>
         <div className="email">
           <label>What's Your Email Address?</label>
-          <input type="text" name="email" id="email" />
+          <input type="text" name="email" id="email" required />
         </div>
         <div className="field email-field">
           <label>Select Price Tier</label>
@@ -194,11 +174,16 @@ const CheckoutForm = () => {
             </div>
             <div>
               <label>Security Code</label>
-              <input type="text" name="cvv" id="cvv" />
+              <input type="text" name="cvv" id="cvv" required />
             </div>
           </div>
           <label>Cardholder Name</label>
-          <input type="text" name="ccCardHolderName" id="ccCardHolderName" />
+          <input
+            type="text"
+            name="ccCardHolderName"
+            id="ccCardHolderName"
+            required
+          />
         </div>
 
         <div className="checkbox-part">
@@ -242,9 +227,10 @@ const CheckoutForm = () => {
         <input type="hidden" name="form-name" value="contact" />
         <div className="sbmt-btn">
           <button
-            type="button"
+            type="submit"
             className="btn pink-button"
             onClick={submitForm}
+            id="sbmt-form-btn"
           >
             Subscribe
           </button>
