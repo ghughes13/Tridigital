@@ -33,10 +33,10 @@ function handleRequest(event, context, callback) {
     );
   }
 
-  postFormSubmission()
-    .then(createStripePaymentMethod)
+  createStripePaymentMethod()
     .then(createStripeCustomer)
     .then(createStripeSubscription)
+    .then(postFormSubmission)
     .then(() => {
       callback(null, {
         statusCode: 200,
