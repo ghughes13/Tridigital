@@ -72,6 +72,12 @@ const CheckoutForm = () => {
       <h3 className="blue-text form-title">
         Complete The Sign Up Form to Get Your Marketing Started
       </h3>
+      <div className="error">
+        <p>
+          Whoops! Looks like there was a error. Please make sure all form fields
+          are completely filled out and double check your credit card info.
+        </p>
+      </div>
       <div className="form-content">
         <div className="what-do-we-call-you">
           <div className="firstName">
