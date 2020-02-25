@@ -43,6 +43,7 @@ function handleRequest(event, context, callback) {
       });
     })
     .catch(error => {
+      console.log(error);
       sendErrorMessage(400, error, callback);
     });
 }
