@@ -5173,6 +5173,28 @@ main .download-col .pink-button {
   color: white;
 }
 
+.mkt-warmup-tos * {
+  color: white;
+}
+
+.mkt-warmup-tos h1 {
+  font-size: 60px;
+  margin-top: 50px;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.mkt-warmup-tos h2 {
+  font-size: 45px;
+  text-align: left;
+}
+
+.mkt-warmup-tos strong {
+  margin-top: 25px;
+  display: inline-block;
+}
+
 .sla-page h1 {
   font-size: 5vw;
   text-align: center;
@@ -5735,6 +5757,7 @@ body .warmup-page span.dollar-sigh {
   width: 100%;
   padding: 10px;
   border: solid #c9cbd9 1px;
+  background-color: white;
 }
 
 .warmup-signup .exp-date-and-cvv {
