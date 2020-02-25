@@ -29,33 +29,53 @@ const CheckoutForm = () => {
   };
 
   let submitForm = () => {
-    axios
-      .post(
-        "https://eloquent-hawking-0b4899.netlify.com/.netlify/functions/warmup-submission",
-        {
-          firstName: document.getElementById("firstName").value,
-          lastName: document.getElementById("lastName").value,
-          companyName: document.getElementById("companyName").value,
-          email: document.getElementById("email").value,
-          ccNumber: document.getElementById("ccNumber").value,
-          ccExpirationMonth: document.getElementById("ccExpirationMonth").value,
-          ccExpirationYear: document.getElementById("ccExpirationYear").value,
-          cvv: document.getElementById("cvv").value,
-          priceTierId: document.getElementById("priceTierId").value,
-          ccCardHolderName: document.getElementById("ccCardHolderName").value,
-        }
-      )
-      .then(response => {
-        console.log(response);
-        if (response.status === 200) {
-          console.log("good submission");
-          window.location.href = "https://tridigitalmarketing.com/thank-you/";
-        }
-      })
-      .catch(error => {
-        console.error("bad submission");
-        console.log(error);
-      });
+    // axios
+    //   .post(
+    //     "https://eloquent-hawking-0b4899.netlify.com/.netlify/functions/warmup-submission",
+    //     JSON.stringify({
+    //       firstName: document.getElementById("firstName").value,
+    //       lastName: document.getElementById("lastName").value,
+    //       companyName: document.getElementById("companyName").value,
+    //       email: document.getElementById("email").value,
+    //       ccNumber: document.getElementById("ccNumber").value,
+    //       ccExpirationMonth: document.getElementById("ccExpirationMonth").value,
+    //       ccExpirationYear: document.getElementById("ccExpirationYear").value,
+    //       cvv: document.getElementById("cvv").value,
+    //       priceTierId: document.getElementById("priceTierId").value,
+    //       ccCardHolderName: document.getElementById("ccCardHolderName").value,
+    //     })
+    //   )
+    //   .then(response => {
+    //     console.log(response);
+    //     if (response.status === 200) {
+    //       console.log("good submission");
+    //       window.location.href = "https://tridigitalmarketing.com/thank-you/";
+    //     }
+    //   })
+    //   .catch(error => {
+    //     console.error("bad submission");
+    //     console.log(error);
+    //   });
+    const payload = {
+      firstName: document.getElementById("firstName").value,
+      lastName: document.getElementById("lastName").value,
+      companyName: document.getElementById("companyName").value,
+      email: document.getElementById("email").value,
+      ccNumber: document.getElementById("ccNumber").value,
+      ccExpirationMonth: document.getElementById("ccExpirationMonth").value,
+      ccExpirationYear: document.getElementById("ccExpirationYear").value,
+      cvv: document.getElementById("cvv").value,
+      priceTierId: document.getElementById("priceTierId").value,
+      ccCardHolderName: document.getElementById("ccCardHolderName").value,
+    };
+
+    console.log(payload);
+
+    for (const prop in payload) {
+      if (payload[prop]) {
+        console.log(payload[prop] + " is truthy");
+      }
+    }
   };
 
   return (

@@ -78,6 +78,12 @@ function hasValidBody() {
       isValidPriceTierId
   );
 
+  for (const prop in body) {
+    if (body[prop]) {
+      console.log(body[prop] + " is truthy \n");
+    }
+  }
+
   return (
     body.firstName &&
     body.lastName &&
