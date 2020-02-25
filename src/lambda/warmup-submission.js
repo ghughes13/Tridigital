@@ -43,8 +43,7 @@ function handleRequest(event, context, callback) {
       });
     })
     .catch(error => {
-      sendErrorMessage(400, error.toString(), callback);
-      response.send(error);
+      sendErrorMessage(400, error, callback);
     });
 }
 
