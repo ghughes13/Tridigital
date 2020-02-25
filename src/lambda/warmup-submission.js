@@ -65,6 +65,19 @@ function hasValidBody() {
     "priceTier: " + body.priceTierId
   );
 
+  console.log(
+    body.firstName &&
+      body.lastName &&
+      body.companyName &&
+      body.email &&
+      body.ccNumber &&
+      body.ccExpirationMonth &&
+      body.ccExpirationYear &&
+      body.ccCardHolderName &&
+      body.cvv &&
+      isValidPriceTierId
+  );
+
   return (
     body.firstName &&
     body.lastName &&
