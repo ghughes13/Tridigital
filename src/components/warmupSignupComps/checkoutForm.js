@@ -53,8 +53,7 @@ const CheckoutForm = () => {
         }
       })
       .catch(error => {
-        console.log("bad submission");
-        console.log(JSON.stringify(error));
+        document.querySelector('.error').style.display = 'block'
         document.getElementById("sbmt-form-btn").disabled = false;
       });
   };
@@ -72,12 +71,6 @@ const CheckoutForm = () => {
       <h3 className="blue-text form-title">
         Complete The Sign Up Form to Get Your Marketing Started
       </h3>
-      <div className="error">
-        <p>
-          Whoops! Looks like there was a error. Please make sure all form fields
-          are completely filled out and double check your credit card info.
-        </p>
-      </div>
       <div className="form-content">
         <div className="what-do-we-call-you">
           <div className="firstName">
@@ -231,6 +224,12 @@ const CheckoutForm = () => {
           </label>
         </div>
         <input type="hidden" name="form-name" value="contact" />
+        <div className="error">
+        <p>
+          Whoops! Looks like there was a error. Please make sure all form fields
+          are completely filled out and double check your credit card info.
+        </p>
+      </div>
         <div className="sbmt-btn">
           <button
             type="submit"
