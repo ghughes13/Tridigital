@@ -135,8 +135,8 @@ function createStripeSubscription() {
       {
         customer: stripeCustomerId,
         items: [
-          { plan: "tridigitalmarketingwarmup-testinit_25_1month_150000" },
-        ], //plans[body.priceTierId]
+          { plan: plans[body.priceTierId] }, //"tridigitalmarketingwarmup-testinit_25_1month_150000"
+        ],
       },
       (error, subscription) => {
         if (subscription) {
