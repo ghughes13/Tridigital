@@ -5869,6 +5869,38 @@ div.warmup-signup .sbmt-btn .btn.pink-button:hover {
   font-weight: 700;
 }
 
+.warmup-signup .error {
+  text-align: center;
+  margin-top: 25px;
+  background: rgba(255,223,224,.25);
+  color: black;
+  padding: 20px 25px 1px;
+  border-top: solid #C89797 1px;
+  border-bottom: solid #C89797 1px;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .warmup-signup .swish:after, .warmup-questionaire .swish:after {
+    left: -5vw;
+    width: 135vw;
+  }
+
+  .contact-us .form-title, .warmup-page .form-title, .warmup-signup .form-title {
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  .warmup-signup .exp-date-and-cvv>div {
+      width: 100%;
+  }
+
+  .warmup-signup .exp-date-and-cvv {
+      flex-wrap: wrap;
+  }
+}
+
 /****END WARM UP SIGNUP********/
 
 /****WARM UP QUESTIONAIRE*************/
