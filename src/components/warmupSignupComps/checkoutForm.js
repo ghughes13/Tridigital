@@ -28,7 +28,7 @@ const CheckoutForm = () => {
 
   let submitForm = () => {
     document.getElementById("sbmt-form-btn").disabled = true;
-
+    console.log("clicked");
     axios
       .post(
         "https://eloquent-hawking-0b4899.netlify.com/.netlify/functions/warmup-submission",
@@ -53,7 +53,7 @@ const CheckoutForm = () => {
         }
       })
       .catch(error => {
-        document.querySelector('.error').style.display = 'block'
+        document.querySelector(".error").style.display = "block";
         document.getElementById("sbmt-form-btn").disabled = false;
       });
   };
@@ -225,11 +225,12 @@ const CheckoutForm = () => {
         </div>
         <input type="hidden" name="form-name" value="contact" />
         <div className="error">
-        <p>
-          Whoops! Looks like there was a error. Please make sure all form fields
-          are completely filled out and double check your credit card info.
-        </p>
-      </div>
+          <p>
+            Whoops! Looks like there was a error. Please make sure all form
+            fields are completely filled out and double check your credit card
+            info.
+          </p>
+        </div>
         <div className="sbmt-btn">
           <button
             type="submit"

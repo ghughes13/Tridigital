@@ -216,10 +216,7 @@ const WarmUp = () => (
               <li>Fully set-up Honey CRM</li>
               <li>30 Qualified Leads</li>
             </ul>
-            <a
-              className="pink-btn btn"
-              href="http://warmup.tridigitalmarketing.com/marketing-warmup-signup/"
-            >
+            <a className="pink-btn btn" href="/marketing-warmup-signup/">
               Sign Up
             </a>
           </Col>
@@ -241,10 +238,7 @@ const WarmUp = () => (
               <li>Fully set-up Honey CRM</li>
               <li>60 Qualified Leads</li>
             </ul>
-            <a
-              className="pink-btn btn"
-              href="http://warmup.tridigitalmarketing.com/marketing-warmup-signup/"
-            >
+            <a className="pink-btn btn" href="/marketing-warmup-signup/">
               Sign Up
             </a>
           </Col>
@@ -266,10 +260,7 @@ const WarmUp = () => (
               <li>Fully set-up Honey CRM</li>
               <li>120 Qualified Leads</li>
             </ul>
-            <a
-              className="pink-btn btn"
-              href="http://warmup.tridigitalmarketing.com/marketing-warmup-signup/"
-            >
+            <a className="pink-btn btn" href="/marketing-warmup-signup/">
               Sign Up
             </a>
           </Col>
