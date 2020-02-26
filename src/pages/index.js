@@ -216,7 +216,7 @@ const IndexPage = () => {
               <p className="pink-text heavy-weight">
                 Leverage that and create marketing that’s unique.
               </p>
-              <a className="white-text pink-button" href="/process">
+              <a className="white-text pink-button hide-me" href="/process">
                 Learn More{" "}
               </a>
             </Col>
@@ -338,7 +338,7 @@ const IndexPage = () => {
                   start focusing on growing your business the right way.
                 </span>
               </p>
-              <a className="white-text pink-button" href="/process">
+              <a className="white-text pink-button hide-me" href="/process">
                 Learn More{" "}
               </a>
             </Col>
@@ -364,7 +364,7 @@ const IndexPage = () => {
                   you’ll convert more MSP leads to customers than ever before.
                 </span>
               </p>
-              <a className="white-text pink-button" href="/process">
+              <a className="white-text pink-button hide-me" href="/process">
                 Learn More{" "}
               </a>
             </Col>
