@@ -43,7 +43,6 @@ function handleRequest(event, context, callback) {
       });
     })
     .catch(error => {
-      console.log(error);
       sendErrorMessage(400, error, callback);
     });
 }
@@ -69,11 +68,12 @@ function hasValidBody() {
 }
 
 function sendErrorMessage(statusCode, message, callback) {
-  console.log(message.type.code);
+  console.error(message);
+
   callback(null, {
     statusCode,
     headers,
-    body: JSON.stringify(message),
+    body: JSON.stringify({ message }),
   });
 }
 
