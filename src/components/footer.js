@@ -41,7 +41,7 @@ const Footer = () => (
       </Col>
       <Col>
         <h2>Connect</h2>
-        <p>Contact Us</p>
+        <p><a href="/contact-us">Contact Us</a></p>
         <ul>
           <li>
             <a

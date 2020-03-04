@@ -94,8 +94,8 @@ const Header = ({ siteTitle }) => {
                 >
                   Marketing Warmup
                 </a>
-                <a href="/contact-us" className="button is-light">
-                  Contact Us
+                <a href="/custom-marketing" className="button is-light">
+                  Custom Marketing
                 </a>
               </div>
             </div>
