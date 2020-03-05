@@ -5,11 +5,11 @@ import { Container } from "react-bootstrap"
 
 const AboutUs = () => {
   return (
-    <Layout>
-      <SEO title="Terms of Service" />
-      <div className="TOS-Page">
+    <Layout opaqueHeader>
+      <SEO title="Privary Policy" />
+      <div className="privacy-policy-page">
         <Container className="container">
-          <h2>PRIVACY POLICY</h2>
+          <h1>PRIVACY POLICY</h1>
           <p>
             This Privacy Policy discloses the privacy practices for the
             www.tridigitalmarketing.com site and various related services

@@ -7,7 +7,7 @@ import { Waypoint } from "react-waypoint"
 
 const ContactUs = () => (
   <Layout>
-    <SEO title="Resview" />
+    <SEO title="Reviews" />
     <div className="reviews">
       <Container className="hero-section transparent-hero container flexed blue-gradient-background">
         <Row className="">
@@ -25,100 +25,110 @@ const ContactUs = () => (
             />
           </Col>
         </Row>
-        <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew className="margin-top-90" number="1" type="half" />
-          <SingleReivew className="margin-top-90" number="2" type="half" />
-          <Waypoint
-            onEnter={() => {
-              document
-                .querySelector(".review-container.number-0")
-                .classList.add("slide-up")
-              document
-                .querySelector(".review-container.number-1")
-                .classList.add("slide-up", "odd")
-            }}
-          />
-        </Row>
       </Container>
       <Container className="container reviews-container blue-swish">
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="3" type="half" />
-          <SingleReivew number="4" type="half" />
+          <SingleReivew number="24" type="half" />
+          <SingleReivew number="1" type="half" />
           <Waypoint
             onEnter={() => {
               document
-                .querySelector(".review-container.number-2")
+                .querySelector(".review-container.number-23")
+                .classList.add("slide-up")
+              document
+                .querySelector(".review-container.number-0")
+                .classList.add("slide-up")
+            }}
+          />
+        </Row>
+        <Row className="two-columns full-width-row content-right align-middle">
+          <SingleReivew number="2" type="half" />
+          <SingleReivew number="3" type="half" />
+          <Waypoint
+            onEnter={() => {
+              document
+                .querySelector(".review-container.number-1")
                 .classList.add("slide-up", "odd")
+              document
+                  .querySelector(".review-container.number-2")
+                  .classList.add("slide-up", "odd")
+            }}
+          />
+        </Row>
+        <Row className="two-columns full-width-row content-right align-middle">
+          <SingleReivew number="4" type="half" />
+          <SingleReivew number="5" type="half" />
+          <Waypoint
+            onEnter={() => {
               document
                 .querySelector(".review-container.number-3")
                 .classList.add("slide-up")
-            }}
-          />
-        </Row>
-        <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="5" type="half" />
-          <SingleReivew number="6" type="half" />
-          <Waypoint
-            onEnter={() => {
               document
                 .querySelector(".review-container.number-4")
                 .classList.add("slide-up")
+            }}
+          />
+        </Row>
+        <Row className="two-columns full-width-row content-right align-middle">
+          <SingleReivew number="6" type="half" />
+          <SingleReivew number="7" type="half" />
+          <Waypoint
+            onEnter={() => {
               document
                 .querySelector(".review-container.number-5")
                 .classList.add("slide-up", "odd")
-            }}
-          />
-        </Row>
-        <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="7" type="half" />
-          <SingleReivew number="8" type="half" />
-          <Waypoint
-            onEnter={() => {
               document
                 .querySelector(".review-container.number-6")
                 .classList.add("slide-up", "odd")
+            }}
+          />
+        </Row>
+        <Row className="two-columns full-width-row content-right align-middle">
+          <SingleReivew number="8" type="half" />
+          <SingleReivew number="9" type="half" />
+          <Waypoint
+            onEnter={() => {
               document
                 .querySelector(".review-container.number-7")
                 .classList.add("slide-up")
-            }}
-          />
-        </Row>
-        <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="9" type="half" />
-          <SingleReivew number="10" type="half" />
-          <Waypoint
-            onEnter={() => {
               document
                 .querySelector(".review-container.number-8")
                 .classList.add("slide-up")
+            }}
+          />
+        </Row>
+        <Row className="two-columns full-width-row content-right align-middle">
+          <SingleReivew number="10" type="half" />
+          <SingleReivew number="11" type="half" />
+          <Waypoint
+            onEnter={() => {
               document
                 .querySelector(".review-container.number-9")
                 .classList.add("slide-up", "odd")
-            }}
-          />
-        </Row>
-        <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="11" type="half" />
-          <SingleReivew number="12" type="half" />
-          <Waypoint
-            onEnter={() => {
               document
                 .querySelector(".review-container.number-10")
                 .classList.add("slide-up", "odd")
+            }}
+          />
+        </Row>
+        <Row className="two-columns full-width-row content-right align-middle">
+          <SingleReivew number="12" type="half" />
+          <SingleReivew number="13" type="half" />
+          <Waypoint
+            onEnter={() => {
               document
                 .querySelector(".review-container.number-11")
+                .classList.add("slide-up")
+              document
+                .querySelector(".review-container.number-12")
                 .classList.add("slide-up")
             }}
           />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="13" type="half" />
           <SingleReivew number="14" type="half" />
           <Waypoint
             onEnter={() => {
-              document
-                .querySelector(".review-container.number-12")
-                .classList.add("slide-up")
               document
                 .querySelector(".review-container.number-13")
                 .classList.add("slide-up", "odd")

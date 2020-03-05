@@ -5127,55 +5127,43 @@ main .download-col .pink-button {
 /****END WISTIA STYLES********/
 
 /****TOS STYLES************/
-.TOS-Page,
-.sla-page {
-  background: #0043f5;
+.tos-page {
+  padding-top: 50px;
 }
 
-.TOS-Page .container,
-.sla-page .container {
+.tos-page .container {
   max-width: 75%;
 }
 
-.TOS-Page h2 {
+.tos-page h2 {
   text-align: center;
-  color: white;
 }
 
-.TOS-Page h5 {
+.tos-page h5 {
   font-size: 18px;
   font-weight: 700;
   font-family: "Poppins";
   margin-top: 25px;
-  color: white;
 }
 
-.TOS-Page p,
-.sla-page p {
+.tos-page p {
   margin-top: 15px;
   margin-bottom: 20px;
   font-size: 18px;
-  color: white;
 }
 
-.TOS-Page li {
+.tos-page li {
   margin-left: 15px;
   margin-top: 10px;
-  color: white;
 }
 
-.TOS-Page h4 {
+.tos-page h4 {
   font-size: 18px;
   font-weight: 700;
   font-family: "Poppins";
-  color: white;
 }
 
-.mkt-warmup-tos * {
-  color: white;
-}
-
-.mkt-warmup-tos h1 {
+.tos-page h1 {
   font-size: 60px;
   margin-top: 50px;
   display: block;
@@ -5183,57 +5171,74 @@ main .download-col .pink-button {
   margin-bottom: 25px;
 }
 
-.mkt-warmup-tos h2 {
+.tos-page h2 {
   font-size: 45px;
   text-align: left;
 }
 
-.mkt-warmup-tos strong {
+.tos-page strong {
   margin-top: 25px;
   display: inline-block;
 }
 
-.sla-page h1 {
-  font-size: 5vw;
+/***** PRIVARY POLICY ********/
+/****TOS STYLES************/
+.privacy-policy-page {
+  padding-top: 50px;
+}
+
+.privacy-policy-page .container {
+  max-width: 75%;
+}
+
+.privacy-policy-page h2 {
   text-align: center;
-  margin: 1em 0 0.5em;
-  color: white;
 }
 
-.sla-page h2 {
-  font-size: 3vw;
-  color: white;
-}
-
-.sla-page h3 {
-  font-size: 1.5vw;
-  margin-top: 25px;
+.privacy-policy-page h5 {
+  font-size: 18px;
   font-weight: 700;
   font-family: "Poppins";
-  color: white;
+  margin-top: 25px;
 }
 
-.sla-page h4 {
-  font-size: 1vw;
-  color: white;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: -10px;
-}
-
-.sla-page a {
-  display: block;
+.privacy-policy-page p {
+  margin-top: 15px;
+  margin-bottom: 20px;
   font-size: 18px;
-  color: white;
-  margin: 10px 0;
-  transition-duration: 0.5s;
-  text-decoration: none;
 }
 
-.sla-page a:hover {
-  color: #ff3975;
-  text-decoration: none;
+.privacy-policy-page li {
+  margin-left: 15px;
+  margin-top: 10px;
 }
+
+.privacy-policy-page h4 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Poppins";
+}
+
+.privacy-policy-page h1 {
+  font-size: 60px;
+  margin-top: 50px;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.privacy-policy-page h2 {
+  font-size: 45px;
+  text-align: left;
+}
+
+.privacy-policy-page strong {
+  margin-top: 25px;
+  display: inline-block;
+}
+
+
+/***** SITEMAP ***************/
 
 h3.sitemap {
   margin-top: 125px;

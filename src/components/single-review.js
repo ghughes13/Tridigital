@@ -15,7 +15,7 @@ export default function SingleReivew(props) {
           }
         >
           <YourVideo props={data[number - 1]} />
-          <div class="data-container">
+          <div className="data-container">
             <p className="company-name">{data[number - 1].name}</p>
             <p className="pink-text">
               Total leads: {data[number - 1].leadName}
@@ -84,7 +84,7 @@ export default function SingleReivew(props) {
           }
         >
           <img src={data[number - 1].video} alt="video" />
-          <div class="data-container">
+          <div className="data-container">
             <p className="company-name">{data[number - 1].name}</p>
             <p className="pink-text">{data[number - 1].leadName}</p>
             <p className="quote">{data[number - 1].review}</p>
@@ -151,7 +151,7 @@ export default function SingleReivew(props) {
         }
       >
         <img src={data[number - 1].video} alt="video" />
-        <div class="data-container">
+        <div className="data-container">
           <p className="company-name">{data[number - 1].name}</p>
           <p className="pink-text">{data[number - 1].leadName}</p>
           <div className="svg">

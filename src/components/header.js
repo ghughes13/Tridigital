@@ -2,13 +2,15 @@ import PropTypes from "prop-types";
 import React, { useEffect } from "react";
 import Burger from "./burger.js";
 
-const Header = ({ siteTitle }) => {
+const Header = ({ siteTitle, opaque }) => {
   useEffect(() => {
     window.addEventListener("scroll", function() {
-      if (window.scrollY === 0) {
-        document.querySelector("header").classList.remove("end-transparency");
-      } else {
-        document.querySelector("header").classList.add("end-transparency");
+      if (!opaque) {
+        if (window.scrollY === 0) {
+          document.querySelector("header").classList.remove("end-transparency");
+        } else {
+          document.querySelector("header").classList.add("end-transparency");
+        }
       }
     });
 
@@ -23,7 +25,7 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header
-      className="fixed"
+      className={`fixed ${ opaque ? "end-transparency" : ""}`}
       style={{
         fontFamily: "Poppins",
         textTransform: "uppercase",

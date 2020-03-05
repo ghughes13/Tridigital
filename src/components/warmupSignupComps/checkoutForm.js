@@ -214,7 +214,7 @@ const CheckoutForm = () => {
           />
           <label>
             I have read and agree to the{" "}
-            <a className="read-me" href="/marketing-warmup-tos" target="_blank">
+            <a className="read-me" href="/terms-of-service" target="_blank">
               terms of service
             </a>
             , and the{" "}
