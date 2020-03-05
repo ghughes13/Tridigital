@@ -84,7 +84,7 @@ const Footer = () => (
           </li>
           <li>
             <a
-              href="https://www.youtube.com/channel/UCwWkMboAAbFMYIAeC2EXneQ"
+              href="https://www.youtube.com/user/leadmagztraining/featured"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -141,9 +141,8 @@ const Footer = () => (
 
     <Row className="socket">
       <p>
-        © 2020 - TriDigital | <a href="/termsOfService">Terms if Service</a> |{" "}
-        <a href="/privacy-policy">Privacy Policy</a> |{" "}
-        <a href="/sla">Security Level Agreement </a>
+        © 2020 - TriDigital | <a href="/terms-of-service">Terms of Service</a> |{" "}
+        <a href="/privacy-policy">Privacy Policy</a>
       </p>
       <p>
         <a href="/site-map">Sitemap</a> |{" "}

@@ -12,7 +12,7 @@ export default class YourVideo extends React.Component {
     const script2 = document.createElement("script")
 
     script1.src =
-      "https://fast.wistia.com/embed/medias/scialrmh2w.jsonp"
+      "https://fast.wistia.com/embed/medias/td8c3fksrg.jsonp"
     script1.async = true
 
     script2.src = "https://fast.wistia.com/assets/external/E-v1.js"
@@ -25,7 +25,7 @@ export default class YourVideo extends React.Component {
   render() {
     return (
       <div className="video-btn">
-        <span className="wistia_embed wistia_async_scialrmh2w popover=true popoverAnimateThumbnail=true popoverContent=link">
+        <span className="wistia_embed wistia_async_td8c3fksrg popover=true popoverAnimateThumbnail=true popoverContent=link">
         <a href="#">
                   <img
                     src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-3451-2.png"

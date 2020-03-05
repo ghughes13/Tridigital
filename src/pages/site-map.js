@@ -27,13 +27,10 @@ const AboutUs = () => {
               <a href="/contact-us">Contact Us</a>
             </li>
             <li>
-              <a href="/termsOfService">Terms Of Service</a>
+              <a href="/terms-of-service">Terms Of Service</a>
             </li>
             <li>
               <a href="/privacy-policy">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="/sla">Security Level Agreement</a>
             </li>
           </ul>
         </Container>
