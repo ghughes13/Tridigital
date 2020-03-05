@@ -4307,10 +4307,16 @@ header.about-us-header.end-transparency {
 }
 
 /****CONTACT US************/
-
 .contact-us h2 {
   font-size: 4.5vw;
   margin-top: 125px;
+}
+
+.contact-us h3 {
+  font-family: "Oswald";
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .contact-us .pink-blob-background::before {
@@ -4710,6 +4716,25 @@ main .download-col .pink-button {
 }
 
 /******END CONTACT US******/
+
+/**** CUSTOM MARKETING PAGE ******/
+.custom-marketing-page .pink-blob-background::before {
+  content: "";
+  background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/custom-marketing-email.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 2350px;
+  background-position: -76px -700px;
+}
+
+.custom-marketing-page::before {
+  content: "";
+  background: none;
+}
 
 /*******REVIEWS************/
 

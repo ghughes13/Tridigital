@@ -21,10 +21,10 @@ const IndexPage = () => {
           <Row className="two-columns">
             <Col className="content-container column">
               <h1 className="white-text max-width-600 uppercase">
-                We Are the IT Industry’s Custom Marketing Agency
+                We Are Your Innovative Channel Marketing Agency
               </h1>
               <p className="white-text subtext max-width-550">
-                We’ve generated over 100,000 MSP leads. . . and counting.
+                We’ve generated over 100,000 leads for MSPs and counting
               </p>
               <div className="asSeen">
                 <p className="as-seen-text">As seen in:</p>
