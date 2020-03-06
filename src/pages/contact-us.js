@@ -21,6 +21,7 @@ const ContactUs = () => (
                 id="contact-form"
                 className="Consultation"
                 onSubmit={e => {
+                  Honey();
                   e.preventDefault()
                   document.querySelector("#contact-form").style.display = "none"
                   document.querySelector(".contact-thank-you").style.display =
