@@ -23,13 +23,13 @@ const AboutUs = () => {
           </Row>
           <img
             className="blob-graphic right-blob"
-            src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"
+            src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/clear-blob.svg"
             alt=""
           ></img>
           <Row className="two-columns full-width-row content-right align-middle content-first">
             <Col className="content-container centered-text">
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/heart.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2019/11/heart.png"
                 alt="heart"
                 className="scale-img first"
               />
@@ -77,7 +77,7 @@ const AboutUs = () => {
             </Col>
             <Col className="content-container centered-text">
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/mask.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2019/11/mask.png"
                 alt="mask"
                 className="scale-img second"
               />
@@ -92,14 +92,14 @@ const AboutUs = () => {
           </Row>
           <img
             className="blob-graphic left-blob"
-            src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/about-us-left-svg.svg"
+            src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/about-us-left-svg.svg"
             alt=""
           ></img>
           <Row className="two-columns full-width-row content-right align-middle content-third">
             <Col className="content-container centered-text">
               <img
                 className="eggs-img scale-img third"
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/Egg.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2019/11/Egg.png"
                 alt="eggs"
               />
               <Waypoint
@@ -146,7 +146,7 @@ const AboutUs = () => {
             </Col>
             <Col className="content-container centered-text">
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/draw.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2019/11/draw.png"
                 alt="drawing"
                 className="scale-img fifth"
               />
@@ -162,7 +162,7 @@ const AboutUs = () => {
           <Row className="two-columns full-width-row content-right align-middle content-fifth">
             <Col className="content-container centered-text">
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/paint.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2019/11/paint.png"
                 alt="paint"
                 className="scale-img sixth"
               />

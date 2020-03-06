@@ -118,7 +118,7 @@ const CheckoutForm = () => {
               </span>
             </p>
             <img
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/Group-3452-1.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/Group-3452-1.png"
               alt="credit-cards"
             />
           </div>

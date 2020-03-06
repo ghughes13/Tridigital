@@ -30,12 +30,12 @@ const Footer = () => (
         </p>
         <img
           className="certGraphic"
-          src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/google-partners.jpg"
+          src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2019/10/google-partners.jpg"
           alt="google partners"
         ></img>
         <img
           className="certGraphic"
-          src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/honey-cert.jpg"
+          src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2019/10/honey-cert.jpg"
           alt="honey partner"
         ></img>
       </Col>
@@ -50,7 +50,7 @@ const Footer = () => (
               rel="noopener noreferrer"
             >
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/twitter.svg"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/twitter.svg"
                 alt="twitter"
               ></img>
               Twitter
@@ -63,7 +63,7 @@ const Footer = () => (
               rel="noopener noreferrer"
             >
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/fb.svg"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/fb.svg"
                 alt="facebook"
               ></img>
               Facebook
@@ -76,7 +76,7 @@ const Footer = () => (
               rel="noopener noreferrer"
             >
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/instagram.svg"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/instagram.svg"
                 alt="instagram"
               ></img>
               Instagram
@@ -89,7 +89,7 @@ const Footer = () => (
               rel="noopener noreferrer"
             >
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/youtube.svg"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/youtube.svg"
                 alt="youtube"
               ></img>
               Youtube

@@ -58,18 +58,18 @@ const Header = ({ siteTitle, opaque }) => {
           <a className="navbar-item" href="/">
             <img
               className="logo first-logo"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/TD-logo-w.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2019/10/TD-logo-w.png"
               alt="tridigital logo white"
             />
             <img
               className="logo second-logo"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Group-11.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2019/12/Group-11.png"
               alt="tridigital logo colored"
             />
           </a>
           <Burger />
           <img
-            src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/Icon.svg"
+            src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/Icon.svg"
             className="search"
             alt="flavicon"
           />
@@ -90,7 +90,6 @@ const Header = ({ siteTitle, opaque }) => {
             <div className="navbar-item">
               <div className="buttons">
                 <a
-                  // href="http://marketwarmup.wpengine.com/marketing-warmup/"
                   href="/marketing-warmup"
                   className="button first"
                 >

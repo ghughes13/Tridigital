@@ -33,7 +33,7 @@ const IndexPage = () => {
                   target="_blank"
                 >
                   <img
-                    src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/Forbes.svg"
+                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/Forbes.svg"
                     alt="forbes"
                   />
                 </a>
@@ -43,7 +43,7 @@ const IndexPage = () => {
                 >
                   <img
                     className="margin-left-25px"
-                    src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/ChannelPro.svg "
+                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/ChannelPro.svg "
                     alt="chanelpro"
                   />
                 </a>
@@ -108,7 +108,7 @@ const IndexPage = () => {
           </svg>
           <img
             className="accent-gradient-circle"
-            src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/gradient-circle.svg"
+            src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/gradient-circle.svg"
             alt=""
           ></img>
         </Container>
@@ -144,57 +144,57 @@ const IndexPage = () => {
           <div className="home-animation-section">
             <img
               className="site-img one"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Dash2.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Dash2.png"
               alt=""
             ></img>
             <img
               className="site-img two"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Compass.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Compass.png"
               alt=""
             ></img>
             <img
               className="site-img three"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Brochure.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Brochure.png"
               alt=""
             ></img>
             <img
               className="site-img four"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Imagis.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Imagis.png"
               alt=""
             ></img>
             <img
               className="site-img five"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-3022.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Group-3022.png"
               alt=""
             ></img>
             <img
               className="site-img six"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Business_Card.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Business_Card.png"
               alt=""
             ></img>
             <img
               className="site-img seven"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-3020.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Group-3020.png"
               alt=""
             ></img>
             <img
               className="site-img eight"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/BECA.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/BECA.png"
               alt=""
             ></img>
             <img
               className="site-img nine"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Easetech.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Easetech.png"
               alt=""
             ></img>
             <img
               className="site-img ten"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Secure_Net.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Secure_Net.png"
               alt=""
             ></img>
           </div>
           <img
-            src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/white-swoop.svg"
+            src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/white-swoop.svg"
             alt="white-curve"
             className="white-swoop"
           ></img>
@@ -223,7 +223,7 @@ const IndexPage = () => {
             <Col className="content-container center-image-container video-collage">
               <div className="video-1">
                 <video
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/home-videos/Computex%204%20Export_R.mp4"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/home-videos/Computex%204%20Export_R.mp4"
                   autoPlay
                   muted
                   loop
@@ -236,7 +236,7 @@ const IndexPage = () => {
               </div>
               <div className="video-2">
                 <video
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/home-videos/Royal-It-4-Export_R%20%281%29.mp4"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/home-videos/Royal-It-4-Export_R%20%281%29.mp4"
                   autoPlay
                   muted
                   loop
@@ -249,7 +249,7 @@ const IndexPage = () => {
               </div>
               <div className="video-3">
                 <video
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/home-videos/BEI-%E2%80%93-4-export_R%20%281%29.mp4"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/home-videos/BEI-%E2%80%93-4-export_R%20%281%29.mp4"
                   autoPlay
                   muted
                   loop
@@ -262,7 +262,7 @@ const IndexPage = () => {
               </div>
               <div className="video-4">
                 <video
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/home-videos/GB-Tech-4-Export_R%20%281%29.mp4"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/home-videos/GB-Tech-4-Export_R%20%281%29.mp4"
                   autoPlay
                   muted
                   loop
@@ -275,7 +275,7 @@ const IndexPage = () => {
               </div>
               <div className="video-5">
                 <video
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/home-videos/Stronghold-Data-4-export_R%20%281%29.mp4"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/home-videos/Stronghold-Data-4-export_R%20%281%29.mp4"
                   autoPlay
                   muted
                   loop
@@ -288,7 +288,7 @@ const IndexPage = () => {
               </div>
               <div className="video-6">
                 <video
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/home-videos/TrendMicro_R.mp4"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/home-videos/TrendMicro_R.mp4"
                   autoPlay
                   muted
                   loop
@@ -303,7 +303,7 @@ const IndexPage = () => {
           </Row>
           <img
             className="blob-graphic"
-            src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"
+            src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/clear-blob.svg"
             alt=""
           ></img>
         </Container>
@@ -311,7 +311,7 @@ const IndexPage = () => {
           <Row className="two-columns full-width-row content-right align-middle top-layer">
             <Col className="content-container video-container">
               <video
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/10/Lead-Categorizing-Export_v2R.mp4"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2019/10/Lead-Categorizing-Export_v2R.mp4"
                 autoPlay
                 muted
                 loop
@@ -345,7 +345,7 @@ const IndexPage = () => {
           </Row>
           <img
             className="blob-graphic"
-            src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/clear-blob.svg"
+            src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/clear-blob.svg"
             alt=""
           ></img>
         </Container>
@@ -370,7 +370,7 @@ const IndexPage = () => {
             </Col>
             <Col className="content-container video-container">
               <video
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/home-videos/Send-Marketing-COllaterall_R_v2%20%281%29.mp4"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/home-videos/Send-Marketing-COllaterall_R_v2%20%281%29.mp4"
                 autoPlay
                 muted
                 loop

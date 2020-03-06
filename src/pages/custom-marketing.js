@@ -92,7 +92,7 @@ const CustomMarketing = () => (
               target="_blank"
             >
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Image-95.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Image-95.png"
                 alt="brochure img"
               />
             </a>

@@ -26,7 +26,7 @@ const WarmUp = () => (
           <Col className="content-container column second-col">
             <img
               class="collaterals"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/collateral.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/collateral.png"
               alt="collaterals"
             />
           </Col>
@@ -124,7 +124,7 @@ const WarmUp = () => (
           <Col className="content-container column">
             <img
               class="collaterals"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/landing-pages.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/landing-pages.png"
               alt="collaterals"
             />
             <p>Landing Pages</p>
@@ -132,7 +132,7 @@ const WarmUp = () => (
           <Col className="content-container column ">
             <img
               class="collaterals"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/whitepapers.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/whitepapers.png"
               alt="collaterals"
             />
             <p>White Papers</p>
@@ -140,7 +140,7 @@ const WarmUp = () => (
           <Col className="content-container column ">
             <img
               class="collaterals"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/ebooks.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/ebooks.png"
               alt="collaterals"
             />
             <p>eBooks</p>
@@ -148,7 +148,7 @@ const WarmUp = () => (
           <Col className="content-container column ">
             <img
               class="collaterals"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/videos.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/videos.png"
               alt="collaterals"
             />
             <p>Videos</p>
@@ -158,7 +158,7 @@ const WarmUp = () => (
           <Col className="content-container column ">
             <img
               class="collaterals"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/email-campaigns.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/email-campaigns.png"
               alt="collaterals"
             />
             <p>Email Campaigns</p>
@@ -166,7 +166,7 @@ const WarmUp = () => (
           <Col className="content-container column ">
             <img
               class="collaterals"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/coordinator.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/coordinator.png"
               alt="collaterals"
             />
             <p>Marketing Coordinator</p>
@@ -174,7 +174,7 @@ const WarmUp = () => (
           <Col className="content-container column ">
             <img
               class="collaterals"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/honey-crm.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/honey-crm.png"
               alt="collaterals"
             />
             <p>Honey CRM</p>
@@ -182,7 +182,7 @@ const WarmUp = () => (
           <Col className="content-container column ">
             <img
               class="collaterals"
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/02/videos.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/videos.png"
               alt="collaterals"
             />
             <p>10 Qualified Leads /mo</p>

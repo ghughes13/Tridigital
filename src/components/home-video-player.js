@@ -28,7 +28,7 @@ export default class YourVideo extends React.Component {
         <span className="wistia_embed wistia_async_td8c3fksrg popover=true popoverAnimateThumbnail=true popoverContent=link">
         <a href="#">
                   <img
-                    src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-3451-2.png"
+                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Group-3451-2.png"
                     alt="play button"
                   ></img>
                 </a>

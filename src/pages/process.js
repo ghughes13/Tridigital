@@ -47,23 +47,23 @@ const Process = () => (
           <Col>
             <div className="warmup-img-container desktop-img transfer">
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Untitled-1.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Untitled-1.png"
                 className="questionaire-page third"
                 alt="websites and questionaires"
               />
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/2.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/2.png"
                 className="questionaire-page second"
                 alt="websites and questionaires"
               />
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-3452-2.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Group-3452-2.png"
                 className="questionaire-page first"
                 alt="websites and questionaires"
               />
             </div>
             <img
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-3451-1.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Group-3451-1.png"
               className="mobile-img transfer"
               alt="websites and questionaires"
             />
@@ -75,12 +75,12 @@ const Process = () => (
         <Row className="two-columns full-width-row content-right align-middle two">
           <Col>
             <img
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/story-arc.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2019/11/story-arc.png"
               className="desktop-img slide"
               alt="slide"
             />
             <img
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-3452-1.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Group-3452-1.png"
               className="mobile-img slide"
               alt="slide"
             />
@@ -127,53 +127,53 @@ const Process = () => (
           <Col className="">
             <div className="desktop-img moodboard">
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/computer.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/computer.png"
                 className="moodboard-img first"
                 alt="moodboard"
               />
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/mobile-left.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/mobile-left.png"
                 className="moodboard-img second"
                 alt="moodboard"
               />
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/color-palette.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/color-palette.png"
                 className="moodboard-img third"
                 alt="moodboard"
               />
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/color-bar-single.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/color-bar-single.png"
                 className="moodboard-img fourth"
                 alt="moodboard"
               />
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Single-btn.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Single-btn.png"
                 className="moodboard-img fifth"
                 alt="moodboard"
               />
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/settings-bar.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/settings-bar.png"
                 className="moodboard-img sixth"
                 alt="moodboard"
               />
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/web-content-2.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/web-content-2.png"
                 className="moodboard-img seventh"
                 alt="moodboard"
               />
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/iphone.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/iphone.png"
                 className="moodboard-img eighth"
                 alt="moodboard"
               />
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/mouse.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/mouse.png"
                 className="moodboard-img ninth"
                 alt="moodboard"
               />
             </div>
             <img
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-849.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Group-849.png"
               className="mobile-img moodboard"
               alt="moodboard"
             />
@@ -185,28 +185,28 @@ const Process = () => (
           <Col className="static-position">
             <div className="desktop-img">
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Plan-C.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Plan-C.png"
                 className="first-img page"
                 alt="plan"
               />
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Plan-B.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Plan-B.png"
                 className="second-img page"
                 alt="plan"
               />
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Plan-A.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Plan-A.png"
                 className="third-img page"
                 alt="plan"
               />
               {/* <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2019/11/marketing-plan.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2019/11/marketing-plan.png"
                 className="desktop-img"
                 alt="plan"
               /> */}
             </div>
             <img
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-3455-1.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Group-3455-1.png"
               className="mobile-img"
               alt="plan"
             />
@@ -250,33 +250,33 @@ const Process = () => (
           <Col className="static-position">
             <div className="desktop-img">
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Image-42.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Image-42.png"
                 className="deliverables first"
                 alt="deliverables"
               />
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Image-41.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Image-41.png"
                 className="deliverables second"
                 alt="deliverables"
               />
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Image-40.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Image-40.png"
                 className="deliverables third"
                 alt="deliverables"
               />
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Image-38.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Image-38.png"
                 className="deliverables fourth"
                 alt="deliverables"
               />
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Image-37.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Image-37.png"
                 className="deliverables fifth"
                 alt="deliverables"
               />
             </div>
             <img
-              src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/01/Group-853.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Group-853.png"
               className="mobile-img"
               alt="deliverables"
             />

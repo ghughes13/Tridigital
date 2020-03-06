@@ -16,7 +16,7 @@ export default function EmployeeInfo() {
   const multiRow = 9;
 
   let vidURL =
-    "http://tdgatsbytest.wpengine.com" + employees[employeeToShow].videoURL;
+    "https://encrypted.tridigitalmarketing.com" + employees[employeeToShow].videoURL;
 
   useEffect(() => {
     setDimensions({
@@ -163,7 +163,7 @@ export default function EmployeeInfo() {
         >
           <img
             src={
-              "http://tdgatsbytest.wpengine.com" +
+              "https://encrypted.tridigitalmarketing.com" +
               employees[employeeToShow].photo
             }
             className="employee-headshot"
