@@ -59,6 +59,8 @@ typings/
 .cache/
 public
 
+!public/static/*
+
 # Mac files
 .DS_Store
 

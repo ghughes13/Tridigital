@@ -1,7 +1,7 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { Container, Row, Col } from "react-bootstrap"
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { Container, Row, Col } from "react-bootstrap";
 
 const ContactUs = () => (
   <Layout>
@@ -21,12 +21,12 @@ const ContactUs = () => (
                 id="contact-form"
                 className="Consultation"
                 onSubmit={e => {
-                  Honey();
-                  e.preventDefault()
-                  document.querySelector("#contact-form").style.display = "none"
+                  e.preventDefault();
+                  document.querySelector("#contact-form").style.display =
+                    "none";
                   document.querySelector(".contact-thank-you").style.display =
-                    "block"
-                  return false
+                    "block";
+                  return false;
                 }}
               >
                 <h3 className="blue-text form-title">
@@ -139,6 +139,6 @@ const ContactUs = () => (
       </Container>
     </div>
   </Layout>
-)
+);
 
-export default ContactUs
+export default ContactUs;
