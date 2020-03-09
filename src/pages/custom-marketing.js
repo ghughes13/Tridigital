@@ -40,8 +40,10 @@ const CustomMarketing = () => (
                     "block";
                 }}
                 name="custom-marketing-form"
-                data-netlify="true"
+                netlify="true"
+                netlify-honeypot="bot-field"
               >
+                <input type="hidden" name="bot-field" />
                 <h3 className="blue-text form-title">
                   Speak with a Channel Marketing Expert
                 </h3>

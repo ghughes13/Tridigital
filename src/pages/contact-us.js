@@ -28,8 +28,8 @@ const ContactUs = () => (
                     "block";
                 }}
                 name="contact-us-form"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
+                netlify="true"
+                netlify-honeypot="bot-field"
               >
                 <input type="hidden" name="bot-field" />
                 <h3 className="blue-text form-title">
@@ -70,7 +70,6 @@ const ContactUs = () => (
                   <label className="textarea-label">
                     What question can we answer for you?
                   </label>
-                  Input
                   <textarea
                     type="text"
                     className="theInput"
