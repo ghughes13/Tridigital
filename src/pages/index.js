@@ -121,14 +121,14 @@ const IndexPage = () => {
               <p className="white-text">
                 The biggest mistake IT companies make when developing their
                 marketing strategy is that they build it around marketing the
-                services they offer. But the services you offer don’t make you
-                different, in-fact it is the one thing that makes you just like
-                everyone else.
+                services they offer. But the services you offer don't make you
+                different -- in fact, it is the one thing that makes you just
+                like everyone else.
               </p>
               <p className="white-text">
                 What truly makes you different is your vision, your culture,
                 your process, your people and your infrastructure. Marketing
-                those unique differintiators is the key to marketing success.
+                those unique differentiators is the key to marketing success.
               </p>
             </Col>
           </Row>
@@ -315,6 +315,7 @@ const IndexPage = () => {
                 autoPlay
                 muted
                 loop
+                playsinline
               >
                 <p>
                   If you are reading this, it is because your browser does not
