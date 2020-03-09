@@ -52,7 +52,7 @@ const IndexPage = () => {
             <Col className="content-container column video-container first-one">
               <video
                 className="play-icon"
-                src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2020/03/homepage-video%20%281%29.mp4"
+                src="https://tdgatsbytest.wpengine.com/wp-content/uploads/home-videos/Demoreel%20Square_R.mp4"
                 alt="TRIdigital media team"
                 autoPlay
                 loop

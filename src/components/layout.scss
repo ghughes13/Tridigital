@@ -1894,9 +1894,9 @@ footer .footer-thank-you h5 {
 
 .home-page .video-btn {
   position: absolute;
-  top: 12vw;
+  top: 41%;
   left: 0;
-  right: 30px;
+  right: 0px;
   margin: auto;
   width: 130px;
 }
@@ -2065,8 +2065,9 @@ canvas {
 }
 
 @media screen and (min-width: 2000px) {
-  .home-page .video-container.first-one {
-    max-width: 32vw !important;
+  .home-page .video-btn {
+    top: 9vw;
+    right: 0;
   }
 
   .home-page .max-width-600 {
@@ -4496,12 +4497,6 @@ form label {
   margin-left: 5px;
 }
 
-// .checkbox::before {
-//   content: url("https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Rectangle-131.png");
-//   position: absolute;
-//   top: -8px;
-// }
-
 div.contact-method {
   display: flex;
   align-items: center;
@@ -4553,6 +4548,27 @@ main .download-col .pink-button {
 
 .what-do-we-call-you div {
   width: 47%;
+}
+
+@media screen and (min-width: 2000px) {
+  .contact-us .pink-blob-background::before {
+    background-size: 110vw;
+    background-position: -110px -1000px;
+  }
+
+  main .download-brochure {
+    max-width: 90%;
+    margin-top: 200px;
+  }
+
+  .contact-us .brochure-img img {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+
+  main .contact-us .contact-row {
+    margin-top: 100px;
+  }
 }
 
 @media screen and (max-width: 1510px) {
@@ -4750,7 +4766,7 @@ main .download-col .pink-button {
     background-size: 110vw;
   }
 
-  main .download-brochure {
+  main .custom-marketing-page .download-brochure {
     max-width: 90%;
     margin-top: 400px;
   }
