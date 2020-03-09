@@ -33,12 +33,10 @@ const CustomMarketing = () => (
                 id="contact-form"
                 className="Consultation"
                 onSubmit={e => {
-                  e.preventDefault();
                   document.querySelector("#contact-form").style.display =
                     "none";
                   document.querySelector(".contact-thank-you").style.display =
                     "block";
-                  return false;
                 }}
                 name="custom-marketing-form"
                 data-netlify="true"
