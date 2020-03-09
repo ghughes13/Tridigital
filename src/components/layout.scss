@@ -1632,19 +1632,10 @@ footer .footer-thank-you h5 {
 }
 /*!--------HOME PAGE -----------*/
 .home-page .hero-section {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00a7ff+1,0040ed+99 */
-  background: #00a7ff; /* Old browsers */
-  background: -moz-linear-gradient(top, #00a7ff 1%, #0043f5 99%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    top,
-    #00a7ff 1%,
-    #0043f5 99%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #00a7ff 1%,
-    #0043f5 99%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: #00a7ff;
+  background: -moz-linear-gradient(top, #00a7ff 1%, #0043f5 99%);
+  background: -webkit-linear-gradient(top, #00a7ff 1%, #0043f5 99%);
+  background: linear-gradient(to bottom, #00a7ff 1%, #0043f5 99%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a7ff', endColorstr='#0043f5',GradientType=0 ); /* IE6-9 */
   z-index: 10;
 }
@@ -1662,6 +1653,11 @@ footer .footer-thank-you h5 {
 
 .home-page .hero-section .blue-button {
   margin: 50px 0;
+}
+
+.home-page .wistia_embed {
+  display: inline;
+  position: relative;
 }
 
 .home-page .hero-section .accent-gradient-circle {
@@ -2066,6 +2062,20 @@ canvas {
 
 .show-on-mobile {
   display: none;
+}
+
+@media screen and (min-width: 2000px) {
+  .home-page .video-container.first-one {
+    max-width: 32vw !important;
+  }
+
+  .home-page .max-width-600 {
+    max-width: 800px;
+  }
+
+  .home-animation-section > img {
+    transform: scale(1.25);
+  }
 }
 
 @media screen and (max-width: 1700px) {
@@ -3342,19 +3352,6 @@ header.about-us-header.end-transparency {
     min-height: auto;
     margin-bottom: 50px;
   }
-  // .about-us-page .vid-pic-container:after {
-  //   position: absolute;
-  //   content: "";
-  //   background: url(https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/about-us/Subtraction%204.svg);
-  //   height: 100%;
-  //   width: 100vw;
-  //   left: 0;
-  //   z-index: 2;
-  //   background-repeat: no-repeat;
-  //   background-size: auto;
-  //   background-position: left -225px;
-  //   top: 0px;
-  // }
 
   .about-us-page .vid-pic-container {
     position: relative;
@@ -4748,6 +4745,26 @@ main .download-col .pink-button {
   background: none;
 }
 
+@media screen and (min-width: 2000px) {
+  .custom-marketing-page .pink-blob-background::before {
+    background-size: 110vw;
+  }
+
+  main .download-brochure {
+    max-width: 90%;
+    margin-top: 400px;
+  }
+
+  .contact-us .brochure-img img {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+
+  .contact-us .brochure-img {
+    text-align: center;
+  }
+}
+
 /*******REVIEWS************/
 
 .reviews .blue-gradient-background {
@@ -4972,6 +4989,24 @@ main .download-col .pink-button {
   cursor: pointer;
 }
 
+@media screen and (min-width: 2000px) {
+  .reviews .phone-img-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  main .reviews h2 {
+    font-size: 4.5vw;
+  }
+
+  .reviews .blue-swish::before {
+    position: absolute;
+    content: "";
+    width: 175vw;
+    height: 1100px;
+  }
+}
+
 @media screen and (max-width: 1500px) {
   .reviews .blue-swish::before {
     background-position: -500px 111%;
@@ -5154,11 +5189,6 @@ main .download-col .pink-button {
   height: 100%;
   object-fit: contain;
   width: 100%;
-}
-
-.home-page .wistia_embed {
-  display: inline;
-  position: relative;
 }
 
 /****END WISTIA STYLES********/
