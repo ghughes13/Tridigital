@@ -1,7 +1,7 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { Container, Row, Col } from "react-bootstrap"
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { Container, Row, Col } from "react-bootstrap";
 
 const CustomMarketing = () => (
   <Layout>
@@ -17,10 +17,14 @@ const CustomMarketing = () => (
 
             <h3 className="white-text">Expectations</h3>
             <p className="white-text">
-              We are a boutique marketing agency.  Everything is custom and hand-made in-house. Because of this, we are very selective with the clients we work with. Our custom marketing engagements start at $300,000 per year. 
+              We are a boutique marketing agency. Everything is custom and
+              hand-made in-house. Because of this, we are very selective with
+              the clients we work with. Our custom marketing engagements start
+              at $300,000 per year.
             </p>
             <p className="white-text">
-              If you’re interested in learning more, bring us your ideas and let’s make some magic.
+              If you’re interested in learning more, bring us your ideas and
+              let’s make some magic.
             </p>
           </Col>
           <Col className="content-container column ">
@@ -29,11 +33,12 @@ const CustomMarketing = () => (
                 id="contact-form"
                 className="Consultation"
                 onSubmit={e => {
-                  e.preventDefault()
-                  document.querySelector("#contact-form").style.display = "none"
+                  e.preventDefault();
+                  document.querySelector("#contact-form").style.display =
+                    "none";
                   document.querySelector(".contact-thank-you").style.display =
-                    "block"
-                  return false
+                    "block";
+                  return false;
                 }}
               >
                 <h3 className="blue-text form-title">
@@ -102,20 +107,21 @@ const CustomMarketing = () => (
               Download Our Brochure
             </h2>
             <p>
-              For more information about our studio, artists, experts, and services, please view our brochure.
+              For more information about our studio, artists, experts, and
+              services, please view our brochure.
             </p>
             <a
               className="white-text pink-button"
               href="http://www.itepubs.com/tridigital_brochure_digital/page/1"
               target="_blank"
             >
-              View Online Version
+              View Online
             </a>
           </Col>
         </Row>
       </Container>
     </div>
   </Layout>
-)
+);
 
-export default CustomMarketing
+export default CustomMarketing;

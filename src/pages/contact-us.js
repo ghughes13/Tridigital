@@ -132,7 +132,7 @@ const ContactUs = () => (
               href="http://www.itepubs.com/tridigital_brochure_digital/page/1"
               target="_blank"
             >
-              View Online Version
+              View Online
             </a>
           </Col>
         </Row>
