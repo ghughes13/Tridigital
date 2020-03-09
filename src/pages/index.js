@@ -316,6 +316,7 @@ const IndexPage = () => {
                 muted
                 loop
                 playsinline
+                className="hide-on-mobile"
               >
                 <p>
                   If you are reading this, it is because your browser does not
@@ -323,7 +324,7 @@ const IndexPage = () => {
                 </p>
               </video>
               <img
-                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/03/Leads.png"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/03/Leads.png"
                 alt="honey-data"
                 className="show-on-mobile"
               />

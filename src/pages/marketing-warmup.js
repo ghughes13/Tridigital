@@ -55,6 +55,7 @@ const WarmUp = () => (
               <form
                 id="contact-form"
                 className="Consultation"
+                method="POST"
                 onSubmit={e => {
                   document.querySelector("#contact-form").style.display =
                     "none";

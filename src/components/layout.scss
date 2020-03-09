@@ -2626,6 +2626,14 @@ canvas {
     right: 34vw;
     top: -2vw;
   }
+
+  .show-on-mobile {
+    display: initial;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {

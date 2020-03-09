@@ -231,8 +231,8 @@ const Process = () => (
             <h2 className="white-text ">Create and Execute Deliverables</h2>
             <p className="white-text">
               When a theme and a plan in-tact we can begin creating the desired
-              deliverables in accordance to the new identity, theme and go to
-              market approach.
+              deliverables in accordance to the new identity, theme and
+              go-to-market approach.
             </p>
             <Waypoint
               onEnter={() =>
