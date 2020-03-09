@@ -64,7 +64,9 @@ const WarmUp = () => (
                 }}
                 name="marketing-warmup-lp-form"
                 data-netlify="true"
+                data-netlify-honeypot="bot-field"
               >
+                <input type="hidden" name="bot-field" />
                 <h3 className="blue-text form-title">
                   Speak with an MSP Marketer to learn more
                 </h3>
