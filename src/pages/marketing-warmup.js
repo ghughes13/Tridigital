@@ -13,7 +13,7 @@ const WarmUp = () => (
       <Container className="container blue-background first-swish hero">
         <Row className="">
           <Col className="content-container column z-index-999">
-            <h2 className="white-text core-values margin-top-100">
+            <h2 className="white-text core-values margin-top-100 uppercase">
               The MSP <br />
               Marketing Warmup
             </h2>
@@ -135,7 +135,7 @@ const WarmUp = () => (
               src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/whitepapers.png"
               alt="collaterals"
             />
-            <p>White Papers</p>
+            <p>Whitepapers</p>
           </Col>
           <Col className="content-container column ">
             <img
@@ -206,7 +206,7 @@ const WarmUp = () => (
             <p className="per-month">Per month</p>
             <ul className="checkmark-li">
               <li>3 Landing Pages</li>
-              <li>3 White Papers</li>
+              <li>3 Whitepapers</li>
               <li>1 eBooks</li>
               <li>6 Email Campaigns</li>
               <li>6 Follow-up Campaigns</li>
@@ -228,7 +228,7 @@ const WarmUp = () => (
             <p className="per-month">Per month</p>
             <ul className="checkmark-li">
               <li>6 Landing Pages</li>
-              <li>6 White Papers</li>
+              <li>6 Whitepapers</li>
               <li>2 eBooks</li>
               <li>12 Email Campaigns</li>
               <li>12 Follow-up Campaigns</li>
@@ -250,7 +250,7 @@ const WarmUp = () => (
             <p className="per-month">Per month</p>
             <ul className="checkmark-li">
               <li>12 Landing Pages</li>
-              <li>12 White Papers</li>
+              <li>12 Whitepapers</li>
               <li>4 eBooks</li>
               <li>24 Email Campaigns</li>
               <li>24 Follow-up Campaigns</li>
