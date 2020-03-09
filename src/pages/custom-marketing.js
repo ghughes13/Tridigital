@@ -40,6 +40,8 @@ const CustomMarketing = () => (
                     "block";
                   return false;
                 }}
+                name="custom-marketing-form"
+                data-netlify="true"
               >
                 <h3 className="blue-text form-title">
                   Speak with a Channel Marketing Expert
@@ -47,29 +49,51 @@ const CustomMarketing = () => (
                 <div className="what-do-we-call-you">
                   <div className="field name-field">
                     <label>What’s your name?</label>
-                    <input type="text" className="theInput" required></input>
+                    <input
+                      type="text"
+                      className="theInput"
+                      name="firstName"
+                      required
+                    ></input>
                   </div>
                   <div className="field">
                     <label className="second-label">
                       What company are you with?
                     </label>
-                    <input type="text" className="theInput"></input>
+                    <input
+                      type="text"
+                      className="theInput"
+                      name="company"
+                    ></input>
                   </div>
                 </div>
                 <br />
                 <div className="field email-field">
                   <label>What’s your email address?</label>
-                  <input type="email" className="theInput" required></input>
+                  <input
+                    type="email"
+                    className="theInput"
+                    name="email"
+                    required
+                  ></input>
                 </div>
                 <div className="field comment-field">
                   <label className="textarea-label">
                     What question can we answer for you?
                   </label>
-                  <textarea type="text" className="theInput"></textarea>
+                  <textarea
+                    type="text"
+                    className="theInput"
+                    name="message"
+                  ></textarea>
                 </div>
 
                 <div className="checkbox-part">
-                  <input type="checkbox" className="checkbox" />
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    name="keep-me-updated"
+                  />
                   <label>Keep Me Updated with Emails and Newsletters</label>
                 </div>
                 <div className="hide-me field">

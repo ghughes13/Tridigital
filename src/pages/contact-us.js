@@ -28,6 +28,8 @@ const ContactUs = () => (
                     "block";
                   return false;
                 }}
+                name="contact-us-form"
+                data-netlify="true"
               >
                 <h3 className="blue-text form-title">
                   Speak with an MSP Marketer to learn more
@@ -35,29 +37,52 @@ const ContactUs = () => (
                 <div className="what-do-we-call-you">
                   <div className="field name-field">
                     <label>What’s your name?</label>
-                    <input type="text" className="theInput" required></input>
+                    <input
+                      type="text"
+                      className="theInput"
+                      required
+                      name="firstName"
+                    ></input>
                   </div>
                   <div className="field">
                     <label className="second-label">
                       What company are you with?
                     </label>
-                    <input type="text" className="theInput"></input>
+                    <input
+                      type="text"
+                      className="theInput"
+                      name="company"
+                    ></input>
                   </div>
                 </div>
                 <br />
                 <div className="field email-field">
                   <label>What’s your email address?</label>
-                  <input type="email" className="theInput" required></input>
+                  <input
+                    type="email"
+                    className="theInput"
+                    name="email"
+                    required
+                  ></input>
                 </div>
                 <div className="field comment-field">
                   <label className="textarea-label">
                     What question can we answer for you?
                   </label>
-                  <textarea type="text" className="theInput"></textarea>
+                  Input
+                  <textarea
+                    type="text"
+                    className="theInput"
+                    name="message"
+                  ></textarea>
                 </div>
 
                 <div className="checkbox-part">
-                  <input type="checkbox" className="checkbox" />
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    name="keep-me-updated"
+                  />
                   <label>Keep Me Updated with Emails and Newsletters</label>
                 </div>
                 <div className="hide-me field">

@@ -322,6 +322,11 @@ const IndexPage = () => {
                   support the HTML5 video element.
                 </p>
               </video>
+              <img
+                src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/03/Leads.png"
+                alt="honey-data"
+                className="show-on-mobile"
+              />
             </Col>
             <Col className="content-container">
               <h2 className="blue-text smaller">
