@@ -12,15 +12,13 @@ const Header = ({ siteTitle, opaque }) => {
           document.querySelector("header").classList.add("end-transparency");
         }
       }
-
-      const honeyInteg = document.createElement("script");
-
-      honeyInteg.src = "/static/honey-form-integration.js";
-      honeyInteg.async = true;
-
-      document.body.appendChild(honeyInteg);
     });
-  }, []);
+    const script = document.createElement("script");
+    script.src = "/static/honey-form-integration.js";
+    script.async = true;
+    document.body.appendChild(script);
+    console.log("ran script adder");
+  });
 
   return (
     <header
