@@ -48,7 +48,7 @@ const CheckoutForm = () => {
         console.log(response);
         if (response.status === 200) {
           console.log("good submission");
-          window.location.href = "https://tridigitalmarketing.com/thank-you/";
+          window.location.href = "https://warmup.tridigitalmarketing.com/thank-you/";
         }
       })
       .catch(error => {
