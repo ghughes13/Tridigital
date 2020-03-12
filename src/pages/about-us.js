@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
-import EmployeeInfo from "../components/aboutUsComps/about-us-employees";
+import EmployeeInfo from "../components/aboutUsComps/AboutUsEmployees";
 import { Waypoint } from "react-waypoint";
 
 const AboutUs = () => {
