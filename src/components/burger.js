@@ -21,8 +21,8 @@ class Burger extends React.Component {
         <a id="warmup" className="menu-item" href="/marketing-warmup/">
           Marketing Warmup
         </a>
-        <a id="contact" className="menu-item" href="/contact-us">
-          Contact Us
+        <a id="contact" className="menu-item" href="/custom-marketing">
+          Custom Marketing
         </a>
       </Menu>
     );

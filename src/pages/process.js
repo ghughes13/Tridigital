@@ -1,8 +1,8 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { Container, Row, Col } from "react-bootstrap"
-import { Waypoint } from "react-waypoint"
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { Container, Row, Col } from "react-bootstrap";
+import { Waypoint } from "react-waypoint";
 
 const Process = () => (
   <Layout>
@@ -99,8 +99,8 @@ const Process = () => (
               This exercise is designed to dig deeper into the true motivations
               of why your company exists and why you serve your target audience.
               We analyze the data collected in the story arc to create an
-              underlining theme that becomes the foundation of your entire go to
-              market message and strategy.
+              underlying theme that becomes the foundation of your entire
+              go-to-market message and strategy.
             </p>
           </Col>
         </Row>
@@ -199,11 +199,6 @@ const Process = () => (
                 className="third-img page"
                 alt="plan"
               />
-              {/* <img
-                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2019/11/marketing-plan.png"
-                className="desktop-img"
-                alt="plan"
-              /> */}
             </div>
             <img
               src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Group-3455-1.png"
@@ -213,7 +208,7 @@ const Process = () => (
           </Col>
           <Col className="content-container">
             <p className="gold-text heavy-weight step">Step 4:</p>
-            <h2 className="white-text ">Create a Go to Market Plan</h2>
+            <h2 className="white-text ">Create a Go-to-Market Plan</h2>
             <p className="white-text">
               The plan we create lays out several ways in which we can use the
               theme and the new look and feel through various marketing vehicles
@@ -222,7 +217,7 @@ const Process = () => (
             <Waypoint
               onEnter={() =>
                 document.querySelectorAll(".page").forEach(page => {
-                  page.classList.add("slide-in")
+                  page.classList.add("slide-in");
                 })
               }
             />
@@ -236,13 +231,13 @@ const Process = () => (
             <h2 className="white-text ">Create and Execute Deliverables</h2>
             <p className="white-text">
               When a theme and a plan in-tact we can begin creating the desired
-              deliverables in accordance to the new identity, theme and go to
-              market approach.
+              deliverables in accordance to the new identity, theme and
+              go-to-market approach.
             </p>
             <Waypoint
               onEnter={() =>
                 document.querySelectorAll(".deliverables").forEach(page => {
-                  page.classList.add("slide-in")
+                  page.classList.add("slide-in");
                 })
               }
             />
@@ -302,6 +297,6 @@ const Process = () => (
       </Container>
     </div>
   </Layout>
-)
+);
 
-export default Process
+export default Process;

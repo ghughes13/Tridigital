@@ -1,7 +1,7 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { Container, Row, Col } from "react-bootstrap"
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { Container, Row, Col } from "react-bootstrap";
 
 const CustomMarketing = () => (
   <Layout>
@@ -17,10 +17,14 @@ const CustomMarketing = () => (
 
             <h3 className="white-text">Expectations</h3>
             <p className="white-text">
-              We are a boutique marketing agency.  Everything is custom and hand-made in-house. Because of this, we are very selective with the clients we work with. Our custom marketing engagements start at $300,000 per year. 
+              We are a boutique marketing agency. Everything is custom and
+              hand-made in-house. Because of this, we are very selective with
+              the clients we work with. Our custom marketing engagements start
+              at $300,000 per year.
             </p>
             <p className="white-text">
-              If you’re interested in learning more, bring us your ideas and let’s make some magic.
+              If you’re interested in learning more, bring us your ideas and
+              let’s make some magic.
             </p>
           </Col>
           <Col className="content-container column ">
@@ -28,43 +32,69 @@ const CustomMarketing = () => (
               <form
                 id="contact-form"
                 className="Consultation"
+                method="POST"
                 onSubmit={e => {
-                  e.preventDefault()
-                  document.querySelector("#contact-form").style.display = "none"
+                  document.querySelector("#contact-form").style.display =
+                    "none";
                   document.querySelector(".contact-thank-you").style.display =
-                    "block"
-                  return false
+                    "block";
                 }}
+                name="custom-marketing-form"
+                netlify="true"
+                netlify-honeypot="bot-field"
               >
+                <input type="hidden" name="bot-field" />
                 <h3 className="blue-text form-title">
                   Speak with a Channel Marketing Expert
                 </h3>
                 <div className="what-do-we-call-you">
                   <div className="field name-field">
                     <label>What’s your name?</label>
-                    <input type="text" className="theInput" required></input>
+                    <input
+                      type="text"
+                      className="theInput"
+                      name="firstName"
+                      required
+                    ></input>
                   </div>
                   <div className="field">
                     <label className="second-label">
                       What company are you with?
                     </label>
-                    <input type="text" className="theInput"></input>
+                    <input
+                      type="text"
+                      className="theInput"
+                      name="company"
+                    ></input>
                   </div>
                 </div>
                 <br />
                 <div className="field email-field">
                   <label>What’s your email address?</label>
-                  <input type="email" className="theInput" required></input>
+                  <input
+                    type="email"
+                    className="theInput"
+                    name="email"
+                    required
+                  ></input>
                 </div>
                 <div className="field comment-field">
                   <label className="textarea-label">
                     What question can we answer for you?
                   </label>
-                  <textarea type="text" className="theInput"></textarea>
+                  <textarea
+                    type="text"
+                    className="theInput"
+                    name="message"
+                  ></textarea>
                 </div>
 
                 <div className="checkbox-part">
-                  <input type="checkbox" className="checkbox" />
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    name="keep-me-updated"
+                  />
                   <label>Keep Me Updated with Emails and Newsletters</label>
                 </div>
                 <div className="hide-me field">
@@ -102,20 +132,21 @@ const CustomMarketing = () => (
               Download Our Brochure
             </h2>
             <p>
-              For more information about our studio, artists, experts, and services, please view our brochure.
+              For more information about our studio, artists, experts, and
+              services, please view our brochure.
             </p>
             <a
               className="white-text pink-button"
               href="http://www.itepubs.com/tridigital_brochure_digital/page/1"
               target="_blank"
             >
-              View Online Version
+              View Online
             </a>
           </Col>
         </Row>
       </Container>
     </div>
   </Layout>
-)
+);
 
-export default CustomMarketing
+export default CustomMarketing;

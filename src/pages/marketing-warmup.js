@@ -13,7 +13,7 @@ const WarmUp = () => (
       <Container className="container blue-background first-swish hero">
         <Row className="">
           <Col className="content-container column z-index-999">
-            <h2 className="white-text core-values margin-top-100">
+            <h2 className="white-text core-values margin-top-100 uppercase">
               The MSP <br />
               Marketing Warmup
             </h2>
@@ -55,42 +55,67 @@ const WarmUp = () => (
               <form
                 id="contact-form"
                 className="Consultation"
+                method="POST"
                 onSubmit={e => {
-                  e.preventDefault();
                   document.querySelector("#contact-form").style.display =
                     "none";
                   document.querySelector(".contact-thank-you").style.display =
                     "block";
-                  return false;
                 }}
+                name="marketing-warmup-lp-form"
+                netlify="true"
+                netlify-honeypot="bot-field"
               >
+                <input type="hidden" name="bot-field" />
                 <h3 className="blue-text form-title">
                   Speak with an MSP Marketer to learn more
                 </h3>
                 <div className="field name-field">
                   <label>What’s your name?</label>
-                  <input type="text" className="theInput" required></input>
+                  <input
+                    type="text"
+                    className="theInput"
+                    name="name"
+                    required
+                  ></input>
                 </div>
                 <div className="field">
                   <label className="second-label">
                     What company are you with?
                   </label>
-                  <input type="text" className="theInput"></input>
+                  <input
+                    type="text"
+                    className="theInput"
+                    name="company"
+                  ></input>
                 </div>
                 <br />
                 <div className="field email-field">
                   <label>What’s your email address?</label>
-                  <input type="email" className="theInput" required></input>
+                  <input
+                    type="email"
+                    className="theInput"
+                    name="email"
+                    required
+                  ></input>
                 </div>
                 <div className="field comment-field">
                   <label className="textarea-label">
                     What question can we answer for you?
                   </label>
-                  <textarea type="text" className="theInput"></textarea>
+                  <textarea
+                    type="text"
+                    className="theInput"
+                    name="message"
+                  ></textarea>
                 </div>
 
                 <div className="checkbox-part">
-                  <input type="checkbox" className="checkbox" />
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    name="keep-me-updated"
+                  />
                   <label>Keep me updated with emails and newsletters</label>
                 </div>
                 <div className="hide-me field">
@@ -135,7 +160,7 @@ const WarmUp = () => (
               src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/whitepapers.png"
               alt="collaterals"
             />
-            <p>White Papers</p>
+            <p>Whitepapers</p>
           </Col>
           <Col className="content-container column ">
             <img
@@ -206,7 +231,7 @@ const WarmUp = () => (
             <p className="per-month">Per month</p>
             <ul className="checkmark-li">
               <li>3 Landing Pages</li>
-              <li>3 White Papers</li>
+              <li>3 Whitepapers</li>
               <li>1 eBooks</li>
               <li>6 Email Campaigns</li>
               <li>6 Follow-up Campaigns</li>
@@ -228,7 +253,7 @@ const WarmUp = () => (
             <p className="per-month">Per month</p>
             <ul className="checkmark-li">
               <li>6 Landing Pages</li>
-              <li>6 White Papers</li>
+              <li>6 Whitepapers</li>
               <li>2 eBooks</li>
               <li>12 Email Campaigns</li>
               <li>12 Follow-up Campaigns</li>
@@ -250,7 +275,7 @@ const WarmUp = () => (
             <p className="per-month">Per month</p>
             <ul className="checkmark-li">
               <li>12 Landing Pages</li>
-              <li>12 White Papers</li>
+              <li>12 Whitepapers</li>
               <li>4 eBooks</li>
               <li>24 Email Campaigns</li>
               <li>24 Follow-up Campaigns</li>

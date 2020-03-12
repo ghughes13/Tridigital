@@ -52,7 +52,7 @@ const IndexPage = () => {
             <Col className="content-container column video-container first-one">
               <video
                 className="play-icon"
-                src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2020/03/homepage-video%20%281%29.mp4"
+                src="https://tdgatsbytest.wpengine.com/wp-content/uploads/home-videos/Demoreel%20Square_R.mp4"
                 alt="TRIdigital media team"
                 autoPlay
                 loop
@@ -121,14 +121,14 @@ const IndexPage = () => {
               <p className="white-text">
                 The biggest mistake IT companies make when developing their
                 marketing strategy is that they build it around marketing the
-                services they offer. But the services you offer don’t make you
-                different, in-fact it is the one thing that makes you just like
-                everyone else.
+                services they offer. But the services you offer don't make you
+                different -- in fact, it is the one thing that makes you just
+                like everyone else.
               </p>
               <p className="white-text">
                 What truly makes you different is your vision, your culture,
                 your process, your people and your infrastructure. Marketing
-                those unique differintiators is the key to marketing success.
+                those unique differentiators is the key to marketing success.
               </p>
             </Col>
           </Row>
@@ -315,12 +315,19 @@ const IndexPage = () => {
                 autoPlay
                 muted
                 loop
+                playsinline
+                className="hide-on-mobile"
               >
                 <p>
                   If you are reading this, it is because your browser does not
                   support the HTML5 video element.
                 </p>
               </video>
+              <img
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/03/Leads.png"
+                alt="honey-data"
+                className="show-on-mobile"
+              />
             </Col>
             <Col className="content-container">
               <h2 className="blue-text smaller">

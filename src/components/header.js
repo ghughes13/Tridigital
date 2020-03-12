@@ -13,11 +13,16 @@ const Header = ({ siteTitle, opaque }) => {
         }
       }
     });
+    const script = document.createElement("script");
+    script.src = "/static/honey-form-integration.js";
+    script.async = true;
+    document.body.appendChild(script);
+    console.log("ran script adder");
   });
 
   return (
     <header
-      className={`fixed ${ opaque ? "end-transparency" : ""}`}
+      className={`fixed ${opaque ? "end-transparency" : ""}`}
       style={{
         fontFamily: "Poppins",
         textTransform: "uppercase",
@@ -81,10 +86,7 @@ const Header = ({ siteTitle, opaque }) => {
           <div className="navbar-end">
             <div className="navbar-item">
               <div className="buttons">
-                <a
-                  href="/marketing-warmup"
-                  className="button first"
-                >
+                <a href="/marketing-warmup" className="button first">
                   Marketing Warmup
                 </a>
                 <a href="/custom-marketing" className="button is-light">
