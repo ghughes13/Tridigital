@@ -4,11 +4,7 @@ import SEO from "../components/seo";
 import Layout from "../components/layout";
 import { Container, Row, Col } from "react-bootstrap";
 import { Waypoint } from "react-waypoint";
-import YourVideo from "../components/home-video-player.js";
-
-// const propTypes = {
-//   data: PropTypes.object.isRequired,
-// }
+import YourVideo from "../components/HomeVideoPlayer.js";
 
 const IndexPage = () => {
   useEffect(() => {});
