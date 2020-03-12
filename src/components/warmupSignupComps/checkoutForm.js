@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 
 const CheckoutForm = () => {
-  let changeColor = () => {
+  let changeColorOfPriceInput = () => {
     let elements = document.querySelectorAll(".edit-color");
 
     elements.forEach(element => {
@@ -28,7 +28,6 @@ const CheckoutForm = () => {
 
   let submitForm = () => {
     document.getElementById("sbmt-form-btn").disabled = true;
-    console.log("clicked");
     axios
       .post(
         "https://eloquent-hawking-0b4899.netlify.com/.netlify/functions/warmup-submission",
@@ -95,7 +94,7 @@ const CheckoutForm = () => {
           <select
             id="priceTierId"
             name="priceTierId"
-            onClick={changeColor}
+            onClick={changeColorOfPriceInput}
             required
             className="edit-color pink"
           >

@@ -1,5 +1,5 @@
 require("dotenv").config();
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY_LIVE);
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY_TEST);
 const axios = require("axios");
 
 const headers = {
@@ -22,7 +22,7 @@ function handleRequest(event, context, callback) {
     body = JSON.parse(event.body);
   } catch {
     sendErrorMessage(400, "Body not formatted in JSON.", callback);
-    console.log(body);
+    console.log(body.raw);
   }
 
   if (!hasValidBody()) {
