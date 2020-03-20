@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 import Loader from "./Loader"
 
 const CheckoutForm = () => {
+
+  useEffect(() => {
+    getUrlVars();
+  });
+
+
   let changeColorOfPriceInput = () => {
     let elements = document.querySelectorAll(".edit-color");
 
@@ -49,36 +55,34 @@ const CheckoutForm = () => {
         })
       )
       .then(response => {
-        console.log('============')
-        console.log('res.status')
-        console.log(response);
-        console.log(response.status);
-        console.log('============')
         if (response.status === 200) {
-          console.log("good submission");
           window.location.href = "https://warmup.tridigitalmarketing.com/thank-you/";
         }
       })
       .catch(error => {
-        console.log('============')
-        console.log('ERROR:')
-        console.log(error)
-        console.log('============')
         document.querySelector(".error").style.display = "block";
         loader.style.display = "none";
         submitButton.style.display = "block";
       });
   };
 
+  const getUrlVars = () => {
+    const vars = {};
+    const parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    const selectEl = document.getElementById("priceTierId");
+    selectEl.value = vars.l;
+    changeColorOfPriceInput()
+  }
+
   return (
     <form
       name="warmup"
-      // method="POST"
       onSubmit={e => {
         submitForm();
         e.preventDefault();
       }}
-      // data-netlify="true"
     >
       <h3 className="blue-text form-title">
         Complete The Sign Up Form to Get Your Marketing Started
