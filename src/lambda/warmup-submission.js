@@ -1,7 +1,7 @@
 //Switch out commented data on lines 4 & 140 to debug
 
 require("dotenv").config();
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY_TEST); //STRIPE_SECRET_KEY_LIVE
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY_LIVE); //STRIPE_SECRET_KEY_TEST
 const axios = require("axios");
 
 const headers = {
@@ -138,7 +138,7 @@ function createStripeSubscription() {
       {
         customer: stripeCustomerId,
         items: [
-          { plan: "tridigitalmarketingwarmup-testinit_25_1month_150000" }, //plans[body.priceTierId]
+          { plan: plans[body.priceTierId]}, //"tridigitalmarketingwarmup-testinit_25_1month_150000"
         ],
       },
       (error, subscription) => {
