@@ -73,12 +73,12 @@ const CheckoutForm = () => {
   return (
     <form
       name="warmup"
-      method="POST"
+      // method="POST"
       onSubmit={e => {
         submitForm();
         e.preventDefault();
       }}
-      data-netlify="true"
+      // data-netlify="true"
     >
       <h3 className="blue-text form-title">
         Complete The Sign Up Form to Get Your Marketing Started
