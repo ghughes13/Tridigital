@@ -17,7 +17,6 @@ const Header = ({ siteTitle, opaque }) => {
     script.src = "/static/honey-form-integration.js";
     script.async = true;
     document.body.appendChild(script);
-    console.log("ran script adder");
   });
 
   return (

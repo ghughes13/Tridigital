@@ -49,13 +49,21 @@ const CheckoutForm = () => {
         })
       )
       .then(response => {
+        console.log('============')
+        console.log('res.status')
         console.log(response);
+        console.log(response.status);
+        console.log('============')
         if (response.status === 200) {
           console.log("good submission");
           window.location.href = "https://warmup.tridigitalmarketing.com/thank-you/";
         }
       })
       .catch(error => {
+        console.log('============')
+        console.log('ERROR:')
+        console.log(error)
+        console.log('============')
         document.querySelector(".error").style.display = "block";
         loader.style.display = "none";
         submitButton.style.display = "block";
