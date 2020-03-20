@@ -50,8 +50,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "start:lambda": "netlify-lambda serve src/components/lambda",
-    "build:lambda": "netlify-lambda build src/components/lambda"
+    "start:lambda": "netlify-lambda serve src/lambda",
+    "build:lambda": "netlify-lambda build src/lambda"
   },
   "repository": {
     "type": "git",
