@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/Layout";
+import SEO from "../components/Seo";
 import { Container, Row, Col } from "react-bootstrap";
-import EmployeeInfo from "../components/aboutUsComps/AboutUsEmployees";
+import EmployeeInfo from "../components/AboutUsEmployees";
 import { Waypoint } from "react-waypoint";
 
 const AboutUs = () => {

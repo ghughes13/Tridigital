@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import Loader from "./Loader"
 
 const CheckoutForm = () => {
   let changeColorOfPriceInput = () => {
@@ -14,20 +15,23 @@ const CheckoutForm = () => {
     if (document.getElementById("priceTierId").value == 0) {
       document.getElementById("priceTierId").classList.add("pink");
       document.getElementById("price-container").classList.add("pink");
-      document.getElementById("price-hook").innerText = "1500";
+      document.getElementById("price-hook").innerText = "1,500";
     } else if (document.getElementById("priceTierId").value == 1) {
       document.getElementById("priceTierId").classList.add("blue");
       document.getElementById("price-container").classList.add("blue");
-      document.getElementById("price-hook").innerText = "1400";
+      document.getElementById("price-hook").innerText = "1,400";
     } else {
       document.getElementById("priceTierId").classList.add("yellow");
       document.getElementById("price-container").classList.add("yellow");
-      document.getElementById("price-hook").innerText = "1300";
+      document.getElementById("price-hook").innerText = "1,300";
     }
   };
 
-  let submitForm = () => {
-    document.getElementById("sbmt-form-btn").disabled = true;
+  const submitForm = () => {
+    const submitButton = document.getElementById("sbmt-form-btn")
+    const loader = document.querySelector('.loader');
+    loader.style.display = "block";
+    submitButton.style.display = "none";
     axios
       .post(
         "https://eloquent-hawking-0b4899.netlify.com/.netlify/functions/warmup-submission",
@@ -53,7 +57,8 @@ const CheckoutForm = () => {
       })
       .catch(error => {
         document.querySelector(".error").style.display = "block";
-        document.getElementById("sbmt-form-btn").disabled = false;
+        loader.style.display = "none";
+        submitButton.style.display = "block";
       });
   };
 
@@ -231,21 +236,14 @@ const CheckoutForm = () => {
           </p>
         </div>
         <div className="sbmt-btn">
+          <Loader />
           <button
             type="submit"
             className="btn pink-button"
-            onClick={submitForm}
             id="sbmt-form-btn"
           >
             Subscribe
           </button>
-        </div>
-        <div className="error">
-          <p>
-            Whoops! Looks like there was a error. Please make sure all form
-            fields are completely filled out and double check your credit card
-            info.
-          </p>
         </div>
       </div>
     </form>

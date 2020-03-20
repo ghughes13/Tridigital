@@ -1,9 +1,9 @@
 import React from "react"
 import { Col } from "react-bootstrap"
-import YourVideo from "./video-player.js"
+import YourVideo from "./VideoPlayer.js"
 
 export default function SingleReivew(props) {
-  let data = require("../../reviews-data.json")
+  let data = require("../data/reviews-data.json")
   let number = props.number
 
   if (props.type === "half") {

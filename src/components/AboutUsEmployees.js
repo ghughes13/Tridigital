@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-let employees = require("../../../employee-data.json");
+let employees = require("../data/employee-data.json");
 
 export default function EmployeeInfo() {
   const [employeeToShow, setEmployeeToShow] = useState(0);

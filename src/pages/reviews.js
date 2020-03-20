@@ -1,8 +1,8 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import SEO from "../components/Seo"
 import { Container, Row, Col } from "react-bootstrap"
-import SingleReivew from "../components/single-review.js"
+import SingleReivew from "../components/SingleReview.js"
 import { Waypoint } from "react-waypoint"
 
 const ContactUs = () => (

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { graphql } from "gatsby";
-import SEO from "../components/seo";
-import Layout from "../components/layout";
+import SEO from "../components/Seo";
+import Layout from "../components/Layout";
 import { Container, Row, Col } from "react-bootstrap";
 import { Waypoint } from "react-waypoint";
 import YourVideo from "../components/HomeVideoPlayer.js";

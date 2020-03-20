@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React, { useEffect } from "react";
-import Burger from "./burger.js";
+import Burger from "./HamburgerMenu.js";
 
 const Header = ({ siteTitle, opaque }) => {
   useEffect(() => {

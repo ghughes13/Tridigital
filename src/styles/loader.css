@@ -1,0 +1,16 @@
+#___gatsby .loader {
+  border: 6px solid #ff3975; /* Light grey */
+  border-top: 6px solid transparent; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  margin-top: 50px;
+  animation: spin 1s linear infinite;
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
