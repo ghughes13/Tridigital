@@ -34,7 +34,7 @@ const CheckoutForm = () => {
     submitButton.style.display = "none";
     axios
       .post(
-        "https://eloquent-hawking-0b4899.netlify.com/.netlify/functions/warmup-submission",
+        "https://www.tridigitalmarketing.com/.netlify/functions/warmup-submission",
         JSON.stringify({
           firstName: document.getElementById("firstName").value,
           lastName: document.getElementById("lastName").value,
