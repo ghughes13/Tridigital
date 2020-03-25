@@ -1,0 +1,261 @@
+.vendor-lp {
+  h1 {
+    color: white;
+    font-size: 80px;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    margin: 1em 0 0.5em;
+    text-transform: uppercase;
+  }
+
+  /*****************/
+  /******HERO*******/
+  /*****************/
+
+  .hero {
+    padding-top: 150px;
+    padding-bottom: 200px;
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: url(https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/vendor-partner-lp/background-blob.svg);
+      height: 100%;
+      background-size: cover;
+      width: 60vw;
+    }
+    .col {
+      max-width: 50%;
+    }
+    video {
+      max-width: 100%;
+    }
+
+    @media screen and (max-width: 1500px) {
+      padding-bottom: 250px;
+    }
+    @media screen and (max-width: 1224px) {
+      h1 {
+        font-size: 80px;
+        text-align: center;
+        margin-bottom: 100px;
+      }
+
+      .col {
+        min-width: 100%;
+        text-align: center;
+      }
+
+      padding-top: 100px;
+      padding-bottom: 200px;
+    }
+
+    &:after {
+      width: 100vw;
+    }
+
+    @media screen and (max-width: 767px) {
+      h1 {
+        font-size: 40px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  /***************************/
+  /******WHITE SECTION*******/
+  /**************************/
+  .white-section {
+    h2 {
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: 3.5vw;
+      color: #0040ed;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+    }
+
+    .row {
+      max-width: 75vw;
+      min-width: 800px;
+    }
+
+    &::before {
+      content: "";
+      background: url(https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/vendor-partner-lp/white%20swish.svg);
+      position: absolute;
+      top: -400px;
+      left: 0;
+      right: 0;
+      height: 500px;
+      background-repeat: no-repeat;
+      background-size: 120vw;
+      background-position: -76px 0px;
+
+      @media screen and (max-width: 1224px) {
+        top: -300px;
+      }
+
+      @media screen and (max-width: 800px) {
+        top: -200px;
+      }
+
+      @media screen and (max-width: 800px) {
+        top: -100px;
+      }
+
+      @media screen and (max-width: 500px) {
+        background-size: 175vw;
+      }
+    }
+
+    form {
+      -webkit-box-shadow: 0px 0px 36px 0px rgba(0, 81, 255, 0.1);
+      -moz-box-shadow: 0px 0px 36px 0px rgba(0, 81, 255, 0.1);
+      box-shadow: 0px 0px 36px 0px rgba(0, 81, 255, 0.1);
+      padding: 10% 10%;
+      border-radius: 10px;
+      margin-top: 130px;
+      background: white;
+      z-index: 999;
+
+      p {
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        color: #466777;
+      }
+
+      ::-webkit-file-upload-button {
+        background: #ff3975;
+        color: white;
+        border: solid #ff3975 2px;
+        border-radius: 20px;
+        padding: 0 10px;
+      }
+
+      button {
+        text-align: center;
+        border-radius: 30px;
+        color: #fff;
+        font-weight: 900;
+        font-size: 20px;
+        width: 230px;
+        display: block;
+        padding: 13px 50px 12px;
+        margin-top: 40px;
+        font-family: "Poppins";
+        transition: all 0.3s ease-in-out;
+        border: none;
+        background: transparent;
+        margin-left: auto;
+        &:hover {
+          color: #ff3975;
+        }
+      }
+
+      @media screen and (max-width: 1500px) {
+        padding: 10% 5%;
+      }
+
+      @media screen and (max-width: 767px) {
+        padding: 40px 20px;
+      }
+    }
+
+    label {
+      font-family: "Poppins", sans-serif;
+      font-size: 18px;
+      color: #466777;
+      margin-top: 35px;
+      margin-bottom: 20px;
+    }
+
+    label.blue-label {
+      color: #0092fb;
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .primary-contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .primary-contact > div {
+      width: 48%;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      width: 100%;
+      padding: 10px;
+      border: solid #c9cbd9 1px;
+      font-family: "Poppins", sans-serif;
+      font-size: 20px;
+      color: #466777;
+      margin-bottom: 0px;
+    }
+
+    textarea {
+      min-height: 90px;
+    }
+
+    .blob-container:before {
+      position: absolute;
+      content: url("https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/vendor-partner-lp/grey-blob-1.svg");
+      z-index: 0;
+    }
+
+    .blob-container:after {
+      position: absolute;
+      content: url("https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/vendor-partner-lp/grey-blob-2.svg");
+      bottom: 0;
+      left: -30vw;
+    }
+
+    @media screen and (max-width: 1500px) {
+      .row:first-child {
+        margin-top: -100px;
+      }
+    }
+
+    @media screen and (max-width: 1224px) {
+      margin-top: -150px;
+
+      .row {
+        max-width: 90vw;
+        min-width: 100%;
+      }
+
+      .row:first-child {
+        margin-top: 0px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .primary-contact > div {
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      h3 {
+        font-size: 32px;
+      }
+
+      form {
+        margin-top: 50px;
+      }
+
+      .row:nth-child(2) {
+        padding: 0 5vw;
+      }
+    }
+  }
+}

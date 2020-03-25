@@ -42,7 +42,7 @@ const Header = ({ siteTitle, opaque }) => {
         rel="stylesheet"
       />
       <link
-        href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
+        href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap"
         rel="stylesheet"
       />
       <script

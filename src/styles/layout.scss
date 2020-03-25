@@ -1418,8 +1418,24 @@ main .max-width-fix {
   margin: auto;
 }
 
+.margin-top-0 {
+  margin-top: 0;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.margin-top-30 {
+  margin-top: 30px;
+}
+
 .margin-top-50 {
   margin-top: 50px;
+}
+
+.margin-top-60 {
+  margin-top: 60px;
 }
 
 .margin-top-100 {
@@ -1436,6 +1452,11 @@ div.margin-top-minus-400 {
 
 .z-index-999 {
   z-index: 999;
+}
+
+.align-vertical {
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (max-width: 767px) {
