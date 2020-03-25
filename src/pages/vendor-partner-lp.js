@@ -59,6 +59,7 @@ const VendorPartnerLP = () => {
               netlify="true"
               netlify-honeypot="bot-field"
             >
+              <input type="hidden" name="bot-field" />
               <h3 className="blue-text form-title centered-text">
                 Ready to Start <br />
                 Generating Leads?
