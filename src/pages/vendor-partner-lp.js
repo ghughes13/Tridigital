@@ -51,13 +51,13 @@ const VendorPartnerLP = () => {
           </Row>
           <Row className="blob-container">
             <form
+              id="vendor-lp"
+              className="vendor-lp"
+              method="POST"
+              onSubmit={e => {}}
               name="vendor-lp"
-              onSubmit={e => {
-                e.preventDefault();
-              }}
               netlify="true"
               netlify-honeypot="bot-field"
-              method="POST"
             >
               <h3 className="blue-text form-title centered-text">
                 Ready to Start <br />
