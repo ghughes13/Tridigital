@@ -13,16 +13,19 @@ const VendorPartnerLP = () => {
       <div className="vendor-lp">
         <Container className="container pink-gradient-background hero swish">
           <Row className="z-index-999">
-            <Col className="align-vertical content-container column first-col">
+            <Col className="align-vertical content-container column">
               <h1>Vendor Partnership Program</h1>
             </Col>
-            <Col className="content-container column display-flex video-container">
-              <img
+            <Col className="content-container column display-flex video-container ">
+              <video
                 className="lp-video box-shadow"
-                src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2020/03/Capture.PNG"
+                src="https://tdgatsbytest.wpengine.com/wp-content/uploads/vendor-lp-video/Vendor_15_sec_loop_AA_V01.mp4"
                 alt="TRIdigital media team"
                 id="video-player"
-              ></img>
+                autoPlay
+                loop
+                muted
+              ></video>
               <Yourvideo />
             </Col>
           </Row>
