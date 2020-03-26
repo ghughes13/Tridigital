@@ -1,10 +1,10 @@
 .vendor-lp {
   h1 {
     color: white;
-    font-size: 80px;
+    font-size: 5vw;
     font-weight: 600;
     font-family: "Oswald", sans-serif;
-    margin: 1em 0 0.5em;
+    margin: 0;
     text-transform: uppercase;
   }
 
@@ -25,15 +25,47 @@
       background-size: cover;
       width: 60vw;
     }
+
     .col {
       max-width: 50%;
     }
-    video {
+
+    .first-col {
+      flex-grow: 1;
+    }
+
+    #video-player {
       max-width: 100%;
+      min-height: 450px;
+      object-fit: cover;
+      border-radius: 10px;
+      -webkit-box-shadow: 0px 5px 36px 0px rgba(0, 81, 255, 0.1);
+      -moz-box-shadow: 0px 5px 36px 0px rgba(0, 81, 255, 0.1);
+      box-shadow: 0px 5px 36px 0px rgba(0, 81, 255, 0.1);
+    }
+
+    .video-btn {
+      top: 35%;
+      width: 150px;
+
+      .wistia_click_to_play {
+        height: 150px !important;
+        width: 150px !important;
+      }
+    }
+
+    .video-container {
+      border-radius: 10px;
+      position: relative;
+      flex-grow: 2;
     }
 
     @media screen and (max-width: 1500px) {
       padding-bottom: 250px;
+
+      .video-container {
+        max-width: 100%;
+      }
     }
     @media screen and (max-width: 1224px) {
       h1 {

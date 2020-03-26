@@ -1454,9 +1454,13 @@ div.margin-top-minus-400 {
   z-index: 999;
 }
 
-.align-vertical {
+div .align-vertical {
   display: flex;
   align-items: center;
+}
+
+div .display-flex {
+  display: flex;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1913,7 +1917,7 @@ footer .footer-thank-you h5 {
   margin-bottom: -6px;
 }
 
-.home-page .video-btn {
+.video-btn {
   position: absolute;
   top: 41%;
   left: 0;
@@ -1922,7 +1926,7 @@ footer .footer-thank-you h5 {
   width: 130px;
 }
 
-.home-page .video-btn img {
+.video-btn img {
   transition-duration: 0.5s;
   &:hover {
     transform: scale(1.25);

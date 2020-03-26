@@ -2,6 +2,8 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
+import Yourvideo from "../components/VendorPartnerVideoPlayer";
+
 import "../styles/vendor-lp.scss";
 
 const VendorPartnerLP = () => {
@@ -11,18 +13,17 @@ const VendorPartnerLP = () => {
       <div className="vendor-lp">
         <Container className="container pink-gradient-background hero swish">
           <Row className="z-index-999">
-            <Col className="align-vertical content-container column">
+            <Col className="align-vertical content-container column first-col">
               <h1>Vendor Partnership Program</h1>
             </Col>
-            <Col className="content-container column">
-              <video
-                className="play-icon"
-                src="https://tdgatsbytest.wpengine.com/wp-content/uploads/home-videos/Demoreel%20Square_R.mp4"
+            <Col className="content-container column display-flex video-container">
+              <img
+                className="lp-video box-shadow"
+                src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2020/03/Capture.PNG"
                 alt="TRIdigital media team"
-                autoPlay
-                loop
-                muted
-              ></video>
+                id="video-player"
+              ></img>
+              <Yourvideo />
             </Col>
           </Row>
         </Container>
