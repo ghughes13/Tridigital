@@ -14,7 +14,7 @@ const VendorPartnerLP = () => {
         <Container className="container pink-gradient-background hero swish">
           <Row className="z-index-999">
             <Col className="align-vertical content-container column">
-              <h1>Vendor Partnership Program</h1>
+              <h1>Ingram Micro / Fortinet Program</h1>
             </Col>
             <Col className="content-container column display-flex video-container ">
               <video
