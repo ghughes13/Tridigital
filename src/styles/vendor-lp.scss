@@ -16,14 +16,11 @@
     padding-top: 150px;
     padding-bottom: 200px;
     &:after {
-      content: "";
+      content: url(https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/vendor-partner-lp/Intersection%209.svg);
       position: absolute;
       right: 0;
       top: 0;
-      background: url(https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/vendor-partner-lp/background-blob.svg);
       height: 100%;
-      background-size: cover;
-      width: 60vw;
     }
 
     .col {
@@ -83,8 +80,17 @@
       padding-bottom: 200px;
     }
 
-    &:after {
-      width: 100vw;
+    @media screen and (max-width: 1000px) {
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        background: url(https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/vendor-partner-lp/Intersection%209.svg);
+        background-size: cover;
+        width: 100%;
+      }
     }
 
     @media screen and (max-width: 767px) {
