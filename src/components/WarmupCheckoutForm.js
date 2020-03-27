@@ -83,7 +83,6 @@ const CheckoutForm = () => {
   };
 
   const validatePromoCode = () => {
-    console.log(document.getElementById("promo").value);
     if (document.getElementById("promo").value == "TDCARES") {
       document.querySelectorAll(".price-tier").forEach(option => {
         option.style.display = "none";
