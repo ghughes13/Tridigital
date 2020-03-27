@@ -13,6 +13,7 @@ const headers = {
 var body;
 var stripeCustomerId;
 var stripePaymentMethodId;
+var priceTier;
 
 var plans = [
   "tridigitalmarketingwarmup-lovinit_27_1month_130000",
@@ -56,6 +57,8 @@ function hasValidBody() {
     body.priceTierId === "1" ||
     body.priceTierId === "2" ||
     body.priceTierId === "3";
+
+  priceTier = body.priceTierId;
 
   return (
     body.firstName &&
@@ -135,21 +138,40 @@ function createStripeSubscription() {
   return new Promise((resolve, reject) => {
     resolve();
 
-    stripe.subscriptions.create(
-      {
-        customer: stripeCustomerId,
-        items: [
-          { plan: "plan_Gz1gjBRO3h2d6b" }, //!!Include Quotes //Live Code:  plans[body.priceTierId]  //Standard Test Code: "tridigitalmarketingwarmup-testinit_25_1month_150000" //Promo Test Code: "plan_Gz1gjBRO3h2d6b"
-        ],
-      },
-      (error, subscription) => {
-        if (subscription) {
-          resolve();
-        } else {
-          reject(error);
+    if (priceTier === "3") {
+      stripe.subscriptions.create(
+        {
+          customer: stripeCustomerId,
+          items: [
+            { plan: "plan_Gz1gjBRO3h2d6b" }, //!!Include Quotes //Live Code:  plans[body.priceTierId]  //Standard Test Code: "tridigitalmarketingwarmup-testinit_25_1month_150000" //Promo Test Code: "plan_Gz1gjBRO3h2d6b"
+          ],
+          trial_period_days: 60,
+        },
+        (error, subscription) => {
+          if (subscription) {
+            resolve();
+          } else {
+            reject(error);
+          }
         }
-      }
-    );
+      );
+    } else {
+      stripe.subscriptions.create(
+        {
+          customer: stripeCustomerId,
+          items: [
+            { plan: "plan_Gz1gjBRO3h2d6b" }, //!!Include Quotes //Live Code:  plans[body.priceTierId]  //Standard Test Code: "tridigitalmarketingwarmup-testinit_25_1month_150000" //Promo Test Code: "plan_Gz1gjBRO3h2d6b"
+          ],
+        },
+        (error, subscription) => {
+          if (subscription) {
+            resolve();
+          } else {
+            reject(error);
+          }
+        }
+      );
+    }
   });
 }
 
