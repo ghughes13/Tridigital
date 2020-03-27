@@ -54,7 +54,8 @@ function hasValidBody() {
   var isValidPriceTierId =
     body.priceTierId === "0" ||
     body.priceTierId === "1" ||
-    body.priceTierId === "2";
+    body.priceTierId === "2" ||
+    body.priceTierId === "3";
 
   return (
     body.firstName &&
