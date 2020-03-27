@@ -104,7 +104,7 @@ const TermsOfService = () => {
                   or websites
                 </li>
                 <li>
-                  A form submission from any of your landing pages or websites
+                  A form submission from any of your landing pages or websites{" "}
                 </li>
                 <li>
                   A click-through from a call to action included in any of your
@@ -278,6 +278,12 @@ const TermsOfService = () => {
           <h2>Payment Terms</h2>
           <ol>
             <li>
+              In using the promotional code TDCARES, you understand and agree
+              the term of this agreement is a total of fourteen (14) months, no
+              payment will be required for the first two (2) months, the first
+              of twelve (12) payments will begin on month three (3).
+            </li>
+            <li>
               A Paid Subscription is billed in advance on a monthly basis on its
               anniversary date for the length of your subscription and is
               non-refundable. There will be no refunds or credits for partial
@@ -288,7 +294,7 @@ const TermsOfService = () => {
               All Subscription fees are exclusive of any applicable taxes,
               levies, or duties you or your organization may be liable for, and
               you are solely responsible for payment of all such taxes, levies,
-              or duties.
+              or duties.{" "}
             </li>
           </ol>
           <h2>Termination</h2>
@@ -296,7 +302,7 @@ const TermsOfService = () => {
             <li>
               Your subscription will renew automatically at the end of your
               term. If you do not wish to renew your subscription, you may send
-              a written notice thirty (30) days prior to the end of your term.
+              a written notice sixty (60) days prior to the end of your term.
               Should you choose not to renew your subscription:
               <ol>
                 <li>
@@ -315,27 +321,27 @@ const TermsOfService = () => {
             </li>
             <li>
               <p>
-                This Agreement may be terminated by you upon thirty (30) days
+                This Agreement may be terminated by you upon sixty (60) days
                 written notice without penalty if TRIdigital:
               </p>
               <p>
                 1. Fails to fulfill in any material respect its obligations
-                under this Agreement and does not cure such failure within
-                thirty (30)
+                under this Agreement and does not cure such failure within sixty
+                (60) days of receipt of such written notice.
               </p>
-              <p>    days of receipt of such written notice.</p>
               <p>
                 2. Breaches any material term or condition of this Agreement and
-                fails to remedy such breach within thirty (30) days of
+                fails to remedy such breach within thirty sixty (60) of receipt
+                of such written notice.{" "}
               </p>
-              <p>     receipt of such written notice.</p>
               <p>
                 3. Terminates or suspends its business operations, unless it is
                 succeeded by a permitted assignee.
               </p>
               4. TRIdigital fails to meet the rolling average of 10 monhtly
-              leads quota offered in the FEELIN' IT and LOVIN' IT service
-              options
+              leads quota offered in the LOVIN' IT service options. *You
+              understand and agree in using the promotion code TDCARES, the lead
+              quota will not go into effect until month four (4).
             </li>
           </ol>
           <strong>
@@ -414,11 +420,11 @@ const TermsOfService = () => {
             </li>
           </ol>
           <h1>TRIDIGITAL MARKETING WARM UP STATEMENT OF WORK</h1>
-          <h2>MARKETING WARM UP – TESTIN' IT</h2>
-          <strong>3. Month Plan - $1,500 per month</strong>
+          <h2>MARKETING WARM UP – LOVIN’ IT </h2>
+          <strong>12 Month Plan - $1,300 per month </strong>
           <ol>
             <li>
-              Full Honey setup, training &amp; support
+              Full Honey setup, training & support
               <ul>
                 <li>
                   You will be given a license of Honey CRM at no additional cost
@@ -429,7 +435,7 @@ const TermsOfService = () => {
               </ul>
             </li>
             <li>
-              2 Graphical Campaigns per month
+              6 Email Campaign Template Designs{" "}
               <ul>
                 <li>
                   Mobile responsive HTML emails matching your corporate
@@ -439,7 +445,17 @@ const TermsOfService = () => {
               </ul>
             </li>
             <li>
-              2 Personal Campaigns per month
+              2 Graphical Campaigns per month{" "}
+              <ul>
+                <li>
+                  Mobile responsive HTML emails matching your corporate
+                  branding. Your emails will be created and delivered via Honey
+                  CRM
+                </li>
+              </ul>
+            </li>
+            <li>
+              2 Personal Campaigns per month{" "}
               <ul>
                 <li>
                   Well written email follow up campaigns created and saved into
@@ -449,7 +465,7 @@ const TermsOfService = () => {
               </ul>
             </li>
             <li>
-              3 Branded White Papers
+              12 Branded White Papers{" "}
               <ul>
                 <li>
                   Designed PDFs with a minimum 800 word length on selected
@@ -461,7 +477,7 @@ const TermsOfService = () => {
               </ul>
             </li>
             <li>
-              3 Branded Landing Pages
+              12 Branded Landing Pages{" "}
               <ul>
                 <li>
                   Responsive HTML web pages. Your landing pages can feature
@@ -473,7 +489,7 @@ const TermsOfService = () => {
               </ul>
             </li>
             <li>
-              3 Marketing Videos
+              12 Marketing Videos{" "}
               <ul>
                 <li>
                   Explainer videos of select products and services. These are
@@ -483,227 +499,7 @@ const TermsOfService = () => {
               </ul>
             </li>
             <li>
-              1 Branded eBook
-              <ul>
-                <li>
-                  In depth PDF’s designed in a 8.5 X 11 booklet format. These
-                  are designed allow your prospects to learn the benefits of
-                  select products, services, or strategies. eBooks will be
-                  designed to match your corporate branding.
-                </li>
-              </ul>
-            </li>
-            <li>
-              1 Quarterly Consultation Calls
-              <ul>
-                <li>
-                  in-depth analysis conducted by your marketing coordinator
-                  where we review the previous marketing activities, trends and
-                  analytics to inform our ongoing marketing strategy.
-                </li>
-              </ul>
-            </li>
-            <li>
-              Phone &amp; Email Support
-              <ul>
-                <li>
-                  We will advise you on best practices for the execution of
-                  proper use of Honey CRM and coach you on best practices for
-                  sales follow up.
-                </li>
-              </ul>
-            </li>
-          </ol>
-          <h2>MARKETING WARM UP – FEELIN’ IT</h2>
-          <strong>6 Month Plan - $1,400 per month</strong>
-          <ul>
-            <li>
-              Full Honey setup, training &amp; support
-              <ul>
-                <li>
-                  You will be given a license of Honey CRM at no additional cost
-                  for your organization and an unlimited number of users. Your
-                  marketing coordinator will assist you in getting it fully set
-                  up and integrated then coach you on best practices.
-                </li>
-              </ul>
-            </li>
-            <li>
-              4 Email Campaign Template Designs
-              <ul>
-                <li>
-                  Mobile responsive HTML emails matching your corporate
-                  branding. Your emails will be created and delivered via Honey
-                  CRM
-                </li>
-              </ul>
-            </li>
-            <li>
-              2 Graphical Campaigns per month
-              <ul>
-                <li>
-                  Mobile responsive HTML emails matching your corporate
-                  branding. Your emails will be created and delivered via Honey
-                  CRM
-                </li>
-              </ul>
-            </li>
-            <li>
-              2 Personal Campaigns per month
-              <ul>
-                <li>
-                  Well written email follow up campaigns created and saved into
-                  Honey CRM for unlimited use from your sales team. These emails
-                  are designed to follow up with leads.
-                </li>
-              </ul>
-            </li>
-            <li>
-              6 Branded White Papers
-              <ul>
-                <li>
-                  Designed PDFs with a minimum 800 word length on selected
-                  product or services you deliver. These are designed to
-                  generate curiosity in your target audience. These white papers
-                  will be designed to match your corporate branding then will be
-                  uploaded to Honey CRM’s marketing collateral library
-                </li>
-              </ul>
-            </li>
-            <li>
-              6 Branded Landing Pages
-              <ul>
-                <li>
-                  Responsive HTML web pages. Your landing pages can feature
-                  solution and service explainer pages, event promotion pages,
-                  or pages offering a video or white paper download along with a
-                  strong call to action. Landing Page development incorporates
-                  copy up to 500 words and visual design.
-                </li>
-              </ul>
-            </li>
-            <li>
-              6 Marketing Videos
-              <ul>
-                <li>
-                  Explainer videos of select products and services. These are
-                  designed to entice your target audience to contact you to
-                  learn more about your services.
-                </li>
-              </ul>
-            </li>
-            <li>
-              2 Branded eBook
-              <ul>
-                <li>
-                  In depth PDF’s designed in a 8.5 X 11 booklet format. These
-                  are designed allow your prospects to learn the benefits of
-                  select products, services, or strategies. eBooks will be
-                  designed to match your corporate branding.
-                </li>
-              </ul>
-            </li>
-            <li>
-              2 Quarterly Consultation Calls
-              <ul>
-                <li>
-                  in-depth analysis conducted by your marketing coordinator
-                  where we review the previous marketing activities, trends and
-                  analytics to inform our ongoing marketing strategy.
-                </li>
-              </ul>
-            </li>
-            <li>
-              Phone &amp; Email Support
-              <ul>
-                <li>
-                  We will advise you on best practices for the execution of
-                  proper use of Honey CRM and coach you on best practices for
-                  sales follow up.
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <h2>MARKETING WARM UP – LOVIN’ IT</h2>
-          <strong>12 Month Plan - $1,300 per month</strong>
-          <ol>
-            <li>
-              Full Honey setup, training &amp; support
-              <ul>
-                <li>
-                  You will be given a license of Honey CRM at no additional cost
-                  for your organization and an unlimited number of users. Your
-                  marketing coordinator will assist you in getting it fully set
-                  up and integrated then coach you on best practices.
-                </li>
-              </ul>
-            </li>
-            <li>
-              6 Email Campaign Template Designs
-              <ul>
-                <li>
-                  Mobile responsive HTML emails matching your corporate
-                  branding. Your emails will be created and delivered via Honey
-                  CRM
-                </li>
-              </ul>
-            </li>
-            <li>
-              2 Graphical Campaigns per month
-              <ul>
-                <li>
-                  Mobile responsive HTML emails matching your corporate
-                  branding. Your emails will be created and delivered via Honey
-                  CRM
-                </li>
-              </ul>
-            </li>
-            <li>
-              2 Personal Campaigns per month
-              <ul>
-                <li>
-                  Well written email follow up campaigns created and saved into
-                  Honey CRM for unlimited use from your sales team. These emails
-                  are designed to follow up with leads.
-                </li>
-              </ul>
-            </li>
-            <li>
-              12 Branded White Papers
-              <ul>
-                <li>
-                  Designed PDFs with a minimum 800 word length on selected
-                  product or services you deliver. These are designed to
-                  generate curiosity in your target audience. These white papers
-                  will be designed to match your corporate branding then will be
-                  uploaded to Honey CRM’s marketing collateral library
-                </li>
-              </ul>
-            </li>
-            <li>
-              12 Branded Landing Pages
-              <ul>
-                <li>
-                  Responsive HTML web pages. Your landing pages can feature
-                  solution and service explainer pages, event promotion pages,
-                  or pages offering a video or white paper download along with a
-                  strong call to action. Landing Page development incorporates
-                  copy up to 500 words and visual design.
-                </li>
-              </ul>
-            </li>
-            <li>
-              12 Marketing Videos
-              <ul>
-                <li>
-                  Explainer videos of select products and services. These are
-                  designed to entice your target audience to contact you to
-                  learn more about your services.
-                </li>
-              </ul>
-            </li>
-            <li>
-              4 Branded eBook
+              4 Branded eBook{" "}
               <ul>
                 <li>
                   In depth PDF’s designed in a 8.5 X 11 booklet format. These
@@ -724,7 +520,7 @@ const TermsOfService = () => {
               </ul>
             </li>
             <li>
-              Phone &amp; Email Support
+              Phone & Email Support
               <ul>
                 <li>
                   We will advise you on best practices for the execution of
@@ -742,14 +538,11 @@ const TermsOfService = () => {
             from the options TRIdigital provides. The client will have two weeks
             from the date of signing Terms of Services to make their choice. If
             the client does not choose within two weeks, TRIdigital will make
-            the selections for the client. 
-          </span>
-          <span>
-            If the client misses the two-week window, the client may make the
-            selection of style and solutions afterward and will be applied to
-            future deliverables. However, the change will not take place on any
-            previously delivered items or those that are currently in
-            production.
+            the selections for the client. If the client misses the two-week
+            window, the client may make the selection of style and solutions
+            afterward and will be applied to future deliverables. However, the
+            change will not take place on any previously delivered items or
+            those that are currently in production.
           </span>
           <h3>Go live timeline</h3>
           <span>
@@ -757,7 +550,7 @@ const TermsOfService = () => {
             provided all the information and answered all the questions needed
             to begin the creation of deliverables within the service.
           </span>
-          <h3>Email Marketing</h3>
+          <h3>Email Marketing </h3>
           <span>
             TRIdigital must receive a list in order to market. If no list is
             received, TRIdigital will build out all assets but will not be able
@@ -771,7 +564,8 @@ const TermsOfService = () => {
             utilizing content that TRIdigital has approved in order to meet or
             exceed the warm lead guarantee. No edits, outside of the ones listed
             below, can be made to the content or design of these items. If edits
-            are made, TRIdigital can void the warm lead guarantee.
+            are made, TRIdigital can void the warm lead guarantee.The following
+            are edits the client can make with no penalty:
           </span>
           <span>
             The following are edits the client can make with no penalty:

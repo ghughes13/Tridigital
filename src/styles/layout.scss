@@ -5990,6 +5990,14 @@ div.warmup-signup .sbmt-btn .btn.pink-button:hover {
   display: none;
 }
 
+.warmup-signup #promo-option {
+  display: none;
+}
+
+.warmup-signup #alt-tos {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .warmup-signup .swish:after,
   .warmup-questionaire .swish:after {

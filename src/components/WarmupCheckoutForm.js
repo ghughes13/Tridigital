@@ -1,13 +1,11 @@
 import React, { useEffect } from "react";
 import axios from "axios";
-import Loader from "./Loader"
+import Loader from "./Loader";
 
 const CheckoutForm = () => {
-
   useEffect(() => {
     getUrlVars();
   });
-
 
   let changeColorOfPriceInput = () => {
     let elements = document.querySelectorAll(".edit-color");
@@ -26,6 +24,10 @@ const CheckoutForm = () => {
       document.getElementById("priceTierId").classList.add("blue");
       document.getElementById("price-container").classList.add("blue");
       document.getElementById("price-hook").innerText = "1,400";
+    } else if (document.getElementById("priceTierId").value == 3) {
+      document.getElementById("priceTierId").classList.add("yellow");
+      document.getElementById("price-container").classList.add("yellow");
+      document.getElementById("price-hook").innerText = "1,300";
     } else {
       document.getElementById("priceTierId").classList.add("yellow");
       document.getElementById("price-container").classList.add("yellow");
@@ -34,8 +36,8 @@ const CheckoutForm = () => {
   };
 
   const submitForm = () => {
-    const submitButton = document.getElementById("sbmt-form-btn")
-    const loader = document.querySelector('.loader');
+    const submitButton = document.getElementById("sbmt-form-btn");
+    const loader = document.querySelector(".loader");
     loader.style.display = "block";
     submitButton.style.display = "none";
     axios
@@ -56,7 +58,8 @@ const CheckoutForm = () => {
       )
       .then(response => {
         if (response.status === 200) {
-          window.location.href = "https://warmup.tridigitalmarketing.com/thank-you/";
+          window.location.href =
+            "https://warmup.tridigitalmarketing.com/thank-you/";
         }
       })
       .catch(error => {
@@ -68,13 +71,30 @@ const CheckoutForm = () => {
 
   const getUrlVars = () => {
     const vars = {};
-    const parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+    const parts = window.location.href.replace(
+      /[?&]+([^=&]+)=([^&]*)/gi,
+      function(m, key, value) {
         vars[key] = value;
-    });
+      }
+    );
     const selectEl = document.getElementById("priceTierId");
     selectEl.value = vars.l;
-    changeColorOfPriceInput()
-  }
+    changeColorOfPriceInput();
+  };
+
+  const validatePromoCode = () => {
+    console.log(document.getElementById("promo").value);
+    if (document.getElementById("promo").value == "TDCARES") {
+      document.querySelectorAll(".price-tier").forEach(option => {
+        option.style.display = "none";
+        document.getElementById("promo-option").selected = true;
+        document.getElementById("promo-option").style.display = "initial";
+      });
+      document.getElementById("alt-tos").style.display = "initial";
+      document.getElementById("original-tos").style.display = "none";
+      changeColorOfPriceInput();
+    }
+  };
 
   return (
     <form
@@ -106,6 +126,15 @@ const CheckoutForm = () => {
           <label>What's Your Email Address?</label>
           <input type="text" name="email" id="email" required />
         </div>
+        <div className="promo-code">
+          <label>Promo Code</label>
+          <input
+            type="text"
+            name="promoCode"
+            id="promo"
+            onKeyUp={() => validatePromoCode()}
+          />
+        </div>
         <div className="field email-field">
           <label>Select Price Tier</label>
           <select
@@ -115,14 +144,21 @@ const CheckoutForm = () => {
             required
             className="edit-color pink"
           >
-            <option default value="0" className="tier-1 pink">
+            <option default value="0" className="tier-1 pink price-tier">
               TESTIN' IT: 3-Months Investment | $1,500.00/mo
             </option>
-            <option value="1" className="tier-2 blue">
+            <option value="1" className="tier-2 blue price-tier">
               FEELIN' IT: 6-Months Investment | $1,400.00/mo
             </option>
-            <option value="2" className="tier-3 yellow">
+            <option value="2" className="tier-3 yellow price-tier">
               LOVIN' IT: 12-Months Investment | $1,300.00/mo
+            </option>
+            <option
+              value="3"
+              className="tier-3 yellow promo-option"
+              id="promo-option"
+            >
+              LOVIN' IT: 12-Months Investment | $1,300.00/mo (Promo)
             </option>
           </select>
           <div className="total">
@@ -230,7 +266,20 @@ const CheckoutForm = () => {
           />
           <label>
             I have read and agree to the{" "}
-            <a className="read-me" href="/terms-of-service" target="_blank">
+            <a
+              className="read-me "
+              href="/terms-of-service"
+              target="_blank"
+              id="original-tos"
+            >
+              terms of service
+            </a>
+            <a
+              id="alt-tos"
+              className="read-me"
+              href="/promo-code-terms-of-service"
+              target="_blank"
+            >
               terms of service
             </a>
             , and the{" "}
@@ -249,11 +298,7 @@ const CheckoutForm = () => {
         </div>
         <div className="sbmt-btn">
           <Loader />
-          <button
-            type="submit"
-            className="btn pink-button"
-            id="sbmt-form-btn"
-          >
+          <button type="submit" className="btn pink-button" id="sbmt-form-btn">
             Subscribe
           </button>
         </div>

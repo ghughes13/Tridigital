@@ -1,13 +1,13 @@
 //Switch out commented data on lines 4 & 140 to debug
 
 require("dotenv").config();
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY_LIVE); //STRIPE_SECRET_KEY_TEST
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY_TEST); //STRIPE_SECRET_KEY_TEST //STRIPE_SECRET_KEY_LIVE
 const axios = require("axios");
 
 const headers = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "Content-Type",
-  "Access-Control-Allow-Methods": 'POST'
+  "Access-Control-Allow-Methods": "POST",
 };
 
 var body;
@@ -138,7 +138,7 @@ function createStripeSubscription() {
       {
         customer: stripeCustomerId,
         items: [
-          { plan: plans[body.priceTierId]}, //"tridigitalmarketingwarmup-testinit_25_1month_150000"
+          { plan: "plan_Gz1gjBRO3h2d6b" }, //!!Include Quotes //Live Code:  plans[body.priceTierId]  //Standard Test Code: "tridigitalmarketingwarmup-testinit_25_1month_150000" //Promo Test Code: "plan_Gz1gjBRO3h2d6b"
         ],
       },
       (error, subscription) => {
