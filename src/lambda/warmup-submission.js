@@ -143,7 +143,7 @@ function createStripeSubscription() {
         {
           customer: stripeCustomerId,
           items: [
-            { plan: "plan_Gz1gjBRO3h2d6b" }, //!!Include Quotes //Live Code:  plans[body.priceTierId]  //Standard Test Code: "tridigitalmarketingwarmup-testinit_25_1month_150000" //Promo Test Code: "plan_Gz1gjBRO3h2d6b"
+            { plan: "plan_Gz1gjBRO3h2d6b" }, //!!Include Quotes //Live Code:  plans[body.priceTierId] //Promo Test Code: "plan_Gz1gjBRO3h2d6b"
           ],
           trial_period_days: 60,
         },
@@ -160,7 +160,7 @@ function createStripeSubscription() {
         {
           customer: stripeCustomerId,
           items: [
-            { plan: "plan_Gz1gjBRO3h2d6b" }, //!!Include Quotes //Live Code:  plans[body.priceTierId]  //Standard Test Code: "tridigitalmarketingwarmup-testinit_25_1month_150000" //Promo Test Code: "plan_Gz1gjBRO3h2d6b"
+            { plan: plans[body.priceTierId] }, //!!Include Quotes //Live Code:  plans[body.priceTierId]  //Standard Test Code: "tridigitalmarketingwarmup-testinit_25_1month_150000"
           ],
         },
         (error, subscription) => {
