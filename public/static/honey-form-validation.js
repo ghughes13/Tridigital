@@ -94,6 +94,8 @@
 
           var method = "POST";
           var url = "https://api.honeycrm.com/service/formsubmissions";
+          console.log("validated");
+          console.log(request);
           try {
             var xhr = new XMLHttpRequest();
             xhr.open(method, url, true);
@@ -102,8 +104,16 @@
               "application/json; charset=UTF-8"
             );
             xhr.send(JSON.stringify(request));
+            xhr.addEventListener("load", function(event) {
+              alert("Yeah! Data sent and response loaded.");
+            });
+
+            xhr.addEventListener("error", function(event) {
+              alert("Oops! Something went wrong.");
+            });
+            console.log("sent");
           } catch (error) {
-            console.error;
+            console.log(error);
           }
         };
       })(form, el);

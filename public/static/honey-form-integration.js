@@ -32,6 +32,7 @@
         }
       }
     }
+    console.log("adding honey scripts");
     addHoneyScripts();
   }
 
