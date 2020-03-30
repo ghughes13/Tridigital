@@ -41,47 +41,51 @@ const ContactUs = () => (
                 name="contact-us-form"
               >
                 <h3 className="blue-text form-title">
-                  Speak with an MSP Marketer to learn more
+                  Speak with a Channel Marketing Expert
                 </h3>
                 <div className="what-do-we-call-you">
                   <div className="field name-field">
-                    <label>What’s your name?</label>
+                    <label htmlFor="firstName">What’s your name?</label>
                     <input
                       type="text"
                       className="theInput"
-                      required
                       name="firstName"
+                      id="firstName"
+                      required
                     ></input>
                   </div>
                   <div className="field">
-                    <label className="second-label">
+                    <label className="second-label" htmlFor="company">
                       What company are you with?
                     </label>
                     <input
                       type="text"
                       className="theInput"
                       name="company"
+                      id="company"
                     ></input>
                   </div>
                 </div>
                 <br />
                 <div className="field email-field">
-                  <label>What’s your email address?</label>
+                  <label htmlFor="email">What’s your email address?</label>
                   <input
                     type="email"
                     className="theInput"
                     name="email"
+                    id="email"
                     required
                   ></input>
                 </div>
                 <div className="field comment-field">
-                  <label className="textarea-label">
+                  <label className="textarea-label" htmlFor="message">
                     What question can we answer for you?
                   </label>
                   <textarea
                     type="text"
                     className="theInput"
                     name="message"
+                    id="message"
                   ></textarea>
                 </div>
 
@@ -90,8 +94,11 @@ const ContactUs = () => (
                     type="checkbox"
                     className="checkbox"
                     name="keep-me-updated"
+                    id="keep-me-updated"
                   />
-                  <label>Keep Me Updated with Emails and Newsletters</label>
+                  <label htmlFor="keep-me-updated">
+                    Keep Me Updated with Emails and Newsletters
+                  </label>
                 </div>
                 <div className="hide-me field">
                   <input
@@ -105,7 +112,7 @@ const ContactUs = () => (
                   </button>
                 </div>
               </form>
-              <div class="contact-thank-you">
+              <div className="contact-thank-you">
                 <h5>Thank you for contacting us. We'll be in touch shortly!</h5>
               </div>
             </div>
