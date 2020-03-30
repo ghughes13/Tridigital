@@ -94,14 +94,17 @@
 
           var method = "POST";
           var url = "https://api.honeycrm.com/service/formsubmissions";
-
-          var xhr = new XMLHttpRequest();
-          xhr.open(method, url, true);
-          xhr.setRequestHeader(
-            "Content-Type",
-            "application/json; charset=UTF-8"
-          );
-          xhr.send(JSON.stringify(request));
+          try {
+            var xhr = new XMLHttpRequest();
+            xhr.open(method, url, true);
+            xhr.setRequestHeader(
+              "Content-Type",
+              "application/json; charset=UTF-8"
+            );
+            xhr.send(JSON.stringify(request));
+          } catch (error) {
+            console.error;
+          }
         };
       })(form, el);
     }

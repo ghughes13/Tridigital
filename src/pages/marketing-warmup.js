@@ -17,7 +17,7 @@ const WarmUp = () => (
               The MSP <br />
               Marketing Warmup
             </h2>
-            <p class="white-text subtext">
+            <p className="white-text subtext">
               A quickstart marketing program guaranteed to generate qualified
               leads every month
             </p>
@@ -25,7 +25,7 @@ const WarmUp = () => (
           </Col>
           <Col className="content-container column second-col">
             <img
-              class="collaterals"
+              className="collaterals"
               src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/collateral.png"
               alt="collaterals"
             />
@@ -45,7 +45,7 @@ const WarmUp = () => (
               We’ve collected all of our best performing campaigns and marketing
               materials and have put them together in this amazingly affordable
               package to generate{" "}
-              <span class="pink-text bold">
+              <span className="pink-text bold">
                 up to 10 leads a month guaranteed.
               </span>
             </p>
@@ -71,42 +71,46 @@ const WarmUp = () => (
                   Speak with an MSP Marketer to learn more
                 </h3>
                 <div className="field name-field">
-                  <label>What’s your name?</label>
+                  <label htmlFor="name">What’s your name?</label>
                   <input
                     type="text"
                     className="theInput"
                     name="name"
+                    id="name"
                     required
                   ></input>
                 </div>
                 <div className="field">
-                  <label className="second-label">
+                  <label className="second-label" htmlFor="company">
                     What company are you with?
                   </label>
                   <input
                     type="text"
                     className="theInput"
                     name="company"
+                    id="company"
                   ></input>
                 </div>
                 <br />
                 <div className="field email-field">
-                  <label>What’s your email address?</label>
+                  <label htmlFor="email">What’s your email address?</label>
                   <input
                     type="email"
                     className="theInput"
                     name="email"
+                    id="email"
                     required
                   ></input>
                 </div>
                 <div className="field comment-field">
-                  <label className="textarea-label">
+                  <label className="textarea-label" htmlFor="message">
                     What question can we answer for you?
                   </label>
                   <textarea
                     type="text"
                     className="theInput"
                     name="message"
+                    id="message"
                   ></textarea>
                 </div>
 
@@ -115,8 +119,11 @@ const WarmUp = () => (
                     type="checkbox"
                     className="checkbox"
                     name="keep-me-updated"
+                    id="keep-me-updated"
                   />
-                  <label>Keep me updated with emails and newsletters</label>
+                  <label htmlFor="keep-me-updated">
+                    Keep me updated with emails and newsletters
+                  </label>
                 </div>
                 <div className="hide-me field">
                   <input
@@ -130,7 +137,7 @@ const WarmUp = () => (
                   </button>
                 </div>
               </form>
-              <div class="contact-thank-you">
+              <div className="contact-thank-you">
                 <h5>Thank you for contacting us. We'll be in touch shortly!</h5>
               </div>
             </div>
@@ -148,7 +155,7 @@ const WarmUp = () => (
         <Row className="">
           <Col className="content-container column">
             <img
-              class="collaterals"
+              className="collaterals"
               src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/landing-pages.png"
               alt="collaterals"
             />
@@ -156,7 +163,7 @@ const WarmUp = () => (
           </Col>
           <Col className="content-container column ">
             <img
-              class="collaterals"
+              className="collaterals"
               src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/whitepapers.png"
               alt="collaterals"
             />
@@ -164,7 +171,7 @@ const WarmUp = () => (
           </Col>
           <Col className="content-container column ">
             <img
-              class="collaterals"
+              className="collaterals"
               src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/ebooks.png"
               alt="collaterals"
             />
@@ -172,7 +179,7 @@ const WarmUp = () => (
           </Col>
           <Col className="content-container column ">
             <img
-              class="collaterals"
+              className="collaterals"
               src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/videos.png"
               alt="collaterals"
             />
@@ -182,7 +189,7 @@ const WarmUp = () => (
         <Row className="">
           <Col className="content-container column ">
             <img
-              class="collaterals"
+              className="collaterals"
               src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/email-campaigns.png"
               alt="collaterals"
             />
@@ -190,7 +197,7 @@ const WarmUp = () => (
           </Col>
           <Col className="content-container column ">
             <img
-              class="collaterals"
+              className="collaterals"
               src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/coordinator.png"
               alt="collaterals"
             />
@@ -198,7 +205,7 @@ const WarmUp = () => (
           </Col>
           <Col className="content-container column ">
             <img
-              class="collaterals"
+              className="collaterals"
               src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/honey-crm.png"
               alt="collaterals"
             />
@@ -206,7 +213,7 @@ const WarmUp = () => (
           </Col>
           <Col className="content-container column ">
             <img
-              class="collaterals"
+              className="collaterals"
               src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/videos.png"
               alt="collaterals"
             />
@@ -226,7 +233,7 @@ const WarmUp = () => (
           <Col className="content-container column price-option">
             <span className="bold pink-text top-months">3 Months</span>
             <span className="price pink-text">
-              <span class="dollar-sigh">$</span>1,500
+              <span className="dollar-sigh">$</span>1,500
             </span>
             <p className="per-month">Per month</p>
             <ul className="checkmark-li">
@@ -248,7 +255,7 @@ const WarmUp = () => (
           <Col className="content-container column price-option second six-months">
             <span className="bold light-blue-text top-months">6 Months</span>
             <span className="price light-blue-text">
-              <span class="dollar-sigh">$</span>1,400
+              <span className="dollar-sigh">$</span>1,400
             </span>
             <p className="per-month">Per month</p>
             <ul className="checkmark-li">
@@ -270,7 +277,7 @@ const WarmUp = () => (
           <Col className="content-container column price-option third twelve-months">
             <span className="bold gold-text top-months">12 Months</span>
             <span className="price gold-text">
-              <span class="dollar-sigh">$</span>1,300
+              <span className="dollar-sigh">$</span>1,300
             </span>
             <p className="per-month">Per month</p>
             <ul className="checkmark-li">

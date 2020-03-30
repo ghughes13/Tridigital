@@ -49,43 +49,47 @@ const CustomMarketing = () => (
                 </h3>
                 <div className="what-do-we-call-you">
                   <div className="field name-field">
-                    <label>What’s your name?</label>
+                    <label htmlFor="firstName">What’s your name?</label>
                     <input
                       type="text"
                       className="theInput"
                       name="firstName"
+                      id="firstName"
                       required
                     ></input>
                   </div>
                   <div className="field">
-                    <label className="second-label">
+                    <label className="second-label" htmlFor="company">
                       What company are you with?
                     </label>
                     <input
                       type="text"
                       className="theInput"
                       name="company"
+                      id="company"
                     ></input>
                   </div>
                 </div>
                 <br />
                 <div className="field email-field">
-                  <label>What’s your email address?</label>
+                  <label htmlFor="email">What’s your email address?</label>
                   <input
                     type="email"
                     className="theInput"
                     name="email"
+                    id="email"
                     required
                   ></input>
                 </div>
                 <div className="field comment-field">
-                  <label className="textarea-label">
+                  <label className="textarea-label" htmlFor="message">
                     What question can we answer for you?
                   </label>
                   <textarea
                     type="text"
                     className="theInput"
                     name="message"
+                    id="message"
                   ></textarea>
                 </div>
 
@@ -94,8 +98,11 @@ const CustomMarketing = () => (
                     type="checkbox"
                     className="checkbox"
                     name="keep-me-updated"
+                    id="keep-me-updated"
                   />
-                  <label>Keep Me Updated with Emails and Newsletters</label>
+                  <label htmlFor="keep-me-updated">
+                    Keep Me Updated with Emails and Newsletters
+                  </label>
                 </div>
                 <div className="hide-me field">
                   <input
@@ -120,6 +127,7 @@ const CustomMarketing = () => (
             <a
               href="http://www.itepubs.com/tridigital_brochure_digital/page/1"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Image-95.png"
@@ -139,6 +147,7 @@ const CustomMarketing = () => (
               className="white-text pink-button"
               href="http://www.itepubs.com/tridigital_brochure_digital/page/1"
               target="_blank"
+              rel="noopener noreferrer"
             >
               View Online
             </a>

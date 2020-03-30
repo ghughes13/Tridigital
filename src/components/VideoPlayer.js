@@ -1,26 +1,26 @@
-import React from "react"
+import React from "react";
 
 export default class YourVideo extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       hashStr: this.props.props.video,
-    }
+    };
   }
 
   componentDidMount() {
-    const script1 = document.createElement("script")
-    const script2 = document.createElement("script")
+    const script1 = document.createElement("script");
+    const script2 = document.createElement("script");
 
     script1.src =
-      "https://fast.wistia.com/embed/medias/" + this.state.hashStr + ".jsonp"
-    script1.async = true
+      "https://fast.wistia.com/embed/medias/" + this.state.hashStr + ".jsonp";
+    script1.async = true;
 
-    script2.src = "https://fast.wistia.com/assets/external/E-v1.js"
-    script2.async = true
+    script2.src = "https://fast.wistia.com/assets/external/E-v1.js";
+    script2.async = true;
 
-    document.body.appendChild(script1)
-    document.body.appendChild(script2)
+    document.body.appendChild(script1);
+    document.body.appendChild(script2);
   }
 
   render() {
@@ -44,13 +44,13 @@ export default class YourVideo extends React.Component {
                   }
                   alt=""
                   aria-hidden="true"
-                  onLoad="this.parentNode.style.opacity=1;"
+                  // onLoad={() => (this.parentNode.style.opacity = 1)}
                 />
               </div>
             </div>
           </div>
         </div>
       </div>
-    )
+    );
   }
 }

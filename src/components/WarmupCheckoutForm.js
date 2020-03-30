@@ -16,15 +16,15 @@ const CheckoutForm = () => {
       element.classList.remove("yellow");
     });
 
-    if (document.getElementById("priceTierId").value == 0) {
+    if (document.getElementById("priceTierId").value === 0) {
       document.getElementById("priceTierId").classList.add("pink");
       document.getElementById("price-container").classList.add("pink");
       document.getElementById("price-hook").innerText = "1,500";
-    } else if (document.getElementById("priceTierId").value == 1) {
+    } else if (document.getElementById("priceTierId").value === 1) {
       document.getElementById("priceTierId").classList.add("blue");
       document.getElementById("price-container").classList.add("blue");
       document.getElementById("price-hook").innerText = "1,400";
-    } else if (document.getElementById("priceTierId").value == 3) {
+    } else if (document.getElementById("priceTierId").value === 3) {
       document.getElementById("priceTierId").classList.add("yellow");
       document.getElementById("price-container").classList.add("yellow");
       document.getElementById("price-hook").innerText = "1,300";
@@ -71,19 +71,13 @@ const CheckoutForm = () => {
 
   const getUrlVars = () => {
     const vars = {};
-    const parts = window.location.href.replace(
-      /[?&]+([^=&]+)=([^&]*)/gi,
-      function(m, key, value) {
-        vars[key] = value;
-      }
-    );
     const selectEl = document.getElementById("priceTierId");
     selectEl.value = vars.l;
     changeColorOfPriceInput();
   };
 
   const validatePromoCode = () => {
-    if (document.getElementById("promo").value == "TDCARES") {
+    if (document.getElementById("promo").value === "TDCARES") {
       document.querySelectorAll(".price-tier").forEach(option => {
         option.style.display = "none";
         document.getElementById("promo-option").selected = true;
@@ -109,24 +103,24 @@ const CheckoutForm = () => {
       <div className="form-content">
         <div className="what-do-we-call-you">
           <div className="firstName">
-            <label>First Name</label>
+            <label htmlFor="firstName">First Name</label>
             <input type="text" name="firstName" id="firstName" required />
           </div>
           <div className="lastName">
-            <label>Last Name</label>
+            <label htmlFor="lastName">Last Name</label>
             <input type="text" name="lastName" id="lastName" required />
           </div>
         </div>
         <div className="company">
-          <label>Company Name</label>
+          <label htmlFor="companyName">Company Name</label>
           <input type="text" name="companyName" id="companyName" required />
         </div>
         <div className="email">
-          <label>What's Your Email Address?</label>
+          <label htmlFor="email">What's Your Email Address?</label>
           <input type="text" name="email" id="email" required />
         </div>
         <div className="promo-code">
-          <label>Promo Code</label>
+          <label htmlFor="promo">Promo Code</label>
           <input
             type="text"
             name="promoCode"
@@ -135,7 +129,7 @@ const CheckoutForm = () => {
           />
         </div>
         <div className="field email-field">
-          <label>Select Price Tier</label>
+          <label htmlFor="priceTierId">Select Price Tier</label>
           <select
             id="priceTierId"
             name="priceTierId"
@@ -173,12 +167,12 @@ const CheckoutForm = () => {
               alt="credit-cards"
             />
           </div>
-          <label>Card Number</label>
+          <label htmlFor="ccNumber">Card Number</label>
           <input type="text" name="ccNumber" id="ccNumber" />
           <div className="billing-info"></div>
           <div className="exp-date-and-cvv">
             <div>
-              <label>Expiration Month</label>
+              <label htmlFor="ccExpirationMonth">Expiration Month</label>
               <select id="ccExpirationMonth" name="ccExpirationMonth" required>
                 <option default value="01">
                   01
@@ -197,7 +191,7 @@ const CheckoutForm = () => {
               </select>
             </div>
             <div>
-              <label>Expiration Year</label>
+              <label htmlFor="ccExpirationYear">Expiration Year</label>
               <select id="ccExpirationYear" name="ccExpirationYear" required>
                 <option default value="2020">
                   2020
@@ -223,11 +217,11 @@ const CheckoutForm = () => {
               </select>
             </div>
             <div>
-              <label>Security Code</label>
+              <label htmlFor="cvv">Security Code</label>
               <input type="text" name="cvv" id="cvv" required />
             </div>
           </div>
-          <label>Cardholder Name</label>
+          <label htmlFor="ccCardHolderName">Cardholder Name</label>
           <input
             type="text"
             name="ccCardHolderName"
@@ -242,8 +236,11 @@ const CheckoutForm = () => {
             className="checkbox"
             required
             name="newsletter"
+            id="newsletter"
           />
-          <label>Keep Me Updated with Emails and Newsletters</label>
+          <label htmlFor="newsletter">
+            Keep Me Updated with Emails and Newsletters
+          </label>
         </div>
         <div className="checkbox-part">
           <input
@@ -251,6 +248,7 @@ const CheckoutForm = () => {
             className="checkbox"
             required
             name="paymentmthd"
+            id="pmt-method"
           />
           <label htmlFor="pmt-method">
             Make this my preferred payment method
@@ -262,8 +260,9 @@ const CheckoutForm = () => {
             className="checkbox"
             required
             name="privacyTOS"
+            id="privacyTOS"
           />
-          <label>
+          <label htmlFor="privacyTOS">
             I have read and agree to the{" "}
             <a
               className="read-me "
