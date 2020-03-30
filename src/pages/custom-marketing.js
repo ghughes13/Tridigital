@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
+import axios from "axios";
 
 const CustomMarketing = () => (
   <Layout>
@@ -34,16 +35,26 @@ const CustomMarketing = () => (
                 className="Consultation"
                 method="POST"
                 onSubmit={e => {
+                  e.preventDefault();
+                  var request = `form-name=custom-marketing-form&firstName=${
+                    document.getElementById("firstName").value
+                  }&company=${document.getElementById("company").value}&email=${
+                    document.getElementById("email").value
+                  }&message=${document.getElementById("message").value}`;
                   document.querySelector("#contact-form").style.display =
                     "none";
                   document.querySelector(".contact-thank-you").style.display =
                     "block";
+                  return axios.post(
+                    "https://eloquent-hawking-0b4899.netlify.com/",
+                    request
+                  );
                 }}
                 name="custom-marketing-form"
-                netlify="true"
-                netlify-honeypot="bot-field"
+                // netlify="true"
+                // netlify-honeypot="bot-field"
               >
-                <input type="hidden" name="bot-field" />
+                {/* <input type="hidden" name="bot-field" /> */}
                 <h3 className="blue-text form-title">
                   Speak with a Channel Marketing Expert
                 </h3>

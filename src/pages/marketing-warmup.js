@@ -5,6 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import WarmupVideo from "../components/WarmupVideoPlayer.js";
 import SingleReivew from "../components/SingleReview.js";
 import { Waypoint } from "react-waypoint";
+import axios from "axios";
 
 const WarmUp = () => (
   <Layout>
@@ -57,26 +58,36 @@ const WarmUp = () => (
                 className="Consultation"
                 method="POST"
                 onSubmit={e => {
+                  e.preventDefault();
+                  var request = `form-name=marketing-warmup-lp-form&firstName=${
+                    document.getElementById("firstName").value
+                  }&company=${document.getElementById("company").value}&email=${
+                    document.getElementById("email").value
+                  }&message=${document.getElementById("message").value}`;
                   document.querySelector("#contact-form").style.display =
                     "none";
                   document.querySelector(".contact-thank-you").style.display =
                     "block";
+                  return axios.post(
+                    "https://eloquent-hawking-0b4899.netlify.com/",
+                    request
+                  );
                 }}
                 name="marketing-warmup-lp-form"
-                netlify="true"
-                netlify-honeypot="bot-field"
+                // netlify="true"
+                // netlify-honeypot="bot-field"
               >
-                <input type="hidden" name="bot-field" />
+                {/* <input type="hidden" name="bot-field" /> */}
                 <h3 className="blue-text form-title">
                   Speak with an MSP Marketer to learn more
                 </h3>
                 <div className="field name-field">
-                  <label htmlFor="name">What’s your name?</label>
+                  <label htmlFor="firstName">What’s your name?</label>
                   <input
                     type="text"
                     className="theInput"
-                    name="name"
-                    id="name"
+                    name="firstName"
+                    id="firstName"
                     required
                   ></input>
                 </div>

@@ -96,6 +96,7 @@
           var url = "https://api.honeycrm.com/service/formsubmissions";
           console.log("validated");
           console.log(request);
+
           try {
             var xhr = new XMLHttpRequest();
             xhr.open(method, url, true);
@@ -105,11 +106,11 @@
             );
             xhr.send(JSON.stringify(request));
             xhr.addEventListener("load", function(event) {
-              alert("Yeah! Data sent and response loaded.");
+              // alert("Yeah! Data sent and response loaded.");
             });
 
             xhr.addEventListener("error", function(event) {
-              alert("Oops! Something went wrong.");
+              // alert("Oops! Something went wrong.");
             });
             console.log("sent");
           } catch (error) {
