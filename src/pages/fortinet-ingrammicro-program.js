@@ -112,26 +112,25 @@ const VendorPartnerLP = () => {
               className="Fortinet"
               method="POST"
               name="fortinet-ingram-lp"
+              action="/#thanks"
               onSubmit={() => {
                 const formName = document.getElementById("vendor-lp");
 
-                formName.addEventListener("submit", e => {
-                  e.preventDefault();
+                e.preventDefault();
 
-                  const formData = new FormData(formName);
-                  fetch(testForm.getAttribute("action"), {
-                    method: "POST",
-                    headers: {
-                      Accept: "application/w-www-form-urlencoded;charset=UTF-8",
-                      "Content-Type":
-                        "application/x-www-form-urlencoded;charset=UTF-8",
-                    },
-                    body: new URLSearchParams(formData).toString(),
-                  }).then(res => {
-                    if (res) {
-                      console.log(res);
-                    }
-                  });
+                const formData = new FormData(formName);
+                fetch(testForm.getAttribute("action"), {
+                  method: "POST",
+                  headers: {
+                    Accept: "application/w-www-form-urlencoded;charset=UTF-8",
+                    "Content-Type":
+                      "application/x-www-form-urlencoded;charset=UTF-8",
+                  },
+                  body: new URLSearchParams(formData).toString(),
+                }).then(res => {
+                  if (res) {
+                    console.log(res);
+                  }
                 });
               }}
               // e => {
@@ -156,7 +155,6 @@ const VendorPartnerLP = () => {
               //     console.log("error");
               //   }
               // }}
-              action="/#contact-thank-you"
               netlify="true"
               netlify-honeypot="bot-field"
             >
@@ -327,7 +325,7 @@ const VendorPartnerLP = () => {
                 </div>
               </div>
             </form>
-            <div className="contact-thank-you" id="contact-thank-you">
+            <div className="contact-thank-you" id="thanks">
               <h5>Thank you for contacting us. We'll be in touch shortly!</h5>
             </div>
           </Row>
