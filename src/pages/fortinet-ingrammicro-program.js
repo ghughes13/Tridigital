@@ -118,7 +118,7 @@ const VendorPartnerLP = () => {
                 const formName = document.getElementById("vendor-lp");
 
                 const formData = new FormData(formName);
-                fetch(testForm.getAttribute("action"), {
+                fetch(formName.getAttribute("action"), {
                   method: "POST",
                   headers: {
                     Accept: "application/w-www-form-urlencoded;charset=UTF-8",
