@@ -124,7 +124,7 @@ const VendorPartnerLP = () => {
                   "block";
                 try {
                   return axios.post(
-                    "https://eloquent-hawking-0b4899.netlify.com/",
+                    "https://www.tridigitalmarketing.com/",
                     request
                   );
                 } catch (error) {
