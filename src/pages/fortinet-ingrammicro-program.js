@@ -7,26 +7,6 @@ import axios from "axios";
 import "../styles/vendor-lp.scss";
 
 const VendorPartnerLP = () => {
-  const formName = document.getElementById("vendor-lp");
-
-  formName.addEventListener("submit", e => {
-    e.preventDefault();
-
-    const formData = new FormData(formName);
-    fetch(testForm.getAttribute("action"), {
-      method: "POST",
-      headers: {
-        Accept: "application/w-www-form-urlencoded;charset=UTF-8",
-        "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
-      },
-      body: new URLSearchParams(formData).toString(),
-    }).then(res => {
-      if (res) {
-        console.log(res);
-      }
-    });
-  });
-
   return (
     <Layout>
       <SEO title="Vendor partnership program | TRIdigital Marketing" />
@@ -132,7 +112,29 @@ const VendorPartnerLP = () => {
               className="Fortinet"
               method="POST"
               name="fortinet-ingram-lp"
-              // onSubmit={e => {
+              onSubmit={() => {
+                const formName = document.getElementById("vendor-lp");
+
+                formName.addEventListener("submit", e => {
+                  e.preventDefault();
+
+                  const formData = new FormData(formName);
+                  fetch(testForm.getAttribute("action"), {
+                    method: "POST",
+                    headers: {
+                      Accept: "application/w-www-form-urlencoded;charset=UTF-8",
+                      "Content-Type":
+                        "application/x-www-form-urlencoded;charset=UTF-8",
+                    },
+                    body: new URLSearchParams(formData).toString(),
+                  }).then(res => {
+                    if (res) {
+                      console.log(res);
+                    }
+                  });
+                });
+              }}
+              // e => {
               //   e.preventDefault();
 
               //   var request = `form-name=fortinet-ingram-lp&firstName=${
