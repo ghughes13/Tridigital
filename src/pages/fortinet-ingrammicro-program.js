@@ -59,7 +59,7 @@ const VendorPartnerLP = () => {
                     src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/03/Group%203667.png"
                     alt="collaterals"
                   />
-                  <p>Email Campaigns</p>
+                  <p>6 Email Campaigns</p>
                 </div>
                 <div className="content-container column ">
                   <img
@@ -124,7 +124,7 @@ const VendorPartnerLP = () => {
                   "block";
                 try {
                   return axios.post(
-                    "https://eloquent-hawking-0b4899.netlify.com/",
+                    "https://www.tridigitalmarketing.com/",
                     request
                   );
                 } catch (error) {
