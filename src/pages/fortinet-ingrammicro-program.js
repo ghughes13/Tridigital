@@ -113,7 +113,7 @@ const VendorPartnerLP = () => {
               method="POST"
               name="fortinet-ingram-lp"
               onSubmit={e => {
-                e.preventDefault();
+                // e.preventDefault();
                 // var request = `form-name=fortinet-ingram-lp&firstName=${
                 //   document.getElementById("firstName").value
                 // }&company=${document.getElementById("company").value}&email=${
