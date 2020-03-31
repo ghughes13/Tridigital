@@ -112,25 +112,25 @@ const VendorPartnerLP = () => {
               className="Fortinet"
               method="POST"
               name="fortinet-ingram-lp"
-              onSubmit={e => {
-                e.preventDefault();
-                var request = `form-name=fortinet-ingram-lp&firstName=${
-                  document.getElementById("firstName").value
-                }&company=${document.getElementById("company").value}&email=${
-                  document.getElementById("email").value
-                }`;
-                document.querySelector("#vendor-lp").style.display = "none";
-                document.querySelector(".contact-thank-you").style.display =
-                  "block";
-                try {
-                  return axios.post(
-                    "https://eloquent-hawking-0b4899.netlify.com/",
-                    request
-                  );
-                } catch (error) {
-                  console.log("error");
-                }
-              }}
+              // onSubmit={e => {
+              //   e.preventDefault();
+              //   var request = `form-name=fortinet-ingram-lp&firstName=${
+              //     document.getElementById("firstName").value
+              //   }&company=${document.getElementById("company").value}&email=${
+              //     document.getElementById("email").value
+              //   }`;
+              //   document.querySelector("#vendor-lp").style.display = "none";
+              //   document.querySelector(".contact-thank-you").style.display =
+              //     "block";
+              //   try {
+              //     return axios.post(
+              //       "https://eloquent-hawking-0b4899.netlify.com/",
+              //       request
+              //     );
+              //   } catch (error) {
+              //     console.log("error");
+              //   }
+              // }}
               netlify="true"
               netlify-honeypot="bot-field"
             >
