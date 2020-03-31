@@ -5,6 +5,7 @@
   var listID = 365;
   var formCategory = [
     "Consultation",
+    "Fortinet",
     "Google AdWords",
     "Newsletter",
     "Ask Us Anything",
@@ -24,6 +25,9 @@
         if (currentForm.className == formCategory[k]) {
           if (formCategory[k] == "Livestream") {
             listID = 5400;
+          }
+          if (formCategory[k] == "Fortinet") {
+            listID = 9314;
           }
           var formSelector = currentForm.id;
           var formType = formCategory[k];
@@ -54,6 +58,7 @@
       websiteUrl: url,
       forms: honeyFormSettings,
     };
+    console.log(w);
     var head = d.getElementsByTagName("head")[0];
     var tag = d.createElement("script");
 

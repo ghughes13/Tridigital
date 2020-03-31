@@ -1,7 +1,7 @@
 .vendor-lp {
   h1 {
     color: white;
-    font-size: 4.5vw;
+    font-size: 4vw;
     font-weight: 600;
     font-family: "Oswald", sans-serif;
     margin: 0;
@@ -15,12 +15,28 @@
   .hero {
     padding-top: 150px;
     padding-bottom: 200px;
+    background: #2275bb;
     &:after {
-      content: url(https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/vendor-partner-lp/Intersection%209.svg);
+      content: url(https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/vendor-partner-lp/blue-blob.svg);
       position: absolute;
       right: 0;
       top: 0;
       height: 100%;
+    }
+
+    .fortinet-ingram-btn {
+      color: white;
+      font-size: 20px;
+      font-family: "Poppins";
+      font-weight: 700;
+      background: #2ba6cb;
+      width: 350px;
+      text-align: center;
+      padding: 7px;
+      border-radius: 30px;
+      border: solid white 3px;
+      text-decoration: none;
+      margin-top: 50px;
     }
 
     .col {
@@ -68,7 +84,7 @@
       h1 {
         font-size: 80px;
         text-align: center;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
       }
 
       .col {
@@ -78,6 +94,15 @@
 
       padding-top: 100px;
       padding-bottom: 200px;
+
+      .display-flex {
+        align-items: center;
+      }
+
+      .fortinet-ingram-btn {
+        margin-bottom: 50px;
+        margin-top: 0;
+      }
     }
 
     @media screen and (max-width: 1000px) {
@@ -98,6 +123,10 @@
         font-size: 40px;
         margin-bottom: 60px;
       }
+
+      .row {
+        padding: 0 5vw;
+      }
     }
   }
 
@@ -107,18 +136,98 @@
   .white-section {
     h2 {
       text-transform: uppercase;
+      color: #2275bb;
     }
 
     h3 {
       font-size: 3.5vw;
-      color: #0040ed;
+      color: #2275bb;
       font-family: "Poppins", sans-serif;
       font-weight: 700;
+    }
+
+    h4 {
+      font-size: 3vw;
+      color: white;
+      font-family: "Oswald";
+      font-weight: bold;
+      padding-top: 50px;
+      z-index: 9;
+
+      @media screen and (max-width: 767px) {
+        font-size: 30px;
+        position: relative;
+        z-index: 9;
+      }
     }
 
     .row {
       max-width: 75vw;
       min-width: 800px;
+    }
+
+    .blue-container {
+      background: #2275bb;
+      margin: auto;
+      margin-top: 50px;
+      max-width: 95vw;
+      border-radius: 20px;
+      padding-bottom: 60px;
+      overflow: HIDDEN;
+      position: relative;
+      z-index: 9;
+
+      &::before {
+        content: url(https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/vendor-partner-lp/blue-blob-left.svg);
+        position: absolute;
+      }
+
+      &::after {
+        content: url(https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/vendor-partner-lp/Mask%20Group%202.png);
+        position: absolute;
+        bottom: 0;
+        right: -25vw;
+        z-index: 0;
+      }
+
+      .flex-row {
+        display: flex;
+        max-width: 80vw;
+        margin: auto;
+        justify-content: center;
+        z-index: 9;
+
+        p {
+          color: white;
+          font-size: 18px;
+          font-family: "Poppins";
+          font-weight: bold;
+          text-align: center;
+        }
+
+        @media screen and (max-width: 767px) {
+          flex-direction: column !important;
+          align-items: center;
+        }
+      }
+
+      .flex-row > div {
+        max-width: 30%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+
+        @media screen and (max-width: 767px) {
+          min-width: 300px;
+          max-width: initial;
+        }
+      }
+    }
+
+    .contain-overflow {
+      overflow: hidden;
+      position: relative;
     }
 
     &::before {
@@ -203,6 +312,14 @@
       }
     }
 
+    .contact-thank-you {
+      width: 100%;
+      margin-top: 10vh;
+      margin-bottom: 10vh;
+      z-index: 9;
+      background: #2275bb;
+    }
+
     label {
       font-family: "Poppins", sans-serif;
       font-size: 18px;
@@ -212,7 +329,7 @@
     }
 
     label.blue-label {
-      color: #0092fb;
+      color: #2275bb;
       font-size: 16px;
       font-weight: 500;
       margin-top: 0;
@@ -295,5 +412,10 @@
         padding: 0 5vw;
       }
     }
+  }
+
+  footer {
+    z-index: 9;
+    position: relative;
   }
 }

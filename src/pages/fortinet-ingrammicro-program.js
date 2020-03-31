@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
 import Yourvideo from "../components/VendorPartnerVideoPlayer";
-
+import axios from "axios";
 import "../styles/vendor-lp.scss";
 
 const VendorPartnerLP = () => {
@@ -11,12 +11,15 @@ const VendorPartnerLP = () => {
     <Layout>
       <SEO title="Vendor partnership program | TRIdigital Marketing" />
       <div className="vendor-lp">
-        <Container className="container pink-gradient-background hero swish">
+        <Container className="container fortinet-ingram-background hero swish">
           <Row className="z-index-999">
-            <Col className="align-vertical content-container column">
+            <Col className="display-flex content-container column flex-dir-col">
               <h1>Ingram Micro & Fortinet Partner Enablement Program</h1>
+              <a className="fortinet-ingram-btn inline-block" href="#vendor-lp">
+                Fill out the form
+              </a>
             </Col>
-            <Col className="content-container column display-flex video-container ">
+            <Col className="content-container column align-vertical video-container ">
               <video
                 className="lp-video box-shadow"
                 src="https://tdgatsbytest.wpengine.com/wp-content/uploads/vendor-lp-video/Vendor_15_sec_loop_AA_V01%20%281%29.mp4"
@@ -53,47 +56,116 @@ const VendorPartnerLP = () => {
               </p>
             </Col>
           </Row>
+          <div className="contain-overflow ">
+            <div className="blue-container">
+              <h4 className="blue-text smaller centered-text margin-top-0">
+                In this program you will receive:
+              </h4>
+              <div className="flex-row">
+                <div className="content-container column">
+                  <img
+                    className="collaterals"
+                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/landing-pages.png"
+                    alt="collaterals"
+                  />
+                  <p>Email Campaigns</p>
+                </div>
+                <div className="content-container column ">
+                  <img
+                    className="collaterals"
+                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/whitepapers.png"
+                    alt="collaterals"
+                  />
+                  <p>6 Personal Marketing Plain Emails</p>
+                </div>
+                <div className="content-container column ">
+                  <img
+                    className="collaterals"
+                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/ebooks.png"
+                    alt="collaterals"
+                  />
+                  <p>3 Branded Collateral Pieces </p>
+                </div>
+              </div>
+              <div className="flex-row">
+                <div className="content-container column">
+                  <img
+                    className="collaterals"
+                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/landing-pages.png"
+                    alt="collaterals"
+                  />
+                  <p>3 Branded Landing Pages</p>
+                </div>
+                <div className="content-container column ">
+                  <img
+                    className="collaterals"
+                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/whitepapers.png"
+                    alt="collaterals"
+                  />
+                  <p>Access to Honey</p>
+                </div>
+                <div className="content-container column ">
+                  <img
+                    className="collaterals"
+                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/ebooks.png"
+                    alt="collaterals"
+                  />
+                  <p>MQL prospect list (up to 2k contacts)</p>
+                </div>
+              </div>
+            </div>
+          </div>
           <Row className="blob-container">
             <form
               id="vendor-lp"
-              className="vendor-lp"
+              className="Fortinet"
               method="POST"
-              onSubmit={e => {}}
-              name="vendor-lp"
-              netlify="true"
-              netlify-honeypot="bot-field"
+              name="fortinet-ingram-lp"
+              onSubmit={e => {
+                e.preventDefault();
+                var request = `form-name=fortinet-ingram-lp&firstName=${
+                  document.getElementById("firstName").value
+                }&company=${document.getElementById("company").value}&email=${
+                  document.getElementById("email").value
+                }`;
+                document.querySelector("#vendor-lp").style.display = "none";
+                document.querySelector(".contact-thank-you").style.display =
+                  "block";
+                try {
+                  return axios.post(
+                    "https://eloquent-hawking-0b4899.netlify.com/",
+                    request
+                  );
+                } catch (error) {
+                  console.log("error");
+                }
+              }}
             >
-              <input type="hidden" name="bot-field" />
               <h3 className="blue-text form-title centered-text">
                 Ready to Start <br />
                 Generating Leads?
               </h3>
               <div className="form-content margin-top-60">
-                <div className="company-name">
-                  <label>
+                <div className="company-name company-field">
+                  <label htmlFor="comapny">
                     Please write your company name as you would like to see it
                     written in all your marketing assets
                   </label>
                   <input
                     type="text"
                     name="company-name"
-                    id="company-name"
+                    id="company"
                     required
                   />
                 </div>
                 <div className="company-logo">
-                  <label>
+                  <label htmlFor="logo">
                     Please provide your logo in svg, eps or ai format/s
                   </label>
-                  <input
-                    type="file"
-                    name="company-logo"
-                    id="company-name"
-                    required
-                  />
+                  <input type="file" name="company-logo" id="logo" required />
                 </div>
                 <div className="contact-info">
-                  <label>
+                  <label htmlFor="contact-info">
                     Please provide your company contact information as you would
                     like to see it on your marketing assets (phone, address,
                     support email)
@@ -101,7 +173,7 @@ const VendorPartnerLP = () => {
                   <textarea name="contact-info" id="contact-info" required />
                 </div>
                 <div className="branding-colors">
-                  <label>
+                  <label htmlFor="branding-colors">
                     Please provide your company branding colors. Your primary
                     color and your secondary color. Please provide this by hex
                     code
@@ -119,25 +191,33 @@ const VendorPartnerLP = () => {
                     sales activities. Please provide name, email and phone
                     number
                   </p>
-                  <div className="name">
-                    <label className="blue-label">Name</label>
-                    <input type="text" name="name" id="name" required />
+                  <div className="name name-field">
+                    <label className="blue-label" htmlFor="firstName">
+                      Name
+                    </label>
+                    <input type="text" name="name" id="firstName" required />
                   </div>
                   <div className="position">
-                    <label className="blue-label">Position</label>
+                    <label className="blue-label" htmlFor="position">
+                      Position
+                    </label>
                     <input type="text" name="position" id="position" required />
                   </div>
-                  <div className="email margin-top-20">
-                    <label className="blue-label ">Email</label>
+                  <div className="email margin-top-20 email-field">
+                    <label className="blue-label" htmlFor="email">
+                      Email
+                    </label>
                     <input type="email" name="email" id="email" required />
                   </div>
                   <div className="phone margin-top-20">
-                    <label className="blue-label">Phone Number</label>
+                    <label className="blue-label" htmlFor="phone">
+                      Phone Number
+                    </label>
                     <input type="tel" name="phone" id="phone" required />
                   </div>
                 </div>
                 <div className="signature-block">
-                  <label>
+                  <label htmlFor="signature-block">
                     Please provide a signature block for the same contact here
                     (copy & paste)
                   </label>
@@ -152,8 +232,10 @@ const VendorPartnerLP = () => {
                     What are the top 3 industries do you sell to? ( healthcare,
                     construction, financial horizontal){" "}
                   </p>
-                  <div class="single-input margin-top-20">
-                    <label className="blue-label">Industry 1</label>
+                  <div className="single-input margin-top-20">
+                    <label className="blue-label" htmlFor="industry-1">
+                      Industry 1
+                    </label>
                     <input
                       type="text"
                       name="industry-1"
@@ -161,8 +243,10 @@ const VendorPartnerLP = () => {
                       required
                     />
                   </div>
-                  <div class="single-input margin-top-20">
-                    <label className="blue-label">Industry 2</label>
+                  <div className="single-input margin-top-20">
+                    <label className="blue-label" htmlFor="industry-2">
+                      Industry 2
+                    </label>
                     <input
                       type="text"
                       name="industry-2"
@@ -170,8 +254,10 @@ const VendorPartnerLP = () => {
                       required
                     />
                   </div>
-                  <div class="single-input margin-top-20">
-                    <label className="blue-label">Industry 3</label>
+                  <div className="single-input margin-top-20">
+                    <label className="blue-label" htmlFor="industry-3">
+                      Industry 3
+                    </label>
                     <input
                       type="text"
                       name="industry-1"
@@ -181,7 +267,7 @@ const VendorPartnerLP = () => {
                   </div>
                 </div>
                 <div className="company-size">
-                  <label>
+                  <label htmlFor="company-size">
                     What employee size range do you sell to? (1-50,51-75,
                     100-250, 500-5000)
                   </label>
@@ -193,14 +279,14 @@ const VendorPartnerLP = () => {
                   />
                 </div>
                 <div className="sell-to">
-                  <label>
+                  <label htmlFor="sell-to">
                     Which contacts do you prefer to sell to in prospect clients
                     ( CEO, CIO, Directors, manager, etc.)
                   </label>
                   <input type="text" name="sell-to" id="sell-to" required />
                 </div>
                 <div className="service-areas">
-                  <label>
+                  <label htmlFor="service-areas">
                     What is your services area? ( counties, cities, zip codes)
                   </label>
                   <textarea
@@ -221,6 +307,9 @@ const VendorPartnerLP = () => {
                 </div>
               </div>
             </form>
+            <div className="contact-thank-you">
+              <h5>Thank you for contacting us. We'll be in touch shortly!</h5>
+            </div>
           </Row>
         </Container>
       </div>

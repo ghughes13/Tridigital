@@ -113,6 +113,7 @@
               // alert("Oops! Something went wrong.");
             });
             console.log("sent");
+            console.log(xhr.response);
           } catch (error) {
             console.log(error);
           }

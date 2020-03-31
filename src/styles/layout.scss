@@ -1418,6 +1418,10 @@ main .max-width-fix {
   margin: auto;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .margin-top-0 {
   margin-top: 0;
 }
@@ -1457,6 +1461,10 @@ div.margin-top-minus-400 {
 div .align-vertical {
   display: flex;
   align-items: center;
+}
+
+.flex-dir-col {
+  flex-direction: column;
 }
 
 div .display-flex {
@@ -1524,6 +1532,7 @@ footer {
   line-height: 1em;
   font-size: 16px;
   z-index: 999;
+  position: relative;
 }
 
 footer h2 {
@@ -4379,14 +4388,16 @@ main .contact-us .contact-row {
   position: relative;
 }
 
-.contact-us .contact-thank-you {
+.contact-us .contact-thank-you,
+.contact-thank-you {
   display: none;
   background: #0040ed;
   padding: 300px 50px;
   border-radius: 25px;
 }
 
-.contact-us .contact-thank-you h5 {
+.contact-us .contact-thank-you h5,
+.contact-thank-you h5 {
   color: white;
   font-size: 24px;
   font-weight: 600;
