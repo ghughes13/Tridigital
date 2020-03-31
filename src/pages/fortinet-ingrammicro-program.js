@@ -113,10 +113,9 @@ const VendorPartnerLP = () => {
               method="POST"
               name="fortinet-ingram-lp"
               action="/fortinet-ingrammicro-program/#thanks"
-              onSubmit={() => {
-                const formName = document.getElementById("vendor-lp");
-
+              onSubmit={e => {
                 e.preventDefault();
+                const formName = document.getElementById("vendor-lp");
 
                 const formData = new FormData(formName);
                 fetch(testForm.getAttribute("action"), {
