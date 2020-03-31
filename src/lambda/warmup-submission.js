@@ -86,7 +86,7 @@ function sendErrorMessage(statusCode, message, callback) {
 
 function postFormSubmission() {
   var request = `form-name=warmup&firstName=${body.firstName}&lastName=${body.lastName}&email=${body.email}&companyName=${body.companyName}&priceTierId=${body.priceTierId}`;
-  return axios.post("https://www.tridigitalmarketing.com/", request);
+  return axios.post("https://eloquent-hawking-0b4899.netlify.com/", request);
 }
 
 function createStripeCustomer() {

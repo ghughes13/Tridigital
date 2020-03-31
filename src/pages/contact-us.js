@@ -34,7 +34,7 @@ const ContactUs = () => (
                   document.querySelector(".contact-thank-you").style.display =
                     "block";
                   return axios.post(
-                    "https://www.tridigitalmarketing.com/",
+                    "https://eloquent-hawking-0b4899.netlify.com/",
                     request
                   );
                 }}
