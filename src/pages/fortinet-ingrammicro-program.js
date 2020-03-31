@@ -112,7 +112,7 @@ const VendorPartnerLP = () => {
               className="Fortinet"
               method="POST"
               name="fortinet-ingram-lp"
-              action="/#thanks"
+              action="/fortinet-ingrammicro-program/#thanks"
               onSubmit={() => {
                 const formName = document.getElementById("vendor-lp");
 
