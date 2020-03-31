@@ -3,8 +3,8 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
 import Yourvideo from "../components/VendorPartnerVideoPlayer";
-import axios from "axios";
 import "../styles/vendor-lp.scss";
+import Loader from "./Loader";
 
 const VendorPartnerLP = () => {
   return (
@@ -115,6 +115,7 @@ const VendorPartnerLP = () => {
               action="/fortinet-ingrammicro-program/#thanks"
               onSubmit={e => {
                 e.preventDefault();
+                loader.style.display = "block";
                 const formName = document.getElementById("vendor-lp");
 
                 const formData = new FormData(formName);
@@ -130,30 +131,11 @@ const VendorPartnerLP = () => {
                   if (res) {
                     console.log(res);
                   }
+                  document.querySelector("#vendor-lp").style.display = "none";
+                  document.querySelector(".contact-thank-you").style.display =
+                    "block";
                 });
               }}
-              // e => {
-              //   e.preventDefault();
-
-              //   var request = `form-name=fortinet-ingram-lp&firstName=${
-              //     document.getElementById("firstName").value
-              //   }&company=${document.getElementById("company").value}&email=${
-              //     document.getElementById("email").value
-              //   }`;
-
-              //   document.querySelector("#vendor-lp").style.display = "none";
-              //   document.querySelector(".contact-thank-you").style.display =
-              //     "block";
-
-              //   try {
-              //     return axios.post(
-              //       "https://eloquent-hawking-0b4899.netlify.com/",
-              //       request
-              //     );
-              //   } catch (error) {
-              //     console.log("error");
-              //   }
-              // }}
               netlify="true"
               netlify-honeypot="bot-field"
             >
@@ -314,6 +296,7 @@ const VendorPartnerLP = () => {
                   />
                 </div>
                 <div className="sbmt-btn">
+                  <Loader />
                   <button
                     type="submit"
                     className="btn pink-button"
