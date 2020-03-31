@@ -124,14 +124,17 @@ const VendorPartnerLP = () => {
                   "block";
                 try {
                   return axios.post(
-                    "https://www.tridigitalmarketing.com/",
+                    "https://eloquent-hawking-0b4899.netlify.com/",
                     request
                   );
                 } catch (error) {
                   console.log("error");
                 }
               }}
+              netlify="true"
+              netlify-honeypot="bot-field"
             >
+              <input type="hidden" name="bot-field" />
               <h3 className="blue-text form-title centered-text">
                 Ready to Start <br />
                 Generating Leads?
