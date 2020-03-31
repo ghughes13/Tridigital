@@ -115,7 +115,12 @@ const VendorPartnerLP = () => {
               action="/fortinet-ingrammicro-program/#thanks"
               onSubmit={e => {
                 e.preventDefault();
+
+                const submitButton = document.getElementById("sbmt-form-btn");
+                const loader = document.querySelector(".loader");
                 loader.style.display = "block";
+                submitButton.style.display = "none";
+
                 const formName = document.getElementById("vendor-lp");
 
                 const formData = new FormData(formName);
