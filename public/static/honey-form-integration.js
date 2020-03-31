@@ -47,6 +47,7 @@
       (this.mappings = {
         firstName: ".name-field input",
         email: ".email-field input",
+        company: "company-field input",
         comment: ".comment-field textarea",
       });
   }

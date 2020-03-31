@@ -37,22 +37,13 @@ const VendorPartnerLP = () => {
           <Row>
             <Col className="content-container max-width-children grey-text">
               <h2 className="blue-text smaller centered-text margin-top-0">
-                What we can do
+                Campaign Details
               </h2>
               <p className="centered-text">
                 Ingram Micro and Fortinet are committed to the success of your
-                business. We have partnered with TRIdigital and Honey CRM to
-                create a strategic marketing program built to maximize your
-                sales and marketing efforts.
-              </p>
-              <p className="centered-text">
-                We provide branded marketing collateral such as design emails,
-                interactive landing pages, infographics and more. You can use
-                these pieces to send to clients and prospects while having a
-                detailed view of the leads through Honey CRM. With Honey CRM,
-                you can execute a strategic funnel development marketing plan
-                with a consistent cadence that will generate sales qualified
-                leads for your company.
+                business through our partnership with TRIdgital and Honey we
+                provide a personally branded and automated marketing campaign
+                designed to be executed over 3 months.
               </p>
             </Col>
           </Row>
@@ -65,7 +56,7 @@ const VendorPartnerLP = () => {
                 <div className="content-container column">
                   <img
                     className="collaterals"
-                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/landing-pages.png"
+                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/03/Group%203667.png"
                     alt="collaterals"
                   />
                   <p>Email Campaigns</p>
@@ -73,7 +64,7 @@ const VendorPartnerLP = () => {
                 <div className="content-container column ">
                   <img
                     className="collaterals"
-                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/whitepapers.png"
+                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/03/Group%203668.png"
                     alt="collaterals"
                   />
                   <p>6 Personal Marketing Plain Emails</p>
@@ -81,7 +72,7 @@ const VendorPartnerLP = () => {
                 <div className="content-container column ">
                   <img
                     className="collaterals"
-                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/ebooks.png"
+                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/03/Group%203669.png"
                     alt="collaterals"
                   />
                   <p>3 Branded Collateral Pieces </p>
@@ -91,7 +82,7 @@ const VendorPartnerLP = () => {
                 <div className="content-container column">
                   <img
                     className="collaterals"
-                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/landing-pages.png"
+                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/03/Group%203670.png"
                     alt="collaterals"
                   />
                   <p>3 Branded Landing Pages</p>
@@ -99,7 +90,7 @@ const VendorPartnerLP = () => {
                 <div className="content-container column ">
                   <img
                     className="collaterals"
-                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/whitepapers.png"
+                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/03/Group%203671.png"
                     alt="collaterals"
                   />
                   <p>Access to Honey</p>
@@ -107,7 +98,7 @@ const VendorPartnerLP = () => {
                 <div className="content-container column ">
                   <img
                     className="collaterals"
-                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/02/ebooks.png"
+                    src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/03/Group%203672.png"
                     alt="collaterals"
                   />
                   <p>MQL prospect list (up to 2k contacts)</p>
