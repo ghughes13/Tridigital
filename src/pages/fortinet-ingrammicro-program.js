@@ -7,6 +7,26 @@ import axios from "axios";
 import "../styles/vendor-lp.scss";
 
 const VendorPartnerLP = () => {
+  const formName = document.getElementById("vendor-lp");
+
+  formName.addEventListener("submit", e => {
+    e.preventDefault();
+
+    const formData = new FormData(formName);
+    fetch(testForm.getAttribute("action"), {
+      method: "POST",
+      headers: {
+        Accept: "application/w-www-form-urlencoded;charset=UTF-8",
+        "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+      },
+      body: new URLSearchParams(formData).toString(),
+    }).then(res => {
+      if (res) {
+        console.log(res);
+      }
+    });
+  });
+
   return (
     <Layout>
       <SEO title="Vendor partnership program | TRIdigital Marketing" />
@@ -112,25 +132,29 @@ const VendorPartnerLP = () => {
               className="Fortinet"
               method="POST"
               name="fortinet-ingram-lp"
-              onSubmit={e => {
-                // e.preventDefault();
-                // var request = `form-name=fortinet-ingram-lp&firstName=${
-                //   document.getElementById("firstName").value
-                // }&company=${document.getElementById("company").value}&email=${
-                //   document.getElementById("email").value
-                // }`;
-                // document.querySelector("#vendor-lp").style.display = "none";
-                // document.querySelector(".contact-thank-you").style.display =
-                //   "block";
-                // try {
-                //   return axios.post(
-                //     "https://eloquent-hawking-0b4899.netlify.com/",
-                //     request
-                //   );
-                // } catch (error) {
-                //   console.log("error");
-                // }
-              }}
+              // onSubmit={e => {
+              //   e.preventDefault();
+
+              //   var request = `form-name=fortinet-ingram-lp&firstName=${
+              //     document.getElementById("firstName").value
+              //   }&company=${document.getElementById("company").value}&email=${
+              //     document.getElementById("email").value
+              //   }`;
+
+              //   document.querySelector("#vendor-lp").style.display = "none";
+              //   document.querySelector(".contact-thank-you").style.display =
+              //     "block";
+
+              //   try {
+              //     return axios.post(
+              //       "https://eloquent-hawking-0b4899.netlify.com/",
+              //       request
+              //     );
+              //   } catch (error) {
+              //     console.log("error");
+              //   }
+              // }}
+              action="/#contact-thank-you"
               netlify="true"
               netlify-honeypot="bot-field"
             >
@@ -301,7 +325,7 @@ const VendorPartnerLP = () => {
                 </div>
               </div>
             </form>
-            <div className="contact-thank-you">
+            <div className="contact-thank-you" id="contact-thank-you">
               <h5>Thank you for contacting us. We'll be in touch shortly!</h5>
             </div>
           </Row>
