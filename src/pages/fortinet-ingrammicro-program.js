@@ -4,7 +4,7 @@ import SEO from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
 import Yourvideo from "../components/VendorPartnerVideoPlayer";
 import "../styles/vendor-lp.scss";
-import Loader from "./Loader";
+import Loader from "../components/Loader";
 
 const VendorPartnerLP = () => {
   return (
