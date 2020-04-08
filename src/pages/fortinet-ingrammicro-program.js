@@ -132,7 +132,7 @@ const VendorPartnerLP = () => {
                     "Content-Type":
                       "application/x-www-form-urlencoded;charset=UTF-8",
                   },
-                  body: new URLSearchParams(formData), //.toString(),
+                  body: encode(formData),
                 })
                   .then(res => {
                     if (res) {
@@ -149,7 +149,7 @@ const VendorPartnerLP = () => {
                     console.log(error);
 
                     axios.post(
-                      "https://www.tridigitalmarketing.com/.netlify/functions/warmup-submission",
+                      "https://www.tridigitalmarketing.com/.netlify/functions/errorCatcher",
                       JSON.stringify({
                         error,
                       })
