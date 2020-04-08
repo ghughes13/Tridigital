@@ -125,16 +125,12 @@ const VendorPartnerLP = () => {
                 loader.style.display = "block";
                 submitButton.style.display = "none";
 
-                for (var value of data.values()) {
-                  console.log(value);
-                }
-
                 fetch(formName.getAttribute("action"), {
                   method: "POST",
                   headers: {
                     Accept: "application/w-www-form-urlencoded;charset=UTF-8",
-                    // "Content-Type":
-                    //   "application/x-www-form-urlencoded;charset=UTF-8",
+                    "Content-Type":
+                      "application/x-www-form-urlencoded;charset=UTF-8",
                   },
                   body: new URLSearchParams(data).toString(),
                 })
