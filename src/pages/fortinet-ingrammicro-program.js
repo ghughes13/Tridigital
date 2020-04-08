@@ -139,12 +139,25 @@ const VendorPartnerLP = () => {
                   body: new URLSearchParams(data).toString(),
                 })
                   .then(res => {
-                    if (res) {
-                      console.log(res);
+                    console.log(res);
+                    if (res.status === 200) {
+                      document.querySelector("#vendor-lp").style.display =
+                        "none";
+                      document.querySelector(
+                        ".contact-thank-you"
+                      ).style.display = "block";
+                    } else {
+                      loader.style.display = "none";
+                      document.getElementById("error-msg").style.display =
+                        "block";
+
+                      axios.post(
+                        "https://www.tridigitalmarketing.com/.netlify/functions/errorCatcher",
+                        JSON.stringify({
+                          res,
+                        })
+                      );
                     }
-                    document.querySelector("#vendor-lp").style.display = "none";
-                    document.querySelector(".contact-thank-you").style.display =
-                      "block";
                   })
                   .catch(error => {
                     loader.style.display = "none";
