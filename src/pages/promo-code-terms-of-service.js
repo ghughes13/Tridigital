@@ -116,9 +116,29 @@ const TermsOfService = () => {
           </ol>
           *A contact must meet a minimum seat size of 10 in your target market
           and geography in order to be counted as a Lead, regardless of
-          activity.* Disclaimer: You must provide TRIdigital with a list of
-          2,000 contacts that fit your target prospect criteria in order for the
-          10 Qulaified Leads Guarantee to be in effect.
+          activity.
+          <p
+            style={{
+              fontSize: 16 + "px",
+              marginBottom: -10 + "px",
+              fontWeight: 500,
+            }}
+          >
+            Disclaimers:
+          </p>
+          <ul>
+            <li>
+              * You must provide TRIdigital with a list of 2,000 contacts that
+              fit your target prospect criteria in order for the 10 Qulaified
+              Leads Guarantee to be in effect.{" "}
+            </li>
+            <li>
+              * If at any time you stop, pause and/or delay content from being
+              sent out as scheduled will void the lead guarantee. Voiding the
+              lead guarantee does not however, invalidate the remainder of the
+              contract or either parties responsibility to perform.
+            </li>
+          </ul>
           <h2>Content</h2>
           <ol>
             <li>
