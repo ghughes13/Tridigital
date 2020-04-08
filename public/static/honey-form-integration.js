@@ -36,7 +36,6 @@
         }
       }
     }
-    console.log("adding honey scripts");
     addHoneyScripts();
   }
 
@@ -59,7 +58,6 @@
       websiteUrl: url,
       forms: honeyFormSettings,
     };
-    console.log(w);
     var head = d.getElementsByTagName("head")[0];
     var tag = d.createElement("script");
 

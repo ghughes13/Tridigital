@@ -120,19 +120,23 @@ const VendorPartnerLP = () => {
                 const submitButton = document.getElementById("sbmt-form-btn");
                 const loader = document.querySelector(".loader");
                 const formName = document.getElementById("vendor-lp");
-                const formData = new FormData(formName);
+                const data = new FormData(formName);
 
                 loader.style.display = "block";
                 submitButton.style.display = "none";
+
+                for (var value of data.values()) {
+                  console.log(value);
+                }
 
                 fetch(formName.getAttribute("action"), {
                   method: "POST",
                   headers: {
                     Accept: "application/w-www-form-urlencoded;charset=UTF-8",
-                    "Content-Type":
-                      "application/x-www-form-urlencoded;charset=UTF-8",
+                    // "Content-Type":
+                    //   "application/x-www-form-urlencoded;charset=UTF-8",
                   },
-                  body: encode(formData),
+                  body: new URLSearchParams(data).toString(),
                 })
                   .then(res => {
                     if (res) {
