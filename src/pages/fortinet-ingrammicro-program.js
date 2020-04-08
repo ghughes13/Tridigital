@@ -5,6 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Yourvideo from "../components/VendorPartnerVideoPlayer";
 import "../styles/vendor-lp.scss";
 import Loader from "../components/Loader";
+import axios from "axios";
 
 const VendorPartnerLP = () => {
   return (
@@ -118,12 +119,12 @@ const VendorPartnerLP = () => {
 
                 const submitButton = document.getElementById("sbmt-form-btn");
                 const loader = document.querySelector(".loader");
+                const formName = document.getElementById("vendor-lp");
+                const formData = new FormData(formName);
+
                 loader.style.display = "block";
                 submitButton.style.display = "none";
 
-                const formName = document.getElementById("vendor-lp");
-
-                const formData = new FormData(formName);
                 fetch(formName.getAttribute("action"), {
                   method: "POST",
                   headers: {
@@ -131,15 +132,29 @@ const VendorPartnerLP = () => {
                     "Content-Type":
                       "application/x-www-form-urlencoded;charset=UTF-8",
                   },
-                  body: new URLSearchParams(formData).toString(),
-                }).then(res => {
-                  if (res) {
-                    console.log(res);
-                  }
-                  document.querySelector("#vendor-lp").style.display = "none";
-                  document.querySelector(".contact-thank-you").style.display =
-                    "block";
-                });
+                  body: new URLSearchParams(formData), //.toString(),
+                })
+                  .then(res => {
+                    if (res) {
+                      console.log(res);
+                    }
+                    document.querySelector("#vendor-lp").style.display = "none";
+                    document.querySelector(".contact-thank-you").style.display =
+                      "block";
+                  })
+                  .catch(error => {
+                    loader.style.display = "none";
+                    document.getElementById("error-msg").style.display =
+                      "block";
+                    console.log(error);
+
+                    axios.post(
+                      "https://www.tridigitalmarketing.com/.netlify/functions/warmup-submission",
+                      JSON.stringify({
+                        error,
+                      })
+                    );
+                  });
               }}
               netlify="true"
               netlify-honeypot="bot-field"
@@ -302,6 +317,10 @@ const VendorPartnerLP = () => {
                 </div>
                 <div className="sbmt-btn">
                   <Loader />
+                  <p id="error-msg">
+                    Looks like there was a problem submitting your form. Please
+                    ensure ALL form fields are filled out and try again.
+                  </p>
                   <button
                     type="submit"
                     className="btn pink-button"
