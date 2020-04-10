@@ -16,7 +16,8 @@ export default function EmployeeInfo() {
   const multiRow = 9;
 
   let vidURL =
-    "https://encrypted.tridigitalmarketing.com" + employees[employeeToShow].videoURL;
+    "https://encrypted.tridigitalmarketing.com" +
+    employees[employeeToShow].videoURL;
 
   useEffect(() => {
     setDimensions({
@@ -211,6 +212,9 @@ export default function EmployeeInfo() {
                   className="thumbnail-container"
                   key={index}
                   onClick={() => setEmployeeToShow(index)}
+                  onKeyPress={() => setEmployeeToShow(index)}
+                  role="button"
+                  tabIndex={index}
                 >
                   <img
                     src={employee.thumbnail}
@@ -229,6 +233,11 @@ export default function EmployeeInfo() {
                   className="thumbnail-container"
                   key={index + 9}
                   onClick={() => setEmployeeToShow(index + firstRowEmployees)}
+                  onKeyPress={() =>
+                    setEmployeeToShow(index + firstRowEmployees)
+                  }
+                  role="button"
+                  tabIndex={index + firstRowEmployees}
                 >
                   <img
                     src={employee.thumbnail}
@@ -280,6 +289,9 @@ export default function EmployeeInfo() {
                       className="thumbnail-container"
                       key={index}
                       onClick={() => setEmployeeToShow(index)}
+                      onKeyPress={() => setEmployeeToShow(index)}
+                      role="button"
+                      tabIndex={index}
                     >
                       <img
                         src={employee.thumbnail}

@@ -1,11 +1,32 @@
-.vendor-lp {
+.lenovo-lp {
+  .margin-top-100 {
+    margin-top: 100px !important;
+  }
+
+  .blue-text {
+    color: #0092fb;
+  }
+
+  .purple-text {
+    color: #6d64ff;
+  }
+
   h1 {
     color: white;
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: 600;
     font-family: "Oswald", sans-serif;
     margin: 0;
     text-transform: uppercase;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+  }
+
+  h3 {
+    font-family: "Oswald", sans-serif;
   }
 
   /*****************/
@@ -41,6 +62,7 @@
 
     .col {
       max-width: 50%;
+      justify-content: center;
     }
 
     .first-col {
@@ -125,7 +147,8 @@
       }
 
       .row {
-        padding: 0 5vw;
+        padding: 0 0vw;
+        max-width: 95%;
       }
     }
   }
@@ -134,25 +157,53 @@
   /******WHITE SECTION*******/
   /**************************/
   .white-section {
-    h2 {
-      text-transform: uppercase;
-      color: #2275bb;
+    .included {
+      z-index: 9;
+      position: relative;
+
+      h2 {
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+
+      p {
+        color: #000000;
+        margin-top: 10px;
+        line-height: 27px;
+      }
+
+      .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        &.mobile-reverse {
+          flex-direction: column-reverse;
+        }
+      }
     }
 
     h3 {
       font-size: 3.5vw;
       color: #2275bb;
-      font-family: "Poppins", sans-serif;
+
       font-weight: 700;
+      text-transform: uppercase;
     }
 
     h4 {
-      font-size: 3vw;
-      color: white;
+      font-size: 1.5vw;
       font-family: "Oswald";
       font-weight: bold;
-      padding-top: 50px;
       z-index: 9;
+      color: #2275bb;
+      text-transform: uppercase;
 
       @media screen and (max-width: 767px) {
         font-size: 30px;
@@ -164,6 +215,57 @@
     .row {
       max-width: 75vw;
       min-width: 800px;
+      &.included {
+        max-width: 95vw;
+      }
+    }
+
+    .whats-included {
+      position: absolute;
+      left: 0;
+      right: 0;
+      padding-left: 20px;
+    }
+
+    .blob {
+      position: absolute;
+      // transform: scale(1.5);
+      z-index: 0;
+      &.right-blob {
+        right: -25%;
+        padding-right: 0;
+        @media screen and (max-width: 1224px) {
+          display: none;
+        }
+      }
+      &.left-blob {
+        left: -25%;
+        padding-left: 0;
+        z-index: 2;
+      }
+    }
+
+    &.bottom-swoosh::after {
+      content: "";
+      background: url(https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/lenovo-lp/Subtraction%203.svg);
+      position: absolute;
+      bottom: -490px;
+      left: 0;
+      right: 0;
+      height: 44vw;
+      background-repeat: no-repeat;
+      background-size: 140vw;
+      background-position: -232px -400px;
+      z-index: 1;
+      @media screen and (max-width: 1224px) {
+        bottom: -445px;
+        height: 450px;
+        background-size: 150vw;
+        background-position: -253px -300px;
+      }
+      @media screen and (max-width: 767px) {
+        background-position: -100px -125px;
+      }
     }
 
     .blue-container {
@@ -265,14 +367,14 @@
       box-shadow: 0px 0px 36px 0px rgba(0, 81, 255, 0.1);
       padding: 10% 10%;
       border-radius: 10px;
-      margin-top: 130px;
+      margin-top: -300px;
       background: white;
       z-index: 999;
 
       p {
         font-family: "Poppins", sans-serif;
         font-size: 18px;
-        color: #466777;
+        color: #000000;
       }
 
       ::-webkit-file-upload-button {
@@ -293,6 +395,44 @@
         display: none;
       }
 
+      .rankings {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        > div {
+          width: 45%;
+          display: flex;
+          align-items: center;
+          margin-top: 30px;
+        }
+
+        label {
+          margin-top: 0;
+          margin-bottom: 0;
+          color: #2275bb;
+          font-size: 16px;
+          font-weight: 500;
+          margin-left: 20px;
+          font-family: "Poppins", "sans serif";
+        }
+
+        input {
+          width: 45px;
+          height: 45px;
+          text-align: center;
+        }
+
+        @media screen and (max-width: 767px) {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          > div {
+            width: 100%;
+          }
+        }
+      }
+
       button {
         text-align: center;
         border-radius: 30px;
@@ -309,12 +449,16 @@
         background: transparent;
         margin-left: auto;
         &:hover {
-          color: #ff3975;
+          color: #2ba6cb;
         }
       }
 
       @media screen and (max-width: 1500px) {
         padding: 10% 5%;
+      }
+
+      @media screen and (max-width: 1224px) {
+        margin-top: -100px;
       }
 
       @media screen and (max-width: 767px) {
@@ -333,7 +477,7 @@
     label {
       font-family: "Poppins", sans-serif;
       font-size: 18px;
-      color: #466777;
+      color: #000000;
       margin-top: 35px;
       margin-bottom: 20px;
     }
@@ -418,8 +562,65 @@
         margin-top: 50px;
       }
 
-      .row:nth-child(2) {
+      .row {
         padding: 0 5vw;
+      }
+    }
+  }
+
+  /***************************/
+  /*******BLUE-SECTION********/
+  /***************************/
+
+  .blue-section {
+    background: #0460ae;
+
+    h3 {
+      font-size: 3vw;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: "oswald";
+      @media screen and (max-width: 767px) {
+        font-size: 24px;
+      }
+    }
+
+    .step-container {
+      background: white;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      border-radius: 10px;
+      padding: 45px 25px 60px;
+      z-index: 9;
+      position: relative;
+      margin-top: -100px;
+      &.first-step {
+        margin-top: 50px;
+      }
+      @media screen and (max-width: 767px) {
+        margin-left: 25px;
+        margin-right: 25px;
+        padding: 45px 25px 45px;
+        margin-top: 25px;
+      }
+    }
+
+    .parallax-block {
+      z-index: 0;
+    }
+
+    @media screen and (max-width: 1000px) {
+      .margin-top-300 {
+        margin-top: 200px;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .margin-top-300 {
+        margin-top: 100px;
       }
     }
   }
@@ -427,5 +628,8 @@
   footer {
     z-index: 9;
     position: relative;
+  }
+
+  @media screen and (max-width: 500px) {
   }
 }

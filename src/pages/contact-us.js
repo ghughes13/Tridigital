@@ -132,7 +132,11 @@ const ContactUs = () => (
                 src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2019/12/Group%203452.svg"
                 alt="navpoint"
               />
-              <a href="https://goo.gl/maps/9KwWjzXNR7a4tNsK7" target="_blank">
+              <a
+                href="https://goo.gl/maps/9KwWjzXNR7a4tNsK7"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 101 E Park Blvd. STE. 101 <br /> Plano, TX 75074
               </a>
             </Row>
@@ -152,6 +156,7 @@ const ContactUs = () => (
             <a
               href="http://www.itepubs.com/tridigital_brochure_digital/page/1"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Image-95.png"
@@ -171,6 +176,7 @@ const ContactUs = () => (
               className="white-text pink-button"
               href="http://www.itepubs.com/tridigital_brochure_digital/page/1"
               target="_blank"
+              rel="noopener noreferrer"
             >
               View Online
             </a>

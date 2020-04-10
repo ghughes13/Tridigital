@@ -27,6 +27,7 @@ const IndexPage = () => {
                 <a
                   href="https://www.forbes.com/sites/forbesagencycouncil/2018/07/26/12-public-speaking-tips-to-make-your-speech-more-impactful/#33ad1ae3f16f"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img
                     src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/Forbes.svg"
@@ -36,6 +37,7 @@ const IndexPage = () => {
                 <a
                   href="https://www.channelpronetwork.com/article/solid-gold-marketing-campaigns?page=0%2C0"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img
                     className="margin-left-25px"
@@ -57,9 +59,9 @@ const IndexPage = () => {
               <YourVideo />
             </Col>
           </Row>
-          <span class="scroll-icon">
-            <span class="scroll-icon__wheel-outer">
-              <span class="scroll-icon__wheel-inner"></span>
+          <span className="scroll-icon">
+            <span className="scroll-icon__wheel-outer">
+              <span className="scroll-icon__wheel-inner"></span>
             </span>
           </span>
           <svg
@@ -311,7 +313,7 @@ const IndexPage = () => {
                 autoPlay
                 muted
                 loop
-                playsinline
+                playsInline
                 className="hide-on-mobile"
               >
                 <p>

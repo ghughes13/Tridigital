@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
 import Yourvideo from "../components/VendorPartnerVideoPlayer";
-import "../styles/vendor-lp.scss";
+import "../styles/fortinet-lp.scss";
 import Loader from "../components/Loader";
 import axios from "axios";
 
@@ -11,7 +11,7 @@ const VendorPartnerLP = () => {
   return (
     <Layout>
       <SEO title="Vendor partnership program | TRIdigital Marketing" />
-      <div className="vendor-lp">
+      <div className="fortinet-lp">
         <Container className="container fortinet-ingram-background hero swish">
           <Row className="z-index-999">
             <Col className="display-flex content-container column flex-dir-col">

@@ -1,0 +1,431 @@
+.fortinet-lp {
+  h1 {
+    color: white;
+    font-size: 4vw;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  /*****************/
+  /******HERO*******/
+  /*****************/
+
+  .hero {
+    padding-top: 150px;
+    padding-bottom: 200px;
+    background: #2275bb;
+    &:after {
+      content: url(https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/vendor-partner-lp/blue-blob.svg);
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+    }
+
+    .fortinet-ingram-btn {
+      color: white;
+      font-size: 20px;
+      font-family: "Poppins";
+      font-weight: 700;
+      background: #2ba6cb;
+      width: 350px;
+      text-align: center;
+      padding: 7px;
+      border-radius: 30px;
+      border: solid white 3px;
+      text-decoration: none;
+      margin-top: 50px;
+    }
+
+    .col {
+      max-width: 50%;
+    }
+
+    .first-col {
+      flex-grow: 1;
+    }
+
+    #video-player {
+      max-width: 100%;
+      min-height: 450px;
+      object-fit: cover;
+      border-radius: 10px;
+      -webkit-box-shadow: 0px 5px 36px 0px rgba(0, 81, 255, 0.1);
+      -moz-box-shadow: 0px 5px 36px 0px rgba(0, 81, 255, 0.1);
+      box-shadow: 0px 5px 36px 0px rgba(0, 81, 255, 0.1);
+    }
+
+    .video-btn {
+      top: 35%;
+      width: 150px;
+
+      .wistia_click_to_play {
+        height: 150px !important;
+        width: 150px !important;
+      }
+    }
+
+    .video-container {
+      border-radius: 10px;
+      position: relative;
+      flex-grow: 2;
+    }
+
+    @media screen and (max-width: 1500px) {
+      padding-bottom: 250px;
+
+      .video-container {
+        max-width: 100%;
+      }
+    }
+    @media screen and (max-width: 1224px) {
+      h1 {
+        font-size: 80px;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .col {
+        min-width: 100%;
+        text-align: center;
+      }
+
+      padding-top: 100px;
+      padding-bottom: 200px;
+
+      .display-flex {
+        align-items: center;
+      }
+
+      .fortinet-ingram-btn {
+        margin-bottom: 50px;
+        margin-top: 0;
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        background: url(https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/vendor-partner-lp/Intersection%209.svg);
+        background-size: cover;
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      h1 {
+        font-size: 40px;
+        margin-bottom: 60px;
+      }
+
+      .row {
+        padding: 0 5vw;
+      }
+    }
+  }
+
+  /***************************/
+  /******WHITE SECTION*******/
+  /**************************/
+  .white-section {
+    h2 {
+      text-transform: uppercase;
+      color: #2275bb;
+    }
+
+    h3 {
+      font-size: 3.5vw;
+      color: #2275bb;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+    }
+
+    h4 {
+      font-size: 3vw;
+      color: white;
+      font-family: "Oswald";
+      font-weight: bold;
+      padding-top: 50px;
+      z-index: 9;
+
+      @media screen and (max-width: 767px) {
+        font-size: 30px;
+        position: relative;
+        z-index: 9;
+      }
+    }
+
+    .row {
+      max-width: 75vw;
+      min-width: 800px;
+    }
+
+    .blue-container {
+      background: #2275bb;
+      margin: auto;
+      margin-top: 50px;
+      max-width: 95vw;
+      border-radius: 20px;
+      padding-bottom: 60px;
+      overflow: HIDDEN;
+      position: relative;
+      z-index: 9;
+
+      &::before {
+        content: url(https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/vendor-partner-lp/blue-blob-left.svg);
+        position: absolute;
+      }
+
+      &::after {
+        content: url(https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/vendor-partner-lp/Mask%20Group%202.png);
+        position: absolute;
+        bottom: 0;
+        right: -25vw;
+        z-index: 0;
+      }
+
+      .flex-row {
+        display: flex;
+        max-width: 80vw;
+        margin: auto;
+        justify-content: center;
+        z-index: 9;
+
+        p {
+          color: white;
+          font-size: 18px;
+          font-family: "Poppins";
+          font-weight: bold;
+          text-align: center;
+        }
+
+        @media screen and (max-width: 767px) {
+          flex-direction: column !important;
+          align-items: center;
+        }
+      }
+
+      .flex-row > div {
+        max-width: 30%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+
+        @media screen and (max-width: 767px) {
+          min-width: 300px;
+          max-width: initial;
+        }
+      }
+    }
+
+    .contain-overflow {
+      overflow: hidden;
+      position: relative;
+    }
+
+    &::before {
+      content: "";
+      background: url(https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/vendor-partner-lp/white%20swish.svg);
+      position: absolute;
+      top: -400px;
+      left: 0;
+      right: 0;
+      height: 500px;
+      background-repeat: no-repeat;
+      background-size: 120vw;
+      background-position: -76px 0px;
+
+      @media screen and (max-width: 1224px) {
+        top: -300px;
+      }
+
+      @media screen and (max-width: 800px) {
+        top: -200px;
+      }
+
+      @media screen and (max-width: 800px) {
+        top: -100px;
+      }
+
+      @media screen and (max-width: 500px) {
+        background-size: 175vw;
+      }
+    }
+
+    form {
+      -webkit-box-shadow: 0px 0px 36px 0px rgba(0, 81, 255, 0.1);
+      -moz-box-shadow: 0px 0px 36px 0px rgba(0, 81, 255, 0.1);
+      box-shadow: 0px 0px 36px 0px rgba(0, 81, 255, 0.1);
+      padding: 10% 10%;
+      border-radius: 10px;
+      margin-top: 130px;
+      background: white;
+      z-index: 999;
+
+      p {
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        color: #466777;
+      }
+
+      ::-webkit-file-upload-button {
+        background: #ff3975;
+        color: white;
+        border: solid #ff3975 2px;
+        border-radius: 20px;
+        padding: 0 10px;
+      }
+
+      #error-msg {
+        text-align: center;
+        color: red;
+        border-top: solid 2px red;
+        border-bottom: solid 2px red;
+        padding: 25px;
+        margin: 25px;
+        display: none;
+      }
+
+      button {
+        text-align: center;
+        border-radius: 30px;
+        color: #fff;
+        font-weight: 900;
+        font-size: 20px;
+        width: 230px;
+        display: block;
+        padding: 13px 50px 12px;
+        margin-top: 40px;
+        font-family: "Poppins";
+        transition: all 0.3s ease-in-out;
+        border: none;
+        background: transparent;
+        margin-left: auto;
+        &:hover {
+          color: #ff3975;
+        }
+      }
+
+      @media screen and (max-width: 1500px) {
+        padding: 10% 5%;
+      }
+
+      @media screen and (max-width: 767px) {
+        padding: 40px 20px;
+      }
+    }
+
+    .contact-thank-you {
+      width: 100%;
+      margin-top: 10vh;
+      margin-bottom: 10vh;
+      z-index: 9;
+      background: #2275bb;
+    }
+
+    label {
+      font-family: "Poppins", sans-serif;
+      font-size: 18px;
+      color: #466777;
+      margin-top: 35px;
+      margin-bottom: 20px;
+    }
+
+    label.blue-label {
+      color: #2275bb;
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .primary-contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .primary-contact > div {
+      width: 48%;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      width: 100%;
+      padding: 10px;
+      border: solid #c9cbd9 1px;
+      font-family: "Poppins", sans-serif;
+      font-size: 20px;
+      color: #466777;
+      margin-bottom: 0px;
+    }
+
+    textarea {
+      min-height: 90px;
+    }
+
+    .blob-container:before {
+      position: absolute;
+      content: url("https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/vendor-partner-lp/grey-blob-1.svg");
+      z-index: 0;
+    }
+
+    .blob-container:after {
+      position: absolute;
+      content: url("https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/vendor-partner-lp/grey-blob-2.svg");
+      bottom: 0;
+      left: -30vw;
+    }
+
+    @media screen and (max-width: 1500px) {
+      .row:first-child {
+        margin-top: -100px;
+      }
+    }
+
+    @media screen and (max-width: 1224px) {
+      margin-top: -150px;
+
+      .row {
+        max-width: 90vw;
+        min-width: 100%;
+      }
+
+      .row:first-child {
+        margin-top: 0px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .primary-contact > div {
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      h3 {
+        font-size: 32px;
+      }
+
+      form {
+        margin-top: 50px;
+      }
+
+      .row:nth-child(2) {
+        padding: 0 5vw;
+      }
+    }
+  }
+
+  footer {
+    z-index: 9;
+    position: relative;
+  }
+}
