@@ -30,7 +30,7 @@ const VendorPartnerLP = () => {
                 loop
                 muted
               ></video>
-              <Yourvideo />
+              <Yourvideo videoID={"3iwu5wakg8"} />
             </Col>
           </Row>
         </Container>

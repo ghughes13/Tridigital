@@ -43,7 +43,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                   loop
                   muted
                 ></video>
-                <Yourvideo />
+                <Yourvideo videoID={"e54tqpry51"} />
               </Col>
             </Row>
           </Container>
@@ -65,14 +65,20 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
             </Row>
             <Row className="whats-included">
               <Parallax y={[-90, -60]} tagOuter="div" className="show-mobile">
-                <Image src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/lenovo-lp/What%27s%20included.svg" />
+                <Image
+                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/lenovo-lp/What%27s%20included.svg"
+                  alt="What's included"
+                />
               </Parallax>
               <Parallax
                 y={[-60, -40]}
                 tagOuter="div"
                 className="hide-on-mobile"
               >
-                <Image src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/lenovo-lp/What%27s%20included.svg" />
+                <Image
+                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/lenovo-lp/What%27s%20included.svg"
+                  alt="What's Included"
+                />
               </Parallax>
             </Row>
             <Row className="right-blob blob">
@@ -93,12 +99,18 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                 </p>
               </Col>
               <Col className="centered-text">
-                <img src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/Group-3679.png" />
+                <img
+                  src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/Group-3679.png"
+                  alt="Email Design"
+                />
               </Col>
             </Row>
             <Row className="included margin-top-100 ">
               <Col>
-                <img src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/Group-3680.png" />
+                <img
+                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/Group-3680.png"
+                  alt="Collatteral"
+                />
               </Col>
               <Col className="text-container">
                 <h2 className="yellow-text">collateral</h2>
@@ -127,12 +139,18 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                 </p>
               </Col>
               <Col className="centered-text">
-                <img src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/Group-3681.png" />
+                <img
+                  src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/Group-3681.png"
+                  alt="Honey Access"
+                />
               </Col>
             </Row>
             <Row className="included margin-top-100">
               <Col>
-                <img src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/Group-3682.png" />
+                <img
+                  src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/Group-3682.png"
+                  alt="Emails"
+                />
               </Col>
               <Col className="text-container">
                 <h2 className="teal-text">emails</h2>
@@ -153,12 +171,18 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                 </p>
               </Col>
               <Col className="centered-text">
-                <img src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/Group-3683.png" />
+                <img
+                  src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/Group-3683.png"
+                  alt="Branded Landing Pages"
+                />
               </Col>
             </Row>
             <Row className="included margin-top-100">
               <Col>
-                <img src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/Group-3684.png" />
+                <img
+                  src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/Group-3684.png"
+                  alt="MQL List"
+                />
               </Col>
               <Col className="text-container">
                 <h2 className="blue-text">mql</h2>
@@ -246,7 +270,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
             <Row className="blob-container">
               <form
                 id="vendor-lp"
-                className="Fortinet"
+                className="Lenovo"
                 method="POST"
                 name="lenovo-ingram-lp"
                 action="/lenovo-ingrammicro-program/#thanks"

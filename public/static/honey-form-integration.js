@@ -6,6 +6,7 @@
   var formCategory = [
     "Consultation",
     "Fortinet",
+    "Lenovo",
     "Google AdWords",
     "Newsletter",
     "Ask Us Anything",
@@ -28,6 +29,9 @@
           }
           if (formCategory[k] == "Fortinet") {
             listID = 9314;
+          }
+          if (formCategory[k] == "Lenovo") {
+            listID = 9488;
           }
           var formSelector = currentForm.id;
           var formType = formCategory[k];
