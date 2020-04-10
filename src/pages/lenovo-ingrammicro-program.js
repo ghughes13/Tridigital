@@ -36,7 +36,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
               <Col className="content-container column align-vertical video-container ">
                 <video
                   className="lp-video box-shadow"
-                  src="https://tdgatsbytest.wpengine.com/wp-content/uploads/vendor-lp-video/Vendor_15_sec_loop_AA_V01%20%281%29.mp4"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/vendor-lp-video/Vendor_15_sec_loop_AA_V01%20%281%29.mp4"
                   alt="TRIdigital media team"
                   id="video-player"
                   autoPlay
@@ -66,7 +66,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
             <Row className="whats-included">
               <Parallax y={[-90, -60]} tagOuter="div" className="show-mobile">
                 <Image
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/lenovo-lp/What%27s%20included.svg"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/lenovo-lp/What%27s%20included.svg"
                   alt="What's included"
                 />
               </Parallax>
@@ -76,7 +76,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                 className="hide-on-mobile"
               >
                 <Image
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/lenovo-lp/What%27s%20included.svg"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/lenovo-lp/What%27s%20included.svg"
                   alt="What's Included"
                 />
               </Parallax>
@@ -84,7 +84,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
             <Row className="right-blob blob">
               <Parallax y={[0, 60]} tagOuter="div">
                 <Image
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/lenovo-lp/Path%20648.svg"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/lenovo-lp/Path%20648.svg"
                   alt="step-1-img"
                 />
               </Parallax>
@@ -100,7 +100,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
               </Col>
               <Col className="centered-text">
                 <img
-                  src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/Group-3679.png"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/04/Group-3679.png"
                   alt="Email Design"
                 />
               </Col>
@@ -108,7 +108,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
             <Row className="included margin-top-100 ">
               <Col>
                 <img
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/Group-3680.png"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/04/Group-3680.png"
                   alt="Collatteral"
                 />
               </Col>
@@ -124,7 +124,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
             <Row className="left-blob blob">
               <Parallax y={[-20, 30]} tagOuter="div">
                 <Image
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/svg/lenovo-lp/Path%20378.svg"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/lenovo-lp/Path%20378.svg"
                   alt="step-1-img"
                 />
               </Parallax>
@@ -140,7 +140,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
               </Col>
               <Col className="centered-text">
                 <img
-                  src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/Group-3681.png"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/04/Group-3681.png"
                   alt="Honey Access"
                 />
               </Col>
@@ -148,7 +148,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
             <Row className="included margin-top-100">
               <Col>
                 <img
-                  src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/Group-3682.png"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/04/Group-3682.png"
                   alt="Emails"
                 />
               </Col>
@@ -172,7 +172,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
               </Col>
               <Col className="centered-text">
                 <img
-                  src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/Group-3683.png"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/04/Group-3683.png"
                   alt="Branded Landing Pages"
                 />
               </Col>
@@ -180,7 +180,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
             <Row className="included margin-top-100">
               <Col>
                 <img
-                  src="https://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/Group-3684.png"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/04/Group-3684.png"
                   alt="MQL List"
                 />
               </Col>
@@ -210,7 +210,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
             <Row>
               <Parallax className="parallax-block" y={[-30, 10]} tagOuter="div">
                 <Image
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/Group-3678.png"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/04/Group-3678.png"
                   alt="step-1-img"
                 />
               </Parallax>
@@ -229,7 +229,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                 tagOuter="figure"
               >
                 <Image
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/05_floating_ppl-0-00-06-15.png"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/04/05_floating_ppl-0-00-06-15.png"
                   alt="step-1-img"
                 />
               </Parallax>
@@ -244,7 +244,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
             <Row>
               <Parallax className="parallax-block" y={[-30, 10]} tagOuter="div">
                 <Image
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/Group-3677.png"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/04/Group-3677.png"
                   alt="step-1-img"
                 />
               </Parallax>
@@ -260,7 +260,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
             <Row>
               <Parallax className="parallax-block" y={[-30, 10]} tagOuter="div">
                 <Image
-                  src="http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/04/06_floating_graphs-2-0-00-08-12.png"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/04/06_floating_graphs-2-0-00-08-12.png"
                   alt="step-1-img"
                 />
               </Parallax>

@@ -23,7 +23,7 @@ const VendorPartnerLP = () => {
             <Col className="content-container column align-vertical video-container ">
               <video
                 className="lp-video box-shadow"
-                src="https://tdgatsbytest.wpengine.com/wp-content/uploads/vendor-lp-video/Vendor_15_sec_loop_AA_V01%20%281%29.mp4"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/vendor-lp-video/Vendor_15_sec_loop_AA_V01%20%281%29.mp4"
                 alt="TRIdigital media team"
                 id="video-player"
                 autoPlay
