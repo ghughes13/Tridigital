@@ -689,6 +689,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                     </label>
                     <input type="text" name="sell-to" id="sell-to" required />
                   </div>
+
                   <div className="service-areas">
                     <label htmlFor="service-areas">
                       What is your services area? ( counties, cities, zip codes)
@@ -699,6 +700,10 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                       id="service-areas"
                       required
                     />
+                  </div>
+                  <div className="PBID">
+                    <label htmlFor="PBID">Please Provide your BPID.</label>
+                    <input type="text" name="PBID" id="PBID" required />
                   </div>
                   <div className="sbmt-btn">
                     <Loader />
