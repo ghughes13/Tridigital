@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
@@ -6,10 +6,15 @@ import Yourvideo from "../components/VendorPartnerVideoPlayer";
 import "../styles/lenovo-lp.scss";
 import Loader from "../components/Loader";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
+import { Link, animateScroll as scroll } from "react-scroll";
 import Image from "../components/LenovoPageImageHandler";
 import axios from "axios";
 
 const VendorPartnerLP = () => {
+  useEffect(() => {
+    document.querySelector("#navbarBasicExample").style.display = "none";
+  });
+
   return (
     <ParallaxProvider>
       <Layout>
@@ -26,12 +31,15 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
             <Row className="z-index-999">
               <Col className="display-flex content-container column flex-dir-col">
                 <h1>Ingram micro & Lenovo Partner Enablement Program</h1>
-                <a
+                <Link
                   className="fortinet-ingram-btn inline-block"
-                  href="#vendor-lp"
+                  to="vendor-lp"
+                  smooth={true}
+                  offset={-70}
+                  duration={1000}
                 >
                   Fill out the Questionnaire
-                </a>
+                </Link>
               </Col>
               <Col className="content-container column align-vertical video-container ">
                 <video
@@ -116,8 +124,8 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                 <h2 className="yellow-text">collateral</h2>
                 <h4>6 Branded Collateral pieces</h4>
                 <p>
-                  2 branded, visually-driven emails a month to establish brand
-                  association and drive clicks to content
+                  Tried-and-tested whitepapers and eBooks that explain solutions
+                  and generate interest in your brand
                 </p>
               </Col>
             </Row>
@@ -134,8 +142,8 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                 <h2 className="pink-text">honey</h2>
                 <h4>Unlimited user access to Honey </h4>
                 <p>
-                  2 branded, visually-driven emails a month to establish brand
-                  association and drive clicks to content
+                  Complete, zero restriction access to the full Honey CRM suite
+                  to run all of your sales and marketing activities through
                 </p>
               </Col>
               <Col className="centered-text">
@@ -156,8 +164,8 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                 <h2 className="teal-text">emails</h2>
                 <h4>12 Personal marketing plan emails</h4>
                 <p>
-                  2 branded, visually-driven emails a month to establish brand
-                  association and drive clicks to content
+                  Plain-text emails that are written as one-to-ones to establish
+                  a more personal approach with prospects
                 </p>
               </Col>
             </Row>
@@ -166,8 +174,8 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                 <h2 className="purple-text">landing pages</h2>
                 <h4>6 Branded landing pages </h4>
                 <p>
-                  2 branded, visually-driven emails a month to establish brand
-                  association and drive clicks to content
+                  A branded landing page for each of your selected solutions
+                  that gives a complete overview of the solution
                 </p>
               </Col>
               <Col className="centered-text">
@@ -188,8 +196,8 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                 <h2 className="blue-text">mql</h2>
                 <h4>MQL prospect list (up to 2k contacts) </h4>
                 <p>
-                  2 branded, visually-driven emails a month to establish brand
-                  association and drive clicks to content
+                  Customized contact lists according to your requirements that
+                  you can begin marketing to immediately
                 </p>
               </Col>
             </Row>
@@ -252,7 +260,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
             <Row className="step-container">
               <h3 className="blue-text">Step 4:</h3>
               <p>
-                With your ufettered access to Honey, you maintain complete
+                With your unfettered access to Honey, you maintain complete
                 vsibility over the perfromance of your marekting and can conduct
                 follow ups and tasking in one central hub
               </p>
