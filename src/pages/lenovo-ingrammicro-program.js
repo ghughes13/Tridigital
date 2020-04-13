@@ -64,7 +64,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
               </Col>
             </Row>
             <Row className="whats-included">
-              <Parallax y={[-90, -60]} tagOuter="div" className="show-mobile">
+              <Parallax y={[-110, -30]} tagOuter="div" className="show-mobile">
                 <Image
                   src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/lenovo-lp/What%27s%20included.svg"
                   alt="What's included"
