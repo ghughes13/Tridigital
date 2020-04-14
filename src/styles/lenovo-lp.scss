@@ -93,6 +93,9 @@
       border-radius: 10px;
       position: relative;
       flex-grow: 2;
+      @media screen and (max-width: 767px) {
+        padding: 0;
+      }
     }
 
     @media screen and (max-width: 1500px) {
