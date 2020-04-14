@@ -84,7 +84,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                 className="hide-on-mobile"
               >
                 <Image
-                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/lenovo-lp/What%27s%20included.svg"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/04/Whats-included.png"
                   alt="What's Included"
                 />
               </Parallax>
