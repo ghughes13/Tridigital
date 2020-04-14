@@ -346,6 +346,10 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                   Generating Leads?
                 </h3>
                 <div className="form-content margin-top-60">
+                  <div className="PBID">
+                    <label htmlFor="PBID">Please Provide your BPID</label>
+                    <input type="text" name="PBID" id="PBID" required />
+                  </div>
                   <div className="company-name company-field">
                     <label htmlFor="comapny">
                       Please write your company name as you would like to see it
@@ -700,10 +704,6 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                       id="service-areas"
                       required
                     />
-                  </div>
-                  <div className="PBID">
-                    <label htmlFor="PBID">Please Provide your BPID.</label>
-                    <input type="text" name="PBID" id="PBID" required />
                   </div>
                   <div className="sbmt-btn">
                     <Loader />
