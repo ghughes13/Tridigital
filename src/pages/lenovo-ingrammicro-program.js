@@ -44,7 +44,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
               <Col className="content-container column align-vertical video-container ">
                 <video
                   className="lp-video box-shadow"
-                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/vendor-lp-video/Vendor_15_sec_loop_AA_V01%20%281%29.mp4"
+                  src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/vendor-lp-video/Vendor_Lenovo_15_sec_loop_AA_V01.mp4"
                   alt="TRIdigital media team"
                   id="video-player"
                   autoPlay
@@ -261,7 +261,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
               <h3 className="blue-text">Step 4:</h3>
               <p>
                 With your unfettered access to Honey, you maintain complete
-                vsibility over the perfromance of your marekting and can conduct
+                vsibility over the performance of your marekting and can conduct
                 follow ups and tasking in one central hub
               </p>
             </Row>
