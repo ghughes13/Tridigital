@@ -261,8 +261,8 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
               <h3 className="blue-text">Step 4:</h3>
               <p>
                 With your unfettered access to Honey, you maintain complete
-                vsibility over the performance of your marekting and can conduct
-                follow ups and tasking in one central hub
+                visibility over the performance of your marketing and can
+                conduct follow ups and tasking in one central hub
               </p>
             </Row>
             <Row>
@@ -533,7 +533,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                     <div className="cybersecurity">
                       <input
                         type="text"
-                        vname="cybersecurity"
+                        name="cybersecurity"
                         id="cybersecurity"
                         required
                       />{" "}
