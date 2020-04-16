@@ -119,41 +119,12 @@ const VendorPartnerLP = () => {
                 const submitButton = document.getElementById("sbmt-form-btn");
                 const loader = document.querySelector(".loader");
                 const formName = document.getElementById("vendor-lp");
-                const data = document.querySelectorAll(".send-value");
 
                 loader.style.display = "block";
                 submitButton.style.display = "none";
 
-                // function encode(data) {
-                //   const formData = new FormData();
-                //   let obj = {};
-
-                //   obj["form-name"] = formName;
-
-                //   for (let value of data.values()) {
-                //     if (value.name === "logo") {
-                //       obj[value.name] = document.getElementById(
-                //         "logo"
-                //       ).files[0];
-                //     } else {
-                //       obj[value.name] = value.value;
-                //     }
-                //   }
-
-                //   for (const key of Object.keys(obj)) {
-                //     formData.append(key, obj[key]);
-                //   }
-
-                //   return formData;
-                // }
-
                 fetch(formName.getAttribute("action"), {
                   method: "POST",
-                  // headers: {
-                  //   Accept: "application/w-www-form-urlencoded;charset=UTF-8",
-                  //   "Content-Type":
-                  //     "application/x-www-form-urlencoded;charset=UTF-8",
-                  // },
                   body: new FormData(document.getElementById("vendor-lp")),
                 })
                   .then(res => {

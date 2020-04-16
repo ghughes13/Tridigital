@@ -288,19 +288,13 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                   const submitButton = document.getElementById("sbmt-form-btn");
                   const loader = document.querySelector(".loader");
                   const formName = document.getElementById("vendor-lp");
-                  const data = new FormData(formName);
 
                   loader.style.display = "block";
                   submitButton.style.display = "none";
 
                   fetch(formName.getAttribute("action"), {
                     method: "POST",
-                    headers: {
-                      Accept: "application/w-www-form-urlencoded;charset=UTF-8",
-                      "Content-Type":
-                        "application/x-www-form-urlencoded;charset=UTF-8",
-                    },
-                    body: new URLSearchParams(data).toString(),
+                    body: new FormData(document.getElementById("vendor-lp")),
                   })
                     .then(res => {
                       console.log(res);
@@ -314,6 +308,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                         loader.style.display = "none";
                         document.getElementById("error-msg").style.display =
                           "block";
+                        submitButton.style.display = "block";
 
                         axios.post(
                           "https://www.tridigitalmarketing.com/.netlify/functions/errorCatcher",
@@ -327,6 +322,8 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                       loader.style.display = "none";
                       document.getElementById("error-msg").style.display =
                         "block";
+                      submitButton.style.display = "block";
+
                       console.log(error);
 
                       axios.post(
