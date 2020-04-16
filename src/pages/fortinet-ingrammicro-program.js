@@ -126,10 +126,18 @@ const VendorPartnerLP = () => {
 
                 function encode(data) {
                   const formData = new FormData();
+                  let obj = {};
 
-                  for (const value of data.values()) {
-                    formData.append(value.name, value.value);
+                  obj["form-name"] = formName;
+
+                  for (let value of inputs.values()) {
+                    obj[value.name] = value.value;
                   }
+
+                  for (const key of Object.keys(obj)) {
+                    formData.append(key, data[key]);
+                  }
+
                   return formData;
                 }
 
@@ -154,6 +162,7 @@ const VendorPartnerLP = () => {
                       loader.style.display = "none";
                       document.getElementById("error-msg").style.display =
                         "block";
+                      submitButton.style.display = "block";
 
                       axios.post(
                         "https://www.tridigitalmarketing.com/.netlify/functions/errorCatcher",
@@ -167,6 +176,8 @@ const VendorPartnerLP = () => {
                     loader.style.display = "none";
                     document.getElementById("error-msg").style.display =
                       "block";
+                    submitButton.style.display = "block";
+
                     console.log(error);
 
                     axios.post(
