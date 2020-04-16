@@ -130,7 +130,7 @@ const VendorPartnerLP = () => {
 
                   obj["form-name"] = formName;
 
-                  for (let value of inputs.values()) {
+                  for (let value of data.values()) {
                     obj[value.name] = value.value;
                   }
 
