@@ -131,11 +131,17 @@ const VendorPartnerLP = () => {
                   obj["form-name"] = formName;
 
                   for (let value of data.values()) {
-                    obj[value.name] = value.value;
+                    if (value.name === "logo") {
+                      obj[value.name] = document.getElementById(
+                        "logo"
+                      ).files[0];
+                    } else {
+                      obj[value.name] = value.value;
+                    }
                   }
 
                   for (const key of Object.keys(obj)) {
-                    formData.append(key, data[key]);
+                    formData.append(key, obj[key]);
                   }
 
                   return formData;
@@ -143,11 +149,11 @@ const VendorPartnerLP = () => {
 
                 fetch(formName.getAttribute("action"), {
                   method: "POST",
-                  headers: {
-                    Accept: "application/w-www-form-urlencoded;charset=UTF-8",
-                    "Content-Type":
-                      "application/x-www-form-urlencoded;charset=UTF-8",
-                  },
+                  // headers: {
+                  //   Accept: "application/w-www-form-urlencoded;charset=UTF-8",
+                  //   "Content-Type":
+                  //     "application/x-www-form-urlencoded;charset=UTF-8",
+                  // },
                   body: encode(data),
                 })
                   .then(res => {
