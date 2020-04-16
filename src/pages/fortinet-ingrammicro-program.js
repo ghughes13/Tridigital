@@ -194,7 +194,7 @@ const VendorPartnerLP = () => {
                   <label htmlFor="logo">
                     Please provide your logo in svg, eps or ai format/s
                   </label>
-                  <input type="file" name="company-logo" id="logo" required />
+                  <input type="file" name="logo" id="logo" required />
                 </div>
                 <div className="contact-info">
                   <label htmlFor="contact-info">
