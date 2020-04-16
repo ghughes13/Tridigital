@@ -116,14 +116,22 @@ const VendorPartnerLP = () => {
               action="/fortinet-ingrammicro-program/#thanks"
               onSubmit={e => {
                 e.preventDefault();
-
                 const submitButton = document.getElementById("sbmt-form-btn");
                 const loader = document.querySelector(".loader");
                 const formName = document.getElementById("vendor-lp");
-                const data = new FormData(formName);
+                const data = document.querySelectorAll(".send-value");
 
                 loader.style.display = "block";
                 submitButton.style.display = "none";
+
+                function encode(data) {
+                  const formData = new FormData();
+
+                  for (const value of data.values()) {
+                    formData.append(value.name, value.value);
+                  }
+                  return formData;
+                }
 
                 fetch(formName.getAttribute("action"), {
                   method: "POST",
@@ -132,7 +140,7 @@ const VendorPartnerLP = () => {
                     "Content-Type":
                       "application/x-www-form-urlencoded;charset=UTF-8",
                   },
-                  body: new URLSearchParams(data).toString(),
+                  body: encode(data),
                 })
                   .then(res => {
                     console.log(res);
@@ -172,14 +180,14 @@ const VendorPartnerLP = () => {
               netlify="true"
               netlify-honeypot="bot-field"
             >
-              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="bot-field" id="bot" />
               <h3 className="blue-text form-title centered-text">
                 Ready to Start <br />
                 Generating Leads?
               </h3>
               <div className="form-content margin-top-60">
                 <div className="company-name company-field">
-                  <label htmlFor="comapny">
+                  <label htmlFor="company">
                     Please write your company name as you would like to see it
                     written in all your marketing assets
                   </label>
@@ -187,6 +195,7 @@ const VendorPartnerLP = () => {
                     type="text"
                     name="company-name"
                     id="company"
+                    className="send-value"
                     required
                   />
                 </div>
@@ -194,7 +203,13 @@ const VendorPartnerLP = () => {
                   <label htmlFor="logo">
                     Please provide your logo in svg, eps or ai format/s
                   </label>
-                  <input type="file" name="logo" id="logo" required />
+                  <input
+                    type="file"
+                    name="logo"
+                    id="logo"
+                    className="send-value"
+                    required
+                  />
                 </div>
                 <div className="contact-info">
                   <label htmlFor="contact-info">
@@ -202,7 +217,12 @@ const VendorPartnerLP = () => {
                     like to see it on your marketing assets (phone, address,
                     support email)
                   </label>
-                  <textarea name="contact-info" id="contact-info" required />
+                  <textarea
+                    name="contact-info"
+                    id="contact-info"
+                    className="send-value"
+                    required
+                  />
                 </div>
                 <div className="branding-colors">
                   <label htmlFor="branding-colors">
@@ -213,6 +233,7 @@ const VendorPartnerLP = () => {
                   <textarea
                     name="branding-colors"
                     id="branding-colors"
+                    className="send-value"
                     required
                   />
                 </div>
@@ -227,25 +248,49 @@ const VendorPartnerLP = () => {
                     <label className="blue-label" htmlFor="firstName">
                       Name
                     </label>
-                    <input type="text" name="name" id="firstName" required />
+                    <input
+                      type="text"
+                      className="send-value"
+                      name="name"
+                      id="firstName"
+                      required
+                    />
                   </div>
                   <div className="position">
                     <label className="blue-label" htmlFor="position">
                       Position
                     </label>
-                    <input type="text" name="position" id="position" required />
+                    <input
+                      type="text"
+                      className="send-value"
+                      name="position"
+                      id="position"
+                      required
+                    />
                   </div>
                   <div className="email margin-top-20 email-field">
                     <label className="blue-label" htmlFor="email">
                       Email
                     </label>
-                    <input type="email" name="email" id="email" required />
+                    <input
+                      type="email"
+                      className="send-value"
+                      name="email"
+                      id="email"
+                      required
+                    />
                   </div>
                   <div className="phone margin-top-20">
                     <label className="blue-label" htmlFor="phone">
                       Phone Number
                     </label>
-                    <input type="tel" name="phone" id="phone" required />
+                    <input
+                      type="tel"
+                      className="send-value"
+                      name="phone"
+                      id="phone"
+                      required
+                    />
                   </div>
                 </div>
                 <div className="signature-block">
@@ -256,6 +301,7 @@ const VendorPartnerLP = () => {
                   <textarea
                     name="signature-block"
                     id="signature-block"
+                    className="send-value"
                     required
                   />
                 </div>
@@ -272,6 +318,7 @@ const VendorPartnerLP = () => {
                       type="text"
                       name="industry-1"
                       id="industry-1"
+                      className="send-value"
                       required
                     />
                   </div>
@@ -283,6 +330,7 @@ const VendorPartnerLP = () => {
                       type="text"
                       name="industry-2"
                       id="industry-2"
+                      className="send-value"
                       required
                     />
                   </div>
@@ -294,6 +342,7 @@ const VendorPartnerLP = () => {
                       type="text"
                       name="industry-1"
                       id="industry-3"
+                      className="send-value"
                       required
                     />
                   </div>
@@ -307,6 +356,7 @@ const VendorPartnerLP = () => {
                     type="text"
                     name="company-size"
                     id="company-size"
+                    className="send-value"
                     required
                   />
                 </div>
@@ -315,7 +365,13 @@ const VendorPartnerLP = () => {
                     Which contacts do you prefer to sell to in prospect clients
                     ( CEO, CIO, Directors, manager, etc.)
                   </label>
-                  <input type="text" name="sell-to" id="sell-to" required />
+                  <input
+                    type="text"
+                    name="sell-to"
+                    id="sell-to"
+                    className="send-value"
+                    required
+                  />
                 </div>
                 <div className="service-areas">
                   <label htmlFor="service-areas">
@@ -325,6 +381,7 @@ const VendorPartnerLP = () => {
                     type="text"
                     name="service-areas"
                     id="service-areas"
+                    className="send-value"
                     required
                   />
                 </div>
