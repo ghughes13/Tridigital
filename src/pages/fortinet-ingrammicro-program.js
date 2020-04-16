@@ -124,28 +124,28 @@ const VendorPartnerLP = () => {
                 loader.style.display = "block";
                 submitButton.style.display = "none";
 
-                function encode(data) {
-                  const formData = new FormData();
-                  let obj = {};
+                // function encode(data) {
+                //   const formData = new FormData();
+                //   let obj = {};
 
-                  obj["form-name"] = formName;
+                //   obj["form-name"] = formName;
 
-                  for (let value of data.values()) {
-                    if (value.name === "logo") {
-                      obj[value.name] = document.getElementById(
-                        "logo"
-                      ).files[0];
-                    } else {
-                      obj[value.name] = value.value;
-                    }
-                  }
+                //   for (let value of data.values()) {
+                //     if (value.name === "logo") {
+                //       obj[value.name] = document.getElementById(
+                //         "logo"
+                //       ).files[0];
+                //     } else {
+                //       obj[value.name] = value.value;
+                //     }
+                //   }
 
-                  for (const key of Object.keys(obj)) {
-                    formData.append(key, obj[key]);
-                  }
+                //   for (const key of Object.keys(obj)) {
+                //     formData.append(key, obj[key]);
+                //   }
 
-                  return formData;
-                }
+                //   return formData;
+                // }
 
                 fetch(formName.getAttribute("action"), {
                   method: "POST",
@@ -154,7 +154,7 @@ const VendorPartnerLP = () => {
                   //   "Content-Type":
                   //     "application/x-www-form-urlencoded;charset=UTF-8",
                   // },
-                  body: encode(data),
+                  body: new FormData(document.getElementById("vendor-lp")),
                 })
                   .then(res => {
                     console.log(res);
