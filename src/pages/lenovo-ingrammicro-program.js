@@ -611,30 +611,20 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                     </div>
                   </div>
                   <p className="margin-top-30">
-                    You will get 2 eBooks over the course of this program.
-                    Please list the solution name of the eBooks you'd like
-                    created in priority.
+                    You will get 2 eBooks over the course of this program. One
+                    will be Lenovo based and the next will be your choice.
+                    Please list the solution name of the eBook you'd like
+                    created.
                   </p>
                   <div>
                     <div className="first-ebook margin-top-20">
                       <label className="blue-label" htmlFor="first-ebook">
-                        First eBook Title
+                        eBook Title
                       </label>
                       <input
                         type="text"
                         name="first-ebook"
                         id="first-ebook"
-                        required
-                      />{" "}
-                    </div>
-                    <div className="second-ebook margin-top-20">
-                      <label className="blue-label" htmlFor="second-ebook">
-                        Second eBook Title
-                      </label>
-                      <input
-                        type="text"
-                        name="second-ebook"
-                        id="second-ebook"
                         required
                       />{" "}
                     </div>
