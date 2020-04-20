@@ -64,10 +64,13 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                 <p className="centered-text">
                   Ingram Micro and Lenovo are committed to the success of your
                   business. To support that mission, we’re working with
-                  TRIdgital and Honey to provide our partners with personally
-                  branded and automated marketing campaigns designed around six
-                  of your best-selling solutions. The campaigns will be executed
-                  for you over 6 months. The program includes:
+                  TRIdigital and Honey to provide our qualifying partners with
+                  personally branded and fully automated marketing campaigns,
+                  designed around five of your best-selling solutions in
+                  addition to one month of Lenovo specific content. You will
+                  receive a “white glove” experience where each campaign will be
+                  executed on your behalf, over the course of 6 months. The
+                  program includes:
                 </p>
               </Col>
             </Row>
@@ -226,8 +229,10 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
             <Row className="step-container">
               <h3 className="blue-text">Step 2:</h3>
               <p>
-                You select six of your services and TRIdigital creates branded
-                content, landing pages and emails to market those services
+                Your first month will include co-branded Lenovo content. Then
+                you select five additional solution categories, to which we’ll
+                create branded campaign assets to include content, landing pages
+                and emails to market those solutions.
               </p>
             </Row>
             <Row>
@@ -261,8 +266,9 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
               <h3 className="blue-text">Step 4:</h3>
               <p>
                 With your unfettered access to Honey, you maintain complete
-                visibility over the performance of your marketing and can
-                conduct follow ups and tasking in one central hub
+                visibility over the performance of your marketing, with the
+                option to conduct your own follow ups and tasking in one central
+                hub.
               </p>
             </Row>
             <Row>
@@ -487,8 +493,9 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                     What’s the priority of solutions/services you would like to
                     market? Number 1 - 12. *Note: your priority will determine
                     the month it will be sent out. Example: 1= Month 1 of your
-                    engagement. This cannot be changed once set. Your top six
-                    selections are what will be marketed through this program.
+                    engagement. This cannot be changed once set. Lenovo content,
+                    plus your top five selections are what will be marketed
+                    through this program.
                   </p>
                   <div className="rankings">
                     <div className="backup-and-disaster-recovery">
@@ -634,8 +641,8 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                   </div>
                   <div className="industries margin-top-30">
                     <p>
-                      What are the top 3 industries do you sell to? (
-                      healthcare, construction, financial horizontal){" "}
+                      What are the top 3 industries you sell to? ( healthcare,
+                      construction, financial horizontal){" "}
                     </p>
                     <div className="single-input margin-top-20">
                       <label className="blue-label" htmlFor="industry-1">
