@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const YourVideo = props => {
-  const [videoID, setVideoID] = useState(props.videoID);
+  const [videoID] = useState(props.videoID);
 
   useEffect(() => {
     const script1 = document.createElement("script");
@@ -26,12 +26,12 @@ const YourVideo = props => {
           " popover=true popoverAnimateThumbnail=true popoverContent=link"
         }
       >
-        <a href="#">
+        <button href="#">
           <img
             src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/01/Group-3451-2.png"
             alt="play button"
           ></img>
-        </a>
+        </button>
       </span>
     </div>
   );

@@ -214,7 +214,7 @@ export default function EmployeeInfo() {
                   onClick={() => setEmployeeToShow(index)}
                   onKeyPress={() => setEmployeeToShow(index)}
                   role="button"
-                  tabIndex={index}
+                  tabIndex={0}
                 >
                   <img
                     src={employee.thumbnail}
@@ -237,7 +237,7 @@ export default function EmployeeInfo() {
                     setEmployeeToShow(index + firstRowEmployees)
                   }
                   role="button"
-                  tabIndex={index + firstRowEmployees}
+                  tabIndex={0}
                 >
                   <img
                     src={employee.thumbnail}
@@ -291,7 +291,7 @@ export default function EmployeeInfo() {
                       onClick={() => setEmployeeToShow(index)}
                       onKeyPress={() => setEmployeeToShow(index)}
                       role="button"
-                      tabIndex={index}
+                      tabIndex={0}
                     >
                       <img
                         src={employee.thumbnail}
@@ -310,6 +310,9 @@ export default function EmployeeInfo() {
                       className="thumbnail-container"
                       key={index + 9}
                       onClick={() => setEmployeeToShow(index + multiRow)}
+                      onKeyDown={() => setEmployeeToShow(index + multiRow)}
+                      role="button"
+                      tabIndex={0}
                     >
                       <img
                         src={employee.thumbnail}
@@ -328,6 +331,9 @@ export default function EmployeeInfo() {
                       className="thumbnail-container"
                       key={index + 9}
                       onClick={() => setEmployeeToShow(index + multiRow)}
+                      onKeyDown={() => setEmployeeToShow(index + multiRow)}
+                      role="button"
+                      tabIndex={0}
                     >
                       <img
                         src={employee.thumbnail}
@@ -395,12 +401,20 @@ export default function EmployeeInfo() {
                       className="thumbnail-container "
                       id={employees[index].First + "-" + employees[index].Last}
                       key={index}
+                      role="button"
                       onClick={() => {
                         animatePerson(
                           employees[index].First + "-" + employees[index].Last,
                           index
                         );
                       }}
+                      onKeyDown={() => {
+                        animatePerson(
+                          employees[index].First + "-" + employees[index].Last,
+                          index
+                        );
+                      }}
+                      tabIndex={0}
                     >
                       <img
                         src={employee.thumbnail}

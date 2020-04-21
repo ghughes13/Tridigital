@@ -1972,6 +1972,15 @@ footer .footer-thank-you h5 {
   width: 130px;
 }
 
+.video-btn button {
+  background: none;
+  border: none;
+}
+
+.video-btn button:focus {
+  outline: none;
+}
+
 .video-btn img {
   transition-duration: 0.5s;
   &:hover {
@@ -5477,7 +5486,8 @@ h3.sitemap {
   background-position-x: 100%;
 }
 
-body .warmup-page a.pink-btn {
+body .warmup-page a.pink-btn,
+body .warmup-page button.pink-btn {
   background: #ff3975;
   color: #fff;
   padding: 9px 40px;

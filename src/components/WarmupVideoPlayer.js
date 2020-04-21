@@ -24,9 +24,9 @@ export default class WarmupVideo extends React.Component {
     return (
       <div className="margin-top-50 correct-video">
         <span className="wistia_embed wistia_async_rrynqaxpxw popover=true popoverAnimateThumbnail=true popoverContent=link">
-          <a href="#" className="btn pink-btn">
+          <button href="#" className="btn pink-btn">
             Watch Video
-          </a>
+          </button>
         </span>
       </div>
     );

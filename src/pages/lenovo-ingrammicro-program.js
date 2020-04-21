@@ -6,7 +6,7 @@ import Yourvideo from "../components/VendorPartnerVideoPlayer";
 import "../styles/lenovo-lp.scss";
 import Loader from "../components/Loader";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import Image from "../components/LenovoPageImageHandler";
 import axios from "axios";
 

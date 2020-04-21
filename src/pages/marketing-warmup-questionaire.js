@@ -33,43 +33,101 @@ const WarmUpQuestionaire = () => {
                 }}
               >
                 <div className="field email-field">
-                  <label>What’s your name?</label>
-                  <input type="text" className="theInput" required></input>
+                  <label htmlFor="name">What’s your name?</label>
+                  <input
+                    type="text"
+                    className="theInput"
+                    id="name"
+                    name="name"
+                    required
+                  ></input>
                 </div>
                 <div className="field email-field">
-                  <label>What’s your title?</label>
-                  <input type="text" className="theInput" required></input>
+                  <label htmlFor="title">What’s your title?</label>
+                  <input
+                    type="text"
+                    className="theInput"
+                    id="title"
+                    name="title"
+                    required
+                  ></input>
                 </div>
                 <br />
                 <div className="field email-field">
-                  <label>What’s your work email address</label>
-                  <input type="text" className="theInput" required></input>
+                  <label htmlFor="address">
+                    What’s your work email address
+                  </label>
+                  <input
+                    type="text"
+                    className="theInput"
+                    id="address"
+                    name="address"
+                    required
+                  ></input>
                 </div>
                 <div className="field email-field">
-                  <label>What’s your company name?</label>
-                  <input type="email" className="theInput" required></input>
+                  <label htmlFor="company-name">
+                    What’s your company name?
+                  </label>
+                  <input
+                    type="email"
+                    className="theInput"
+                    id="company-name"
+                    name="company-name"
+                    required
+                  ></input>
                 </div>
                 <div className="field email-field">
-                  <label>What’s your website URL?</label>
-                  <input type="email" className="theInput" required></input>
+                  <label htmlFor="url">What’s your website URL?</label>
+                  <input
+                    type="email"
+                    className="theInput"
+                    id="url"
+                    name="url"
+                    required
+                  ></input>
                 </div>
                 <div className="field email-field">
-                  <label>Do you have a slogan or tagline? Type it below</label>
-                  <input type="email" className="theInput" required></input>
+                  <label htmlFor="slogan">
+                    Do you have a slogan or tagline? Type it below
+                  </label>
+                  <input
+                    type="email"
+                    className="theInput"
+                    id="slogan"
+                    name="slogan"
+                    required
+                  ></input>
                 </div>
                 <div className="field email-field">
-                  <label>
+                  <label htmlFor="phone">
                     What phone number would you like to display on emails and
                     landing pages?
                   </label>
-                  <input type="text" className="theInput" required></input>
+                  <input
+                    type="text"
+                    className="theInput"
+                    id="phone"
+                    name="phone"
+                    required
+                  ></input>
                 </div>
                 <div className="first-checkbox-part">
                   <p>Do you have a marketing list?</p>
-                  <input type="checkbox" className="checkbox" />
-                  <label>Yes</label>
-                  <input type="checkbox" className="checkbox" />
-                  <label>No</label>
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    id="yes"
+                    name="yes"
+                  />
+                  <label htmlFor="yes">Yes</label>
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    id="no"
+                    name="no"
+                  />
+                  <label htmlFor="no">No</label>
                 </div>
                 <div className="second-checkbox-part">
                   <p>
@@ -78,10 +136,6 @@ const WarmUpQuestionaire = () => {
                     the month it will be sent out. Example: 1= Month 1 of your
                     engagement. This cannot be changed once set.
                   </p>
-                  <input type="checkbox" className="checkbox" />
-                  <label>Yes</label>
-                  <input type="checkbox" className="checkbox" />
-                  <label>No</label>
                 </div>
                 <div className="hide-me field">
                   <input

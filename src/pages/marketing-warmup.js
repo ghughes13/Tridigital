@@ -359,16 +359,22 @@ const WarmUp = () => (
             }}
           />
         </Row>
-        <a
+        <button
           className="btn pink-btn this-btn"
           onClick={() => {
             document.querySelector(".more-reviews").style.display = "initial";
             document.querySelector(".this-btn").style.display = "none";
             document.querySelector(".mrkt-wrmup.first").style.paddingBottom = 0;
           }}
+          onKeyDown={() => {
+            document.querySelector(".more-reviews").style.display = "initial";
+            document.querySelector(".this-btn").style.display = "none";
+            document.querySelector(".mrkt-wrmup.first").style.paddingBottom = 0;
+          }}
+          tabIndex={0}
         >
           Load More
-        </a>
+        </button>
       </Container>
       <Container className="more-reviews container reviews-container mrkt-wrmup blue-swish">
         <Row className="two-columns full-width-row content-right align-middle">
