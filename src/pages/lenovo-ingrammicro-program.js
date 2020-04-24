@@ -350,7 +350,9 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                 </h3>
                 <div className="form-content margin-top-60">
                   <div className="PBID">
-                    <label htmlFor="PBID">Please Provide your BPID</label>
+                    <label htmlFor="PBID">
+                      Please Provide your Lenovo BPID
+                    </label>
                     <input type="text" name="PBID" id="PBID" required />
                   </div>
                   <div className="company-name company-field">
