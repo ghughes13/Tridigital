@@ -1,6 +1,6 @@
 [build]
-  Functions = "lambda-build" 
-  Command = "npm run build:lambda && gatsby build"
+  functions = "lambda-build" 
+  command = "npm run build:lambda && gatsby build"
 
 [build.environment]
   GF_CONSUMER_KEY="ck_64ea0717931cb6fbaf7310b9ba1d6e7817d41f79"
