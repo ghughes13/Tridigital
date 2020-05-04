@@ -5,6 +5,16 @@ module.exports = {
     author: `@ghughes139`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-48748407-9",
+        head: true,
+        anonymize: true,
+        respectDNT: true,
+        defer: false,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -34,12 +44,10 @@ module.exports = {
         protocol: "http",
         hostingWPCOM: false,
         useACF: true,
-        verboseOutput: true,
+        verboseOutput: false,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`, // To learn more, visit: https://gatsby.dev/offline // this (optional) plugin enables Progressive Web App + Offline functionality
     `gatsby-plugin-sass`,
   ],
 };

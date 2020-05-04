@@ -6,7 +6,7 @@ import { Container } from "react-bootstrap";
 const TermsOfService = () => {
   return (
     <Layout opaqueHeader>
-      <SEO title="Terms of Service" />
+      <SEO title="Terms of Service - Promo" />
       <div className="tos-page">
         <Container className="container">
           <h1>TERMS OF SERVICE</h1>

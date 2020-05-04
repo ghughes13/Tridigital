@@ -7,7 +7,7 @@ import CheckoutForm from "../components/WarmupCheckoutForm";
 const WarmUpPayment = () => {
   return (
     <Layout>
-      <SEO title="Warm Up" />
+      <SEO title="Warm Up - Signup" />
       <div className="warmup-signup">
         <Container className="container pink-gradient-background hero swish">
           <Row className=""></Row>
