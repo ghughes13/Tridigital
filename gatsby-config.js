@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://www.tridigitalmarketing.com`,
     title: `We Are Your IT Marketing Department`,
     description: `Your IT Marketing professionals are serious about their focus on YOU. We create 100% custom strategies, websites, content, videos and designs, all with one goal—to tell YOUR STORY.`,
     author: `@ghughes139`,
@@ -16,6 +17,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
