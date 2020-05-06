@@ -1496,12 +1496,17 @@ div .align-vertical {
   align-items: center;
 }
 
-.flex-dir-col {
+.flex-dir-col,
+.flex-col {
   flex-direction: column;
 }
 
 div .display-flex {
   display: flex;
+}
+
+div .display-block {
+  display: block;
 }
 
 @media only screen and (max-width: 767px) {
