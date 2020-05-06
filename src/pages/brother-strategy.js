@@ -544,7 +544,7 @@ const IndexPage = () => {
         </Container>
         <Container className="container flexed arrow-right dual-blue-arrows-bottom offset-arrows-left">
           <Row className="align-items-center blue-dashed-circle increase-top">
-            <Col className="content-container column" id="concept-1">
+            <Col className="content-container column">
               <h2 className="margin-left-10-perc concept-h2">
                 CONCEPT <br />
                 <svg
@@ -820,7 +820,12 @@ const IndexPage = () => {
         </Container>
         <Container className="container flexed margin-top-minus-150">
           <Row className="align-items-center">
-            <Col className="content-container column" xl={6} lg={5}>
+            <Col
+              className="content-container column"
+              xl={6}
+              lg={5}
+              id="concept-1"
+            >
               <img
                 className="img-width-100"
                 src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/05/Brother2.png"
@@ -1212,7 +1217,7 @@ const IndexPage = () => {
         </Container>
         <Container className="container flexed arrow-right dual-blue-arrows-bottom offset-arrows-left hide-overflow">
           <Row className="align-items-center blue-dashed-circle">
-            <Col className="content-container column" id="concept-2">
+            <Col className="content-container column">
               <h2 className="margin-left-10-perc">
                 CONCEPT <br />
                 <svg
@@ -1471,7 +1476,12 @@ const IndexPage = () => {
         </Container>
         <Container className="container flexed">
           <Row className="align-items-center">
-            <Col className="content-container column" xl={6} lg={5}>
+            <Col
+              className="content-container column"
+              xl={6}
+              lg={5}
+              id="concept-2"
+            >
               <img src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/05/Brother.png" />
             </Col>
             <Col className="content-container column step-text-block" xl={4}>
@@ -1598,7 +1608,7 @@ const IndexPage = () => {
               id="concept-2-orig"
             />
             <img
-              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/05/LP-1-–-11.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/05/LP-1-–-11-1.png"
               id="concept-2-alt"
               onClick={e => {
                 e.target.style.display = "none";
