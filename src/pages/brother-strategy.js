@@ -507,7 +507,7 @@ const IndexPage = () => {
               <div className="card">
                 <img src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/05/Group-9105.png" />
                 <p>Concept 1</p>
-                <h3>"You can’t afford to be outdated"</h3>
+                <h3>You can’t afford to be outdated</h3>
                 <Link
                   href="#concept-1"
                   className="blue-btn"
@@ -527,7 +527,7 @@ const IndexPage = () => {
                   src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/05/Group-9111.png"
                 />
                 <p>Concept 2</p>
-                <h3>"Outdated is obvious"</h3>
+                <h3>Outdated is obvious</h3>
                 <Link
                   href="#concept-2"
                   className="blue-btn"
