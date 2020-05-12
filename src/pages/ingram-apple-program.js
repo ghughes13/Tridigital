@@ -30,14 +30,14 @@ const IngramAppleLp = () => {
             <Col className="content-container column align-vertical video-container ">
               <video
                 className="lp-video box-shadow"
-                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/vendor-lp-video/Vendor_15_sec_loop_AA_V01%20%281%29.mp4"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/vendor-lp-video/Ingram%20Micro%20%26amp%3B%20Apple%20Partner%20Enablement%20.mp4"
                 alt="TRIdigital media team"
                 id="video-player"
                 autoPlay
                 loop
                 muted
               ></video>
-              <Yourvideo videoID={"3iwu5wakg8"} />
+              <Yourvideo videoID={"fuhvakdut4"} />
             </Col>
           </Row>
         </Container>
@@ -117,7 +117,7 @@ const IngramAppleLp = () => {
           <Row className="blob-container">
             <form
               id="vendor-lp"
-              className="Fortinet"
+              className="Apple"
               method="POST"
               name="ingram-apple-lp"
               action="/ingram-apple-program/#thanks"

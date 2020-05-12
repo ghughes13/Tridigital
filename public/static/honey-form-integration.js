@@ -33,6 +33,9 @@
           if (formCategory[k] == "Lenovo") {
             listID = 9488;
           }
+          if (formCategory[k] == "Apple") {
+            listID = 9820;
+          }
           var formSelector = currentForm.id;
           var formType = formCategory[k];
           var formSettings = new formSetting(formSelector, formType);
