@@ -112,7 +112,7 @@ const VendorPartnerLP = () => {
               id="vendor-lp"
               className="Storagecraft"
               method="POST"
-              name="fortinet-ingram-lp"
+              name="storagecraft-lp"
               action="/storagecraft-program/#thanks"
               onSubmit={e => {
                 e.preventDefault();
