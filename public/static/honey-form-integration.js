@@ -8,6 +8,7 @@
     "Fortinet",
     "Lenovo",
     "Apple",
+    "Storagecraft",
     "Google AdWords",
     "Newsletter",
     "Ask Us Anything",
@@ -36,6 +37,9 @@
           }
           if (formCategory[k] == "Apple") {
             listID = 9820;
+          }
+          if (formCategory[k] == "Storagecraft") {
+            listID = 9826;
           }
           var formSelector = currentForm.id;
           var formType = formCategory[k];
