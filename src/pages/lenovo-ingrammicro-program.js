@@ -26,6 +26,8 @@ const VendorPartnerLP = () => {
         </div>
       </div>`;
 
+    document.querySelector("footer").style.display = "none";
+
     const navBar = document.querySelector("nav");
     navBar.innerHTML = customNav;
   });
