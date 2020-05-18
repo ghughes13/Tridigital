@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
@@ -8,6 +8,25 @@ import Loader from "../components/Loader";
 import axios from "axios";
 
 const VendorPartnerLP = () => {
+  useEffect(() => {
+    let customNav = `
+      <div class="navbar-brand center-all dual-logo-fix">
+        <div class="rel">
+          <img class="logo left-0 first-logo ingram-width-fix" src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/05/lenovo-white-real.png" alt="tridigital logo white">
+          <img class="logo left-0 second-logo ingram-width-fix" src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/05/lenovo-white-3.png" alt="tridigital logo colored">
+        </div>
+      </div>
+      <div class="navbar-brand center-all dual-logo-fix">
+        <div class="rel">
+          <img class="logo first-logo" src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2019/10/TD-logo-w.png" alt="tridigital logo white">
+          <img class="logo second-logo logo-right-fix" src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2019/12/Group-11.png" alt="tridigital logo colored">
+        </div>
+      </div>`;
+
+    const navBar = document.querySelector("nav");
+    navBar.innerHTML = customNav;
+  });
+
   return (
     <Layout>
       <SEO title="Vendor partnership program | TRIdigital Marketing" />

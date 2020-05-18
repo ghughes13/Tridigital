@@ -6106,3 +6106,30 @@ div.warmup-signup .sbmt-btn .btn.pink-button:hover {
 }
 
 /****END WARM UP QUESTIONAIRE********/
+body .center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body .rel {
+  position: relative;
+}
+
+body .logo-right-fix {
+  right: 0;
+}
+
+body .left-0 {
+  left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand.dual-logo-fix {
+    width: 45%;
+  }
+
+  body .logo-right-fix {
+    right: initial;
+  }
+}
