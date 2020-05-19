@@ -1,5 +1,5 @@
-import React from "react"
-import { Row, Col } from "react-bootstrap"
+import React from "react";
+import { Row, Col } from "react-bootstrap";
 
 const Footer = () => (
   <footer className="fixed">
@@ -41,7 +41,9 @@ const Footer = () => (
       </Col>
       <Col>
         <h2>Connect</h2>
-        <p><a href="/contact-us">Contact Us</a></p>
+        <p>
+          <a href="/contact-us">Contact Us</a>
+        </p>
         <ul>
           <li>
             <a
@@ -104,11 +106,11 @@ const Footer = () => (
             id="newsletter-form"
             className="Newsletter"
             onSubmit={e => {
-              e.preventDefault()
-              document.querySelector("#newsletter-form").style.display = "none"
+              e.preventDefault();
+              document.querySelector("#newsletter-form").style.display = "none";
               document.querySelector(".footer-thank-you").style.display =
-                "block"
-              return false
+                "block";
+              return false;
             }}
           >
             <div className="field email-field">
@@ -156,6 +158,6 @@ const Footer = () => (
       </p>
     </Row>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;

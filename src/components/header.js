@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React, { useEffect } from "react";
 import Burger from "./HamburgerMenu.js";
+import CookieConsent, { Cookies } from "react-cookie-consent";
 
 const Header = ({ siteTitle, opaque }) => {
   useEffect(() => {
@@ -27,6 +28,29 @@ const Header = ({ siteTitle, opaque }) => {
         textTransform: "uppercase",
       }}
     >
+      <CookieConsent
+        cookieName="myAwesomeCookieName2"
+        style={{ background: "#fff", justifyContent: "Center" }}
+        buttonStyle={{
+          color: "#fff",
+          fontSize: "13px",
+          background: "#ff3975",
+          borderRadius: "20px",
+          padding: "10px 20px",
+        }}
+        contentStyle={{
+          color: "#4a4a4a",
+          textTransform: "none",
+          flex: "initial",
+          fontSize: "13px",
+        }}
+        expires={150}
+        acceptOnScroll={true}
+        acceptOnScrollPercentage={10}
+        debug={true}
+      >
+        This website uses cookies to enhance the user experience.
+      </CookieConsent>
       <link
         rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
