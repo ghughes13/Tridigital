@@ -47,7 +47,6 @@ const Header = ({ siteTitle, opaque }) => {
         expires={150}
         acceptOnScroll={true}
         acceptOnScrollPercentage={10}
-        debug={true}
       >
         This website uses cookies to enhance the user experience.
       </CookieConsent>
