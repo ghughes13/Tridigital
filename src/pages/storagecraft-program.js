@@ -23,14 +23,14 @@ const VendorPartnerLP = () => {
             <Col className="content-container column align-vertical video-container ">
               <video
                 className="lp-video box-shadow"
-                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/vendor-lp-video/Vendor_15_sec_loop_AA_V01%20%281%29.mp4"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/vendor-lp-video/StorageCraft%20Partner%20Enablement%20.mp4"
                 alt="TRIdigital media team"
                 id="video-player"
                 autoPlay
                 loop
                 muted
               ></video>
-              <Yourvideo videoID={"3iwu5wakg8"} />
+              <Yourvideo videoID={"ry7q7n6e5k"} />
             </Col>
           </Row>
         </Container>
