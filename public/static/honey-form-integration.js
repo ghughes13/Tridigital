@@ -9,6 +9,8 @@
     "Lenovo",
     "Apple",
     "Storagecraft",
+    "IBM",
+    "Brother",
     "Google AdWords",
     "Newsletter",
     "Ask Us Anything",
@@ -40,6 +42,12 @@
           }
           if (formCategory[k] == "Storagecraft") {
             listID = 9826;
+          }
+          if (formCategory[k] == "IBM") {
+            listID = 9902;
+          }
+          if (formCategory[k] == "Brother") {
+            listID = 9903;
           }
           var formSelector = currentForm.id;
           var formType = formCategory[k];
