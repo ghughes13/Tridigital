@@ -204,11 +204,11 @@
   }
 
   .concept-1-background {
-    background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/05/Group-9121.png");
+    background: url("https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/05/Group-9131-1.png");
   }
 
   .concept-2-background {
-    background: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/05/Group-9122.png");
+    background: url("https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/05/Group-9132.png");
   }
 
   #concept-1-alt,
@@ -495,11 +495,24 @@
       left: 40vw;
       bottom: -100px;
     }
+    &.purple:before {
+      content: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/05/Repeat-Grid-3.png");
+      position: absolute;
+      left: 40vw;
+      bottom: -100px;
+    }
   }
 
   .hollow-navy-circle {
     &:after {
       content: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/05/Ellipse-1988.png");
+      position: absolute;
+      left: 10vw;
+      bottom: -250px;
+      z-index: 0;
+    }
+    &.pink:after {
+      content: url("http://tdgatsbytest.wpengine.com/wp-content/uploads/2020/05/Ellipse-1990.png");
       position: absolute;
       left: 10vw;
       bottom: -250px;
