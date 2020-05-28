@@ -1602,7 +1602,7 @@ const IndexPage = () => {
           <Row className="flex-col">
             <h3 class="white-text title margin-top-80">Concept 2</h3>
             <img
-              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/05/img.png"
+              src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/05/LP-1-–-16.png"
               // onClick={e => {
               //   e.target.style.display = "none";
               //   document.getElementById("concept-2-alt").style.display =
