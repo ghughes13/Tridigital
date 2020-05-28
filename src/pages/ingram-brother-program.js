@@ -4,6 +4,7 @@ import SEO from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
 import Yourvideo from "../components/VendorPartnerVideoPlayer";
 import "../styles/fortinet-lp.scss";
+import { Link } from "react-scroll";
 import IngramPartnerForm from "../components/Ingram-Partner-Form";
 
 const VendorPartnerLP = () => {
@@ -19,9 +20,15 @@ const VendorPartnerLP = () => {
           <Row className="z-index-999">
             <Col className="display-flex content-container column flex-dir-col">
               <h1>INGRAM MICRO & BROTHER PARTNER ENABLEMENT PROGRAM</h1>
-              <a className="fortinet-ingram-btn inline-block" href="#vendor-lp">
+              <Link
+                className="fortinet-ingram-btn inline-block"
+                to="vendor-lp"
+                smooth={true}
+                offset={-70}
+                duration={1000}
+              >
                 Fill out the form
-              </a>
+              </Link>
             </Col>
             <Col className="content-container column align-vertical video-container ">
               <video
