@@ -526,7 +526,7 @@ const IndexPage = () => {
               <div className="card">
                 <img src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/05/Group-9127.png" />
                 <p>Concept 2</p>
-                <h3>You can’t afford to be outdated</h3>
+                <h3>SCARY STORIES TO TELL IN THE OFFICE</h3>
                 <Link
                   href="#concept-2"
                   className="blue-btn"
@@ -1573,8 +1573,9 @@ const IndexPage = () => {
               </svg>
               <h3 className="white-text">LANDING PAGE</h3>
               <p>
-                The landing page begins with an immediate callout to on of the
-                most popular horror movies ever: Night of the Living Dead.
+                The landing page begins with an immediate callout to one of the
+                most popular horror movies ever:{" "}
+                <em>Night of the Living Dead.</em>
               </p>
               <p>Except this time, it's a crappy printer.</p>
               <p>
@@ -1583,10 +1584,10 @@ const IndexPage = () => {
                 ghouls, vampires and other creatures of the night.
               </p>
               <p>
-                With a color palette that harkens back to the bygone era of 70s
-                and 80s horror movies, the viewer will feel like their getting a
-                classic theater experience while perusing for their next office
-                printing solution.
+                With a color palette that harkens back to the bygone era of '70s
+                and '80s horror movies, the viewer will feel like their getting
+                a classic theater experience while perusing for their next
+                office printing solution.
               </p>
             </Col>
             <Col
