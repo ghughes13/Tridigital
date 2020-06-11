@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const YourVideo = props => {
-  //Call in parent like this --> <Yourvideo videoID={"wistia-video-id"} />
+  const [isMobile, setIsMobile] = useState(false);
   const [videoID] = useState(props.videoID);
 
   useEffect(() => {
@@ -16,9 +16,35 @@ const YourVideo = props => {
 
     document.body.appendChild(script1);
     document.body.appendChild(script2);
+
+    if (window.innerWidth < 767) {
+      console.log("setit");
+      setIsMobile(true);
+    }
+
+    console.log(isMobile);
   }, []);
 
-  return (
+  console.log(isMobile);
+
+  return isMobile ? (
+    <div className="video-btn mobile-video-btn">
+      <span
+        className={
+          "wistia_embed wistia_async_" +
+          videoID +
+          " popover=true popoverAnimateThumbnail=true popoverContent=link"
+        }
+      >
+        <button href="#">
+          <img
+            src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/06/Capture.png"
+            alt="play button"
+          ></img>
+        </button>
+      </span>
+    </div>
+  ) : (
     <div className="video-btn">
       <span
         className={
