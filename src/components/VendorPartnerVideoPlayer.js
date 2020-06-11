@@ -6,7 +6,6 @@ const YourVideo = props => {
 
   useEffect(() => {
     if (window.innerWidth < 767) {
-      console.log("setit");
       setIsMobile(true);
     }
 

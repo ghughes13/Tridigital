@@ -45,9 +45,9 @@ const VendorPartnerLP = () => {
               </h2>
               <p className="centered-text">
                 Ingram Micro and IBM are committed to the success of your
-                business through our partnership with TRIdgital and Honey we
-                provide a personally branded and automated marketing campaign
-                designed to be executed over 3 months.
+                business through our partnership with TRIdigital and Honey we
+                provide a personally branded and automated Cloud Pak for Data
+                marketing campaign designed to be executed over 3 months."
               </p>
             </Col>
           </Row>
@@ -97,7 +97,7 @@ const VendorPartnerLP = () => {
                     src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/03/Group%203671.png"
                     alt="collaterals"
                   />
-                  <p>Access to Honey</p>
+                  <p>Access to Honey CRM Platform</p>
                 </div>
                 <div className="content-container column ">
                   <img

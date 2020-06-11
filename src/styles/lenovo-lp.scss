@@ -160,6 +160,30 @@
       .row {
         padding: 0 0vw;
         max-width: 95%;
+        padding-bottom: 15px;
+      }
+
+      #video-player {
+        min-height: 200px;
+      }
+
+      .video-btn {
+        top: 15%;
+        width: 85%;
+        position: static;
+      }
+
+      .lp-video {
+        display: none;
+      }
+
+      .mobile-video-btn .wistia_click_to_play {
+        height: 100% !important;
+        width: 100% !important;
+      }
+
+      .video-btn img:hover {
+        transform: scale(1);
       }
     }
   }
