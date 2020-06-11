@@ -3,7 +3,12 @@ import "../styles/fortinet-lp.scss";
 import Loader from "../components/Loader";
 import axios from "axios";
 
-const IngramPartnerForm = ({ formClassName, formName, formActionURL }) => {
+const IngramPartnerForm = ({
+  formClassName,
+  formName,
+  formActionURL,
+  formTitle = "Ready to Start Generating Leads?",
+}) => {
   return (
     <form
       id="vendor-lp"
@@ -62,10 +67,7 @@ const IngramPartnerForm = ({ formClassName, formName, formActionURL }) => {
       netlify-honeypot="bot-field"
     >
       <input type="hidden" name="bot-field" id="bot" />
-      <h3 className="blue-text form-title centered-text">
-        Ready to Start <br />
-        Generating Leads?
-      </h3>
+      <h3 className="blue-text form-title centered-text">{formTitle}</h3>
       <div className="form-content margin-top-60">
         <div className="company-name company-field">
           <label htmlFor="company">

@@ -115,6 +115,7 @@ const VendorPartnerLP = () => {
               formClassName={"IBM"}
               formName={"ingram-IBM-lp"}
               formActionURL={"/ingram-ibm-program"}
+              formTitle={"Ready to Start Generating Cloud Pak for Data Leads?"}
             />
             <div className="contact-thank-you" id="thanks">
               <h5>Thank you for contacting us. We'll be in touch shortly!</h5>
