@@ -281,7 +281,7 @@ const CheckoutForm = () => {
               terms of service
             </a>
             , and the{" "}
-            <a className="read-me" href="privacy-policy" target="_blank">
+            <a className="read-me" href="/privacy-policy" target="_blank">
               privacy policy
             </a>
           </label>
