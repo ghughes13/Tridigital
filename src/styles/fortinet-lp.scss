@@ -125,7 +125,7 @@
       }
 
       .row {
-        padding: 0 5vw;
+        padding: 0;
       }
     }
   }
@@ -420,6 +420,14 @@
 
       .row:nth-child(2) {
         padding: 0 5vw;
+      }
+
+      .blue-container .flex-row .column {
+        min-height: 350px;
+      }
+
+      .blob-container.row {
+        padding: 5vw;
       }
     }
   }
