@@ -1,0 +1,64 @@
+#carolina-override {
+  blue-dashed-circle::before {
+    left: -100px;
+  }
+
+  .blue-slash-background:before {
+    content: none;
+  }
+
+  .sunset-display {
+    margin-top: -200px;
+    text-align: center;
+  }
+
+  .margin-top-75 {
+    margin-top: 75px;
+    margin-bottom: 100px;
+  }
+
+  .margin-top-125 {
+    margin-top: 125px;
+  }
+
+  .concept-1-background {
+    background: url(https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/06/background.png)
+      no-repeat;
+    background-size: cover;
+  }
+
+  .margin-bottom-150 {
+    margin-bottom: 150px;
+  }
+
+  .align-flex-start {
+    align-items: flex-start !important;
+  }
+
+  .scale-up-1x25 {
+    transform: scale(1.25);
+    @media screen and (max-width: 1224px) {
+      transform: scale(1);
+    }
+  }
+
+  #options:after {
+    content: "";
+    background: url("https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/06/Ellipse-1992.png");
+    height: 750px;
+    width: 750px;
+    position: absolute;
+    right: -200px;
+    bottom: -289px;
+    z-index: 0;
+  }
+
+  .img-top {
+    z-index: 999;
+    position: relative;
+  }
+
+  .top-layer {
+    z-index: 999;
+  }
+}
