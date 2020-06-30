@@ -8,6 +8,7 @@ const IngramPartnerForm = ({
   formName,
   formActionURL,
   formTitle = "Ready to Start Generating Leads?",
+  additionaltext,
 }) => {
   return (
     <form
@@ -68,6 +69,13 @@ const IngramPartnerForm = ({
     >
       <input type="hidden" name="bot-field" id="bot" />
       <h3 className="blue-text form-title centered-text">{formTitle}</h3>
+      {additionaltext ? (
+        <p style={{ textAlign: "center", marginTop: "25px" }}>
+          {additionaltext}
+        </p>
+      ) : (
+        ""
+      )}
       <div className="form-content margin-top-60">
         <div className="company-name company-field">
           <label htmlFor="company">
@@ -224,7 +232,7 @@ const IngramPartnerForm = ({
         </div>
         <div className="industries margin-top-30">
           <p>
-            What are the top 3 industries do you sell to? ( healthcare,
+            What are the top 3 industries do you sell to? (healthcare,
             construction, financial horizontal){" "}
           </p>
           <div className="single-input margin-top-20">
@@ -279,7 +287,7 @@ const IngramPartnerForm = ({
         </div>
         <div className="sell-to">
           <label htmlFor="sell-to">
-            Which contacts do you prefer to sell to in prospect clients ( CEO,
+            Which contacts do you prefer to sell to in prospect clients (CEO,
             CIO, Directors, manager, etc.)
           </label>
           <input
@@ -292,7 +300,7 @@ const IngramPartnerForm = ({
         </div>
         <div className="service-areas">
           <label htmlFor="service-areas">
-            What is your services area? ( counties, cities, zip codes)
+            What is your services area? (counties, cities, zip codes)
           </label>
           <textarea
             type="text"

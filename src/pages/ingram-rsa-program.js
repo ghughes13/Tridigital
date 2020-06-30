@@ -45,7 +45,7 @@ const VendorPartnerLP = () => {
               </h2>
               <p className="centered-text">
                 Ingram Micro and RSA are committed to the success of your
-                business through our partnership with TRIdgital and Honey we
+                business through our partnership with TRIdigital and Honey we
                 provide a personally branded and automated marketing campaign
                 designed to be executed over 3 months.
               </p>
@@ -115,6 +115,9 @@ const VendorPartnerLP = () => {
               formClassName={"RSA"}
               formName={"ingram-rsa-lp"}
               formActionURL={"/ingram-rsa-program"}
+              additionaltext={
+                "If you have any questions prior to filling out this form, please feel free to reach out to creatives@tridigitalmarketing.com"
+              }
             />
             <div className="contact-thank-you" id="thanks">
               <h5>Thank you for contacting us. We'll be in touch shortly!</h5>
