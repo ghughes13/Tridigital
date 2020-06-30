@@ -52,7 +52,7 @@ const VendorPartnerLP = () => {
               </h2>
               <p className="centered-text">
                 Ingram Micro and Brother are committed to the success of your
-                business through our partnership with TRIdgital and Honey we
+                business through our partnership with TRIdigital and Honey we
                 provide a personally branded and automated marketing campaign
                 designed to be executed over 3 months.
               </p>
