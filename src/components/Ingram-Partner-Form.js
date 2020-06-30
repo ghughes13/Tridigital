@@ -70,7 +70,13 @@ const IngramPartnerForm = ({
       <input type="hidden" name="bot-field" id="bot" />
       <h3 className="blue-text form-title centered-text">{formTitle}</h3>
       {additionaltext ? (
-        <p style={{ textAlign: "center", marginTop: "25px" }}>
+        <p
+          style={{
+            textAlign: "center",
+            marginTop: "25px",
+            marginBottom: "-20px",
+          }}
+        >
           {additionaltext}
         </p>
       ) : (
