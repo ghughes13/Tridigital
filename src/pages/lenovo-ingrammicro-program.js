@@ -633,8 +633,9 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                   </div>
                   <div className="industries margin-top-30">
                     <p>
-                      What are the top 3 industries you sell to? ( healthcare,
-                      construction, financial horizontal){" "}
+                      What are the top 10 industries you sell to, starting with
+                      the most important? (healthcare, construction, financial
+                      horizontal){" "}
                     </p>
                     <div className="single-input margin-top-20">
                       <label className="blue-label" htmlFor="industry-1">
@@ -644,6 +645,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                         type="text"
                         name="industry-1"
                         id="industry-1"
+                        className="send-value"
                         required
                       />
                     </div>
@@ -655,6 +657,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                         type="text"
                         name="industry-2"
                         id="industry-2"
+                        className="send-value"
                         required
                       />
                     </div>
@@ -664,8 +667,93 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                       </label>
                       <input
                         type="text"
-                        name="industry-1"
+                        name="industry-3"
                         id="industry-3"
+                        className="send-value"
+                        required
+                      />
+                    </div>
+                    <div className="single-input margin-top-20">
+                      <label className="blue-label" htmlFor="industry-4">
+                        Industry 4
+                      </label>
+                      <input
+                        type="text"
+                        name="industry-4"
+                        id="industry-4"
+                        className="send-value"
+                        required
+                      />
+                    </div>
+                    <div className="single-input margin-top-20">
+                      <label className="blue-label" htmlFor="industry-5">
+                        Industry 5
+                      </label>
+                      <input
+                        type="text"
+                        name="industry-5"
+                        id="industry-5"
+                        className="send-value"
+                        required
+                      />
+                    </div>
+                    <div className="single-input margin-top-20">
+                      <label className="blue-label" htmlFor="industry-6">
+                        Industry 6
+                      </label>
+                      <input
+                        type="text"
+                        name="industry-6"
+                        id="industry-6"
+                        className="send-value"
+                        required
+                      />
+                    </div>
+                    <div className="single-input margin-top-20">
+                      <label className="blue-label" htmlFor="industry-7">
+                        Industry 7
+                      </label>
+                      <input
+                        type="text"
+                        name="industry-7"
+                        id="industry-7"
+                        className="send-value"
+                        required
+                      />
+                    </div>
+                    <div className="single-input margin-top-20">
+                      <label className="blue-label" htmlFor="industry-8">
+                        Industry 8
+                      </label>
+                      <input
+                        type="text"
+                        name="industry-8"
+                        id="industry-8"
+                        className="send-value"
+                        required
+                      />
+                    </div>
+                    <div className="single-input margin-top-20">
+                      <label className="blue-label" htmlFor="industry-9">
+                        Industry 9
+                      </label>
+                      <input
+                        type="text"
+                        name="industry-9"
+                        id="industry-9"
+                        className="send-value"
+                        required
+                      />
+                    </div>
+                    <div className="single-input margin-top-20">
+                      <label className="blue-label" htmlFor="industry-10">
+                        Industry 10
+                      </label>
+                      <input
+                        type="text"
+                        name="industry-10"
+                        id="industry-10"
+                        className="send-value"
                         required
                       />
                     </div>
