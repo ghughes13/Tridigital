@@ -6133,3 +6133,23 @@ body .left-0 {
     right: initial;
   }
 }
+
+.ingram-partner-btn {
+  color: white;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 700;
+  background: #2ba6cb;
+  width: 350px;
+  text-align: center;
+  padding: 7px;
+  border-radius: 30px;
+  border: solid white 3px;
+  text-decoration: none;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  &:hover {
+    text-decoration: none;
+  }
+}

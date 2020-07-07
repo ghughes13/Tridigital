@@ -55,8 +55,12 @@ const VendorPartnerLP = () => {
               <p className="centered-text">
                 Fees do apply, however, partners can utilize RSA co-op or
                 proposal funds to participate. To learn about these funds please
-                contact Michael Kline at{" "}
-                <a href="mailto:Michael.Kline@ingrammicro.com" target="_blank">
+                contact Michael Kline.
+                <a
+                  href="mailto:Michael.Kline@ingrammicro.com"
+                  className="ingram-partner-btn"
+                  target="_blank"
+                >
                   Michael.Kline@ingrammicro.com
                 </a>
               </p>
