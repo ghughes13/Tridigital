@@ -20,6 +20,7 @@
     "TRIpod",
     "Resource Request",
     "Physical Brochure",
+    "RSAMDF",
     "Career",
     "Warmup",
   ];
@@ -53,7 +54,7 @@
           if (formCategory[k] == "RSA") {
             listID = 10102;
           }
-          if (formCategory[k] == "RSA-MDF") {
+          if (formCategory[k] == "RSAMDF") {
             listID = 10348;
           }
           var formSelector = currentForm.id;

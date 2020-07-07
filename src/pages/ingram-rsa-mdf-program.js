@@ -127,7 +127,7 @@ const VendorPartnerLP = () => {
           </div>
           <Row className="blob-container">
             <IngramPartnerForm
-              formClassName={"RSA-MDF"}
+              formClassName={"RSAMDF"}
               formName={"ingram-rsa-mdf-lp"}
               formActionURL={"/ingram-rsa-mdf-program"}
               additionaltext={
