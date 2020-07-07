@@ -61,7 +61,7 @@ const VendorPartnerLP = () => {
                   className="ingram-partner-btn"
                   target="_blank"
                 >
-                  Michael.Kline@ingrammicro.com
+                  Contact Michael
                 </a>
               </p>
             </Col>
