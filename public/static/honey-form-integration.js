@@ -53,6 +53,9 @@
           if (formCategory[k] == "RSA") {
             listID = 10102;
           }
+          if (formCategory[k] == "RSA-MDF") {
+            listID = 10348;
+          }
           var formSelector = currentForm.id;
           var formType = formCategory[k];
           var formSettings = new formSetting(formSelector, formType);
