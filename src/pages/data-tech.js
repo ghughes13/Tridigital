@@ -25,7 +25,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Carolina Strategy" />
+      <SEO title="Data-Tech Strategy" />
       <div className="carolina-strategy">
         <Container className="hero-section transparent-hero container flexed clip-bottom">
           <img
