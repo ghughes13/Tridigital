@@ -19,7 +19,7 @@ const InlineVideo = props => {
   }, []);
 
   return (
-    <div className="inline-wistia-video">
+    <div className={"inline-wistia-video " + props.className}>
       <div class="wistia_responsive_padding">
         <div class="wistia_responsive_wrapper">
           <div
