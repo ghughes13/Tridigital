@@ -1014,7 +1014,7 @@ const IndexPage = () => {
               <h3 className="">WHITEPAPERS</h3>
               <p>
                 Whitepapers will continue to use the company photos as the key
-                piece of imagery. By keeping with bold headings, the into to the
+                piece of imagery. By keeping with bold headings, the intro to the
                 whitepapers can be simple enough to not distract from the topic.
               </p>
             </Col>
