@@ -17,7 +17,7 @@ const VendorPartnerLP = () => {
         <Container className="container fortinet-ingram-background hero swish">
           <Row className="z-index-999">
             <Col className="display-flex content-container column flex-dir-col">
-              <h1>Ingram Micro & Fortinet Partner Enablement Program</h1>
+              <h1>Ingram Micro & Citrix Partner Enablement Program</h1>
               <a className="fortinet-ingram-btn inline-block" href="#vendor-lp">
                 Fill out the form
               </a>
