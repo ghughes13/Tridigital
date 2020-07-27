@@ -23,6 +23,7 @@
     "RSAMDF",
     "Career",
     "Warmup",
+    "Citrix",
   ];
 
   if (gravityForms) {
@@ -56,6 +57,9 @@
           }
           if (formCategory[k] == "RSAMDF") {
             listID = 10348;
+          }
+          if (formCategory[k] == "Citrix") {
+            listID = 10570;
           }
           var formSelector = currentForm.id;
           var formType = formCategory[k];
