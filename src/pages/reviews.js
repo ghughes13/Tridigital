@@ -1,9 +1,10 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { Container, Row, Col } from "react-bootstrap"
-import SingleReivew from "../components/SingleReview.js"
-import { Waypoint } from "react-waypoint"
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { Container, Row, Col } from "react-bootstrap";
+import SingleReivew from "../components/SingleReview.js";
+import { Waypoint } from "react-waypoint";
+import { Link } from "gatsby";
 
 const ContactUs = () => (
   <Layout>
@@ -34,10 +35,10 @@ const ContactUs = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-23")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
               document
                 .querySelector(".review-container.number-0")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
             }}
           />
         </Row>
@@ -48,10 +49,10 @@ const ContactUs = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-1")
-                .classList.add("slide-up", "odd")
+                .classList.add("slide-up", "odd");
               document
-                  .querySelector(".review-container.number-2")
-                  .classList.add("slide-up", "odd")
+                .querySelector(".review-container.number-2")
+                .classList.add("slide-up", "odd");
             }}
           />
         </Row>
@@ -62,10 +63,10 @@ const ContactUs = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-3")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
               document
                 .querySelector(".review-container.number-4")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
             }}
           />
         </Row>
@@ -76,10 +77,10 @@ const ContactUs = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-5")
-                .classList.add("slide-up", "odd")
+                .classList.add("slide-up", "odd");
               document
                 .querySelector(".review-container.number-6")
-                .classList.add("slide-up", "odd")
+                .classList.add("slide-up", "odd");
             }}
           />
         </Row>
@@ -90,10 +91,10 @@ const ContactUs = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-7")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
               document
                 .querySelector(".review-container.number-8")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
             }}
           />
         </Row>
@@ -104,10 +105,10 @@ const ContactUs = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-9")
-                .classList.add("slide-up", "odd")
+                .classList.add("slide-up", "odd");
               document
                 .querySelector(".review-container.number-10")
-                .classList.add("slide-up", "odd")
+                .classList.add("slide-up", "odd");
             }}
           />
         </Row>
@@ -118,10 +119,10 @@ const ContactUs = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-11")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
               document
                 .querySelector(".review-container.number-12")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
             }}
           />
         </Row>
@@ -131,7 +132,7 @@ const ContactUs = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-13")
-                .classList.add("slide-up", "odd")
+                .classList.add("slide-up", "odd");
             }}
           />
         </Row>
@@ -141,7 +142,7 @@ const ContactUs = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-18")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
             }}
           />
         </Row>
@@ -152,10 +153,10 @@ const ContactUs = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-14")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
               document
                 .querySelector(".review-container.number-15")
-                .classList.add("slide-up", "odd")
+                .classList.add("slide-up", "odd");
             }}
           />
         </Row>
@@ -165,7 +166,7 @@ const ContactUs = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-19")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
             }}
           />
         </Row>
@@ -176,10 +177,10 @@ const ContactUs = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-16")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
               document
                 .querySelector(".review-container.number-17")
-                .classList.add("slide-up", "odd")
+                .classList.add("slide-up", "odd");
             }}
           />
         </Row>
@@ -188,7 +189,7 @@ const ContactUs = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-20")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
             }}
           />
           <SingleReivew number="21" type="full" />
@@ -198,7 +199,7 @@ const ContactUs = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-21")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
             }}
           />
           <SingleReivew number="22" type="full" />
@@ -209,7 +210,7 @@ const ContactUs = () => (
             onEnter={() => {
               document
                 .querySelector(".review-container.number-22")
-                .classList.add("slide-up")
+                .classList.add("slide-up");
             }}
           />
         </Row>
@@ -220,9 +221,9 @@ const ContactUs = () => (
             <h2 className="white-text compressed-text">
               It's Time to Meet the Team.
             </h2>
-            <a className="white-text blue-button" href="/about-us">
+            <Link className="white-text blue-button" to="/about-us">
               Meet the Team{" "}
-            </a>
+            </Link>
           </Col>
           <Waypoint
             onEnter={() =>
@@ -233,6 +234,6 @@ const ContactUs = () => (
       </Container>
     </div>
   </Layout>
-)
+);
 
-export default ContactUs
+export default ContactUs;

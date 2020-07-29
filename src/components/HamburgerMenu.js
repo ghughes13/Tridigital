@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import { slide as Menu } from "react-burger-menu";
 
 class Burger extends React.Component {
@@ -9,21 +10,21 @@ class Burger extends React.Component {
   render() {
     return (
       <Menu right className="navbar-burger">
-        <a id="home" className="menu-item" href="/about-us">
+        <Link id="home" className="menu-item" to="/about-us">
           About
-        </a>
-        <a id="about" className="menu-item" href="/process">
+        </Link>
+        <Link id="about" className="menu-item" to="/process">
           Process
-        </a>
-        <a id="reviews" className="menu-item" href="/reviews">
+        </Link>
+        <Link id="reviews" className="menu-item" to="/reviews">
           Reviews
-        </a>
-        <a id="warmup" className="menu-item" href="/marketing-warmup/">
+        </Link>
+        <Link id="warmup" className="menu-item" to="/marketing-warmup/">
           Marketing Warmup
-        </a>
-        <a id="contact" className="menu-item" href="/custom-marketing">
+        </Link>
+        <Link id="contact" className="menu-item" to="/custom-marketing">
           Custom Marketing
-        </a>
+        </Link>
       </Menu>
     );
   }

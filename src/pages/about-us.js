@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Layout from "../components/layout";
+import { Link } from "gatsby";
 import SEO from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
 import EmployeeInfo from "../components/AboutUsEmployees";
@@ -198,9 +199,9 @@ const AboutUs = () => {
               <h2 className="white-text compressed-text">
                 Don’t Be Shy. Contact Us Today!
               </h2>
-              <a className="white-text blue-button" href="/custom-marketing">
+              <Link className="white-text blue-button" to="/custom-marketing">
                 Contact Us
-              </a>
+              </Link>
             </Col>
             <Waypoint
               onEnter={() =>

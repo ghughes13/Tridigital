@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import React, { useEffect } from "react";
+import { Link } from "gatsby";
 import Burger from "./HamburgerMenu.js";
 import CookieConsent, { Cookies } from "react-cookie-consent";
 
@@ -161,7 +162,7 @@ const Header = ({ siteTitle, opaque, headerVersion }) => {
         ></script>
         <nav className="mainHeader navbar" role="navigation">
           <div className="navbar-brand">
-            <a className="navbar-item" href="/">
+            <Link className="navbar-item" to="/">
               <img
                 className="logo first-logo"
                 src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2019/10/TD-logo-w.png"
@@ -172,7 +173,7 @@ const Header = ({ siteTitle, opaque, headerVersion }) => {
                 src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2019/12/Group-11.png"
                 alt="tridigital logo colored"
               />
-            </a>
+            </Link>
             <Burger />
             <img
               src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/Icon.svg"
@@ -182,25 +183,25 @@ const Header = ({ siteTitle, opaque, headerVersion }) => {
           </div>
           <div id="navbarBasicExample" className="navbar-menu">
             <div className="navbar-start">
-              <a href="/about-us/" className="navbar-item">
+              <Link to="/about-us/" className="navbar-item">
                 About
-              </a>
-              <a href="/process" className="navbar-item">
+              </Link>
+              <Link to="/process" className="navbar-item">
                 Process
-              </a>
-              <a href="/reviews" className="navbar-item">
+              </Link>
+              <Link to="/reviews" className="navbar-item">
                 Reviews
-              </a>
+              </Link>
             </div>
             <div className="navbar-end">
               <div className="navbar-item">
                 <div className="buttons">
-                  <a href="/marketing-warmup" className="button first">
+                  <Link to="/marketing-warmup" className="button first">
                     Marketing Warmup
-                  </a>
-                  <a href="/custom-marketing" className="button is-light">
+                  </Link>
+                  <Link to="/custom-marketing" className="button is-light">
                     Custom Marketing
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "gatsby";
 import axios from "axios";
 
 const ContactUs = () => (

@@ -1,7 +1,8 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { Container } from "react-bootstrap"
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { Link } from "gatsby";
+import { Container } from "react-bootstrap";
 
 const AboutUs = () => {
   return (
@@ -12,31 +13,31 @@ const AboutUs = () => {
           <h3 className="sitemap">Main Pages</h3>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/about-us">About</a>
+              <Link to="/about-us">About</Link>
             </li>
             <li>
-              <a href="/process">Process</a>
+              <Link to="/process">Process</Link>
             </li>
             <li>
-              <a href="/reviews">Reviews</a>
+              <Link to="/reviews">Reviews</Link>
             </li>
             <li>
-              <a href="/contact-us">Contact Us</a>
+              <Link to="/contact-us">Contact Us</Link>
             </li>
             <li>
-              <a href="/terms-of-service">Terms Of Service</a>
+              <Link to="/terms-of-service">Terms Of Service</Link>
             </li>
             <li>
-              <a href="/privacy-policy">Privacy Policy</a>
+              <Link to="/privacy-policy">Privacy Policy</Link>
             </li>
           </ul>
         </Container>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default AboutUs
+export default AboutUs;

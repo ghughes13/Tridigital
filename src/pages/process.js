@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "gatsby";
 import { Waypoint } from "react-waypoint";
 
 const Process = () => (
@@ -284,9 +285,9 @@ const Process = () => (
             <h2 className="white-text compressed-text">
               Here’s What the Results Look Like.
             </h2>
-            <a className="white-text blue-button" href="/reviews">
+            <Link className="white-text blue-button" to="/reviews">
               See the Results
-            </a>
+            </Link>
           </Col>
         </Row>
         <Waypoint

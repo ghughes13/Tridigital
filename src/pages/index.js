@@ -4,6 +4,7 @@ import SEO from "../components/seo";
 import Layout from "../components/layout";
 import { Container, Row, Col } from "react-bootstrap";
 import { Waypoint } from "react-waypoint";
+import { Link } from "gatsby";
 import YourVideo from "../components/HomeVideoPlayer.js";
 
 const IndexPage = () => {
@@ -343,9 +344,9 @@ const IndexPage = () => {
                   start focusing on growing your business the right way.
                 </span>
               </p>
-              <a className="white-text pink-button hide-me" href="/process">
+              <Link className="white-text pink-button hide-me" to="/process">
                 Learn More{" "}
-              </a>
+              </Link>
             </Col>
           </Row>
           <img
@@ -369,9 +370,9 @@ const IndexPage = () => {
                   you’ll convert more MSP leads to customers than ever before.
                 </span>
               </p>
-              <a className="white-text pink-button hide-me" href="/process">
+              <Link className="white-text pink-button hide-me" to="/process">
                 Learn More{" "}
-              </a>
+              </Link>
             </Col>
             <Col className="content-container video-container">
               <video
@@ -395,9 +396,9 @@ const IndexPage = () => {
               <h2 className="white-text compressed-text">
                 See How We Empower YOUR Brand.
               </h2>
-              <a className="white-text blue-button" href="/process">
+              <Link className="white-text blue-button" to="/process">
                 Take the First Step{" "}
-              </a>
+              </Link>
             </Col>
             <Waypoint
               onEnter={() =>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import { Row, Col } from "react-bootstrap";
 
 const Footer = () => (
@@ -42,7 +43,7 @@ const Footer = () => (
       <Col>
         <h2>Connect</h2>
         <p>
-          <a href="/contact-us">Contact Us</a>
+          <Link to="/contact-us">Contact Us</Link>
         </p>
         <ul>
           <li>
@@ -143,11 +144,12 @@ const Footer = () => (
 
     <Row className="socket">
       <p>
-        © 2020 - TRIdigital | <a href="/terms-of-service">Terms of Service</a> |{" "}
-        <a href="/privacy-policy">Privacy Policy</a>
+        © 2020 - TRIdigital |{" "}
+        <Link to="/terms-of-service">Terms of Service</Link> |{" "}
+        <Link to="/privacy-policy">Privacy Policy</Link>
       </p>
       <p>
-        <a href="/site-map">Sitemap</a> |{" "}
+        <Link to="/site-map">Sitemap</Link> |{" "}
         <a
           href="http://training.tridigitalmarketing.com/?password-protected=login&redirect_to=http%3A%2F%2Ftraining.tridigitalmarketing.com%2F"
           target="_blank"

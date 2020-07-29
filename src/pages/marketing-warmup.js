@@ -5,6 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import WarmupVideo from "../components/WarmupVideoPlayer.js";
 import SingleReivew from "../components/SingleReview.js";
 import { Waypoint } from "react-waypoint";
+import { Link } from "gatsby";
 import axios from "axios";
 
 const WarmUp = () => (
@@ -259,9 +260,9 @@ const WarmUp = () => (
               <li>Fully set-up Honey CRM</li>
               <li>30 Qualified Leads</li>
             </ul>
-            <a className="pink-btn btn" href="/marketing-warmup-signup/?l=0">
+            <Link className="pink-btn btn" to="/marketing-warmup-signup/?l=0">
               Sign Up
-            </a>
+            </Link>
           </Col>
           <Col className="content-container column price-option second six-months">
             <span className="bold light-blue-text top-months">6 Months</span>
@@ -281,9 +282,9 @@ const WarmUp = () => (
               <li>Fully set-up Honey CRM</li>
               <li>60 Qualified Leads</li>
             </ul>
-            <a className="pink-btn btn" href="/marketing-warmup-signup/?l=1">
+            <Link className="pink-btn btn" to="/marketing-warmup-signup/?l=1">
               Sign Up
-            </a>
+            </Link>
           </Col>
           <Col className="content-container column price-option third twelve-months">
             <span className="bold gold-text top-months">12 Months</span>
@@ -303,9 +304,9 @@ const WarmUp = () => (
               <li>Fully set-up Honey CRM</li>
               <li>120 Qualified Leads</li>
             </ul>
-            <a className="pink-btn btn" href="/marketing-warmup-signup/?l=2">
+            <Link className="pink-btn btn" to="/marketing-warmup-signup/?l=2">
               Sign Up
-            </a>
+            </Link>
           </Col>
         </Row>
       </Container>

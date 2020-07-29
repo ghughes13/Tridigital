@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import axios from "axios";
+import { Link } from "gatsby";
 import Loader from "./Loader";
 
 const CheckoutForm = () => {
@@ -264,26 +265,26 @@ const CheckoutForm = () => {
           />
           <label htmlFor="privacyTOS">
             I have read and agree to the{" "}
-            <a
+            <Link
               className="read-me "
-              href="/terms-of-service"
+              to="/terms-of-service"
               target="_blank"
               id="original-tos"
             >
               terms of service
-            </a>
-            <a
+            </Link>
+            <Link
               id="alt-tos"
               className="read-me"
-              href="/promo-code-terms-of-service"
+              to="/promo-code-terms-of-service"
               target="_blank"
             >
               terms of service
-            </a>
+            </Link>
             , and the{" "}
-            <a className="read-me" href="/privacy-policy" target="_blank">
+            <Link className="read-me" to="/privacy-policy" target="_blank">
               privacy policy
-            </a>
+            </Link>
           </label>
         </div>
         <input type="hidden" name="form-name" value="contact" />
