@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
-import Footer from "./footer";
+import Footer from "./footer/Footer";
 import "../styles/layout.scss";
 
 const Layout = ({ children, opaqueHeader, headerVersion }) => {
@@ -35,6 +35,7 @@ const Layout = ({ children, opaqueHeader, headerVersion }) => {
         style={{
           margin: `0 auto`,
           paddingTop: 0,
+          overflowX: "hidden",
         }}
       >
         <main>{children}</main>

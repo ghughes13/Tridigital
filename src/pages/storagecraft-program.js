@@ -4,7 +4,7 @@ import SEO from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
 import Yourvideo from "../components/VendorPartnerVideoPlayer";
 import "../styles/fortinet-lp.scss";
-import Loader from "../components/Loader";
+import Loader from "../components/loader/Loader";
 import axios from "axios";
 
 const VendorPartnerLP = () => {

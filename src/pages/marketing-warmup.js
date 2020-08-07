@@ -1,14 +1,15 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
-import WarmupVideo from "../components/WarmupVideoPlayer.js";
-import SingleReivew from "../components/SingleReview.js";
-import { Waypoint } from "react-waypoint";
 import { Link } from "gatsby";
 import axios from "axios";
 
-const WarmUp = () => (
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import WarmupVideo from "../components/WarmupVideoPlayer.js";
+import ReviewCard from "../components/review_card/ReviewCard.js";
+import { Waypoint } from "react-waypoint";
+
+const MarketingWarmUp = () => (
   <Layout>
     <SEO title="Warm Up" />
     <div className="warmup-page">
@@ -319,8 +320,8 @@ const WarmUp = () => (
           </Col>
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew className="margin-top-90" number="1" type="half" />
-          <SingleReivew className="margin-top-90" number="2" type="half" />
+          <ReviewCard className="margin-top-90" number="1" type="half" />
+          <ReviewCard className="margin-top-90" number="2" type="half" />
           <Waypoint
             onEnter={() => {
               document
@@ -333,8 +334,8 @@ const WarmUp = () => (
           />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="3" type="half" />
-          <SingleReivew number="4" type="half" />
+          <ReviewCard number="3" type="half" />
+          <ReviewCard number="4" type="half" />
           <Waypoint
             onEnter={() => {
               document
@@ -347,8 +348,8 @@ const WarmUp = () => (
           />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="5" type="half" />
-          <SingleReivew number="6" type="half" />
+          <ReviewCard number="5" type="half" />
+          <ReviewCard number="6" type="half" />
           <Waypoint
             onEnter={() => {
               document
@@ -379,8 +380,8 @@ const WarmUp = () => (
       </Container>
       <Container className="more-reviews container reviews-container mrkt-wrmup blue-swish">
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="7" type="half" />
-          <SingleReivew number="8" type="half" />
+          <ReviewCard number="7" type="half" />
+          <ReviewCard number="8" type="half" />
           <Waypoint
             onEnter={() => {
               document
@@ -393,8 +394,8 @@ const WarmUp = () => (
           />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="9" type="half" />
-          <SingleReivew number="10" type="half" />
+          <ReviewCard number="9" type="half" />
+          <ReviewCard number="10" type="half" />
           <Waypoint
             onEnter={() => {
               document
@@ -407,8 +408,8 @@ const WarmUp = () => (
           />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="11" type="half" />
-          <SingleReivew number="12" type="half" />
+          <ReviewCard number="11" type="half" />
+          <ReviewCard number="12" type="half" />
           <Waypoint
             onEnter={() => {
               document
@@ -421,8 +422,8 @@ const WarmUp = () => (
           />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="13" type="half" />
-          <SingleReivew number="14" type="half" />
+          <ReviewCard number="13" type="half" />
+          <ReviewCard number="14" type="half" />
           <Waypoint
             onEnter={() => {
               document
@@ -439,4 +440,4 @@ const WarmUp = () => (
   </Layout>
 );
 
-export default WarmUp;
+export default MarketingWarmUp;

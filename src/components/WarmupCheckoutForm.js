@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import axios from "axios";
 import { Link } from "gatsby";
-import Loader from "./Loader";
+import Loader from "./loader/Loader";
 
 const CheckoutForm = () => {
   useEffect(() => {

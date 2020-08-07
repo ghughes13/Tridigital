@@ -4,7 +4,7 @@ import SEO from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
 import Yourvideo from "../components/VendorPartnerVideoPlayer";
 import "../styles/lenovo-lp.scss";
-import Loader from "../components/Loader";
+import Loader from "../components/loader/Loader";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import { Link } from "react-scroll";
 import Image from "../components/LenovoPageImageHandler";

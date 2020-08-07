@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "gatsby";
 import { Row, Col } from "react-bootstrap";
 
+import "./footer.scss";
+
 const Footer = () => (
   <footer className="fixed">
     <Row>

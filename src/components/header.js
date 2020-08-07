@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
 import React, { useEffect } from "react";
 import { Link } from "gatsby";
-import Burger from "./HamburgerMenu.js";
-import CookieConsent, { Cookies } from "react-cookie-consent";
+import CookieConsent from "react-cookie-consent";
+
+import Burger from "./hamburger_menu/HamburgerMenu";
 
 const Header = ({ siteTitle, opaque, headerVersion }) => {
   useEffect(() => {

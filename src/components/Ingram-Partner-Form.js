@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/fortinet-lp.scss";
-import Loader from "../components/Loader";
+import Loader from "../components/loader/Loader";
 import axios from "axios";
 
 const IngramPartnerForm = ({

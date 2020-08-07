@@ -1,10 +1,12 @@
-import React from "react"
-import { Col } from "react-bootstrap"
-import YourVideo from "./VideoPlayer.js"
+import React from "react";
+import { Col } from "react-bootstrap";
+
+import YourVideo from "../VideoPlayer.js";
+import "./review-card.scss";
 
 export default function SingleReivew(props) {
-  let data = require("../data/reviews-data.json")
-  let number = props.number
+  let data = require("../../data/reviews-data.json");
+  let number = props.number;
 
   if (props.type === "half") {
     return (
@@ -74,7 +76,7 @@ export default function SingleReivew(props) {
           </div>
         </div>
       </Col>
-    )
+    );
   } else if (props.type === "personal-half") {
     return (
       <Col className="content-container centered-text half-person">
@@ -141,7 +143,7 @@ export default function SingleReivew(props) {
           </div>
         </div>
       </Col>
-    )
+    );
   } else {
     return (
       <div
@@ -207,6 +209,6 @@ export default function SingleReivew(props) {
           <p className="quote">{data[number - 1].review}</p>
         </div>
       </div>
-    )
+    );
   }
 }

@@ -1,12 +1,13 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import { Container, Row, Col } from "react-bootstrap";
-import SingleReivew from "../components/SingleReview.js";
 import { Waypoint } from "react-waypoint";
 import { Link } from "gatsby";
+import { Container, Row, Col } from "react-bootstrap";
 
-const ContactUs = () => (
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import ReviewCard from "../components/review_card/ReviewCard";
+
+const Reviews = () => (
   <Layout>
     <SEO title="Reviews" />
     <div className="reviews">
@@ -29,8 +30,8 @@ const ContactUs = () => (
       </Container>
       <Container className="container reviews-container blue-swish">
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="24" type="half" />
-          <SingleReivew number="1" type="half" />
+          <ReviewCard number="24" type="half" />
+          <ReviewCard number="1" type="half" />
           <Waypoint
             onEnter={() => {
               document
@@ -43,8 +44,8 @@ const ContactUs = () => (
           />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="2" type="half" />
-          <SingleReivew number="3" type="half" />
+          <ReviewCard number="2" type="half" />
+          <ReviewCard number="3" type="half" />
           <Waypoint
             onEnter={() => {
               document
@@ -57,8 +58,8 @@ const ContactUs = () => (
           />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="4" type="half" />
-          <SingleReivew number="5" type="half" />
+          <ReviewCard number="4" type="half" />
+          <ReviewCard number="5" type="half" />
           <Waypoint
             onEnter={() => {
               document
@@ -71,8 +72,8 @@ const ContactUs = () => (
           />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="6" type="half" />
-          <SingleReivew number="7" type="half" />
+          <ReviewCard number="6" type="half" />
+          <ReviewCard number="7" type="half" />
           <Waypoint
             onEnter={() => {
               document
@@ -85,8 +86,8 @@ const ContactUs = () => (
           />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="8" type="half" />
-          <SingleReivew number="9" type="half" />
+          <ReviewCard number="8" type="half" />
+          <ReviewCard number="9" type="half" />
           <Waypoint
             onEnter={() => {
               document
@@ -99,8 +100,8 @@ const ContactUs = () => (
           />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="10" type="half" />
-          <SingleReivew number="11" type="half" />
+          <ReviewCard number="10" type="half" />
+          <ReviewCard number="11" type="half" />
           <Waypoint
             onEnter={() => {
               document
@@ -113,8 +114,8 @@ const ContactUs = () => (
           />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="12" type="half" />
-          <SingleReivew number="13" type="half" />
+          <ReviewCard number="12" type="half" />
+          <ReviewCard number="13" type="half" />
           <Waypoint
             onEnter={() => {
               document
@@ -127,7 +128,7 @@ const ContactUs = () => (
           />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="14" type="half" />
+          <ReviewCard number="14" type="half" />
           <Waypoint
             onEnter={() => {
               document
@@ -137,7 +138,7 @@ const ContactUs = () => (
           />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="19" type="full" />
+          <ReviewCard number="19" type="full" />
           <Waypoint
             onEnter={() => {
               document
@@ -147,8 +148,8 @@ const ContactUs = () => (
           />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="15" type="personal-half" />
-          <SingleReivew number="16" type="personal-half" />
+          <ReviewCard number="15" type="personal-half" />
+          <ReviewCard number="16" type="personal-half" />
           <Waypoint
             onEnter={() => {
               document
@@ -161,7 +162,7 @@ const ContactUs = () => (
           />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="20" type="full" />
+          <ReviewCard number="20" type="full" />
           <Waypoint
             onEnter={() => {
               document
@@ -171,8 +172,8 @@ const ContactUs = () => (
           />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="17" type="personal-half" />
-          <SingleReivew number="18" type="personal-half" />
+          <ReviewCard number="17" type="personal-half" />
+          <ReviewCard number="18" type="personal-half" />
           <Waypoint
             onEnter={() => {
               document
@@ -192,7 +193,7 @@ const ContactUs = () => (
                 .classList.add("slide-up");
             }}
           />
-          <SingleReivew number="21" type="full" />
+          <ReviewCard number="21" type="full" />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
           <Waypoint
@@ -202,10 +203,10 @@ const ContactUs = () => (
                 .classList.add("slide-up");
             }}
           />
-          <SingleReivew number="22" type="full" />
+          <ReviewCard number="22" type="full" />
         </Row>
         <Row className="two-columns full-width-row content-right align-middle">
-          <SingleReivew number="23" type="full" />
+          <ReviewCard number="23" type="full" />
           <Waypoint
             onEnter={() => {
               document
@@ -236,4 +237,4 @@ const ContactUs = () => (
   </Layout>
 );
 
-export default ContactUs;
+export default Reviews;
