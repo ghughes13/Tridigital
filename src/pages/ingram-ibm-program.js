@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
-import Yourvideo from "../components/VendorPartnerVideoPlayer";
+
+import Yourvideo from "../components/vendor_partner_video_player/VendorPartnerVideoPlayer";
+import Layout from "../components/layout/Layout";
+import SEO from "../components/seo/Seo";
+import IngramPartnerForm from "../components/ingram_partner_form/IngramPartnerForm";
+
 import "../styles/fortinet-lp.scss";
-import IngramPartnerForm from "../components/Ingram-Partner-Form";
 
 const VendorPartnerLP = () => {
   useEffect(() => {

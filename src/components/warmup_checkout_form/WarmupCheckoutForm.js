@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import axios from "axios";
-import { Link } from "gatsby";
-import Loader from "./loader/Loader";
+
+import Loader from "../loader/Loader";
 
 const CheckoutForm = () => {
   useEffect(() => {
@@ -265,26 +265,28 @@ const CheckoutForm = () => {
           />
           <label htmlFor="privacyTOS">
             I have read and agree to the{" "}
-            <Link
+            {/* -- DO NOT USE GATSBY'S Link HERE --*/}
+            {/* Changing the a tags to privacy policy, sitemap, or footer to gatsby's Link component breaks the header transparency fix   */}
+            <a
               className="read-me "
-              to="/terms-of-service"
+              href="/terms-of-service"
               target="_blank"
               id="original-tos"
             >
               terms of service
-            </Link>
-            <Link
+            </a>
+            <a
               id="alt-tos"
               className="read-me"
-              to="/promo-code-terms-of-service"
+              href="/promo-code-terms-of-service"
               target="_blank"
             >
               terms of service
-            </Link>
+            </a>
             , and the{" "}
-            <Link className="read-me" to="/privacy-policy" target="_blank">
+            <a className="read-me" href="/privacy-policy" target="_blank">
               privacy policy
-            </Link>
+            </a>
           </label>
         </div>
         <input type="hidden" name="form-name" value="contact" />

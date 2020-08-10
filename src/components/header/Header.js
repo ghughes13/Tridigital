@@ -3,13 +3,15 @@ import React, { useEffect } from "react";
 import { Link } from "gatsby";
 import CookieConsent from "react-cookie-consent";
 
-import Burger from "./hamburger_menu/HamburgerMenu";
+import Burger from "../hamburger_menu/HamburgerMenu";
 
 const Header = ({ siteTitle, opaque, headerVersion }) => {
   useEffect(() => {
+    console.log(opaque);
     window.addEventListener("scroll", function() {
       if (!opaque) {
         if (window.scrollY === 0) {
+          console.log("running");
           document.querySelector("header").classList.remove("end-transparency");
         } else {
           document.querySelector("header").classList.add("end-transparency");

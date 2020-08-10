@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import { graphql } from "gatsby";
-import SEO from "../components/seo";
-import Layout from "../components/layout";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-scroll";
-import InlineVideo from "../components/WistiaInlineVideoPlayer.js";
+
+import SEO from "../components/seo/Seo";
+import Layout from "../components/layout/Layout";
+import InlineVideo from "../components/wistia_inline_video_player/WistiaInlineVideoPlayer";
 
 import "../styles/brother-strategy.scss";
 

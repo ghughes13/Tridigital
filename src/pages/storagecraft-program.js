@@ -1,8 +1,8 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/layout/Layout";
+import SEO from "../components/seo/Seo";
 import { Container, Row, Col } from "react-bootstrap";
-import Yourvideo from "../components/VendorPartnerVideoPlayer";
+import Yourvideo from "../components/vendor_partner_video_player/VendorPartnerVideoPlayer";
 import "../styles/fortinet-lp.scss";
 import Loader from "../components/loader/Loader";
 import axios from "axios";

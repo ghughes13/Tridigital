@@ -1,12 +1,12 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/layout/Layout";
+import SEO from "../components/seo/Seo";
 import { Link } from "gatsby";
 import { Container } from "react-bootstrap";
 
 const AboutUs = () => {
   return (
-    <Layout>
+    <Layout opaqueHeader="true">
       <SEO title="Sitemap" />
       <div className="sla-page">
         <Container className="container">
@@ -27,11 +27,13 @@ const AboutUs = () => {
             <li>
               <Link to="/contact-us">Contact Us</Link>
             </li>
+            {/* -- DO NOT USE GATSBY'S Link HERE --*/}
+            {/* Changing the a tags to privacy policy, sitemap, or footer to gatsby's Link component breaks the header transparency fix   */}
             <li>
-              <Link to="/terms-of-service">Terms Of Service</Link>
+              <a to="/terms-of-service">Terms Of Service</a>
             </li>
             <li>
-              <Link to="/privacy-policy">Privacy Policy</Link>
+              <a to="/privacy-policy">Privacy Policy</a>
             </li>
           </ul>
         </Container>

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { withController } from "react-scroll-parallax";
 
-class Image extends Component {
+class ParallaxImageFixer extends Component {
   handleLoad = () => {
     this.props.parallaxController.update();
   };
@@ -17,4 +17,4 @@ class Image extends Component {
   }
 }
 
-export default withController(Image);
+export default withController(ParallaxImageFixer);

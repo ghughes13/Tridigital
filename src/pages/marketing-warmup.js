@@ -3,10 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "gatsby";
 import axios from "axios";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import WarmupVideo from "../components/WarmupVideoPlayer.js";
-import ReviewCard from "../components/review_card/ReviewCard.js";
+import Layout from "../components/layout/Layout";
+import SEO from "../components/seo/Seo";
+import WarmupVideo from "../components/warmup_video_player/WarmupVideoPlayer";
+import ReviewCard from "../components/review_card/ReviewCard";
 import { Waypoint } from "react-waypoint";
 
 const MarketingWarmUp = () => (

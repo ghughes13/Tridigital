@@ -1,11 +1,11 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { Container } from "react-bootstrap"
+import React from "react";
+import Layout from "../components/layout/Layout";
+import SEO from "../components/seo/Seo";
+import { Container } from "react-bootstrap";
 
 const AboutUs = () => {
   return (
-    <Layout opaqueHeader>
+    <Layout opaqueHeader="true">
       <SEO title="Privary Policy" />
       <div className="privacy-policy-page">
         <Container className="container">
@@ -346,7 +346,7 @@ const AboutUs = () => {
         </Container>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default AboutUs
+export default AboutUs;

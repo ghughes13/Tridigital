@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
-import SEO from "../components/seo";
-import Layout from "../components/layout";
 import { Container, Row, Col } from "react-bootstrap";
-import { Link } from "react-scroll";
-import InlineVideo from "../components/WistiaInlineVideoPlayer.js";
+
+import SEO from "../components/seo/Seo";
+import Layout from "../components/layout/Layout";
 
 import "../styles/carolina-strategy.scss";
 import "../styles/carolina-strategy-sunset.scss";

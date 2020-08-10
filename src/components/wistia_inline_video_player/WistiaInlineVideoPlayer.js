@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const InlineVideo = props => {
+const WistiaInlineVideo = props => {
   //Call in parent like this --> <Yourvideo videoID={"wistia-video-id"} />
   const [videoID] = useState(props.videoID);
 
@@ -41,4 +41,4 @@ const InlineVideo = props => {
   );
 };
 
-export default InlineVideo;
+export default WistiaInlineVideo;

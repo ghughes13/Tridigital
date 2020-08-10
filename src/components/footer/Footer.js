@@ -145,13 +145,14 @@ const Footer = () => (
     </Row>
 
     <Row className="socket">
+      {/* -- DO NOT USE GATSBY'S Link HERE --*/}
+      {/* Changing the a tags to privacy policy, sitemap, or footer to gatsby's Link component breaks the header transparency fix   */}
       <p>
-        © 2020 - TRIdigital |{" "}
-        <Link to="/terms-of-service">Terms of Service</Link> |{" "}
-        <Link to="/privacy-policy">Privacy Policy</Link>
+        © 2020 - TRIdigital | <a href="/terms-of-service">Terms of Service</a> |{" "}
+        <a href="/privacy-policy">Privacy Policy</a>
       </p>
       <p>
-        <Link to="/site-map">Sitemap</Link> |{" "}
+        <a href="/site-map">Sitemap</a> |{" "}
         <a
           href="http://training.tridigitalmarketing.com/?password-protected=login&redirect_to=http%3A%2F%2Ftraining.tridigitalmarketing.com%2F"
           target="_blank"

@@ -1,8 +1,8 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/layout/Layout";
+import SEO from "../components/seo/Seo";
 import { Container, Row } from "react-bootstrap";
-import CheckoutForm from "../components/WarmupCheckoutForm";
+import CheckoutForm from "../components/warmup_checkout_form/WarmupCheckoutForm";
 
 const WarmUpPayment = () => {
   return (

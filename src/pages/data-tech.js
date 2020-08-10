@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
-import SEO from "../components/seo";
-import Layout from "../components/layout";
+import SEO from "../components/seo/Seo";
+import Layout from "../components/layout/Layout";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-scroll";
-import InlineVideo from "../components/WistiaInlineVideoPlayer.js";
+
+import InlineVideo from "../components/wistia_inline_video_player/WistiaInlineVideoPlayer";
 
 import "../styles/data-tech-strategy.scss";
 
@@ -1014,8 +1015,9 @@ const IndexPage = () => {
               <h3 className="">WHITEPAPERS</h3>
               <p>
                 Whitepapers will continue to use the company photos as the key
-                piece of imagery. By keeping with bold headings, the intro to the
-                whitepapers can be simple enough to not distract from the topic.
+                piece of imagery. By keeping with bold headings, the intro to
+                the whitepapers can be simple enough to not distract from the
+                topic.
               </p>
             </Col>
           </Row>

@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
 import { graphql } from "gatsby";
-import SEO from "../components/seo";
-import Layout from "../components/layout";
 import { Container, Row, Col } from "react-bootstrap";
 import { Waypoint } from "react-waypoint";
 import { Link } from "gatsby";
-import YourVideo from "../components/HomeVideoPlayer.js";
+
+import SEO from "../components/seo/Seo";
+import Layout from "../components/layout/Layout";
+
+import YourVideo from "../components/home_video_player/HomeVideoPlayer";
 
 const IndexPage = () => {
   useEffect(() => {});

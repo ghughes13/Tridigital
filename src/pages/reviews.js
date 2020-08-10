@@ -3,8 +3,8 @@ import { Waypoint } from "react-waypoint";
 import { Link } from "gatsby";
 import { Container, Row, Col } from "react-bootstrap";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/layout/Layout";
+import SEO from "../components/seo/Seo";
 import ReviewCard from "../components/review_card/ReviewCard";
 
 const Reviews = () => (

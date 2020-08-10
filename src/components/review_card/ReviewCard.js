@@ -1,7 +1,7 @@
 import React from "react";
 import { Col } from "react-bootstrap";
 
-import YourVideo from "../VideoPlayer.js";
+import YourVideo from "../video_player/VideoPlayer.js";
 import "./review-card.scss";
 
 export default function SingleReivew(props) {

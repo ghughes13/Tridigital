@@ -1,14 +1,16 @@
 import React, { useEffect } from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
 import { Container, Row, Col } from "react-bootstrap";
-import Yourvideo from "../components/VendorPartnerVideoPlayer";
-import "../styles/lenovo-lp.scss";
-import Loader from "../components/loader/Loader";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import { Link } from "react-scroll";
-import Image from "../components/LenovoPageImageHandler";
 import axios from "axios";
+
+import SEO from "../components/seo/Seo";
+import Layout from "../components/layout/Layout";
+import Yourvideo from "../components/vendor_partner_video_player/VendorPartnerVideoPlayer";
+import Loader from "../components/loader/Loader";
+import ParallaxImageFixer from "../components/parallax_image_fixer/ParallaxImageFixer";
+
+import "../styles/lenovo-lp.scss";
 
 const VendorPartnerLP = () => {
   useEffect(() => {
@@ -76,7 +78,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
             </Row>
             <Row className="whats-included">
               <Parallax y={[-110, -30]} tagOuter="div" className="show-mobile">
-                <Image
+                <ParallaxImageFixer
                   src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/04/Whats-included.png"
                   alt="What's included"
                 />
@@ -86,7 +88,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                 tagOuter="div"
                 className="hide-on-mobile"
               >
-                <Image
+                <ParallaxImageFixer
                   src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/04/Whats-included.png"
                   alt="What's Included"
                 />
@@ -94,7 +96,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
             </Row>
             <Row className="right-blob blob">
               <Parallax y={[0, 60]} tagOuter="div">
-                <Image
+                <ParallaxImageFixer
                   src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/lenovo-lp/Path%20648.svg"
                   alt="step-1-img"
                 />
@@ -134,7 +136,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
             </Row>
             <Row className="left-blob blob">
               <Parallax y={[-20, 30]} tagOuter="div">
-                <Image
+                <ParallaxImageFixer
                   src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/lenovo-lp/Path%20378.svg"
                   alt="step-1-img"
                 />
@@ -220,7 +222,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
             </Row>
             <Row>
               <Parallax className="parallax-block" y={[-30, 10]} tagOuter="div">
-                <Image
+                <ParallaxImageFixer
                   src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/04/Group-3678.png"
                   alt="step-1-img"
                 />
@@ -241,7 +243,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                 y={[-30, 10]}
                 tagOuter="figure"
               >
-                <Image
+                <ParallaxImageFixer
                   src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/04/05_floating_ppl-0-00-06-15.png"
                   alt="step-1-img"
                 />
@@ -256,7 +258,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
             </Row>
             <Row>
               <Parallax className="parallax-block" y={[-30, 10]} tagOuter="div">
-                <Image
+                <ParallaxImageFixer
                   src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/04/Group-3677.png"
                   alt="step-1-img"
                 />
@@ -273,7 +275,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
             </Row>
             <Row>
               <Parallax className="parallax-block" y={[-30, 10]} tagOuter="div">
-                <Image
+                <ParallaxImageFixer
                   src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/04/06_floating_graphs-2-0-00-08-12.png"
                   alt="step-1-img"
                 />

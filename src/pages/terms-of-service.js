@@ -1,11 +1,11 @@
 import React from "react";
-import Layout from "../components/layout";
+import Layout from "../components/layout/Layout";
 import SEO from "../components/seo";
 import { Container } from "react-bootstrap";
 
 const TermsOfService = () => {
   return (
-    <Layout opaqueHeader>
+    <Layout opaqueHeader="true">
       <SEO title="Terms of Service" />
       <div className="tos-page">
         <Container className="container">
