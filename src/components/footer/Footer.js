@@ -10,11 +10,11 @@ const Footer = () => (
       <Col>
         <h2>Address</h2>
         <a
-          href="https://g.page/Legacy-Central-North-5067?share"
+          href="https://goo.gl/maps/cQfW739BoQkuatZX9"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <p>6600 Chase Blvd, Suite 170,</p>
+          <p>6600 Chase Oaks Blvd, Suite 170,</p>
           <p>Plano, TX 75074-5483</p>
         </a>
         <p>
