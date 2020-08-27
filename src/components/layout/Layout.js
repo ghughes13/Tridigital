@@ -24,8 +24,6 @@ const Layout = ({ children, opaqueHeader, headerVersion }) => {
     }
   `);
 
-  console.log(opaqueHeader);
-
   return (
     <>
       <Header

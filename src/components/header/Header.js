@@ -7,7 +7,6 @@ import Burger from "../hamburger_menu/HamburgerMenu";
 
 const Header = ({ siteTitle, opaque, headerVersion }) => {
   useEffect(() => {
-    console.log(opaque);
     window.addEventListener("scroll", function() {
       if (!opaque) {
         if (window.scrollY === 0) {

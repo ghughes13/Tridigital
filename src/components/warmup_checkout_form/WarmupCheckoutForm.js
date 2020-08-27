@@ -102,6 +102,8 @@ const CheckoutForm = () => {
         Complete The Sign Up Form to Get Your Marketing Started
       </h3>
       <div className="form-content">
+        <input type="hidden" name="form-name" value="warmup" />
+        <input type="hidden" name="bot-field" id="bot" />
         <div className="what-do-we-call-you">
           <div className="firstName">
             <label htmlFor="firstName">First Name</label>
@@ -289,7 +291,6 @@ const CheckoutForm = () => {
             </a>
           </label>
         </div>
-        <input type="hidden" name="form-name" value="contact" />
         <div className="error">
           <p>
             Whoops! Looks like there was a error. Please make sure all form
