@@ -1,7 +1,7 @@
-//Switch out commented data on lines 4 & 140 to debug
+//Switch out commented data on lines 4 & 146, 163 to debug
 
 require("dotenv").config();
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY_TEST); //STRIPE_SECRET_KEY_TEST //STRIPE_SECRET_KEY_LIVE
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY_LIVE); //STRIPE_SECRET_KEY_TEST //STRIPE_SECRET_KEY_LIVE
 const axios = require("axios");
 
 const headers = {
@@ -143,7 +143,7 @@ function createStripeSubscription() {
         {
           customer: stripeCustomerId,
           items: [
-            { plan: "plan_Gz1gjBRO3h2d6b" }, //Live Code: "plan_GzJ6nRYLUL1rjU" //Promo Test Code: "plan_Gz1gjBRO3h2d6b"
+            { plan: "plan_GzJ6nRYLUL1rjU" }, //Live Code: "plan_GzJ6nRYLUL1rjU" //Promo Test Code: "plan_Gz1gjBRO3h2d6b"
           ],
           trial_period_days: 60,
         },
@@ -160,7 +160,7 @@ function createStripeSubscription() {
         {
           customer: stripeCustomerId,
           items: [
-            { plan: "tridigitalmarketingwarmup-testinit_25_1month_150000" }, //Live Code:  plans[body.priceTierId]  //Standard Test Code: "tridigitalmarketingwarmup-testinit_25_1month_150000"
+            { plan: plans[body.priceTierId] }, //Live Code:  plans[body.priceTierId]  //Standard Test Code: "tridigitalmarketingwarmup-testinit_25_1month_150000"
           ],
         },
         (error, subscription) => {
