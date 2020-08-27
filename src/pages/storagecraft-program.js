@@ -458,6 +458,11 @@ const VendorPartnerLP = () => {
                     required
                   />
                 </div>
+                <p className="DKIM-disclaimer">
+                  We will be asking you to set up DKIM to ensure the best
+                  possible email results. If you choose to not set up DKIM, your
+                  email results may be lower than average.
+                </p>
                 <div className="sbmt-btn">
                   <Loader />
                   <p id="error-msg">
