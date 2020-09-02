@@ -803,7 +803,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                       id="send-emails"
                       required
                     />
-                    <label>
+                    <label className="acceptance-label">
                       Click here to accept to have Lenovo send out email
                       campaigns on your behalf
                     </label>
