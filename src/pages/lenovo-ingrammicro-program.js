@@ -796,6 +796,18 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                     possible email results. If you choose to not set up DKIM,
                     your email results may be lower than average.
                   </p>
+                  <div className="behalf">
+                    <input
+                      type="checkbox"
+                      name="Send-Emails"
+                      id="send-emails"
+                      required
+                    />
+                    <label>
+                      Click here to accept to have Lenovo send out email
+                      campaigns on your behalf
+                    </label>
+                  </div>
                   <div className="sbmt-btn">
                     <Loader />
                     <p id="error-msg">
