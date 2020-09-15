@@ -41,8 +41,8 @@ const VendorPartnerLP = () => {
                 Campaign Details
               </h2>
               <p className="centered-text">
-                StorageCraft is committed to the success of your business
-                through our partnership with TRIdigital and Honey we provide a
+                StorageCraft is committed to the success of your business.
+                Through our partnership with TRIdigital and Honey we provide a
                 personally branded and automated marketing campaign designed to
                 be executed over 2 months.
               </p>
