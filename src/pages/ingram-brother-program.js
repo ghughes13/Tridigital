@@ -19,7 +19,12 @@ const VendorPartnerLP = () => {
         <Container className="container fortinet-ingram-background hero swish">
           <Row className="z-index-999">
             <Col className="display-flex content-container column flex-dir-col">
-              <h1>INGRAM MICRO & BROTHER PARTNER ENABLEMENT PROGRAM</h1>
+              <img
+                className="brother-logo-main"
+                src={require("../images/brother.png")}
+                alt="brother logo"
+              />
+              <h1>PARTNER ENABLEMENT PROGRAM</h1>
               <Link
                 className="fortinet-ingram-btn inline-block"
                 to="vendor-lp"
@@ -104,7 +109,11 @@ const VendorPartnerLP = () => {
                     src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/03/Group%203671.png"
                     alt="collaterals"
                   />
-                  <p>Access to Honey</p>
+                  <p>
+                    Access to Honey <br />
+                    (Dedicated IT industry CRM built to provide maximum
+                    visibility and easy lead follow-up)
+                  </p>
                 </div>
                 <div className="content-container column ">
                   <img
