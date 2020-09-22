@@ -11,6 +11,9 @@
   .brother-logo-main {
     max-width: 430px;
     margin-left: -10px;
+    @media screen and (max-width: 767px) {
+      max-width: 90%;
+    }
   }
 
   /*****************/
