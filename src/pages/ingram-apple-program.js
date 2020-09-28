@@ -52,7 +52,7 @@ const IngramAppleLp = () => {
               </h2>
               <p className="centered-text">
                 Ingram Micro and Apple are committed to the success of your
-                business through our partnership with TRIdigital and Honey we
+                business. Through our partnership with TRIdigital and Honey, We
                 provide a personally branded and automated marketing campaign
                 designed to be executed over 3 months.
               </p>

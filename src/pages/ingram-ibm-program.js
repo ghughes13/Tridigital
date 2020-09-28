@@ -47,7 +47,7 @@ const VendorPartnerLP = () => {
               </h2>
               <p className="centered-text">
                 Ingram Micro and IBM are committed to the success of your
-                business through our partnership with TRIdigital and Honey we
+                business. Through our partnership with TRIdigital and Honey, we
                 provide a personally branded and automated Cloud Pak for Data
                 marketing campaign designed to be executed over 3 months.
               </p>

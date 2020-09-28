@@ -88,7 +88,7 @@ const IngramPartnerForm = ({
         <div className="company-name company-field">
           <label htmlFor="company">
             Please write your company name as you would like to see it written
-            in all your marketing assets
+            in all your marketing assets.
           </label>
           <input
             type="text"
@@ -112,7 +112,7 @@ const IngramPartnerForm = ({
         </div>
         <div className="company-logo">
           <label htmlFor="logo">
-            Please provide your logo in svg, eps or ai format/s
+            Please provide your logo in svg, eps or ai format/s.
           </label>
           <input
             type="file"
@@ -125,7 +125,7 @@ const IngramPartnerForm = ({
         <div className="contact-info">
           <label htmlFor="contact-info">
             Please provide your company contact information as you would like to
-            see it on your marketing assets (phone, address, support email)
+            see it on your marketing assets. (phone, address, support email)
           </label>
           <textarea
             name="contact-info"
@@ -137,7 +137,7 @@ const IngramPartnerForm = ({
         <div className="branding-colors">
           <label htmlFor="branding-colors">
             Please provide your company branding colors. Your primary color and
-            your secondary color. Please provide this by hex code
+            your secondary color. Please provide this by hex code.
           </label>
           <textarea
             name="branding-colors"
@@ -150,7 +150,7 @@ const IngramPartnerForm = ({
           <p>
             Please provide a primary contact to be added to Honey, this person
             should be able to respond or route lead activities or sales
-            activities. Please provide name, email and phone number
+            activities. Please provide name, email and phone number.
           </p>
           <div className="name name-field">
             <label className="blue-label" htmlFor="firstName">
@@ -203,7 +203,7 @@ const IngramPartnerForm = ({
         </div>
         <div className="signature-block">
           <label htmlFor="signature-block">
-            Please provide a signature block for the same contact here (copy &
+            Please provide a signature block for the same contact here. (copy &
             paste)
           </label>
           <textarea
@@ -241,7 +241,7 @@ const IngramPartnerForm = ({
         <div className="industries margin-top-30">
           <p>
             What are the top 10 industries you sell to, starting with the most
-            important? (healthcare, construction, financial horizontal){" "}
+            important? (healthcare, construction, financial, horizontal){" "}
           </p>
           <div className="single-input margin-top-20">
             <label className="blue-label" htmlFor="industry-1">
@@ -366,7 +366,7 @@ const IngramPartnerForm = ({
         </div>
         <div className="company-size">
           <label htmlFor="company-size">
-            What employee size range do you sell to? (1-50,51-75, 100-250,
+            What employee size range do you sell to? (1-50, 51-75, 100-250,
             500-5000)
           </label>
           <input
@@ -379,8 +379,8 @@ const IngramPartnerForm = ({
         </div>
         <div className="sell-to">
           <label htmlFor="sell-to">
-            Which contacts do you prefer to sell to in prospect clients (CEO,
-            CIO, Directors, manager, etc.)
+            Which contacts do you prefer to sell to in prospect clients. (CEO,
+            CIO, Directors, Manager, etc.)
           </label>
           <input
             type="text"
