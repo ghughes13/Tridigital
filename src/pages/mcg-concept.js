@@ -14,7 +14,7 @@ const IndexPage = () => {
     document.querySelector(".mainHeader").innerHTML = `
       <nav class="brother-nav mainHeader navbar" role="navigation">
       <div class="left-logo">
-        <img class="logo" src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/09/Group-2428.png" alt="tridigital logo white">
+        <img class="logo" src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/09/Image-21.png" alt="tridigital logo white">
       </div>
       <div class="right-logos">
         <img class="logo" src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/09/Group-9151.png" alt="tridigital logo colored">
@@ -468,7 +468,7 @@ const IndexPage = () => {
               className="content-container column"
               xl={6}
               lg={5}
-              id="concept-1"
+              id="concept-2"
             >
               <img
                 className="img-width-100"
