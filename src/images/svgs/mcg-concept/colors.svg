@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="802" height="644" viewBox="0 0 802 644">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#56f1fa"/>
+      <stop offset="1" stop-color="#46c4ea"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f02d87"/>
+      <stop offset="1" stop-color="#bf046b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7f5cdd"/>
+      <stop offset="1" stop-color="#2935a9"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f6d436"/>
+      <stop offset="1" stop-color="#f7bb37"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_9709" data-name="Group 9709" transform="translate(-286 -8773)">
+    <g id="Group_9178" data-name="Group 9178" transform="translate(37 7960)">
+      <text id="_56F1FA" data-name="#56F1FA" transform="translate(260 1083)" fill="#2525e8" font-size="22" font-family="Nunito-Light, Nunito" font-weight="300"><tspan x="0" y="0">#56F1FA</tspan></text>
+      <text id="_56F1FA-2" data-name="#56F1FA" transform="translate(432 1083)" fill="#2525e8" font-size="22" font-family="Nunito-Light, Nunito" font-weight="300"><tspan x="0" y="0">#56F1FA</tspan></text>
+      <text id="_56F1FA-3" data-name="#56F1FA" transform="translate(604 1083)" fill="#2525e8" font-size="22" font-family="Nunito-Light, Nunito" font-weight="300"><tspan x="0" y="0">#56F1FA</tspan></text>
+      <text id="_56F1FA-4" data-name="#56F1FA" transform="translate(776 1083)" fill="#2525e8" font-size="22" font-family="Nunito-Light, Nunito" font-weight="300"><tspan x="0" y="0">#56F1FA</tspan></text>
+      <circle id="Ellipse_1997" data-name="Ellipse 1997" cx="57" cy="57" r="57" transform="translate(249 919)" fill="#56f1fa"/>
+      <circle id="Ellipse_1998" data-name="Ellipse 1998" cx="57" cy="57" r="57" transform="translate(421 919)" fill="#f02d87"/>
+      <circle id="Ellipse_1999" data-name="Ellipse 1999" cx="57" cy="57" r="57" transform="translate(593 919)" fill="#7f5cdd"/>
+      <g id="Group_9708" data-name="Group 9708">
+        <text id="_56F1FA-5" data-name="#56F1FA" transform="translate(948 1083)" fill="#2525e8" font-size="22" font-family="Nunito-Light, Nunito" font-weight="300"><tspan x="0" y="0">#56F1FA</tspan></text>
+        <circle id="Ellipse_2000" data-name="Ellipse 2000" cx="57" cy="57" r="57" transform="translate(937 919)" fill="#0a225e"/>
+      </g>
+      <circle id="Ellipse_2001" data-name="Ellipse 2001" cx="57" cy="57" r="57" transform="translate(765 919)" fill="#f6d436"/>
+    </g>
+    <g id="Group_9179" data-name="Group 9179" transform="translate(-17 5764)">
+      <text id="_56F1FA-6" data-name="#56F1FA" transform="translate(400 3614)" fill="#2525e8" font-size="22" font-family="Nunito-Light, Nunito" font-weight="300"><tspan x="0" y="0">#56F1FA</tspan></text>
+      <text id="_56F1FA-7" data-name="#56F1FA" transform="translate(572 3614)" fill="#2525e8" font-size="22" font-family="Nunito-Light, Nunito" font-weight="300"><tspan x="0" y="0">#56F1FA</tspan></text>
+      <text id="_56F1FA-8" data-name="#56F1FA" transform="translate(744 3614)" fill="#2525e8" font-size="22" font-family="Nunito-Light, Nunito" font-weight="300"><tspan x="0" y="0">#56F1FA</tspan></text>
+      <text id="_56F1FA-9" data-name="#56F1FA" transform="translate(916 3614)" fill="#2525e8" font-size="22" font-family="Nunito-Light, Nunito" font-weight="300"><tspan x="0" y="0">#56F1FA</tspan></text>
+      <circle id="Ellipse_2006" data-name="Ellipse 2006" cx="57" cy="57" r="57" transform="translate(389 3461)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_2007" data-name="Ellipse 2007" cx="57" cy="57" r="57" transform="translate(561 3461)" fill="url(#linear-gradient-2)"/>
+      <circle id="Ellipse_2008" data-name="Ellipse 2008" cx="57" cy="57" r="57" transform="translate(733 3461)" fill="url(#linear-gradient-3)"/>
+      <circle id="Ellipse_2009" data-name="Ellipse 2009" cx="57" cy="57" r="57" transform="translate(905 3461)" fill="url(#linear-gradient-4)"/>
+      <text id="_56F1FA-10" data-name="#56F1FA" transform="translate(400 3645)" fill="#2525e8" font-size="22" font-family="Nunito-Light, Nunito" font-weight="300"><tspan x="0" y="0">#56F1FA</tspan></text>
+      <text id="_56F1FA-11" data-name="#56F1FA" transform="translate(572 3645)" fill="#2525e8" font-size="22" font-family="Nunito-Light, Nunito" font-weight="300"><tspan x="0" y="0">#56F1FA</tspan></text>
+      <text id="_56F1FA-12" data-name="#56F1FA" transform="translate(744 3645)" fill="#2525e8" font-size="22" font-family="Nunito-Light, Nunito" font-weight="300"><tspan x="0" y="0">#56F1FA</tspan></text>
+      <text id="_56F1FA-13" data-name="#56F1FA" transform="translate(916 3645)" fill="#2525e8" font-size="22" font-family="Nunito-Light, Nunito" font-weight="300"><tspan x="0" y="0">#56F1FA</tspan></text>
+    </g>
+    <g id="Group_9180" data-name="Group 9180" transform="translate(4 5569)">
+      <g id="Group_9129" data-name="Group 9129" transform="translate(68 24)">
+        <text id="gradients" transform="translate(615 3586)" fill="#08205d" font-size="31" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="-87.916" y="0">GRADIENTS</tspan></text>
+      </g>
+      <g id="Group_9130" data-name="Group 9130" transform="translate(0 40)">
+        <line id="Line_1" data-name="Line 1" x1="205" transform="translate(368.5 3559.5)" fill="none" stroke="#707070" stroke-width="2"/>
+        <line id="Line_2" data-name="Line 2" x1="205" transform="translate(792.5 3559.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="Group_9181" data-name="Group 9181" transform="translate(4 5569)">
+      <text id="solids" transform="translate(683 3237)" fill="#08205d" font-size="31" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="-54.482" y="0">SOLIDS</tspan></text>
+      <g id="Group_9131" data-name="Group 9131" transform="translate(0 -331)">
+        <line id="Line_1-2" data-name="Line 1" x1="205" transform="translate(368.5 3559.5)" fill="none" stroke="#707070" stroke-width="2"/>
+        <line id="Line_2-2" data-name="Line 2" x1="205" transform="translate(792.5 3559.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

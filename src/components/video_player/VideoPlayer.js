@@ -9,18 +9,18 @@ export default class YourVideo extends React.Component {
   }
 
   componentDidMount() {
-    const script1 = document.createElement("script");
-    const script2 = document.createElement("script");
+    const script11 = document.createElement("script");
+    const script22 = document.createElement("script");
 
-    script1.src =
+    script11.src =
       "https://fast.wistia.com/embed/medias/" + this.state.hashStr + ".jsonp";
-    script1.async = true;
+    script11.async = true;
 
-    script2.src = "https://fast.wistia.com/assets/external/E-v1.js";
-    script2.async = true;
+    script22.src = "https://fast.wistia.com/assets/external/E-v1.js";
+    script22.async = true;
 
-    document.body.appendChild(script1);
-    document.body.appendChild(script2);
+    document.body.appendChild(script11);
+    document.body.appendChild(script22);
   }
 
   render() {

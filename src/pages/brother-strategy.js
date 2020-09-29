@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { graphql } from "gatsby";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-scroll";
 
