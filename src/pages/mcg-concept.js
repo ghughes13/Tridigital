@@ -410,7 +410,7 @@ const IndexPage = () => {
           </Row>
           <Row className="align-items-center centered-text max-width-1100 justify-center">
             <img
-              src={require("../images/mcg-concept/collateral-1 (2).png")}
+              src={require("../images/mcg-concept/collateral-1-2.png")}
               id="concept-1-img"
               className="full-img"
             />
