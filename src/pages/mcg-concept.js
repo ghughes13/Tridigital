@@ -6,7 +6,6 @@ import SEO from "../components/seo/Seo";
 import Layout from "../components/layout/Layout";
 import InlineVideo from "../components/wistia_inline_video_player/WistiaInlineVideoPlayer";
 import "../styles/mcg-concept.scss";
-import FullPageVideo from "../components/fullpage-video/FullPageVideo";
 
 const IndexPage = () => {
   useEffect(() => {

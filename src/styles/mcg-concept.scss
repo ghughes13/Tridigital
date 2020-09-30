@@ -83,6 +83,10 @@
       bottom: 0;
       background-repeat: no-repeat;
       background-position: center;
+
+      @media screen and (max-width: 767px) {
+        background-size: contain;
+      }
     }
 
     &::after {
@@ -117,6 +121,16 @@
       @media screen and (max-width: 1500px) {
         font-size: 80px;
       }
+
+      @media screen and (max-width: 767px) {
+        padding: 75px 0 0px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      padding-bottom: 0;
+
+      min-height: 500px;
     }
   }
 
@@ -390,6 +404,10 @@
       z-index: 999;
       background-size: contain;
       background-repeat: no-repeat;
+
+      @media screen and (max-width: 767px) {
+        z-index: -1;
+      }
     }
 
     &.second:before {
@@ -403,6 +421,10 @@
       z-index: 999;
       background-size: contain;
       background-repeat: no-repeat;
+
+      @media screen and (max-width: 767px) {
+        z-index: -1;
+      }
     }
 
     @media screen and (max-width: 767px) {
@@ -459,10 +481,18 @@
     z-index: 0;
     background-size: contain;
     background-repeat: no-repeat;
+
+    @media screen and (max-width: 767px) {
+      top: 5%;
+    }
   }
 
   .four-zero {
     padding-top: 280px;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 100px;
+    }
   }
 
   .four-zero:before {
@@ -476,10 +506,17 @@
     z-index: 0;
     background-size: contain;
     background-repeat: no-repeat;
+
+    @media screen and (max-width: 767px) {
+    }
   }
 
   .five-zero {
     padding-top: 280px;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 100px;
+    }
   }
 
   .five-zero:before {
@@ -606,7 +643,6 @@
       text-transform: uppercase;
       font-weight: 700;
       color: #233746;
-      // height: 85px;
 
       @media screen and (max-width: 1200px) {
         font-size: 26px;
