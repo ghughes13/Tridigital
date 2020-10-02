@@ -24,7 +24,7 @@ const VendorPartnerLP = () => {
                 src={require("../images/brother.png")}
                 alt="brother logo"
               />
-              <h1>PARTNER ENABLEMENT PROGRAM</h1>
+              <h1 className="brother-alt">PARTNER ENABLEMENT PROGRAM</h1>
               <Link
                 className="fortinet-ingram-btn inline-block"
                 to="vendor-lp"
