@@ -25,6 +25,7 @@
     "Warmup",
     "Citrix",
     "Cisco",
+    "Verizon",
   ];
 
   if (gravityForms) {
@@ -64,6 +65,9 @@
           }
           if (formCategory[k] == "Cisco") {
             listID = 11185;
+          }
+          if (formCategory[k] == "Verizon") {
+            listID = 11228;
           }
           var formSelector = currentForm.id;
           var formType = formCategory[k];
