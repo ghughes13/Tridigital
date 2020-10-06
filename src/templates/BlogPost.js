@@ -63,7 +63,7 @@ export default function BlogPost(qlData) {
           </div>
           <div className="meta">
             <div className="img">
-              <img src={post.author.avatar_urls.wordpress_24} alt="featured" />
+              <img src={post.author.avatar_urls.wordpress_96} alt="featured" />
             </div>
             <div className="meta-infos">
               <p>

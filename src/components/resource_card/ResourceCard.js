@@ -7,12 +7,6 @@ const ResourceCard = ({ colLength, post }) => {
 
   const category = post.categories[0].name.split(" ").join("-");
 
-  function createMarkup() {
-    return {
-      __html: post.excerpt,
-    };
-  }
-
   return (
     <div className={"card " + colLength + " " + category.toLowerCase()}>
       <div className="top-img">
@@ -23,7 +17,11 @@ const ResourceCard = ({ colLength, post }) => {
           <h3>{post.title}</h3>
         </a>
         <div className="excerpt">
-          <p dangerouslySetInnerHTML={createMarkup()} />
+          <div
+            dangerouslySetInnerHTML={{
+              __html: post.excerpt,
+            }}
+          />
         </div>
       </div>
     </div>
