@@ -55,6 +55,15 @@ module.exports = {
         hostingWPCOM: false,
         useACF: true,
         verboseOutput: false,
+        includedRoutes: [
+          "**/posts",
+          "**/media",
+          "**/categories",
+          "**/tags",
+          "**/taxonomies",
+          "**/users",
+        ],
+        excludedRoutes: ["**/pages"],
       },
     },
     // `gatsby-plugin-offline`, // To learn more, visit: https://gatsby.dev/offline // this (optional) plugin enables Progressive Web App + Offline functionality

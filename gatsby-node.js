@@ -26,7 +26,7 @@ exports.createPages = async ({ graphql, actions }) => {
             author {
               name
               avatar_urls {
-                wordpress_24
+                wordpress_96
               }
             }
           }
