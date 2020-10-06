@@ -1,0 +1,104 @@
+.reviewcard {
+  -webkit-box-shadow: 10px 13px 26px 0px rgba(74, 128, 255, 0.28);
+  -moz-box-shadow: 10px 13px 26px 0px rgba(74, 128, 255, 0.28);
+  box-shadow: 10px 13px 26px 0px rgba(74, 128, 255, 0.28);
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  bottom: -100vh;
+  transition-duration: 0.5s;
+
+  &.slide-up {
+    bottom: 0;
+  }
+
+  &.full {
+    display: flex;
+
+    .image {
+      display: flex;
+      flex-basis: 25%;
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .text {
+      flex-basis: 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 70px;
+      padding-top: 70px;
+      padding-bottom: 100px;
+      padding-right: 70px;
+      img {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      .image {
+        flex-basis: 100%;
+        img {
+          width: 100%;
+          max-height: 500px;
+          object-position: center 10%;
+        }
+      }
+    }
+  }
+
+  .text {
+    padding: 24px 30px;
+  }
+
+  h4 {
+    font-size: 30px;
+    color: #ff2c53;
+    margin-bottom: 10px;
+    position: relative;
+
+    &:after {
+      // content: url("../images/agencies/quote.png");
+      position: absolute;
+      right: 0;
+      top: -20px;
+    }
+
+    @media screen and (max-width: 1300px) {
+      &:after {
+        content: none;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      &:after {
+        // content: url("../images/agencies/quote.png");
+        z-index: -1;
+        right: -20px;
+        top: -40px;
+      }
+    }
+  }
+
+  h6 {
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #59486e;
+  }
+
+  p {
+    color: #59486e;
+    font-size: 20px;
+  }
+
+  img {
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+  }
+}

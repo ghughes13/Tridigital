@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../components/layout/Layout";
 import SEO from "../components/seo/Seo";
-import { Link } from "gatsby";
 import { Container, Row, Col } from "react-bootstrap";
 import axios from "axios";
 

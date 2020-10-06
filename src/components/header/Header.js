@@ -10,7 +10,6 @@ const Header = ({ siteTitle, opaque, headerVersion }) => {
     window.addEventListener("scroll", function() {
       if (!opaque) {
         if (window.scrollY === 0) {
-          console.log("running");
           document.querySelector("header").classList.remove("end-transparency");
         } else {
           document.querySelector("header").classList.add("end-transparency");

@@ -33,7 +33,6 @@ const IngramPartnerForm = ({
           body: new FormData(document.getElementById("vendor-lp")),
         })
           .then(res => {
-            console.log(res);
             if (res.status === 200) {
               document.querySelector("#vendor-lp").style.display = "none";
               document.querySelector(".contact-thank-you").style.display =
@@ -55,8 +54,6 @@ const IngramPartnerForm = ({
             loader.style.display = "none";
             document.getElementById("error-msg").style.display = "block";
             submitButton.style.display = "block";
-
-            console.log(error);
 
             axios.post(
               "https://www.tridigitalmarketing.com/.netlify/functions/errorCatcher",

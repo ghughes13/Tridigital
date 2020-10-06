@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { graphql } from "gatsby";
 import { Container, Row, Col } from "react-bootstrap";
 import { Waypoint } from "react-waypoint";
 import { Link } from "gatsby";
@@ -413,24 +412,5 @@ const IndexPage = () => {
     </Layout>
   );
 };
-
-export const query = graphql`
-  query HomePageQuery {
-    wordpressPage(wordpress_id: { eq: 2 }) {
-      acf {
-        hero_heading
-        hero_video_button_text
-        section_2_heading
-        section_2_content
-        section_3_heading
-        section_3_content
-        section_4_heading
-        section_4_content
-        section_5_heading
-        section_5_content
-      }
-    }
-  }
-`;
 
 export default IndexPage;

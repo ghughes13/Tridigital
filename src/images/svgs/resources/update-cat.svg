@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="207" height="83.5" viewBox="0 0 207 83.5">
+  <defs>
+    <filter id="Rectangle_619" x="0" y="0" width="207" height="83.5" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#7b5bfd" flood-opacity="0.22"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_7246" data-name="Group 7246" transform="translate(-780 -429)">
+    <g transform="matrix(1, 0, 0, 1, 780, 429)" filter="url(#Rectangle_619)">
+      <rect id="Rectangle_619-2" data-name="Rectangle 619" width="171" height="47.5" rx="23.75" transform="translate(18 15)" fill="#fff"/>
+    </g>
+    <text id="Updates" transform="translate(829 474)" fill="#c9cbd9" font-size="18" font-family="Nunito-ExtraBold, Nunito" font-weight="800"><tspan x="0" y="0">Updates</tspan></text>
+    <g id="Group_3439" data-name="Group 3439" transform="translate(-30)">
+      <circle id="Ellipse_1991" data-name="Ellipse 1991" cx="24" cy="24" r="24" transform="translate(951 444)" fill="#fcac18"/>
+      <path id="Path_9069" data-name="Path 9069" d="M386.2,583.161l-8.514-.41-3.021-7.945c-.45-1.183-1.179-1.183-1.629,0l-3.021,7.945-8.514.41c-1.267.061-1.492.752-.5,1.544l6.646,5.32-2.24,8.2c-.334,1.22.257,1.648,1.317.955l7.129-4.657,7.129,4.657c1.061.693,1.651.266,1.318-.955l-2.24-8.2,6.646-5.32C387.693,583.913,387.467,583.222,386.2,583.161Z" transform="translate(601.267 -118.749)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

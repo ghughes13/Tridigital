@@ -30,10 +30,10 @@ const AboutUs = () => {
             {/* -- DO NOT USE GATSBY'S Link HERE --*/}
             {/* Changing the a tags to privacy policy, sitemap, or footer to gatsby's Link component breaks the header transparency fix   */}
             <li>
-              <a to="/terms-of-service">Terms Of Service</a>
+              <a href="/terms-of-service">Terms Of Service</a>
             </li>
             <li>
-              <a to="/privacy-policy">Privacy Policy</a>
+              <a href="/privacy-policy">Privacy Policy</a>
             </li>
           </ul>
         </Container>

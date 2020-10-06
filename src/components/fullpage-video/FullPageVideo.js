@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 
 const FullPageVideo = ({ videoID }) => {
-  console.log(videoID);
   useEffect(() => {
     const script1 = document.createElement("script");
     const script2 = document.createElement("script");

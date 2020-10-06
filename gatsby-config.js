@@ -50,7 +50,7 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        baseUrl: "tdgatsbytest.wpengine.com",
+        baseUrl: "warmup.tridigitalmarketing.com",
         protocol: "http",
         hostingWPCOM: false,
         useACF: true,

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="207" height="83.5" viewBox="0 0 207 83.5">
+  <defs>
+    <filter id="Rectangle_619" x="0" y="0" width="207" height="83.5" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#7b5bfd" flood-opacity="0.22"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_7236" data-name="Group 7236" transform="translate(-780 -429)">
+    <g transform="matrix(1, 0, 0, 1, 780, 429)" filter="url(#Rectangle_619)">
+      <rect id="Rectangle_619-2" data-name="Rectangle 619" width="171" height="47.5" rx="23.75" transform="translate(18 15)" fill="#fff"/>
+    </g>
+    <text id="Blogs" transform="translate(842 474)" fill="#c9cbd9" font-size="18" font-family="Nunito-ExtraBold, Nunito" font-weight="800"><tspan x="0" y="0">Blogs</tspan></text>
+    <g id="Group_3439" data-name="Group 3439" transform="translate(-30)">
+      <circle id="Ellipse_1991" data-name="Ellipse 1991" cx="24" cy="24" r="24" transform="translate(951 444)" fill="#0092fb"/>
+      <g id="Group_7244" data-name="Group 7244" transform="translate(966.212 453.202)">
+        <path id="Union_30" data-name="Union 30" d="M8.522,29.273a.821.821,0,0,1-.742-.808c-.013-.631.742-.808.742-.808,3.913.442,4.563.3,5.929-2.021C16.5,21.216,20.382,22,20.382,22c-4.547.265-4.818,3.234-4.818,3.234A5.664,5.664,0,0,1,9.7,29.361,7.048,7.048,0,0,1,8.522,29.273ZM9.654,12.807a2.393,2.393,0,0,0,1.522-2.289A2.335,2.335,0,0,0,8.946,8.1a2.327,2.327,0,0,0-2.231,2.422,2.392,2.392,0,0,0,1.464,2.266V26.212L0,12.531,4.821,4.043h8.154l4.808,8.488L9.654,26.261ZM5.516,2.847A1.059,1.059,0,0,1,4.457,1.789V1.061A1.06,1.06,0,0,1,5.516,0h6.749a1.06,1.06,0,0,1,1.059,1.061v.728a1.058,1.058,0,0,1-1.059,1.059Z" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

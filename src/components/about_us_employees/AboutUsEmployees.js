@@ -35,7 +35,6 @@ export default function EmployeeInfo() {
     if (window.innerWidth > 1350) {
       let rowUno = [];
       let rowDos = [];
-      console.log(employees);
       for (let i = 0; i < employees.length; i++) {
         if (i < employees.length / 2) {
           rowUno.push(employees[i]);
@@ -67,7 +66,6 @@ export default function EmployeeInfo() {
       setRow3([...rowTres]);
       setSizeOfWindow("small");
     } else {
-      console.log("mobile");
       setSizeOfWindow("mobile");
     }
   }
@@ -179,7 +177,6 @@ export default function EmployeeInfo() {
 
   const SizeToRender = () => {
     if (sizeOfWindow === "desktop") {
-      console.log("building desktop");
       //HTML FOR DESKTOP
       return (
         <div>
@@ -255,7 +252,6 @@ export default function EmployeeInfo() {
       );
     } else if (sizeOfWindow === "small") {
       //HTML FOR SMALL(TABLET)
-      console.log("building small");
       return (
         <div>
           <Container className="hero-section container blue-background">
@@ -352,7 +348,6 @@ export default function EmployeeInfo() {
         </div>
       );
     } else {
-      console.log("building mobile");
       //HTML FOR MOBILE
       return (
         <div>

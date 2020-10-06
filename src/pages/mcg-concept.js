@@ -40,7 +40,10 @@ const IndexPage = () => {
               xl={2}
               lg={12}
             >
-              <img src={require("../images/svgs/mcg-concept/Group 9149.svg")} />
+              <img
+                src={require("../images/svgs/mcg-concept/Group 9149.svg")}
+                alt=""
+              />
             </Col>
             <Col
               className="content-container column step-text-block"
@@ -60,14 +63,20 @@ const IndexPage = () => {
               </p>
             </Col>
             <Col className="content-container column flex-center" xl={6} lg={6}>
-              <img src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/05/Group-9122-1.png" />
+              <img
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2020/05/Group-9122-1.png"
+                alt=""
+              />
             </Col>
           </Row>
         </Container>
         <Container className="container flexed">
           <Row className="align-items-center step-row">
             <Col className="content-container column" xl={4} lg={6}>
-              <img src={require("../images/mcg-concept/Group 9708.png")} />
+              <img
+                src={require("../images/mcg-concept/Group 9708.png")}
+                alt=""
+              />
             </Col>
             <Col
               className="content-container column step-text-block"
@@ -91,7 +100,10 @@ const IndexPage = () => {
               xl={3}
               lg={12}
             >
-              <img src={require("../images/svgs/mcg-concept/Group 9148.svg")} />
+              <img
+                src={require("../images/svgs/mcg-concept/Group 9148.svg")}
+                alt=""
+              />
             </Col>
           </Row>
         </Container>
@@ -102,7 +114,10 @@ const IndexPage = () => {
               xl={2}
               lg={12}
             >
-              <img src={require("../images/svgs/mcg-concept/Group 9150.svg")} />
+              <img
+                src={require("../images/svgs/mcg-concept/Group 9150.svg")}
+                alt=""
+              />
             </Col>
             <Col
               className="content-container column step-text-block"
@@ -125,7 +140,10 @@ const IndexPage = () => {
               </p>
             </Col>
             <Col className="content-container column flex-center" xl={6} lg={6}>
-              <img src={require("../images/mcg-concept/Group 9146.png")} />
+              <img
+                src={require("../images/mcg-concept/Group 9146.png")}
+                alt=""
+              />
             </Col>
           </Row>
         </Container>
@@ -138,6 +156,7 @@ const IndexPage = () => {
               <img
                 className="centered-text"
                 src={require("../images/mcg-concept/Group 9709.png")}
+                alt=""
               />
             </Col>
           </Row>
@@ -164,6 +183,7 @@ const IndexPage = () => {
             <img
               className="centered-text"
               src={require("../images/svgs/mcg-concept/logo-concept-1.svg")}
+              alt=""
             />
           </Row>
         </Container>
@@ -173,6 +193,7 @@ const IndexPage = () => {
               <img
                 className="centered-text"
                 src={require("../images/mcg-concept/Group 9711.png")}
+                alt=""
               />
             </Col>
           </Row>
@@ -199,6 +220,7 @@ const IndexPage = () => {
             <img
               className="centered-text"
               src={require("../images/svgs/mcg-concept/Group 9709.svg")}
+              alt=""
             />
           </Row>
         </Container>
@@ -217,6 +239,7 @@ const IndexPage = () => {
             <img
               className="centered-text"
               src={require("../images/svgs/mcg-concept/colors.svg")}
+              alt=""
             />
           </Row>
         </Container>
@@ -267,7 +290,10 @@ const IndexPage = () => {
               lg={6}
             >
               {" "}
-              <img src={require("../images/mcg-concept/Group 9410.png")} />
+              <img
+                src={require("../images/mcg-concept/Group 9410.png")}
+                alt=""
+              />
             </Col>{" "}
             <Col
               className="content-container column centered-text"
@@ -275,7 +301,10 @@ const IndexPage = () => {
               lg={6}
             >
               {" "}
-              <img src={require("../images/mcg-concept/Group 9706.png")} />
+              <img
+                src={require("../images/mcg-concept/Group 9706.png")}
+                alt=""
+              />
             </Col>
           </Row>
         </Container>
@@ -285,6 +314,7 @@ const IndexPage = () => {
               <img
                 className="centered-text"
                 src={require("../images/mcg-concept/options.png")}
+                alt=""
               />
             </Col>
           </Row>
@@ -296,7 +326,10 @@ const IndexPage = () => {
           <Row className="align-items-center ">
             <Col className="content-container column card-container">
               <div className="card">
-                <img src={require("../images/mcg-concept/concept-1.png")} />
+                <img
+                  src={require("../images/mcg-concept/concept-1.png")}
+                  alt=""
+                />
                 <p>Concept 1</p>
                 <h3>“RISe again stronger with a ALL-IN-ONE tech partner”</h3>
                 <Link
@@ -313,7 +346,10 @@ const IndexPage = () => {
             </Col>
             <Col className="content-container column">
               <div className="card">
-                <img src={require("../images/mcg-concept/concept-2.png")} />
+                <img
+                  src={require("../images/mcg-concept/concept-2.png")}
+                  alt=""
+                />
                 <p>Concept 2</p>
                 <h3>“ORGANIZING THE CHAOS of complex technology”</h3>
                 <Link
@@ -336,6 +372,7 @@ const IndexPage = () => {
               <img
                 className="centered-text"
                 src={require("../images/mcg-concept/concept-1-main.png")}
+                alt=""
               />
             </Col>
           </Row>
@@ -351,6 +388,7 @@ const IndexPage = () => {
               <img
                 className="img-width-100"
                 src={require("../images/mcg-concept/Michell_Isometric_Concept_1 copy.png")}
+                alt=""
               />
             </Col>
             <Col className="content-container column" xl={5}>
@@ -379,6 +417,7 @@ const IndexPage = () => {
               src={require("../images/mcg-concept/concept-1-site.png")}
               id="concept-1-img"
               className="box-shadow margin-top-100"
+              alt=""
             />
           </Row>
         </Container>
@@ -412,6 +451,7 @@ const IndexPage = () => {
               src={require("../images/mcg-concept/collateral-1-2.png")}
               id="concept-1-img"
               className="full-img"
+              alt=""
             />
           </Row>
         </Container>
@@ -424,6 +464,7 @@ const IndexPage = () => {
               src={require("../images/mcg-concept/shirts.png")}
               id="concept-1-img"
               className="full-img"
+              alt=""
             />
           </Row>
           <Row className="align-items-center centered-text max-width-1100 justify-center margin-top-neg-20">
@@ -431,6 +472,7 @@ const IndexPage = () => {
               src={require("../images/mcg-concept/cups.png")}
               id="concept-1-img"
               className="full-img"
+              alt=""
             />
           </Row>
           <Row className="align-items-center centered-text max-width-1100 justify-center">
@@ -438,6 +480,7 @@ const IndexPage = () => {
               src={require("../images/mcg-concept/swag.png")}
               id="concept-1-img"
               className="full-img"
+              alt=""
             />
           </Row>
           <Row className="align-items-center centered-text max-width-1100 justify-center">
@@ -445,6 +488,7 @@ const IndexPage = () => {
               src={require("../images/mcg-concept/stationary.png")}
               id="concept-1-img"
               className="full-img"
+              alt=""
             />
           </Row>
         </Container>
@@ -457,6 +501,7 @@ const IndexPage = () => {
               <img
                 className="centered-text"
                 src={require("../images/mcg-concept/concept-2-main.png")}
+                alt=""
               />
             </Col>
           </Row>
@@ -472,6 +517,7 @@ const IndexPage = () => {
               <img
                 className="img-width-100"
                 src={require("../images/mcg-concept/Michell_Isometric_Concept_2.png")}
+                alt=""
               />
             </Col>
             <Col className="content-container column" xl={5}>
@@ -499,6 +545,7 @@ const IndexPage = () => {
               src={require("../images/mcg-concept/concept-2-site.png")}
               id="concept-1-img"
               className="box-shadow margin-top-100"
+              alt=""
             />
           </Row>
         </Container>
@@ -531,6 +578,7 @@ const IndexPage = () => {
               src={require("../images/mcg-concept/collats.png")}
               id="concept-1-img"
               className="full-img"
+              alt=""
             />
           </Row>
         </Container>
@@ -543,6 +591,7 @@ const IndexPage = () => {
               src={require("../images/mcg-concept/shirts-2.png")}
               id="concept-1-img"
               className="full-img"
+              alt=""
             />
           </Row>
           <Row className="align-items-center centered-text max-width-1100 justify-center margin-top-neg-20">
@@ -550,6 +599,7 @@ const IndexPage = () => {
               src={require("../images/mcg-concept/cups-2.png")}
               id="concept-1-img"
               className="full-img"
+              alt=""
             />
           </Row>
           <Row className="align-items-center centered-text max-width-1100 justify-center">
@@ -557,6 +607,7 @@ const IndexPage = () => {
               src={require("../images/mcg-concept/swag-2.png")}
               id="concept-1-img"
               className="full-img"
+              alt=""
             />
           </Row>
           <Row className="align-items-center centered-text max-width-1100 justify-center">
@@ -564,6 +615,7 @@ const IndexPage = () => {
               src={require("../images/mcg-concept/stationary-2.png")}
               id="concept-1-img"
               className="full-img"
+              alt=""
             />
           </Row>
         </Container>

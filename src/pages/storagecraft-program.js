@@ -128,7 +128,6 @@ const VendorPartnerLP = () => {
                   body: new FormData(document.getElementById("vendor-lp")),
                 })
                   .then(res => {
-                    console.log(res);
                     if (res.status === 200) {
                       document.querySelector("#vendor-lp").style.display =
                         "none";
