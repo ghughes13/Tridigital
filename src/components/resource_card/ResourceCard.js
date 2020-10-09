@@ -7,6 +7,8 @@ const ResourceCard = ({ colLength, post }) => {
 
   const category = post.categories[0].name.split(" ").join("-");
 
+  console.log(post.title)
+  
   return (
     <div className={"card " + colLength + " " + category.toLowerCase()}>
       <div className="top-img">
