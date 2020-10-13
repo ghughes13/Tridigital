@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="171" height="48" viewBox="0 0 171 48">
+  <g id="Group_7247" data-name="Group 7247" transform="translate(-798 -444)">
+    <g id="Rectangle_619" data-name="Rectangle 619" transform="translate(798 444)" fill="#fff" stroke="#e6dcf0" stroke-width="2">
+      <rect width="171" height="47.5" rx="23.75" stroke="none"/>
+      <rect x="1" y="1" width="169" height="45.5" rx="22.75" fill="none"/>
+    </g>
+    <text id="Video" transform="translate(842 474)" fill="#877d88" font-size="18" font-family="Nunito-ExtraBold, Nunito" font-weight="800"><tspan x="0" y="0">Video</tspan></text>
+    <g id="Group_3439" data-name="Group 3439" transform="translate(-30)">
+      <circle id="Ellipse_1991" data-name="Ellipse 1991" cx="24" cy="24" r="24" transform="translate(951 444)" fill="#ff64a7"/>
+      <g id="Group_7251" data-name="Group 7251" transform="translate(960.758 460.564)">
+        <path id="Path_2972" data-name="Path 2972" d="M95.39,270.18H75.709a2.051,2.051,0,0,0-2.049,2.049v10.679a2.051,2.051,0,0,0,2.049,2.049H95.39a2.051,2.051,0,0,0,2.049-2.049V272.229A2.051,2.051,0,0,0,95.39,270.18ZM89.02,278l-5.091,3.489a.525.525,0,0,1-.82-.435v-6.978a.525.525,0,0,1,.82-.435l5.091,3.489A.522.522,0,0,1,89.02,278Z" transform="translate(-73.66 -270.18)" fill="#fff"/>
+        <path id="Path_2973" data-name="Path 2973" d="M93.809,274.452l3.846-2.952a1.414,1.414,0,0,1,2.275,1.121v6.015a1.414,1.414,0,0,1-2.295,1.106l-3.846-3.063A1.414,1.414,0,0,1,93.809,274.452Z" transform="translate(-68.924 -269.932)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

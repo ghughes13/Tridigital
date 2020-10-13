@@ -31,6 +31,12 @@
     margin-top: 50px;
   }
 
+  p {
+    font-size: 18px;
+    margin-bottom: 2rem;
+    color: #466777;
+  }
+
   .main-content {
     max-width: 1000px;
     margin: auto;
@@ -75,10 +81,13 @@
         height: 150px;
         border-radius: 100px;
         width: 150px;
-        left: -23px;
+        left: -25px;
         top: -25px;
         position: absolute;
         z-index: -1;
+        -webkit-box-shadow: 0px 3px 6px 0px rgba(74, 128, 255, 0.22);
+        -moz-box-shadow: 0px 3px 6px 0px rgba(74, 128, 255, 0.22);
+        box-shadow: 0px 3px 6px 0px rgba(74, 128, 255, 0.22);
       }
     }
 
@@ -130,11 +139,12 @@
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 35px;
     margin-top: 50px;
     margin-bottom: 25px;
     color: #0040ed;
     text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
   }
 
   h3 {
@@ -156,19 +166,37 @@
     cursor: pointer;
   }
   .meta-infos .blog:after {
-    content: url("../images/svgs/resources/blog-cat.svg");
+    content: url("../images/svgs/indv-blogs/blog.svg");
     position: absolute;
-    right: -17px;
-    top: -10px;
+    right: 3px;
+    top: 10px;
     z-index: 999;
     overflow: visible;
   }
 
   .meta-infos .service-updates:after {
-    content: url("../images/svgs/resources/update-cat.svg");
+    content: url("../images/svgs/indv-blogs/updates.svg");
     position: absolute;
-    right: -17px;
-    top: -10px;
+    right: 3px;
+    top: 10px;
+    z-index: 999;
+    overflow: visible;
+  }
+
+  .meta-infos .guides:after {
+    content: url("../images/svgs/indv-blogs/guides.svg");
+    position: absolute;
+    right: 3px;
+    top: 10px;
+    z-index: 999;
+    overflow: visible;
+  }
+
+  .meta-infos .videos:after {
+    content: url("../images/svgs/indv-blogs/videos.svg");
+    position: absolute;
+    right: 3px;
+    top: 10px;
     z-index: 999;
     overflow: visible;
   }
@@ -202,7 +230,7 @@
     border-radius: 85px 85px 0 0;
     width: 120%;
     margin-left: -10%;
-    padding: 0 50px 150px;
+    padding: 0 88px 150px;
     margin-bottom: -25px;
   }
 

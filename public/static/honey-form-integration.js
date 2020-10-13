@@ -26,6 +26,7 @@
     "Citrix",
     "Cisco",
     "Verizon",
+    'Veeam'
   ];
 
   if (gravityForms) {
@@ -68,6 +69,9 @@
           }
           if (formCategory[k] == "Verizon") {
             listID = 11228;
+          }
+          if (formCategory[k] == "Veeam") {
+            listID = 11332;
           }
           var formSelector = currentForm.id;
           var formType = formCategory[k];
