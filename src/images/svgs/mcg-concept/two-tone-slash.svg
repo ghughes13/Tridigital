@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1368.532" height="385.684" viewBox="0 0 1368.532 385.684">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f3ceb3"/>
+      <stop offset="0" stop-color="#fcc12f"/>
+      <stop offset="0.319" stop-color="#c89e38"/>
+      <stop offset="0.68" stop-color="#a3731f"/>
+      <stop offset="1" stop-color="#7f531b"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_9198" data-name="Group 9198" transform="translate(0.4 -4955.601)">
+    <path id="Union_1" data-name="Union 1" d="M.4,2.111H9.731L0,0H1368.531V2.111h0V385.684Z" transform="translate(-0.4 4955.601)" fill="#0a225e"/>
+    <path id="Union_2" data-name="Union 2" d="M0,0H1368.531V200.136Z" transform="translate(-0.4 4955.601)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
