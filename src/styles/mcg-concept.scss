@@ -837,6 +837,10 @@
       flex-basis: 100%;
     }
 
+    .step-row > div {
+      display: block;
+    }
+
     svg {
       margin: auto;
     }
