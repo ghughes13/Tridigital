@@ -1514,16 +1514,13 @@ const IndexPage = () => {
                   </g>
                 </g>
               </svg>
-              <h3 className="white-text">HOMPAGE</h3>
+              <h3 className="white-text">HOMEPAGE</h3>
               <p>
-                The strategy for this concept also shows the personality of
-                Dedicated IT, but is slightly more on the "safe" side. Our
-                approach is to be prescriptive. Those in the medical/healthcare
-                industry will recognize the flow and language of this page
-                because it follows the agenda of a medical professional treating
-                a patient and how technology can follow that same sort of
-                script. The tons is more helpful and understanding with some
-                emotional appeals throughout.
+                The strategy for this concept is to be helpful and show how
+                Dedicated IT can craft custom technology solutions that makes
+                businesses more efficient. Forward thinking and proactive action
+                words are used throughout to gain the interest of the reader and
+                make them think about the current state of their technology.
               </p>
             </Col>
             <Col
