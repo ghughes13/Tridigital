@@ -535,7 +535,7 @@ const IndexPage = () => {
                   src={require("../images/dic/Group 9133.png")}
                 />
                 <p>Concept 2</p>
-                <h3>Life-saving technology is the key to modern medicine</h3>
+                <h3>We build IT Just for you</h3>
                 <Link
                   href="#concept-2"
                   className="blue-btn"
@@ -844,13 +844,11 @@ const IndexPage = () => {
                 Keeping up with technology isn’t a suggestion
               </h3>
               <p>
-                The strategy of this concept is to portray the quirky, somewhat
-                humorous personality of Dedicated IT while still remaining
-                professional. We want the audience to understand what kind of
-                organization Dedicated IT is right off the bat. Dedicated IT
-                isn’t the right fit for every organization. Some initiatives may
-                ruffle some feathers. Not a “vanilla” or one-size-fits-all
-                approach.
+                Old technology just isn't our thing. We've found that the only
+                way to keep up with the growing times and needs of the masses is
+                to be in tune with what's easiest and also most efficient.
+                Goodbye to difficult processes, little direction, and ancient
+                machines.
               </p>
             </Col>
           </Row>
@@ -920,11 +918,13 @@ const IndexPage = () => {
               </svg>
               <h3 className="purple-text">HOMEPAGE</h3>
               <p>
-                This version of the website will be designed and written more
-                for a typical business use-case. Animations will be used to
-                emulate threat identification in an office setting, and the goal
-                is too. Colors and imagery will be use to reflect modern,
-                corporate and youthful message.
+                The strategy of this concept is to portray the quirky, somewhat
+                humorous personality of Dedicated IT while still remaining
+                professional. We want the audience to understand what kind of
+                organization Dedicated IT is right off the bat. Dedicated IT
+                isn’t the right fit for every organization. Some initiatives may
+                ruffle some feathers. Not a “vanilla” or one-size-fits-all
+                approach.
               </p>
             </Col>{" "}
             <Col
@@ -1018,10 +1018,9 @@ const IndexPage = () => {
 
               <h3 className="uppercase">Whitepapers</h3>
               <p>
-                Whitepapers will be simply designed and use professional, but
-                conversational headers to elicit interest. The goal is for them
-                to be easy to read and navigate, with clearly organized
-                information.
+                Whitepapers will be simply designed and used professionally, but
+                still conversational. Elicit headlines will be used to grab
+                attention and portray thoughts leading the user to read more.
               </p>
             </Col>
           </Row>
@@ -1054,10 +1053,10 @@ const IndexPage = () => {
               </svg>
               <h3 className="">EMAILS</h3>
               <p>
-                The emails for this concept will be oriented around education
-                and business benefits. The copy will get attention using
-                colloquialisms and relating them to positive business outcomes
-                or risk education.
+                For this concept, the emails will be used to be both thought
+                based and provoking. Making the readers question their current
+                IT and technology needs while also leading to why Dedicated IT
+                is a different, yet refreshing choice.
               </p>
             </Col>
             <Col className="content-container column f-o-0-m" xl={5}>
@@ -1438,9 +1437,7 @@ const IndexPage = () => {
               />
             </Col>
             <Col className="content-container column step-text-block" xl={4}>
-              <h3 className="">
-                Life-saving technology is the key to modern medicine
-              </h3>
+              <h3 className="">We build IT Just for you</h3>
               <p>
                 The strategy for this concept also shows the personality of
                 Dedicated IT, but is slightly more on the “safe” side. Our
@@ -1519,11 +1516,14 @@ const IndexPage = () => {
               </svg>
               <h3 className="white-text">HOMPAGE</h3>
               <p>
-                This version of the website will be designed and written more
-                for a more focused target/industrie. Animations will be used to
-                emulate threat identification in an office setting, and the goal
-                is too. Colors and imagery will be use to reflect modern,
-                corporate and youthful message.
+                The strategy for this concept also shows the personality of
+                Dedicated IT, but is slightly more on the "safe" side. Our
+                approach is to be prescriptive. Those in the medical/healthcare
+                industry will recognize the flow and language of this page
+                because it follows the agenda of a medical professional treating
+                a patient and how technology can follow that same sort of
+                script. The tons is more helpful and understanding with some
+                emotional appeals throughout.
               </p>
             </Col>
             <Col
@@ -1610,10 +1610,9 @@ const IndexPage = () => {
 
               <h3 className="">WHITEPAPER</h3>
               <p>
-                With this concept, the design of whitepapers can be a bit more
-                flowery and pleasant to look at. We may lose some of the
-                utilitarian effects of concept one, but we will create a more
-                pleasurable visual experience.
+                With this concept, the design and content of the whitepapers
+                will be more of a guide. Using imagery and charts as applicable
+                to be used as a visual experience.
               </p>
             </Col>
           </Row>
