@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="210" height="71.372" viewBox="0 0 210 71.372">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f4f4fc"/>
+      <stop offset="0.467" stop-color="#f5f5fc"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_7413" data-name="Group 7413" transform="translate(-358.048 -4956.628)">
+    <rect id="Rectangle_25711" data-name="Rectangle 25711" width="201" height="37" transform="translate(362.092 4991)" fill="url(#linear-gradient)"/>
+    <g id="Group_7412" data-name="Group 7412" transform="translate(365.092 4956.628)">
+      <text id="Drop_files_here_or" data-name="Drop files here or" fill="#f8f9ff" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="38.973" y="15">Drop files here or</tspan></text>
+      <text id="Select_files" data-name="Select files" transform="translate(-7.045 43)" fill="#0092fb" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-36.918" y="15">Select files</tspan></text>
+    </g>
+  </g>
+</svg>

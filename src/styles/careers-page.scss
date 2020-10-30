@@ -1,0 +1,248 @@
+.careers-page {
+  .hero-section {
+    background: url("../images/careers/Group 7411.png") no-repeat center;
+    background-size: cover;
+
+    h1 {
+      font-size: 91px;
+    }
+  }
+
+  h2 {
+    color: #0040ed;
+    margin-top: 0;
+    font-size: 90px;
+    margin-bottom: 25px;
+
+    @media screen and (max-width: 1400px) {
+      font-size: 50px;
+    }
+  }
+
+  h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    &.large-h3 {
+      font-size: 34px;
+    }
+  }
+
+  h4 {
+    font-size: 25px;
+  }
+
+  p {
+    color: #466777;
+  }
+
+  .tealish-text {
+    color: #1cf0bf;
+  }
+
+  .white-text {
+    color: white;
+  }
+
+  .max-width-820 {
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .max-width-450 {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .margin-top-25 {
+    margin-top: 25px;
+  }
+
+  .form-section {
+    padding-top: 250px;
+    .row {
+      max-width: 60%;
+      min-width: 700px;
+
+      @media screen and (max-width: 767px) {
+        min-width: 300px;
+      }
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .looking-for {
+    padding-top: 75px;
+    padding-bottom: 100px;
+
+    @media screen and (max-width: 767px) {
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .about-you {
+    padding-top: 150px;
+    padding-bottom: 160px;
+
+    @media screen and (max-width: 767px) {
+      .margin-top-25.row {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .top-img {
+    margin-bottom: 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .lower-row {
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 49%;
+    }
+  }
+
+  video {
+    max-width: 75%;
+  }
+
+  .video-col {
+    max-width: 75%;
+  }
+
+  .blueish-section {
+    background: #0092fb;
+
+    .large-number {
+      font-size: 180px;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      line-height: 180px;
+    }
+  }
+
+  .clip-path-1 {
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+  }
+
+  .clip-path-2 {
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .white-swish {
+    &:before {
+      content: "";
+      background: url("../images/svgs/careers/white-sway.svg") no-repeat top;
+      background-size: cover;
+      position: absolute;
+      z-index: 0;
+      width: 120vw;
+      height: 200px;
+      top: -190px;
+      left: 0;
+      min-width: 2256px;
+    }
+  }
+
+  form {
+    width: 100%;
+
+    label {
+      color: white;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+
+    input {
+      width: 100%;
+      border: none;
+      height: 45px;
+      padding-left: 10px;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .file-upload {
+      position: absolute;
+      left: -99999rem;
+    }
+
+    .custom-file-upload {
+      background: rgba(225, 225, 225, 0.23);
+      width: 100%;
+      text-align: center;
+      border: 1px dashed #ccc;
+      display: inline-block;
+      padding: 75px 12px;
+      cursor: pointer;
+
+      .pointer-events-none {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        background: white;
+        border: none;
+        color: #0092fb;
+        font-family: "Poppins", sans-serif;
+        width: 200px;
+        padding: 5px;
+        pointer-events: none;
+      }
+
+      #fileUploadedName {
+        color: white;
+        margin-top: 10px;
+        margin-bottom: -20px;
+      }
+    }
+
+    #error-msg {
+      color: #fff;
+      font-weight: bold;
+      margin-top: 25px;
+      padding: 10px 25px;
+      background: rgba(225, 225, 225, 0.23);
+      display: none;
+    }
+  }
+
+  .contact-thank-you {
+    color: white;
+    background: rgba(225, 225, 225, 0.23);
+    padding: 25px 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn.pink-button {
+    text-align: center;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+    width: 230px;
+    display: block;
+    padding: 8px 50px 8px;
+    margin-top: 40px;
+    font-family: "Poppins";
+    transition: all 0.3s ease-in-out;
+    box-shadow: #ff3975 0 0px 0px 50px inset;
+    border: none;
+    background: transparent;
+    margin-left: auto;
+  }
+}
