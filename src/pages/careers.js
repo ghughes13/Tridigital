@@ -45,13 +45,20 @@ const CareersPage = () => {
               </p>
             </Col>
             <Col className="">
+            <Waypoint
+                onEnter={() => {
+                  document.querySelector('.img-one').classList.add('pop-up');
+                  document.querySelector('.img-two').classList.add('pop-up');
+                  document.querySelector('.img-three').classList.add('pop-up');
+                }}
+              />
               <div className="top-img">
-                <img src={require("../images/careers/TD Halloween 2016.png")} />
+                <img className="img-one anim-img" src={require("../images/careers/TD Halloween 2016.png")} />
               </div>
               <div className="lower-row flex-row">
-                <img src={require("../images/careers/DSC04480.png")} />
+                <img className="img-two anim-img" src={require("../images/careers/DSC04480.png")} />
                 <img
-                  src={require("../images/careers/52183961_2204087216510737_5235315106437363317_n.png")}
+                  className="img-three anim-img" src={require("../images/careers/52183961_2204087216510737_5235315106437363317_n.png")}
                 />
               </div>
             </Col>
