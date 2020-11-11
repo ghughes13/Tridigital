@@ -260,7 +260,7 @@ const CareersPage = () => {
                 id="careers-page"
                 className="careers-page"
                 method="POST"
-                name="careers-page"
+                name="art-director"
                 action="/careers/#thanks"
                 onSubmit={e => {
                   e.preventDefault();
