@@ -892,6 +892,13 @@ a.navbar-item:focus-within {
   background: transparent;
 }
 
+header.white-hero {
+  background: transparent;
+  &.end-transparency {
+    background: white;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .mainheader .navigation-container ul {
     margin-bottom: 0px;

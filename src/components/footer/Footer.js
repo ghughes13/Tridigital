@@ -148,7 +148,8 @@ const Footer = () => (
       {/* -- DO NOT USE GATSBY'S Link HERE --*/}
       {/* Changing the a tags to privacy policy, sitemap, or footer to gatsby's Link component breaks the header transparency fix   */}
       <p>
-        © 2020 - TRIdigital | <a href="/terms-of-service">Terms of Service</a> |{" "}
+        © 2020 - TRIdigital | <a href="/careers">Careers</a> |{" "}
+        <a href="/terms-of-service">Terms of Service</a> |{" "}
         <a href="/privacy-policy">Privacy Policy</a>
       </p>
       <p>

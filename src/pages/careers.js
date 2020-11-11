@@ -11,6 +11,16 @@ import "../styles/careers-page.scss";
 
 const CareersPage = () => {
   const changeFileName = () => {
+    const uploadField = document.getElementById("file");
+
+    console.log(uploadField.files[0].size);
+    if (uploadField.files[0].size > 52428800) {
+      alert(
+        "File is too big! Max resume size is 50MB. Try compressing your video or resume."
+      );
+      uploadField.value = "";
+    }
+
     const selectedFile = document.getElementById("file").value;
     console.log(selectedFile);
     document.getElementById("fileUploadedName").innerText =

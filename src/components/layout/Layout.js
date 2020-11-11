@@ -13,7 +13,7 @@ import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import "../../styles/layout.scss";
 
-const Layout = ({ children, opaqueHeader, headerVersion }) => {
+const Layout = ({ children, opaqueHeader, whiteHero, headerVersion }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -30,6 +30,7 @@ const Layout = ({ children, opaqueHeader, headerVersion }) => {
         siteTitle={data.site.siteMetadata.title}
         opaque={opaqueHeader}
         headerVersion={headerVersion}
+        startTransparent={whiteHero}
       />
       <div
         style={{

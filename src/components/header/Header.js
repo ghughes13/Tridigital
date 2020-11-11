@@ -5,7 +5,7 @@ import CookieConsent from "react-cookie-consent";
 
 import Burger from "../hamburger_menu/HamburgerMenu";
 
-const Header = ({ siteTitle, opaque, headerVersion }) => {
+const Header = ({ siteTitle, opaque, headerVersion, startTransparent }) => {
   useEffect(() => {
     window.addEventListener("scroll", function() {
       if (!opaque) {
@@ -26,7 +26,9 @@ const Header = ({ siteTitle, opaque, headerVersion }) => {
     //Display Alternate Nav bar for ingram partner pages
     return (
       <header
-        className={`fixed ${opaque ? "end-transparency" : ""}`}
+        className={`fixed 
+        ${opaque ? "end-transparency" : ""} 
+        `}
         style={{
           fontFamily: "Poppins",
           textTransform: "uppercase",
@@ -111,7 +113,9 @@ const Header = ({ siteTitle, opaque, headerVersion }) => {
   } else {
     return (
       <header
-        className={`fixed ${opaque ? "end-transparency" : ""}`}
+        className={`fixed ${opaque ? "end-transparency" : ""} ${
+          startTransparent ? "white-hero" : ""
+        }`}
         style={{
           fontFamily: "Poppins",
           textTransform: "uppercase",
