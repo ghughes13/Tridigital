@@ -237,6 +237,15 @@
     }
   }
 
+  .cool-background {
+    background: url("../images/art-director/shutterstock_1093475690.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    margin-bottom: -150px;
+    padding-bottom: 100px;
+  }
+
   .about-you {
     padding-top: 150px;
     padding-bottom: 160px;
@@ -397,10 +406,11 @@
 
   .contact-thank-you {
     color: white;
-    background: rgba(225, 225, 225, 0.23);
+    background: linear-gradient(to bottom, #00a7ff 0%, #0000e6 100%);
     padding: 25px 50px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 
   .btn.pink-button {

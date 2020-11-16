@@ -103,7 +103,7 @@ const CareersPage = () => {
             </Col>
           </Row>
         </Container>
-        <Container className="white-swish">
+        <Container className="white-swish cool-background">
           <Waypoint
             onEnter={() => {
               document
