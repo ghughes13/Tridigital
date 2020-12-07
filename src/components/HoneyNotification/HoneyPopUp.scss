@@ -1,0 +1,35 @@
+.honey-pop-up {
+  position: fixed;
+  background: url("../../images/home-pop-up-background.png") no-repeat;
+  background-size: cover;
+  text-align: center;
+  right: -1000px;
+  bottom: 0;
+  z-index: 999999;
+  padding: 70px 30px 60px;
+  transition-duration: 0.5s;
+
+  &.animate {
+    transition-delay: 1s;
+    right: 0;
+  }
+
+  h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 35px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    max-width: 430px;
+    font-size: 18px;
+  }
+
+  .x-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+}
