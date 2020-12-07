@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./HoneyPopUp.scss";
 
 export default function HoneyPopUp() {
-  const [isPopUpClosed, setIsPopUpClosed] = useState(
-    localStorage.getItem("isPopUpClosed") || false
-  );
+  const [isPopUpClosed, setIsPopUpClosed] = useState(false);
 
   useEffect(() => {
     if (!localStorage.getItem("isPopUpClosed")) {
