@@ -7,7 +7,6 @@ import SEO from "../components/seo/Seo";
 import Layout from "../components/layout/Layout";
 
 import YourVideo from "../components/home_video_player/HomeVideoPlayer";
-import HoneyPopUp from "../components/HoneyNotification/HoneyPopUp";
 
 const IndexPage = () => {
   useEffect(() => {});
@@ -112,13 +111,6 @@ const IndexPage = () => {
             src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/gradient-circle.svg"
             alt=""
           ></img>
-          <Waypoint
-            onEnter={() => {
-              document.querySelectorAll(".honey-pop-up").forEach(element => {
-                element.classList.add("animate");
-              });
-            }}
-          />
         </Container>
         <Container className="blue-background collateral-section pos-rel">
           <Row>
@@ -416,7 +408,6 @@ const IndexPage = () => {
             />
           </Row>
         </Container>
-        <HoneyPopUp />
       </div>
     </Layout>
   );

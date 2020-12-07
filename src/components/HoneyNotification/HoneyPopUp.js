@@ -1,14 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./HoneyPopUp.scss";
 
 export default function HoneyPopUp() {
+  const [isPopUpClosed, setIsPopUpClosed] = useState(
+    localStorage.getItem("isPopUpClosed") || false
+  );
+
+  useEffect(() => {
+    if (!localStorage.getItem("isPopUpClosed")) {
+      localStorage.setItem("isPopUpClosed", "false");
+    } else {
+      if (localStorage.getItem("isPopUpClosed") === "true") {
+        document.querySelector(".honey-pop-up").classList.add("hide-me");
+      }
+    }
+  });
+
   const closePopUp = () => {
     console.log("clicled");
     document.querySelector(".honey-pop-up").classList.remove("animate");
+    localStorage.setItem("isPopUpClosed", "true");
   };
 
   return (
-    <div className="honey-pop-up">
+    <div className={"honey-pop-up"}>
       <span className="x-btn" onClick={closePopUp}>
         <img src={require("../../images/svgs/ex-btn.svg")} />
       </span>

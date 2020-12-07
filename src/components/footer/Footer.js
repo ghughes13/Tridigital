@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "gatsby";
 import { Row, Col } from "react-bootstrap";
 
+import HoneyPopUp from "../HoneyNotification/HoneyPopUp";
+
 import "./footer.scss";
 
 const Footer = () => (
@@ -163,6 +165,7 @@ const Footer = () => (
         </a>
       </p>
     </Row>
+    <HoneyPopUp />
   </footer>
 );
 
