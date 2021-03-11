@@ -5,10 +5,10 @@ export default function HoneyPopUp() {
   const [isPopUpClosed, setIsPopUpClosed] = useState(false);
 
   useEffect(() => {
-    if (!localStorage.getItem("isPopUpClosed")) {
-      localStorage.setItem("isPopUpClosed", "false");
+    if (!sessionStorage.getItem("isPopUpClosed")) {
+      sessionStorage.setItem("isPopUpClosed", "false");
     } else {
-      if (localStorage.getItem("isPopUpClosed") === "true") {
+      if (sessionStorage.getItem("isPopUpClosed") === "true") {
         document.querySelector(".honey-pop-up").classList.add("hide-me");
       }
     }
@@ -17,7 +17,7 @@ export default function HoneyPopUp() {
   const closePopUp = () => {
     console.log("clicled");
     document.querySelector(".honey-pop-up").classList.remove("animate");
-    localStorage.setItem("isPopUpClosed", "true");
+    sessionStorage.setItem("isPopUpClosed", "true");
   };
 
   return (
