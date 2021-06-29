@@ -4,6 +4,7 @@ import axios from "axios";
 import Loader from "../loader/Loader";
 
 import "../../styles/fortinet-lp.scss";
+import "./IngramPartnerForm.scss";
 
 const IngramPartnerForm = ({
   formClassName,
@@ -398,6 +399,35 @@ const IngramPartnerForm = ({
             className="send-value"
             required
           />
+        </div>
+        <div className="calling-services-div">
+          <p class="margin-top-30">
+            Would you like to add calling services to your campaign?
+          </p>
+          <div className="calling-services-label-container">
+            <label htmlFor="calling-services" class="calling-services">
+              Yes
+              <input
+                type="radio"
+                name="service-areas"
+                id="yes"
+                className="send-value"
+                value="yes"
+                required
+              />
+            </label>
+            <label htmlFor="calling-services" class="calling-services">
+              No
+              <input
+                type="radio"
+                name="service-areas"
+                id="no"
+                className="send-value"
+                value="no"
+                required
+              />
+            </label>
+          </div>
         </div>
         <p className="DKIM-disclaimer">
           We will be asking you to set up DKIM to ensure the best possible email

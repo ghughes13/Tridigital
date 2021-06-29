@@ -791,6 +791,41 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                       required
                     />
                   </div>
+                  <div className="calling-services-div">
+                    <p class="margin-top-30">
+                      Would you like to add calling services to your campaign?
+                    </p>
+                    <div className="calling-services-label-container">
+                      <label
+                        htmlFor="calling-services"
+                        class="calling-services"
+                      >
+                        Yes
+                        <input
+                          type="radio"
+                          name="service-areas"
+                          id="yes"
+                          className="send-value"
+                          value="yes"
+                          required
+                        />
+                      </label>
+                      <label
+                        htmlFor="calling-services"
+                        class="calling-services"
+                      >
+                        No
+                        <input
+                          type="radio"
+                          name="service-areas"
+                          id="no"
+                          className="send-value"
+                          value="no"
+                          required
+                        />
+                      </label>
+                    </div>
+                  </div>
                   <p className="DKIM-disclaimer">
                     We will be asking you to set up DKIM to ensure the best
                     possible email results. If you choose to not set up DKIM,
