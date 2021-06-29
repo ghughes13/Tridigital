@@ -803,7 +803,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                         Yes
                         <input
                           type="radio"
-                          name="service-areas"
+                          name="calling-services"
                           id="yes"
                           className="send-value"
                           value="yes"
@@ -817,7 +817,7 @@ Ingram Micro and Lenovo are committed to the success of your business. Learn how
                         No
                         <input
                           type="radio"
-                          name="service-areas"
+                          name="calling-services"
                           id="no"
                           className="send-value"
                           value="no"
