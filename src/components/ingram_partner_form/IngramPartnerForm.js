@@ -409,7 +409,7 @@ const IngramPartnerForm = ({
               Yes
               <input
                 type="radio"
-                name="service-areas"
+                name="calling-services"
                 id="yes"
                 className="send-value"
                 value="yes"
@@ -420,7 +420,7 @@ const IngramPartnerForm = ({
               No
               <input
                 type="radio"
-                name="service-areas"
+                name="calling-services"
                 id="no"
                 className="send-value"
                 value="no"
