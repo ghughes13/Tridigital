@@ -47,25 +47,25 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: "gatsby-source-wordpress",
-      options: {
-        baseUrl: "warmup.tridigitalmarketing.com",
-        protocol: "http",
-        hostingWPCOM: false,
-        useACF: true,
-        verboseOutput: false,
-        includedRoutes: [
-          "**/posts",
-          "**/media",
-          "**/categories",
-          "**/tags",
-          "**/taxonomies",
-          "**/users",
-        ],
-        excludedRoutes: ["**/pages"],
-      },
-    },
+    // {
+    //   resolve: "gatsby-source-wordpress",
+    //   options: {
+    //     baseUrl: "warmup.tridigitalmarketing.com",
+    //     protocol: "http",
+    //     hostingWPCOM: false,
+    //     useACF: true,
+    //     verboseOutput: false,
+    //     includedRoutes: [
+    //       "**/posts",
+    //       "**/media",
+    //       "**/categories",
+    //       "**/tags",
+    //       "**/taxonomies",
+    //       "**/users",
+    //     ],
+    //     excludedRoutes: ["**/pages"],
+    //   },
+    // },
     // `gatsby-plugin-offline`, // To learn more, visit: https://gatsby.dev/offline // this (optional) plugin enables Progressive Web App + Offline functionality
     `gatsby-plugin-sass`,
   ],

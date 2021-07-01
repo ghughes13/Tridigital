@@ -26,7 +26,8 @@
     "Citrix",
     "Cisco",
     "Verizon",
-    'Veeam'
+    "Veeam",
+    "F5",
   ];
 
   if (gravityForms) {
