@@ -28,14 +28,14 @@ const VendorPartnerLP = () => {
             <Col className="content-container column align-vertical video-container ">
               <video
                 className="lp-video box-shadow"
-                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/vendor-lp-video/Ingram%20Micro%20%26amp%3B%20Citrix%20Partner%20Enablement.mp4"
-                alt="TRIdigital media team"
+                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2021/07/Ingram%20Micro%20%26amp%3B%20F5%20Partner%20Enablement.mp4"
+                alt="F5 Ingram Partner Video"
                 id="video-player"
                 autoPlay
                 loop
                 muted
               ></video>
-              <Yourvideo videoID={"xlalwmokpp"} />
+              <Yourvideo videoID={"uqgtciyri1"} />
             </Col>
           </Row>
         </Container>
