@@ -457,6 +457,55 @@ const VendorPartnerLP = () => {
                     required
                   />
                 </div>
+                <div className="field-appointments-to margin-top-50">
+                  <p>
+                    If you wish, Ingram Micro can help with follow-up support on
+                    leads generated through the program. If you choose to opt
+                    into this piece of the program, we will call all leads for
+                    you to talk through some qualifying questions, and try to
+                    set them up with a call with your team. If you will be
+                    calling out to leads on your own, please opt-out by leaving
+                    this section blank.
+                  </p>
+                  <label htmlFor="field-appointments-to">
+                    If the end user wants to connect with your team, who from
+                    your team will field these appointments? *Name/email/phone
+                  </label>
+                  <textarea
+                    type="text"
+                    name="field-appointments-to"
+                    id="field-appointments-to"
+                    className="send-value"
+                  />
+                </div>
+                <div className="times-and-days-for-appointments">
+                  <label htmlFor="times-and-days-for-appointments">
+                    What time/days can your team be available for these
+                    appointments for the rest of the campaign? Should we
+                    schedule it whenever the lead is available, or should we
+                    adjust to your schedule? Please provide specifics or a
+                    Calendy link for us to best coordinate with your team.
+                  </label>
+                  <textarea
+                    type="text"
+                    name="times-and-days-for-appointments"
+                    id="times-and-days-for-appointments"
+                    className="send-value"
+                  />
+                </div>
+                <div className="is-there-a-script">
+                  <label htmlFor="is-there-a-script">
+                    Do you have a specific script you would like used on the
+                    call? Our team can pull from it when needed to talk about
+                    your team or yourself in relation to this product offering
+                  </label>
+                  <textarea
+                    type="text"
+                    name="is-there-a-script"
+                    id="is-there-a-script"
+                    className="send-value"
+                  />
+                </div>
                 <p className="DKIM-disclaimer">
                   We will be asking you to set up DKIM to ensure the best
                   possible email results. If you choose to not set up DKIM, your
